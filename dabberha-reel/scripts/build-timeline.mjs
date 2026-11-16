@@ -17,7 +17,7 @@ const scriptPath = process.env.SCRIPT ?? "src/data/script.json";
 const outPath = process.env.OUT ?? "src/data/timeline.json";
 const script = JSON.parse(readFileSync(path.join(root, scriptPath), "utf8"));
 const FPS = 30;
-const TOTAL = 1800;
+const TOTAL = script.totalFrames ?? 1800;
 const TAIL = script.tailSeconds ?? 0.45; // breathing room after the last word of each scene
 
 const audio = (...p) => path.join(root, "public/audio", script.audioDir ?? "", ...p);

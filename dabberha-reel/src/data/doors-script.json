@@ -1,0 +1,111 @@
+{
+  "audioDir": "doors",
+  "totalFrames": 1500,
+  "tailSeconds": 0.4,
+  "voice": {
+    "searchName": "Nouf",
+    "searchNameAr": "نوف",
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_v3",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8,
+      "style": 0.4,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VjxKp6w1MCufETfW5zFM",
+      "name": "Nouf - Saudi Commercial & Documentary"
+    }
+  },
+  "scenes": [
+    {
+      "id": "D0-Welcome",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.4,
+      "tts": "حيّاك في دبّرها… أربعة أبواب، وكل باب وراه خدماتك."
+    },
+    {
+      "id": "D1-Government",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.45,
+      "transitionFrames": 12,
+      "tts": "الباب الأول: الخدمات الحكومية… أبشر، وقوى، والتأمينات، والعدل، وعقود الإيجار."
+    },
+    {
+      "id": "D2-Business",
+      "nominalSeconds": 11,
+      "leadSeconds": 0.5,
+      "transitionFrames": 12,
+      "tts": "الباب الثاني: التجارة والعمل الحر… وثيقة العمل الحر، وخدمات وزارة التجارة، ومتجرك الإلكتروني المتكامل."
+    },
+    {
+      "id": "D3-Creative",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.5,
+      "transitionFrames": 12,
+      "tts": "الباب الثالث: الخدمات الإبداعية والتسويقية… عشان مشروعك يوصل ويبان."
+    },
+    {
+      "id": "D4-Support",
+      "nominalSeconds": 8.5,
+      "leadSeconds": 0.5,
+      "transitionFrames": 12,
+      "tts": "والباب الرابع: الدعم والتمويل… الضمان الاجتماعي، وحساب المواطن، وقرض العمل الحر."
+    },
+    {
+      "id": "D5-Outro",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.5,
+      "tts": "كل الأبواب مفتوحة لك… دبّرها، المصداقية وسرعة الإنجاز."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.8,
+      "prompt": "Clean fast cinematic whoosh transition, short swish of air, modern commercial, no reverb tail"
+    },
+    {
+      "id": "tick",
+      "seconds": 0.5,
+      "prompt": "Soft subtle UI tick, gentle minimal click for text appearing, clean, high-end commercial"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Soft rounded bubble pop for an icon appearing, satisfying UI pop, clean, short"
+    },
+    {
+      "id": "door",
+      "seconds": 1.4,
+      "prompt": "Elegant modern door swinging open smoothly with a soft airy swoosh and a light latch click, premium, no creak"
+    },
+    {
+      "id": "shimmer",
+      "seconds": 1.6,
+      "prompt": "Bright magical light reveal shimmer, soft rising chimes and airy sparkle, opening a door to a bright room, premium commercial"
+    },
+    {
+      "id": "flip",
+      "seconds": 0.5,
+      "prompt": "Quick soft card flip sound, paper card turning over on a table, clean, short"
+    },
+    {
+      "id": "lights",
+      "seconds": 1.2,
+      "prompt": "Four soft electric light switches turning on in quick succession with a gentle warm hum, building lights up"
+    }
+  ],
+  "music": [
+    {
+      "id": "tour",
+      "prompt": "Elegant modern corporate music with a sense of discovery and curiosity, 100 BPM, warm plucked synths, soft marimba, light percussion, bright and welcoming, building gently, clean ending, premium brand tour, no vocals",
+      "lengthMs": 52000
+    }
+  ]
+}

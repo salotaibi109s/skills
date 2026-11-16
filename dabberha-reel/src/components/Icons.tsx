@@ -20,7 +20,10 @@ export type IconName =
   | "link"
   | "passport"
   | "cap"
-  | "home2";
+  | "home2"
+  | "palette"
+  | "megaphone"
+  | "chart";
 
 const paths: Record<IconName, React.ReactNode> = {
   id: (
@@ -126,6 +129,27 @@ const paths: Record<IconName, React.ReactNode> = {
     <>
       <path d="M3.5 11L12 4l8.5 7M6 9.5V20h12V9.5" />
       <path d="M10 20v-5h4v5" />
+    </>
+  ),
+  palette: (
+    <>
+      <path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.2 0 1.8-.9 1.4-1.9-.5-1.1.3-2.3 1.5-2.3h1.9a3.7 3.7 0 0 0 3.7-3.7C20.5 7.4 16.7 3.5 12 3.5z" />
+      <circle cx="7.8" cy="11" r="1.2" />
+      <circle cx="10.5" cy="7.4" r="1.2" />
+      <circle cx="15" cy="7.6" r="1.2" />
+    </>
+  ),
+  megaphone: (
+    <>
+      <path d="M4 10v4h3l7 4V6l-7 4H4z" />
+      <path d="M17.5 9a4 4 0 0 1 0 6M7 14l1.2 5h2.3L9.6 14" />
+    </>
+  ),
+  chart: (
+    <>
+      <path d="M4 20V4M4 20h16" />
+      <path d="M7 16l4-4 3 3 5-6" />
+      <path d="M15.5 9H19v3.5" />
     </>
   ),
   link: (

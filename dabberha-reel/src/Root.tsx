@@ -19,6 +19,9 @@ import { T5Rewind } from "./story/scenes/T5Rewind";
 import { T6Home } from "./story/scenes/T6Home";
 import { T7NumberOne } from "./story/scenes/T7NumberOne";
 import { T8Cta } from "./story/scenes/T8Cta";
+import { getDoorsScene } from "./doors/base";
+import { DabberhaDoors } from "./doors/DabberhaDoors";
+import { D0Welcome, D1Government, D2Business, D3Creative, D4Support, D5Outro } from "./doors/scenes";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -117,6 +120,17 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="T6-Home" component={T6Home} durationInFrames={getStoryScene("T6-Home").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="T7-NumberOne" component={T7NumberOne} durationInFrames={getStoryScene("T7-NumberOne").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="T8-CTA" component={T8Cta} durationInFrames={getStoryScene("T8-CTA").durationInFrames} fps={30} width={1080} height={1920} />
+      </Folder>
+
+      {/* Third video: «أربعة أبواب» store tour (50 s) */}
+      <Composition id="DabberhaDoors" component={DabberhaDoors} durationInFrames={1500} fps={30} width={1080} height={1920} />
+      <Folder name="Doors-Scenes">
+        <Composition id="D0-Welcome" component={D0Welcome} durationInFrames={getDoorsScene("D0-Welcome").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="D1-Government" component={D1Government} durationInFrames={getDoorsScene("D1-Government").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="D2-Business" component={D2Business} durationInFrames={getDoorsScene("D2-Business").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="D3-Creative" component={D3Creative} durationInFrames={getDoorsScene("D3-Creative").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="D4-Support" component={D4Support} durationInFrames={getDoorsScene("D4-Support").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="D5-Outro" component={D5Outro} durationInFrames={getDoorsScene("D5-Outro").durationInFrames} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );

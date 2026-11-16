@@ -1,0 +1,53 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "VjxKp6w1MCufETfW5zFM",
+    "voice_name": "Nouf - Saudi Commercial & Documentary",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8,
+      "style": 0.4,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-16T20:02:11.208Z"
+  },
+  "sfx": [
+    {
+      "id": "door",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Elegant modern door swinging open smoothly with a soft airy swoosh and a light latch click, premium, no creak",
+      "seconds": 1.4
+    },
+    {
+      "id": "shimmer",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Bright magical light reveal shimmer, soft rising chimes and airy sparkle, opening a door to a bright room, premium commercial",
+      "seconds": 1.6
+    },
+    {
+      "id": "flip",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Quick soft card flip sound, paper card turning over on a table, clean, short",
+      "seconds": 0.5
+    },
+    {
+      "id": "lights",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Four soft electric light switches turning on in quick succession with a gentle warm hum, building lights up",
+      "seconds": 1.2
+    }
+  ],
+  "music": [
+    {
+      "id": "tour",
+      "provider": "ElevenLabs Music",
+      "prompt": "Elegant modern corporate music with a sense of discovery and curiosity, 100 BPM, warm plucked synths, soft marimba, light percussion, bright and welcoming, building gently, clean ending, premium brand tour, no vocals",
+      "length_ms": 52000,
+      "instrumental": true,
+      "generated_at": "2026-11-16T20:02:41.030Z"
+    }
+  ]
+}
