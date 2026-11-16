@@ -1,0 +1,433 @@
+{
+  "fps": 30,
+  "durationInFrames": 1800,
+  "estimated": true,
+  "audio": {
+    "vo": false,
+    "sfx": false,
+    "music": false
+  },
+  "scenes": [
+    {
+      "id": "S1-Hook",
+      "from": 0,
+      "durationInFrames": 150,
+      "voFrom": 11,
+      "voDurationInFrames": 92,
+      "words": [
+        {
+          "text": "معاملة",
+          "start": 11,
+          "end": 26
+        },
+        {
+          "text": "معلّقة",
+          "start": 28,
+          "end": 42
+        },
+        {
+          "text": "ووقتك",
+          "start": 57,
+          "end": 70
+        },
+        {
+          "text": "ما",
+          "start": 71,
+          "end": 79
+        },
+        {
+          "text": "يسمح",
+          "start": 81,
+          "end": 92
+        }
+      ]
+    },
+    {
+      "id": "S2-Problem",
+      "from": 150,
+      "durationInFrames": 210,
+      "voFrom": 8,
+      "voDurationInFrames": 130,
+      "words": [
+        {
+          "text": "بين",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "text": "المنصات",
+          "start": 19,
+          "end": 36
+        },
+        {
+          "text": "والطلبات",
+          "start": 42,
+          "end": 61
+        },
+        {
+          "text": "والمواعيد",
+          "start": 67,
+          "end": 88
+        },
+        {
+          "text": "يضيع",
+          "start": 102,
+          "end": 113
+        },
+        {
+          "text": "يومك",
+          "start": 115,
+          "end": 126
+        }
+      ]
+    },
+    {
+      "id": "S3-Reveal",
+      "from": 360,
+      "durationInFrames": 180,
+      "voFrom": 33,
+      "voDurationInFrames": 124,
+      "words": [
+        {
+          "text": "دبّرها",
+          "start": 33,
+          "end": 48
+        },
+        {
+          "text": "خدماتك",
+          "start": 59,
+          "end": 74
+        },
+        {
+          "text": "الإلكترونية",
+          "start": 76,
+          "end": 100
+        },
+        {
+          "text": "تخلص",
+          "start": 102,
+          "end": 113
+        },
+        {
+          "text": "وأنت",
+          "start": 119,
+          "end": 130
+        },
+        {
+          "text": "مرتاح",
+          "start": 132,
+          "end": 145
+        }
+      ]
+    },
+    {
+      "id": "S4-Government",
+      "from": 540,
+      "durationInFrames": 360,
+      "voFrom": 9,
+      "voDurationInFrames": 282,
+      "words": [
+        {
+          "text": "أبشر",
+          "start": 9,
+          "end": 20
+        },
+        {
+          "text": "قوى",
+          "start": 27,
+          "end": 36
+        },
+        {
+          "text": "التأمينات",
+          "start": 42,
+          "end": 63
+        },
+        {
+          "text": "العدل",
+          "start": 69,
+          "end": 82
+        },
+        {
+          "text": "التجارة",
+          "start": 89,
+          "end": 105
+        },
+        {
+          "text": "حساب",
+          "start": 112,
+          "end": 123
+        },
+        {
+          "text": "المواطن",
+          "start": 125,
+          "end": 142
+        },
+        {
+          "text": "والضمان",
+          "start": 148,
+          "end": 165
+        },
+        {
+          "text": "نخلّصها",
+          "start": 179,
+          "end": 196
+        },
+        {
+          "text": "عنك",
+          "start": 198,
+          "end": 207
+        },
+        {
+          "text": "وتبدأ",
+          "start": 213,
+          "end": 226
+        },
+        {
+          "text": "من",
+          "start": 228,
+          "end": 235
+        },
+        {
+          "text": "تسعة",
+          "start": 237,
+          "end": 248
+        },
+        {
+          "text": "وأربعين",
+          "start": 250,
+          "end": 267
+        },
+        {
+          "text": "ريال",
+          "start": 268,
+          "end": 279
+        }
+      ]
+    },
+    {
+      "id": "S5-Business",
+      "from": 900,
+      "durationInFrames": 300,
+      "voFrom": 9,
+      "voDurationInFrames": 213,
+      "words": [
+        {
+          "text": "وعندك",
+          "start": 9,
+          "end": 22
+        },
+        {
+          "text": "مشروع",
+          "start": 24,
+          "end": 37
+        },
+        {
+          "text": "وثيقة",
+          "start": 48,
+          "end": 61
+        },
+        {
+          "text": "العمل",
+          "start": 63,
+          "end": 76
+        },
+        {
+          "text": "الحر",
+          "start": 77,
+          "end": 88
+        },
+        {
+          "text": "قرض",
+          "start": 95,
+          "end": 104
+        },
+        {
+          "text": "العمل",
+          "start": 106,
+          "end": 119
+        },
+        {
+          "text": "الحر",
+          "start": 121,
+          "end": 132
+        },
+        {
+          "text": "ومتجرك",
+          "start": 138,
+          "end": 153
+        },
+        {
+          "text": "الإلكتروني",
+          "start": 155,
+          "end": 177
+        },
+        {
+          "text": "المتكامل",
+          "start": 179,
+          "end": 197
+        },
+        {
+          "text": "جاهز",
+          "start": 199,
+          "end": 210
+        }
+      ]
+    },
+    {
+      "id": "S6-RealEstate",
+      "from": 1200,
+      "durationInFrames": 180,
+      "voFrom": 8,
+      "voDurationInFrames": 136,
+      "words": [
+        {
+          "text": "عقد",
+          "start": 8,
+          "end": 17
+        },
+        {
+          "text": "تأجير",
+          "start": 19,
+          "end": 32
+        },
+        {
+          "text": "وتسجيل",
+          "start": 38,
+          "end": 53
+        },
+        {
+          "text": "عيني",
+          "start": 55,
+          "end": 66
+        },
+        {
+          "text": "لعقارك",
+          "start": 68,
+          "end": 83
+        },
+        {
+          "text": "كلها",
+          "start": 97,
+          "end": 108
+        },
+        {
+          "text": "من",
+          "start": 110,
+          "end": 117
+        },
+        {
+          "text": "جوالك",
+          "start": 119,
+          "end": 132
+        }
+      ]
+    },
+    {
+      "id": "S7-Trust",
+      "from": 1380,
+      "durationInFrames": 210,
+      "voFrom": 8,
+      "voDurationInFrames": 145,
+      "words": [
+        {
+          "text": "مصداقية",
+          "start": 8,
+          "end": 25
+        },
+        {
+          "text": "وسرعة",
+          "start": 39,
+          "end": 52
+        },
+        {
+          "text": "إنجاز",
+          "start": 54,
+          "end": 67
+        },
+        {
+          "text": "وادفع",
+          "start": 78,
+          "end": 91
+        },
+        {
+          "text": "بالطريقة",
+          "start": 93,
+          "end": 111
+        },
+        {
+          "text": "اللي",
+          "start": 113,
+          "end": 124
+        },
+        {
+          "text": "تناسبك",
+          "start": 126,
+          "end": 141
+        }
+      ]
+    },
+    {
+      "id": "S8-CTA",
+      "from": 1590,
+      "durationInFrames": 210,
+      "voFrom": 9,
+      "voDurationInFrames": 83,
+      "words": [
+        {
+          "text": "دبّرها",
+          "start": 9,
+          "end": 24
+        },
+        {
+          "text": "واطلب",
+          "start": 38,
+          "end": 51
+        },
+        {
+          "text": "خدمتك",
+          "start": 53,
+          "end": 66
+        },
+        {
+          "text": "الحين",
+          "start": 68,
+          "end": 80
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      11,
+      92
+    ],
+    [
+      158,
+      276
+    ],
+    [
+      393,
+      505
+    ],
+    [
+      549,
+      819
+    ],
+    [
+      909,
+      1110
+    ],
+    [
+      1208,
+      1332
+    ],
+    [
+      1388,
+      1521
+    ],
+    [
+      1599,
+      1670
+    ]
+  ]
+}
