@@ -22,9 +22,9 @@
 
 | العنصر | المصدر | التفاصيل |
 |---|---|---|
-| التعليق الصوتي | ElevenLabs Text to Speech — `with-timestamps` | الموديل `eleven_v4`، الصوت George (من أصوات ElevenLabs الافتراضية، `JBFqnCBsd6RMkjVDRZzb`). صوت «ناصر» من مكتبة الأصوات لا يُستخدم عبر الـAPI في الخطة المجانية. |
+| التعليق الصوتي | ElevenLabs Text to Speech — `with-timestamps` | الموديل `eleven_v4`، الصوت Nasser AlJubaily - Authentic Saudi Pro (`cFUFIbKkO2iZFwS8cRnY`)، لهجة سعودية بيضاء. |
 | المؤثرات (whoosh, tick, pop, riser, impact, glitch) | ElevenLabs Sound Effects | الأوصاف المستخدمة في `src/data/script.json` → `sfx`. |
-| الموسيقى | تأليف أصلي مولَّد بالكود (`scripts/compose-music.py`) | 104 BPM، Fmaj7–G6–Em7–Am7، بدون عينات خارجية. موسيقى ElevenLabs تحتاج خطة مدفوعة. |
+| الموسيقى | ElevenLabs Music | مقطوعة آلية 62 ث، ambient corporate ‏104 BPM (الوصف في `src/data/script.json` → `music`)، مطبّعة إلى ‎-14 LUFS قبل المزج. بديل أصلي بالكود متاح: `scripts/compose-music.py`. |
 | الشعار وأيقونات الدفع | متجر haxztd.zid.store | الشعار من المتجر؛ علامات مدى/Apple Pay/Visa/Mastercard كما يعرضها المتجر في صفحة الدفع. |
 | الخطوط | Google Fonts عبر `@remotion/google-fonts` | Changa (خط المتجر) للعناوين، IBM Plex Sans Arabic للنصوص. |
 
@@ -44,6 +44,7 @@
 export NODE_USE_ENV_PROXY=1   # فقط داخل بيئة Claude السحابية
 VOICE_ID=<id> node scripts/generate-audio.mjs vo   # التعليق + التوقيتات
 node scripts/generate-audio.mjs sfx                # المؤثرات
+node scripts/generate-audio.mjs music              # موسيقى ElevenLabs (خطة مدفوعة)
 node scripts/build-timeline.mjs                    # ضبط أطوال المشاهد على النطق
 python3 scripts/compose-music.py                   # الموسيقى
 npx remotion render DabberhaReel out/premaster.mp4 --codec=h264 --audio-codec=aac --crf=18

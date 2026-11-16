@@ -39,9 +39,9 @@
   ],
   "voiceover": {
     "provider": "ElevenLabs Text to Speech (with-timestamps)",
-    "voice_id": "JBFqnCBsd6RMkjVDRZzb",
-    "voice_name": "George - Warm, Captivating Storyteller",
-    "voice_source": "premade",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_name": "Nasser AlJubaily - Authentic Saudi Pro",
+    "voice_source": "my-voices",
     "model_id": "eleven_v4",
     "settings": {
       "stability": 0.5,
@@ -50,14 +50,13 @@
       "use_speaker_boost": true,
       "speed": 1
     },
-    "generated_at": "2026-11-16T18:46:06.575Z"
+    "generated_at": "2026-11-16T19:02:47.106Z"
   },
   "music": {
-    "provider": "Original composition, synthesized in code (scripts/compose-music.py)",
-    "reason": "ElevenLabs Music API requires a paid plan on this account",
-    "bpm": 104,
-    "progression": "Fmaj7 - G6 - Em7 - Am7",
-    "groove_downbeat_at_seconds": 13.167,
-    "license": "Original work created for this project; no third-party samples"
+    "provider": "ElevenLabs Music",
+    "prompt": "Light modern ambient corporate track at 104 BPM, warm soft synth pads, gentle plucked arpeggio, light clean percussion, optimistic and confident, minimal, premium tech commercial, no vocals",
+    "length_ms": 62000,
+    "instrumental": true,
+    "generated_at": "2026-11-16T19:03:02.192Z"
   }
 }

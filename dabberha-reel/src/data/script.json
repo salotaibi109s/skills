@@ -15,9 +15,9 @@
       "speed": 1.0
     },
     "chosen": {
-      "voice_id": "JBFqnCBsd6RMkjVDRZzb",
-      "name": "George",
-      "reason": "Free plan cannot use library voices (Nasser) via the API; user picked George from three premade samples."
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro",
+      "reason": "User subscribed to a paid ElevenLabs plan; original voice choice."
     }
   },
   "scenes": [
