@@ -17,7 +17,9 @@ const envFile = path.join(root, ".env");
 if (existsSync(envFile)) process.loadEnvFile(envFile);
 
 const API = "https://api.elevenlabs.io";
-const KEY = process.env.ELEVENLABS_API_KEY;
+// ELEVENLABS_VIA_PROXY=1: the key is stored as a network secret and injected by the
+// sandbox proxy, so only a placeholder header is sent from here.
+const KEY = process.env.ELEVENLABS_API_KEY || (process.env.ELEVENLABS_VIA_PROXY === "1" ? "proxy-injected" : "");
 const script = JSON.parse(readFileSync(path.join(root, "src/data/script.json"), "utf8"));
 const out = (...p) => path.join(root, "public/audio", ...p);
 const sourcesFile = out("sources.json");
