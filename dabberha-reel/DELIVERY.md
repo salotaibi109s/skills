@@ -35,6 +35,7 @@
 - التعليق: 0 dB
 - الموسيقى: ‎-18 dB، تنخفض تلقائيًا إلى ‎-27 dB أثناء الكلام، وتتلاشى في آخر ثانيتين
 - المؤثرات: بين ‎-5 و‎-20 dB حسب النوع (`src/theme.ts` → `mix`)
+- الماستر النهائي: loudnorm إلى ‎-15.5 LUFS تقريبًا (True Peak ‎-1.5 dB) بدون إعادة ترميز الفيديو
 
 ## إعادة التوليد
 
@@ -45,7 +46,8 @@ VOICE_ID=<id> node scripts/generate-audio.mjs vo   # التعليق + التوق
 node scripts/generate-audio.mjs sfx                # المؤثرات
 node scripts/build-timeline.mjs                    # ضبط أطوال المشاهد على النطق
 python3 scripts/compose-music.py                   # الموسيقى
-npx remotion render DabberhaReel out/dabberha-reel.mp4 --codec=h264 --audio-codec=aac
+npx remotion render DabberhaReel out/premaster.mp4 --codec=h264 --audio-codec=aac --crf=18
+ffmpeg -i out/premaster.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 192k -movflags +faststart out/dabberha-reel.mp4
 ```
 
 ## ملاحظات التحقق
