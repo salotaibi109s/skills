@@ -20,8 +20,9 @@ const API = "https://api.elevenlabs.io";
 // ELEVENLABS_VIA_PROXY=1: the key is stored as a network secret and injected by the
 // sandbox proxy, so only a placeholder header is sent from here.
 const KEY = process.env.ELEVENLABS_API_KEY || (process.env.ELEVENLABS_VIA_PROXY === "1" ? "proxy-injected" : "");
-const script = JSON.parse(readFileSync(path.join(root, "src/data/script.json"), "utf8"));
-const out = (...p) => path.join(root, "public/audio", ...p);
+// SCRIPT=src/data/story-script.json selects another video; its "audioDir" keeps its files apart.
+const script = JSON.parse(readFileSync(path.join(root, process.env.SCRIPT ?? "src/data/script.json"), "utf8"));
+const out = (...p) => path.join(root, "public/audio", script.audioDir ?? "", ...p);
 const sourcesFile = out("sources.json");
 const sources = existsSync(sourcesFile) ? JSON.parse(readFileSync(sourcesFile, "utf8")) : {};
 const saveSources = () => writeFileSync(sourcesFile, JSON.stringify(sources, null, 2));
@@ -223,40 +224,60 @@ async function generateVoiceover() {
 // ---------------------------------------------------------------- sfx
 async function generateSfx() {
   mkdirSync(out("sfx"), { recursive: true });
-  sources.sfx = [];
+  const known = new Map((sources.sfx ?? []).map((x) => [x.id, x]));
   for (const s of script.sfx) {
+    const file = out("sfx", `${s.id}.mp3`);
+    if (existsSync(file) && process.env.FORCE !== "1") {
+      console.log(`SFX ${s.id} (exists, skipped)`);
+      continue;
+    }
     const buf = await api(
       "POST",
       "/v1/sound-generation?output_format=mp3_44100_128",
       { text: s.prompt, duration_seconds: s.seconds, prompt_influence: 0.6 },
       "audio/mpeg",
     );
-    writeFileSync(out("sfx", `${s.id}.mp3`), buf);
-    sources.sfx.push({ id: s.id, provider: "ElevenLabs Sound Effects", prompt: s.prompt, seconds: s.seconds });
+    writeFileSync(file, buf);
+    known.set(s.id, { id: s.id, provider: "ElevenLabs Sound Effects", prompt: s.prompt, seconds: s.seconds });
     console.log(`SFX ${s.id} ✓`);
   }
+  sources.sfx = [...known.values()];
   saveSources();
 }
 
 // ---------------------------------------------------------------- music
+// script.music is one track ({prompt, lengthMs} -> bed.mp3) or a list of tracks ({id, prompt, lengthMs}).
+// Every track is loudness-normalised to -14 LUFS so the mix levels in theme.ts mean the same thing.
 async function generateMusic() {
   mkdirSync(out("music"), { recursive: true });
-  const buf = await api(
-    "POST",
-    "/v1/music?output_format=mp3_44100_128",
-    { prompt: script.music.prompt, music_length_ms: script.music.lengthMs, force_instrumental: true },
-    "audio/mpeg",
-  );
-  writeFileSync(out("music", "bed.mp3"), buf);
-  sources.music = {
-    provider: "ElevenLabs Music",
-    prompt: script.music.prompt,
-    length_ms: script.music.lengthMs,
-    instrumental: true,
-    generated_at: new Date().toISOString(),
-  };
+  const tracks = Array.isArray(script.music) ? script.music : [{ id: "bed", ...script.music }];
+  sources.music = [];
+  for (const tr of tracks) {
+    const buf = await api(
+      "POST",
+      "/v1/music?output_format=mp3_44100_128",
+      { prompt: tr.prompt, music_length_ms: tr.lengthMs, force_instrumental: true },
+      "audio/mpeg",
+    );
+    const raw = out("music", `${tr.id}.raw.mp3`);
+    writeFileSync(raw, buf);
+    execFileSync("ffmpeg", [
+      "-v", "error", "-y", "-i", raw,
+      "-af", "loudnorm=I=-14:TP=-1:LRA=9", "-ar", "44100", "-c:a", "libmp3lame", "-b:a", "192k",
+      out("music", `${tr.id}.mp3`),
+    ]);
+    execFileSync("rm", [raw]);
+    sources.music.push({
+      id: tr.id,
+      provider: "ElevenLabs Music",
+      prompt: tr.prompt,
+      length_ms: tr.lengthMs,
+      instrumental: true,
+      generated_at: new Date().toISOString(),
+    });
+    console.log(`Music ${tr.id} ✓`);
+  }
   saveSources();
-  console.log("Music ✓");
 }
 
 const step = process.argv[2] ?? "all";

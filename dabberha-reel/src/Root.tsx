@@ -9,6 +9,16 @@ import { S5Business } from "./scenes/S5Business";
 import { S6RealEstate } from "./scenes/S6RealEstate";
 import { S7Trust } from "./scenes/S7Trust";
 import { S8Cta } from "./scenes/S8Cta";
+import { getStoryScene } from "./story/base";
+import { DabberhaStory } from "./story/DabberhaStory";
+import { T1Ticket } from "./story/scenes/T1Ticket";
+import { T2Road } from "./story/scenes/T2Road";
+import { T3Office } from "./story/scenes/T3Office";
+import { T4Closed } from "./story/scenes/T4Closed";
+import { T5Rewind } from "./story/scenes/T5Rewind";
+import { T6Home } from "./story/scenes/T6Home";
+import { T7NumberOne } from "./story/scenes/T7NumberOne";
+import { T8Cta } from "./story/scenes/T8Cta";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -87,6 +97,26 @@ export const RemotionRoot: React.FC = () => {
           width={1080}
           height={1920}
         />
+      </Folder>
+
+      {/* Second video: story ad */}
+      <Composition
+        id="DabberhaStory"
+        component={DabberhaStory}
+        durationInFrames={1800}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Folder name="Story-Scenes">
+        <Composition id="T1-Ticket" component={T1Ticket} durationInFrames={getStoryScene("T1-Ticket").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="T2-Road" component={T2Road} durationInFrames={getStoryScene("T2-Road").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="T3-Office" component={T3Office} durationInFrames={getStoryScene("T3-Office").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="T4-Closed" component={T4Closed} durationInFrames={getStoryScene("T4-Closed").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="T5-Rewind" component={T5Rewind} durationInFrames={getStoryScene("T5-Rewind").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="T6-Home" component={T6Home} durationInFrames={getStoryScene("T6-Home").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="T7-NumberOne" component={T7NumberOne} durationInFrames={getStoryScene("T7-NumberOne").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="T8-CTA" component={T8Cta} durationInFrames={getStoryScene("T8-CTA").durationInFrames} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );

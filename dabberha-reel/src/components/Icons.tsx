@@ -17,7 +17,10 @@ export type IconName =
   | "check"
   | "clock"
   | "bell"
-  | "link";
+  | "link"
+  | "passport"
+  | "cap"
+  | "home2";
 
 const paths: Record<IconName, React.ReactNode> = {
   id: (
@@ -104,6 +107,25 @@ const paths: Record<IconName, React.ReactNode> = {
     <>
       <path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15L6 16.5z" />
       <path d="M10 20a2 2 0 0 0 4 0" />
+    </>
+  ),
+  passport: (
+    <>
+      <rect x="5" y="3" width="14" height="18" rx="2" />
+      <circle cx="12" cy="10.5" r="3.2" />
+      <path d="M8.8 10.5h6.4M12 7.3c-1 1-1.4 2-1.4 3.2s.4 2.2 1.4 3.2M12 7.3c1 1 1.4 2 1.4 3.2s-.4 2.2-1.4 3.2M9 17h6" />
+    </>
+  ),
+  cap: (
+    <>
+      <path d="M2.5 9.5L12 5l9.5 4.5L12 14 2.5 9.5z" />
+      <path d="M6.5 11.5V16c1.5 1.3 3.4 2 5.5 2s4-.7 5.5-2v-4.5M21.5 9.5V15" />
+    </>
+  ),
+  home2: (
+    <>
+      <path d="M3.5 11L12 4l8.5 7M6 9.5V20h12V9.5" />
+      <path d="M10 20v-5h4v5" />
     </>
   ),
   link: (

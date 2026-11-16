@@ -12,31 +12,37 @@
       "id": "S1-Hook",
       "from": 0,
       "durationInFrames": 150,
+      "transitionFrames": 0,
       "voFrom": 11,
       "voDurationInFrames": 102,
       "words": [
         {
           "text": "معاملة",
+          "raw": "معاملة",
           "start": 11,
           "end": 30
         },
         {
           "text": "معلّقة",
+          "raw": "معلّقة…",
           "start": 31,
           "end": 49
         },
         {
           "text": "ووقتك",
+          "raw": "ووقتك",
           "start": 64,
           "end": 81
         },
         {
           "text": "ما",
+          "raw": "ما",
           "start": 83,
           "end": 85
         },
         {
           "text": "يسمح",
+          "raw": "يسمح؟",
           "start": 88,
           "end": 102
         }
@@ -46,36 +52,43 @@
       "id": "S2-Problem",
       "from": 150,
       "durationInFrames": 210,
+      "transitionFrames": 0,
       "voFrom": 8,
       "voDurationInFrames": 138,
       "words": [
         {
           "text": "بين",
+          "raw": "بين",
           "start": 8,
           "end": 15
         },
         {
           "text": "المنصات",
+          "raw": "المنصات،",
           "start": 18,
           "end": 42
         },
         {
           "text": "والطلبات",
+          "raw": "والطلبات،",
           "start": 46,
           "end": 70
         },
         {
           "text": "والمواعيد",
+          "raw": "والمواعيد…",
           "start": 74,
           "end": 97
         },
         {
           "text": "يضيع",
+          "raw": "يضيع",
           "start": 111,
           "end": 123
         },
         {
           "text": "يومك",
+          "raw": "يومك.",
           "start": 128,
           "end": 140
         }
@@ -85,36 +98,43 @@
       "id": "S3-Reveal",
       "from": 360,
       "durationInFrames": 180,
+      "transitionFrames": 0,
       "voFrom": 38,
       "voDurationInFrames": 131,
       "words": [
         {
           "text": "دبّرها",
+          "raw": "دبّرها.",
           "start": 38,
           "end": 57
         },
         {
           "text": "خدماتك",
+          "raw": "خدماتك",
           "start": 69,
           "end": 86
         },
         {
           "text": "الإلكترونية",
+          "raw": "الإلكترونية",
           "start": 87,
           "end": 110
         },
         {
           "text": "تخلص",
+          "raw": "تخلص،",
           "start": 118,
           "end": 127
         },
         {
           "text": "وأنت",
+          "raw": "وأنت",
           "start": 135,
           "end": 144
         },
         {
           "text": "مرتاح",
+          "raw": "مرتاح.",
           "start": 147,
           "end": 163
         }
@@ -124,81 +144,97 @@
       "id": "S4-Government",
       "from": 540,
       "durationInFrames": 360,
+      "transitionFrames": 0,
       "voFrom": 9,
       "voDurationInFrames": 280,
       "words": [
         {
           "text": "أبشر",
+          "raw": "أبشر،",
           "start": 9,
           "end": 23
         },
         {
           "text": "قوى",
+          "raw": "قوى،",
           "start": 35,
           "end": 40
         },
         {
           "text": "التأمينات",
+          "raw": "التأمينات،",
           "start": 50,
           "end": 76
         },
         {
           "text": "العدل",
+          "raw": "العدل،",
           "start": 85,
           "end": 98
         },
         {
           "text": "التجارة",
+          "raw": "التجارة،",
           "start": 105,
           "end": 122
         },
         {
           "text": "حساب",
+          "raw": "حساب",
           "start": 134,
           "end": 139
         },
         {
           "text": "المواطن",
+          "raw": "المواطن،",
           "start": 141,
           "end": 158
         },
         {
           "text": "والضمان",
+          "raw": "والضمان…",
           "start": 164,
           "end": 177
         },
         {
           "text": "نخلّصها",
+          "raw": "نخلّصها",
           "start": 191,
           "end": 206
         },
         {
           "text": "عنك",
+          "raw": "عنك،",
           "start": 211,
           "end": 219
         },
         {
           "text": "وتبدأ",
+          "raw": "وتبدأ",
           "start": 226,
           "end": 239
         },
         {
           "text": "من",
+          "raw": "من",
           "start": 243,
           "end": 247
         },
         {
           "text": "تسعة",
+          "raw": "تسعة",
           "start": 250,
           "end": 256
         },
         {
           "text": "وأربعين",
+          "raw": "وأربعين",
           "start": 259,
           "end": 271
         },
         {
           "text": "ريال",
+          "raw": "ريال.",
           "start": 273,
           "end": 283
         }
@@ -208,66 +244,79 @@
       "id": "S5-Business",
       "from": 900,
       "durationInFrames": 300,
+      "transitionFrames": 0,
       "voFrom": 9,
       "voDurationInFrames": 218,
       "words": [
         {
           "text": "وعندك",
+          "raw": "وعندك",
           "start": 9,
           "end": 21
         },
         {
           "text": "مشروع",
+          "raw": "مشروع؟",
           "start": 29,
           "end": 38
         },
         {
           "text": "وثيقة",
+          "raw": "وثيقة",
           "start": 47,
           "end": 62
         },
         {
           "text": "العمل",
+          "raw": "العمل",
           "start": 63,
           "end": 71
         },
         {
           "text": "الحر",
+          "raw": "الحر،",
           "start": 74,
           "end": 86
         },
         {
           "text": "قرض",
+          "raw": "قرض",
           "start": 95,
           "end": 103
         },
         {
           "text": "العمل",
+          "raw": "العمل",
           "start": 105,
           "end": 115
         },
         {
           "text": "الحر",
+          "raw": "الحر،",
           "start": 117,
           "end": 129
         },
         {
           "text": "ومتجرك",
+          "raw": "ومتجرك",
           "start": 137,
           "end": 153
         },
         {
           "text": "الإلكتروني",
+          "raw": "الإلكتروني",
           "start": 154,
           "end": 172
         },
         {
           "text": "المتكامل",
+          "raw": "المتكامل",
           "start": 176,
           "end": 196
         },
         {
           "text": "جاهز",
+          "raw": "جاهز.",
           "start": 203,
           "end": 220
         }
@@ -277,46 +326,55 @@
       "id": "S6-RealEstate",
       "from": 1200,
       "durationInFrames": 180,
+      "transitionFrames": 0,
       "voFrom": 8,
       "voDurationInFrames": 145,
       "words": [
         {
           "text": "عقد",
+          "raw": "عقد",
           "start": 8,
           "end": 18
         },
         {
           "text": "تأجير",
+          "raw": "تأجير،",
           "start": 20,
           "end": 37
         },
         {
           "text": "وتسجيل",
+          "raw": "وتسجيل",
           "start": 44,
           "end": 58
         },
         {
           "text": "عيني",
+          "raw": "عيني",
           "start": 61,
           "end": 70
         },
         {
           "text": "لعقارك",
+          "raw": "لعقارك…",
           "start": 73,
           "end": 92
         },
         {
           "text": "كلها",
+          "raw": "كلها",
           "start": 109,
           "end": 121
         },
         {
           "text": "من",
+          "raw": "من",
           "start": 123,
           "end": 128
         },
         {
           "text": "جوالك",
+          "raw": "جوالك.",
           "start": 132,
           "end": 147
         }
@@ -326,41 +384,49 @@
       "id": "S7-Trust",
       "from": 1380,
       "durationInFrames": 210,
+      "transitionFrames": 0,
       "voFrom": 8,
       "voDurationInFrames": 141,
       "words": [
         {
           "text": "مصداقية",
+          "raw": "مصداقية…",
           "start": 8,
           "end": 34
         },
         {
           "text": "وسرعة",
+          "raw": "وسرعة",
           "start": 44,
           "end": 58
         },
         {
           "text": "إنجاز",
+          "raw": "إنجاز.",
           "start": 61,
           "end": 78
         },
         {
           "text": "وادفع",
+          "raw": "وادفع",
           "start": 90,
           "end": 102
         },
         {
           "text": "بالطريقة",
+          "raw": "بالطريقة",
           "start": 105,
           "end": 118
         },
         {
           "text": "اللي",
+          "raw": "اللي",
           "start": 120,
           "end": 123
         },
         {
           "text": "تناسبك",
+          "raw": "تناسبك.",
           "start": 126,
           "end": 142
         }
@@ -370,26 +436,31 @@
       "id": "S8-CTA",
       "from": 1590,
       "durationInFrames": 210,
+      "transitionFrames": 0,
       "voFrom": 9,
       "voDurationInFrames": 73,
       "words": [
         {
           "text": "دبّرها",
+          "raw": "دبّرها…",
           "start": 9,
           "end": 28
         },
         {
           "text": "واطلب",
+          "raw": "واطلب",
           "start": 40,
           "end": 50
         },
         {
           "text": "خدمتك",
+          "raw": "خدمتك",
           "start": 55,
           "end": 64
         },
         {
           "text": "الحين",
+          "raw": "الحين.",
           "start": 65,
           "end": 76
         }
