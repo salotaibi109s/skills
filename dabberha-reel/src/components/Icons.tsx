@@ -23,7 +23,27 @@ export type IconName =
   | "home2"
   | "palette"
   | "megaphone"
-  | "chart";
+  | "chart"
+  | "camera"
+  | "mic"
+  | "music"
+  | "play"
+  | "sparkle"
+  | "image"
+  | "globe"
+  | "code"
+  | "cart"
+  | "user"
+  | "star"
+  | "rocket"
+  | "bulb"
+  | "layers"
+  | "cursor"
+  | "gear"
+  | "box"
+  | "heart"
+  | "wand"
+  | "ruler";
 
 const paths: Record<IconName, React.ReactNode> = {
   id: (
@@ -150,6 +170,108 @@ const paths: Record<IconName, React.ReactNode> = {
       <path d="M4 20V4M4 20h16" />
       <path d="M7 16l4-4 3 3 5-6" />
       <path d="M15.5 9H19v3.5" />
+    </>
+  ),
+  camera: (
+    <>
+      <path d="M3 8.5A2 2 0 0 1 5 6.5h2.2l1.6-2h6.4l1.6 2H19a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+      <circle cx="12" cy="13" r="3.6" />
+    </>
+  ),
+  mic: (
+    <>
+      <rect x="9" y="3" width="6" height="11" rx="3" />
+      <path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7" />
+    </>
+  ),
+  music: (
+    <>
+      <path d="M9 18V5.5l11-2V16" />
+      <circle cx="6.5" cy="18" r="2.5" />
+      <circle cx="17.5" cy="16" r="2.5" />
+    </>
+  ),
+  play: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M10 8.5l5.5 3.5-5.5 3.5z" />
+    </>
+  ),
+  sparkle: (
+    <>
+      <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z" />
+      <path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z" />
+    </>
+  ),
+  image: (
+    <>
+      <rect x="3" y="4.5" width="18" height="15" rx="2.5" />
+      <circle cx="9" cy="10" r="1.8" />
+      <path d="M21 16l-5-5-8 8.5" />
+    </>
+  ),
+  globe: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" />
+    </>
+  ),
+  code: <path d="M8.5 7.5L4 12l4.5 4.5M15.5 7.5L20 12l-4.5 4.5M13.5 5l-3 14" />,
+  cart: (
+    <>
+      <path d="M3 4h2.5l2.2 10.5h10.6L20.5 7H7" />
+      <circle cx="9.5" cy="19" r="1.5" />
+      <circle cx="17" cy="19" r="1.5" />
+    </>
+  ),
+  user: (
+    <>
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4.5 20c.8-3.8 3.8-6 7.5-6s6.7 2.2 7.5 6" />
+    </>
+  ),
+  star: <path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z" />,
+  rocket: (
+    <>
+      <path d="M12 15l-3-3c1.2-4.6 4.4-8 10-8.5-.5 5.6-3.9 8.8-8.5 10z" />
+      <path d="M9 12l-3.5.5L4 15l3 .5M12 15l-.5 3.5L9 20l-.5-3M14.5 9.5h.01" />
+    </>
+  ),
+  bulb: (
+    <>
+      <path d="M9 17h6M10 20.5h4M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1V17h6v-2c0-.4.2-.8.5-1.1A6 6 0 0 0 12 3z" />
+    </>
+  ),
+  layers: (
+    <>
+      <path d="M12 3l9 5-9 5-9-5z" />
+      <path d="M3 12.5l9 5 9-5M3 17l9 5 9-5" />
+    </>
+  ),
+  cursor: <path d="M5 3.5l13 6.5-5.6 1.6L10 17.5z M12.4 11.6l5 5" />,
+  gear: (
+    <>
+      <circle cx="12" cy="12" r="3" />
+      <path d="M12 2.5v3M12 18.5v3M21.5 12h-3M5.5 12h-3M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1M18.7 18.7l-2.1-2.1M7.4 7.4L5.3 5.3" />
+    </>
+  ),
+  box: (
+    <>
+      <path d="M3.5 7.5L12 3l8.5 4.5v9L12 21l-8.5-4.5z" />
+      <path d="M3.5 7.5L12 12l8.5-4.5M12 12v9" />
+    </>
+  ),
+  heart: <path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z" />,
+  wand: (
+    <>
+      <path d="M4 20L15 9M13 7l4 4" />
+      <path d="M17 3v3M15.5 4.5h3M20 8v2M19 9h2" />
+    </>
+  ),
+  ruler: (
+    <>
+      <rect x="2.5" y="8" width="19" height="8" rx="1.5" />
+      <path d="M6 8v3M9.5 8v4M13 8v3M16.5 8v4" />
     </>
   ),
   link: (

@@ -26,6 +26,9 @@ import { getFolderScene } from "./folder/base";
 import { DabberhaFolder } from "./folder/DabberhaFolder";
 import { F1Hook, F2Career } from "./folder/scenes1";
 import { F3Tired, F4Retire, F5Phone, F6Trust, F7Cta } from "./folder/scenes2";
+import { getStudioScene } from "./studio/base";
+import { DabberhaStudio } from "./studio/DabberhaStudio";
+import { P1Hook, P2Making, P3Yours, P4Motion, P5AI, P6Web, P7Personal, P8Process, P9Cta } from "./studio/scenes";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -147,6 +150,20 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="F5-Phone" component={F5Phone} durationInFrames={getFolderScene("F5-Phone").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="F6-Trust" component={F6Trust} durationInFrames={getFolderScene("F6-Trust").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="F7-CTA" component={F7Cta} durationInFrames={getFolderScene("F7-CTA").durationInFrames} fps={30} width={1080} height={1920} />
+      </Folder>
+
+      {/* Fifth video: «هذا الإعلان… ما فيه كاميرا» creative & tech services (60 s) */}
+      <Composition id="DabberhaStudio" component={DabberhaStudio} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Folder name="Studio-Scenes">
+        <Composition id="P1-Hook" component={P1Hook} durationInFrames={getStudioScene("P1-Hook").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="P2-Making" component={P2Making} durationInFrames={getStudioScene("P2-Making").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="P3-Yours" component={P3Yours} durationInFrames={getStudioScene("P3-Yours").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="P4-Motion" component={P4Motion} durationInFrames={getStudioScene("P4-Motion").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="P5-AI" component={P5AI} durationInFrames={getStudioScene("P5-AI").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="P6-Web" component={P6Web} durationInFrames={getStudioScene("P6-Web").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="P7-Personal" component={P7Personal} durationInFrames={getStudioScene("P7-Personal").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="P8-Process" component={P8Process} durationInFrames={getStudioScene("P8-Process").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="P9-CTA" component={P9Cta} durationInFrames={getStudioScene("P9-CTA").durationInFrames} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );

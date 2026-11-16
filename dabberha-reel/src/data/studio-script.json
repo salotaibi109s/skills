@@ -1,0 +1,90 @@
+{
+  "audioDir": "studio",
+  "totalFrames": 1800,
+  "tailSeconds": 0.4,
+  "voice": {
+    "preferredModels": ["eleven_v4", "eleven_v3", "eleven_multilingual_v2"],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.5,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": { "voice_id": "cFUFIbKkO2iZFwS8cRnY", "name": "Nasser AlJubaily - Authentic Saudi Pro" }
+  },
+  "scenes": [
+    {
+      "id": "P1-Hook",
+      "nominalSeconds": 5.5,
+      "leadSeconds": 0.5,
+      "tts": "هذا الإعلان… ما فيه كاميرا، ولا استوديو."
+    },
+    {
+      "id": "P2-Making",
+      "nominalSeconds": 10.5,
+      "leadSeconds": 0.3,
+      "tts": "صوت المعلّق، والموسيقى، وكل حركة تشوفها… صنعناها بالذكاء الاصطناعي والموشن."
+    },
+    {
+      "id": "P3-Yours",
+      "nominalSeconds": 4.5,
+      "leadSeconds": 0.3,
+      "tts": "وهذا بالضبط… اللي نسويه لمشروعك."
+    },
+    {
+      "id": "P4-Motion",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.3,
+      "tts": "فيديوهات إعلانية بالموشن… تشد من أول ثانية."
+    },
+    {
+      "id": "P5-AI",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.3,
+      "tts": "خدمات الذكاء الاصطناعي… أصوات، وصور، ومحتوى."
+    },
+    {
+      "id": "P6-Web",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.3,
+      "tts": "بناء مواقع ومتاجر… بشكل احترافي."
+    },
+    {
+      "id": "P7-Personal",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.3,
+      "tts": "وخدمات شخصية… على مقاسك."
+    },
+    {
+      "id": "P8-Process",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.3,
+      "tts": "عطنا فكرتك… ونسلّمك شغل يرفع الراس."
+    },
+    {
+      "id": "P9-CTA",
+      "nominalSeconds": 7.5,
+      "leadSeconds": 0.4,
+      "tts": "دبّرها… فكرتك علينا."
+    }
+  ],
+  "sfx": [
+    { "id": "whoosh", "seconds": 0.8, "prompt": "Clean fast cinematic whoosh transition, short swish of air, modern commercial, no reverb tail" },
+    { "id": "tick", "seconds": 0.5, "prompt": "Soft subtle UI tick, gentle minimal click for text appearing, clean, high-end commercial" },
+    { "id": "pop", "seconds": 0.5, "prompt": "Soft rounded bubble pop for an icon appearing, satisfying UI pop, clean, short" },
+    { "id": "typing", "seconds": 1.6, "prompt": "Fast typing on a quiet modern laptop keyboard, crisp key clicks, short burst" },
+    { "id": "denied", "seconds": 0.7, "prompt": "Short low digital denied buzz, clean UI error tone, modern" },
+    { "id": "render", "seconds": 2.5, "prompt": "Futuristic digital processing sound, data rendering, rising electronic shimmer with glitchy blips, sci-fi interface" },
+    { "id": "success", "seconds": 1.3, "prompt": "Bright positive success chime, two rising notes, app task completed, warm and premium" },
+    { "id": "glitch", "seconds": 0.6, "prompt": "Short digital glitch stutter, subtle electronic data corruption blip, clean" },
+    { "id": "impact", "seconds": 2.0, "prompt": "Deep cinematic logo impact hit, punchy sub boom with bright shimmer tail, premium brand reveal" }
+  ],
+  "music": [
+    {
+      "id": "tech",
+      "prompt": "Modern futuristic tech commercial music, 106 BPM, pulsing synth bass, crisp electronic drums, glassy arpeggios, confident and creative, energetic build with a strong final hit, no vocals",
+      "lengthMs": 62000
+    }
+  ]
+}
