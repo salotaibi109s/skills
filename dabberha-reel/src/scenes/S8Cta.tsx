@@ -11,7 +11,7 @@ import { colors, fonts, springs } from "../theme";
 
 const scene = getScene("S8-CTA");
 
-/** 53–60s CTA: logo, «دبّرها… واطلب خدمتك الحين.», store link, social handles. */
+/** 53–60s CTA: logo, «دبّرها… واطلب خدمتك الحين.», store link only. */
 export const S8Cta: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -21,8 +21,6 @@ export const S8Cta: React.FC = () => {
   const t3 = cue(scene, "الحين");
   const logo = spring({ frame: frame - (tName - 2), fps, config: springs.bouncy });
   const tUrl = t3 + 8;
-  const tSnap = t3 + 16;
-  const tTik = t3 + 22;
 
   return (
     <SceneShell background={<Backdrop variant="light" />} enter="whip-left" exit="cut" push={0.03}>
@@ -55,29 +53,12 @@ export const S8Cta: React.FC = () => {
             haxztd.zid.store
           </span>
         </Chip>
-
-        <div dir="rtl" style={{ display: "flex", gap: 22, marginTop: 26 }}>
-          <Chip at={tSnap} fps={fps}>
-            <span style={{ fontFamily: fonts.text, fontWeight: 600, fontSize: 34, color: colors.primary }}>سناب</span>
-            <span dir="ltr" style={{ fontFamily: fonts.text, fontWeight: 700, fontSize: 38, color: colors.textOnLight }}>
-              ai.ads1
-            </span>
-          </Chip>
-          <Chip at={tTik} fps={fps}>
-            <span style={{ fontFamily: fonts.text, fontWeight: 600, fontSize: 34, color: colors.primary }}>تيك توك</span>
-            <span dir="ltr" style={{ fontFamily: fonts.text, fontWeight: 700, fontSize: 38, color: colors.textOnLight }}>
-              E_da990
-            </span>
-          </Chip>
-        </div>
       </AbsoluteFill>
 
       <SceneVoice scene={scene} />
       <Sfx name="impact" at={tName - 2} gain={0.55} />
       <Sfx name="tick" at={t3} />
       <Sfx name="pop" at={tUrl} />
-      <Sfx name="pop" at={tSnap} gain={0.7} />
-      <Sfx name="pop" at={tTik} gain={0.7} />
     </SceneShell>
   );
 };
