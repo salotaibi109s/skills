@@ -20,8 +20,9 @@ const s6 = getScene("S6-RealEstate");
 const s7 = getScene("S7-Trust");
 const s8 = getScene("S8-CTA");
 
-// Whoosh lands on the whip-pan / zoom (7 frames each side of the cut).
-const WHOOSH_LEAD = 6;
+// The generated whoosh peaks in its first 50 ms: start it 3 frames before the cut,
+// i.e. in the middle of the 7-frame whip-pan / zoom.
+const WHOOSH_LEAD = 3;
 
 export const DabberhaReel: React.FC = () => {
   return (

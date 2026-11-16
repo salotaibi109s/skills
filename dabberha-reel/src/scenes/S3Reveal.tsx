@@ -8,7 +8,9 @@ import { cue, getScene } from "../lib/timeline";
 import { colors, springs } from "../theme";
 
 const scene = getScene("S3-Reveal");
-const RISER_FRAMES = 36; // matches the generated 1.2 s riser
+// The generated riser peaks at ~0.5 s and is silent by ~0.8 s: start it 24 frames
+// early so its climax rolls straight into the impact.
+const RISER_FRAMES = 24;
 
 /** 12–18s Reveal: riser → impact → the screen turns into the brand, logo lands, promise line. */
 export const S3Reveal: React.FC = () => {

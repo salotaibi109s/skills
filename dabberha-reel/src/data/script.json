@@ -2,13 +2,22 @@
   "voice": {
     "searchName": "Nasser",
     "searchNameAr": "ناصر",
-    "preferredModels": ["eleven_v3", "eleven_multilingual_v2"],
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_v3",
+      "eleven_multilingual_v2"
+    ],
     "settings": {
       "stability": 0.5,
       "similarity_boost": 0.8,
       "style": 0.35,
       "use_speaker_boost": true,
       "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+      "name": "George",
+      "reason": "Free plan cannot use library voices (Nasser) via the API; user picked George from three premade samples."
     }
   },
   "scenes": [
@@ -27,7 +36,7 @@
     {
       "id": "S3-Reveal",
       "nominalSeconds": 6,
-      "leadSeconds": 1.1,
+      "leadSeconds": 1.25,
       "tts": "دبّرها. خدماتك الإلكترونية تخلص، وأنت مرتاح."
     },
     {
@@ -62,12 +71,36 @@
     }
   ],
   "sfx": [
-    { "id": "whoosh", "seconds": 0.8, "prompt": "Clean fast cinematic whoosh transition, short swish of air, modern commercial, no reverb tail" },
-    { "id": "tick", "seconds": 0.5, "prompt": "Soft subtle UI tick, gentle minimal click for text appearing, clean, high-end commercial" },
-    { "id": "pop", "seconds": 0.5, "prompt": "Soft rounded bubble pop for an icon appearing, satisfying UI pop, clean, short" },
-    { "id": "riser", "seconds": 1.2, "prompt": "Short tension riser building up, airy synth swell with reversed shimmer, ends abruptly, commercial reveal" },
-    { "id": "impact", "seconds": 2.0, "prompt": "Deep cinematic logo impact hit, punchy sub boom with bright shimmer tail, premium brand reveal" },
-    { "id": "glitch", "seconds": 0.6, "prompt": "Short digital glitch stutter, subtle electronic data corruption blip, clean" }
+    {
+      "id": "whoosh",
+      "seconds": 0.8,
+      "prompt": "Clean fast cinematic whoosh transition, short swish of air, modern commercial, no reverb tail"
+    },
+    {
+      "id": "tick",
+      "seconds": 0.5,
+      "prompt": "Soft subtle UI tick, gentle minimal click for text appearing, clean, high-end commercial"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Soft rounded bubble pop for an icon appearing, satisfying UI pop, clean, short"
+    },
+    {
+      "id": "riser",
+      "seconds": 1.2,
+      "prompt": "Short tension riser building up, airy synth swell with reversed shimmer, ends abruptly, commercial reveal"
+    },
+    {
+      "id": "impact",
+      "seconds": 2.0,
+      "prompt": "Deep cinematic logo impact hit, punchy sub boom with bright shimmer tail, premium brand reveal"
+    },
+    {
+      "id": "glitch",
+      "seconds": 0.6,
+      "prompt": "Short digital glitch stutter, subtle electronic data corruption blip, clean"
+    }
   ],
   "music": {
     "prompt": "Light modern ambient corporate track at 104 BPM, warm soft synth pads, gentle plucked arpeggio, light clean percussion, optimistic and confident, minimal, premium tech commercial, no vocals",

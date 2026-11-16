@@ -179,7 +179,7 @@ async function tts(voiceId, modelId, text) {
     language_code: "ar",
     voice_settings: script.voice.settings,
   };
-  return api("POST", `/v1/text-to-speech/${voiceId}/with-timestamps?output_format=mp3_44100_192`, body);
+  return api("POST", `/v1/text-to-speech/${voiceId}/with-timestamps?output_format=mp3_44100_128`, body);
 }
 
 async function generateVoiceover() {
@@ -227,7 +227,7 @@ async function generateSfx() {
   for (const s of script.sfx) {
     const buf = await api(
       "POST",
-      "/v1/sound-generation?output_format=mp3_44100_192",
+      "/v1/sound-generation?output_format=mp3_44100_128",
       { text: s.prompt, duration_seconds: s.seconds, prompt_influence: 0.6 },
       "audio/mpeg",
     );
@@ -243,7 +243,7 @@ async function generateMusic() {
   mkdirSync(out("music"), { recursive: true });
   const buf = await api(
     "POST",
-    "/v1/music?output_format=mp3_44100_192",
+    "/v1/music?output_format=mp3_44100_128",
     { prompt: script.music.prompt, music_length_ms: script.music.lengthMs, force_instrumental: true },
     "audio/mpeg",
   );

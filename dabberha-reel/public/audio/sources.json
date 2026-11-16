@@ -1,0 +1,63 @@
+{
+  "sfx": [
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Clean fast cinematic whoosh transition, short swish of air, modern commercial, no reverb tail",
+      "seconds": 0.8
+    },
+    {
+      "id": "tick",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft subtle UI tick, gentle minimal click for text appearing, clean, high-end commercial",
+      "seconds": 0.5
+    },
+    {
+      "id": "pop",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft rounded bubble pop for an icon appearing, satisfying UI pop, clean, short",
+      "seconds": 0.5
+    },
+    {
+      "id": "riser",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Short tension riser building up, airy synth swell with reversed shimmer, ends abruptly, commercial reveal",
+      "seconds": 1.2
+    },
+    {
+      "id": "impact",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Deep cinematic logo impact hit, punchy sub boom with bright shimmer tail, premium brand reveal",
+      "seconds": 2
+    },
+    {
+      "id": "glitch",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Short digital glitch stutter, subtle electronic data corruption blip, clean",
+      "seconds": 0.6
+    }
+  ],
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+    "voice_name": "George - Warm, Captivating Storyteller",
+    "voice_source": "premade",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8,
+      "style": 0.35,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-16T18:46:06.575Z"
+  },
+  "music": {
+    "provider": "Original composition, synthesized in code (scripts/compose-music.py)",
+    "reason": "ElevenLabs Music API requires a paid plan on this account",
+    "bpm": 104,
+    "progression": "Fmaj7 - G6 - Em7 - Am7",
+    "groove_downbeat_at_seconds": 13.167,
+    "license": "Original work created for this project; no third-party samples"
+  }
+}
