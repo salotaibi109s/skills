@@ -22,6 +22,10 @@ import { T8Cta } from "./story/scenes/T8Cta";
 import { getDoorsScene } from "./doors/base";
 import { DabberhaDoors } from "./doors/DabberhaDoors";
 import { D0Welcome, D1Government, D2Business, D3Creative, D4Support, D5Outro } from "./doors/scenes";
+import { getFolderScene } from "./folder/base";
+import { DabberhaFolder } from "./folder/DabberhaFolder";
+import { F1Hook, F2Career } from "./folder/scenes1";
+import { F3Tired, F4Retire, F5Phone, F6Trust, F7Cta } from "./folder/scenes2";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -131,6 +135,18 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="D3-Creative" component={D3Creative} durationInFrames={getDoorsScene("D3-Creative").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="D4-Support" component={D4Support} durationInFrames={getDoorsScene("D4-Support").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="D5-Outro" component={D5Outro} durationInFrames={getDoorsScene("D5-Outro").durationInFrames} fps={30} width={1080} height={1920} />
+      </Folder>
+
+      {/* Fourth video: «تقاعد الملف الأخضر» cinematic mini-film (60 s) */}
+      <Composition id="DabberhaFolder" component={DabberhaFolder} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Folder name="Folder-Scenes">
+        <Composition id="F1-Hook" component={F1Hook} durationInFrames={getFolderScene("F1-Hook").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="F2-Career" component={F2Career} durationInFrames={getFolderScene("F2-Career").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="F3-Tired" component={F3Tired} durationInFrames={getFolderScene("F3-Tired").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="F4-Retire" component={F4Retire} durationInFrames={getFolderScene("F4-Retire").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="F5-Phone" component={F5Phone} durationInFrames={getFolderScene("F5-Phone").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="F6-Trust" component={F6Trust} durationInFrames={getFolderScene("F6-Trust").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="F7-CTA" component={F7Cta} durationInFrames={getFolderScene("F7-CTA").durationInFrames} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );

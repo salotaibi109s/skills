@@ -1,0 +1,85 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_name": "Nasser AlJubaily - Authentic Saudi Pro",
+    "voice_source": "my-voices",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.5,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-16T20:44:49.274Z"
+  },
+  "sfx": [
+    {
+      "id": "boom",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Deep cinematic trailer boom with sub bass rumble and long dark tail, movie opening hit",
+      "seconds": 2.5
+    },
+    {
+      "id": "slam",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Thick cardboard folder full of papers slammed down hard on a wooden desk, heavy thud with a short paper rustle",
+      "seconds": 1.2
+    },
+    {
+      "id": "stamp",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Rubber office stamp pressed hard onto paper on a wooden desk, punchy thump, single hit",
+      "seconds": 0.6
+    },
+    {
+      "id": "lamp",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Old desk lamp switch click followed by a soft electric hum as the bulb turns on",
+      "seconds": 0.8
+    },
+    {
+      "id": "papers",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Loose sheets of paper sliding out of a folder and fluttering slowly to the floor, soft and sad",
+      "seconds": 2.2
+    },
+    {
+      "id": "confetti",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Party popper bang with confetti falling and a small celebratory cheer, playful, short",
+      "seconds": 1.6
+    },
+    {
+      "id": "zoom",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Fast cinematic crash zoom swoosh with a rising airy whoosh ending in a sharp hit",
+      "seconds": 0.9
+    },
+    {
+      "id": "flare",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Anamorphic light flare sweep, shimmering airy swoosh of light passing across, premium title reveal",
+      "seconds": 1.4
+    }
+  ],
+  "music": [
+    {
+      "id": "nostalgia",
+      "provider": "ElevenLabs Music",
+      "prompt": "Cinematic nostalgic documentary underscore with a wink of humor, 90 BPM, warm strings, felt piano, soft pizzicato, a gentle melancholic dip in the second half, no vocals",
+      "length_ms": 32000,
+      "instrumental": true,
+      "generated_at": "2026-11-16T20:45:10.660Z"
+    },
+    {
+      "id": "modern",
+      "provider": "ElevenLabs Music",
+      "prompt": "Bright celebratory modern commercial music, 110 BPM, punchy claps, warm synth plucks, uplifting chords, confident brand ending with a clean final hit, no vocals",
+      "length_ms": 32000,
+      "instrumental": true,
+      "generated_at": "2026-11-16T20:45:18.419Z"
+    }
+  ]
+}
