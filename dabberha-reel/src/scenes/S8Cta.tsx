@@ -24,7 +24,7 @@ export const S8Cta: React.FC = () => {
 
   return (
     <SceneShell background={<Backdrop variant="light" />} enter="whip-left" exit="cut" push={0.03}>
-      <AbsoluteFill style={{ alignItems: "center", paddingTop: 300 }}>
+      <AbsoluteFill style={{ alignItems: "center", paddingTop: 450 }}>
         <Img
           src={staticFile("brand/logo-color.png")}
           style={{
