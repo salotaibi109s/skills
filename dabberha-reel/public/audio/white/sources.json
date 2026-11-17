@@ -1,0 +1,88 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "H48IdiQwyf50CXpP0dy0",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.03
+    },
+    "generated_at": "2026-11-17T12:55:14.534Z",
+    "voice_name": "Faisal Ali - Sharp and Confident"
+  },
+  "sfx": [
+    {
+      "id": "pings",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Rapid burst of many overlapping smartphone notification pings and buzzes, chaotic flood of sale alerts, bright and modern",
+      "seconds": 2
+    },
+    {
+      "id": "scratch",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Vinyl record scratch stop, sudden halt, comedic and punchy",
+      "seconds": 0.7
+    },
+    {
+      "id": "marker",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Thick felt marker pen fast strike-through on paper, one quick squeaky stroke",
+      "seconds": 0.6
+    },
+    {
+      "id": "sticker",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Sticker slap onto cardboard, punchy pop with light paper snap",
+      "seconds": 0.5
+    },
+    {
+      "id": "scanner",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Supermarket barcode scanner beep, single clean beep",
+      "seconds": 0.5
+    },
+    {
+      "id": "tag",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cardboard price tag swinging on a string, quick paper flick and swish",
+      "seconds": 0.8
+    },
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Fast punchy modern whoosh transition, short, no reverb tail",
+      "seconds": 0.6
+    },
+    {
+      "id": "pop",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Bright bubbly UI pop, short playful click",
+      "seconds": 0.5
+    },
+    {
+      "id": "ching",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Modern checkout success chime, bright sparkle confirmation sound, premium",
+      "seconds": 1
+    },
+    {
+      "id": "impact",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Punchy modern logo hit, tight sub boom with bright clap and shimmer",
+      "seconds": 1.5
+    }
+  ],
+  "music": [
+    {
+      "id": "beat",
+      "provider": "ElevenLabs Music",
+      "prompt": "Energetic modern Khaleeji pop trap beat for a fast retail sale advertisement, 120 BPM, punchy kicks, Arabic handclaps and tabl, catchy synth plucks with a short oud hook, confident and fun, builds steadily, tight ending hit at 45 seconds. No vocals.",
+      "length_ms": 47000,
+      "instrumental": true
+    }
+  ]
+}

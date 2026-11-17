@@ -39,6 +39,9 @@ import { G1GameOver, G2Menu, G3PowerUp, G4Level1, G5Level2, G6Level3, G7Score, G
 import { getDreamScene } from "./dream/base";
 import { DabberhaDream } from "./dream/DabberhaDream";
 import { C1Dawn, C2Dream, C3Papers, C4Friend, C5Montage, C6FirstOrder, C7Blessing, C8Brand } from "./dream/scenes";
+import { getWhiteScene } from "./white/base";
+import { DabberhaWhite } from "./white/DabberhaWhite";
+import { W1Hook, W2Time, W3Gov, W4Design, W5Tech, W6Cart, W7Cta } from "./white/scenes";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -212,6 +215,18 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="C6-FirstOrder" component={C6FirstOrder} durationInFrames={getDreamScene("C6-FirstOrder").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="C7-Blessing" component={C7Blessing} durationInFrames={getDreamScene("C7-Blessing").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="C8-Brand" component={C8Brand} durationInFrames={getDreamScene("C8-Brand").durationInFrames} fps={30} width={1080} height={1920} />
+      </Folder>
+
+      {/* Ninth video: «تخفيض على وقتك» White Friday sale-poster ad (45 s) */}
+      <Composition id="DabberhaWhite" component={DabberhaWhite} durationInFrames={1350} fps={30} width={1080} height={1920} />
+      <Folder name="White-Scenes">
+        <Composition id="W1-Hook" component={W1Hook} durationInFrames={getWhiteScene("W1-Hook").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="W2-Time" component={W2Time} durationInFrames={getWhiteScene("W2-Time").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="W3-Gov" component={W3Gov} durationInFrames={getWhiteScene("W3-Gov").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="W4-Design" component={W4Design} durationInFrames={getWhiteScene("W4-Design").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="W5-Tech" component={W5Tech} durationInFrames={getWhiteScene("W5-Tech").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="W6-Cart" component={W6Cart} durationInFrames={getWhiteScene("W6-Cart").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="W7-CTA" component={W7Cta} durationInFrames={getWhiteScene("W7-CTA").durationInFrames} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );
