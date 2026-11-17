@@ -64,8 +64,8 @@ export const WhitePost: React.FC = () => (
         على <span style={{ color: sale.red }}>وقتك!</span>
       </div>
     </div>
-    <div style={{ position: "absolute", left: 400, top: 430 }}>
-      <Tag label="معاملة إلكترونية" icon="document" oldText="يوم كامل" newText="من جوالك" scale={0.95} />
+    <div style={{ position: "absolute", left: 440, top: 545, scale: "0.78", transformOrigin: "top left" }}>
+      <Tag label="معاملة إلكترونية" icon="document" oldText="يوم كامل" newText="من جوالك" />
     </div>
     <div style={{ position: "absolute", left: 60, top: 520, display: "flex", flexDirection: "column", alignItems: "center", gap: 18 }}>
       <Logo size={240} />
@@ -75,7 +75,7 @@ export const WhitePost: React.FC = () => (
         للخدمات الإلكترونية
       </div>
     </div>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 1140, display: "flex", justifyContent: "center" }}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1210, display: "flex", justifyContent: "center" }}>
       <div dir="rtl" style={{ padding: "10px 40px 18px", background: sale.ink, color: "#fff", ...display, fontSize: 60, rotate: "-2deg" }}>
         رابط المتجر <span style={{ color: sale.yellow }}>في البايو</span>
       </div>
@@ -132,7 +132,7 @@ export const WhiteCover: React.FC = () => (
       <div style={{ ...display, fontSize: 92, background: sale.red, color: "#fff", padding: "0 40px 14px", rotate: "2deg" }}>في الجمعة البيضاء</div>
       <div style={{ position: "relative", ...display, fontSize: 130, color: sale.ink, marginTop: 30 }}>
         مو على الأسعار
-        <Strike at={0} width={260} height={70} />
+        <Strike at={0} width={430} height={70} />
       </div>
     </div>
     <div style={{ position: "absolute", left: 0, right: 0, top: 1230, display: "flex", justifyContent: "center" }}>
