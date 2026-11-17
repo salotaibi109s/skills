@@ -36,6 +36,9 @@ import { B4Tech, B5EServices, B6Unified, B7Finale } from "./brand/scenesB";
 import { getGameScene } from "./game/base";
 import { DabberhaGame } from "./game/DabberhaGame";
 import { G1GameOver, G2Menu, G3PowerUp, G4Level1, G5Level2, G6Level3, G7Score, G8Start } from "./game/scenes";
+import { getDreamScene } from "./dream/base";
+import { DabberhaDream } from "./dream/DabberhaDream";
+import { C1Dawn, C2Dream, C3Papers, C4Friend, C5Montage, C6FirstOrder, C7Blessing, C8Brand } from "./dream/scenes";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -196,6 +199,19 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="G6-Level3" component={G6Level3} durationInFrames={getGameScene("G6-Level3").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="G7-Score" component={G7Score} durationInFrames={getGameScene("G7-Score").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="G8-Start" component={G8Start} durationInFrames={getGameScene("G8-Start").durationInFrames} fps={30} width={1080} height={1920} />
+      </Folder>
+
+      {/* Eighth video: «محمصة أبو فهد» cinematic father-and-son story (60 s) */}
+      <Composition id="DabberhaDream" component={DabberhaDream} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Folder name="Dream-Scenes">
+        <Composition id="C1-Dawn" component={C1Dawn} durationInFrames={getDreamScene("C1-Dawn").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="C2-Dream" component={C2Dream} durationInFrames={getDreamScene("C2-Dream").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="C3-Papers" component={C3Papers} durationInFrames={getDreamScene("C3-Papers").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="C4-Friend" component={C4Friend} durationInFrames={getDreamScene("C4-Friend").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="C5-Montage" component={C5Montage} durationInFrames={getDreamScene("C5-Montage").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="C6-FirstOrder" component={C6FirstOrder} durationInFrames={getDreamScene("C6-FirstOrder").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="C7-Blessing" component={C7Blessing} durationInFrames={getDreamScene("C7-Blessing").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="C8-Brand" component={C8Brand} durationInFrames={getDreamScene("C8-Brand").durationInFrames} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );

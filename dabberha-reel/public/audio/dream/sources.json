@@ -1,0 +1,71 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "rpGHcNQJvO8dFNNFNj1v",
+    "voice_name": "Fahad - Saudi, Warm & Confident",
+    "voice_source": "my-voices",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8,
+      "style": 0.4,
+      "use_speaker_boost": true,
+      "speed": 0.95
+    },
+    "generated_at": "2026-11-17T08:29:23.555Z"
+  },
+  "sfx": [
+    {
+      "id": "wind",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft desert wind at dawn over sand dunes, gentle whistling breeze with fine sand hiss, calm and vast",
+      "seconds": 6
+    },
+    {
+      "id": "pour",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Arabic coffee being poured from a brass dallah into a small finjan cup, gentle liquid pour and a soft clink",
+      "seconds": 3
+    },
+    {
+      "id": "beans",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Roasted coffee beans tumbling and scattering on a wooden surface in slow motion, rich crisp rattle",
+      "seconds": 2
+    },
+    {
+      "id": "storm",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Swirling wind with many paper sheets flapping and fluttering around a room at night, rising chaotic tension",
+      "seconds": 4
+    },
+    {
+      "id": "bell",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Small brass shop door bell ringing as a door opens, warm and welcoming",
+      "seconds": 1.6
+    },
+    {
+      "id": "swell",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Warm cinematic orchestral swell rising with soft cymbal roll, emotional uplift, ends gently",
+      "seconds": 3
+    },
+    {
+      "id": "page",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Elegant paper document slide and soft official stamp press, satisfying and clean",
+      "seconds": 0.8
+    }
+  ],
+  "music": [
+    {
+      "id": "score",
+      "provider": "ElevenLabs Music",
+      "prompt": "Inspirational cinematic Arabian score, 80 BPM. Opens with a lone oud and soft desert wind pad, intimate and nostalgic; at 15 seconds a tense low string ostinato; at 24 seconds hope enters with warm piano and qanun; from 30 seconds strings and frame drum build an uplifting montage; at 44 seconds an emotional swell with full strings; gentle resolution and a warm final chord at 58 seconds. No vocals.",
+      "length_ms": 62000,
+      "instrumental": true,
+      "generated_at": "2026-11-17T08:29:49.357Z"
+    }
+  ]
+}

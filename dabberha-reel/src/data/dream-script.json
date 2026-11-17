@@ -1,0 +1,46 @@
+{
+  "audioDir": "dream",
+  "totalFrames": 1800,
+  "tailSeconds": 0.5,
+  "voice": {
+    "preferredModels": ["eleven_v4", "eleven_v3", "eleven_multilingual_v2"],
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8,
+      "style": 0.4,
+      "use_speaker_boost": true,
+      "speed": 0.95
+    },
+    "chosen": { "voice_id": "rpGHcNQJvO8dFNNFNj1v", "name": "Fahad - Saudi, Warm & Confident (son / narrator)" },
+    "father": { "voice_id": "cFUFIbKkO2iZFwS8cRnY", "name": "Nasser AlJubaily - Authentic Saudi Pro (father)" }
+  },
+  "scenes": [
+    { "id": "C1-Dawn", "nominalSeconds": 6, "leadSeconds": 0.9, "voiceId": "cFUFIbKkO2iZFwS8cRnY", "speaker": "father", "tts": "يا ولدي… الحلم اللي ما تبدأه، يكبر معك." },
+    { "id": "C2-Dream", "nominalSeconds": 7, "leadSeconds": 0.5, "speaker": "son", "tts": "من صغري وأنا أحلم بمحمصة قهوة… تحمل اسم أبوي." },
+    { "id": "C3-Papers", "nominalSeconds": 9.5, "leadSeconds": 0.5, "speaker": "son", "tts": "بس كل ما قرّبت، وقفتني الأوراق… وثايق، وشعار، ومتجر… وما أدري من وين أبدأ." },
+    { "id": "C4-Friend", "nominalSeconds": 5, "leadSeconds": 0.6, "speaker": "son", "tts": "لين دلّني صاحبي… على دبّرها." },
+    { "id": "C5-Montage", "nominalSeconds": 11.5, "leadSeconds": 0.4, "speaker": "son", "tts": "طلّعوا لي وثيقة العمل الحر… صمّموا شعار المحمصة… وبنوا متجري الإلكتروني… وأنا متفرّغ لقهوتي." },
+    { "id": "C6-FirstOrder", "nominalSeconds": 5, "leadSeconds": 0.6, "speaker": "son", "tts": "واليوم… وصلني أول طلب." },
+    { "id": "C7-Blessing", "nominalSeconds": 5, "leadSeconds": 0.5, "voiceId": "cFUFIbKkO2iZFwS8cRnY", "speaker": "father", "tts": "الله يبارك لك… يا ولدي." },
+    { "id": "C8-Brand", "nominalSeconds": 11, "leadSeconds": 0.7, "speaker": "son", "tts": "كل حلم يبدأ بخطوة… ودبّرها تمشي معك." }
+  ],
+  "sfx": [
+    { "id": "whoosh", "seconds": 0.8, "prompt": "Clean fast cinematic whoosh transition, short swish of air, modern commercial, no reverb tail" },
+    { "id": "notify", "seconds": 0.6, "prompt": "Subtle modern smartphone notification ping, soft and short, premium" },
+    { "id": "impact", "seconds": 2.0, "prompt": "Deep cinematic logo impact hit, punchy sub boom with bright shimmer tail, premium brand reveal" },
+    { "id": "wind", "seconds": 6, "prompt": "Soft desert wind at dawn over sand dunes, gentle whistling breeze with fine sand hiss, calm and vast" },
+    { "id": "pour", "seconds": 3, "prompt": "Arabic coffee being poured from a brass dallah into a small finjan cup, gentle liquid pour and a soft clink" },
+    { "id": "beans", "seconds": 2, "prompt": "Roasted coffee beans tumbling and scattering on a wooden surface in slow motion, rich crisp rattle" },
+    { "id": "storm", "seconds": 4, "prompt": "Swirling wind with many paper sheets flapping and fluttering around a room at night, rising chaotic tension" },
+    { "id": "bell", "seconds": 1.6, "prompt": "Small brass shop door bell ringing as a door opens, warm and welcoming" },
+    { "id": "swell", "seconds": 3, "prompt": "Warm cinematic orchestral swell rising with soft cymbal roll, emotional uplift, ends gently" },
+    { "id": "page", "seconds": 0.8, "prompt": "Elegant paper document slide and soft official stamp press, satisfying and clean" }
+  ],
+  "music": [
+    {
+      "id": "score",
+      "prompt": "Inspirational cinematic Arabian score, 80 BPM. Opens with a lone oud and soft desert wind pad, intimate and nostalgic; at 15 seconds a tense low string ostinato; at 24 seconds hope enters with warm piano and qanun; from 30 seconds strings and frame drum build an uplifting montage; at 44 seconds an emotional swell with full strings; gentle resolution and a warm final chord at 58 seconds. No vocals.",
+      "lengthMs": 62000
+    }
+  ]
+}

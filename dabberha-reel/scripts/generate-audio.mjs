@@ -191,13 +191,13 @@ async function generateVoiceover() {
   for (const scene of script.scenes) {
     let res;
     try {
-      res = await tts(voiceId, modelId, scene.tts);
+      res = await tts(scene.voiceId ?? voiceId, modelId, scene.tts);
     } catch (e) {
       const fallback = script.voice.preferredModels.find((m) => m !== modelId);
       if (!fallback) throw e;
       console.warn(`${modelId} failed (${e.message.slice(0, 120)}). Falling back to ${fallback}.`);
       modelId = fallback;
-      res = await tts(voiceId, modelId, scene.tts);
+      res = await tts(scene.voiceId ?? voiceId, modelId, scene.tts);
     }
     const mp3 = out("vo", `${scene.id}.mp3`);
     writeFileSync(mp3, Buffer.from(res.audio_base64, "base64"));
