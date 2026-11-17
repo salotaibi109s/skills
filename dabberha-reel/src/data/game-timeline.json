@@ -1,0 +1,408 @@
+{
+  "fps": 30,
+  "durationInFrames": 1500,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "G1-GameOver",
+      "from": 0,
+      "durationInFrames": 135,
+      "transitionFrames": 0,
+      "voFrom": 17,
+      "voDurationInFrames": 107,
+      "words": [
+        {
+          "text": "خسرت",
+          "raw": "خسرت",
+          "start": 17,
+          "end": 31
+        },
+        {
+          "text": "الجولة",
+          "raw": "الجولة…",
+          "start": 34,
+          "end": 48
+        },
+        {
+          "text": "والمعاملة",
+          "raw": "والمعاملة",
+          "start": 66,
+          "end": 87
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 94,
+          "end": 99
+        },
+        {
+          "text": "خلصت",
+          "raw": "خلصت!",
+          "start": 102,
+          "end": 118
+        }
+      ]
+    },
+    {
+      "id": "G2-Menu",
+      "from": 135,
+      "durationInFrames": 165,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 98,
+      "words": [
+        {
+          "text": "تبي",
+          "raw": "تبي",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "تعيدها",
+          "raw": "تعيدها",
+          "start": 19,
+          "end": 28
+        },
+        {
+          "text": "بنفس",
+          "raw": "بنفس",
+          "start": 31,
+          "end": 38
+        },
+        {
+          "text": "الطريقة",
+          "raw": "الطريقة؟",
+          "start": 40,
+          "end": 55
+        },
+        {
+          "text": "ولا",
+          "raw": "ولا",
+          "start": 67,
+          "end": 74
+        },
+        {
+          "text": "تلعبها",
+          "raw": "تلعبها",
+          "start": 76,
+          "end": 86
+        },
+        {
+          "text": "صح",
+          "raw": "صح؟",
+          "start": 88,
+          "end": 98
+        }
+      ]
+    },
+    {
+      "id": "G3-PowerUp",
+      "from": 300,
+      "durationInFrames": 255,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 177,
+      "words": [
+        {
+          "text": "مع",
+          "raw": "مع",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها…",
+          "start": 23,
+          "end": 38
+        },
+        {
+          "text": "تنفتح",
+          "raw": "تنفتح",
+          "start": 52,
+          "end": 62
+        },
+        {
+          "text": "لك",
+          "raw": "لك",
+          "start": 66,
+          "end": 70
+        },
+        {
+          "text": "قدرات",
+          "raw": "قدرات",
+          "start": 73,
+          "end": 84
+        },
+        {
+          "text": "جديدة",
+          "raw": "جديدة:",
+          "start": 86,
+          "end": 98
+        },
+        {
+          "text": "المصداقية",
+          "raw": "المصداقية…",
+          "start": 114,
+          "end": 137
+        },
+        {
+          "text": "وسرعة",
+          "raw": "وسرعة",
+          "start": 146,
+          "end": 161
+        },
+        {
+          "text": "الإنجاز",
+          "raw": "الإنجاز!",
+          "start": 163,
+          "end": 182
+        }
+      ]
+    },
+    {
+      "id": "G4-Level1",
+      "from": 555,
+      "durationInFrames": 195,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 131,
+      "words": [
+        {
+          "text": "المرحلة",
+          "raw": "المرحلة",
+          "start": 9,
+          "end": 28
+        },
+        {
+          "text": "الأولى",
+          "raw": "الأولى:",
+          "start": 31,
+          "end": 40
+        },
+        {
+          "text": "معاملاتك",
+          "raw": "معاملاتك",
+          "start": 58,
+          "end": 74
+        },
+        {
+          "text": "الإلكترونية",
+          "raw": "الإلكترونية…",
+          "start": 75,
+          "end": 100
+        },
+        {
+          "text": "خلصت",
+          "raw": "خلصت!",
+          "start": 117,
+          "end": 134
+        }
+      ]
+    },
+    {
+      "id": "G5-Level2",
+      "from": 750,
+      "durationInFrames": 195,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 143,
+      "words": [
+        {
+          "text": "المرحلة",
+          "raw": "المرحلة",
+          "start": 9,
+          "end": 26
+        },
+        {
+          "text": "الثانية",
+          "raw": "الثانية:",
+          "start": 27,
+          "end": 40
+        },
+        {
+          "text": "شعارات",
+          "raw": "شعارات",
+          "start": 56,
+          "end": 71
+        },
+        {
+          "text": "وتصاميم",
+          "raw": "وتصاميم",
+          "start": 74,
+          "end": 91
+        },
+        {
+          "text": "لمشروعك",
+          "raw": "لمشروعك…",
+          "start": 94,
+          "end": 115
+        },
+        {
+          "text": "جاهزة",
+          "raw": "جاهزة!",
+          "start": 129,
+          "end": 143
+        }
+      ]
+    },
+    {
+      "id": "G6-Level3",
+      "from": 945,
+      "durationInFrames": 195,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 127,
+      "words": [
+        {
+          "text": "والثالثة",
+          "raw": "والثالثة:",
+          "start": 9,
+          "end": 31
+        },
+        {
+          "text": "حلول",
+          "raw": "حلول",
+          "start": 43,
+          "end": 55
+        },
+        {
+          "text": "تقنية",
+          "raw": "تقنية",
+          "start": 57,
+          "end": 74
+        },
+        {
+          "text": "وبرمجية",
+          "raw": "وبرمجية…",
+          "start": 76,
+          "end": 100
+        },
+        {
+          "text": "تمّت",
+          "raw": "تمّت!",
+          "start": 116,
+          "end": 129
+        }
+      ]
+    },
+    {
+      "id": "G7-Score",
+      "from": 1140,
+      "durationInFrames": 165,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 73,
+      "words": [
+        {
+          "text": "النتيجة",
+          "raw": "النتيجة؟",
+          "start": 9,
+          "end": 28
+        },
+        {
+          "text": "وقتك",
+          "raw": "وقتك",
+          "start": 40,
+          "end": 55
+        },
+        {
+          "text": "رجع",
+          "raw": "رجع",
+          "start": 57,
+          "end": 67
+        },
+        {
+          "text": "لك",
+          "raw": "لك!",
+          "start": 71,
+          "end": 76
+        }
+      ]
+    },
+    {
+      "id": "G8-Start",
+      "from": 1305,
+      "durationInFrames": 195,
+      "transitionFrames": 0,
+      "voFrom": 11,
+      "voDurationInFrames": 112,
+      "words": [
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها…",
+          "start": 11,
+          "end": 30
+        },
+        {
+          "text": "العبها",
+          "raw": "العبها",
+          "start": 42,
+          "end": 54
+        },
+        {
+          "text": "صح",
+          "raw": "صح.",
+          "start": 57,
+          "end": 69
+        },
+        {
+          "text": "اطلب",
+          "raw": "اطلب",
+          "start": 78,
+          "end": 88
+        },
+        {
+          "text": "خدمتك",
+          "raw": "خدمتك",
+          "start": 93,
+          "end": 102
+        },
+        {
+          "text": "الحين",
+          "raw": "الحين!",
+          "start": 105,
+          "end": 117
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      17,
+      118
+    ],
+    [
+      144,
+      233
+    ],
+    [
+      312,
+      482
+    ],
+    [
+      564,
+      689
+    ],
+    [
+      759,
+      893
+    ],
+    [
+      954,
+      1074
+    ],
+    [
+      1149,
+      1216
+    ],
+    [
+      1316,
+      1422
+    ]
+  ]
+}

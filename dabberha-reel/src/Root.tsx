@@ -33,6 +33,9 @@ import { getBrandScene } from "./brand/kit";
 import { DabberhaBrand } from "./brand/DabberhaBrand";
 import { B1Problem, B2Discover, B3Creative } from "./brand/scenesA";
 import { B4Tech, B5EServices, B6Unified, B7Finale } from "./brand/scenesB";
+import { getGameScene } from "./game/base";
+import { DabberhaGame } from "./game/DabberhaGame";
+import { G1GameOver, G2Menu, G3PowerUp, G4Level1, G5Level2, G6Level3, G7Score, G8Start } from "./game/scenes";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -180,6 +183,19 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="B5-EServices" component={B5EServices} durationInFrames={getBrandScene("B5-EServices").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="B6-Unified" component={B6Unified} durationInFrames={getBrandScene("B6-Unified").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="B7-Finale" component={B7Finale} durationInFrames={getBrandScene("B7-Finale").durationInFrames} fps={30} width={1080} height={1920} />
+      </Folder>
+
+      {/* Seventh video: «العبها صح» original 8-bit game ad (50 s) */}
+      <Composition id="DabberhaGame" component={DabberhaGame} durationInFrames={1500} fps={30} width={1080} height={1920} />
+      <Folder name="Game-Scenes">
+        <Composition id="G1-GameOver" component={G1GameOver} durationInFrames={getGameScene("G1-GameOver").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="G2-Menu" component={G2Menu} durationInFrames={getGameScene("G2-Menu").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="G3-PowerUp" component={G3PowerUp} durationInFrames={getGameScene("G3-PowerUp").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="G4-Level1" component={G4Level1} durationInFrames={getGameScene("G4-Level1").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="G5-Level2" component={G5Level2} durationInFrames={getGameScene("G5-Level2").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="G6-Level3" component={G6Level3} durationInFrames={getGameScene("G6-Level3").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="G7-Score" component={G7Score} durationInFrames={getGameScene("G7-Score").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="G8-Start" component={G8Start} durationInFrames={getGameScene("G8-Start").durationInFrames} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );

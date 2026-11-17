@@ -1,0 +1,89 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "5HAezIQAaoSgJypcI0NP",
+    "voice_name": "Mansour - Saudi, Natural and Expressive",
+    "voice_source": "my-voices",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-17T08:04:46.293Z"
+  },
+  "music": [
+    {
+      "id": "chip",
+      "provider": "ElevenLabs Music",
+      "prompt": "Original upbeat 8-bit chiptune video game music, 140 BPM, energetic square wave lead, punchy noise drums, triangle bass, heroic and fun, level speedrun energy, ends with a victory flourish, no vocals",
+      "length_ms": 52000,
+      "instrumental": true,
+      "generated_at": "2026-11-17T08:05:00.257Z"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "blip",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Single short 8-bit menu cursor move blip, square wave, retro game UI",
+      "seconds": 0.5
+    },
+    {
+      "id": "select",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Retro 8-bit menu confirm select sound, bright two-note chiptune chime",
+      "seconds": 0.6
+    },
+    {
+      "id": "powerup",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Retro 8-bit power-up sound, fast rising arpeggio chiptune sparkle, original",
+      "seconds": 1.4
+    },
+    {
+      "id": "coin",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Retro 8-bit coin collect ding, short bright chiptune ping",
+      "seconds": 0.5
+    },
+    {
+      "id": "hit",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Retro 8-bit enemy defeated hit, crunchy short noise burst with descending blip",
+      "seconds": 0.5
+    },
+    {
+      "id": "clear",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Retro 8-bit stage clear victory fanfare, short happy chiptune jingle, original melody",
+      "seconds": 1.6
+    },
+    {
+      "id": "fill",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Retro 8-bit stat bar filling up, rapid rising square wave blips ending on a ding",
+      "seconds": 1.2
+    },
+    {
+      "id": "jump",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Retro 8-bit jump sound, quick rising square wave boing",
+      "seconds": 0.5
+    },
+    {
+      "id": "dash",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Retro 8-bit fast dash whoosh, noise sweep with rising chirp, chiptune",
+      "seconds": 0.6
+    },
+    {
+      "id": "upgrade",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Digital resolution upgrade sound, retro 8-bit blips morphing into a rich modern cinematic shimmer and soft impact",
+      "seconds": 2
+    }
+  ]
+}

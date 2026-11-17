@@ -1,0 +1,142 @@
+{
+  "audioDir": "game",
+  "totalFrames": 1500,
+  "tailSeconds": 0.4,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_v3",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "5HAezIQAaoSgJypcI0NP",
+      "name": "Mansour - Saudi, Natural and Expressive"
+    }
+  },
+  "scenes": [
+    {
+      "id": "G1-GameOver",
+      "nominalSeconds": 4.5,
+      "leadSeconds": 0.55,
+      "tts": "خسرت الجولة… والمعاملة ما خلصت!"
+    },
+    {
+      "id": "G2-Menu",
+      "nominalSeconds": 5.5,
+      "leadSeconds": 0.3,
+      "tts": "تبي تعيدها بنفس الطريقة؟ ولا تلعبها صح؟"
+    },
+    {
+      "id": "G3-PowerUp",
+      "nominalSeconds": 8.5,
+      "leadSeconds": 0.4,
+      "tts": "مع دبّرها… تنفتح لك قدرات جديدة: المصداقية… وسرعة الإنجاز!"
+    },
+    {
+      "id": "G4-Level1",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.3,
+      "tts": "المرحلة الأولى: معاملاتك الإلكترونية… خلصت!"
+    },
+    {
+      "id": "G5-Level2",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.3,
+      "tts": "المرحلة الثانية: شعارات وتصاميم لمشروعك… جاهزة!"
+    },
+    {
+      "id": "G6-Level3",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.3,
+      "tts": "والثالثة: حلول تقنية وبرمجية… تمّت!"
+    },
+    {
+      "id": "G7-Score",
+      "nominalSeconds": 5.5,
+      "leadSeconds": 0.3,
+      "tts": "النتيجة؟ وقتك رجع لك!"
+    },
+    {
+      "id": "G8-Start",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.35,
+      "tts": "دبّرها… العبها صح. اطلب خدمتك الحين!"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "gameover",
+      "seconds": 2.2,
+      "prompt": "Retro 8-bit video game over jingle, sad descending chiptune notes, square wave, short and iconic but original"
+    },
+    {
+      "id": "crash",
+      "seconds": 0.8,
+      "prompt": "Heavy 8-bit retro game impact thud with crunchy bitcrushed noise burst, screen shake hit"
+    },
+    {
+      "id": "blip",
+      "seconds": 0.5,
+      "prompt": "Single short 8-bit menu cursor move blip, square wave, retro game UI"
+    },
+    {
+      "id": "select",
+      "seconds": 0.6,
+      "prompt": "Retro 8-bit menu confirm select sound, bright two-note chiptune chime"
+    },
+    {
+      "id": "powerup",
+      "seconds": 1.4,
+      "prompt": "Retro 8-bit power-up sound, fast rising arpeggio chiptune sparkle, original"
+    },
+    {
+      "id": "coin",
+      "seconds": 0.5,
+      "prompt": "Retro 8-bit coin collect ding, short bright chiptune ping"
+    },
+    {
+      "id": "hit",
+      "seconds": 0.5,
+      "prompt": "Retro 8-bit enemy defeated hit, crunchy short noise burst with descending blip"
+    },
+    {
+      "id": "clear",
+      "seconds": 1.6,
+      "prompt": "Retro 8-bit stage clear victory fanfare, short happy chiptune jingle, original melody"
+    },
+    {
+      "id": "fill",
+      "seconds": 1.2,
+      "prompt": "Retro 8-bit stat bar filling up, rapid rising square wave blips ending on a ding"
+    },
+    {
+      "id": "jump",
+      "seconds": 0.5,
+      "prompt": "Retro 8-bit jump sound, quick rising square wave boing"
+    },
+    {
+      "id": "dash",
+      "seconds": 0.6,
+      "prompt": "Retro 8-bit fast dash whoosh, noise sweep with rising chirp, chiptune"
+    },
+    {
+      "id": "upgrade",
+      "seconds": 2.0,
+      "prompt": "Digital resolution upgrade sound, retro 8-bit blips morphing into a rich modern cinematic shimmer and soft impact"
+    }
+  ],
+  "music": [
+    {
+      "id": "chip",
+      "prompt": "Original upbeat 8-bit chiptune video game music, 140 BPM, energetic square wave lead, punchy noise drums, triangle bass, heroic and fun, level speedrun energy, ends with a victory flourish, no vocals",
+      "lengthMs": 52000
+    }
+  ]
+}
