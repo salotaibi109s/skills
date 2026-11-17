@@ -1,0 +1,115 @@
+{
+  "audioDir": "viral",
+  "totalFrames": 1000,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_v3",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.5,
+      "use_speaker_boost": true,
+      "speed": 1.12
+    },
+    "chosen": {
+      "voice_id": "RjFuvnufLX42TYe37ekK",
+      "name": "Adeeb - Clear, Confident and Natural"
+    }
+  },
+  "scenes": [
+    {
+      "id": "V1-Hook",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "tts": "لسّا تاخذ إجازة… عشان معاملة؟"
+    },
+    {
+      "id": "V2-Promise",
+      "nominalSeconds": 4.5,
+      "leadSeconds": 0.15,
+      "tts": "ثلاث أشياء تخلّصها من جوالك… والثالثة أغلب الناس ما يدرون عنها."
+    },
+    {
+      "id": "V3-One",
+      "nominalSeconds": 5.5,
+      "leadSeconds": 0.15,
+      "tts": "واحد: معاملاتك الإلكترونية… تطلبها، ودبّرها تتابعها عنك."
+    },
+    {
+      "id": "V4-Two",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.15,
+      "tts": "اثنين: شعار مشروعك… من فكرة في راسك، لتصميم جاهز."
+    },
+    {
+      "id": "V5-Three",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.15,
+      "tts": "بس الثالثة هي الأهم: خدمتك مو موجودة؟ اطلبها من «خدمات أخرى»."
+    },
+    {
+      "id": "V6-Save",
+      "nominalSeconds": 4.5,
+      "leadSeconds": 0.15,
+      "tts": "احفظ المقطع للمعاملة الجاية… وخلّ إجازتك لك."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "print",
+      "seconds": 0.8,
+      "prompt": "Queue ticket machine printing a paper number ticket, short mechanical whirr and paper tear"
+    },
+    {
+      "id": "stamp",
+      "seconds": 0.5,
+      "prompt": "Heavy rubber stamp slammed on paper, punchy thud"
+    },
+    {
+      "id": "whoosh",
+      "seconds": 0.5,
+      "prompt": "Fast clean swipe whoosh transition, short, modern"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Bright soft UI pop click, short and clean"
+    },
+    {
+      "id": "check",
+      "seconds": 0.6,
+      "prompt": "Satisfying soft success check tick sound, modern app UI"
+    },
+    {
+      "id": "type",
+      "seconds": 1.0,
+      "prompt": "Fast smartphone keyboard typing taps, light and quick"
+    },
+    {
+      "id": "ding",
+      "seconds": 0.8,
+      "prompt": "Pleasant bright notification ding, order confirmed, premium"
+    },
+    {
+      "id": "riser",
+      "seconds": 1.0,
+      "prompt": "Short tense riser swoosh building suspense then stops abruptly"
+    },
+    {
+      "id": "pen",
+      "seconds": 0.8,
+      "prompt": "Quick pen sketching scribble on paper, light and fast"
+    }
+  ],
+  "music": [
+    {
+      "id": "bed",
+      "prompt": "Upbeat modern minimal Khaleeji pop beat for a TikTok explainer, 118 BPM, crisp claps, light percussion, playful plucked synth and short oud riff, confident and friendly, loopable, clean ending at 31 seconds. No vocals.",
+      "lengthMs": 32000
+    }
+  ]
+}

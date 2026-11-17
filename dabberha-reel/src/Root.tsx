@@ -45,6 +45,9 @@ import { W1Hook, W2Time, W3Gov, W4Design, W5Tech, W6Cart, W7Cta } from "./white/
 import { WhiteCover, WhitePost, WhiteStory } from "./white/posters";
 import { Slide1, Slide2, Slide3, Slide4, Slide5 } from "./carousel/slides";
 import { V2Slide1, V2Slide2, V2Slide3, V2Slide4, V2Slide5 } from "./carousel/v2";
+import { getViralScene } from "./viral/base";
+import { DabberhaViral } from "./viral/DabberhaViral";
+import { V1Hook, V2Promise, V3One, V4Two, V5Three, V6Save } from "./viral/scenes";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -249,6 +252,17 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="V2Slide3" component={V2Slide3} durationInFrames={1} fps={30} width={1080} height={1920} />
         <Composition id="V2Slide4" component={V2Slide4} durationInFrames={1} fps={30} width={1080} height={1920} />
         <Composition id="V2Slide5" component={V2Slide5} durationInFrames={1} fps={30} width={1080} height={1920} />
+      </Folder>
+
+      {/* Tenth video: «٣ أشياء من جوالك» built with the Vyral short-form skills (33 s) */}
+      <Composition id="DabberhaViral" component={DabberhaViral} durationInFrames={1000} fps={30} width={1080} height={1920} />
+      <Folder name="Viral-Scenes">
+        <Composition id="V1-Hook" component={V1Hook} durationInFrames={getViralScene("V1-Hook").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="V2-Promise" component={V2Promise} durationInFrames={getViralScene("V2-Promise").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="V3-One" component={V3One} durationInFrames={getViralScene("V3-One").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="V4-Two" component={V4Two} durationInFrames={getViralScene("V4-Two").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="V5-Three" component={V5Three} durationInFrames={getViralScene("V5-Three").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="V6-Save" component={V6Save} durationInFrames={getViralScene("V6-Save").durationInFrames} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );

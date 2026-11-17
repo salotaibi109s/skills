@@ -1,0 +1,82 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "RjFuvnufLX42TYe37ekK",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.5,
+      "use_speaker_boost": true,
+      "speed": 1.12
+    },
+    "generated_at": "2026-11-17T22:01:41.246Z",
+    "voice_name": "Adeeb - Clear, Confident and Natural"
+  },
+  "sfx": [
+    {
+      "id": "print",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Queue ticket machine printing a paper number ticket, short mechanical whirr and paper tear",
+      "seconds": 0.8
+    },
+    {
+      "id": "stamp",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Heavy rubber stamp slammed on paper, punchy thud",
+      "seconds": 0.5
+    },
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Fast clean swipe whoosh transition, short, modern",
+      "seconds": 0.5
+    },
+    {
+      "id": "pop",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Bright soft UI pop click, short and clean",
+      "seconds": 0.5
+    },
+    {
+      "id": "check",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Satisfying soft success check tick sound, modern app UI",
+      "seconds": 0.6
+    },
+    {
+      "id": "type",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Fast smartphone keyboard typing taps, light and quick",
+      "seconds": 1
+    },
+    {
+      "id": "ding",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Pleasant bright notification ding, order confirmed, premium",
+      "seconds": 0.8
+    },
+    {
+      "id": "riser",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Short tense riser swoosh building suspense then stops abruptly",
+      "seconds": 1
+    },
+    {
+      "id": "pen",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Quick pen sketching scribble on paper, light and fast",
+      "seconds": 0.8
+    }
+  ],
+  "music": [
+    {
+      "id": "bed",
+      "provider": "ElevenLabs Music",
+      "prompt": "Upbeat modern minimal Khaleeji pop beat for a TikTok explainer, 118 BPM, crisp claps, light percussion, playful plucked synth and short oud riff, confident and friendly, loopable, clean ending at 31 seconds. No vocals.",
+      "length_ms": 32000,
+      "instrumental": true
+    }
+  ]
+}
