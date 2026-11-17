@@ -1,0 +1,552 @@
+{
+  "fps": 30,
+  "durationInFrames": 1410,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "M1-Hook",
+      "from": 0,
+      "durationInFrames": 154,
+      "transitionFrames": 0,
+      "voFrom": 6,
+      "voDurationInFrames": 136,
+      "words": [
+        {
+          "text": "هذا",
+          "raw": "هذا",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "إعلان",
+          "raw": "إعلان",
+          "start": 22,
+          "end": 28
+        },
+        {
+          "text": "مقهى",
+          "raw": "مقهى…",
+          "start": 32,
+          "end": 44
+        },
+        {
+          "text": "نزل",
+          "raw": "نزل",
+          "start": 59,
+          "end": 68
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 71,
+          "end": 73
+        },
+        {
+          "text": "شهر",
+          "raw": "شهر،",
+          "start": 80,
+          "end": 88
+        },
+        {
+          "text": "وجاب",
+          "raw": "وجاب",
+          "start": 98,
+          "end": 109
+        },
+        {
+          "text": "ثلاث",
+          "raw": "ثلاث",
+          "start": 114,
+          "end": 119
+        },
+        {
+          "text": "لايكات",
+          "raw": "لايكات.",
+          "start": 121,
+          "end": 136
+        }
+      ]
+    },
+    {
+      "id": "M2-Twist",
+      "from": 154,
+      "durationInFrames": 118,
+      "transitionFrames": 0,
+      "voFrom": 15,
+      "voDurationInFrames": 91,
+      "words": [
+        {
+          "text": "نفس",
+          "raw": "نفس",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "الكوب",
+          "raw": "الكوب…",
+          "start": 27,
+          "end": 41
+        },
+        {
+          "text": "بس",
+          "raw": "بس",
+          "start": 57,
+          "end": 63
+        },
+        {
+          "text": "خلّيناه",
+          "raw": "خلّيناه",
+          "start": 65,
+          "end": 77
+        },
+        {
+          "text": "يتحرّك",
+          "raw": "يتحرّك.",
+          "start": 80,
+          "end": 99
+        }
+      ]
+    },
+    {
+      "id": "M3-Cafe",
+      "from": 272,
+      "durationInFrames": 187,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 155,
+      "words": [
+        {
+          "text": "البخار",
+          "raw": "البخار",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "يكتب",
+          "raw": "يكتب،",
+          "start": 29,
+          "end": 48
+        },
+        {
+          "text": "والحبوب",
+          "raw": "والحبوب",
+          "start": 59,
+          "end": 74
+        },
+        {
+          "text": "تدور",
+          "raw": "تدور…",
+          "start": 77,
+          "end": 91
+        },
+        {
+          "text": "والفكرة",
+          "raw": "والفكرة",
+          "start": 104,
+          "end": 120
+        },
+        {
+          "text": "توصل",
+          "raw": "توصل",
+          "start": 125,
+          "end": 137
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 139,
+          "end": 142
+        },
+        {
+          "text": "ثانيتين",
+          "raw": "ثانيتين.",
+          "start": 143,
+          "end": 158
+        }
+      ]
+    },
+    {
+      "id": "M4-Explain",
+      "from": 459,
+      "durationInFrames": 253,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 235,
+      "words": [
+        {
+          "text": "هذا",
+          "raw": "هذا",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "هو",
+          "raw": "هو",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "text": "الموشن",
+          "raw": "الموشن",
+          "start": 31,
+          "end": 40
+        },
+        {
+          "text": "جرافيك",
+          "raw": "جرافيك:",
+          "start": 43,
+          "end": 57
+        },
+        {
+          "text": "رسوم",
+          "raw": "رسوم",
+          "start": 73,
+          "end": 83
+        },
+        {
+          "text": "وكلمات",
+          "raw": "وكلمات",
+          "start": 88,
+          "end": 107
+        },
+        {
+          "text": "تتحرك",
+          "raw": "تتحرك…",
+          "start": 109,
+          "end": 127
+        },
+        {
+          "text": "توقف",
+          "raw": "توقف",
+          "start": 146,
+          "end": 153
+        },
+        {
+          "text": "الإصبع",
+          "raw": "الإصبع",
+          "start": 154,
+          "end": 165
+        },
+        {
+          "text": "عن",
+          "raw": "عن",
+          "start": 167,
+          "end": 170
+        },
+        {
+          "text": "السكرول",
+          "raw": "السكرول،",
+          "start": 172,
+          "end": 189
+        },
+        {
+          "text": "وتعلق",
+          "raw": "وتعلق",
+          "start": 199,
+          "end": 215
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 218,
+          "end": 219
+        },
+        {
+          "text": "الذاكرة",
+          "raw": "الذاكرة.",
+          "start": 219,
+          "end": 235
+        }
+      ]
+    },
+    {
+      "id": "M5-Brand",
+      "from": 712,
+      "durationInFrames": 186,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 163,
+      "words": [
+        {
+          "text": "وللبراند",
+          "raw": "وللبراند…",
+          "start": 9,
+          "end": 33
+        },
+        {
+          "text": "شعارك",
+          "raw": "شعارك",
+          "start": 52,
+          "end": 64
+        },
+        {
+          "text": "يدخل",
+          "raw": "يدخل",
+          "start": 67,
+          "end": 76
+        },
+        {
+          "text": "بشخصيته",
+          "raw": "بشخصيته،",
+          "start": 79,
+          "end": 100
+        },
+        {
+          "text": "وألوانك",
+          "raw": "وألوانك",
+          "start": 112,
+          "end": 134
+        },
+        {
+          "text": "تحكي",
+          "raw": "تحكي",
+          "start": 139,
+          "end": 148
+        },
+        {
+          "text": "عنك",
+          "raw": "عنك.",
+          "start": 151,
+          "end": 165
+        }
+      ]
+    },
+    {
+      "id": "M6-Store",
+      "from": 898,
+      "durationInFrames": 177,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 150,
+      "words": [
+        {
+          "text": "وللمتجر",
+          "raw": "وللمتجر…",
+          "start": 9,
+          "end": 33
+        },
+        {
+          "text": "منتجك",
+          "raw": "منتجك",
+          "start": 43,
+          "end": 59
+        },
+        {
+          "text": "ينفتح",
+          "raw": "ينفتح",
+          "start": 63,
+          "end": 76
+        },
+        {
+          "text": "قدّام",
+          "raw": "قدّام",
+          "start": 80,
+          "end": 88
+        },
+        {
+          "text": "عميلك",
+          "raw": "عميلك،",
+          "start": 91,
+          "end": 105
+        },
+        {
+          "text": "قبل",
+          "raw": "قبل",
+          "start": 115,
+          "end": 124
+        },
+        {
+          "text": "لا",
+          "raw": "لا",
+          "start": 127,
+          "end": 129
+        },
+        {
+          "text": "يضغط",
+          "raw": "يضغط",
+          "start": 131,
+          "end": 139
+        },
+        {
+          "text": "شراء",
+          "raw": "شراء.",
+          "start": 141,
+          "end": 151
+        }
+      ]
+    },
+    {
+      "id": "M7-Reveal",
+      "from": 1075,
+      "durationInFrames": 132,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 109,
+      "words": [
+        {
+          "text": "وكل",
+          "raw": "وكل",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "اللي",
+          "raw": "اللي",
+          "start": 20,
+          "end": 26
+        },
+        {
+          "text": "شفته",
+          "raw": "شفته",
+          "start": 29,
+          "end": 35
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 38,
+          "end": 40
+        },
+        {
+          "text": "أول",
+          "raw": "أول",
+          "start": 43,
+          "end": 50
+        },
+        {
+          "text": "المقطع",
+          "raw": "المقطع…",
+          "start": 53,
+          "end": 69
+        },
+        {
+          "text": "موشن",
+          "raw": "موشن",
+          "start": 86,
+          "end": 95
+        },
+        {
+          "text": "جرافيك",
+          "raw": "جرافيك.",
+          "start": 98,
+          "end": 112
+        }
+      ]
+    },
+    {
+      "id": "M8-CTA",
+      "from": 1207,
+      "durationInFrames": 203,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 172,
+      "words": [
+        {
+          "text": "والحلو",
+          "raw": "والحلو؟",
+          "start": 12,
+          "end": 29
+        },
+        {
+          "text": "تلقاه",
+          "raw": "تلقاه",
+          "start": 38,
+          "end": 48
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 49,
+          "end": 50
+        },
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها،",
+          "start": 53,
+          "end": 67
+        },
+        {
+          "text": "ضمن",
+          "raw": "ضمن",
+          "start": 78,
+          "end": 84
+        },
+        {
+          "text": "الخدمات",
+          "raw": "الخدمات",
+          "start": 85,
+          "end": 98
+        },
+        {
+          "text": "الإبداعية",
+          "raw": "الإبداعية…",
+          "start": 100,
+          "end": 118
+        },
+        {
+          "text": "ورابط",
+          "raw": "ورابط",
+          "start": 132,
+          "end": 142
+        },
+        {
+          "text": "المتجر",
+          "raw": "المتجر",
+          "start": 145,
+          "end": 158
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 160,
+          "end": 161
+        },
+        {
+          "text": "البايو",
+          "raw": "البايو.",
+          "start": 163,
+          "end": 175
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      6,
+      136
+    ],
+    [
+      169,
+      253
+    ],
+    [
+      284,
+      430
+    ],
+    [
+      468,
+      694
+    ],
+    [
+      721,
+      877
+    ],
+    [
+      907,
+      1049
+    ],
+    [
+      1084,
+      1187
+    ],
+    [
+      1219,
+      1382
+    ]
+  ]
+}

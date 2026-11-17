@@ -48,6 +48,9 @@ import { V2Slide1, V2Slide2, V2Slide3, V2Slide4, V2Slide5 } from "./carousel/v2"
 import { getViralScene } from "./viral/base";
 import { DabberhaViral } from "./viral/DabberhaViral";
 import { V1Hook, V2Promise, V3One, V4Two, V5Three, V6Save } from "./viral/scenes";
+import { getMotionScene } from "./motion/base";
+import { DabberhaMotion } from "./motion/DabberhaMotion";
+import { M1Hook, M2Twist, M3Cafe, M4Explain, M5Brand, M6Store, M7Reveal, M8CTA } from "./motion/scenes";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -263,6 +266,19 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="V4-Two" component={V4Two} durationInFrames={getViralScene("V4-Two").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="V5-Three" component={V5Three} durationInFrames={getViralScene("V5-Three").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="V6-Save" component={V6Save} durationInFrames={getViralScene("V6-Save").durationInFrames} fps={30} width={1080} height={1920} />
+      </Folder>
+
+      {/* Eleventh video: «نفس الكوب» motion graphics for cafés, brands and stores (47 s) */}
+      <Composition id="DabberhaMotion" component={DabberhaMotion} durationInFrames={1410} fps={30} width={1080} height={1920} />
+      <Folder name="Motion-Scenes">
+        <Composition id="M1-Hook" component={M1Hook} durationInFrames={getMotionScene("M1-Hook").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="M2-Twist" component={M2Twist} durationInFrames={getMotionScene("M2-Twist").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="M3-Cafe" component={M3Cafe} durationInFrames={getMotionScene("M3-Cafe").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="M4-Explain" component={M4Explain} durationInFrames={getMotionScene("M4-Explain").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="M5-Brand" component={M5Brand} durationInFrames={getMotionScene("M5-Brand").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="M6-Store" component={M6Store} durationInFrames={getMotionScene("M6-Store").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="M7-Reveal" component={M7Reveal} durationInFrames={getMotionScene("M7-Reveal").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="M8-CTA" component={M8CTA} durationInFrames={getMotionScene("M8-CTA").durationInFrames} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );
