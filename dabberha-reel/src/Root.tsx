@@ -29,6 +29,10 @@ import { F3Tired, F4Retire, F5Phone, F6Trust, F7Cta } from "./folder/scenes2";
 import { getStudioScene } from "./studio/base";
 import { DabberhaStudio } from "./studio/DabberhaStudio";
 import { P1Hook, P2Making, P3Yours, P4Motion, P5AI, P6Web, P7Personal, P8Process, P9Cta } from "./studio/scenes";
+import { getBrandScene } from "./brand/kit";
+import { DabberhaBrand } from "./brand/DabberhaBrand";
+import { B1Problem, B2Discover, B3Creative } from "./brand/scenesA";
+import { B4Tech, B5EServices, B6Unified, B7Finale } from "./brand/scenesB";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -164,6 +168,18 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="P7-Personal" component={P7Personal} durationInFrames={getStudioScene("P7-Personal").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="P8-Process" component={P8Process} durationInFrames={getStudioScene("P8-Process").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="P9-CTA" component={P9Cta} durationInFrames={getStudioScene("P9-CTA").durationInFrames} fps={30} width={1080} height={1920} />
+      </Folder>
+
+      {/* Sixth video: premium brand film «كل ما تحتاجه رقمياً… دبّرها!» (60 s) */}
+      <Composition id="DabberhaBrand" component={DabberhaBrand} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Folder name="Brand-Scenes">
+        <Composition id="B1-Problem" component={B1Problem} durationInFrames={getBrandScene("B1-Problem").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="B2-Discover" component={B2Discover} durationInFrames={getBrandScene("B2-Discover").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="B3-Creative" component={B3Creative} durationInFrames={getBrandScene("B3-Creative").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="B4-Tech" component={B4Tech} durationInFrames={getBrandScene("B4-Tech").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="B5-EServices" component={B5EServices} durationInFrames={getBrandScene("B5-EServices").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="B6-Unified" component={B6Unified} durationInFrames={getBrandScene("B6-Unified").durationInFrames} fps={30} width={1080} height={1920} />
+        <Composition id="B7-Finale" component={B7Finale} durationInFrames={getBrandScene("B7-Finale").durationInFrames} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );

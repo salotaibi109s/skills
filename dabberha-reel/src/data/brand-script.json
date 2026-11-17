@@ -1,0 +1,80 @@
+{
+  "audioDir": "brand",
+  "totalFrames": 1800,
+  "tailSeconds": 0.45,
+  "voice": {
+    "preferredModels": ["eleven_v4", "eleven_v3", "eleven_multilingual_v2"],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": { "voice_id": "cFUFIbKkO2iZFwS8cRnY", "name": "Nasser AlJubaily - Authentic Saudi Pro" }
+  },
+  "scenes": [
+    {
+      "id": "B1-Problem",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.35,
+      "tts": "عندك فكرة تبغى تصممها؟ أو خدمة تقنية تحتاجها؟ أو معاملة إلكترونية تبغى تنجزها؟"
+    },
+    {
+      "id": "B2-Discover",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.5,
+      "tts": "بدل ما تتشتت بين الخيارات… عندك دبّرها!"
+    },
+    {
+      "id": "B3-Creative",
+      "nominalSeconds": 11,
+      "leadSeconds": 0.45,
+      "tts": "أفكارك تستاهل تظهر بأفضل صورة… شعارات، تصاميم، ومحتوى إبداعي يعبّر عنك."
+    },
+    {
+      "id": "B4-Tech",
+      "nominalSeconds": 11,
+      "leadSeconds": 0.45,
+      "tts": "واحتياجاتك التقنية والبرمجية… تلقى لها حلولاً تناسب تطلعاتك."
+    },
+    {
+      "id": "B5-EServices",
+      "nominalSeconds": 11,
+      "leadSeconds": 0.45,
+      "tts": "ولخدمات المنصات الحكومية والمعاملات الإلكترونية… دبّرها تساعدك توصل لاحتياجك."
+    },
+    {
+      "id": "B6-Unified",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.4,
+      "tts": "إبداع، تقنية، وخدمات إلكترونية… كلها في وجهة واحدة."
+    },
+    {
+      "id": "B7-Finale",
+      "nominalSeconds": 5.5,
+      "leadSeconds": 0.35,
+      "tts": "لا تعقّدها… لا تشيل همّ… دبّرها!"
+    }
+  ],
+  "sfx": [
+    { "id": "whoosh", "seconds": 0.8, "prompt": "Clean fast cinematic whoosh transition, short swish of air, modern commercial, no reverb tail" },
+    { "id": "tick", "seconds": 0.5, "prompt": "Soft subtle UI tick, gentle minimal click for text appearing, clean, high-end commercial" },
+    { "id": "pop", "seconds": 0.5, "prompt": "Soft rounded bubble pop for an icon appearing, satisfying UI pop, clean, short" },
+    { "id": "impact", "seconds": 2.0, "prompt": "Deep cinematic logo impact hit, punchy sub boom with bright shimmer tail, premium brand reveal" },
+    { "id": "riser", "seconds": 1.2, "prompt": "Short tension riser building up, airy synth swell with reversed shimmer, ends abruptly, commercial reveal" },
+    { "id": "pulse", "seconds": 2.0, "prompt": "Low cinematic digital pulse, deep heartbeat-like sub thump with a soft electronic ring, tense, premium tech commercial" },
+    { "id": "notify", "seconds": 0.6, "prompt": "Subtle modern smartphone notification ping, soft and short, premium" },
+    { "id": "particles", "seconds": 1.8, "prompt": "Elegant shimmering particle swirl converging, glittering digital dust sweeping into a point, airy and premium" },
+    { "id": "portal", "seconds": 2.0, "prompt": "Powerful elegant digital portal opening, deep energy swell with crystalline shimmer and a soft burst, cinematic technology" },
+    { "id": "ui", "seconds": 0.6, "prompt": "Clean futuristic holographic interface blip, short glassy UI interaction sound, high-end" },
+    { "id": "mech", "seconds": 1.0, "prompt": "Subtle precise mechanical transition, smooth sci-fi servo slide with a soft lock click, premium" }
+  ],
+  "music": [
+    {
+      "id": "score",
+      "prompt": "Premium cinematic electronic advertising soundtrack, 100 BPM. Opens with subtle suspense, low bass and atmospheric electronic pulses; at 8 seconds a bright opening swell; gradually builds energy with rhythmic modern technology-inspired synths and crisp percussion through the middle; drops to a breath around 54 seconds, then one powerful final cinematic impact and a short shimmering tail. No vocals.",
+      "lengthMs": 62000
+    }
+  ]
+}

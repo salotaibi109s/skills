@@ -1,0 +1,59 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_name": "Nasser AlJubaily - Authentic Saudi Pro",
+    "voice_source": "my-voices",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-17T07:31:57.415Z"
+  },
+  "sfx": [
+    {
+      "id": "pulse",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Low cinematic digital pulse, deep heartbeat-like sub thump with a soft electronic ring, tense, premium tech commercial",
+      "seconds": 2
+    },
+    {
+      "id": "particles",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Elegant shimmering particle swirl converging, glittering digital dust sweeping into a point, airy and premium",
+      "seconds": 1.8
+    },
+    {
+      "id": "portal",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Powerful elegant digital portal opening, deep energy swell with crystalline shimmer and a soft burst, cinematic technology",
+      "seconds": 2
+    },
+    {
+      "id": "ui",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Clean futuristic holographic interface blip, short glassy UI interaction sound, high-end",
+      "seconds": 0.6
+    },
+    {
+      "id": "mech",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Subtle precise mechanical transition, smooth sci-fi servo slide with a soft lock click, premium",
+      "seconds": 1
+    }
+  ],
+  "music": [
+    {
+      "id": "score",
+      "provider": "ElevenLabs Music",
+      "prompt": "Premium cinematic electronic advertising soundtrack, 100 BPM. Opens with subtle suspense, low bass and atmospheric electronic pulses; at 8 seconds a bright opening swell; gradually builds energy with rhythmic modern technology-inspired synths and crisp percussion through the middle; drops to a breath around 54 seconds, then one powerful final cinematic impact and a short shimmering tail. No vocals.",
+      "length_ms": 62000,
+      "instrumental": true,
+      "generated_at": "2026-11-17T07:32:18.257Z"
+    }
+  ]
+}
