@@ -42,6 +42,8 @@ import { C1Dawn, C2Dream, C3Papers, C4Friend, C5Montage, C6FirstOrder, C7Blessin
 import { getWhiteScene } from "./white/base";
 import { DabberhaWhite } from "./white/DabberhaWhite";
 import { W1Hook, W2Time, W3Gov, W4Design, W5Tech, W6Cart, W7Cta } from "./white/scenes";
+import { WhiteCover, WhitePost, WhiteStory } from "./white/posters";
+import { Slide1, Slide2, Slide3, Slide4, Slide5 } from "./carousel/slides";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -227,6 +229,18 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="W5-Tech" component={W5Tech} durationInFrames={getWhiteScene("W5-Tech").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="W6-Cart" component={W6Cart} durationInFrames={getWhiteScene("W6-Cart").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="W7-CTA" component={W7Cta} durationInFrames={getWhiteScene("W7-CTA").durationInFrames} fps={30} width={1080} height={1920} />
+      </Folder>
+      <Folder name="White-Posters">
+        <Composition id="WhitePost" component={WhitePost} durationInFrames={90} fps={30} width={1080} height={1350} />
+        <Composition id="WhiteStory" component={WhiteStory} durationInFrames={90} fps={30} width={1080} height={1920} />
+        <Composition id="WhiteCover" component={WhiteCover} durationInFrames={90} fps={30} width={1080} height={1920} />
+      </Folder>
+      <Folder name="TikTok-Carousel">
+        <Composition id="Slide1" component={Slide1} durationInFrames={1} fps={30} width={1080} height={1920} />
+        <Composition id="Slide2" component={Slide2} durationInFrames={1} fps={30} width={1080} height={1920} />
+        <Composition id="Slide3" component={Slide3} durationInFrames={1} fps={30} width={1080} height={1920} />
+        <Composition id="Slide4" component={Slide4} durationInFrames={1} fps={30} width={1080} height={1920} />
+        <Composition id="Slide5" component={Slide5} durationInFrames={1} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );
