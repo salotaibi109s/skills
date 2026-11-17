@@ -1,0 +1,22 @@
+{
+  "audioDir": "real",
+  "voice": { "preferredModels": ["eleven_v4"], "settings": {} },
+  "scenes": [],
+  "sfx": [
+    { "id": "typing", "seconds": 1.5, "prompt": "Quiet mechanical keyboard typing in a dark room at night, a few soft clicks" },
+    { "id": "whoosh", "seconds": 0.8, "prompt": "Deep cinematic whoosh transition, airy and smooth, short" },
+    { "id": "wind", "seconds": 6, "prompt": "Desert wind with fine sand, open landscape, cinematic ambience" },
+    { "id": "car", "seconds": 3, "prompt": "SUV driving fast past on a desert road, engine roar passing by, tires on asphalt" },
+    { "id": "roaster", "seconds": 3, "prompt": "Coffee roaster drum rotating with beans rattling inside, warm mechanical hum" },
+    { "id": "beans", "seconds": 2, "prompt": "Roasted coffee beans pouring and cascading, crisp close-up ASMR rattle" },
+    { "id": "espresso", "seconds": 2.5, "prompt": "Espresso machine extraction, pump hum and coffee dripping into a cup" },
+    { "id": "pour", "seconds": 2.5, "prompt": "Hot coffee being poured slowly into a ceramic cup, close-up liquid sound" },
+    { "id": "sip", "seconds": 1.2, "prompt": "Single quiet satisfied sip of hot coffee, then a soft exhale" },
+    { "id": "ice", "seconds": 1.5, "prompt": "Ice cubes clinking in a glass while stirring iced coffee with a straw" },
+    { "id": "hit", "seconds": 2.0, "prompt": "Deep cinematic bass hit boom with long tail, trailer impact, premium" },
+    { "id": "shimmer", "seconds": 1.5, "prompt": "Soft elegant shimmer sparkle reveal, luxury brand logo" }
+  ],
+  "music": [
+    { "id": "score", "prompt": "Cinematic modern Arabian ambient score for a premium coffee commercial, 90 BPM. Starts minimal and mysterious with a warm pad and soft pulse for 5 seconds, then a confident drum groove with deep bass, subtle oud melody and atmospheric textures as the journey begins, a calmer intimate breakdown around 17 seconds for close-up coffee craft, builds again at 27 seconds, big final hit at 32 seconds then a soft warm outro until 41 seconds. No vocals.", "lengthMs": 42000 }
+  ]
+}

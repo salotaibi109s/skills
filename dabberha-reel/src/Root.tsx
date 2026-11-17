@@ -51,6 +51,7 @@ import { V1Hook, V2Promise, V3One, V4Two, V5Three, V6Save } from "./viral/scenes
 import { getMotionScene } from "./motion/base";
 import { DabberhaMotion } from "./motion/DabberhaMotion";
 import { M1Hook, M2Twist, M3Cafe, M4Explain, M5Brand, M6Store, M7Reveal, M8CTA } from "./motion/scenes";
+import { RealAd, REAL_FRAMES } from "./real/RealAd";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -280,6 +281,9 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="M7-Reveal" component={M7Reveal} durationInFrames={getMotionScene("M7-Reveal").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="M8-CTA" component={M8CTA} durationInFrames={getMotionScene("M8-CTA").durationInFrames} fps={30} width={1080} height={1920} />
       </Folder>
+
+      {/* Twelfth video: «العميل: نحتاج فيديو واقعي» realistic café ad from real footage */}
+      <Composition id="DabberhaReal" component={RealAd} durationInFrames={REAL_FRAMES} fps={30} width={1080} height={1920} />
     </>
   );
 };

@@ -1,0 +1,86 @@
+{
+  "sfx": [
+    {
+      "id": "typing",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Quiet mechanical keyboard typing in a dark room at night, a few soft clicks",
+      "seconds": 1.5
+    },
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Deep cinematic whoosh transition, airy and smooth, short",
+      "seconds": 0.8
+    },
+    {
+      "id": "wind",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Desert wind with fine sand, open landscape, cinematic ambience",
+      "seconds": 6
+    },
+    {
+      "id": "car",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "SUV driving fast past on a desert road, engine roar passing by, tires on asphalt",
+      "seconds": 3
+    },
+    {
+      "id": "roaster",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Coffee roaster drum rotating with beans rattling inside, warm mechanical hum",
+      "seconds": 3
+    },
+    {
+      "id": "beans",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Roasted coffee beans pouring and cascading, crisp close-up ASMR rattle",
+      "seconds": 2
+    },
+    {
+      "id": "espresso",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Espresso machine extraction, pump hum and coffee dripping into a cup",
+      "seconds": 2.5
+    },
+    {
+      "id": "pour",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Hot coffee being poured slowly into a ceramic cup, close-up liquid sound",
+      "seconds": 2.5
+    },
+    {
+      "id": "sip",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Single quiet satisfied sip of hot coffee, then a soft exhale",
+      "seconds": 1.2
+    },
+    {
+      "id": "ice",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Ice cubes clinking in a glass while stirring iced coffee with a straw",
+      "seconds": 1.5
+    },
+    {
+      "id": "hit",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Deep cinematic bass hit boom with long tail, trailer impact, premium",
+      "seconds": 2
+    },
+    {
+      "id": "shimmer",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft elegant shimmer sparkle reveal, luxury brand logo",
+      "seconds": 1.5
+    }
+  ],
+  "music": [
+    {
+      "id": "score",
+      "provider": "ElevenLabs Music",
+      "prompt": "Cinematic modern Arabian ambient score for a premium coffee commercial, 90 BPM. Starts minimal and mysterious with a warm pad and soft pulse for 5 seconds, then a confident drum groove with deep bass, subtle oud melody and atmospheric textures as the journey begins, a calmer intimate breakdown around 17 seconds for close-up coffee craft, builds again at 27 seconds, big final hit at 32 seconds then a soft warm outro until 41 seconds. No vocals.",
+      "length_ms": 42000,
+      "instrumental": true,
+      "generated_at": "2026-11-17T23:19:16.097Z"
+    }
+  ]
+}

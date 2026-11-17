@@ -5,3 +5,7 @@ dist
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+
+# Licensed stock footage is fetched, not committed (see public/footage/SOURCES.md)
+public/footage/cand/
+public/footage/shots/
