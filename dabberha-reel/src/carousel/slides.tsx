@@ -61,7 +61,7 @@ const Slide: React.FC<{ theme: Theme; n: number; accent: string; children: React
 };
 
 /** Glossy 3D-ish icon tile. */
-const Tile: React.FC<{ icon: IconName; size: number; from: string; to: string; rotate?: number; style?: React.CSSProperties }> = ({ icon, size, from, to, rotate = 0, style }) => (
+export const Tile: React.FC<{ icon: IconName; size: number; from: string; to: string; rotate?: number; style?: React.CSSProperties }> = ({ icon, size, from, to, rotate = 0, style }) => (
   <div style={{ width: size, height: size, borderRadius: size * 0.28, background: `linear-gradient(145deg, ${from}, ${to})`, display: "grid", placeItems: "center", rotate: `${rotate}deg`, boxShadow: `0 ${size * 0.12}px ${size * 0.25}px rgba(0,0,0,0.25), inset 0 3px 0 rgba(255,255,255,0.35), inset 0 -${size * 0.06}px 0 rgba(0,0,0,0.18)`, ...style }}>
     <Icon name={icon} size={size * 0.52} color="#fff" stroke={2} />
   </div>
@@ -108,7 +108,7 @@ export const Slide1: React.FC = () => (
 );
 
 // ------------------------------------------------------------------ 2 · E-SERVICES
-const PhoneMock: React.FC = () => (
+export const PhoneMock: React.FC = () => (
   <div style={{ width: 380, height: 640, borderRadius: 58, padding: 14, background: "#0B1220", boxShadow: "0 40px 80px rgba(13,36,71,0.35)", rotate: "-6deg" }}>
     <div dir="rtl" style={{ width: "100%", height: "100%", borderRadius: 46, background: "#F4F8FC", padding: "60px 20px 20px", display: "flex", flexDirection: "column", gap: 16, ...text }}>
       <div style={{ ...display, fontSize: 30, color: colors.textOnLight }}>طلبي</div>
@@ -151,7 +151,7 @@ export const Slide2: React.FC = () => (
 );
 
 // ------------------------------------------------------------------ 3 · LOGOS & DESIGN
-const Artboard: React.FC = () => (
+export const Artboard: React.FC = () => (
   <div style={{ position: "relative", width: 520, height: 470, borderRadius: 36, background: "#fff", boxShadow: "0 40px 80px rgba(13,36,71,0.18)", rotate: "4deg", overflow: "hidden" }}>
     <div style={{ height: 54, background: "#F1F4F9", display: "flex", alignItems: "center", gap: 10, padding: "0 20px" }}>
       {["#FF6159", "#FFBD2E", "#28C941"].map((c) => (
@@ -200,7 +200,7 @@ export const Slide3: React.FC = () => (
 );
 
 // ------------------------------------------------------------------ 4 · TECH & CODE
-const Browser: React.FC = () => (
+export const Browser: React.FC = () => (
   <div style={{ width: 560, height: 470, borderRadius: 32, background: "#0B1220", boxShadow: "0 40px 80px rgba(13,36,71,0.3)", rotate: "-4deg", overflow: "hidden" }}>
     <div style={{ height: 50, background: "#141D2E", display: "flex", alignItems: "center", gap: 10, padding: "0 18px" }}>
       {["#FF6159", "#FFBD2E", "#28C941"].map((c) => (

@@ -44,6 +44,7 @@ import { DabberhaWhite } from "./white/DabberhaWhite";
 import { W1Hook, W2Time, W3Gov, W4Design, W5Tech, W6Cart, W7Cta } from "./white/scenes";
 import { WhiteCover, WhitePost, WhiteStory } from "./white/posters";
 import { Slide1, Slide2, Slide3, Slide4, Slide5 } from "./carousel/slides";
+import { V2Slide1, V2Slide2, V2Slide3, V2Slide4, V2Slide5 } from "./carousel/v2";
 
 // Scene lengths come from src/data/timeline.json, generated from the real voiceover timing.
 export const RemotionRoot: React.FC = () => {
@@ -241,6 +242,13 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="Slide3" component={Slide3} durationInFrames={1} fps={30} width={1080} height={1920} />
         <Composition id="Slide4" component={Slide4} durationInFrames={1} fps={30} width={1080} height={1920} />
         <Composition id="Slide5" component={Slide5} durationInFrames={1} fps={30} width={1080} height={1920} />
+      </Folder>
+      <Folder name="TikTok-Carousel-V2">
+        <Composition id="V2Slide1" component={V2Slide1} durationInFrames={1} fps={30} width={1080} height={1920} />
+        <Composition id="V2Slide2" component={V2Slide2} durationInFrames={1} fps={30} width={1080} height={1920} />
+        <Composition id="V2Slide3" component={V2Slide3} durationInFrames={1} fps={30} width={1080} height={1920} />
+        <Composition id="V2Slide4" component={V2Slide4} durationInFrames={1} fps={30} width={1080} height={1920} />
+        <Composition id="V2Slide5" component={V2Slide5} durationInFrames={1} fps={30} width={1080} height={1920} />
       </Folder>
     </>
   );
