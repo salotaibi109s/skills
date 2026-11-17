@@ -269,7 +269,7 @@ export const RemotionRoot: React.FC = () => {
       </Folder>
 
       {/* Eleventh video: «نفس الكوب» motion graphics for cafés, brands and stores (47 s) */}
-      <Composition id="DabberhaMotion" component={DabberhaMotion} durationInFrames={1410} fps={30} width={1080} height={1920} />
+      <Composition id="DabberhaMotion" component={DabberhaMotion} durationInFrames={1530} fps={30} width={1080} height={1920} />
       <Folder name="Motion-Scenes">
         <Composition id="M1-Hook" component={M1Hook} durationInFrames={getMotionScene("M1-Hook").durationInFrames} fps={30} width={1080} height={1920} />
         <Composition id="M2-Twist" component={M2Twist} durationInFrames={getMotionScene("M2-Twist").durationInFrames} fps={30} width={1080} height={1920} />

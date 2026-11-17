@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, random, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import data from "../data/motion-timeline.json";
 import { createSound } from "../components/Sound";
 import { findScene, type SceneTiming, type TimelineData, type Word } from "../lib/timing";
@@ -103,5 +103,75 @@ export const Subtitle: React.FC<{ scene: SceneTiming; accent?: string; top?: num
         })}
       </div>
     </div>
+  );
+};
+
+// ------------------------------------------------------------------ cinematic photo kit
+
+/** Full-bleed real photo with a slow camera move. `flat` = dull phone snap, `cine` = graded. */
+export const Photo: React.FC<{
+  src: string;
+  dur: number;
+  zoom?: [number, number];
+  pan?: [number, number];
+  tilt?: [number, number];
+  cine?: number;
+  flat?: number;
+  origin?: string;
+  position?: string;
+}> = ({ src, dur, zoom = [1.05, 1.15], pan = [0, 0], tilt = [0, 0], cine = 1, flat = 0, origin = "50% 50%", position = "50% 50%" }) => {
+  const frame = useCurrentFrame();
+  const t = Math.min(1, Math.max(0, frame / Math.max(1, dur)));
+  const e = t * t * (3 - 2 * t);
+  const s = zoom[0] + (zoom[1] - zoom[0]) * e;
+  const x = pan[0] + (pan[1] - pan[0]) * e;
+  const y = tilt[0] + (tilt[1] - tilt[0]) * e;
+  const filter = `contrast(${1 + 0.18 * cine - 0.35 * flat}) saturate(${1 + 0.12 * cine - 0.7 * flat}) brightness(${1 - 0.05 * cine + 0.12 * flat})`;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden" }}>
+      <Img src={staticFile(`photos/${src}`)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: position, scale: String(s), translate: `${x}px ${y}px`, transformOrigin: origin, filter }} />
+    </AbsoluteFill>
+  );
+};
+
+/** Teal/orange grade, vignette and film grain on top of a shot. */
+export const Cine: React.FC<{ amount?: number; warm?: number }> = ({ amount = 1, warm = 0.5 }) => {
+  const frame = useCurrentFrame();
+  const seed = Math.floor(frame / 2) % 37;
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(0,70,90,${0.18 * amount}) 0%, transparent 45%, rgba(255,140,50,${0.16 * amount * warm * 2}) 100%)`, mixBlendMode: "soft-light" }} />
+      <AbsoluteFill style={{ background: `radial-gradient(110% 75% at 50% 50%, transparent 50%, rgba(0,0,0,${0.65 * amount}) 100%)` }} />
+      <svg width="1080" height="1920" style={{ position: "absolute", inset: 0, opacity: 0.08 * amount, mixBlendMode: "overlay" }}>
+        <filter id={`mg${seed}`}>
+          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={seed} />
+          <feColorMatrix type="saturate" values="0" />
+        </filter>
+        <rect width="100%" height="100%" filter={`url(#mg${seed})`} />
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+/** Warm light leak flash used on cuts. */
+export const Leak: React.FC<{ at: number; len?: number }> = ({ at, len = 14 }) => {
+  const frame = useCurrentFrame();
+  const o = interpolate(frame, [at - 2, at + 2, at + len], [0, 0.75, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  if (o <= 0) return null;
+  return <AbsoluteFill style={{ background: "radial-gradient(70% 50% at 85% 25%, rgba(255,190,120,1) 0%, rgba(255,120,60,0.6) 35%, transparent 70%)", opacity: o, mixBlendMode: "screen", pointerEvents: "none" }} />;
+};
+
+/** Soft real-looking steam wisps rising (blurred, additive). */
+export const Steam: React.FC<{ x: number; y: number; w?: number; h?: number; opacity?: number }> = ({ x, y, w = 260, h = 520, opacity = 0.5 }) => {
+  const frame = useCurrentFrame();
+  return (
+    <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} style={{ position: "absolute", left: x - w / 2, top: y - h, opacity, mixBlendMode: "screen", filter: "blur(10px)", pointerEvents: "none" }}>
+      {[0, 1, 2, 3].map((i) => {
+        const ph = frame / 18 + i * 1.7;
+        const cx = w / 2 + (i - 1.5) * 26;
+        const d = `M${cx} ${h} C ${cx + Math.sin(ph) * 50} ${h * 0.7}, ${cx - Math.cos(ph * 0.8) * 60} ${h * 0.4}, ${cx + Math.sin(ph * 1.3) * 40} ${h * 0.05}`;
+        return <path key={i} d={d} stroke="rgba(255,255,255,0.7)" strokeWidth={22 - i * 3} strokeLinecap="round" fill="none" />;
+      })}
+    </svg>
   );
 };
