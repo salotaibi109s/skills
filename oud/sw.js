@@ -1,5 +1,5 @@
 // Offline support: the app shell is cached on first visit; fonts are cached as they load.
-const CACHE = "oud-v2";
+const CACHE = "oud-v3";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", (e) => {
