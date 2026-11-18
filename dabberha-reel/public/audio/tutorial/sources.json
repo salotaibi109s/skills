@@ -1,0 +1,76 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_source": "explicit",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8,
+      "style": 0.35,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-18T20:19:18.853Z"
+  },
+  "sfx": [
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Smooth modern whoosh transition, short and clean",
+      "seconds": 0.6
+    },
+    {
+      "id": "pop",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Bright playful UI pop, short",
+      "seconds": 0.5
+    },
+    {
+      "id": "boing",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Bouncy elastic number pop, playful cartoon spring boing, short",
+      "seconds": 0.7
+    },
+    {
+      "id": "type",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Fast mechanical keyboard typing burst, crisp keys",
+      "seconds": 2
+    },
+    {
+      "id": "enter",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Single satisfying keyboard enter key press",
+      "seconds": 0.5
+    },
+    {
+      "id": "ding",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Pleasant success chime, modern app",
+      "seconds": 0.8
+    },
+    {
+      "id": "sparkle",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Magical sparkle shimmer with rising particles, bright",
+      "seconds": 1.5
+    },
+    {
+      "id": "impact",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Punchy modern logo hit with bright shimmer tail",
+      "seconds": 1.5
+    }
+  ],
+  "music": [
+    {
+      "id": "bed",
+      "provider": "ElevenLabs Music",
+      "prompt": "Calm modern lo-fi tech background music for a tutorial video, 95 BPM, soft electric piano chords, gentle beat, warm bass, light and positive, unobtrusive under a voiceover, ends softly at 49 seconds. No vocals.",
+      "length_ms": 50000,
+      "instrumental": true,
+      "generated_at": "2026-11-18T20:20:02.311Z"
+    }
+  ]
+}

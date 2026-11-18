@@ -1,0 +1,121 @@
+{
+  "audioDir": "tutorial",
+  "totalFrames": 1460,
+  "tailSeconds": 0.35,
+  "voice": {
+    "preferredModels": [
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8,
+      "style": 0.35,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "T1-Hook",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "تدري إن هالفيديو اللي تشوفه الحين، ما انفتح فيه أي برنامج مونتاج؟ كله انسوى بالذكاء الاصطناعي!"
+    },
+    {
+      "id": "T2-Three",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "كل اللي تحتاجه ثلاث خطوات بس."
+    },
+    {
+      "id": "T3-Claude",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.4,
+      "transitionFrames": 12,
+      "tts": "أول شي: تحتاج اشتراك في Claude عشان تستخدم Claude Code، هذا اللي بيكتب لك كود الفيديو كامل."
+    },
+    {
+      "id": "T4-Remotion",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.4,
+      "transitionFrames": 12,
+      "tts": "ثاني شي: تثبّت أداة Remotion، وهي اللي تحوّل الكود لفيديو موشن احترافي."
+    },
+    {
+      "id": "T5-Eleven",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.4,
+      "transitionFrames": 12,
+      "tts": "ثالث شي: تدخل موقع ElevenLabs، وهو مجاني، وتختار الصوت اللي يعجبك للتعليق الصوتي."
+    },
+    {
+      "id": "T6-Prompt",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "وبعدها تكتب لـ Claude وش تبغى بالضبط، وهو يسوي الباقي!"
+    },
+    {
+      "id": "T7-CTA",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "tts": "وإذا تبغى فيديو مثل هذا، أو أي فيديو إعلاني لمتجرك أو مشروعك، متجر دبرها يوفره لك بإبداع! تواصل معنا الحين.",
+      "minSeconds": 12.6
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.6,
+      "prompt": "Smooth modern whoosh transition, short and clean"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Bright playful UI pop, short"
+    },
+    {
+      "id": "boing",
+      "seconds": 0.7,
+      "prompt": "Bouncy elastic number pop, playful cartoon spring boing, short"
+    },
+    {
+      "id": "type",
+      "seconds": 2.0,
+      "prompt": "Fast mechanical keyboard typing burst, crisp keys"
+    },
+    {
+      "id": "enter",
+      "seconds": 0.5,
+      "prompt": "Single satisfying keyboard enter key press"
+    },
+    {
+      "id": "ding",
+      "seconds": 0.8,
+      "prompt": "Pleasant success chime, modern app"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1.5,
+      "prompt": "Magical sparkle shimmer with rising particles, bright"
+    },
+    {
+      "id": "impact",
+      "seconds": 1.5,
+      "prompt": "Punchy modern logo hit with bright shimmer tail"
+    }
+  ],
+  "music": [
+    {
+      "id": "bed",
+      "prompt": "Calm modern lo-fi tech background music for a tutorial video, 95 BPM, soft electric piano chords, gentle beat, warm bass, light and positive, unobtrusive under a voiceover, ends softly at 49 seconds. No vocals.",
+      "lengthMs": 50000
+    }
+  ]
+}
