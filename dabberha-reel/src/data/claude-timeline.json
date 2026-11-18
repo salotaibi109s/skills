@@ -1,0 +1,836 @@
+{
+  "fps": 30,
+  "durationInFrames": 2340,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "C1-Overload",
+      "from": 0,
+      "durationInFrames": 260,
+      "transitionFrames": 14,
+      "voFrom": 18,
+      "voDurationInFrames": 222,
+      "words": [
+        {
+          "text": "الساعة",
+          "raw": "الساعة",
+          "start": 18,
+          "end": 32
+        },
+        {
+          "text": "ثنتين",
+          "raw": "ثنتين",
+          "start": 35,
+          "end": 47
+        },
+        {
+          "text": "بالليل",
+          "raw": "بالليل…",
+          "start": 50,
+          "end": 64
+        },
+        {
+          "text": "وراشد",
+          "raw": "وراشد",
+          "start": 78,
+          "end": 92
+        },
+        {
+          "text": "غرقان",
+          "raw": "غرقان.",
+          "start": 96,
+          "end": 109
+        },
+        {
+          "text": "ملفات",
+          "raw": "ملفات،",
+          "start": 124,
+          "end": 148
+        },
+        {
+          "text": "وإيميلات",
+          "raw": "وإيميلات،",
+          "start": 151,
+          "end": 174
+        },
+        {
+          "text": "وكود",
+          "raw": "وكود،",
+          "start": 180,
+          "end": 193
+        },
+        {
+          "text": "ومهام",
+          "raw": "ومهام",
+          "start": 199,
+          "end": 210
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 212,
+          "end": 215
+        },
+        {
+          "text": "تخلص",
+          "raw": "تخلص.",
+          "start": 223,
+          "end": 232
+        }
+      ]
+    },
+    {
+      "id": "C2-Meet",
+      "from": 246,
+      "durationInFrames": 187,
+      "transitionFrames": 14,
+      "voFrom": 15,
+      "voDurationInFrames": 122,
+      "words": [
+        {
+          "text": "هنا",
+          "raw": "هنا",
+          "start": 15,
+          "end": 27
+        },
+        {
+          "text": "يدخل",
+          "raw": "يدخل",
+          "start": 29,
+          "end": 41
+        },
+        {
+          "text": "Claude",
+          "raw": "Claude…",
+          "start": 44,
+          "end": 58
+        },
+        {
+          "text": "بس",
+          "raw": "بس",
+          "start": 73,
+          "end": 82
+        },
+        {
+          "text": "لا",
+          "raw": "لا",
+          "start": 85,
+          "end": 89
+        },
+        {
+          "text": "تحسبه",
+          "raw": "تحسبه",
+          "start": 93,
+          "end": 104
+        },
+        {
+          "text": "مجرد",
+          "raw": "مجرد",
+          "start": 105,
+          "end": 116
+        },
+        {
+          "text": "شات",
+          "raw": "شات.",
+          "start": 118,
+          "end": 130
+        }
+      ]
+    },
+    {
+      "id": "C3-Files",
+      "from": 419,
+      "durationInFrames": 287,
+      "transitionFrames": 14,
+      "voFrom": 12,
+      "voDurationInFrames": 249,
+      "words": [
+        {
+          "text": "تعطيه",
+          "raw": "تعطيه",
+          "start": 12,
+          "end": 23
+        },
+        {
+          "text": "ملفات",
+          "raw": "ملفات",
+          "start": 24,
+          "end": 46
+        },
+        {
+          "text": "وتقارير",
+          "raw": "وتقارير",
+          "start": 49,
+          "end": 72
+        },
+        {
+          "text": "وجداول",
+          "raw": "وجداول…",
+          "start": 76,
+          "end": 96
+        },
+        {
+          "text": "يقراها",
+          "raw": "يقراها،",
+          "start": 108,
+          "end": 125
+        },
+        {
+          "text": "يربط",
+          "raw": "يربط",
+          "start": 136,
+          "end": 144
+        },
+        {
+          "text": "بينها",
+          "raw": "بينها،",
+          "start": 149,
+          "end": 156
+        },
+        {
+          "text": "ويطلّع",
+          "raw": "ويطلّع",
+          "start": 170,
+          "end": 182
+        },
+        {
+          "text": "لك",
+          "raw": "لك",
+          "start": 185,
+          "end": 187
+        },
+        {
+          "text": "الخلاصة",
+          "raw": "الخلاصة",
+          "start": 190,
+          "end": 206
+        },
+        {
+          "text": "اللي",
+          "raw": "اللي",
+          "start": 209,
+          "end": 214
+        },
+        {
+          "text": "تبني",
+          "raw": "تبني",
+          "start": 216,
+          "end": 223
+        },
+        {
+          "text": "عليها",
+          "raw": "عليها",
+          "start": 226,
+          "end": 235
+        },
+        {
+          "text": "قرارك",
+          "raw": "قرارك.",
+          "start": 238,
+          "end": 259
+        }
+      ]
+    },
+    {
+      "id": "C4-Artifacts",
+      "from": 692,
+      "durationInFrames": 292,
+      "transitionFrames": 14,
+      "voFrom": 12,
+      "voDurationInFrames": 261,
+      "words": [
+        {
+          "text": "وبدل",
+          "raw": "وبدل",
+          "start": 12,
+          "end": 24
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "text": "يرد",
+          "raw": "يرد",
+          "start": 29,
+          "end": 36
+        },
+        {
+          "text": "عليك",
+          "raw": "عليك",
+          "start": 40,
+          "end": 44
+        },
+        {
+          "text": "بكلام",
+          "raw": "بكلام…",
+          "start": 46,
+          "end": 62
+        },
+        {
+          "text": "يبني",
+          "raw": "يبني",
+          "start": 78,
+          "end": 86
+        },
+        {
+          "text": "لك",
+          "raw": "لك",
+          "start": 89,
+          "end": 91
+        },
+        {
+          "text": "أداة",
+          "raw": "أداة",
+          "start": 94,
+          "end": 102
+        },
+        {
+          "text": "تفاعلية",
+          "raw": "تفاعلية",
+          "start": 103,
+          "end": 127
+        },
+        {
+          "text": "تشتغل",
+          "raw": "تشتغل",
+          "start": 130,
+          "end": 142
+        },
+        {
+          "text": "قدامك",
+          "raw": "قدامك:",
+          "start": 145,
+          "end": 161
+        },
+        {
+          "text": "لوحة",
+          "raw": "لوحة",
+          "start": 173,
+          "end": 180
+        },
+        {
+          "text": "بيانات",
+          "raw": "بيانات،",
+          "start": 182,
+          "end": 202
+        },
+        {
+          "text": "حاسبة",
+          "raw": "حاسبة،",
+          "start": 209,
+          "end": 226
+        },
+        {
+          "text": "أو",
+          "raw": "أو",
+          "start": 234,
+          "end": 238
+        },
+        {
+          "text": "تطبيق",
+          "raw": "تطبيق",
+          "start": 240,
+          "end": 252
+        },
+        {
+          "text": "صغير",
+          "raw": "صغير.",
+          "start": 254,
+          "end": 264
+        }
+      ]
+    },
+    {
+      "id": "C5-Code",
+      "from": 970,
+      "durationInFrames": 249,
+      "transitionFrames": 14,
+      "voFrom": 12,
+      "voDurationInFrames": 199,
+      "words": [
+        {
+          "text": "وإذا",
+          "raw": "وإذا",
+          "start": 12,
+          "end": 22
+        },
+        {
+          "text": "جيت",
+          "raw": "جيت",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "للبرمجة",
+          "raw": "للبرمجة…",
+          "start": 35,
+          "end": 55
+        },
+        {
+          "text": "يكتب",
+          "raw": "يكتب",
+          "start": 70,
+          "end": 79
+        },
+        {
+          "text": "الكود",
+          "raw": "الكود،",
+          "start": 82,
+          "end": 96
+        },
+        {
+          "text": "ويصلّح",
+          "raw": "ويصلّح",
+          "start": 103,
+          "end": 115
+        },
+        {
+          "text": "الأخطاء",
+          "raw": "الأخطاء،",
+          "start": 118,
+          "end": 132
+        },
+        {
+          "text": "ويشتغل",
+          "raw": "ويشتغل",
+          "start": 142,
+          "end": 154
+        },
+        {
+          "text": "معك",
+          "raw": "معك",
+          "start": 156,
+          "end": 166
+        },
+        {
+          "text": "على",
+          "raw": "على",
+          "start": 168,
+          "end": 173
+        },
+        {
+          "text": "مشروع",
+          "raw": "مشروع",
+          "start": 180,
+          "end": 187
+        },
+        {
+          "text": "كامل",
+          "raw": "كامل.",
+          "start": 190,
+          "end": 202
+        }
+      ]
+    },
+    {
+      "id": "C6-Projects",
+      "from": 1205,
+      "durationInFrames": 309,
+      "transitionFrames": 14,
+      "voFrom": 12,
+      "voDurationInFrames": 278,
+      "words": [
+        {
+          "text": "ومع",
+          "raw": "ومع",
+          "start": 12,
+          "end": 22
+        },
+        {
+          "text": "Projects",
+          "raw": "Projects،",
+          "start": 31,
+          "end": 41
+        },
+        {
+          "text": "ملفاتك",
+          "raw": "ملفاتك",
+          "start": 50,
+          "end": 67
+        },
+        {
+          "text": "وتعليماتك",
+          "raw": "وتعليماتك",
+          "start": 70,
+          "end": 94
+        },
+        {
+          "text": "كلها",
+          "raw": "كلها",
+          "start": 96,
+          "end": 110
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 113,
+          "end": 115
+        },
+        {
+          "text": "مكان",
+          "raw": "مكان",
+          "start": 121,
+          "end": 127
+        },
+        {
+          "text": "واحد",
+          "raw": "واحد.",
+          "start": 130,
+          "end": 142
+        },
+        {
+          "text": "والـ",
+          "raw": "والـ",
+          "start": 154,
+          "end": 156
+        },
+        {
+          "text": "Skills",
+          "raw": "Skills؟",
+          "start": 163,
+          "end": 170
+        },
+        {
+          "text": "خبرات",
+          "raw": "خبرات",
+          "start": 184,
+          "end": 192
+        },
+        {
+          "text": "جاهزة",
+          "raw": "جاهزة",
+          "start": 194,
+          "end": 206
+        },
+        {
+          "text": "يرجع",
+          "raw": "يرجع",
+          "start": 209,
+          "end": 218
+        },
+        {
+          "text": "لها",
+          "raw": "لها",
+          "start": 220,
+          "end": 226
+        },
+        {
+          "text": "كل",
+          "raw": "كل",
+          "start": 228,
+          "end": 235
+        },
+        {
+          "text": "مرة",
+          "raw": "مرة،",
+          "start": 240,
+          "end": 245
+        },
+        {
+          "text": "بنفس",
+          "raw": "بنفس",
+          "start": 258,
+          "end": 266
+        },
+        {
+          "text": "الجودة",
+          "raw": "الجودة.",
+          "start": 269,
+          "end": 281
+        }
+      ]
+    },
+    {
+      "id": "C7-Computer",
+      "from": 1500,
+      "durationInFrames": 252,
+      "transitionFrames": 14,
+      "voFrom": 12,
+      "voDurationInFrames": 211,
+      "words": [
+        {
+          "text": "ويقدر",
+          "raw": "ويقدر",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "يستخدم",
+          "raw": "يستخدم",
+          "start": 28,
+          "end": 41
+        },
+        {
+          "text": "الكمبيوتر",
+          "raw": "الكمبيوتر",
+          "start": 43,
+          "end": 58
+        },
+        {
+          "text": "بنفسه",
+          "raw": "بنفسه…",
+          "start": 60,
+          "end": 74
+        },
+        {
+          "text": "يفتح",
+          "raw": "يفتح،",
+          "start": 84,
+          "end": 101
+        },
+        {
+          "text": "ويضغط",
+          "raw": "ويضغط،",
+          "start": 107,
+          "end": 122
+        },
+        {
+          "text": "ويعبّي",
+          "raw": "ويعبّي،",
+          "start": 128,
+          "end": 144
+        },
+        {
+          "text": "ويكمّل",
+          "raw": "ويكمّل",
+          "start": 156,
+          "end": 168
+        },
+        {
+          "text": "المهمة",
+          "raw": "المهمة",
+          "start": 172,
+          "end": 185
+        },
+        {
+          "text": "وأنت",
+          "raw": "وأنت",
+          "start": 190,
+          "end": 199
+        },
+        {
+          "text": "تتابع",
+          "raw": "تتابع.",
+          "start": 200,
+          "end": 214
+        }
+      ]
+    },
+    {
+      "id": "C8-Connect",
+      "from": 1738,
+      "durationInFrames": 256,
+      "transitionFrames": 14,
+      "voFrom": 12,
+      "voDurationInFrames": 222,
+      "words": [
+        {
+          "text": "ويبحث",
+          "raw": "ويبحث",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "الويب",
+          "raw": "الويب،",
+          "start": 32,
+          "end": 43
+        },
+        {
+          "text": "ويتصل",
+          "raw": "ويتصل",
+          "start": 54,
+          "end": 67
+        },
+        {
+          "text": "بأدواتك",
+          "raw": "بأدواتك:",
+          "start": 68,
+          "end": 89
+        },
+        {
+          "text": "إيميلك",
+          "raw": "إيميلك،",
+          "start": 102,
+          "end": 120
+        },
+        {
+          "text": "وتقويمك",
+          "raw": "وتقويمك،",
+          "start": 125,
+          "end": 146
+        },
+        {
+          "text": "وملفاتك",
+          "raw": "وملفاتك…",
+          "start": 150,
+          "end": 173
+        },
+        {
+          "text": "كل",
+          "raw": "كل",
+          "start": 190,
+          "end": 194
+        },
+        {
+          "text": "شي",
+          "raw": "شي",
+          "start": 197,
+          "end": 202
+        },
+        {
+          "text": "مربوط",
+          "raw": "مربوط",
+          "start": 204,
+          "end": 214
+        },
+        {
+          "text": "ببعض",
+          "raw": "ببعض.",
+          "start": 216,
+          "end": 228
+        }
+      ]
+    },
+    {
+      "id": "C9-Build",
+      "from": 1980,
+      "durationInFrames": 360,
+      "transitionFrames": 0,
+      "voFrom": 18,
+      "voDurationInFrames": 218,
+      "words": [
+        {
+          "text": "الفكرة",
+          "raw": "الفكرة",
+          "start": 18,
+          "end": 35
+        },
+        {
+          "text": "مو",
+          "raw": "مو",
+          "start": 37,
+          "end": 42
+        },
+        {
+          "text": "إنك",
+          "raw": "إنك",
+          "start": 44,
+          "end": 49
+        },
+        {
+          "text": "تسأل",
+          "raw": "تسأل",
+          "start": 52,
+          "end": 64
+        },
+        {
+          "text": "وتاخذ",
+          "raw": "وتاخذ",
+          "start": 66,
+          "end": 76
+        },
+        {
+          "text": "جواب",
+          "raw": "جواب…",
+          "start": 78,
+          "end": 90
+        },
+        {
+          "text": "الفكرة",
+          "raw": "الفكرة",
+          "start": 107,
+          "end": 121
+        },
+        {
+          "text": "إنك",
+          "raw": "إنك",
+          "start": 126,
+          "end": 136
+        },
+        {
+          "text": "تبني",
+          "raw": "تبني",
+          "start": 139,
+          "end": 148
+        },
+        {
+          "text": "أنظمة",
+          "raw": "أنظمة،",
+          "start": 156,
+          "end": 164
+        },
+        {
+          "text": "وتوصل",
+          "raw": "وتوصل",
+          "start": 174,
+          "end": 188
+        },
+        {
+          "text": "لنتايج",
+          "raw": "لنتايج",
+          "start": 191,
+          "end": 208
+        },
+        {
+          "text": "حقيقية",
+          "raw": "حقيقية.",
+          "start": 210,
+          "end": 229
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      18,
+      232
+    ],
+    [
+      261,
+      376
+    ],
+    [
+      431,
+      678
+    ],
+    [
+      704,
+      956
+    ],
+    [
+      982,
+      1172
+    ],
+    [
+      1217,
+      1486
+    ],
+    [
+      1512,
+      1714
+    ],
+    [
+      1750,
+      1966
+    ],
+    [
+      1998,
+      2209
+    ]
+  ]
+}

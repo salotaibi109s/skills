@@ -1,0 +1,112 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.5,
+      "use_speaker_boost": true,
+      "speed": 0.97
+    },
+    "generated_at": "2026-11-18T21:13:37.497Z"
+  },
+  "sfx": [
+    {
+      "id": "drone",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Dark tense low digital drone with ticking clock and faint notification pings, late night anxiety",
+      "seconds": 6
+    },
+    {
+      "id": "pings",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Rapid overlapping digital notification pings and buzzes, overwhelming",
+      "seconds": 2.5
+    },
+    {
+      "id": "freeze",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Sudden digital time-freeze effect, glassy shimmer with low reverse swell",
+      "seconds": 1.2
+    },
+    {
+      "id": "materialize",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Elegant hologram materializing, soft crystalline shimmer and warm digital bloom",
+      "seconds": 2.5
+    },
+    {
+      "id": "scan",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Futuristic scanning sweep, smooth electronic scan beam",
+      "seconds": 1.5
+    },
+    {
+      "id": "link",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft digital connection click with a short bright tone",
+      "seconds": 0.8
+    },
+    {
+      "id": "morph",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Smooth digital morph transformation whoosh, liquid and techy",
+      "seconds": 1.2
+    },
+    {
+      "id": "keys",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Fast soft keyboard typing, quiet and precise",
+      "seconds": 2
+    },
+    {
+      "id": "fix",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Error resolved chime, two rising soft digital notes",
+      "seconds": 0.8
+    },
+    {
+      "id": "snap",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Satisfying magnetic module snap into place, clean digital",
+      "seconds": 0.6
+    },
+    {
+      "id": "click",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Clean soft mouse click, subtle",
+      "seconds": 0.5
+    },
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cinematic airy whoosh transition, deep and smooth",
+      "seconds": 0.8
+    },
+    {
+      "id": "impact",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Deep cinematic trailer impact with long shimmering tail, premium",
+      "seconds": 2.5
+    },
+    {
+      "id": "riser",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Slow cinematic riser building tension, airy digital textures",
+      "seconds": 2.5
+    }
+  ],
+  "music": [
+    {
+      "id": "score",
+      "provider": "ElevenLabs Music",
+      "prompt": "Subtle cinematic electronic documentary score, 92 BPM. Opens dark and tense with a low pulse and ticking for 8 seconds, then a warm hopeful synth pad and gentle arpeggio enter as something new appears, a steady modern electronic groove with soft percussion carries the middle, evolving and inspiring, a big emotional swell around 70 seconds and a confident final resolve. Never loud, sits under narration. No vocals.",
+      "length_ms": 90000,
+      "instrumental": true,
+      "generated_at": "2026-11-18T21:14:17.477Z"
+    }
+  ]
+}

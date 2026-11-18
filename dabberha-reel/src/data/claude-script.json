@@ -1,0 +1,166 @@
+{
+  "audioDir": "claude",
+  "totalFrames": 2340,
+  "tailSeconds": 0.45,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.5,
+      "use_speaker_boost": true,
+      "speed": 0.97
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "C1-Overload",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.6,
+      "transitionFrames": 14,
+      "tts": "الساعة ثنتين بالليل… وراشد غرقان. ملفات، وإيميلات، وكود، ومهام ما تخلص."
+    },
+    {
+      "id": "C2-Meet",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.5,
+      "transitionFrames": 14,
+      "tts": "هنا يدخل Claude… بس لا تحسبه مجرد شات."
+    },
+    {
+      "id": "C3-Files",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.4,
+      "transitionFrames": 14,
+      "tts": "تعطيه ملفات وتقارير وجداول… يقراها، يربط بينها، ويطلّع لك الخلاصة اللي تبني عليها قرارك."
+    },
+    {
+      "id": "C4-Artifacts",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.4,
+      "transitionFrames": 14,
+      "tts": "وبدل ما يرد عليك بكلام… يبني لك أداة تفاعلية تشتغل قدامك: لوحة بيانات، حاسبة، أو تطبيق صغير."
+    },
+    {
+      "id": "C5-Code",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.4,
+      "transitionFrames": 14,
+      "tts": "وإذا جيت للبرمجة… يكتب الكود، ويصلّح الأخطاء، ويشتغل معك على مشروع كامل."
+    },
+    {
+      "id": "C6-Projects",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.4,
+      "transitionFrames": 14,
+      "tts": "ومع Projects، ملفاتك وتعليماتك كلها في مكان واحد. والـ Skills؟ خبرات جاهزة يرجع لها كل مرة، بنفس الجودة."
+    },
+    {
+      "id": "C7-Computer",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.4,
+      "transitionFrames": 14,
+      "tts": "ويقدر يستخدم الكمبيوتر بنفسه… يفتح، ويضغط، ويعبّي، ويكمّل المهمة وأنت تتابع."
+    },
+    {
+      "id": "C8-Connect",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.4,
+      "transitionFrames": 14,
+      "tts": "ويبحث في الويب، ويتصل بأدواتك: إيميلك، وتقويمك، وملفاتك… كل شي مربوط ببعض."
+    },
+    {
+      "id": "C9-Build",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.6,
+      "minSeconds": 12,
+      "tts": "الفكرة مو إنك تسأل وتاخذ جواب… الفكرة إنك تبني أنظمة، وتوصل لنتايج حقيقية."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "drone",
+      "seconds": 6,
+      "prompt": "Dark tense low digital drone with ticking clock and faint notification pings, late night anxiety"
+    },
+    {
+      "id": "pings",
+      "seconds": 2.5,
+      "prompt": "Rapid overlapping digital notification pings and buzzes, overwhelming"
+    },
+    {
+      "id": "freeze",
+      "seconds": 1.2,
+      "prompt": "Sudden digital time-freeze effect, glassy shimmer with low reverse swell"
+    },
+    {
+      "id": "materialize",
+      "seconds": 2.5,
+      "prompt": "Elegant hologram materializing, soft crystalline shimmer and warm digital bloom"
+    },
+    {
+      "id": "scan",
+      "seconds": 1.5,
+      "prompt": "Futuristic scanning sweep, smooth electronic scan beam"
+    },
+    {
+      "id": "link",
+      "seconds": 0.8,
+      "prompt": "Soft digital connection click with a short bright tone"
+    },
+    {
+      "id": "morph",
+      "seconds": 1.2,
+      "prompt": "Smooth digital morph transformation whoosh, liquid and techy"
+    },
+    {
+      "id": "keys",
+      "seconds": 2.0,
+      "prompt": "Fast soft keyboard typing, quiet and precise"
+    },
+    {
+      "id": "fix",
+      "seconds": 0.8,
+      "prompt": "Error resolved chime, two rising soft digital notes"
+    },
+    {
+      "id": "snap",
+      "seconds": 0.6,
+      "prompt": "Satisfying magnetic module snap into place, clean digital"
+    },
+    {
+      "id": "click",
+      "seconds": 0.5,
+      "prompt": "Clean soft mouse click, subtle"
+    },
+    {
+      "id": "whoosh",
+      "seconds": 0.8,
+      "prompt": "Cinematic airy whoosh transition, deep and smooth"
+    },
+    {
+      "id": "impact",
+      "seconds": 2.5,
+      "prompt": "Deep cinematic trailer impact with long shimmering tail, premium"
+    },
+    {
+      "id": "riser",
+      "seconds": 2.5,
+      "prompt": "Slow cinematic riser building tension, airy digital textures"
+    }
+  ],
+  "music": [
+    {
+      "id": "score",
+      "prompt": "Subtle cinematic electronic documentary score, 92 BPM. Opens dark and tense with a low pulse and ticking for 8 seconds, then a warm hopeful synth pad and gentle arpeggio enter as something new appears, a steady modern electronic groove with soft percussion carries the middle, evolving and inspiring, a big emotional swell around 70 seconds and a confident final resolve. Never loud, sits under narration. No vocals.",
+      "lengthMs": 90000
+    }
+  ]
+}
