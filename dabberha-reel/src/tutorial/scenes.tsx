@@ -73,7 +73,7 @@ export const T1Hook: React.FC = () => {
       <Words scene={scene} top={1110} size={70} maxWords={5} serif />
       <SceneVoice scene={scene} />
       <Sfx name="whoosh" at={tOpen} />
-      <Sfx name="pop" at={tEdit} />
+      <Sfx name="thud" at={tEdit} />
       <Sfx name="sparkle" at={tAI - 2} />
     </Scene>
   );
@@ -110,10 +110,11 @@ export const T2Three: React.FC = () => {
       </div>
       <Words scene={scene} top={1150} size={66} />
       <SceneVoice scene={scene} />
-      <Sfx name="boing" at={tThree - 2} />
-      <Sfx name="pop" at={tSteps} />
-      <Sfx name="pop" at={tSteps + 5} />
-      <Sfx name="pop" at={tSteps + 10} />
+      <Sfx name="riser" at={tThree - 30} />
+      <Sfx name="thud" at={tThree - 2} />
+      <Sfx name="tick" at={tSteps} />
+      <Sfx name="tick" at={tSteps + 5} />
+      <Sfx name="tick" at={tSteps + 10} />
     </Scene>
   );
 };
@@ -181,7 +182,6 @@ export const T3Claude: React.FC = () => {
       </div>
       <Words scene={scene} top={1200} size={58} maxWords={6} />
       <SceneVoice scene={scene} />
-      <Sfx name="boing" at={6} />
       <Sfx name="pop" at={tSub} />
       <Sfx name="whoosh" at={tCode - 6} />
       <Sfx name="type" at={tWrite} />
@@ -240,7 +240,6 @@ export const T4Remotion: React.FC = () => {
       </div>
       <Words scene={scene} top={1200} size={58} maxWords={6} />
       <SceneVoice scene={scene} />
-      <Sfx name="boing" at={6} />
       <Sfx name="type" at={tInstall} />
       <Sfx name="enter" at={enterAt} />
       <Sfx name="ding" at={enterAt + 8} />
@@ -299,7 +298,6 @@ export const T5Eleven: React.FC = () => {
       </div>
       <Words scene={scene} top={1200} size={58} maxWords={6} />
       <SceneVoice scene={scene} />
-      <Sfx name="boing" at={6} />
       <Sfx name="pop" at={tFree} />
       <Sfx name="ding" at={tPick + 24} />
     </Scene>
@@ -372,12 +370,11 @@ export const T7CTA: React.FC = () => {
   const frame = useCurrentFrame();
   const tName = cue(scene, "دبرها");
   const tCreative = cue(scene, "بإبداع");
-  const tContact = cue(scene, "تواصل");
+  const tContact = cue(scene, "والرابط");
   const reveal = frame >= tName - 4;
   const lead = usePop(2, 160, 18);
   const name = usePop(tName - 4, 150, 11, 0.9);
-  const logo = usePop(tName + 6, 170, 15);
-  const sub = usePop(tCreative, 170, 18);
+    const sub = usePop(tCreative, 170, 18);
   const btn = usePop(tContact, 200, 14);
   const glow = 0.7 + 0.3 * Math.sin(frame / 8);
   const kinds = ["متجر", "مقهى", "مشروع"];
@@ -415,22 +412,29 @@ export const T7CTA: React.FC = () => {
             const sz = 6 + random(`s${i}`) * 8;
             return <div key={i} style={{ position: "absolute", left: 500 + Math.cos(a) * d, top: 720 + Math.sin(a) * d * 0.75 + t * 0.5, width: sz, height: sz, borderRadius: sz / 2, background: c, opacity: Math.max(0, 1 - t / 75) }} />;
           })}
-          <div style={{ position: "absolute", left: 540 - 50 - 75, top: 330, width: 150, height: 150, borderRadius: 75, background: "#fff", border: `1.5px solid ${P.border}`, display: "grid", placeItems: "center", scale: String(logo), boxShadow: "0 16px 40px rgba(60,45,30,0.15)" }}>
-            <Img src={staticFile("brand/logo-color.png")} style={{ width: 120 }} />
+          {/* glowing rings behind the logo */}
+          {[0, 1, 2].map((k) => {
+            const t = ((frame - tName + k * 18) % 54) / 54;
+            return <div key={k} style={{ position: "absolute", left: 540 - 50 - 230 - t * 120, top: 300 - t * 120, width: 460 + t * 240, height: 460 + t * 240, borderRadius: "50%", border: `2px solid ${P.clay}`, opacity: (1 - t) * 0.5 * Math.min(1, name) }} />;
+          })}
+          <div style={{ position: "absolute", left: 540 - 50 - 230, top: 300, width: 460, height: 460, borderRadius: "50%", background: "#fff", display: "grid", placeItems: "center", scale: String(interpolate(name, [0, 1], [0.3, 1])), rotate: `${(1 - name) * -25}deg`, opacity: Math.min(1, name * 1.6), boxShadow: `0 0 ${60 + 50 * glow}px rgba(217,119,87,${0.35 + 0.2 * glow}), 0 24px 60px rgba(60,45,30,0.18)` }}>
+            <Img src={staticFile("brand/logo-color.png")} style={{ width: 380 }} />
           </div>
-          <div style={{ position: "absolute", left: 0, right: 100, top: 520, textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 250, lineHeight: 1.15, color: P.ink, scale: String(interpolate(name, [0, 1], [1.6, 1])), opacity: Math.min(1, name * 1.6), textShadow: `0 0 ${50 * glow}px rgba(217,119,87,0.45)` }}>دبّرها</div>
-          <div dir="rtl" style={{ position: "absolute", left: 0, right: 100, top: 860, display: "flex", justifyContent: "center", alignItems: "center", gap: 18, opacity: sub, translate: `0px ${(1 - sub) * 24}px` }}>
+          <div dir="rtl" style={{ position: "absolute", left: 0, right: 100, top: 830, display: "flex", justifyContent: "center", alignItems: "center", gap: 18, opacity: sub, translate: `0px ${(1 - sub) * 24}px` }}>
             <div style={{ width: 50, height: 2, background: P.clay }} />
             <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 56, color: P.clay }}>فيديوهات إعلانية بإبداع</div>
             <div style={{ width: 50, height: 2, background: P.clay }} />
           </div>
           {frame >= tContact && (
             <div style={{ position: "absolute", left: 0, right: 100, top: 1000, display: "flex", flexDirection: "column", alignItems: "center", gap: 16, opacity: btn, scale: String(0.85 + 0.15 * btn) }}>
-              <div dir="rtl" style={{ padding: "18px 54px 22px", borderRadius: 999, background: P.ink, color: P.paper, fontFamily: SANS, fontWeight: 600, fontSize: 52 }}>تواصل معنا الحين</div>
+              <svg width="54" height="60" viewBox="0 0 120 130" style={{ translate: `0px ${Math.abs(Math.sin((frame - tContact) / 6)) * -14}px` }}>
+                <path d="M60 6 L112 62 L80 62 L80 124 L40 124 L40 62 L8 62 Z" fill={P.clay} />
+              </svg>
+              <div dir="rtl" style={{ padding: "18px 54px 22px", borderRadius: 999, background: P.ink, color: P.paper, fontFamily: SANS, fontWeight: 600, fontSize: 52 }}>الرابط في البايو</div>
               <div dir="ltr" style={{ fontFamily: MONO, fontWeight: 500, fontSize: 32, color: P.ink2 }}>haxztd.zid.store</div>
             </div>
           )}
-          <Words scene={scene} top={1250} size={50} maxWords={5} />
+          <Words scene={scene} top={1300} size={50} maxWords={5} />
         </>
       )}
       <SceneVoice scene={scene} />
@@ -438,6 +442,8 @@ export const T7CTA: React.FC = () => {
       <Sfx name="sparkle" at={tName} />
       <Sfx name="pop" at={tCreative} />
       <Sfx name="ding" at={tContact} />
+      <Sfx name="riser" at={tName - 34} />
+      <Sfx name="whoosh" at={tContact - 3} />
     </Scene>
   );
 };

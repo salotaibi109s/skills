@@ -2,8 +2,10 @@ import { fade } from "@remotion/transitions/fade";
 import { slide } from "@remotion/transitions/slide";
 import { linearTiming, TransitionSeries } from "@remotion/transitions";
 import React from "react";
-import { AbsoluteFill } from "remotion";
-import { Backdrop, getTutScene, Music, tutTimeline, type TutSceneId } from "./base";
+import { Audio } from "@remotion/media";
+import { AbsoluteFill, interpolate, staticFile } from "remotion";
+import { db } from "../theme";
+import { Backdrop, getTutScene, tutTimeline, type TutSceneId } from "./base";
 import { T1Hook, T2Three, T3Claude, T4Remotion, T5Eleven, T6Prompt, T7CTA } from "./scenes";
 
 const SCENES: { id: TutSceneId; C: React.FC; next?: "fade" | "slide" }[] = [
@@ -39,6 +41,14 @@ export const DabberhaTutorial: React.FC = () => (
         return items;
       })}
     </TransitionSeries>
-    <Music segments={[{ id: "bed", from: 0, durationInFrames: tutTimeline.durationInFrames, fadeIn: 12 }]} />
+    <Audio
+      src={staticFile("audio/tutorial/music/hype.mp3")}
+      volume={(f) => {
+        const end = tutTimeline.durationInFrames;
+        const inVoice = tutTimeline.voiceWindows.some(([a, b]) => f >= a - 4 && f <= b + 4);
+        const fade = interpolate(f, [0, 4, end - 45, end], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+        return (inVoice ? db(-17) : db(-11)) * fade;
+      }}
+    />
   </AbsoluteFill>
 );

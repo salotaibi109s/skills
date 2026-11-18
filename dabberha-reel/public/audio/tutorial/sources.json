@@ -3,15 +3,15 @@
     "provider": "ElevenLabs Text to Speech (with-timestamps)",
     "voice_id": "cFUFIbKkO2iZFwS8cRnY",
     "voice_source": "explicit",
-    "model_id": "eleven_multilingual_v2",
+    "model_id": "eleven_v4",
     "settings": {
-      "stability": 0.5,
+      "stability": 0.45,
       "similarity_boost": 0.8,
-      "style": 0.35,
+      "style": 0.45,
       "use_speaker_boost": true,
       "speed": 1
     },
-    "generated_at": "2026-11-18T20:19:18.853Z"
+    "generated_at": "2026-11-18T20:56:32.715Z"
   },
   "sfx": [
     {
@@ -61,16 +61,40 @@
       "provider": "ElevenLabs Sound Effects",
       "prompt": "Punchy modern logo hit with bright shimmer tail",
       "seconds": 1.5
+    },
+    {
+      "id": "tick",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Crisp short UI tick click, snappy and clean",
+      "seconds": 0.5
+    },
+    {
+      "id": "swish",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Very short fast swish for kinetic text, airy",
+      "seconds": 0.5
+    },
+    {
+      "id": "riser",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Short rising whoosh riser building into a hit, energetic",
+      "seconds": 1.2
+    },
+    {
+      "id": "thud",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Punchy deep thud hit for a big number appearing, tight",
+      "seconds": 0.6
     }
   ],
   "music": [
     {
-      "id": "bed",
+      "id": "hype",
       "provider": "ElevenLabs Music",
-      "prompt": "Calm modern lo-fi tech background music for a tutorial video, 95 BPM, soft electric piano chords, gentle beat, warm bass, light and positive, unobtrusive under a voiceover, ends softly at 49 seconds. No vocals.",
-      "length_ms": 50000,
+      "prompt": "Energetic upbeat modern electronic pop beat for a fast-paced tech tutorial on TikTok, 124 BPM, punchy kick and claps, driving bass, bright synth plucks, rhythmic risers every 8 bars, confident and exciting, no slow intro, strong ending hit at 50 seconds. No vocals.",
+      "length_ms": 51000,
       "instrumental": true,
-      "generated_at": "2026-11-18T20:20:02.311Z"
+      "generated_at": "2026-11-18T20:51:59.608Z"
     }
   ]
 }

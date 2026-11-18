@@ -35,14 +35,18 @@ export const P = {
 };
 
 export const tutGains: Record<string, number> = {
-  whoosh: db(-17),
-  pop: db(-14),
-  boing: db(-13),
-  type: db(-15),
-  enter: db(-12),
-  ding: db(-13),
-  sparkle: db(-13),
-  impact: db(-10),
+  whoosh: db(-13),
+  pop: db(-11),
+  boing: db(-11),
+  type: db(-12),
+  enter: db(-10),
+  ding: db(-11),
+  sparkle: db(-11),
+  impact: db(-7),
+  tick: db(-11),
+  swish: db(-17),
+  riser: db(-13),
+  thud: db(-8),
 };
 export const { Sfx, SceneVoice, Music } = createSound(tutTimeline, "audio/tutorial", tutGains);
 
@@ -55,7 +59,7 @@ export const usePop = (at: number, stiffness = 170, damping = 16, mass = 0.8) =>
 /** Ivory paper with a very slow warm light drift and a faint dotted grid. */
 export const Backdrop: React.FC = () => {
   const frame = useCurrentFrame();
-  const t = frame / 30;
+  const t = frame / 14;
   return (
     <AbsoluteFill style={{ background: P.paper, overflow: "hidden" }}>
       <div style={{ position: "absolute", left: 540 + Math.sin(t / 5) * 260 - 520, top: 300 + Math.cos(t / 6) * 160 - 520, width: 1040, height: 1040, borderRadius: "50%", background: "radial-gradient(circle, rgba(217,119,87,0.16) 0%, rgba(217,119,87,0) 65%)" }} />
@@ -70,9 +74,15 @@ export const Backdrop: React.FC = () => {
 export const Scene: React.FC<{ children: React.ReactNode; intro?: boolean }> = ({ children, intro = true }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
-  const inP = intro ? interpolate(frame, [0, 14], [0, 1], { extrapolateRight: "clamp" }) : 1;
-  const outP = interpolate(frame, [durationInFrames - 12, durationInFrames], [1, 0], { extrapolateLeft: "clamp" });
-  return <AbsoluteFill style={{ fontFamily: SANS, color: P.ink, opacity: inP * (0.3 + 0.7 * outP), translate: `0px ${(1 - inP) * 24}px` }}>{children}</AbsoluteFill>;
+  const inP = intro ? interpolate(frame, [0, 8], [0, 1], { extrapolateRight: "clamp" }) : 1;
+  const outP = interpolate(frame, [durationInFrames - 8, durationInFrames], [1, 0], { extrapolateLeft: "clamp" });
+  const push = interpolate(frame, [0, durationInFrames], [1, 1.045]);
+  return (
+    <AbsoluteFill style={{ fontFamily: SANS, color: P.ink, opacity: inP * (0.3 + 0.7 * outP), scale: String(push * (0.94 + 0.06 * inP)), transformOrigin: "50% 45%" }}>
+      {children}
+      {intro && <Sfx name="whoosh" at={0} />}
+    </AbsoluteFill>
+  );
 };
 
 /** Main text, word by word with the voice; the word being spoken turns terracotta. */
@@ -94,28 +104,35 @@ export const Words: React.FC<{ scene: SceneTiming; top: number; size?: number; m
     if (frame >= c[0].start - 3) idx = i;
   });
   const chunk = chunks[idx];
+  const punch = spring({ frame: frame - (chunk[0].start - 3), fps, config: { damping: 12, stiffness: 320, mass: 0.5 } });
   return (
-    <div dir="rtl" style={{ position: "absolute", top, left: 80, right: 140, display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "baseline", columnGap: "0.26em", rowGap: 6, fontFamily: serif ? SERIF : SANS, fontWeight: serif ? 700 : 600, fontSize: size, lineHeight: 1.45 }}>
-      {chunk.map((w, i) => {
-        const s = spring({ frame: frame - w.start + 2, fps, config: { damping: 20, stiffness: 180, mass: 0.7 } });
-        const on = frame >= w.start - 2;
-        const latin = /[A-Za-z]/.test(w.text);
-        const active = on && (i === chunk.length - 1 || frame < chunk[i + 1].start);
-        return (
-          <span key={`${idx}-${i}`} dir={latin ? "ltr" : "rtl"} style={{ display: "inline-block", opacity: on ? Math.min(1, s * 1.3) : 0, translate: `0px ${(1 - s) * 18}px`, color: active ? P.clay : P.ink, fontFamily: latin ? SANS : undefined, fontWeight: latin ? 700 : undefined, unicodeBidi: "isolate" }}>
-            {(w.raw ?? w.text).replace(/[«»]/g, "")}
-          </span>
-        );
-      })}
-    </div>
+    <>
+      <div dir="rtl" style={{ position: "absolute", top, left: 80, right: 140, display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "baseline", columnGap: "0.26em", rowGap: 6, fontFamily: serif ? SERIF : SANS, fontWeight: serif ? 700 : 700, fontSize: size, lineHeight: 1.45, scale: String(1.1 - 0.1 * punch) }}>
+        {chunk.map((w, i) => {
+          const s = spring({ frame: frame - w.start + 3, fps, config: { damping: 10, stiffness: 340, mass: 0.45 } });
+          const on = frame >= w.start - 3;
+          const latin = /[A-Za-z]/.test(w.text);
+          const active = on && (i === chunk.length - 1 || frame < chunk[i + 1].start);
+          return (
+            <span key={`${idx}-${i}`} dir={latin ? "ltr" : "rtl"} style={{ position: "relative", display: "inline-block", opacity: on ? Math.min(1, s * 2) : 0, translate: `0px ${(1 - s) * 46}px`, scale: String((0.45 + 0.55 * s) * (active ? 1.12 : 1)), rotate: `${(1 - s) * -9}deg`, color: active ? P.clay : P.ink, fontFamily: latin ? SANS : undefined, unicodeBidi: "isolate" }}>
+              {(w.raw ?? w.text).replace(/[«»]/g, "")}
+              {active && <span style={{ position: "absolute", left: "8%", right: "8%", bottom: -2, height: 5, borderRadius: 3, background: P.clay, opacity: 0.85 }} />}
+            </span>
+          );
+        })}
+      </div>
+      {chunks.map((c, i) => (i > 0 ? <Sfx key={i} name="swish" at={c[0].start - 3} gain={0.8} /> : null))}
+    </>
   );
 };
 
 /** Step number: a large terracotta numeral that bounces in, with a thin ring and a label. */
 export const StepNumber: React.FC<{ n: string; at?: number; label: string }> = ({ n, at = 6, label }) => {
-  const s = usePop(at, 240, 8, 0.9);
+  const s = usePop(at, 320, 6, 0.8);
   const ring = usePop(at + 6, 120, 20);
   return (
+    <>
+    <Sfx name="thud" at={at} />
     <div dir="rtl" style={{ position: "absolute", top: 270, left: 80, right: 140, display: "flex", alignItems: "center", gap: 28 }}>
       <div style={{ position: "relative", width: 170, height: 170, display: "grid", placeItems: "center" }}>
         <div style={{ position: "absolute", inset: 0, borderRadius: "50%", border: `2px solid ${P.clay}`, scale: String(0.7 + 0.3 * ring), opacity: ring * 0.6 }} />
@@ -126,6 +143,7 @@ export const StepNumber: React.FC<{ n: string; at?: number; label: string }> = (
         <div style={{ width: 70, height: 3, borderRadius: 2, background: P.clay, marginTop: 10 }} />
       </div>
     </div>
+    </>
   );
 };
 

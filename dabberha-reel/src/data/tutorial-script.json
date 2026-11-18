@@ -1,15 +1,16 @@
 {
   "audioDir": "tutorial",
-  "totalFrames": 1460,
+  "totalFrames": 1494,
   "tailSeconds": 0.35,
   "voice": {
     "preferredModels": [
+      "eleven_v4",
       "eleven_multilingual_v2"
     ],
     "settings": {
-      "stability": 0.5,
+      "stability": 0.45,
       "similarity_boost": 0.8,
-      "style": 0.35,
+      "style": 0.45,
       "use_speaker_boost": true,
       "speed": 1.0
     },
@@ -24,7 +25,7 @@
       "nominalSeconds": 6,
       "leadSeconds": 0.3,
       "transitionFrames": 12,
-      "tts": "تدري إن هالفيديو اللي تشوفه الحين، ما انفتح فيه أي برنامج مونتاج؟ كله انسوى بالذكاء الاصطناعي!"
+      "tts": "تدري إن هالفيديو اللي تشوفه الحين، ما انفتح فيه أي برنامج مونتاج؟ كله اتسوى بالذكاء الاصطناعي!"
     },
     {
       "id": "T2-Three",
@@ -65,7 +66,7 @@
       "id": "T7-CTA",
       "nominalSeconds": 9,
       "leadSeconds": 0.3,
-      "tts": "وإذا تبغى فيديو مثل هذا، أو أي فيديو إعلاني لمتجرك أو مشروعك، متجر دبرها يوفره لك بإبداع! تواصل معنا الحين.",
+      "tts": "وإذا تبغى فيديو مثل هذا، أو أي فيديو إعلاني لمتجرك أو مشروعك، متجر دبرها يوفره لك بإبداع! والرابط في البايو.",
       "minSeconds": 12.6
     }
   ],
@@ -109,13 +110,33 @@
       "id": "impact",
       "seconds": 1.5,
       "prompt": "Punchy modern logo hit with bright shimmer tail"
+    },
+    {
+      "id": "tick",
+      "seconds": 0.5,
+      "prompt": "Crisp short UI tick click, snappy and clean"
+    },
+    {
+      "id": "swish",
+      "seconds": 0.5,
+      "prompt": "Very short fast swish for kinetic text, airy"
+    },
+    {
+      "id": "riser",
+      "seconds": 1.2,
+      "prompt": "Short rising whoosh riser building into a hit, energetic"
+    },
+    {
+      "id": "thud",
+      "seconds": 0.6,
+      "prompt": "Punchy deep thud hit for a big number appearing, tight"
     }
   ],
   "music": [
     {
-      "id": "bed",
-      "prompt": "Calm modern lo-fi tech background music for a tutorial video, 95 BPM, soft electric piano chords, gentle beat, warm bass, light and positive, unobtrusive under a voiceover, ends softly at 49 seconds. No vocals.",
-      "lengthMs": 50000
+      "id": "hype",
+      "prompt": "Energetic upbeat modern electronic pop beat for a fast-paced tech tutorial on TikTok, 124 BPM, punchy kick and claps, driving bass, bright synth plucks, rhythmic risers every 8 bars, confident and exciting, no slow intro, strong ending hit at 50 seconds. No vocals.",
+      "lengthMs": 51000
     }
   ]
 }
