@@ -116,6 +116,10 @@ header .lead{max-width:56ch;color:var(--muted)}
 .stage .range{color:var(--stage-muted)}
 .stage .range output{color:var(--stage-ink)}
 .stage .range input{accent-color:#E1BC62}
+.tone-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:13.5px}
+.tone-lbl{color:var(--stage-muted)}
+.tone-desc{color:var(--stage-muted);min-width:0}
+#tones{flex-wrap:wrap}
 .neck-scroll{overflow-x:auto;border-radius:12px;-webkit-overflow-scrolling:touch}
 #neck{display:block;width:100%;min-width:760px;height:auto;touch-action:pan-x;user-select:none;-webkit-user-select:none;cursor:pointer}
 .stage-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px;font-size:13px;color:var(--stage-muted)}
@@ -342,6 +346,11 @@ kbd{font-family:var(--f-mono);font-size:12px;border:1px solid var(--line);border
           </div>
         </div>
       </div>
+      <div class="tone-row">
+        <span class="tone-lbl">صوت العود</span>
+        <div class="seg" id="tones" role="group" aria-label="صوت العود"></div>
+        <span class="tone-desc" id="toneDesc"></span>
+      </div>
       <div class="neck-scroll">
         <svg id="neck" viewBox="0 0 1000 300" role="img" aria-label="زند العود: انقر على الوتر في أي موضع لتعزف النغمة، وعلى اسم الوتر عند المشط لتعزفه مطلقاً"></svg>
       </div>
@@ -485,7 +494,32 @@ var IVAL = {2:"½",3:"¾",4:"1",5:"1¼",6:"1½"};
 
 /* ---------- sound: Karplus–Strong double course + body resonance ---------- */
 var ctx=null, master, bodyIn, dryG, wetG, conv, voices=[], cache={};
-var settings={vol:.8, rev:.22, snap:true, trem:false, labels:"ar", tempo:92};
+var settings={vol:.8, rev:.22, snap:true, trem:false, labels:"ar", tempo:92, tone:"classic"};
+/* tone presets: how the strings are plucked, how bright and long they ring, and how the body resonates */
+var TONES={
+  classic:{name:"كلاسيكي", d:"متوازن ودافئ، رنين متوسط وهجمة ريشة معتدلة.",
+    So:.37, Ss:.47, T:1, Ts:.6, beta:.12, exc:.62, click:.22, det:[1.2,2.4], lpMul:1, trem:78,
+    eq:{air:5.5, top:3, box:-2.5, nasal:2.2, shelf:-9}},
+  khaleeji:{name:"خليجي", d:"ريشة قوية واضحة، صوت لامع فيه أنفية، رنين أقصر، وترعيد سريع.",
+    So:.30, Ss:.42, T:.8, Ts:.5, beta:.085, exc:.8, click:.4, det:[1.6,3], lpMul:1.35, trem:60,
+    eq:{air:4, top:2, box:-3.5, nasal:4.8, shelf:-6}},
+  iraqi:{name:"عراقي", d:"صافٍ ومغنٍّ، كل نغمة واضحة ورنينها طويل.",
+    So:.33, Ss:.44, T:1.15, Ts:.7, beta:.11, exc:.7, click:.26, det:[.7,1.5], lpMul:1.15, trem:70,
+    eq:{air:4.5, top:3.5, box:-2, nasal:3, shelf:-7}},
+  tarab:{name:"طربي مصري", d:"عميق ودافئ، باص ممتلئ، ريشة ناعمة ورنين طويل.",
+    So:.42, Ss:.49, T:1.25, Ts:.62, beta:.15, exc:.5, click:.13, det:[1.5,2.8], lpMul:.8, trem:84,
+    eq:{air:7.5, top:4, box:-1, nasal:1, shelf:-11}},
+  turkish:{name:"تركي", d:"رفيع ولامع، هجمة حادة، وصندوق أصغر.",
+    So:.28, Ss:.40, T:.95, Ts:.55, beta:.07, exc:.86, click:.3, det:[1,2], lpMul:1.5, trem:66,
+    eq:{air:3, top:2, box:-4, nasal:3.6, shelf:-4}}
+};
+try{ var st=localStorage.getItem("oud-tone"); if(st&&TONES[st]) settings.tone=st; }catch(e){}
+function TN(){ return TONES[settings.tone]||TONES.classic; }
+var eqNodes=null;
+function applyToneEQ(){
+  if(!eqNodes||!ctx) return; var e=TN().eq, t=ctx.currentTime;
+  ["air","top","box","nasal","shelf"].forEach(function(k){ eqNodes[k].gain.setTargetAtTime(e[k],t,0.05); });
+}
 
 function biq(type,f,q,g){ var b=ctx.createBiquadFilter(); b.type=type; b.frequency.value=f; b.Q.value=q; if(g!=null) b.gain.value=g; return b; }
 function makeIR(){
@@ -511,6 +545,7 @@ function initAudio(){
   bodyIn=ctx.createGain();
   var hp=biq("highpass",58,0.7), air=biq("peaking",118,2.4,5.5), top=biq("peaking",250,1.5,3),
       box=biq("peaking",640,1.0,-2.5), nasal=biq("peaking",1850,1.3,2.2), sh=biq("highshelf",5200,0.7,-9);
+  eqNodes={air:air, top:top, box:box, nasal:nasal, shelf:sh}; applyToneEQ();
   bodyIn.connect(hp); hp.connect(air); air.connect(top); top.connect(box); box.connect(nasal); nasal.connect(sh);
   dryG=ctx.createGain(); wetG=ctx.createGain(); conv=ctx.createConvolver(); conv.buffer=makeIR();
   sh.connect(dryG); sh.connect(conv); conv.connect(wetG);
@@ -522,14 +557,14 @@ function initAudio(){
 function setRev(v){ if(!ctx) return; wetG.gain.value=v*1.1; dryG.gain.value=1-v*0.35; }
 
 // one string: fractional-delay Karplus–Strong, plucked near the bridge
-function renderString(f,T60,S,len,sr){
+function renderString(f,T60,S,len,sr,beta,exc){
   var out=new Float32Array(len);
   var P=sr/f - S, N=Math.floor(P), frac=P-N;
   if(frac<0.25){ N-=1; frac+=1; }
   var C=(1-frac)/(1+frac);
   var line=new Float32Array(N), tmp=new Float32Array(N), lp=0, i;
-  for(i=0;i<N;i++){ var w=Math.random()*2-1; lp+=0.62*(w-lp); tmp[i]=lp; }
-  var pp=Math.max(1,Math.round(N*0.12)), mean=0, peak=0;
+  for(i=0;i<N;i++){ var w=Math.random()*2-1; lp+=exc*(w-lp); tmp[i]=lp; }
+  var pp=Math.max(1,Math.round(N*beta)), mean=0, peak=0;
   for(i=0;i<N;i++){ line[i]=tmp[i]-tmp[(i-pp+N)%N]; mean+=line[i]; }
   mean/=N;
   for(i=0;i<N;i++){ line[i]-=mean; peak=Math.max(peak,Math.abs(line[i])); }
@@ -547,16 +582,16 @@ function renderString(f,T60,S,len,sr){
 function renderCourse(p,stopped){
   var sr=ctx.sampleRate, f=freqOf(p);
   var T=Math.min(4.2,Math.max(1.2,2.9*Math.pow(130/f,0.45)));
-  if(stopped) T*=0.6;
-  var S=stopped?0.47:0.37, len=Math.floor(sr*T*0.9);
-  var det=Math.pow(2,(1.2+Math.random()*1.2)/1200);
-  var a=renderString(f*det,T,S,len,sr), b=renderString(f/det,T*0.95,S,len,sr);
+  var tn=TN(); T*=tn.T; if(stopped) T*=tn.Ts;
+  var S=stopped?tn.Ss:tn.So, len=Math.floor(sr*T*0.9);
+  var det=Math.pow(2,(tn.det[0]+Math.random()*(tn.det[1]-tn.det[0]))/1200);
+  var a=renderString(f*det,T,S,len,sr,tn.beta,tn.exc), b=renderString(f/det,T*0.95,S,len,sr,tn.beta,tn.exc);
   var d=Math.floor(sr*(0.0015+Math.random()*0.004));
   var buf=ctx.createBuffer(1,len,sr), out=buf.getChannelData(0), peak=0, n;
   for(n=0;n<len;n++){ out[n]=0.5*a[n]+(n>=d?0.5*b[n-d]:0); }
   // plectrum (risha) click
   var cl=Math.floor(sr*0.006), prev=0;
-  for(n=0;n<cl;n++){ var w=Math.random()*2-1; out[n]+=(w-prev)*0.22*Math.exp(-n/(sr*0.0009)); prev=w; }
+  for(n=0;n<cl;n++){ var w=Math.random()*2-1; out[n]+=(w-prev)*tn.click*Math.exp(-n/(sr*0.0009)); prev=w; }
   var fade=Math.floor(sr*0.12);
   for(n=0;n<fade;n++) out[len-1-n]*=n/fade;
   for(n=0;n<len;n++) peak=Math.max(peak,Math.abs(out[n]));
@@ -564,7 +599,7 @@ function renderCourse(p,stopped){
   return buf;
 }
 function getBuf(p,stopped){
-  var key=Math.round(p*100)+(stopped?"s":"o"), arr=cache[key]||(cache[key]=[]);
+  var key=settings.tone+Math.round(p*100)+(stopped?"s":"o"), arr=cache[key]||(cache[key]=[]);
   if(arr.length<3){ var b=renderCourse(p,stopped); arr.push(b); return b; }
   return arr[(Math.random()*arr.length)|0];
 }
@@ -573,7 +608,7 @@ function pluck(p,c,vel){
   var off=p-COURSES[c].open, stopped=off>0.05;
   var buf=getBuf(p,stopped), t=ctx.currentTime+0.004;
   var src=ctx.createBufferSource(); src.buffer=buf;
-  var lp=ctx.createBiquadFilter(); lp.type="lowpass"; lp.frequency.value=1500+vel*vel*8000; lp.Q.value=0.5;
+  var lp=ctx.createBiquadFilter(); lp.type="lowpass"; lp.frequency.value=Math.min(18000,(1500+vel*vel*8000)*TN().lpMul); lp.Q.value=0.5;
   var g=ctx.createGain(); g.gain.value=vel*0.85;
   src.connect(lp); lp.connect(g);
   var out=g;
@@ -585,12 +620,36 @@ function pluck(p,c,vel){
   src.onended=function(){ if(voices[c]===v) voices[c]=null; try{ out.disconnect(); }catch(e){} };
   src.start(t);
 }
+function setTone(id){
+  if(!TONES[id]) return;
+  settings.tone=id; cache={};
+  try{ localStorage.setItem("oud-tone",id); }catch(e){}
+  Array.prototype.forEach.call($("tones").children,function(b){ b.setAttribute("aria-pressed",String(b.dataset.t===id)); });
+  $("toneDesc").textContent=TN().d;
+  applyToneEQ();
+}
+function demoTone(){
+  initAudio(); stopScale();
+  var ph=[[4,.5],[7,.5],[10,.5],[14,1],[10,.5],[7,.5],[4,1.5]], t=0, tok={stop:false,kind:"demo"}; playing=tok;
+  ph.forEach(function(n){ setTimeout(function(){ if(tok.stop) return; var bc=bestCourse(n[0]); pluck(n[0],bc.c,.86); feedback({p:n[0],c:bc.c}); },t); t+=n[1]*420; });
+  setTimeout(function(){ if(playing===tok) playing=null; },t);
+}
+function buildTones(){
+  var box=$("tones");
+  Object.keys(TONES).forEach(function(id){
+    var b=document.createElement("button"); b.type="button"; b.dataset.t=id; b.textContent=TONES[id].name;
+    b.setAttribute("aria-pressed",String(id===settings.tone));
+    b.addEventListener("click",function(){ setTone(id); demoTone(); setTimeout(prewarm,900); });
+    box.appendChild(b);
+  });
+  $("toneDesc").textContent=TN().d;
+}
 function prewarm(){
   if(!ctx) return;
   var m=current(), list=scaleOf(m).slice(), i=0;
   (function step(){
     if(i>=list.length) return;
-    var p=list[i++], bc=bestCourse(p), key=Math.round(p*100)+(bc.off>0.05?"s":"o");
+    var p=list[i++], bc=bestCourse(p), key=settings.tone+Math.round(p*100)+(bc.off>0.05?"s":"o");
     if(!cache[key]||!cache[key].length) getBuf(p,bc.off>0.05);
     setTimeout(step,16);
   })();
@@ -668,7 +727,7 @@ function noteDown(info){
   pluck(info.p,info.c,0.86); feedback(info);
   if(settings.trem){
     stopTrem(); var k=0;
-    trem=setInterval(function(){ k++; pluck(info.p,info.c,k%2?0.6:0.76); vibrate(info.c); },78);
+    trem=setInterval(function(){ k++; pluck(info.p,info.c,k%2?0.6:0.76); vibrate(info.c); },TN().trem);
   }
 }
 function stopTrem(){ if(trem){ clearInterval(trem); trem=null; } }
@@ -1166,7 +1225,7 @@ function playMelody(){
     if(tok.tr){ clearInterval(tok.tr); tok.tr=null; }
     if(!e.rest){
       var bc=bestCourse(e.p); pluck(e.p,bc.c,idx===0?0.9:0.82); feedback({p:e.p,c:bc.c,deg:e.deg});
-      if(settings.trem&&e.beats>=1.5){ var k=0, ep=e.p, ec=bc.c; tok.tr=setInterval(function(){ if(tok.stop){ clearInterval(tok.tr); return; } k++; pluck(ep,ec,k%2?0.6:0.74); vibrate(ec); },78); }
+      if(settings.trem&&e.beats>=1.5){ var k=0, ep=e.p, ec=bc.c; tok.tr=setInterval(function(){ if(tok.stop){ clearInterval(tok.tr); return; } k++; pluck(ep,ec,k%2?0.6:0.74); vibrate(ec); },TN().trem); }
     }
     setTimeout(next,60000/settings.tempo*e.beats);
   })();
@@ -1362,7 +1421,7 @@ function bindToggle(id,key,after){
   var b=$(id); b.addEventListener("click",function(){ settings[key]=!settings[key]; b.setAttribute("aria-pressed",String(settings[key])); if(after) after(); });
 }
 function init(){
-  buildChips(); buildNeck(); buildNoteChips(); buildTuning(); initComposer(); initLib();
+  buildChips(); buildTones(); buildNeck(); buildNoteChips(); buildTuning(); initComposer(); initLib();
   var h=(location.hash||"").replace("#",""), idx=0;
   MAQAMAT.forEach(function(m,i){ if(m.id===h) idx=i; });
   selectMaqam(idx,false);
