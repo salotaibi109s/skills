@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+film/output/
+film/build/
+node_modules/

@@ -1,0 +1,187 @@
+<title>مهامي اليومية</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<style>
+/* Layout: one working column — summary strip, then the add-task bar, then the list grouped by priority. */
+:root{
+  --bg:#f3f5fa; --surface:#ffffff; --line:#dfe4ef; --ink:#121826; --muted:#5d6883;
+  --accent:#2563eb; --accent-ink:#ffffff; --cyan:#0891b2;
+  --high:#dc2626; --mid:#d97706; --low:#0f9d6b; --track:#e6eaf3;
+  --display:"Tajawal","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --body:"IBM Plex Sans Arabic","Tajawal",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0b0e15; --surface:#141a26; --line:#252e42; --ink:#e9eefb; --muted:#93a0bd;
+  --accent:#4f8cff; --accent-ink:#06101f; --cyan:#22d3ee;
+  --high:#f87171; --mid:#fbbf24; --low:#34d399; --track:#222b3d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0b0e15; --surface:#141a26; --line:#252e42; --ink:#e9eefb; --muted:#93a0bd;
+  --accent:#4f8cff; --accent-ink:#06101f; --cyan:#22d3ee;
+  --high:#f87171; --mid:#fbbf24; --low:#34d399; --track:#222b3d; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--ink)}
+body{font-family:var(--body);font-size:15px;line-height:1.6;direction:rtl;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:880px;margin:0 auto;display:grid;gap:18px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(24px,4vw,32px);margin:0;text-wrap:balance}
+.date{color:var(--muted);font-size:14px}
+.theme{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;cursor:pointer}
+.theme:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.stats{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px}
+.ring{width:120px;height:120px;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring b{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-size:28px;font-variant-numeric:tabular-nums}
+.ring small{position:absolute;bottom:22px;inset-inline:0;text-align:center;color:var(--muted);font-size:12px}
+.nums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.num{display:grid;gap:2px}
+.num strong{font-family:var(--display);font-size:26px;font-variant-numeric:tabular-nums}
+.num span{color:var(--muted);font-size:13px}
+.num.high strong{color:var(--high)}
+form{display:grid;grid-template-columns:1fr 140px 140px auto;gap:10px}
+input,select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-width:0}
+.add{font:inherit;font-weight:700;background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;padding:10px 18px;cursor:pointer}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font:inherit;font-size:14px;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:5px 14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+li{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;border-inline-start:4px solid var(--pc)}
+li.done .t{text-decoration:line-through;color:var(--muted)}
+.t{min-width:0;overflow-wrap:anywhere}
+.cat{color:var(--muted);font-size:13px}
+.pri{font-size:12px;font-weight:700;color:var(--pc);border:1px solid var(--pc);border-radius:999px;padding:1px 10px;white-space:nowrap}
+.check{appearance:none;width:22px;height:22px;border:2px solid var(--line);border-radius:7px;margin:0;cursor:pointer;display:grid;place-items:center;padding:0}
+.check:checked{background:var(--low);border-color:var(--low)}
+.check:checked::after{content:"✓";color:var(--bg);font-weight:800;font-size:14px}
+.del{border:0;background:transparent;color:var(--muted);cursor:pointer;font-size:18px;padding:4px 8px;border-radius:8px}
+.del:hover{color:var(--high)}
+.note{color:var(--muted);font-size:13px}
+.empty{color:var(--muted);text-align:center;padding:26px;border:1px dashed var(--line);border-radius:14px}
+@media (max-width:620px){
+  form{grid-template-columns:1fr 1fr}
+  form input{grid-column:1/-1}
+  .add{grid-column:1/-1}
+  .stats{grid-template-columns:1fr;justify-items:center}
+  .nums{width:100%}
+  li{grid-template-columns:auto 1fr auto}
+  li .pri{display:none}
+}
+@media (prefers-reduced-motion:no-preference){.ring circle.v{transition:stroke-dashoffset .6s ease}li{transition:opacity .2s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>مهامي اليومية</h1>
+      <div class="date" id="today"></div>
+    </div>
+    <button class="theme" id="themeBtn" type="button">الوضع الليلي</button>
+  </header>
+
+  <section class="stats" aria-label="لوحة الإحصائيات">
+    <div class="ring" aria-hidden="true">
+      <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="none" stroke="var(--track)" stroke-width="12"/>
+        <circle class="v" id="ringV" cx="60" cy="60" r="50" fill="none" stroke="var(--cyan)" stroke-width="12" stroke-linecap="round" stroke-dasharray="314.16" stroke-dashoffset="314.16"/></svg>
+      <b id="pct">0%</b><small>نسبة الإنجاز</small>
+    </div>
+    <div class="nums">
+      <div class="num"><strong id="nTotal">0</strong><span>كل المهام</span></div>
+      <div class="num"><strong id="nDone">0</strong><span>مكتملة</span></div>
+      <div class="num high"><strong id="nHigh">0</strong><span>عالية الأولوية متبقية</span></div>
+    </div>
+  </section>
+
+  <form id="addForm" autocomplete="off">
+    <input id="taskTitle" placeholder="اكتب مهمة جديدة…" aria-label="عنوان المهمة" required>
+    <select id="taskPri" aria-label="الأولوية">
+      <option value="high">أولوية عالية</option>
+      <option value="mid" selected>أولوية متوسطة</option>
+      <option value="low">أولوية منخفضة</option>
+    </select>
+    <select id="taskCat" aria-label="التصنيف">
+      <option>العمل</option><option>شخصي</option><option>دراسة</option><option>البيت</option>
+    </select>
+    <button class="add" type="submit">إضافة</button>
+  </form>
+
+  <div class="filters" role="group" aria-label="تصفية حسب الأولوية">
+    <button class="chip" type="button" data-f="all" aria-pressed="true">الكل</button>
+    <button class="chip" type="button" data-f="high" aria-pressed="false">عالية</button>
+    <button class="chip" type="button" data-f="mid" aria-pressed="false">متوسطة</button>
+    <button class="chip" type="button" data-f="low" aria-pressed="false">منخفضة</button>
+    <button class="chip" type="button" data-f="open" aria-pressed="false">غير مكتملة</button>
+  </div>
+
+  <ul id="list" aria-live="polite"></ul>
+  <p class="note" id="note">المهام الظاهرة أمثلة توضيحية؛ أضف مهامك واحذف الأمثلة. تُحفظ المهام في متصفحك فقط.</p>
+</div>
+
+<script>
+const PRI = {high:{label:"عالية",c:"var(--high)",w:0}, mid:{label:"متوسطة",c:"var(--mid)",w:1}, low:{label:"منخفضة",c:"var(--low)",w:2}};
+const KEY = "daily-tasks-v1";
+const SAMPLE = [
+  {t:"مراجعة تقرير المبيعات الأسبوعي",p:"high",c:"العمل",d:true},
+  {t:"تجهيز عرض اجتماع الأحد",p:"high",c:"العمل",d:false},
+  {t:"الرد على رسائل العملاء المعلقة",p:"mid",c:"العمل",d:true},
+  {t:"قراءة فصل من كتاب إدارة الوقت",p:"low",c:"دراسة",d:false},
+  {t:"حجز موعد صيانة السيارة",p:"mid",c:"شخصي",d:false},
+  {t:"شراء أغراض البيت",p:"low",c:"البيت",d:true}
+];
+let tasks, filter = "all";
+try { tasks = JSON.parse(localStorage.getItem(KEY)); } catch(e) { tasks = null; }
+if (!Array.isArray(tasks)) tasks = SAMPLE.map((x,i)=>({...x,id:i+1}));
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(tasks)); } catch(e) {} };
+
+document.getElementById("today").textContent =
+  new Intl.DateTimeFormat("ar-SA",{weekday:"long",day:"numeric",month:"long"}).format(new Date());
+
+function render(){
+  const list = document.getElementById("list");
+  const shown = tasks
+    .filter(x => filter==="all" || (filter==="open" ? !x.d : x.p===filter))
+    .sort((a,b) => (a.d-b.d) || (PRI[a.p].w-PRI[b.p].w));
+  list.innerHTML = "";
+  if (!shown.length) list.innerHTML = '<li class="empty" style="display:block;border-inline-start-width:1px">لا توجد مهام في هذا التصنيف.</li>';
+  for (const x of shown){
+    const li = document.createElement("li");
+    li.className = x.d ? "done" : "";
+    li.style.setProperty("--pc", PRI[x.p].c);
+    li.innerHTML = `<input type="checkbox" class="check" aria-label="إنجاز المهمة" ${x.d?"checked":""}>
+      <div class="t"><div></div><div class="cat"></div></div>
+      <span class="pri">${PRI[x.p].label}</span>
+      <button class="del" type="button" aria-label="حذف المهمة">×</button>`;
+    li.querySelector(".t div").textContent = x.t;
+    li.querySelector(".cat").textContent = x.c;
+    li.querySelector(".check").addEventListener("change", e => { x.d = e.target.checked; save(); render(); });
+    li.querySelector(".del").addEventListener("click", () => { tasks = tasks.filter(y => y !== x); save(); render(); });
+    list.appendChild(li);
+  }
+  const total = tasks.length, done = tasks.filter(x=>x.d).length;
+  const pct = total ? Math.round(done/total*100) : 0;
+  document.getElementById("nTotal").textContent = total;
+  document.getElementById("nDone").textContent = done;
+  document.getElementById("nHigh").textContent = tasks.filter(x=>x.p==="high"&&!x.d).length;
+  document.getElementById("pct").textContent = pct + "%";
+  document.getElementById("ringV").style.strokeDashoffset = 314.16 * (1 - pct/100);
+}
+
+document.getElementById("addForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const t = document.getElementById("taskTitle").value.trim();
+  if (!t) return;
+  tasks.push({id:Date.now(), t, p:document.getElementById("taskPri").value, c:document.getElementById("taskCat").value, d:false});
+  document.getElementById("taskTitle").value = "";
+  save(); render();
+});
+document.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+  filter = b.dataset.f;
+  document.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c===b));
+  render();
+}));
+const root = document.documentElement;
+const isDark = () => root.dataset.theme ? root.dataset.theme==="dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+const syncBtn = () => document.getElementById("themeBtn").textContent = isDark() ? "الوضع النهاري" : "الوضع الليلي";
+document.getElementById("themeBtn").addEventListener("click", () => { root.dataset.theme = isDark() ? "light" : "dark"; syncBtn(); });
+syncBtn(); render();
+</script>

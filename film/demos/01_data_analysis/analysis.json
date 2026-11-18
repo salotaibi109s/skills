@@ -1,0 +1,170 @@
+{
+  "rows": 5000,
+  "late_count": 1027,
+  "late_rate": 20.5,
+  "avg_overrun_late_hours": 23.1,
+  "best_department": {
+    "name": "خدمة العملاء",
+    "late_rate": 16.4,
+    "sat": 3.97
+  },
+  "departments": [
+    {
+      "name": "خدمة العملاء",
+      "ops": 1014,
+      "late_rate": 16.4,
+      "sat": 3.97
+    },
+    {
+      "name": "المستودعات",
+      "ops": 1030,
+      "late_rate": 18.1,
+      "sat": 3.87
+    },
+    {
+      "name": "المشتريات",
+      "ops": 954,
+      "late_rate": 20.3,
+      "sat": 3.88
+    },
+    {
+      "name": "التوصيل",
+      "ops": 1008,
+      "late_rate": 22.0,
+      "sat": 3.83
+    },
+    {
+      "name": "الصيانة",
+      "ops": 994,
+      "late_rate": 26.1,
+      "sat": 3.73
+    }
+  ],
+  "cities": [
+    {
+      "name": "أبها",
+      "late_rate": 23.9
+    },
+    {
+      "name": "جدة",
+      "late_rate": 21.5
+    },
+    {
+      "name": "المدينة المنورة",
+      "late_rate": 21.1
+    },
+    {
+      "name": "مكة المكرمة",
+      "late_rate": 19.9
+    },
+    {
+      "name": "الرياض",
+      "late_rate": 19.9
+    },
+    {
+      "name": "الدمام",
+      "late_rate": 19.2
+    }
+  ],
+  "months": [
+    {
+      "name": "يناير",
+      "late_rate": 19.2
+    },
+    {
+      "name": "فبراير",
+      "late_rate": 21.7
+    },
+    {
+      "name": "مارس",
+      "late_rate": 21.5
+    },
+    {
+      "name": "أبريل",
+      "late_rate": 15.8
+    },
+    {
+      "name": "مايو",
+      "late_rate": 22.1
+    },
+    {
+      "name": "يونيو",
+      "late_rate": 23.2
+    },
+    {
+      "name": "يوليو",
+      "late_rate": 23.7
+    },
+    {
+      "name": "أغسطس",
+      "late_rate": 19.0
+    },
+    {
+      "name": "سبتمبر",
+      "late_rate": 18.9
+    }
+  ],
+  "top_causes": [
+    {
+      "name": "ازدحام الطلبات",
+      "count": 204,
+      "share": 20.5
+    },
+    {
+      "name": "تأخر المورد",
+      "count": 161,
+      "share": 16.2
+    },
+    {
+      "name": "نقص المخزون",
+      "count": 159,
+      "share": 16.0
+    },
+    {
+      "name": "نقص الموظفين",
+      "count": 150,
+      "share": 15.1
+    },
+    {
+      "name": "عنوان غير دقيق",
+      "count": 127,
+      "share": 12.8
+    }
+  ],
+  "anomalies": [
+    {
+      "city": "جدة",
+      "month": "يوليو",
+      "late_rate": 36.4,
+      "ops": 121,
+      "z": 2.98
+    },
+    {
+      "city": "المدينة المنورة",
+      "month": "يوليو",
+      "late_rate": 36.0,
+      "ops": 50,
+      "z": 2.91
+    },
+    {
+      "city": "مكة المكرمة",
+      "month": "مايو",
+      "late_rate": 27.4,
+      "ops": 73,
+      "z": 1.32
+    }
+  ],
+  "top_anomaly_cause": {
+    "name": "نقص المخزون",
+    "share": 55.8
+  },
+  "cs_worst_day": {
+    "day": "الجمعة",
+    "late_rate": 33.6,
+    "other_days": 13.5
+  },
+  "data_quality": {
+    "missing_satisfaction": 75,
+    "late_without_cause": 31
+  }
+}
