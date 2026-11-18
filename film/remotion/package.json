@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "node prepare.mjs",
+    "studio": "node prepare.mjs && remotion studio src/index.ts",
+    "still": "node prepare.mjs && remotion still src/index.ts ClaudeBeyondTheChat",
+    "render": "node prepare.mjs && remotion render src/index.ts ClaudeBeyondTheChat ../output/claude_beyond_the_chat_4k.mp4 --scale=2 --codec=h264 --crf=18"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +19,6 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "remotion": "^4.0.370"
-  }
+  },
+  "type": "module"
 }

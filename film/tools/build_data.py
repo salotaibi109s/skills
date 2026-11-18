@@ -16,6 +16,7 @@ data = {"timeline": tl,
         "logs": {"fail": [l for l in fail if l.strip()][:2] + [l for l in fail if l.startswith(("FAIL", "ERROR", "AssertionError", "Ran", "FAILED"))],
                  "diff": diff[:26], "ok": ok},
         "code": [l for l in code if l.strip()],
-        "analysis": analysis}
+        "analysis": analysis,
+        "audio": {"mix": "mix.wav"} if (F / "build/audio/mix.wav").exists() else {}}
 (F / "engine/data.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
 print("fail:", data["logs"]["fail"]); print("diff lines", len(diff)); print("ok tail:", ok[-3:])

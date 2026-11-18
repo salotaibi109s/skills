@@ -107,16 +107,49 @@ def ts(t, sep=","):
     return f"{int(h):02d}:{int(m):02d}:{int(s):02d}{sep}{int(round((s % 1) * 1000)):03d}"
 
 
+VO = FILM / "build" / "audio" / "vo"
+
+
+def aligned(sid, lines):
+    """Cue windows from ElevenLabs character alignment (real voice timing), or None."""
+    f = VO / f"{sid}.alignment.json"
+    if not f.exists():
+        return None
+    al = json.loads(f.read_text(encoding="utf-8"))
+    al = al.get("alignment", al)
+    chars, st, en = al["characters"], al["character_start_times_seconds"], al["character_end_times_seconds"]
+    full = "".join(chars)
+    out, pos = [], 0
+    for line in lines:
+        text = line[1] if isinstance(line, tuple) else line
+        k = full.find(text[:12], pos)
+        if k < 0:
+            return None
+        e = k + len(text) - 1
+        out.append((st[k], en[min(e, len(en) - 1)]))
+        pos = e + 1
+    return out, en[-1]
+
+
 t, scenes, cues = 0.0, [], []
 for sid, en, ar, lead, tail, lines in S:
     start = t; t += lead; sc = []
-    for line in lines:
+    al = aligned(sid, lines)
+    for j, line in enumerate(lines):
         prompt = isinstance(line, tuple); text = line[1] if prompt else line
-        d = dur(text, prompt)
-        c = {"scene": sid, "i": len(sc), "start": round(t, 2), "end": round(t + d, 2), "text": text, "prompt": prompt}
-        sc.append(c); cues.append(c); t += d + GAP
+        if al:
+            a, b = al[0][j]
+            c = {"scene": sid, "i": j, "start": round(start + lead + a, 2), "end": round(start + lead + b, 2), "text": text, "prompt": prompt}
+        else:
+            d = dur(text, prompt)
+            c = {"scene": sid, "i": j, "start": round(t, 2), "end": round(t + d, 2), "text": text, "prompt": prompt}
+            t += d + GAP
+        sc.append(c); cues.append(c)
+    if al:
+        t = start + lead + al[1] + .2
     t += tail
-    scenes.append({"id": sid, "title_en": en, "title_ar": ar, "start": round(start, 2), "end": round(t, 2), "cues": sc})
+    scenes.append({"id": sid, "title_en": en, "title_ar": ar, "start": round(start, 2), "end": round(t, 2), "cues": sc,
+                   "vo_offset": lead if al else None})
 total = round(t, 2)
 (FILM / "script" / "timeline.json").write_text(json.dumps({"fps": 30, "duration": total, "scenes": scenes},
                                                           ensure_ascii=False, indent=1), encoding="utf-8")

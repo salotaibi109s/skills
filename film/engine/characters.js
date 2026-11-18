@@ -129,7 +129,7 @@ export function claude(c, x, y, s = 1, o = {}) {
   body.lineTo(210, 300); body.lineTo(190, 20); body.bezierCurveTo(170, -40, 110, -58, 50, -60); body.closePath();
   const bg = c.createLinearGradient(0, -70, 0, 300); bg.addColorStop(0, rgba(P.white, .55 * k)); bg.addColorStop(.35, rgba(P.sky, .32 * k)); bg.addColorStop(1, rgba(P.blue, 0));
   c.fillStyle = bg; c.fill(body);
-  c.strokeStyle = rgba(P.white, .7 * k); c.lineWidth = 2.5; c.stroke(body);
+  c.strokeStyle = rgba(P.white, .28 * k); c.lineWidth = 2; c.stroke(body);
   // neural lines inside body
   const r = mulberry(5);
   c.lineWidth = 1.4;
@@ -141,7 +141,7 @@ export function claude(c, x, y, s = 1, o = {}) {
   // neck + head
   const hg = c.createRadialGradient(-14, -228, 6, 0, -205, 78);
   hg.addColorStop(0, rgba(P.white, .95 * k)); hg.addColorStop(.6, rgba(P.sky, .55 * k)); hg.addColorStop(1, rgba(P.cyan, .05 * k));
-  c.fillStyle = rgba(P.sky, .35 * k); c.beginPath(); c.moveTo(-26, -150); c.lineTo(-30, -60); c.lineTo(30, -60); c.lineTo(26, -150); c.fill();
+  { const ng = c.createLinearGradient(0, -150, 0, -50); ng.addColorStop(0, rgba(P.sky, .4 * k)); ng.addColorStop(1, rgba(P.sky, .08 * k)); c.fillStyle = ng; c.beginPath(); c.moveTo(-24, -150); c.quadraticCurveTo(-22, -90, -46, -58); c.lineTo(46, -58); c.quadraticCurveTo(22, -90, 24, -150); c.fill(); }
   c.fillStyle = hg; c.beginPath(); c.ellipse(look * 6, -205, 64, 78, 0, 0, 7); c.fill();
   // friendly eyes: two soft light arcs
   c.strokeStyle = rgba('#0b2a4a', .75 * k); c.lineWidth = 5; c.lineCap = 'round';

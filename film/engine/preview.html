@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Film preview</title>
+<style>
+@font-face{font-family:Tajawal;font-weight:400;src:url(fonts/tajawal-arabic-400-normal.woff2)}
+@font-face{font-family:Tajawal;font-weight:500;src:url(fonts/tajawal-arabic-500-normal.woff2)}
+@font-face{font-family:Tajawal;font-weight:600;src:url(fonts/tajawal-arabic-500-normal.woff2)}
+@font-face{font-family:Tajawal;font-weight:700;src:url(fonts/tajawal-arabic-700-normal.woff2)}
+@font-face{font-family:Tajawal;font-weight:800;src:url(fonts/tajawal-arabic-800-normal.woff2)}
+@font-face{font-family:"Space Grotesk";font-weight:400;src:url(fonts/space-grotesk-latin-400-normal.woff2)}
+@font-face{font-family:"Space Grotesk";font-weight:500;src:url(fonts/space-grotesk-latin-500-normal.woff2)}
+@font-face{font-family:"Space Grotesk";font-weight:700;src:url(fonts/space-grotesk-latin-700-normal.woff2)}
+@font-face{font-family:"JetBrains Mono";font-weight:400;src:url(fonts/jetbrains-mono-latin-400-normal.woff2)}
+@font-face{font-family:"JetBrains Mono";font-weight:700;src:url(fonts/jetbrains-mono-latin-700-normal.woff2)}
+html,body{margin:0;background:#000}canvas{display:block;width:100vw;height:auto}
+</style></head><body><canvas id="cv"></canvas>
+<script type="module">
+import { createFilm } from './scenes.js';
+import { CAPTURES } from './assets.js';
+const q = new URLSearchParams(location.search); const S = +(q.get('scale') || 1);
+const cv = document.getElementById('cv'); cv.width = 1920 * S; cv.height = 1080 * S; const c = cv.getContext('2d');
+const data = await (await fetch('data.json')).json();
+const IMG = {}; await Promise.all(CAPTURES.map(n => new Promise(r => { const i = new Image(); i.onload = r; i.onerror = r; i.src = `../build/captures/${n}.png`; IMG[n] = i; })));
+await Promise.all(['400 40px Tajawal','500 40px Tajawal','700 40px Tajawal','800 40px Tajawal','500 40px "Space Grotesk"','700 40px "Space Grotesk"','400 20px "JetBrains Mono"'].map(f => document.fonts.load(f, 'اب abc')));
+const film = createFilm(data, IMG);
+window.FILM = { duration: film.duration, frame: (t) => film.draw(c, cv, t) };
+window.READY = true;
+if (!q.has('still')) { const t0 = performance.now() - (+(q.get('t')||0))*1000; const loop = () => { film.draw(c, cv, ((performance.now() - t0) / 1000) % film.duration); requestAnimationFrame(loop); }; loop(); }
+</script></body></html>
