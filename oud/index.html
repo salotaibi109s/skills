@@ -238,6 +238,8 @@ kbd{font-family:var(--f-mono);font-size:12px;border:1px solid var(--line);border
 .ex-meta .mono{font-family:var(--f-mono);direction:ltr}
 .ex-act{display:flex;flex-wrap:wrap;gap:6px}
 .ex-act .btn{padding:4px 10px;font-size:13px}
+.ex.piece{border-color:var(--brass)}
+.ex.piece h4{color:var(--brass)}
 .ex.cur{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
 .ex.done h4::after{content:" ✓";color:var(--good)}
 .btn.chk[aria-pressed="true"]{color:var(--good);border-color:var(--good);background:transparent}
@@ -1198,6 +1200,32 @@ function appendRec(p){
 }
 var LEVELS={1:"مبتدئ",2:"متوسط",3:"متقدم"};
 var EXERCISES=[
+  {id:"piece-samra", t:"سمرة البياتي", m:"bayati", lvl:3, tempo:104, cat:"مقطوعة كاملة", d:"مقطوعة أصلية على الطريقة الخليجية: مقدمة، لازمة تتكرر، جواب في الطبقة العليا، لون حجاز ولمسة صبا، ثم عودة وقفلة. فعّل «ترعيد بالريشة» للنغمات الطويلة.",
+   v:"المقدمة:\n"+
+     "دوكاه:2 - راست:½ دوكاه:½ سيكاه جهاركاه:2 سيكاه:½ دوكاه:½ دوكاه:2 -\n"+
+     "جهاركاه:½ نوا:½ حسيني:2 نوا:½ جهاركاه:½ سيكاه جهاركاه:½ سيكاه:½ دوكاه:3\n"+
+     "اللازمة:\n"+
+     "دوكاه:½ دوكاه:½ سيكاه:½ جهاركاه:½ نوا نوا:½ حسيني:½ نوا:½ جهاركاه:½ سيكاه دوكاه:2\n"+
+     "جهاركاه:½ جهاركاه:½ نوا:½ حسيني:½ عجم:2 حسيني:½ نوا:½ جهاركاه:½ سيكاه:½ دوكاه:2\n"+
+     "تكرار اللازمة:\n"+
+     "دوكاه:½ دوكاه:½ سيكاه:½ جهاركاه:½ نوا نوا:½ حسيني:½ نوا:½ جهاركاه:½ سيكاه دوكاه:2\n"+
+     "جهاركاه:½ جهاركاه:½ نوا:½ حسيني:½ عجم:2 حسيني:½ نوا:½ جهاركاه:½ سيكاه:½ دوكاه:2\n"+
+     "الجواب:\n"+
+     "نوا:½ حسيني:½ عجم:½ كردان:½ محيّر كردان:½ عجم:½ حسيني عجم:½ حسيني:½ نوا:2\n"+
+     "كردان:½ عجم:½ حسيني:½ نوا:½ جهاركاه نوا:½ جهاركاه:½ سيكاه جهاركاه:½ سيكاه:½ دوكاه:2\n"+
+     "عشيران:½ راست:½ دوكاه راست:½ دوكاه:½ سيكاه:½ دوكاه:½ دوكاه:4\n"+
+     "لون الحجاز:\n"+
+     "دوكاه:½ كرد:½ حجاز نوا حجاز:½ كرد:½ حجاز:2 -:2\n"+
+     "نوا:½ حجاز:½ نوا:½ حسيني:½ عجم حسيني:½ نوا:½ حجاز:½ كرد:½ دوكاه:3\n"+
+     "كرد:½ حجاز:½ نوا حجاز:½ كرد:½ دوكاه:½ راست:½ دوكاه:4\n"+
+     "لمسة الصبا:\n"+
+     "سيكاه:½ جهاركاه:½ حجاز:2 جهاركاه:½ سيكاه:½ دوكاه:4\n"+
+     "العودة إلى اللازمة:\n"+
+     "دوكاه:½ دوكاه:½ سيكاه:½ جهاركاه:½ نوا نوا:½ حسيني:½ نوا:½ جهاركاه:½ سيكاه دوكاه:2\n"+
+     "جهاركاه:½ جهاركاه:½ نوا:½ حسيني:½ عجم:2 حسيني:½ نوا:½ جهاركاه:½ سيكاه:½ دوكاه:2\n"+
+     "القفلة:\n"+
+     "نوا:½ نوا:½ جهاركاه:½ جهاركاه:½ سيكاه:½ سيكاه:½ دوكاه راست:½ دوكاه:½ سيكاه جهاركاه:½ سيكاه:½ دوكاه\n"+
+     "عشيران دوكاه:4"},
   {id:"tech-open", t:"الأوتار الستة مطلقة", m:"rast", lvl:1, tempo:72, cat:"تقنية", d:"اعزف الأوتار دون أصابع لتحفظ أسماءها ومواضعها من الأغلظ إلى الأرفع.",
    v:"قرار راست قرار جهاركاه عشيران دوكاه نوا كردان:2\nكردان نوا دوكاه عشيران قرار جهاركاه قرار راست:2"},
   {id:"tech-fingers", t:"السبابة والوسطى", m:"rast", lvl:1, tempo:84, cat:"تقنية", d:"على وتر الدوكاه ثم وتر النوا: السبابة لثلاثة أرباع البُعد، والوسطى لما بعدها.",
@@ -1298,7 +1326,7 @@ function renderLib(){
     if(libFilter.mine&&x.m!==current().id) return;
     shown++;
     var m=MAQAMAT[maqamById(x.m)];
-    var c=document.createElement("article"); c.className="ex"+(doneSet[x.id]?" done":"")+(curEx===x.id?" cur":"");
+    var c=document.createElement("article"); c.className="ex"+(x.id.indexOf("piece-")===0?" piece":"")+(doneSet[x.id]?" done":"")+(curEx===x.id?" cur":"");
     var h=document.createElement("h4"); h.textContent=x.t; c.appendChild(h);
     var meta=document.createElement("div"); meta.className="ex-meta";
     [[x.cat?x.cat+" · "+m.name:"مقام "+m.name,""],[LEVELS[x.lvl],"lv"+x.lvl],["♩ "+x.tempo,"mono"]].forEach(function(t){ var s=document.createElement("span"); s.className=t[1]; s.textContent=t[0]; meta.appendChild(s); });
@@ -1332,7 +1360,7 @@ function initLib(){
 function initComposer(){
   var ta=$("mel"), saved=null;
   try{ saved=localStorage.getItem("oud-mel"); }catch(e){}
-  ta.value=(saved!=null&&saved.trim()) ? saved : EXERCISES[7].v;
+  ta.value=(saved!=null&&saved.trim()) ? saved : EXERCISES.filter(function(x){ return x.id==="rast-qafla"; })[0].v;
   ta.addEventListener("input",function(){ if(playing&&playing.kind==="mel") stopScale(); saveMel(); renderMelody(); });
   ta.addEventListener("keydown",function(e){
     if(e.key==="Enter"&&(e.ctrlKey||e.metaKey)){ e.preventDefault(); playMelody(); }
