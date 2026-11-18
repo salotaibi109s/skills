@@ -1,0 +1,230 @@
+{
+ "fps": 30,
+ "duration": 75.14,
+ "scenes": [
+  {
+   "id": "s_hook",
+   "start": 0.0,
+   "end": 11.61,
+   "cues": [
+    {
+     "scene": "s_hook",
+     "i": 0,
+     "start": 0.4,
+     "end": 3.44,
+     "text": "تخيّل إنك تنجز شغل يوم كامل…",
+     "prompt": false
+    },
+    {
+     "scene": "s_hook",
+     "i": 1,
+     "start": 3.56,
+     "end": 5.88,
+     "text": "بدون ما تنفذ كل خطوة بنفسك!",
+     "prompt": false
+    },
+    {
+     "scene": "s_hook",
+     "i": 2,
+     "start": 6.08,
+     "end": 7.76,
+     "text": "كثير يستخدمون كلود…",
+     "prompt": false
+    },
+    {
+     "scene": "s_hook",
+     "i": 3,
+     "start": 7.84,
+     "end": 10.96,
+     "text": "وما اكتشفوا إلا جزء بسيط من قدراته.",
+     "prompt": false
+    }
+   ],
+   "vo_offset": 0.4
+  },
+  {
+   "id": "s_analyze",
+   "start": 11.61,
+   "end": 27.82,
+   "cues": [
+    {
+     "scene": "s_analyze",
+     "i": 0,
+     "start": 11.91,
+     "end": 15.03,
+     "text": "ارفع له ملف Excel فيه خمسة آلاف عملية،",
+     "prompt": false
+    },
+    {
+     "scene": "s_analyze",
+     "i": 1,
+     "start": 15.15,
+     "end": 20.47,
+     "text": "وقل له: حلّل الملف، وطلّع أكثر أسباب التأخير، مع رسوم وتوصيات.",
+     "prompt": true
+    },
+    {
+     "scene": "s_analyze",
+     "i": 2,
+     "start": 20.79,
+     "end": 23.91,
+     "text": "والنتيجة؟ تقرير تنفيذي كامل…",
+     "prompt": false
+    },
+    {
+     "scene": "s_analyze",
+     "i": 3,
+     "start": 24.07,
+     "end": 27.27,
+     "text": "بس راجع الأرقام قبل القرارات المهمة.",
+     "prompt": false
+    }
+   ],
+   "vo_offset": 0.3
+  },
+  {
+   "id": "s_artifacts",
+   "start": 27.82,
+   "end": 39.31,
+   "cues": [
+    {
+     "scene": "s_artifacts",
+     "i": 0,
+     "start": 28.12,
+     "end": 29.96,
+     "text": "وبدل ما يشرح لك الفكرة…",
+     "prompt": false
+    },
+    {
+     "scene": "s_artifacts",
+     "i": 1,
+     "start": 30.12,
+     "end": 30.84,
+     "text": "يبنيها!",
+     "prompt": false
+    },
+    {
+     "scene": "s_artifacts",
+     "i": 2,
+     "start": 31.24,
+     "end": 34.04,
+     "text": "طلبنا منه تطبيق عربي لإدارة المهام،",
+     "prompt": false
+    },
+    {
+     "scene": "s_artifacts",
+     "i": 3,
+     "start": 34.16,
+     "end": 38.76,
+     "text": "وبناه قدامنا: إحصائيات، أولويات، ووضع ليلي.",
+     "prompt": false
+    }
+   ],
+   "vo_offset": 0.3
+  },
+  {
+   "id": "s_code",
+   "start": 39.31,
+   "end": 51.92,
+   "cues": [
+    {
+     "scene": "s_code",
+     "i": 0,
+     "start": 39.61,
+     "end": 43.05,
+     "text": "ومع Claude Code، يبني نظام طلبات كامل:",
+     "prompt": false
+    },
+    {
+     "scene": "s_code",
+     "i": 1,
+     "start": 43.13,
+     "end": 46.09,
+     "text": "تسجيل دخول، لوحة تحكم، واختبارات.",
+     "prompt": false
+    },
+    {
+     "scene": "s_code",
+     "i": 2,
+     "start": 46.41,
+     "end": 49.37,
+     "text": "كتب الاختبار، فشل، صلّح الكود…",
+     "prompt": false
+    },
+    {
+     "scene": "s_code",
+     "i": 3,
+     "start": 49.49,
+     "end": 51.37,
+     "text": "ونجحت الاختبارات كلها.",
+     "prompt": false
+    }
+   ],
+   "vo_offset": 0.3
+  },
+  {
+   "id": "s_skills",
+   "start": 51.92,
+   "end": 62.53,
+   "cues": [
+    {
+     "scene": "s_skills",
+     "i": 0,
+     "start": 52.22,
+     "end": 57.5,
+     "text": "ومع Skills، تعلّمه طريقتك مرة وحدة… ويطبقها كل مرة.",
+     "prompt": false
+    },
+    {
+     "scene": "s_skills",
+     "i": 1,
+     "start": 57.58,
+     "end": 59.82,
+     "text": "وتقدر تفوّض له مهام كاملة…",
+     "prompt": false
+    },
+    {
+     "scene": "s_skills",
+     "i": 2,
+     "start": 59.9,
+     "end": 61.98,
+     "text": "بصلاحيات أنت تحددها.",
+     "prompt": false
+    }
+   ],
+   "vo_offset": 0.3
+  },
+  {
+   "id": "s_finale",
+   "start": 62.53,
+   "end": 75.14,
+   "cues": [
+    {
+     "scene": "s_finale",
+     "i": 0,
+     "start": 62.83,
+     "end": 65.95,
+     "text": "لا تسأل: وش السؤال اللي أسأله لكلود؟",
+     "prompt": false
+    },
+    {
+     "scene": "s_finale",
+     "i": 1,
+     "start": 66.07,
+     "end": 69.07,
+     "text": "اسأل: وش المهمة اللي أفوضها له؟",
+     "prompt": false
+    },
+    {
+     "scene": "s_finale",
+     "i": 2,
+     "start": 69.19,
+     "end": 71.79,
+     "text": "وش أول شيء راح تخليه ينجزه عنك؟",
+     "prompt": false
+    }
+   ],
+   "vo_offset": 0.3
+  }
+ ]
+}
