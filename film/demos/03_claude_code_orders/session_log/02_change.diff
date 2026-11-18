@@ -1,0 +1,89 @@
+diff --git a/film/demos/03_claude_code_orders/app/server.py b/film/demos/03_claude_code_orders/app/server.py
+index bfeea0e..b209fbf 100644
+--- a/film/demos/03_claude_code_orders/app/server.py
++++ b/film/demos/03_claude_code_orders/app/server.py
+@@ -8,7 +8,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+ from urllib.parse import parse_qs, urlparse
+ 
+ from .auth import Sessions
+-from .store import STATUSES, OrderError, Store
++from .store import STATUSES, TRANSITIONS, OrderError, Store
+ 
+ CSS = """
+ @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap');
+@@ -149,11 +149,14 @@ class App:
+     def orders_page(self, user):
+         rows = ""
+         for o in self.store.orders():
+-            opts = "".join(f"<option {'selected' if s == o['status'] else ''}>{s}</option>" for s in STATUSES)
++            nxt = [s for s in STATUSES if s in TRANSITIONS[o["status"]]]
++            opts = "".join(f"<option>{s}</option>" for s in nxt)
+             rows += (f"<tr><td>#{o['id']}</td><td>{html.escape(o['customer'])}</td><td>{o['total']:.2f} ر.س</td>"
+-                     f"<td>{badge(o['status'])}</td><td><form class='inline' method='post' action='/orders/status'>"
+-                     f"<input type='hidden' name='id' value='{o['id']}'><select name='status'>{opts}</select>"
+-                     f"<button>تحديث</button></form></td></tr>")
++                     f"<td>{badge(o['status'])}</td><td>" + (
++                         f"<form class='inline' method='post' action='/orders/status'>"
++                         f"<input type='hidden' name='id' value='{o['id']}'><select name='status'>{opts}</select>"
++                         f"<button>تحديث</button></form>" if nxt else "<span style='color:var(--mut)'>مكتمل</span>")
++                     + "</td></tr>")
+         return page("الطلبات", f"<h1>تتبع الطلبات</h1><table><tr><th>الطلب</th><th>العميل</th><th>القيمة</th>"
+                                f"<th>الحالة</th><th>تغيير الحالة</th></tr>{rows}</table>", user, "/orders")
+ 
+diff --git a/film/demos/03_claude_code_orders/app/store.py b/film/demos/03_claude_code_orders/app/store.py
+index 09ffd63..fc7d8b2 100644
+--- a/film/demos/03_claude_code_orders/app/store.py
++++ b/film/demos/03_claude_code_orders/app/store.py
+@@ -6,6 +6,15 @@ from .auth import hash_password, verify_password
+ 
+ STATUSES = ["جديد", "قيد التجهيز", "تم الشحن", "تم التسليم", "ملغي"]
+ 
++# Allowed transitions: forward one step at a time; cancel only before shipping.
++TRANSITIONS = {
++    "جديد": {"قيد التجهيز", "ملغي"},
++    "قيد التجهيز": {"تم الشحن", "ملغي"},
++    "تم الشحن": {"تم التسليم"},
++    "تم التسليم": set(),
++    "ملغي": set(),
++}
++
+ SCHEMA = """
+ CREATE TABLE IF NOT EXISTS users (username TEXT PRIMARY KEY, password TEXT NOT NULL);
+ CREATE TABLE IF NOT EXISTS customers (
+@@ -14,6 +23,8 @@ CREATE TABLE IF NOT EXISTS orders (
+   id INTEGER PRIMARY KEY, customer_id INTEGER NOT NULL REFERENCES customers(id),
+   total REAL NOT NULL CHECK (total >= 0), status TEXT NOT NULL DEFAULT 'جديد',
+   created_at TEXT NOT NULL);
++CREATE TABLE IF NOT EXISTS order_history (
++  order_id INTEGER NOT NULL REFERENCES orders(id), status TEXT NOT NULL, at TEXT NOT NULL);
+ """
+ 
+ 
+@@ -62,6 +73,7 @@ class Store:
+             raise OrderError("قيمة الطلب لا يمكن أن تكون سالبة")
+         cur = self.db.execute("INSERT INTO orders (customer_id, total, created_at) VALUES (?,?,?)",
+                               (customer_id, total, now()))
++        self.db.execute("INSERT INTO order_history VALUES (?,?,?)", (cur.lastrowid, "جديد", now()))
+         self.db.commit()
+         return cur.lastrowid
+ 
+@@ -80,10 +92,18 @@ class Store:
+     def set_status(self, order_id: int, status: str) -> None:
+         if status not in STATUSES:
+             raise OrderError("حالة غير معروفة")
+-        self.order(order_id)
++        current = self.order(order_id)["status"]
++        if status not in TRANSITIONS[current]:
++            raise OrderError(f"لا يمكن نقل الطلب من «{current}» إلى «{status}»")
+         self.db.execute("UPDATE orders SET status=? WHERE id=?", (status, order_id))
++        self.db.execute("INSERT INTO order_history VALUES (?,?,?)", (order_id, status, now()))
+         self.db.commit()
+ 
++    def history(self, order_id: int) -> list[dict]:
++        rows = self.db.execute("SELECT status, at FROM order_history WHERE order_id=? ORDER BY rowid",
++                               (order_id,))
++        return [dict(r) for r in rows]
++
+     def dashboard(self) -> dict:
+         by_status = {s: 0 for s in STATUSES}
+         for r in self.db.execute("SELECT status, COUNT(*) n FROM orders GROUP BY status"):

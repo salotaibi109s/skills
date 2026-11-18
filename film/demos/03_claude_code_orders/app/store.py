@@ -6,6 +6,15 @@ from .auth import hash_password, verify_password
 
 STATUSES = ["جديد", "قيد التجهيز", "تم الشحن", "تم التسليم", "ملغي"]
 
+# Allowed transitions: forward one step at a time; cancel only before shipping.
+TRANSITIONS = {
+    "جديد": {"قيد التجهيز", "ملغي"},
+    "قيد التجهيز": {"تم الشحن", "ملغي"},
+    "تم الشحن": {"تم التسليم"},
+    "تم التسليم": set(),
+    "ملغي": set(),
+}
+
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS users (username TEXT PRIMARY KEY, password TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS customers (
@@ -14,6 +23,8 @@ CREATE TABLE IF NOT EXISTS orders (
   id INTEGER PRIMARY KEY, customer_id INTEGER NOT NULL REFERENCES customers(id),
   total REAL NOT NULL CHECK (total >= 0), status TEXT NOT NULL DEFAULT 'جديد',
   created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS order_history (
+  order_id INTEGER NOT NULL REFERENCES orders(id), status TEXT NOT NULL, at TEXT NOT NULL);
 """
 
 
@@ -62,6 +73,7 @@ class Store:
             raise OrderError("قيمة الطلب لا يمكن أن تكون سالبة")
         cur = self.db.execute("INSERT INTO orders (customer_id, total, created_at) VALUES (?,?,?)",
                               (customer_id, total, now()))
+        self.db.execute("INSERT INTO order_history VALUES (?,?,?)", (cur.lastrowid, "جديد", now()))
         self.db.commit()
         return cur.lastrowid
 
@@ -80,9 +92,17 @@ class Store:
     def set_status(self, order_id: int, status: str) -> None:
         if status not in STATUSES:
             raise OrderError("حالة غير معروفة")
-        self.order(order_id)
+        current = self.order(order_id)["status"]
+        if status not in TRANSITIONS[current]:
+            raise OrderError(f"لا يمكن نقل الطلب من «{current}» إلى «{status}»")
         self.db.execute("UPDATE orders SET status=? WHERE id=?", (status, order_id))
+        self.db.execute("INSERT INTO order_history VALUES (?,?,?)", (order_id, status, now()))
         self.db.commit()
+
+    def history(self, order_id: int) -> list[dict]:
+        rows = self.db.execute("SELECT status, at FROM order_history WHERE order_id=? ORDER BY rowid",
+                               (order_id,))
+        return [dict(r) for r in rows]
 
     def dashboard(self) -> dict:
         by_status = {s: 0 for s in STATUSES}

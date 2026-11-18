@@ -1,0 +1,19 @@
+$ python3 -m unittest -v
+test_dashboard_requires_login (tests.test_server.ServerTests.test_dashboard_requires_login) ... ok
+test_login_then_dashboard (tests.test_server.ServerTests.test_login_then_dashboard) ... ok
+test_wrong_password_rejected (tests.test_server.ServerTests.test_wrong_password_rejected) ... ok
+test_login (tests.test_store.AuthTests.test_login) ... ok
+test_password_not_stored_in_plain_text (tests.test_store.AuthTests.test_password_not_stored_in_plain_text) ... ok
+test_create_order_starts_new (tests.test_store.StoreTests.test_create_order_starts_new) ... ok
+test_customer_name_required (tests.test_store.StoreTests.test_customer_name_required) ... ok
+test_customers_list_counts_orders (tests.test_store.StoreTests.test_customers_list_counts_orders) ... ok
+test_dashboard_counts_and_revenue_excludes_cancelled (tests.test_store.StoreTests.test_dashboard_counts_and_revenue_excludes_cancelled) ... ok
+test_rejects_unknown_customer_and_negative_total (tests.test_store.StoreTests.test_rejects_unknown_customer_and_negative_total) ... ok
+test_cannot_cancel_after_shipping (tests.test_transitions.TransitionTests.test_cannot_cancel_after_shipping) ... ok
+test_cannot_skip_to_delivered (tests.test_transitions.TransitionTests.test_cannot_skip_to_delivered) ... ok
+test_history_is_recorded (tests.test_transitions.TransitionTests.test_history_is_recorded) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.686s
+
+OK

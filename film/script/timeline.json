@@ -1,0 +1,1046 @@
+{
+ "fps": 30,
+ "duration": 399.23,
+ "scenes": [
+  {
+   "id": "hook",
+   "title_en": "THE HOOK",
+   "title_ar": "البداية",
+   "start": 0.0,
+   "end": 38.74,
+   "cues": [
+    {
+     "scene": "hook",
+     "i": 0,
+     "start": 3.2,
+     "end": 6.21,
+     "text": "تخيّل إنك تقدر تنجز شغل يوم كامل…",
+     "prompt": false
+    },
+    {
+     "scene": "hook",
+     "i": 1,
+     "start": 6.43,
+     "end": 9.09,
+     "text": "بدون ما تنفذ كل خطوة بنفسك!",
+     "prompt": false
+    },
+    {
+     "scene": "hook",
+     "i": 2,
+     "start": 9.31,
+     "end": 13.02,
+     "text": "مو مجرد ذكاء اصطناعي تكتب له سؤال ويرد عليك…",
+     "prompt": false
+    },
+    {
+     "scene": "hook",
+     "i": 3,
+     "start": 13.24,
+     "end": 16.65,
+     "text": "تخيّل مساعد يفهم ملفاتك، يحلل بياناتك، يصمم لك أدوات،",
+     "prompt": false
+    },
+    {
+     "scene": "hook",
+     "i": 4,
+     "start": 16.87,
+     "end": 18.87,
+     "text": "يكتب الأكواد، يبحث في الإنترنت،",
+     "prompt": false
+    },
+    {
+     "scene": "hook",
+     "i": 5,
+     "start": 19.09,
+     "end": 22.1,
+     "text": "ويقدر يتعامل مع الكمبيوتر وينفذ مهام فعلية!",
+     "prompt": false
+    },
+    {
+     "scene": "hook",
+     "i": 6,
+     "start": 22.32,
+     "end": 23.42,
+     "text": "والأغرب؟",
+     "prompt": false
+    },
+    {
+     "scene": "hook",
+     "i": 7,
+     "start": 23.64,
+     "end": 26.3,
+     "text": "إن كثير من الناس يستخدمون كلود…",
+     "prompt": false
+    },
+    {
+     "scene": "hook",
+     "i": 8,
+     "start": 26.52,
+     "end": 29.93,
+     "text": "وما اكتشفوا حتى الآن إلا جزءاً بسيطاً من قدراته.",
+     "prompt": false
+    },
+    {
+     "scene": "hook",
+     "i": 9,
+     "start": 30.15,
+     "end": 31.75,
+     "text": "اليوم بنفتح الباب…",
+     "prompt": false
+    },
+    {
+     "scene": "hook",
+     "i": 10,
+     "start": 31.97,
+     "end": 33.92,
+     "text": "وندخل إلى عالم Claude!",
+     "prompt": false
+    }
+   ]
+  },
+  {
+   "id": "analyze",
+   "title_en": "UNDERSTAND AND ANALYZE",
+   "title_ar": "افهم وحلّل",
+   "start": 38.74,
+   "end": 88.09,
+   "cues": [
+    {
+     "scene": "analyze",
+     "i": 0,
+     "start": 40.34,
+     "end": 42.29,
+     "text": "أول شيء لازم تفهمه…",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 1,
+     "start": 42.51,
+     "end": 44.51,
+     "text": "كلود مو مجرد محرك إجابات.",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 2,
+     "start": 44.73,
+     "end": 48.14,
+     "text": "تقدر تعطيه ملفات PDF وWord وExcel وصور وأكواد برمجية،",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 3,
+     "start": 48.36,
+     "end": 51.07,
+     "text": "وتطلب منه يفهمها ويحللها ويربط المعلومات ببعض.",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 4,
+     "start": 51.29,
+     "end": 52.94,
+     "text": "خلنا نجرب مثال عملي.",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 5,
+     "start": 53.16,
+     "end": 56.22,
+     "text": "تخيّل عندك ملف Excel فيه خمسة آلاف عملية،",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 6,
+     "start": 56.44,
+     "end": 60.55,
+     "text": "وتبغى تعرف أكثر أسباب التأخير، وأعلى الأقسام أداءً، وأين توجد المشاكل.",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 7,
+     "start": 60.77,
+     "end": 63.78,
+     "text": "بدل ما تقضي ساعات في الفرز والتحليل…",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 8,
+     "start": 64.0,
+     "end": 65.95,
+     "text": "ارفع الملف وقل له:",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 9,
+     "start": 66.17,
+     "end": 69.41,
+     "text": "حلل ملف البيانات المرفق، واكتشف الاتجاهات غير الطبيعية،",
+     "prompt": true
+    },
+    {
+     "scene": "analyze",
+     "i": 10,
+     "start": 69.63,
+     "end": 72.87,
+     "text": "وحدد أعلى خمسة أسباب للمشاكل، وأنشئ ملخصاً تنفيذياً",
+     "prompt": true
+    },
+    {
+     "scene": "analyze",
+     "i": 11,
+     "start": 73.09,
+     "end": 77.82,
+     "text": "مع رسوم بيانية وتوصيات عملية، مع توضيح أي افتراضات أو بيانات ناقصة.",
+     "prompt": true
+    },
+    {
+     "scene": "analyze",
+     "i": 12,
+     "start": 78.04,
+     "end": 79.14,
+     "text": "والنتيجة؟",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 13,
+     "start": 79.36,
+     "end": 82.07,
+     "text": "تحليل، وملاحظات، ورسوم بيانية، وتوصيات قابلة للمراجعة.",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 14,
+     "start": 82.29,
+     "end": 83.54,
+     "text": "لكن انتبه…",
+     "prompt": false
+    },
+    {
+     "scene": "analyze",
+     "i": 15,
+     "start": 83.76,
+     "end": 86.47,
+     "text": "راجع الحسابات والمصادر، خصوصاً في القرارات المهمة.",
+     "prompt": false
+    }
+   ]
+  },
+  {
+   "id": "artifacts",
+   "title_en": "ARTIFACTS",
+   "title_ar": "من الفكرة إلى منتج",
+   "start": 88.09,
+   "end": 137.01,
+   "cues": [
+    {
+     "scene": "artifacts",
+     "i": 0,
+     "start": 89.49,
+     "end": 91.44,
+     "text": "وهنا تبدأ المتعة الحقيقية!",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 1,
+     "start": 91.66,
+     "end": 92.96,
+     "text": "ميزة اسمها Artifacts.",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 2,
+     "start": 93.18,
+     "end": 96.24,
+     "text": "بدل ما يشرح لك كلود الفكرة بالكلام فقط،",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 3,
+     "start": 96.46,
+     "end": 99.52,
+     "text": "يقدر يحولها إلى منتج مرئي وتفاعلي داخل المحادثة.",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 4,
+     "start": 99.74,
+     "end": 103.85,
+     "text": "تقدر تطلب منه تصميم لوحة تحكم، آلة حاسبة، أداة لإدارة المهام،",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 5,
+     "start": 104.07,
+     "end": 106.78,
+     "text": "رسوم بيانية، أو حتى نموذج أولي لتطبيق.",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 6,
+     "start": 107.0,
+     "end": 108.6,
+     "text": "خلنا نعطيه تحدياً:",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 7,
+     "start": 108.82,
+     "end": 112.06,
+     "text": "أنشئ تطبيقاً تفاعلياً باللغة العربية لإدارة المهام اليومية،",
+     "prompt": true
+    },
+    {
+     "scene": "artifacts",
+     "i": 8,
+     "start": 112.28,
+     "end": 116.26,
+     "text": "يحتوي على لوحة إحصائيات، وإضافة مهام، وتصنيف الأولويات، ونسبة الإنجاز،",
+     "prompt": true
+    },
+    {
+     "scene": "artifacts",
+     "i": 9,
+     "start": 116.48,
+     "end": 119.34,
+     "text": "مع تصميم احترافي متجاوب ودعم الوضع الليلي.",
+     "prompt": true
+    },
+    {
+     "scene": "artifacts",
+     "i": 10,
+     "start": 119.56,
+     "end": 122.97,
+     "text": "لاحظ… ما طلبنا منه يشرح لنا كيف نبني التطبيق.",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 11,
+     "start": 123.19,
+     "end": 124.79,
+     "text": "طلبنا منه يبنيه!",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 12,
+     "start": 125.01,
+     "end": 128.07,
+     "text": "وتقدر بعدها تطلب تعديلات، وتضيف وظائف، وتغير الألوان،",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 13,
+     "start": 128.29,
+     "end": 129.94,
+     "text": "وتطور الفكرة خطوة بخطوة.",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 14,
+     "start": 130.16,
+     "end": 133.52,
+     "text": "وهذا هو الفرق بين شخص يستخدم الذكاء الاصطناعي…",
+     "prompt": false
+    },
+    {
+     "scene": "artifacts",
+     "i": 15,
+     "start": 133.74,
+     "end": 135.39,
+     "text": "وشخص يصنع به أدوات.",
+     "prompt": false
+    }
+   ]
+  },
+  {
+   "id": "code",
+   "title_en": "CLAUDE CODE",
+   "title_ar": "من الفكرة إلى الكود",
+   "start": 137.01,
+   "end": 190.72,
+   "cues": [
+    {
+     "scene": "code",
+     "i": 0,
+     "start": 138.41,
+     "end": 142.12,
+     "text": "تعتقد أن بناء موقع أو تطبيق يحتاج فريق مبرمجين؟",
+     "prompt": false
+    },
+    {
+     "scene": "code",
+     "i": 1,
+     "start": 142.34,
+     "end": 143.59,
+     "text": "مو بالضرورة!",
+     "prompt": false
+    },
+    {
+     "scene": "code",
+     "i": 2,
+     "start": 143.81,
+     "end": 145.81,
+     "text": "كلود قوي جداً في البرمجة.",
+     "prompt": false
+    },
+    {
+     "scene": "code",
+     "i": 3,
+     "start": 146.03,
+     "end": 149.09,
+     "text": "يقدر يكتب أكواد، يكتشف الأخطاء، يراجع المشاريع الموجودة،",
+     "prompt": false
+    },
+    {
+     "scene": "code",
+     "i": 4,
+     "start": 149.31,
+     "end": 152.72,
+     "text": "ويقترح تحسينات، ويساعدك في بناء مواقع وتطبيقات من الصفر.",
+     "prompt": false
+    },
+    {
+     "scene": "code",
+     "i": 5,
+     "start": 152.94,
+     "end": 157.05,
+     "text": "خلنا نفترض أنك صاحب متجر إلكتروني وتحتاج تطوير نظام متابعة الطلبات.",
+     "prompt": false
+    },
+    {
+     "scene": "code",
+     "i": 6,
+     "start": 157.27,
+     "end": 158.52,
+     "text": "اطلب منه:",
+     "prompt": false
+    },
+    {
+     "scene": "code",
+     "i": 7,
+     "start": 158.74,
+     "end": 160.48,
+     "text": "تصرف كمهندس برمجيات Full-Stack.",
+     "prompt": true
+    },
+    {
+     "scene": "code",
+     "i": 8,
+     "start": 160.7,
+     "end": 165.06,
+     "text": "أريد بناء نظام لإدارة طلبات متجر إلكتروني، يحتوي على تسجيل دخول،",
+     "prompt": true
+    },
+    {
+     "scene": "code",
+     "i": 9,
+     "start": 165.28,
+     "end": 168.14,
+     "text": "ولوحة تحكم، وتتبع حالة الطلب، وإدارة العملاء.",
+     "prompt": true
+    },
+    {
+     "scene": "code",
+     "i": 10,
+     "start": 168.36,
+     "end": 171.6,
+     "text": "ابدأ بتحليل المتطلبات، ثم اقترح بنية تقنية مناسبة،",
+     "prompt": true
+    },
+    {
+     "scene": "code",
+     "i": 11,
+     "start": 171.82,
+     "end": 175.43,
+     "text": "ونفذ المشروع على مراحل، واكتب اختبارات للتحقق من الوظائف.",
+     "prompt": true
+    },
+    {
+     "scene": "code",
+     "i": 12,
+     "start": 175.65,
+     "end": 178.01,
+     "text": "والأهم، إذا كان عندك مشروع قائم،",
+     "prompt": false
+    },
+    {
+     "scene": "code",
+     "i": 13,
+     "start": 178.23,
+     "end": 181.99,
+     "text": "تقدر تعطيه الملفات وتطلب منه يفهم البنية البرمجية قبل التعديل.",
+     "prompt": false
+    },
+    {
+     "scene": "code",
+     "i": 14,
+     "start": 182.21,
+     "end": 184.57,
+     "text": "ومن هنا يجي دور Claude Code،",
+     "prompt": false
+    },
+    {
+     "scene": "code",
+     "i": 15,
+     "start": 184.79,
+     "end": 188.9,
+     "text": "المخصص للعمل البرمجي بصورة أعمق والتعامل مع المشاريع والملفات وأدوات التطوير.",
+     "prompt": false
+    }
+   ]
+  },
+  {
+   "id": "skills",
+   "title_en": "PROJECTS AND SKILLS",
+   "title_ar": "المشاريع والمهارات",
+   "start": 190.72,
+   "end": 241.63,
+   "cues": [
+    {
+     "scene": "skills",
+     "i": 0,
+     "start": 192.32,
+     "end": 195.38,
+     "text": "وهنا واحدة من أهم القدرات اللي لازم تتعلمها.",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 1,
+     "start": 195.6,
+     "end": 196.7,
+     "text": "Projects وSkills.",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 2,
+     "start": 196.92,
+     "end": 198.22,
+     "text": "خلنا نفرق بينهم.",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 3,
+     "start": 198.44,
+     "end": 201.15,
+     "text": "Projects: تنشئ مساحة عمل متخصصة لمشروع معين،",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 4,
+     "start": 201.37,
+     "end": 204.43,
+     "text": "وتحفظ فيها التعليمات والملفات والسياق المرتبط بهذا المشروع.",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 5,
+     "start": 204.65,
+     "end": 207.36,
+     "text": "أما Skills: فهي مهارات قابلة لإعادة الاستخدام،",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 6,
+     "start": 207.58,
+     "end": 210.99,
+     "text": "تعلم كلود كيف ينفذ مهمة محددة بطريقة منظمة ومتكررة.",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 7,
+     "start": 211.21,
+     "end": 212.31,
+     "text": "مثلاً…",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 8,
+     "start": 212.53,
+     "end": 215.24,
+     "text": "تقدر تنشئ Skill لمراجعة سياسات وإجراءات المستشفى،",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 9,
+     "start": 215.46,
+     "end": 218.87,
+     "text": "وتحدد له طريقة المراجعة، ومعايير التدقيق، ونموذج التقرير المطلوب.",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 10,
+     "start": 219.09,
+     "end": 221.45,
+     "text": "وفي كل مرة تستخدم هذه المهارة،",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 11,
+     "start": 221.67,
+     "end": 226.13,
+     "text": "يبدأ من منهجية عمل واضحة بدلاً من شرح كل شيء من جديد.",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 12,
+     "start": 226.35,
+     "end": 229.41,
+     "text": "أو تنشئ مشروعاً للتسويق، وتضع فيه هوية متجرك،",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 13,
+     "start": 229.63,
+     "end": 231.63,
+     "text": "وخدماته، والجمهور المستهدف، وأسلوب الكتابة.",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 14,
+     "start": 231.85,
+     "end": 234.91,
+     "text": "وبكذا ما تبدأ من الصفر في كل محادثة.",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 15,
+     "start": 235.13,
+     "end": 237.79,
+     "text": "أنت هنا ما تستخدم مجرد مساعد…",
+     "prompt": false
+    },
+    {
+     "scene": "skills",
+     "i": 16,
+     "start": 238.01,
+     "end": 240.01,
+     "text": "أنت تبني بيئة عمل متخصصة.",
+     "prompt": false
+    }
+   ]
+  },
+  {
+   "id": "delegate",
+   "title_en": "COMPUTER USE AND COWORK",
+   "title_ar": "لا تسأل فقط… فوّض",
+   "start": 241.63,
+   "end": 296.91,
+   "cues": [
+    {
+     "scene": "delegate",
+     "i": 0,
+     "start": 243.03,
+     "end": 245.69,
+     "text": "والآن وصلنا إلى مستوى مختلف تماماً!",
+     "prompt": false
+    },
+    {
+     "scene": "delegate",
+     "i": 1,
+     "start": 245.91,
+     "end": 249.62,
+     "text": "تخيل أن الذكاء الاصطناعي ما عاد يكتفي بإعطائك التعليمات…",
+     "prompt": false
+    },
+    {
+     "scene": "delegate",
+     "i": 2,
+     "start": 249.84,
+     "end": 252.9,
+     "text": "بل يستطيع التعامل مع الكمبيوتر وتنفيذ خطوات بنفسه،",
+     "prompt": false
+    },
+    {
+     "scene": "delegate",
+     "i": 3,
+     "start": 253.12,
+     "end": 254.77,
+     "text": "وفق الصلاحيات والأدوات المتاحة.",
+     "prompt": false
+    },
+    {
+     "scene": "delegate",
+     "i": 4,
+     "start": 254.99,
+     "end": 257.35,
+     "text": "مع قدرات Computer Use وClaude Cowork،",
+     "prompt": false
+    },
+    {
+     "scene": "delegate",
+     "i": 5,
+     "start": 257.57,
+     "end": 260.63,
+     "text": "يمكنه في البيئات المدعومة التفاعل مع واجهات الكمبيوتر،",
+     "prompt": false
+    },
+    {
+     "scene": "delegate",
+     "i": 6,
+     "start": 260.85,
+     "end": 264.26,
+     "text": "وفتح الملفات، والتنقل بين التطبيقات، وتنفيذ مهام متعددة الخطوات.",
+     "prompt": false
+    },
+    {
+     "scene": "delegate",
+     "i": 7,
+     "start": 264.48,
+     "end": 266.08,
+     "text": "مثلاً، تطلب منه:",
+     "prompt": false
+    },
+    {
+     "scene": "delegate",
+     "i": 8,
+     "start": 266.3,
+     "end": 271.03,
+     "text": "راجع الملفات الموجودة في مجلد المشروع، وحدد الملفات التي تحتاج إلى تحديث،",
+     "prompt": true
+    },
+    {
+     "scene": "delegate",
+     "i": 9,
+     "start": 271.25,
+     "end": 275.61,
+     "text": "وأنشئ تقريراً يلخص حالة كل ملف، ثم جهز قائمة بالمهام المقترحة.",
+     "prompt": true
+    },
+    {
+     "scene": "delegate",
+     "i": 10,
+     "start": 275.83,
+     "end": 279.07,
+     "text": "لا تحذف أو تعدل أي ملف دون موافقتي.",
+     "prompt": true
+    },
+    {
+     "scene": "delegate",
+     "i": 11,
+     "start": 279.29,
+     "end": 284.05,
+     "text": "تخيل حجم الوقت اللي ممكن توفره إذا عرفت تفوض المهام بالشكل الصحيح!",
+     "prompt": false
+    },
+    {
+     "scene": "delegate",
+     "i": 12,
+     "start": 284.27,
+     "end": 287.68,
+     "text": "لكن تذكر: بعض القدرات تعتمد على الخطة والبيئة المتاحة،",
+     "prompt": false
+    },
+    {
+     "scene": "delegate",
+     "i": 13,
+     "start": 287.9,
+     "end": 290.26,
+     "text": "وبعض الإجراءات تتطلب موافقتك وصلاحيات محددة.",
+     "prompt": false
+    },
+    {
+     "scene": "delegate",
+     "i": 14,
+     "start": 290.48,
+     "end": 295.29,
+     "text": "ولا تعطي أي وكيل وصولاً مفتوحاً إلى ملفاتك أو حساباتك الحساسة بدون ضوابط.",
+     "prompt": false
+    }
+   ]
+  },
+  {
+   "id": "connect",
+   "title_en": "WEB SEARCH, CONNECTORS AND MCP",
+   "title_ar": "ابحث، اربط، حلّل",
+   "start": 296.91,
+   "end": 336.79,
+   "cues": [
+    {
+     "scene": "connect",
+     "i": 0,
+     "start": 298.31,
+     "end": 302.07,
+     "text": "كلود يقدر أيضاً يساعدك في البحث على الإنترنت، وتجميع المعلومات،",
+     "prompt": false
+    },
+    {
+     "scene": "connect",
+     "i": 1,
+     "start": 302.29,
+     "end": 304.65,
+     "text": "ومقارنة المصادر، وإعداد تقارير مدعومة بالمراجع.",
+     "prompt": false
+    },
+    {
+     "scene": "connect",
+     "i": 2,
+     "start": 304.87,
+     "end": 306.52,
+     "text": "ومن خلال Connectors وMCP،",
+     "prompt": false
+    },
+    {
+     "scene": "connect",
+     "i": 3,
+     "start": 306.74,
+     "end": 309.1,
+     "text": "تقدر تربطه بخدمات وتطبيقات خارجية مدعومة.",
+     "prompt": false
+    },
+    {
+     "scene": "connect",
+     "i": 4,
+     "start": 309.32,
+     "end": 312.33,
+     "text": "يعني بدل ما تنتقل بين عشرات الأدوات…",
+     "prompt": false
+    },
+    {
+     "scene": "connect",
+     "i": 5,
+     "start": 312.55,
+     "end": 316.31,
+     "text": "تقدر تبني سير عمل يجمع المعلومات من أكثر من مصدر،",
+     "prompt": false
+    },
+    {
+     "scene": "connect",
+     "i": 6,
+     "start": 316.53,
+     "end": 319.24,
+     "text": "ويحللها، ثم يحولها إلى نتيجة قابلة للاستخدام.",
+     "prompt": false
+    },
+    {
+     "scene": "connect",
+     "i": 7,
+     "start": 319.46,
+     "end": 320.56,
+     "text": "مثال:",
+     "prompt": false
+    },
+    {
+     "scene": "connect",
+     "i": 8,
+     "start": 320.78,
+     "end": 324.76,
+     "text": "اطلب منه دراسة سوق منتج جديد، وتحليل المنافسين، ومقارنة الأسعار،",
+     "prompt": true
+    },
+    {
+     "scene": "connect",
+     "i": 9,
+     "start": 324.98,
+     "end": 327.84,
+     "text": "واستخراج الفرص التسويقية، ثم إعداد تقرير تنفيذي.",
+     "prompt": true
+    },
+    {
+     "scene": "connect",
+     "i": 10,
+     "start": 328.06,
+     "end": 329.31,
+     "text": "والميزة الأقوى؟",
+     "prompt": false
+    },
+    {
+     "scene": "connect",
+     "i": 11,
+     "start": 329.53,
+     "end": 331.89,
+     "text": "تقدر تنظم هذه العملية كمهارة متكررة،",
+     "prompt": false
+    },
+    {
+     "scene": "connect",
+     "i": 12,
+     "start": 332.11,
+     "end": 335.17,
+     "text": "بحيث تتحول من مهمة عشوائية إلى Workflow واضح.",
+     "prompt": false
+    }
+   ]
+  },
+  {
+   "id": "finale",
+   "title_en": "THE GRAND FINALE",
+   "title_ar": "الخاتمة",
+   "start": 336.79,
+   "end": 399.23,
+   "cues": [
+    {
+     "scene": "finale",
+     "i": 0,
+     "start": 338.39,
+     "end": 340.69,
+     "text": "خلنا نراجع اللي شفناه اليوم…",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 1,
+     "start": 340.91,
+     "end": 342.01,
+     "text": "حللنا البيانات.",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 2,
+     "start": 342.23,
+     "end": 343.53,
+     "text": "صممنا تطبيقاً تفاعلياً.",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 3,
+     "start": 343.75,
+     "end": 344.85,
+     "text": "كتبنا الأكواد.",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 4,
+     "start": 345.07,
+     "end": 346.37,
+     "text": "أنشأنا مهارات متخصصة.",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 5,
+     "start": 346.59,
+     "end": 348.24,
+     "text": "تعلمنا كيف نفوض المهام.",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 6,
+     "start": 348.46,
+     "end": 350.82,
+     "text": "وربطنا الذكاء الاصطناعي بالأدوات ومصادر المعلومات.",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 7,
+     "start": 351.04,
+     "end": 354.4,
+     "text": "لكن فيه شيء أهم من كل هذه الإمكانيات…",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 8,
+     "start": 354.62,
+     "end": 356.57,
+     "text": "وهو طريقة تفكيرك أنت!",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 9,
+     "start": 356.79,
+     "end": 360.5,
+     "text": "لا تسأل نفسك: وش السؤال اللي أقدر أسأله لكلود؟",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 10,
+     "start": 360.72,
+     "end": 364.08,
+     "text": "اسأل نفسك: وش المهمة اللي أقدر أفوضها له؟",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 11,
+     "start": 364.3,
+     "end": 367.31,
+     "text": "وش العملية اللي أقدر أحولها إلى نظام؟",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 12,
+     "start": 367.53,
+     "end": 372.99,
+     "text": "وش المشروع اللي أقدر أبنيه وأنا ما كنت أمتلك أدواته أو خبرته قبل اليوم؟",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 13,
+     "start": 373.21,
+     "end": 378.32,
+     "text": "لأن المستقبل مو بالضرورة للأشخاص اللي يستخدمون أكبر عدد من أدوات الذكاء الاصطناعي…",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 14,
+     "start": 378.54,
+     "end": 381.95,
+     "text": "المستقبل للأشخاص اللي يعرفون كيف يوظفونها لصناعة نتائج حقيقية.",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 15,
+     "start": 382.17,
+     "end": 385.23,
+     "text": "أنا راشد… وهذا كان مدخلك إلى عالم Claude.",
+     "prompt": false
+    },
+    {
+     "scene": "finale",
+     "i": 16,
+     "start": 385.45,
+     "end": 389.51,
+     "text": "والآن جاء دورك… وش أول شيء راح تخليه ينجزه عنك؟",
+     "prompt": false
+    }
+   ]
+  }
+ ]
+}

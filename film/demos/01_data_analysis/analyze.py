@@ -79,7 +79,7 @@ def hbars(items, key, label, unit="%", w=520, color="#38bdf8", hi=None):
     bh, gap = 30, 12
     mx = max(i[key] for i in items) or 1
     h = len(items) * (bh + gap)
-    out = [f'<svg viewBox="0 0 {w} {h}" width="100%" role="img">']
+    out = [f'<svg viewBox="0 0 {w} {h}" width="100%" role="img" style="direction:ltr">']
     for k, it in enumerate(items):
         y = k * (bh + gap)
         bw = (w - 190) * it[key] / mx
@@ -132,7 +132,7 @@ ol,ul{{margin:0;padding-inline-start:20px;line-height:1.9}}.warn{{border-color:#
 <div class="kpis">
  <div class="kpi"><b>{R['rows']:,}</b><span>عملية محللة</span></div>
  <div class="kpi"><b>{R['late_rate']}%</b><span>نسبة التأخير العامة</span></div>
- <div class="kpi"><b>+{R['avg_overrun_late_hours']} س</b><span>متوسط التجاوز في العمليات المتأخرة</span></div>
+ <div class="kpi"><b><bdi dir="ltr">+{R['avg_overrun_late_hours']}</bdi> س</b><span>متوسط التجاوز في العمليات المتأخرة</span></div>
  <div class="kpi"><b>{R['best_department']['name']}</b><span>الأعلى أداءً ({R['best_department']['late_rate']}% تأخير)</span></div>
 </div>
 <div class="grid">

@@ -8,7 +8,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlparse
 
 from .auth import Sessions
-from .store import STATUSES, OrderError, Store
+from .store import STATUSES, TRANSITIONS, OrderError, Store
 
 CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap');
@@ -26,7 +26,7 @@ th,td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:start}th{
 form.inline{display:flex;gap:6px}select,input,button{font:inherit;background:#0f131c;color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:6px 10px}
 button{background:var(--ac);border:0;color:#fff;cursor:pointer}
 .login{max-width:380px;margin:12vh auto;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;display:grid;gap:12px}
-.err{color:var(--bad)}.bar{display:flex;gap:4px;height:10px;border-radius:99px;overflow:hidden;margin:8px 0 22px}
+.err{color:var(--bad)}a{color:var(--cy)}.bar{display:flex;gap:4px;height:10px;border-radius:99px;overflow:hidden;margin:8px 0 22px}
 """
 
 
@@ -149,11 +149,14 @@ class App:
     def orders_page(self, user):
         rows = ""
         for o in self.store.orders():
-            opts = "".join(f"<option {'selected' if s == o['status'] else ''}>{s}</option>" for s in STATUSES)
+            nxt = [s for s in STATUSES if s in TRANSITIONS[o["status"]]]
+            opts = "".join(f"<option>{s}</option>" for s in nxt)
             rows += (f"<tr><td>#{o['id']}</td><td>{html.escape(o['customer'])}</td><td>{o['total']:.2f} ر.س</td>"
-                     f"<td>{badge(o['status'])}</td><td><form class='inline' method='post' action='/orders/status'>"
-                     f"<input type='hidden' name='id' value='{o['id']}'><select name='status'>{opts}</select>"
-                     f"<button>تحديث</button></form></td></tr>")
+                     f"<td>{badge(o['status'])}</td><td>" + (
+                         f"<form class='inline' method='post' action='/orders/status'>"
+                         f"<input type='hidden' name='id' value='{o['id']}'><select name='status'>{opts}</select>"
+                         f"<button>تحديث</button></form>" if nxt else "<span style='color:var(--mut)'>مكتمل</span>")
+                     + "</td></tr>")
         return page("الطلبات", f"<h1>تتبع الطلبات</h1><table><tr><th>الطلب</th><th>العميل</th><th>القيمة</th>"
                                f"<th>الحالة</th><th>تغيير الحالة</th></tr>{rows}</table>", user, "/orders")
 
