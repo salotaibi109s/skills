@@ -42,12 +42,12 @@ export const DabberhaTutorial: React.FC = () => (
       })}
     </TransitionSeries>
     <Audio
-      src={staticFile("audio/tutorial/music/hype.mp3")}
+      src={staticFile("audio/tutorial/music/soft.mp3")}
       volume={(f) => {
         const end = tutTimeline.durationInFrames;
         const inVoice = tutTimeline.voiceWindows.some(([a, b]) => f >= a - 4 && f <= b + 4);
         const fade = interpolate(f, [0, 4, end - 45, end], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-        return (inVoice ? db(-17) : db(-11)) * fade;
+        return (inVoice ? db(-22) : db(-16)) * fade;
       }}
     />
   </AbsoluteFill>

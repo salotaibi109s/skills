@@ -134,8 +134,8 @@
   ],
   "music": [
     {
-      "id": "hype",
-      "prompt": "Energetic upbeat modern electronic pop beat for a fast-paced tech tutorial on TikTok, 124 BPM, punchy kick and claps, driving bass, bright synth plucks, rhythmic risers every 8 bars, confident and exciting, no slow intro, strong ending hit at 50 seconds. No vocals.",
+      "id": "soft",
+      "prompt": "Light, warm and positive background music for a modern tech tutorial, 104 BPM, soft muted plucks, gentle marimba and airy pads, light shaker and soft kick, smooth and pleasant, never harsh or loud, steady from the start, gentle ending at 50 seconds. No vocals.",
       "lengthMs": 51000
     }
   ]
