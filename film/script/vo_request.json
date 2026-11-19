@@ -88,6 +88,36 @@
    "out_mp3": "film/audio/vo/s_finale.mp3",
    "out_alignment": "film/audio/vo/s_finale.alignment.json",
    "text": "لا تسأل: وش السؤال اللي أسأله لكلود؟\nاسأل: وش المهمة اللي أفوضها له؟\nوش أول شيء راح تخليه ينجزه عنك؟"
+  },
+  {
+   "id": "ba_hook",
+   "out_mp3": "film/audio/vo/ba_hook.mp3",
+   "out_alignment": "film/audio/vo/ba_hook.alignment.json",
+   "text": "نفس الشغل… مرتين.\nمرة بالطريقة القديمة، ومرة مع Claude."
+  },
+  {
+   "id": "ba_excel",
+   "out_mp3": "film/audio/vo/ba_excel.mp3",
+   "out_alignment": "film/audio/vo/ba_excel.alignment.json",
+   "text": "قبل: ملف فيه خمسة آلاف عملية… فرز، وتصفية، وحسابات… ساعات.\nبعد: ترفع الملف وتكتب طلب واحد… وتقرير كامل مع رسوم وتوصيات، في دقيقة."
+  },
+  {
+   "id": "ba_app",
+   "out_mp3": "film/audio/vo/ba_app.mp3",
+   "out_alignment": "film/audio/vo/ba_app.alignment.json",
+   "text": "قبل: تبغى تطبيق لإدارة المهام؟ تدوّر مبرمج وتنتظر.\nبعد: تكتب وش تبغى… ويبنيه قدامك."
+  },
+  {
+   "id": "ba_policy",
+   "out_mp3": "film/audio/vo/ba_policy.mp3",
+   "out_alignment": "film/audio/vo/ba_policy.alignment.json",
+   "text": "قبل: تراجع سياسة كاملة، بند بند.\nبعد: مهارة وحدة، تراجعها بنفس المعايير كل مرة."
+  },
+  {
+   "id": "ba_end",
+   "out_mp3": "film/audio/vo/ba_end.mp3",
+   "out_alignment": "film/audio/vo/ba_end.alignment.json",
+   "text": "الفرق مو بالسرعة بس… الفرق إنك تفوّض.\nوش الشغل اللي ياخذ وقتك؟ اكتبه بالتعليقات."
   }
  ]
 }
