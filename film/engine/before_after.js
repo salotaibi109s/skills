@@ -10,6 +10,8 @@ const TOP = { y: 170, h: 600 }, BOT = { y: 810, h: 600 };   // subtitles live at
 export function createBeforeAfter(data, IMG) {
   const TL = data.before_after; const SC = TL.scenes;
   makeGrain();
+  const GRAIN_BA = (() => { const g = document.createElement('canvas'); g.width = g.height = 256; const x = g.getContext('2d'); const d = x.createImageData(256, 256); const r = mulberry(8);
+    for (let i = 0; i < d.data.length; i += 4) { const v = r() * 255; d.data[i] = d.data[i + 1] = d.data[i + 2] = v; d.data[i + 3] = 255; } x.putImageData(d, 0, 0); return g; })();
   const mk = sc => ({ C: i => sc.cues[i].start - sc.start, E: i => sc.cues[i].end - sc.start, L: sc.end - sc.start });
 
   function base(c, t) {
@@ -40,6 +42,75 @@ export function createBeforeAfter(data, IMG) {
     const s = Math.min(59, Math.floor(secs));
     chip(c, `⏱ 00:${String(s).padStart(2, '0')}`, x, y, { fam: MONO, dir: 'ltr', size: 38, color: P.green, alpha: a, weight: 700 });
   }
+  // ---- motion vocabulary adapted from promptmotion.org prompts ----
+  const FR = t => Math.floor(t * 30);
+  // Glitch Title (@aimikoda): letters flash one at a time (2 frames each) → full word jitters → glitches apart
+  function glitchWord(c, word, x, y, size, t0, lt, col) {
+    const f = FR(lt - t0), n = word.length; if (f < 0 || f > n * 2 + 26) return;
+    font(c, size, MONO, 700); const cw = c.measureText('M').width + 10, x0 = x - cw * n / 2 + cw / 2;
+    const r = mulberry(f * 7 + 3);
+    c.save(); c.textAlign = 'center'; c.textBaseline = 'middle'; c.direction = 'ltr';
+    const put = (ch, i, dx, dy, color, a) => { c.globalAlpha = a; c.fillStyle = color; c.fillText(ch, x0 + i * cw + dx, y + dy); };
+    c.shadowColor = 'rgba(0,0,0,.8)'; c.shadowBlur = 18;
+    if (f < n * 2) { const k = Math.floor(f / 2); put(word[k], k, 0, 0, '#ffffff', 1); }
+    else if (f < n * 2 + 18) {
+      const g = f % 5 === 0; c.globalCompositeOperation = 'lighter';
+      for (let i = 0; i < n; i++) { const jx = (r() - .5) * 6, jy = (r() - .5) * 4;
+        if (g) { put(word[i], i, jx - 9, jy, P.red, .8); put(word[i], i, jx + 9, jy, P.cyan, .8); }
+        c.globalCompositeOperation = 'source-over'; put(word[i], i, jx, jy, '#ffffff', 1); c.globalCompositeOperation = 'lighter'; }
+    } else { const q = (f - n * 2 - 18) / 8;
+      for (let i = 0; i < n; i++) { put(word[i], i, (r() - .5) * 160 * q, (r() - .5) * 60 * q, i % 2 ? P.cyan : col, 1 - q); } }
+    c.restore();
+  }
+  // broken vertical scan lines dripping down (red + cyan)
+  function scanStreaks(c, lt, amt) {
+    if (amt <= 0) return; const r = mulberry(FR(lt) + 11);
+    c.save(); c.globalCompositeOperation = 'lighter';
+    for (let i = 0; i < 16; i++) { const x = r() * VW, w = 2 + r() * 12, y0 = r() * VH * .5, len = 300 + r() * 1100, col = r() > .5 ? P.red : P.cyan;
+      const g = c.createLinearGradient(0, y0, 0, y0 + len); g.addColorStop(0, rgba(col, .9)); g.addColorStop(1, rgba(col, 0));
+      c.globalAlpha = amt * (.35 + .5 * r()); c.fillStyle = g; c.fillRect(x, y0, w, len); }
+    c.restore();
+  }
+  // horizontal slice shifts + RGB split on the finished frame
+  function rgbSplit(c, cv, amt, seed) {
+    if (amt <= 0) return; const S = cv.width / VW, r = mulberry(seed);
+    c.save(); c.globalCompositeOperation = 'lighter'; c.globalAlpha = .22 * amt;
+    c.drawImage(cv, -12 * amt, 0, VW, VH); c.drawImage(cv, 12 * amt, 0, VW, VH); c.restore();
+    for (let i = 0; i < 9; i++) { const y = r() * VH, h = 8 + r() * 80; c.drawImage(cv, 0, y * S, cv.width, h * S, (r() - .5) * 150 * amt, y, VW, h); }
+  }
+  // Object Strobe (@AmirMushich): machine-vision boxes jump over the result, part by part, then settle
+  function visionStrobe(c, lt, t0, labels, box) {
+    const d = lt - t0; if (d < 0 || d > 1.9) return;
+    const f = FR(d), r = mulberry(Math.floor(f / 3) * 13 + 5);
+    c.save(); c.strokeStyle = P.cyan; c.lineWidth = 3; c.shadowColor = P.cyan; c.shadowBlur = 16;
+    const bracket = (x, y, w, h) => { const L = 26; for (const [cx, cy, dx, dy] of [[x, y, 1, 1], [x + w, y, -1, 1], [x, y + h, 1, -1], [x + w, y + h, -1, -1]]) { c.beginPath(); c.moveTo(cx + dx * L, cy); c.lineTo(cx, cy); c.lineTo(cx, cy + dy * L); c.stroke(); } };
+    if (d < 1.3) {
+      const w = 180 + r() * 360, h = 90 + r() * 200, x = box.x + r() * (box.w - w), y = box.y + r() * (box.h - h);
+      bracket(x, y, w, h); c.fillStyle = rgba(P.cyan, .08); c.fillRect(x, y, w, h);
+      const lab = labels[Math.floor(f / 3) % labels.length];
+      font(c, 22, MONO, 700); const lw = c.measureText(lab).width + 20;
+      c.shadowBlur = 0; c.fillStyle = P.cyan; c.fillRect(x, y - 34, lw, 30);
+      text(c, lab, x + 10, y - 18, { size: 22, fam: MONO, weight: 700, align: 'left', dir: 'ltr', color: '#03141a' });
+      if (f % 6 === 0) { c.globalAlpha = .12; c.fillStyle = '#fff'; c.fillRect(box.x, box.y, box.w, box.h); }
+    } else {
+      const a = 1 - (d - 1.3) / .6; c.globalAlpha = a; bracket(box.x - 6, box.y - 6, box.w + 12, box.h + 12);
+      chip(c, labels[labels.length - 1], box.x + box.w / 2, box.y + box.h / 2, { size: 34, color: P.green, fam: MONO, dir: 'ltr', alpha: a, weight: 700 });
+    }
+    c.restore();
+  }
+  // Gacha reveal (@tamaandchoco): rays + particle burst + flash at the reveal
+  const BURST = (() => { const r = mulberry(99); return Array.from({ length: 70 }, () => ({ a: r() * 6.283, v: 500 + r() * 900, s: 2 + r() * 5, c: r() })); })();
+  function gachaBurst(c, lt, t0, x, y) {
+    const d = lt - t0; if (d < 0 || d > 1.2) return;
+    lightRays(c, x, y, lt, { n: 16, alpha: .22 * (1 - d / 1.2), len: 900, color: P.sky });
+    c.save(); c.globalCompositeOperation = 'lighter';
+    for (const p of BURST) { const k = d * (1 - d * .35); c.globalAlpha = 1 - d / 1.2; c.fillStyle = p.c > .66 ? P.orange : p.c > .33 ? P.cyan : P.white;
+      c.beginPath(); c.arc(x + Math.cos(p.a) * p.v * k, y + Math.sin(p.a) * p.v * k + 300 * d * d, p.s, 0, 7); c.fill(); }
+    c.restore();
+    if (FR(d) < 2) { c.save(); c.globalAlpha = .55; c.fillStyle = '#fff'; c.fillRect(0, BOT.y - 20, VW, BOT.h + 40); c.restore(); }
+  }
+  const popScale = (lt, t0) => { const d = clamp((lt - t0) / .45); return d >= 1 ? 1 : .82 + .18 * ease.back(d); };
+
   const dim = (c, y, h, a) => { if (a <= 0) return; c.save(); c.fillStyle = `rgba(0,0,0,${.62 * a})`; c.fillRect(0, y - 20, VW, h + 40); c.restore(); };
 
   // one before/after round
@@ -56,15 +127,30 @@ export function createBeforeAfter(data, IMG) {
     dim(c, TOP.y, TOP.h, after);
     // ---- bottom: after ----
     dim(c, BOT.y, BOT.h, 1 - after);
-    c.save(); c.beginPath(); c.rect(0, 790, VW, 650); c.clip(); o.after(c, lt, after, C(1), E(1)); c.restore();
+    const rv = C(1) + o.reveal, pc = { x: VW / 2, y: BOT.y + 345 };
+    c.save(); c.beginPath(); c.rect(0, 790, VW, 650); c.clip();
+    const ps = popScale(lt, rv); c.translate(pc.x, pc.y); c.scale(ps, ps); c.translate(-pc.x, -pc.y);
+    o.after(c, lt, after, C(1), E(1)); c.restore();
+    visionStrobe(c, lt, rv + .15, o.vision, { x: 70, y: BOT.y + 160, w: 940, h: 410 });
+    gachaBurst(c, lt, rv, pc.x, pc.y);
     label(c, 'بعد', BOT.y + 60, P.cyan, 1);
-    if (after > 0) stopwatch(c, 190, BOT.y + 60, (lt - C(1)) / Math.max(.5, E(1) - C(1)) * o.secs, after);
+    if (after > 0) {
+      const fin = prog(lt, E(1) - .3, E(1) + .15), sc2 = fin > 0 && fin < 1 ? 1 + .35 * Math.sin(fin * Math.PI) : 1;
+      c.save(); c.translate(190, BOT.y + 60); c.scale(sc2, sc2); c.translate(-190, -(BOT.y + 60));
+      stopwatch(c, 190, BOT.y + 60, (lt - C(1)) / Math.max(.5, E(1) - C(1)) * o.secs, after); c.restore();
+    }
+    // hard-cut strobe into the "after" (cuts every 2–3 frames)
+    const sw = env(lt, C(1) - .4, C(1) + .05, 0, 0);
+    if (sw > 0) { const f = FR(lt); if (f % 3 === 0) { c.fillStyle = 'rgba(0,0,0,.85)'; c.fillRect(0, 0, VW, VH); } scanStreaks(c, lt, 1); }
     divider(c, lt);
+    glitchWord(c, 'BEFORE', VW / 2, TOP.y + 330, 120, .05, lt, P.red);
+    glitchWord(c, 'AFTER', VW / 2, BOT.y + 330, 130, C(1) - .05, lt, P.cyan);
   }
 
   const ROUNDS = {
     ba_excel: {
-      beforeTag: 'فرز… تصفية… حسابات… ساعات', secs: 58,
+      beforeTag: 'فرز… تصفية… حسابات… ساعات', secs: 58, reveal: 1.1,
+      vision: ['ROWS 5,000', 'LATE 20.5%', 'TOP 5 CAUSES', 'ANOMALY z=2.98', 'CHARTS', 'REPORT ✓'],
       before(c, lt, a) {
         holo(c, 60, TOP.y + 150, 960, 380, { img: IMG.sheet, sy: (lt * .04) % 1, title: '5,000 صف — يدوياً', color: P.red, t: lt, zoom: 1.7, ox: 1, alpha: .95 });
         const hy = TOP.y + 230 + ((lt * 60) % 280); c.save(); c.globalCompositeOperation = 'lighter'; c.fillStyle = rgba(P.orange, .22); c.fillRect(70, hy, 940, 22); c.restore();
@@ -79,7 +165,8 @@ export function createBeforeAfter(data, IMG) {
       },
     },
     ba_app: {
-      beforeTag: 'تدوّر مبرمج… وتنتظر', secs: 45,
+      beforeTag: 'تدوّر مبرمج… وتنتظر', secs: 45, reveal: .15,
+      vision: ['LAYOUT RTL', 'STATS', 'PRIORITY', 'PROGRESS', 'DARK MODE', 'APP ✓'],
       before(c, lt, a) {
         c.save(); c.strokeStyle = rgba('#ffffff', .55); c.lineWidth = 3; c.setLineDash([10, 10]);
         rrect(c, 120, TOP.y + 150, 520, 380, 18); c.stroke(); c.setLineDash([]);
@@ -100,7 +187,8 @@ export function createBeforeAfter(data, IMG) {
       },
     },
     ba_policy: {
-      beforeTag: 'بند… بند… بند', secs: 40,
+      beforeTag: 'بند… بند… بند', secs: 40, reveal: .15,
+      vision: ['CRITERIA 10', 'EVIDENCE', 'RISK', 'IPC-014 60%', 'NUR-031 20%', 'REPORT ✓'],
       before(c, lt, a) {
         holo(c, 60, TOP.y + 150, 960, 380, { img: IMG.policy_raw, color: P.red, t: lt, zoom: 1.45, ox: .55, title: 'سياسة إعطاء الأدوية — مراجعة يدوية', alpha: .95 });
         const ly = TOP.y + 260 + ((lt * 70) % 240); c.save(); c.strokeStyle = P.red; c.lineWidth = 4; c.beginPath(); c.moveTo(620, ly); c.lineTo(980, ly); c.stroke(); c.restore();
@@ -128,6 +216,9 @@ export function createBeforeAfter(data, IMG) {
     dim(c, BOT.y, BOT.h, 1 - prog(lt, C(1), C(1) + .3));
     divider(c, lt);
     text(c, 'نفس الشغل… مرتين', VW / 2, 110, { size: 70, weight: 800, glow: 30, alpha: prog(lt, 0, .3) });
+    glitchWord(c, 'BEFORE', VW / 2, TOP.y + 300, 110, .1, lt, P.red);
+    glitchWord(c, 'AFTER', VW / 2, BOT.y + 300, 120, C(1), lt, P.cyan);
+    scanStreaks(c, lt, env(lt, 0, .5, 0, .3));
   }
   function sEnd(c, lt, sc) {
     const { C, E, L } = mk(sc);
@@ -139,8 +230,17 @@ export function createBeforeAfter(data, IMG) {
     claude(c, VW / 2, 1010, .65, { t: lt, alpha: a1 });
     chip(c, 'وش الشغل اللي ياخذ وقتك؟ 👇', VW / 2, 1330, { size: 42, color: P.orange, alpha: a1 * prog(lt, C(1), C(1) + .4), weight: 800 });
     const tf = E(1) + .5, pF = prog(lt, tf, tf + .6);
+    const col = prog(lt, tf - .5, tf);
+    if (col > 0 && pF <= 0) { // shrink what was on screen into a dot
+      const S = c.canvas.width / VW, k = 1 - ease.in(col);
+      const snap = document.createElement('canvas'); snap.width = c.canvas.width; snap.height = c.canvas.height; snap.getContext('2d').drawImage(c.canvas, 0, 0);
+      c.fillStyle = '#000'; c.fillRect(0, 0, VW, VH);
+      c.save(); c.translate(VW / 2, 760); c.scale(Math.max(k, .002), Math.max(k, .002)); c.drawImage(snap, -VW / 2, -760, VW, VH); c.restore();
+      glowDot(c, VW / 2, 760, 40 + 60 * col, P.white, col);
+    }
     if (pF > 0) {
       c.fillStyle = `rgba(0,0,0,${pF})`; c.fillRect(0, 0, VW, VH);
+      glowDot(c, VW / 2, 760, 120 * (1 - pF) + 10, P.white, 1 - pF);
       glitchTitle(c, 'CLAUDE.', VW / 2, 760, 170, ease.out(pF), lt, { spacing: 20 });
       text(c, 'THINK BEYOND CHAT.', VW / 2, 900, { size: 50, fam: LAT, dir: 'ltr', spacing: 10, color: P.sky, alpha: prog(lt, tf + .4, tf + 1) });
     }
@@ -168,8 +268,11 @@ export function createBeforeAfter(data, IMG) {
     else if (sc.id === 'ba_end') sEnd(c, lt, sc);
     else { base(c, lt); round(c, lt, sc, ROUNDS[sc.id]); }
     c.restore();
+    { let g = 0; for (const s2 of SC) { if (ROUNDS[s2.id]) { const sw = s2.cues[1].start; g = Math.max(g, env(t, sw - .4, sw + .25, .05, .2)); } g = Math.max(g, env(t, s2.start - .12, s2.start + .2, .05, .1)); }
+      rgbSplit(c, cv, g, FR(t)); }
     for (let k = 1; k < SC.length; k++) { const d = t - SC[k].start; if (Math.abs(d) < .25) { c.save(); c.globalAlpha = (1 - Math.abs(d) / .25) * .85; c.fillStyle = k % 2 ? '#ffffff' : P.cyan; c.fillRect(0, 0, VW, VH); c.restore(); } }
     const v = c.createRadialGradient(VW / 2, VH * .45, VW * .45, VW / 2, VH * .45, VH * .75); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.5)'); c.fillStyle = v; c.fillRect(0, 0, VW, VH);
+    if (GRAIN_BA) { c.save(); c.globalAlpha = .05; c.globalCompositeOperation = 'overlay'; const r = mulberry(FR(t)); c.translate(-r() * 256, -r() * 256); c.fillStyle = c.createPattern(GRAIN_BA, 'repeat'); c.fillRect(0, 0, VW + 256, VH + 256); c.restore(); }
     if (opts.subtitles !== false) subtitles(c, t);
   }
   return { duration: TL.duration, fps: TL.fps, draw };
