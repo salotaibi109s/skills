@@ -227,6 +227,81 @@ kbd{font-family:var(--f-mono);font-size:12px;border:1px solid var(--line);border
 .ex.cur{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
 .ex.done h4::after{content:" ✓";color:var(--good)}
 .btn.chk[aria-pressed="true"]{color:var(--good);border-color:var(--good);background:transparent}
+/* tabs + strings section */
+.tabs .inner{display:flex;gap:4px;border-bottom:1px solid var(--line);padding-block:6px 0;overflow-x:auto}
+.tab{border:0;background:none;padding:10px 16px;font-family:var(--f-display);font-size:18px;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.tab:hover{color:var(--ink)}
+.tab[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
+.str-intro .inner{padding-block:22px 22px;display:flex;flex-direction:column;gap:10px}
+.str-title{font-size:clamp(36px,6vw,54px);font-weight:700}
+.str-intro .lead{color:var(--muted);max-width:62ch}
+.str-tools{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:14px 24px;margin-top:6px}
+.str-tun{display:flex;flex-direction:column;gap:6px;min-width:0}
+.str-tun .chips{margin:0}
+.str-btns{display:flex;flex-wrap:wrap;gap:8px}
+#strHero{display:block;width:100%;min-width:640px;height:auto;touch-action:pan-x;user-select:none;-webkit-user-select:none}
+.str-hit{cursor:pointer}
+.str-body .inner{padding-block:26px 40px;display:flex;flex-direction:column;gap:20px}
+.sec-head{display:flex;flex-direction:column;gap:4px}
+.sec-head h3{font-size:26px}
+.sec-head .sub,.card .sub{font-size:14px;color:var(--muted)}
+.crs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.crs{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0;transition:border-color .2s}
+.crs.hit{border-color:var(--accent)}
+.crs-top{display:flex;align-items:center;gap:12px}
+.crs-num{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-size:22px;font-weight:700;background:var(--accent-soft);color:var(--ink)}
+.crs.wound .crs-num{background:var(--brass-soft)}
+.crs-name{display:flex;flex-direction:column;min-width:0}
+.crs-name b{font-family:var(--f-display);font-size:24px;font-weight:600;line-height:1.2}
+.crs-name span{font-size:13px;color:var(--muted)}
+.crs-facts{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:13.5px;margin:0}
+.crs-facts dt{color:var(--muted)}
+.crs-facts dd{margin:0}
+.crs-facts .mono{font-family:var(--f-mono);direction:ltr;unicode-bidi:isolate}
+.crs-notes{display:flex;flex-wrap:wrap;gap:5px}
+.crs-notes .nt{min-width:56px;padding:3px 8px}
+.crs-act{display:flex;flex-wrap:wrap;gap:6px}
+.crs-act .btn{padding:5px 12px;font-size:13.5px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+.tn-targets{display:flex;flex-wrap:wrap;gap:5px}
+.tn-targets button{border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:3px 10px;font-size:13px}
+.tn-targets button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.tn-read{display:flex;align-items:baseline;gap:6px 16px;flex-wrap:wrap}
+.tn-note{font-family:var(--f-display);font-size:40px;font-weight:700;line-height:1.1}
+.tn-hz{font-family:var(--f-mono);font-size:14px;color:var(--muted);direction:ltr;unicode-bidi:isolate}
+.meter{display:flex;flex-direction:column;gap:4px;direction:ltr}
+.meter-scale{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.meter-track{position:relative;height:30px;border-radius:8px;background:var(--bg);border:1px solid var(--line);overflow:hidden}
+.meter-ok{position:absolute;left:46%;width:8%;top:0;bottom:0;background:var(--accent-soft)}
+.meter-track::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--muted)}
+.needle{position:absolute;top:3px;bottom:3px;width:4px;border-radius:2px;left:calc(50% - 2px);background:var(--muted);transition:left .12s,background .2s;opacity:.35}
+.needle.live{opacity:1;background:var(--brass)}
+.needle.ok{background:var(--good)}
+.tn-status{min-height:1.6em;font-weight:600}
+.tn-status.ok{color:var(--good)}
+.tn-status.off{color:var(--brass)}
+.steps{margin:0;padding-inline-start:20px;display:flex;flex-direction:column;gap:10px;font-size:14px}
+.steps li{line-height:1.7}
+.steps .btn{padding:2px 10px;font-size:12.5px;margin-inline-start:6px}
+.fmap-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+.fmap{border-collapse:collapse;min-width:980px;width:100%;font-size:12.5px}
+.fmap th,.fmap td{border-bottom:1px solid var(--line);border-inline-start:1px solid var(--line);padding:0;text-align:center}
+.fmap thead th{background:var(--bg);padding:5px 2px;font-weight:600;font-family:var(--f-mono);font-size:12px}
+.fmap thead tr.fg th{font-family:var(--f-body);font-weight:500;color:var(--muted);font-size:11px}
+.fmap tbody th{background:var(--bg);padding:4px 10px;white-space:nowrap;text-align:start;font-family:var(--f-display);font-size:15px;font-weight:600;position:sticky;right:0;z-index:1}
+.fmap td button{width:100%;min-height:44px;border:0;background:transparent;padding:3px 2px;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.25}
+.fmap td button:hover{background:var(--accent-soft)}
+.fmap td .a{font-weight:600;white-space:nowrap}
+.fmap td .s{font-size:10.5px;color:var(--muted);white-space:nowrap}
+.fmap td.q .a{color:var(--brass)}
+.fmap td.in{background:var(--accent-soft)}
+.fmap td.open{background:var(--brass-soft)}
+.fmap td button.on{background:var(--accent);color:var(--accent-ink)}
+.fmap td button.on .s{color:var(--accent-ink)}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.info-grid .card p{font-size:14.5px}
+.info-grid .tips{font-size:14px}
 @media (prefers-reduced-motion:reduce){.course.vib .str,.glow{animation:none}.deg{transition:none}}
 </style>
 
@@ -241,6 +316,14 @@ kbd{font-family:var(--f-mono);font-size:12px;border:1px solid var(--line);border
     </div>
   </header>
 
+  <nav class="tabs" aria-label="أقسام الصفحة">
+    <div class="inner">
+      <button class="tab" id="tabPlay" type="button" aria-current="page">العزف والمقامات</button>
+      <button class="tab" id="tabStrings" type="button" aria-current="false">أوتار العود</button>
+    </div>
+  </nav>
+
+  <div id="viewPlay">
   <section class="chooser" aria-label="اختيار المقام">
     <div class="inner">
       <div class="eyebrow">المقامات</div>
@@ -385,8 +468,9 @@ kbd{font-family:var(--f-mono);font-size:12px;border:1px solid var(--line);border
         </div>
         <div class="card">
           <h3>دوزان العود</h3>
-          <p class="sub">الدوزان العربي الشائع، من الوتر الأغلظ إلى الأرفع:</p>
+          <p class="sub" id="tuningSub">الدوزان العربي الشائع، من الوتر الأغلظ إلى الأرفع:</p>
           <div class="tuning" id="tuning"></div>
+          <a class="btn" href="#strings" style="align-self:flex-start;text-decoration:none">كل شيء عن الأوتار والدوزان</a>
           <ul class="tips">
             <li>المفاتيح <kbd>1</kbd>–<kbd>8</kbd> تعزف درجات المقام. اضغط مطوّلاً مع «الترعيد» لتسمع الريشة المتكررة.</li>
             <li>النغمات المضغوطة على الزند أقصر رنيناً من الأوتار المطلقة، كما في العود الحقيقي.</li>
@@ -396,6 +480,103 @@ kbd{font-family:var(--f-mono);font-size:12px;border:1px solid var(--line);border
       </div>
     </div>
   </section>
+  </div>
+
+  <div id="viewStrings" hidden>
+    <section class="str-intro">
+      <div class="inner">
+        <div class="eyebrow">قسم الأوتار</div>
+        <h2 class="str-title">أوتار العود</h2>
+        <p class="lead">كل ما يخص الأوتار: اسم كل وتر ونغمته ومادته، والنغمات التي تخرج منه، وطريقة الدوزان بالأذن أو بالموالف، والعناية بالأوتار.</p>
+        <div class="str-tools">
+          <div class="str-tun">
+            <span class="eyebrow">الدوزان</span>
+            <div class="chips" id="tunChips" role="group" aria-label="الدوزان"></div>
+            <p class="hint" id="tunDesc"></p>
+          </div>
+          <div class="str-btns">
+            <button class="btn primary" id="strumAll">ضربة على كل الأوتار</button>
+            <button class="btn" id="strumSeq">الأوتار واحداً واحداً</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stage" aria-label="الأوتار الستة">
+      <div class="inner">
+        <div class="neck-scroll">
+          <svg id="strHero" viewBox="0 0 1000 250" role="img" aria-label="أوتار العود الستة: انقر على أي وتر لتسمعه مطلقاً"></svg>
+        </div>
+        <div class="stage-foot"><span>انقر على أي وتر لتسمعه مطلقاً. الأوتار مرسومة كما يراها العازف وهو يحتضن العود: القرار في الأعلى.</span></div>
+      </div>
+    </section>
+
+    <section class="str-body">
+      <div class="inner">
+        <div class="sec-head">
+          <h3>الأوتار الستة</h3>
+          <p class="sub">تُرقَّم الأوتار من الأرفع إلى الأغلظ. «نغمة مرجعية» تُصدر صوتاً متصلاً تدوزن عليه وترك بالأذن.</p>
+        </div>
+        <div class="crs-grid" id="crsGrid"></div>
+
+        <div class="two">
+          <div class="card" id="tunerCard">
+            <h3>الموالف</h3>
+            <p class="sub">انقر وترك قرب الجهاز، فيعرض الموالف النغمة وكم هي بعيدة عن الوتر المطلوب. يحتاج إذن الميكروفون.</p>
+            <div class="tn-targets" id="tnTargets" role="group" aria-label="الوتر المطلوب"></div>
+            <div class="tn-read">
+              <div class="tn-note" id="tnNote">—</div>
+              <div class="tn-hz" id="tnHz">انقر «تشغيل الموالف»</div>
+            </div>
+            <div class="meter" aria-hidden="true">
+              <div class="meter-scale"><span>−50</span><span>−25</span><span>0</span><span>+25</span><span>+50</span></div>
+              <div class="meter-track"><i class="meter-ok"></i><b class="needle" id="tnNeedle"></b></div>
+            </div>
+            <p class="tn-status" id="tnStatus"></p>
+            <div class="ear-row">
+              <button class="btn primary" id="tnStart">تشغيل الموالف</button>
+              <span class="hint" id="tnMsg"></span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>الدوزان بالأذن</h3>
+            <p class="sub">ابدأ بالوتر الأغلظ مضبوطاً على نغمته المرجعية، ثم اضبط كل وتر على النغمة التي تضغطها على الوتر الذي قبله. «اسمع» يعزف النغمتين لتقارن.</p>
+            <ol class="steps" id="earSteps"></ol>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>خريطة النغمات على الأوتار</h3>
+          <p class="sub">كل نغمة يمكن ضغطها على كل وتر، من المطلق حتى الخامسة. الأرقام في الأعلى بُعدها عن الوتر المطلق بالبُعد الكامل. المظلَّل من نغمات مقام <b id="mapMaqam"></b>. انقر أي خانة لتسمعها.</p>
+          <div class="fmap-wrap"><table class="fmap" id="fmap"></table></div>
+        </div>
+
+        <div class="info-grid">
+          <div class="card">
+            <h3>من الملاوي إلى الفرس</h3>
+            <p>تُربط الأوتار في <b>الفرس</b> الملصق على وجه العود، وتمرّ فوق الوجه والقمريات، ثم على <b>الزند</b> الأملس بلا دساتين، حتى <b>الأنف</b> عند رأس الزند، ثم تُلفّ على <b>الملاوي</b> في <b>البنجق</b>، وهو رأس العود المائل إلى الخلف.</p>
+            <p>طول الجزء المهتز من الوتر، من الأنف إلى الفرس، نحو ٦٠ إلى ٦٢ سم في العود العربي، وأقصر قليلاً في العود التركي.</p>
+          </div>
+          <div class="card">
+            <h3>عدد الأوتار وموادها</h3>
+            <p>أغلب الأعواد اليوم فيها ١١ وتراً: خمسة أزواج ووتر قرار مفرد. وبعضها ١٢ وتراً في ستة أزواج، أو ١٣ وتراً. وترا الزوج الواحد يُدوزنان على النغمة نفسها، فيعطيان صوتاً أغنى. وفي هذه الصفحة كل الأوتار أزواج.</p>
+            <p>الأوتار الرفيعة من النايلون، والغليظة ملفوفة بسلك معدني رفيع، غالباً نحاس مطلي بالفضة، فوق قلب من خيوط النايلون. وكانت قديماً من الأمعاء والحرير.</p>
+          </div>
+          <div class="card">
+            <h3>تغيير الأوتار والعناية بها</h3>
+            <ul class="tips">
+              <li>غيّرها كل ثلاثة إلى ستة أشهر بحسب كثرة العزف، أو حين يبهت صوتها ويصعب ضبطها.</li>
+              <li>غيّر زوجاً واحداً في كل مرة، ليبقى الشد على الوجه متوازناً.</li>
+              <li>أوتار النايلون الجديدة تتمدد أياماً: اسحبها برفق وأعد الدوزان مرات حتى تثبت.</li>
+              <li>دوزن صعوداً إلى النغمة لا نزولاً إليها، فيثبت الوتر أكثر.</li>
+              <li>امسح الأوتار بعد العزف، وأرخِها قليلاً إذا سافرت أو تركت العود طويلاً في جو جاف أو حار.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
 
 <script>
@@ -860,7 +1041,7 @@ function buildNeck(){
   });
   gMarkers=el("g",{},svg);
   gFx=el("g",{},svg);
-  svg.addEventListener("pointerdown",onNeckDown);
+  if(!svg.__bound){ svg.addEventListener("pointerdown",onNeckDown); svg.__bound=true; }
 }
 function svgPoint(e){
   var pt=svg.createSVGPoint(); pt.x=e.clientX; pt.y=e.clientY;
@@ -947,7 +1128,8 @@ function buildNoteChips(){
 function markNoteChips(){ var s=pcSet(); noteChips.forEach(function(b){ b.classList.toggle("in", pcOf(+b.dataset.p) in s); }); }
 
 function buildTuning(){
-  var box=$("tuning");
+  var box=$("tuning"); box.innerHTML="";
+  if(typeof TUNINGS!=="undefined") $("tuningSub").textContent="الدوزان "+TUNINGS[tuningId].name+"، من الوتر الأغلظ إلى الأرفع:";
   COURSES.forEach(function(c){ var d=document.createElement("div"); d.innerHTML="<b></b><span></span>"; d.querySelector("b").textContent=c.sol; d.querySelector("span").textContent=c.name; box.appendChild(d); });
 }
 
@@ -1422,16 +1604,310 @@ function setTempo(v){
   renderMelody();
 }
 
+/* ---------- tunings ---------- */
+var TUNINGS={
+  arabic:{name:"العربي (دو)", d:"الأشيع في المشرق والخليج: دو فا لا ري صول دو، من الأغلظ إلى الأرفع.", opens:[-24,-14,-6,4,14,24]},
+  arabicD:{name:"العربي (ري)", d:"يُرفع الوتران الأغلظان إلى ري وصول (قرار دوكاه ويكاه)، وهو مريح لمقامات الدوكاه.", opens:[-20,-10,-6,4,14,24]},
+  turkish:{name:"التركي", d:"أعلى من العربي (ري) ببُعد كامل: مي لا سي مي لا ري.", opens:[-16,-6,-2,8,18,28]}
+};
+var tuningId="arabic";
+function applyTuningData(id){
+  tuningId=TUNINGS[id]?id:"arabic";
+  var o=TUNINGS[tuningId].opens;
+  COURSES.length=0;
+  o.forEach(function(p,i){ COURSES.push({open:p, name:nameOf(p), sol:SOL[pcOf(p)], wound:i<=2}); });
+}
+applyTuningData("arabic");
+try{ var tsv=localStorage.getItem("oud-tuning"); if(tsv&&TUNINGS[tsv]) applyTuningData(tsv); }catch(e){}
+function setTuning(id){
+  applyTuningData(id);
+  try{ localStorage.setItem("oud-tuning",tuningId); }catch(e){}
+  voices=[]; stopDrone();
+  buildNeck(); buildMarkers(); buildScale(); buildTuning(); renderStrings();
+}
+
+/* ---------- views ---------- */
+var view="play";
+function showView(v){
+  view=v==="strings"?"strings":"play";
+  $("viewPlay").hidden=view!=="play"; $("viewStrings").hidden=view!=="strings";
+  $("tabPlay").setAttribute("aria-current",view==="play"?"page":"false");
+  $("tabStrings").setAttribute("aria-current",view==="strings"?"page":"false");
+  if(view==="strings"){ stopScale(); renderStrings(); } else { stopDrone(); stopTuner(); }
+}
+function routeHash(){
+  var h=(location.hash||"").replace("#","");
+  if(h==="strings"){ showView("strings"); return; }
+  showView("play");
+  MAQAMAT.forEach(function(m,i){ if(m.id===h&&i!==cur) selectMaqam(i,false); });
+}
+
+/* ---------- strings page ---------- */
+var ORD=["الأول","الثاني","الثالث","الرابع","الخامس","السادس"];
+var IV_NAMES={4:"بُعد كامل",6:"ثالثة صغيرة",7:"ثالثة محايدة",8:"ثالثة كبيرة",10:"رابعة تامة",14:"خامسة تامة"};
+function numOf(c){ return COURSES.length-c; }
+function courseOrder(){ var a=[]; for(var c=COURSES.length-1;c>=0;c--) a.push(c); return a; } // thinnest first
+var heroG=[], crsCards=[];
+function buildHero(){
+  var sv=$("strHero"); sv.innerHTML=""; heroG=[];
+  var defs=el("defs",{},sv);
+  var sg=el("linearGradient",{id:"spruce2",x1:"0",y1:"0",x2:"0",y2:"1"},defs);
+  el("stop",{offset:"0","stop-color":"#C79A62"},sg); el("stop",{offset:".5","stop-color":"#DDB884"},sg); el("stop",{offset:"1","stop-color":"#C2925A"},sg);
+  el("rect",{x:0,y:0,width:1000,height:250,fill:"#17120F"},sv);
+  el("rect",{x:0,y:8,width:470,height:234,rx:16,fill:"url(#spruce2)"},sv);
+  for(var k=0;k<20;k++){ var yy=14+k*11.4; el("line",{x1:4,y1:yy,x2:466,y2:yy+(k%2?1:-1),stroke:"#8C5E2E","stroke-opacity":(0.08+(k%4)*0.05).toFixed(2),"stroke-width":k%5?0.8:1.3},sv); }
+  var ros=el("g",{transform:"translate(330,125)"},sv);
+  el("circle",{r:64,fill:"#2A1A0E","fill-opacity":.55,stroke:"#6B4423","stroke-width":4},ros);
+  for(var a=0;a<12;a++){ var an=a*Math.PI/6; el("line",{x1:0,y1:0,x2:(64*Math.cos(an)).toFixed(1),y2:(64*Math.sin(an)).toFixed(1),stroke:"#C99A5E","stroke-width":1,"stroke-opacity":.6},ros); }
+  el("rect",{x:430,y:22,width:430,height:206,fill:"#1C1612"},sv);
+  el("rect",{x:56,y:30,width:14,height:190,rx:4,fill:"#3A2414"},sv);
+  el("rect",{x:858,y:22,width:7,height:206,rx:2,fill:"#EDE4CF"},sv);
+  el("path",{d:"M866,22 L1000,10 L1000,240 L866,228Z",fill:"#4A301C"},sv);
+  var tf="IBM Plex Sans Arabic, Tahoma, sans-serif";
+  var gauges=[2.6,2.2,1.8,1.45,1.2,1];
+  COURSES.forEach(function(co,i){
+    var y=46+i*32, g=el("g",{class:"course str-hit",tabindex:"0",role:"button","aria-label":"الوتر "+ORD[numOf(i)-1]+": "+co.name},sv);
+    el("line",{x1:60,y1:y,x2:1000,y2:y,stroke:"transparent","stroke-width":28},g);
+    var col=co.wound?"#B68C52":"#EDE2CB", w=gauges[i];
+    [-2.2,2.2].forEach(function(dy){ el("line",{class:"str",x1:63,y1:y+dy,x2:866,y2:y+dy,stroke:col,"stroke-width":w},g); });
+    var t1=el("text",{x:990,y:y-1,"text-anchor":"start","font-size":13,"font-weight":600,fill:"#F0E7D7","font-family":tf,direction:"rtl"},g);
+    t1.textContent=toArabicDigits(numOf(i))+" · "+co.name;
+    var t2=el("text",{x:990,y:y+13,"text-anchor":"end","font-size":10.5,fill:"#C9B79A","font-family":tf,direction:"ltr"},g);
+    t2.textContent=westOf(co.open)+" · "+freqOf(co.open).toFixed(1)+" Hz";
+    var hit=function(){ noteDown({p:co.open,c:i}); flashHero(i); };
+    g.addEventListener("pointerdown",function(e){ if(e.button>0) return; hit(); });
+    g.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); hit(); } });
+    heroG[i]=g;
+  });
+}
+function flashHero(c){
+  var g=heroG[c]; if(g){ g.classList.remove("vib"); void g.getBoundingClientRect(); g.classList.add("vib"); }
+  var card=crsCards[c]; if(card) flash(card,"hit",700);
+}
+function intervalName(d){ return IV_NAMES[d] || (fmtBeats(d/4)+" بُعد"); }
+function renderStrings(){
+  if(!$("crsGrid")) return;
+  var tn=TUNINGS[tuningId];
+  Array.prototype.forEach.call($("tunChips").children,function(b){ b.setAttribute("aria-pressed",String(b.dataset.t===tuningId)); });
+  $("tunDesc").textContent=tn.d;
+  buildHero();
+  // course cards
+  var grid=$("crsGrid"); grid.innerHTML=""; crsCards=[];
+  var ms=pcSet();
+  courseOrder().forEach(function(c){
+    var co=COURSES[c], n=numOf(c);
+    var card=document.createElement("article"); card.className="crs"+(co.wound?" wound":"");
+    var top=document.createElement("div"); top.className="crs-top";
+    var num=document.createElement("div"); num.className="crs-num"; num.textContent=toArabicDigits(n);
+    var nm=document.createElement("div"); nm.className="crs-name";
+    var b=document.createElement("b"); b.textContent=co.name;
+    var sp=document.createElement("span"); sp.textContent="الوتر "+ORD[n-1]+(n===1?" · الأرفع":n===COURSES.length?" · الأغلظ":"");
+    nm.appendChild(b); nm.appendChild(sp); top.appendChild(num); top.appendChild(nm); card.appendChild(top);
+    var dl=document.createElement("dl"); dl.className="crs-facts";
+    var up=c<COURSES.length-1 ? COURSES[c+1] : null, dn=c>0 ? COURSES[c-1] : null;
+    var rows=[
+      ["النغمة",co.name+" ("+co.sol+")"],
+      ["الطبقة",westOf(co.open)+" · "+freqOf(co.open).toFixed(1)+" Hz",true],
+      ["المادة",co.wound?"ملفوف بسلك معدني فوق قلب نايلون":"نايلون"],
+      ["إلى الوتر الأغلظ", dn ? intervalName(co.open-dn.open)+" فوق "+dn.name : "هذا أغلظ الأوتار"],
+      ["إلى الوتر الأرفع", up ? intervalName(up.open-co.open)+" تحت "+up.name : "هذا أرفع الأوتار"]
+    ];
+    rows.forEach(function(r){ var dt=document.createElement("dt"); dt.textContent=r[0]; var dd=document.createElement("dd"); dd.textContent=r[1]; if(r[2]) dd.className="mono"; dl.appendChild(dt); dl.appendChild(dd); });
+    card.appendChild(dl);
+    var lbl=document.createElement("div"); lbl.className="eyebrow"; lbl.textContent="نغمات هذا الوتر في الوضع الأول"; card.appendChild(lbl);
+    var notes=document.createElement("div"); notes.className="crs-notes";
+    for(var off=0;off<=10;off++){
+      var p=co.open+off, name=nameOf(p); if(SOL.indexOf(name)>=0) continue;
+      (function(p,off){
+        var bt=document.createElement("button"); bt.type="button"; bt.className="nt"+((pcOf(p) in ms)?" in":"");
+        bt.innerHTML='<span class="a"></span><span class="s"></span>';
+        bt.querySelector(".a").textContent=shortName(p);
+        bt.querySelector(".s").textContent=off===0?"مطلق":fingerOf(off);
+        bt.title=nameOf(p)+" · "+SOL[pcOf(p)];
+        bindNote(bt,function(){ flashHero(c); return {p:p,c:c}; });
+        notes.appendChild(bt);
+      })(p,off);
+    }
+    card.appendChild(notes);
+    var act=document.createElement("div"); act.className="crs-act";
+    var pl=document.createElement("button"); pl.type="button"; pl.className="btn primary"; pl.textContent="انقر الوتر";
+    bindNote(pl,function(){ flashHero(c); return {p:co.open,c:c}; });
+    var dr=document.createElement("button"); dr.type="button"; dr.className="btn tg drone-btn"; dr.dataset.c=c;
+    dr.setAttribute("aria-pressed",String(!!(drone&&drone.c===c))); dr.textContent="نغمة مرجعية";
+    dr.addEventListener("click",function(){ if(drone&&drone.c===c) stopDrone(); else startDrone(c); });
+    act.appendChild(pl); act.appendChild(dr); card.appendChild(act);
+    grid.appendChild(card); crsCards[c]=card;
+  });
+  renderEarSteps(); renderFmap(); renderTunerTargets();
+}
+/* tuning by ear: each string against the note pressed on the string below it */
+function renderEarSteps(){
+  var ol=$("earSteps"); ol.innerHTML="";
+  var li0=document.createElement("li");
+  li0.textContent="اضبط الوتر "+ORD[COURSES.length-1]+" ("+COURSES[0].name+") على نغمته المرجعية من بطاقته أعلاه، أو بالموالف.";
+  ol.appendChild(li0);
+  for(var c=1;c<COURSES.length;c++){
+    (function(c){
+      var lo=COURSES[c-1], hi=COURSES[c], d=hi.open-lo.open;
+      var li=document.createElement("li");
+      li.appendChild(document.createTextNode("على "+lo.name+" اضغط ب"+fingerOf(d)+" ("+intervalName(d)+")، فتخرج "+nameOf(hi.open)+". اضبط وتر "+hi.name+" المطلق حتى يطابقها."));
+      var b=document.createElement("button"); b.type="button"; b.className="btn"; b.textContent="اسمع";
+      b.addEventListener("click",function(){ initAudio(); pluck(hi.open,c-1,.85); flashHero(c-1); setTimeout(function(){ pluck(hi.open,c,.85); flashHero(c); },900); });
+      li.appendChild(b); ol.appendChild(li);
+    })(c);
+  }
+}
+/* full note map */
+function renderFmap(){
+  var t=$("fmap"); t.innerHTML=""; $("mapMaqam").textContent=current().name;
+  var ms=pcSet(), MAX=14;
+  var thead=document.createElement("thead"), r1=document.createElement("tr"), r2=document.createElement("tr"); r2.className="fg";
+  var h0=document.createElement("th"); h0.textContent="الوتر"; h0.rowSpan=2; r1.appendChild(h0);
+  for(var off=0;off<=MAX;off++){
+    var th=document.createElement("th"); th.textContent=off===0?"0":"+"+fmtBeats(off/4); r1.appendChild(th);
+    var th2=document.createElement("th"); th2.textContent=off===0?"مطلق":fingerOf(off).replace("انتقال إلى وضع أعلى","وضع أعلى"); r2.appendChild(th2);
+  }
+  thead.appendChild(r1); thead.appendChild(r2); t.appendChild(thead);
+  var tb=document.createElement("tbody");
+  courseOrder().forEach(function(c){
+    var co=COURSES[c], tr=document.createElement("tr");
+    var th=document.createElement("th"); th.scope="row"; th.textContent=toArabicDigits(numOf(c))+" · "+co.name; tr.appendChild(th);
+    for(var off=0;off<=MAX;off++){
+      (function(off){
+        var p=co.open+off, td=document.createElement("td"), b=document.createElement("button"); b.type="button";
+        var cls=[]; if(off===0) cls.push("open"); else if(pcOf(p) in ms) cls.push("in"); if(p%2!==0) cls.push("q"); td.className=cls.join(" ");
+        b.innerHTML='<span class="a"></span><span class="s"></span>';
+        b.querySelector(".a").textContent=shortName(p); b.querySelector(".s").textContent=SOL[pcOf(p)];
+        b.title=nameOf(p)+" · "+westOf(p);
+        bindNote(b,function(){ flashHero(c); flash(b,"on",380); return {p:p,c:c}; });
+        td.appendChild(b); tr.appendChild(td);
+      })(off);
+    }
+    tb.appendChild(tr);
+  });
+  t.appendChild(tb);
+}
+
+/* ---------- reference drone ---------- */
+var drone=null;
+function startDrone(c){
+  initAudio(); if(!ctx) return; stopDrone();
+  var f=freqOf(COURSES[c].open), t=ctx.currentTime;
+  var g=ctx.createGain(); g.gain.value=0; g.gain.setTargetAtTime(0.11,t,0.06);
+  var lp=ctx.createBiquadFilter(); lp.type="lowpass"; lp.frequency.value=Math.min(3500,f*7); lp.Q.value=0.4;
+  var o1=ctx.createOscillator(); o1.type="sawtooth"; o1.frequency.value=f;
+  var o2=ctx.createOscillator(); o2.type="sine"; o2.frequency.value=f;
+  var g2=ctx.createGain(); g2.gain.value=0.8;
+  o1.connect(lp); o2.connect(g2); g2.connect(lp); lp.connect(g); g.connect(master);
+  o1.start(); o2.start();
+  drone={c:c,g:g,o:[o1,o2]};
+  syncDroneBtns(); flashHero(c);
+}
+function stopDrone(){
+  if(!drone) return; var d=drone; drone=null;
+  try{ var t=ctx.currentTime; d.g.gain.cancelScheduledValues(t); d.g.gain.setTargetAtTime(0,t,0.05); d.o.forEach(function(o){ o.stop(t+0.4); }); }catch(e){}
+  syncDroneBtns();
+}
+function syncDroneBtns(){
+  document.querySelectorAll(".drone-btn").forEach(function(b){ b.setAttribute("aria-pressed",String(!!(drone&&drone.c===+b.dataset.c))); });
+}
+
+/* ---------- microphone tuner ---------- */
+var tuner={on:false,stream:null,an:null,buf:null,timer:null,target:-1,hist:[]};
+function renderTunerTargets(){
+  var box=$("tnTargets"); box.innerHTML="";
+  var mk=function(label,val){ var b=document.createElement("button"); b.type="button"; b.textContent=label; b.setAttribute("aria-pressed",String(tuner.target===val));
+    b.addEventListener("click",function(){ tuner.target=val; renderTunerTargets(); }); box.appendChild(b); };
+  mk("تلقائي",-1);
+  courseOrder().forEach(function(c){ mk(toArabicDigits(numOf(c))+" · "+COURSES[c].name,c); });
+}
+function detectPitch(buf,sr){
+  var n=buf.length, rms=0, i;
+  for(i=0;i<n;i++) rms+=buf[i]*buf[i];
+  rms=Math.sqrt(rms/n); if(rms<0.008) return null;
+  var maxLag=Math.min(Math.floor(sr/55),Math.floor(n/2)), W=n-maxLag, d=new Float32Array(maxLag+1), cm=new Float32Array(maxLag+1), run=0, tau;
+  for(tau=1;tau<=maxLag;tau++){ var s=0; for(i=0;i<W;i++){ var x=buf[i]-buf[i+tau]; s+=x*x; } d[tau]=s; run+=s; cm[tau]=run>0? s*tau/run : 1; }
+  var minLag=Math.floor(sr/900), best=-1;
+  for(tau=minLag;tau<=maxLag;tau++){ if(cm[tau]<0.15){ while(tau+1<=maxLag&&cm[tau+1]<cm[tau]) tau++; best=tau; break; } }
+  if(best<0) return null;
+  var a=cm[best-1], b=cm[best], c=best+1<=maxLag?cm[best+1]:b, den=a-2*b+c, sh=den? 0.5*(a-c)/den : 0;
+  return sr/(best+sh);
+}
+function tunerTick(){
+  if(!tuner.on) return;
+  tuner.an.getFloatTimeDomainData(tuner.buf);
+  var f=detectPitch(tuner.buf,ctx.sampleRate), needle=$("tnNeedle"), st=$("tnStatus");
+  if(!f){ needle.className="needle"; return; }
+  tuner.hist.push(f); if(tuner.hist.length>5) tuner.hist.shift();
+  var sorted=tuner.hist.slice().sort(function(x,y){ return x-y; }); f=sorted[sorted.length>>1];
+  var p=24*Math.log(f/BASE)/Math.LN2, c=tuner.target;
+  if(c<0){ var bd=1e9; COURSES.forEach(function(co,i){ var dd=Math.abs(p-co.open); if(dd<bd){ bd=dd; c=i; } }); }
+  var tp=COURSES[c].open, cents=(p-tp)*50;
+  $("tnNote").textContent=nameOf(Math.round(p));
+  $("tnHz").textContent=f.toFixed(1)+" Hz → "+COURSES[c].name+" "+freqOf(tp).toFixed(1)+" Hz";
+  var cl=Math.max(-50,Math.min(50,cents));
+  needle.style.left="calc("+(50+cl)+"% - 2px)";
+  var ok=Math.abs(cents)<=4;
+  needle.className="needle live"+(ok?" ok":"");
+  if(Math.abs(cents)>150){ st.className="tn-status off"; st.textContent="بعيد عن "+COURSES[c].name+": "+(cents<0?"شدّ الوتر كثيراً":"أرخِ الوتر كثيراً"); }
+  else if(ok){ st.className="tn-status ok"; st.textContent=COURSES[c].name+" مضبوط ✓"; }
+  else { st.className="tn-status off"; st.textContent=(cents<0?"منخفض ":"مرتفع ")+Math.abs(Math.round(cents))+" سنت: "+(cents<0?"شدّ الملوى قليلاً":"أرخِ الملوى قليلاً"); }
+}
+function startTuner(){
+  initAudio(); if(!ctx) return;
+  var msg=$("tnMsg");
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){ msg.textContent="هذا المتصفح لا يتيح الميكروفون هنا. استعمل «نغمة مرجعية» في بطاقة كل وتر، أو افتح نسخة الآيفون من GitHub."; return; }
+  msg.textContent="جارٍ طلب إذن الميكروفون…";
+  navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}}).then(function(stream){
+    if(view!=="strings"){ stream.getTracks().forEach(function(t){ t.stop(); }); return; }
+    stopDrone();
+    tuner.stream=stream; var src=ctx.createMediaStreamSource(stream);
+    tuner.an=ctx.createAnalyser(); tuner.an.fftSize=4096; src.connect(tuner.an);
+    tuner.buf=new Float32Array(tuner.an.fftSize); tuner.on=true; tuner.hist=[];
+    tuner.timer=setInterval(tunerTick,90);
+    $("tnStart").textContent="إيقاف الموالف"; msg.textContent="انقر وتراً واحداً واتركه يرن.";
+  }).catch(function(){
+    msg.textContent="لم يُسمح بالميكروفون هنا. في معاينة Claude لا يعمل الموالف؛ افتح نسخة الآيفون من GitHub، أو استعمل «نغمة مرجعية» للدوزان بالأذن.";
+  });
+}
+function stopTuner(){
+  if(!tuner.on&&!tuner.stream) return;
+  tuner.on=false; clearInterval(tuner.timer);
+  if(tuner.stream) tuner.stream.getTracks().forEach(function(t){ t.stop(); });
+  tuner.stream=null;
+  if($("tnStart")){ $("tnStart").textContent="تشغيل الموالف"; $("tnNeedle").className="needle"; $("tnStatus").textContent=""; }
+}
+function strum(seq){
+  initAudio(); stopDrone();
+  for(var c=0;c<COURSES.length;c++){
+    (function(c){ setTimeout(function(){ pluck(COURSES[c].open,c,seq?.85:.7); flashHero(c); if(seq) feedback({p:COURSES[c].open,c:c}); }, seq? c*650 : c*38); })(c);
+  }
+}
+function initStrings(){
+  var box=$("tunChips");
+  Object.keys(TUNINGS).forEach(function(id){
+    var b=document.createElement("button"); b.type="button"; b.className="chip sm"; b.dataset.t=id; b.textContent=TUNINGS[id].name;
+    b.addEventListener("click",function(){ setTuning(id); strum(false); });
+    box.appendChild(b);
+  });
+  $("strumAll").addEventListener("click",function(){ strum(false); });
+  $("strumSeq").addEventListener("click",function(){ strum(true); });
+  $("tnStart").addEventListener("click",function(){ if(tuner.on) stopTuner(); else startTuner(); });
+  $("tabPlay").addEventListener("click",function(){ location.hash=current().id; });
+  $("tabStrings").addEventListener("click",function(){ location.hash="strings"; });
+}
+
 /* ---------- controls ---------- */
 function bindToggle(id,key,after){
   var b=$(id); b.addEventListener("click",function(){ settings[key]=!settings[key]; b.setAttribute("aria-pressed",String(settings[key])); if(after) after(); });
 }
 function init(){
-  buildChips(); buildTones(); buildNeck(); buildNoteChips(); buildTuning(); initComposer(); initLib();
+  buildChips(); buildTones(); buildNeck(); buildNoteChips(); buildTuning(); initComposer(); initLib(); initStrings();
   var h=(location.hash||"").replace("#",""), idx=0;
   MAQAMAT.forEach(function(m,i){ if(m.id===h) idx=i; });
   selectMaqam(idx,false);
-  window.addEventListener("hashchange",function(){ var hh=location.hash.replace("#",""); MAQAMAT.forEach(function(m,i){ if(m.id===hh&&i!==cur) selectMaqam(i,false); }); });
+  routeHash();
+  window.addEventListener("hashchange",routeHash);
   $("playUp").addEventListener("click",function(){ playScale("up"); });
   $("playDown").addEventListener("click",function(){ playScale("down"); });
   $("playBoth").addEventListener("click",function(){ playScale("both"); });
