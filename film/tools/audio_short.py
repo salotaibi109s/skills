@@ -1,5 +1,6 @@
 """Score + SFX (+ Nasser VO when present) for the vertical TikTok cut → build/audio/mix_short.wav."""
 import json
+import os
 import subprocess
 from pathlib import Path
 
@@ -8,7 +9,8 @@ from scipy.signal import butter, sosfilt
 
 F = Path(__file__).resolve().parent.parent
 SR = 48000
-TL = json.loads((F / "script/short_timeline.json").read_text(encoding="utf-8"))
+BA = bool(os.environ.get("BA"))
+TL = json.loads((F / ("script/before_after_timeline.json" if BA else "script/short_timeline.json")).read_text(encoding="utf-8"))
 DUR = TL["duration"]; N = int(DUR * SR) + SR
 SC = {s["id"]: s for s in TL["scenes"]}
 rng = np.random.default_rng(7)
@@ -30,7 +32,10 @@ def place(buf, sig, at, g=1.0, pan=0.0):
     buf[i:i + len(sig), 1] += sig * g * np.sin((pan + 1) * np.pi / 4) * 1.414
 
 
-stop = cue("s_hook", 2) - .05; title = cue("s_hook", 3) + .9; groove0 = SC["s_analyze"]["start"]; end_card = SC["s_finale"]["cues"][2]["end"] + .6
+if BA:  # before/after: no silence beat; groove from the first round; end card after the CTA
+    stop, title, groove0, end_card = 0.0, 0.0, SC["ba_excel"]["start"], SC["ba_end"]["cues"][1]["end"] + .5
+else:
+    stop = cue("s_hook", 2) - .05; title = cue("s_hook", 3) + .9; groove0 = SC["s_analyze"]["start"]; end_card = SC["s_finale"]["cues"][2]["end"] + .6
 music = np.zeros((N, 2)); sfx = np.zeros((N, 2))
 # pad (Dm Bb F C), off during the silence
 prog = [[62, 65, 69], [62, 65, 70], [65, 69, 72], [64, 67, 72]]
@@ -40,7 +45,8 @@ while t0 < DUR:
     sig = sum(np.sin(2 * np.pi * midi(m + d) * tt + rng.uniform(0, 6)) for m in prog[k % 4] + [prog[k % 4][0] - 12] for d in (-.1, 0, .1))
     sig = lp(sig * np.minimum(1, tt / 1.2) * np.minimum(1, (tt[-1] - tt) / 1.0) / 12, 2000)
     place(music, sig, t0); t0 += 8 * BEAT; k += 1
-lvl = np.interp(np.arange(N) / SR, [0, stop - .05, stop, title - .3, title, DUR - 3, DUR - .3, DUR], [.5, .6, 0, 0, .8, 1, 0, 0])
+lvl = (np.interp(np.arange(N) / SR, [0, 1, DUR - 3, DUR - .3, DUR], [.4, .7, 1, 0, 0]) if BA else
+       np.interp(np.arange(N) / SR, [0, stop - .05, stop, title - .3, title, DUR - 3, DUR - .3, DUR], [.5, .6, 0, 0, .8, 1, 0, 0]))
 music *= lvl[:, None]
 # groove
 kt = tv(.4); kick = np.sin(2 * np.pi * (45 + 110 * np.exp(-kt * 18)) * kt) * np.exp(-kt * 7)
@@ -69,9 +75,18 @@ def riser(sec):
     tt = tv(sec); return hp(rng.standard_normal(len(tt)), 1500) * (tt / sec) ** 2.5 * .35
 
 
-for kk in range(14):
+for kk in range(0 if BA else 14):
     st = .2 + (stop - .5) * (1 - (1 - kk / 14) ** 1.7); place(sfx, ping(*((1318.5, 1760) if kk % 2 else (987.8, 1318.5))), st, .6, pan=rng.uniform(-.6, .6))
-place(sfx, riser(title - stop - .3), stop + .3, .5); place(sfx, impact(1.1), title, .8)
+if not BA:
+    place(sfx, riser(title - stop - .3), stop + .3, .5); place(sfx, impact(1.1), title, .8)
+else:  # a "tick" on every قبل line, a bright riser + impact into every بعد line
+    for s in TL["scenes"]:
+        if s["id"] in ("ba_excel", "ba_app", "ba_policy"):
+            b0, a0 = s["cues"][0]["start"], s["cues"][1]["start"]
+            tk = b0
+            while tk < a0 - .3:
+                place(sfx, np.sin(2 * np.pi * 2600 * tv(.03)) * np.exp(-tv(.03) * 120) * .3, tk, .5, pan=.3); tk += .25
+            place(sfx, riser(.8), a0 - .8, .5); place(sfx, impact(.8), a0, .6)
 for s in TL["scenes"][1:]:
     place(sfx, whoosh(.7), s["start"] - .35, .7, pan=rng.uniform(-.4, .4)); place(sfx, impact(.6), s["start"], .45)
 for s in TL["scenes"]:
@@ -96,6 +111,6 @@ mix = nm(music, .5) * (.55 if have else .8) + nm(sfx, .6) * .55 + (nm(vo, .95) i
 mix = np.tanh(mix * 1.2) / np.tanh(1.2)
 out = F / "build/audio"; out.mkdir(parents=True, exist_ok=True)
 subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "s16le", "-ar", str(SR), "-ac", "2", "-i", "-", "-af",
-                f"loudnorm=I={-14 if have else -16}:TP=-1.5:LRA=11,alimiter=limit=0.89", "-ar", str(SR), "-c:a", "pcm_s16le", str(out / "mix_short.wav")],
+                f"loudnorm=I={-14 if have else -16}:TP=-1.5:LRA=11,alimiter=limit=0.89", "-ar", str(SR), "-c:a", "pcm_s16le", str(out / ("mix_ba.wav" if BA else "mix_short.wav"))],
                input=(np.clip(mix, -1, 1) * 32767).astype("<i2").tobytes(), check=True)
 print(f"short audio ok — {DUR:.1f}s, voice: {'Nasser' if have else 'not yet'}")

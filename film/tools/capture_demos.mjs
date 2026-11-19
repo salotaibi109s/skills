@@ -23,6 +23,7 @@ const docs = [
   ['05_delegation_folder_review/folder_review_report.md', 'review_md', 'folder_review_report.md'],
   ['06_web_research/market_research_report.md', 'research_md', 'market_research_report.md'],
   ['03_claude_code_orders/REQUIREMENTS.md', 'req_md', 'REQUIREMENTS.md'],
+  ['04_projects_and_skills/sample_policies/medication_administration_policy.md', 'policy_raw', 'medication_administration_policy.md'],
 ];
 for (const [src, name, label] of docs)
   execFileSync('python3', [path.join(FILM, 'tools/md_to_html.py'), D(src), path.join(TMP, name + '.html'), label]);

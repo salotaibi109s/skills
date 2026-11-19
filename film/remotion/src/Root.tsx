@@ -12,5 +12,7 @@ export const RemotionRoot: React.FC = () => (
       fps={fps} width={1920} height={1080} defaultProps={{ subtitles: false, audio: true }} />
     {data.short ? <Composition id="ClaudeTikTok" component={Film} durationInFrames={Math.round((data as any).short.duration * fps)}
       fps={fps} width={1080} height={1920} defaultProps={{ subtitles: true, audio: true, vertical: true }} /> : null}
+    {(data as any).before_after ? <Composition id="ClaudeBeforeAfter" component={Film} durationInFrames={Math.round((data as any).before_after.duration * fps)}
+      fps={fps} width={1080} height={1920} defaultProps={{ subtitles: true, audio: true, vertical: true, variant: 'ba' }} /> : null}
   </>
 );

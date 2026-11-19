@@ -1,0 +1,126 @@
+{
+ "fps": 30,
+ "duration": 36.16,
+ "scenes": [
+  {
+   "id": "ba_hook",
+   "start": 0.0,
+   "end": 4.66,
+   "cues": [
+    {
+     "scene": "ba_hook",
+     "i": 0,
+     "start": 0.3,
+     "end": 1.6,
+     "text": "نفس الشغل… مرتين.",
+     "prompt": false
+    },
+    {
+     "scene": "ba_hook",
+     "i": 1,
+     "start": 1.8,
+     "end": 4.16,
+     "text": "مرة بالطريقة القديمة، ومرة مع Claude.",
+     "prompt": false
+    }
+   ],
+   "vo_offset": null
+  },
+  {
+   "id": "ba_excel",
+   "start": 4.66,
+   "end": 14.33,
+   "cues": [
+    {
+     "scene": "ba_excel",
+     "i": 0,
+     "start": 4.86,
+     "end": 8.62,
+     "text": "قبل: ملف فيه خمسة آلاف عملية… فرز، وتصفية، وحسابات… ساعات.",
+     "prompt": false
+    },
+    {
+     "scene": "ba_excel",
+     "i": 1,
+     "start": 8.82,
+     "end": 13.63,
+     "text": "بعد: ترفع الملف وتكتب طلب واحد… وتقرير كامل مع رسوم وتوصيات، في دقيقة.",
+     "prompt": false
+    }
+   ],
+   "vo_offset": null
+  },
+  {
+   "id": "ba_app",
+   "start": 14.33,
+   "end": 20.84,
+   "cues": [
+    {
+     "scene": "ba_app",
+     "i": 0,
+     "start": 14.53,
+     "end": 17.59,
+     "text": "قبل: تبغى تطبيق لإدارة المهام؟ تدوّر مبرمج وتنتظر.",
+     "prompt": false
+    },
+    {
+     "scene": "ba_app",
+     "i": 1,
+     "start": 17.79,
+     "end": 20.14,
+     "text": "بعد: تكتب وش تبغى… ويبنيه قدامك.",
+     "prompt": false
+    }
+   ],
+   "vo_offset": null
+  },
+  {
+   "id": "ba_policy",
+   "start": 20.84,
+   "end": 27.35,
+   "cues": [
+    {
+     "scene": "ba_policy",
+     "i": 0,
+     "start": 21.04,
+     "end": 23.4,
+     "text": "قبل: تراجع سياسة كاملة، بند بند.",
+     "prompt": false
+    },
+    {
+     "scene": "ba_policy",
+     "i": 1,
+     "start": 23.6,
+     "end": 26.65,
+     "text": "بعد: مهارة وحدة، تراجعها بنفس المعايير كل مرة.",
+     "prompt": false
+    }
+   ],
+   "vo_offset": null
+  },
+  {
+   "id": "ba_end",
+   "start": 27.35,
+   "end": 36.16,
+   "cues": [
+    {
+     "scene": "ba_end",
+     "i": 0,
+     "start": 27.55,
+     "end": 30.26,
+     "text": "الفرق مو بالسرعة بس… الفرق إنك تفوّض.",
+     "prompt": false
+    },
+    {
+     "scene": "ba_end",
+     "i": 1,
+     "start": 30.46,
+     "end": 33.16,
+     "text": "وش الشغل اللي ياخذ وقتك؟ اكتبه بالتعليقات.",
+     "prompt": false
+    }
+   ],
+   "vo_offset": null
+  }
+ ]
+}

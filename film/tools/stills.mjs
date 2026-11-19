@@ -9,12 +9,12 @@ const [out, ...ts] = process.argv.slice(2);
 const srv = spawn('python3', ['-m', 'http.server', '8811', '--bind', '127.0.0.1'], { cwd: FILM, stdio: 'ignore' });
 await new Promise(r => setTimeout(r, 800));
 const b = await chromium.launch();
-const V = !!process.env.VERT;
+const V = !!process.env.VERT || !!process.env.BA;
 const p = await b.newPage({ viewport: V ? { width: 1080, height: 1920 } : { width: 1920, height: 1080 } });
 const errs = [];
 p.on('pageerror', e => errs.push(e.message));
 p.on('console', m => { if (m.type() === 'error') errs.push(m.text()); });
-await p.goto('http://127.0.0.1:8811/engine/preview.html?still=1' + (V ? '&v=1' : ''));
+await p.goto('http://127.0.0.1:8811/engine/preview.html?still=1' + (process.env.BA ? '&ba=1' : V ? '&v=1' : ''));
 await p.waitForFunction(() => window.READY, null, { timeout: 30000 }).catch(() => {});
 for (const t of ts) {
   const t0 = Date.now();

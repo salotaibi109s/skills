@@ -1,11 +1,13 @@
 """Timeline for the vertical TikTok cut (script/short_script.json → script/short_timeline.json + subtitles).
 Uses Nasser's real timings from build/audio/vo/s_*.alignment.json when present, otherwise an estimate."""
 import json
+import sys
 from pathlib import Path
 
 F = Path(__file__).resolve().parent.parent
 WPS, GAP = 2.85, 0.2
-src = json.loads((F / "script/short_script.json").read_text(encoding="utf-8"))
+SRC, OUT, SRT = (sys.argv[1:4] if len(sys.argv) > 3 else ("short_script.json", "short_timeline.json", "claude_tiktok.ar.srt"))
+src = json.loads((F / "script" / SRC).read_text(encoding="utf-8"))
 PROMPTS = {("s_analyze", 1)}  # cues shown as a typed prompt
 
 
@@ -45,8 +47,8 @@ for s in src["scenes"]:
     t += s["tail"]
     scenes.append({"id": s["id"], "start": round(start, 2), "end": round(t, 2), "cues": sc, "vo_offset": s["lead"] if al else None})
 out = {"fps": 30, "duration": round(t, 2), "scenes": scenes}
-(F / "script/short_timeline.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-(F / "subtitles/claude_tiktok.ar.srt").write_text("".join(f"{k+1}\n{ts(c['start'])} --> {ts(c['end'])}\n{c['text']}\n\n" for k, c in enumerate(cues)), encoding="utf-8")
+(F / "script" / OUT).write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+(F / "subtitles" / SRT).write_text("".join(f"{k+1}\n{ts(c['start'])} --> {ts(c['end'])}\n{c['text']}\n\n" for k, c in enumerate(cues)), encoding="utf-8")
 print(f"short total {t:.1f}s")
 for s in scenes:
     print(f"  {s['id']:<12} {s['start']:6.1f} → {s['end']:6.1f}")
