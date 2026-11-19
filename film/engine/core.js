@@ -183,7 +183,7 @@ function promptCard(c, x, y, w, lines, p, o = {}) {
   c.shadowColor = rgba(P.cyan, .35); c.shadowBlur = 50;
   rrect(c, x, y, w, h, 26); c.fillStyle = 'rgba(14,18,28,.94)'; c.fill(); c.shadowBlur = 0;
   c.strokeStyle = rgba(P.cyan, .5); c.lineWidth = 1.5; c.stroke();
-  text(c, label, x + w - 32, y + 34, { size: 17, align: 'right', color: P.cyan, fam: LAT, weight: 700, dir: 'ltr', spacing: 2 });
+  text(c, label, x + w - 32, y + 34, /[\u0600-\u06FF]/.test(label) ? { size: 22, align: 'right', color: P.cyan, weight: 700 } : { size: 17, align: 'right', color: P.cyan, fam: LAT, weight: 700, dir: 'ltr', spacing: 2 });
   if (attach) {
     const aw = 470; rrect(c, x + w - 32 - aw, y + 56, aw, 44, 12); c.fillStyle = 'rgba(52,211,153,.10)'; c.fill(); c.strokeStyle = rgba(P.green, .6); c.stroke();
     c.fillStyle = P.green; rrect(c, x + w - 72, y + 66, 26, 24, 4); c.fill();

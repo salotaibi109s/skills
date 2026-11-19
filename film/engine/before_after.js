@@ -25,7 +25,7 @@ export function createBeforeAfter(data, IMG) {
     const g = c.createLinearGradient(0, y, VW, y); g.addColorStop(0, rgba(P.red, 0)); g.addColorStop(.5, P.white); g.addColorStop(1, rgba(P.cyan, 0));
     c.fillStyle = g; c.fillRect(0, y - 1.5, VW, 3);
     c.beginPath(); c.arc(VW / 2, y, 38, 0, 7); c.fillStyle = '#0a0c12'; c.fill(); c.strokeStyle = P.white; c.lineWidth = 2; c.stroke();
-    text(c, 'VS', VW / 2, y + 2, { size: 30, fam: LAT, weight: 700, dir: 'ltr' });
+    text(c, '⇅', VW / 2, y + 2, { size: 36, weight: 700 });
     c.restore();
   }
   function label(c, s, y, col, a) { chip(c, s, VW - 120, y, { color: col, size: 34, alpha: a, weight: 800 }); }
@@ -46,20 +46,20 @@ export function createBeforeAfter(data, IMG) {
   const FR = t => Math.floor(t * 30);
   // Glitch Title (@aimikoda): letters flash one at a time (2 frames each) → full word jitters → glitches apart
   function glitchWord(c, word, x, y, size, t0, lt, col) {
-    const f = FR(lt - t0), n = word.length; if (f < 0 || f > n * 2 + 26) return;
-    font(c, size, MONO, 700); const cw = c.measureText('M').width + 10, x0 = x - cw * n / 2 + cw / 2;
+    const f = FR(lt - t0), n = word.length; if (f < 0 || f > n * 3 + 26) return;
     const r = mulberry(f * 7 + 3);
-    c.save(); c.textAlign = 'center'; c.textBaseline = 'middle'; c.direction = 'ltr';
-    const put = (ch, i, dx, dy, color, a) => { c.globalAlpha = a; c.fillStyle = color; c.fillText(ch, x0 + i * cw + dx, y + dy); };
-    c.shadowColor = 'rgba(0,0,0,.8)'; c.shadowBlur = 18;
-    if (f < n * 2) { const k = Math.floor(f / 2); put(word[k], k, 0, 0, '#ffffff', 1); }
-    else if (f < n * 2 + 18) {
-      const g = f % 5 === 0; c.globalCompositeOperation = 'lighter';
-      for (let i = 0; i < n; i++) { const jx = (r() - .5) * 6, jy = (r() - .5) * 4;
-        if (g) { put(word[i], i, jx - 9, jy, P.red, .8); put(word[i], i, jx + 9, jy, P.cyan, .8); }
-        c.globalCompositeOperation = 'source-over'; put(word[i], i, jx, jy, '#ffffff', 1); c.globalCompositeOperation = 'lighter'; }
-    } else { const q = (f - n * 2 - 18) / 8;
-      for (let i = 0; i < n; i++) { put(word[i], i, (r() - .5) * 160 * q, (r() - .5) * 60 * q, i % 2 ? P.cyan : col, 1 - q); } }
+    const put = (str, dx, dy, color, a) => text(c, str, x + dx, y + dy, { size, weight: 800, color, alpha: a, glow: 22, glowColor: col });
+    c.save();
+    if (f < n * 3) { put(word.slice(0, Math.floor(f / 3) + 1), 0, 0, '#ffffff', 1); }
+    else if (f < n * 3 + 18) {
+      const jx = (r() - .5) * 8, jy = (r() - .5) * 5;
+      if (f % 5 === 0) { c.globalCompositeOperation = 'lighter'; put(word, jx - 12, jy, P.red, .8); put(word, jx + 12, jy, P.cyan, .8); c.globalCompositeOperation = 'source-over'; }
+      put(word, jx, jy, '#ffffff', 1);
+    } else {
+      const q = (f - n * 3 - 18) / 8, h = size * 1.4, bands = 6;
+      for (let i = 0; i < bands; i++) { const y0 = y - h / 2 + i * h / bands;
+        c.save(); c.beginPath(); c.rect(0, y0, VW, h / bands); c.clip(); put(word, (r() - .5) * 260 * q, 0, i % 2 ? P.cyan : col, 1 - q); c.restore(); }
+    }
     c.restore();
   }
   // broken vertical scan lines dripping down (red + cyan)
@@ -88,13 +88,13 @@ export function createBeforeAfter(data, IMG) {
       const w = 180 + r() * 360, h = 90 + r() * 200, x = box.x + r() * (box.w - w), y = box.y + r() * (box.h - h);
       bracket(x, y, w, h); c.fillStyle = rgba(P.cyan, .08); c.fillRect(x, y, w, h);
       const lab = labels[Math.floor(f / 3) % labels.length];
-      font(c, 22, MONO, 700); const lw = c.measureText(lab).width + 20;
-      c.shadowBlur = 0; c.fillStyle = P.cyan; c.fillRect(x, y - 34, lw, 30);
-      text(c, lab, x + 10, y - 18, { size: 22, fam: MONO, weight: 700, align: 'left', dir: 'ltr', color: '#03141a' });
+      font(c, 26, AR, 800); const lw = c.measureText(lab).width + 24;
+      c.shadowBlur = 0; c.fillStyle = P.cyan; c.fillRect(x + w - lw, y - 38, lw, 34);
+      text(c, lab, x + w - 12, y - 20, { size: 26, weight: 800, align: 'right', color: '#03141a' });
       if (f % 6 === 0) { c.globalAlpha = .12; c.fillStyle = '#fff'; c.fillRect(box.x, box.y, box.w, box.h); }
     } else {
       const a = 1 - (d - 1.3) / .6; c.globalAlpha = a; bracket(box.x - 6, box.y - 6, box.w + 12, box.h + 12);
-      chip(c, labels[labels.length - 1], box.x + box.w / 2, box.y + box.h / 2, { size: 34, color: P.green, fam: MONO, dir: 'ltr', alpha: a, weight: 700 });
+      chip(c, labels[labels.length - 1], box.x + box.w / 2, box.y + box.h / 2, { size: 38, color: P.green, alpha: a, weight: 800 });
     }
     c.restore();
   }
@@ -143,14 +143,14 @@ export function createBeforeAfter(data, IMG) {
     const sw = env(lt, C(1) - .4, C(1) + .05, 0, 0);
     if (sw > 0) { const f = FR(lt); if (f % 3 === 0) { c.fillStyle = 'rgba(0,0,0,.85)'; c.fillRect(0, 0, VW, VH); } scanStreaks(c, lt, 1); }
     divider(c, lt);
-    glitchWord(c, 'BEFORE', VW / 2, TOP.y + 330, 120, .05, lt, P.red);
-    glitchWord(c, 'AFTER', VW / 2, BOT.y + 330, 130, C(1) - .05, lt, P.cyan);
+    glitchWord(c, 'قبل', VW / 2, TOP.y + 330, 170, .05, lt, P.red);
+    glitchWord(c, 'بعد', VW / 2, BOT.y + 330, 180, C(1) - .05, lt, P.cyan);
   }
 
   const ROUNDS = {
     ba_excel: {
       beforeTag: 'فرز… تصفية… حسابات… ساعات', secs: 58, reveal: 1.1,
-      vision: ['ROWS 5,000', 'LATE 20.5%', 'TOP 5 CAUSES', 'ANOMALY z=2.98', 'CHARTS', 'REPORT ✓'],
+      vision: ['5,000 صف', 'تأخير 20.5%', 'أعلى 5 أسباب', 'شذوذ: جدة — يوليو', 'رسوم بيانية', 'التقرير جاهز ✓'],
       before(c, lt, a) {
         holo(c, 60, TOP.y + 150, 960, 380, { img: IMG.sheet, sy: (lt * .04) % 1, title: '5,000 صف — يدوياً', color: P.red, t: lt, zoom: 1.7, ox: 1, alpha: .95 });
         const hy = TOP.y + 230 + ((lt * 60) % 280); c.save(); c.globalCompositeOperation = 'lighter'; c.fillStyle = rgba(P.orange, .22); c.fillRect(70, hy, 940, 22); c.restore();
@@ -159,14 +159,14 @@ export function createBeforeAfter(data, IMG) {
       after(c, lt, a, c1, e1) {
         if (a <= 0) return;
         const p = prog(lt, c1, c1 + 1.2);
-        if (p < 1) promptCard(c, 60, BOT.y + 140, 960, ['حلل الملف، وطلّع أكثر أسباب التأخير، مع رسوم وتوصيات.'], p * 1.1, { attach: 'operations_2026_synthetic.xlsx', t: lt, alpha: a });
+        if (p < 1) promptCard(c, 60, BOT.y + 140, 960, ['حلل الملف، وطلّع أكثر أسباب التأخير، مع رسوم وتوصيات.'], p * 1.1, { attach: 'operations_2026_synthetic.xlsx', t: lt, alpha: a, label: 'الطلب' });
         const r = prog(lt, c1 + 1.1, c1 + 1.6);
-        if (r > 0) holo(c, 60, BOT.y + 110, 960, 470, { img: IMG.analysis_report, alpha: r, sy: prog(lt, c1 + 1.4, e1 + .5) * .5, zoom: 1.35, ox: 1, title: 'تقرير تنفيذي — حقيقي', live: true, t: lt, scan: .5 });
+        if (r > 0) holo(c, 60, BOT.y + 110, 960, 470, { img: IMG.analysis_report, alpha: r, sy: prog(lt, c1 + 1.4, e1 + .5) * .5, zoom: 1.35, ox: 1, title: 'تقرير تنفيذي — حقيقي', live: true, badge: 'لقطة حقيقية', t: lt, scan: .5 });
       },
     },
     ba_app: {
       beforeTag: 'تدوّر مبرمج… وتنتظر', secs: 45, reveal: .15,
-      vision: ['LAYOUT RTL', 'STATS', 'PRIORITY', 'PROGRESS', 'DARK MODE', 'APP ✓'],
+      vision: ['واجهة عربية', 'إحصائيات', 'أولويات', 'نسبة الإنجاز', 'وضع ليلي', 'التطبيق جاهز ✓'],
       before(c, lt, a) {
         c.save(); c.strokeStyle = rgba('#ffffff', .55); c.lineWidth = 3; c.setLineDash([10, 10]);
         rrect(c, 120, TOP.y + 150, 520, 380, 18); c.stroke(); c.setLineDash([]);
@@ -183,12 +183,12 @@ export function createBeforeAfter(data, IMG) {
         const shots = ['task_01_initial', 'task_03_added', 'task_04_checked'];
         const k = Math.min(2, Math.floor(prog(lt, c1 + .4, e1) * 3));
         const build = prog(lt, c1, c1 + .6);
-        holo(c, 60, BOT.y + 110, 960, 470, { img: IMG[shots[k]], alpha: a * build, zoom: 1.3, ox: .55, title: 'Artifact — مهامي اليومية', live: true, color: P.violet, t: lt });
+        holo(c, 60, BOT.y + 110, 960, 470, { img: IMG[shots[k]], alpha: a * build, zoom: 1.3, ox: .55, title: 'تطبيق مهامي اليومية', live: true, badge: 'لقطة حقيقية', color: P.violet, t: lt });
       },
     },
     ba_policy: {
       beforeTag: 'بند… بند… بند', secs: 40, reveal: .15,
-      vision: ['CRITERIA 10', 'EVIDENCE', 'RISK', 'IPC-014 60%', 'NUR-031 20%', 'REPORT ✓'],
+      vision: ['10 معايير', 'الأدلة', 'المخاطر', 'السياسة 1: 60%', 'السياسة 2: 20%', 'التقرير جاهز ✓'],
       before(c, lt, a) {
         holo(c, 60, TOP.y + 150, 960, 380, { img: IMG.policy_raw, color: P.red, t: lt, zoom: 1.45, ox: .55, title: 'سياسة إعطاء الأدوية — مراجعة يدوية', alpha: .95 });
         const ly = TOP.y + 260 + ((lt * 70) % 240); c.save(); c.strokeStyle = P.red; c.lineWidth = 4; c.beginPath(); c.moveTo(620, ly); c.lineTo(980, ly); c.stroke(); c.restore();
@@ -196,10 +196,10 @@ export function createBeforeAfter(data, IMG) {
       after(c, lt, a, c1, e1) {
         if (a <= 0) return;
         const two = prog(lt, c1 + 1.2, c1 + 1.7);
-        holo(c, 60, BOT.y + 110, 960, 470, { img: IMG.skill_md, alpha: a * (1 - two), zoom: 1.4, ox: .55, title: 'Skill: hospital-policy-review', live: true, color: P.green, t: lt });
+        holo(c, 60, BOT.y + 110, 960, 470, { img: IMG.skill_md, alpha: a * (1 - two), zoom: 1.4, ox: .55, title: 'مهارة: مراجعة السياسات', live: true, badge: 'لقطة حقيقية', color: P.green, t: lt });
         if (two > 0) {
-          holo(c, 60, BOT.y + 110, 470, 470, { img: IMG.skill_report1, alpha: two, zoom: 1.7, ox: .55, title: 'IPC-014 · 60%', color: P.green, t: lt });
-          holo(c, 550, BOT.y + 110, 470, 470, { img: IMG.skill_report2, alpha: prog(lt, c1 + 1.6, c1 + 2.1), zoom: 1.7, ox: .55, title: 'NUR-031 · 20%', live: true, color: P.orange, t: lt });
+          holo(c, 60, BOT.y + 110, 470, 470, { img: IMG.skill_report1, alpha: two, zoom: 1.7, ox: .55, title: 'السياسة 1 · 60%', color: P.green, t: lt });
+          holo(c, 550, BOT.y + 110, 470, 470, { img: IMG.skill_report2, alpha: prog(lt, c1 + 1.6, c1 + 2.1), zoom: 1.7, ox: .55, title: 'السياسة 2 · 20%', live: true, badge: 'لقطة حقيقية', color: P.orange, t: lt });
         }
       },
     },
@@ -216,8 +216,8 @@ export function createBeforeAfter(data, IMG) {
     dim(c, BOT.y, BOT.h, 1 - prog(lt, C(1), C(1) + .3));
     divider(c, lt);
     text(c, 'نفس الشغل… مرتين', VW / 2, 110, { size: 70, weight: 800, glow: 30, alpha: prog(lt, 0, .3) });
-    glitchWord(c, 'BEFORE', VW / 2, TOP.y + 300, 110, .1, lt, P.red);
-    glitchWord(c, 'AFTER', VW / 2, BOT.y + 300, 120, C(1), lt, P.cyan);
+    glitchWord(c, 'قبل', VW / 2, TOP.y + 300, 160, .1, lt, P.red);
+    glitchWord(c, 'بعد', VW / 2, BOT.y + 300, 170, C(1), lt, P.cyan);
     scanStreaks(c, lt, env(lt, 0, .5, 0, .3));
   }
   function sEnd(c, lt, sc) {
@@ -242,7 +242,7 @@ export function createBeforeAfter(data, IMG) {
       c.fillStyle = `rgba(0,0,0,${pF})`; c.fillRect(0, 0, VW, VH);
       glowDot(c, VW / 2, 760, 120 * (1 - pF) + 10, P.white, 1 - pF);
       glitchTitle(c, 'CLAUDE.', VW / 2, 760, 170, ease.out(pF), lt, { spacing: 20 });
-      text(c, 'THINK BEYOND CHAT.', VW / 2, 900, { size: 50, fam: LAT, dir: 'ltr', spacing: 10, color: P.sky, alpha: prog(lt, tf + .4, tf + 1) });
+      text(c, 'فكّر أبعد من المحادثة', VW / 2, 905, { size: 60, weight: 700, color: P.sky, alpha: prog(lt, tf + .4, tf + 1) });
     }
   }
 
