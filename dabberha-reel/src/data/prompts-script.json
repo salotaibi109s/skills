@@ -1,0 +1,149 @@
+{
+  "audioDir": "prompts",
+  "totalFrames": 1700,
+  "tailSeconds": 0.35,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "P1-Hook",
+      "nominalSeconds": 9.3,
+      "leadSeconds": 0.2,
+      "transitionFrames": 12,
+      "tts": "عندك منتج وتبغى له إعلانات احترافية… بدون مصمم ولا تصوير؟ ارفع صورته في ChatGPT، والصق هالأوامر."
+    },
+    {
+      "id": "P2-Billboard",
+      "nominalSeconds": 8.4,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الأمر الأول: يحط منتجك على لوحة إعلانية ضخمة في الشارع… كأنها حملة حقيقية."
+    },
+    {
+      "id": "P3-Social",
+      "nominalSeconds": 7.6,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الثاني: إعلان جاهز للنشر في السوشال ميديا، مع عنوان ومميزات المنتج."
+    },
+    {
+      "id": "P4-Studio",
+      "nominalSeconds": 7.6,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الثالث: يحوّل صورة الجوال لتصوير استوديو احترافي، بإضاءة فخمة."
+    },
+    {
+      "id": "P5-Angles",
+      "nominalSeconds": 6.2,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الرابع: يعرض لك منتجك من كل الزوايا."
+    },
+    {
+      "id": "P6-Life",
+      "nominalSeconds": 7.4,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الخامس: منتجك في الصحراء أو على البحر… بدون ما تطلع تصوّر."
+    },
+    {
+      "id": "P7-Tip",
+      "nominalSeconds": 6.4,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "احفظ الأوامر عندك، وقبل ما تنشر… راجع الكتابة اللي على الصورة."
+    },
+    {
+      "id": "P8-CTA",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.3,
+      "tts": "وإذا عجبك المحتوى… تابع الحساب.",
+      "minSeconds": 6
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.6,
+      "prompt": "Smooth modern whoosh transition, short and clean"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Bright playful UI pop, short"
+    },
+    {
+      "id": "boing",
+      "seconds": 0.7,
+      "prompt": "Bouncy elastic number pop, playful cartoon spring boing, short"
+    },
+    {
+      "id": "type",
+      "seconds": 2.0,
+      "prompt": "Fast mechanical keyboard typing burst, crisp keys"
+    },
+    {
+      "id": "enter",
+      "seconds": 0.5,
+      "prompt": "Single satisfying keyboard enter key press"
+    },
+    {
+      "id": "ding",
+      "seconds": 0.8,
+      "prompt": "Pleasant success chime, modern app"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1.5,
+      "prompt": "Magical sparkle shimmer with rising particles, bright"
+    },
+    {
+      "id": "impact",
+      "seconds": 1.5,
+      "prompt": "Punchy modern logo hit with bright shimmer tail"
+    },
+    {
+      "id": "tick",
+      "seconds": 0.5,
+      "prompt": "Crisp short UI tick click, snappy and clean"
+    },
+    {
+      "id": "swish",
+      "seconds": 0.5,
+      "prompt": "Very short fast swish for kinetic text, airy"
+    },
+    {
+      "id": "riser",
+      "seconds": 1.2,
+      "prompt": "Short rising whoosh riser building into a hit, energetic"
+    },
+    {
+      "id": "thud",
+      "seconds": 0.6,
+      "prompt": "Punchy deep thud hit for a big number appearing, tight"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm",
+      "prompt": "Light, calm and positive background music for a modern Arabic tech tutorial, 96 BPM, soft muted plucks, gentle marimba and warm airy pads, very light shaker, smooth and pleasant, low energy, never harsh or loud, steady from the start, gentle ending at 76 seconds. No vocals.",
+      "lengthMs": 77000
+    }
+  ]
+}

@@ -1,0 +1,624 @@
+{
+  "fps": 30,
+  "durationInFrames": 1700,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "P1-Hook",
+      "from": 0,
+      "durationInFrames": 286,
+      "transitionFrames": 12,
+      "voFrom": 6,
+      "voDurationInFrames": 256,
+      "words": [
+        {
+          "text": "عندك",
+          "raw": "عندك",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "منتج",
+          "raw": "منتج",
+          "start": 18,
+          "end": 32
+        },
+        {
+          "text": "وتبغى",
+          "raw": "وتبغى",
+          "start": 35,
+          "end": 47
+        },
+        {
+          "text": "له",
+          "raw": "له",
+          "start": 49,
+          "end": 52
+        },
+        {
+          "text": "إعلانات",
+          "raw": "إعلانات",
+          "start": 56,
+          "end": 66
+        },
+        {
+          "text": "احترافية",
+          "raw": "احترافية…",
+          "start": 68,
+          "end": 88
+        },
+        {
+          "text": "بدون",
+          "raw": "بدون",
+          "start": 101,
+          "end": 107
+        },
+        {
+          "text": "مصمم",
+          "raw": "مصمم",
+          "start": 109,
+          "end": 126
+        },
+        {
+          "text": "ولا",
+          "raw": "ولا",
+          "start": 128,
+          "end": 136
+        },
+        {
+          "text": "تصوير",
+          "raw": "تصوير؟",
+          "start": 143,
+          "end": 150
+        },
+        {
+          "text": "ارفع",
+          "raw": "ارفع",
+          "start": 164,
+          "end": 172
+        },
+        {
+          "text": "صورته",
+          "raw": "صورته",
+          "start": 175,
+          "end": 184
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 186,
+          "end": 188
+        },
+        {
+          "text": "ChatGPT",
+          "raw": "ChatGPT،",
+          "start": 193,
+          "end": 212
+        },
+        {
+          "text": "والصق",
+          "raw": "والصق",
+          "start": 226,
+          "end": 234
+        },
+        {
+          "text": "هالأوامر",
+          "raw": "هالأوامر.",
+          "start": 236,
+          "end": 253
+        }
+      ]
+    },
+    {
+      "id": "P2-Billboard",
+      "from": 274,
+      "durationInFrames": 256,
+      "transitionFrames": 12,
+      "voFrom": 9,
+      "voDurationInFrames": 211,
+      "words": [
+        {
+          "text": "الأمر",
+          "raw": "الأمر",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "الأول",
+          "raw": "الأول:",
+          "start": 21,
+          "end": 35
+        },
+        {
+          "text": "يحط",
+          "raw": "يحط",
+          "start": 51,
+          "end": 57
+        },
+        {
+          "text": "منتجك",
+          "raw": "منتجك",
+          "start": 63,
+          "end": 74
+        },
+        {
+          "text": "على",
+          "raw": "على",
+          "start": 77,
+          "end": 81
+        },
+        {
+          "text": "لوحة",
+          "raw": "لوحة",
+          "start": 85,
+          "end": 93
+        },
+        {
+          "text": "إعلانية",
+          "raw": "إعلانية",
+          "start": 97,
+          "end": 115
+        },
+        {
+          "text": "ضخمة",
+          "raw": "ضخمة",
+          "start": 119,
+          "end": 134
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 135,
+          "end": 136
+        },
+        {
+          "text": "الشارع",
+          "raw": "الشارع…",
+          "start": 139,
+          "end": 153
+        },
+        {
+          "text": "كأنها",
+          "raw": "كأنها",
+          "start": 165,
+          "end": 179
+        },
+        {
+          "text": "حملة",
+          "raw": "حملة",
+          "start": 182,
+          "end": 193
+        },
+        {
+          "text": "حقيقية",
+          "raw": "حقيقية.",
+          "start": 194,
+          "end": 213
+        }
+      ]
+    },
+    {
+      "id": "P3-Social",
+      "from": 518,
+      "durationInFrames": 231,
+      "transitionFrames": 12,
+      "voFrom": 9,
+      "voDurationInFrames": 184,
+      "words": [
+        {
+          "text": "الثاني",
+          "raw": "الثاني:",
+          "start": 9,
+          "end": 26
+        },
+        {
+          "text": "إعلان",
+          "raw": "إعلان",
+          "start": 44,
+          "end": 50
+        },
+        {
+          "text": "جاهز",
+          "raw": "جاهز",
+          "start": 52,
+          "end": 63
+        },
+        {
+          "text": "للنشر",
+          "raw": "للنشر",
+          "start": 64,
+          "end": 79
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 80,
+          "end": 81
+        },
+        {
+          "text": "السوشال",
+          "raw": "السوشال",
+          "start": 83,
+          "end": 95
+        },
+        {
+          "text": "ميديا",
+          "raw": "ميديا،",
+          "start": 98,
+          "end": 107
+        },
+        {
+          "text": "مع",
+          "raw": "مع",
+          "start": 117,
+          "end": 122
+        },
+        {
+          "text": "عنوان",
+          "raw": "عنوان",
+          "start": 124,
+          "end": 141
+        },
+        {
+          "text": "ومميزات",
+          "raw": "ومميزات",
+          "start": 143,
+          "end": 167
+        },
+        {
+          "text": "المنتج",
+          "raw": "المنتج.",
+          "start": 170,
+          "end": 187
+        }
+      ]
+    },
+    {
+      "id": "P4-Studio",
+      "from": 737,
+      "durationInFrames": 230,
+      "transitionFrames": 12,
+      "voFrom": 9,
+      "voDurationInFrames": 184,
+      "words": [
+        {
+          "text": "الثالث",
+          "raw": "الثالث:",
+          "start": 9,
+          "end": 31
+        },
+        {
+          "text": "يحوّل",
+          "raw": "يحوّل",
+          "start": 43,
+          "end": 57
+        },
+        {
+          "text": "صورة",
+          "raw": "صورة",
+          "start": 59,
+          "end": 69
+        },
+        {
+          "text": "الجوال",
+          "raw": "الجوال",
+          "start": 71,
+          "end": 88
+        },
+        {
+          "text": "لتصوير",
+          "raw": "لتصوير",
+          "start": 91,
+          "end": 105
+        },
+        {
+          "text": "استوديو",
+          "raw": "استوديو",
+          "start": 107,
+          "end": 122
+        },
+        {
+          "text": "احترافي",
+          "raw": "احترافي،",
+          "start": 124,
+          "end": 141
+        },
+        {
+          "text": "بإضاءة",
+          "raw": "بإضاءة",
+          "start": 153,
+          "end": 170
+        },
+        {
+          "text": "فخمة",
+          "raw": "فخمة.",
+          "start": 172,
+          "end": 184
+        }
+      ]
+    },
+    {
+      "id": "P5-Angles",
+      "from": 955,
+      "durationInFrames": 181,
+      "transitionFrames": 12,
+      "voFrom": 9,
+      "voDurationInFrames": 114,
+      "words": [
+        {
+          "text": "الرابع",
+          "raw": "الرابع:",
+          "start": 9,
+          "end": 26
+        },
+        {
+          "text": "يعرض",
+          "raw": "يعرض",
+          "start": 43,
+          "end": 52
+        },
+        {
+          "text": "لك",
+          "raw": "لك",
+          "start": 56,
+          "end": 59
+        },
+        {
+          "text": "منتجك",
+          "raw": "منتجك",
+          "start": 62,
+          "end": 81
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 85,
+          "end": 88
+        },
+        {
+          "text": "كل",
+          "raw": "كل",
+          "start": 91,
+          "end": 98
+        },
+        {
+          "text": "الزوايا",
+          "raw": "الزوايا.",
+          "start": 100,
+          "end": 117
+        }
+      ]
+    },
+    {
+      "id": "P6-Life",
+      "from": 1124,
+      "durationInFrames": 223,
+      "transitionFrames": 12,
+      "voFrom": 9,
+      "voDurationInFrames": 172,
+      "words": [
+        {
+          "text": "الخامس",
+          "raw": "الخامس:",
+          "start": 9,
+          "end": 31
+        },
+        {
+          "text": "منتجك",
+          "raw": "منتجك",
+          "start": 45,
+          "end": 59
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 61,
+          "end": 62
+        },
+        {
+          "text": "الصحراء",
+          "raw": "الصحراء",
+          "start": 64,
+          "end": 86
+        },
+        {
+          "text": "أو",
+          "raw": "أو",
+          "start": 87,
+          "end": 91
+        },
+        {
+          "text": "على",
+          "raw": "على",
+          "start": 93,
+          "end": 98
+        },
+        {
+          "text": "البحر",
+          "raw": "البحر…",
+          "start": 99,
+          "end": 112
+        },
+        {
+          "text": "بدون",
+          "raw": "بدون",
+          "start": 129,
+          "end": 134
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 136,
+          "end": 139
+        },
+        {
+          "text": "تطلع",
+          "raw": "تطلع",
+          "start": 141,
+          "end": 151
+        },
+        {
+          "text": "تصوّر",
+          "raw": "تصوّر.",
+          "start": 158,
+          "end": 175
+        }
+      ]
+    },
+    {
+      "id": "P7-Tip",
+      "from": 1335,
+      "durationInFrames": 197,
+      "transitionFrames": 12,
+      "voFrom": 9,
+      "voDurationInFrames": 158,
+      "words": [
+        {
+          "text": "احفظ",
+          "raw": "احفظ",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "الأوامر",
+          "raw": "الأوامر",
+          "start": 25,
+          "end": 38
+        },
+        {
+          "text": "عندك",
+          "raw": "عندك،",
+          "start": 39,
+          "end": 52
+        },
+        {
+          "text": "وقبل",
+          "raw": "وقبل",
+          "start": 65,
+          "end": 74
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 76,
+          "end": 79
+        },
+        {
+          "text": "تنشر",
+          "raw": "تنشر…",
+          "start": 82,
+          "end": 93
+        },
+        {
+          "text": "راجع",
+          "raw": "راجع",
+          "start": 107,
+          "end": 117
+        },
+        {
+          "text": "الكتابة",
+          "raw": "الكتابة",
+          "start": 119,
+          "end": 134
+        },
+        {
+          "text": "اللي",
+          "raw": "اللي",
+          "start": 135,
+          "end": 139
+        },
+        {
+          "text": "على",
+          "raw": "على",
+          "start": 141,
+          "end": 143
+        },
+        {
+          "text": "الصورة",
+          "raw": "الصورة.",
+          "start": 146,
+          "end": 158
+        }
+      ]
+    },
+    {
+      "id": "P8-CTA",
+      "from": 1520,
+      "durationInFrames": 180,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 86,
+      "words": [
+        {
+          "text": "وإذا",
+          "raw": "وإذا",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "عجبك",
+          "raw": "عجبك",
+          "start": 23,
+          "end": 31
+        },
+        {
+          "text": "المحتوى",
+          "raw": "المحتوى…",
+          "start": 33,
+          "end": 50
+        },
+        {
+          "text": "تابع",
+          "raw": "تابع",
+          "start": 67,
+          "end": 71
+        },
+        {
+          "text": "الحساب",
+          "raw": "الحساب.",
+          "start": 74,
+          "end": 88
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      6,
+      253
+    ],
+    [
+      283,
+      487
+    ],
+    [
+      527,
+      705
+    ],
+    [
+      746,
+      921
+    ],
+    [
+      964,
+      1072
+    ],
+    [
+      1133,
+      1299
+    ],
+    [
+      1344,
+      1493
+    ],
+    [
+      1529,
+      1608
+    ]
+  ]
+}
