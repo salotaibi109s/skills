@@ -1,0 +1,88 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.55,
+      "similarity_boost": 0.8,
+      "style": 0.35,
+      "use_speaker_boost": true,
+      "speed": 1.02
+    },
+    "generated_at": "2026-11-20T13:47:27.855Z"
+  },
+  "sfx": [
+    {
+      "id": "boom",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Deep cinematic boom impact with long sub-bass tail, trailer hit, dark",
+      "seconds": 3
+    },
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Deep slow cinematic whoosh transition, airy and dark",
+      "seconds": 1.2
+    },
+    {
+      "id": "riser",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Tense cinematic riser building suspense, rising pitch, ends abruptly",
+      "seconds": 4
+    },
+    {
+      "id": "pulse",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Low deep heartbeat pulse, two slow thumps, cinematic tension",
+      "seconds": 2
+    },
+    {
+      "id": "glitch",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Short digital glitch and data corruption sound, crisp",
+      "seconds": 1.2
+    },
+    {
+      "id": "powerdown",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Electric power down sound, hum fading out and switching off, lights going dark",
+      "seconds": 2.5
+    },
+    {
+      "id": "shimmer",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Mysterious magical shimmer with soft high chimes and reverb, ethereal",
+      "seconds": 2.5
+    },
+    {
+      "id": "signal",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Strange distant alien radio signal, warbling tones and static, mysterious",
+      "seconds": 2.5
+    },
+    {
+      "id": "coins",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Gold coins falling and clinking then dissolving into a soft whoosh",
+      "seconds": 1.5
+    },
+    {
+      "id": "tick",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Slow deep clock ticking, three ticks, reverberant hall",
+      "seconds": 2
+    }
+  ],
+  "music": [
+    {
+      "id": "mystery",
+      "provider": "ElevenLabs Music",
+      "prompt": "Dark mysterious cinematic documentary score, 70 BPM, deep sustained drones, distant piano notes, slow pulsing low strings that build gradually in intensity, subtle ticking texture, tension rising toward a climax near 50 seconds then resolving softly, no vocals.",
+      "length_ms": 64000,
+      "instrumental": true,
+      "generated_at": "2026-11-20T13:48:04.838Z"
+    }
+  ]
+}

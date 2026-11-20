@@ -58,7 +58,7 @@ def report(name, spec, r):
         "What the starter made (measured, not scored):",
         f"  - script: {words} words, {turns} 'But... so...' turns",
         f"  - video: {secs:.1f} s, {r.get('size')}, {r.get('fps')} fps, {r.get('parts')} parts, flat look",
-        f"  - voice: {r.get('voice') or 'none (captions only)'}; parts timed by {r.get('timing')}",
+        f"  - voice: {r.get('voice') or ('added later in the editor' if 'word_times' in str(r.get('timing')) else 'none (captions only)')}; parts timed by {r.get('timing')}",
     ]
     if secs < 61:
         lines.append(f"  - {secs:.1f} s is under 61 s: TikTok's Creator Rewards only pays for videos over a minute")

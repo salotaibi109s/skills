@@ -108,7 +108,12 @@ def build(p):
 # ---- the words and when each one is said -------------------------------------------------------------------------
 LINES = spec["script"]
 WORDS = [w for line in LINES for w in line.split()]
-KEY = [re.sub(r"[^a-z0-9']", "", w.lower()) for w in WORDS]
+def wkey(w):                   # a word's matching key: letters/digits of any script, Arabic marks and tatweel removed
+    w = re.sub(r"[\u064B-\u065F\u0670\u0640]", "", str(w).lower())
+    return re.sub(r"[^\w']", "", w)
+
+
+KEY = [wkey(w) for w in WORDS]
 
 scene = bpy.context.scene
 for o in list(bpy.data.objects):
@@ -117,7 +122,14 @@ scene.render.fps = FPS
 scene.frame_start = 1
 
 voice = next((FOLDER / n for n in ("voice.wav", "voice.mp3", "voice.m4a") if (FOLDER / n).exists()), None)
-if voice:
+TIMES = spec.get("word_times")    # optional: [{"start": s, ...}] one per script word, in seconds from the video's start
+if TIMES:
+    voice = None                   # timing comes from the list; the sound is added later by the editor (Remotion)
+    if len(TIMES) != len(WORDS):
+        raise SystemExit(f"word_times has {len(TIMES)} entries but the script has {len(WORDS)} words")
+    times = [float(t["start"]) for t in TIMES]
+    total = float(spec.get("duration") or (float(TIMES[-1].get("end", times[-1])) + TAIL))
+elif voice:
     se = scene.sequence_editor_create()
     strips = se.strips if hasattr(se, "strips") else se.sequences
     snd = strips.new_sound("voice", str(voice), 1, 1 + round(LEAD * FPS))
@@ -182,8 +194,10 @@ for p in spec.get("parts", []):
     if isinstance(at, (int, float)):
         t_land = float(at)
     else:
-        want = re.sub(r"[^a-z0-9']", "", str(at or "").lower())
+        want = wkey(at or "")
         idx = next((i for i in range(cursor, len(KEY)) if KEY[i] == want), None)
+        if idx is None and want:           # Arabic words carry prefixes (و، ف، ب، ال): accept a word that contains it
+            idx = next((i for i in range(cursor, len(KEY)) if want in KEY[i]), None)
         if idx is None:
             unmatched.append(f"{p.get('name')}: '{at}'")
             t_land = (arrivals[-1][1] + 2.0) if arrivals else LEAD
@@ -240,6 +254,8 @@ CAP_D = 2.0
 vis_h = CAP_D * cam_data.sensor_height / cam_data.lens
 vis_w = vis_h * W / H
 for i, (w, t) in enumerate(zip(WORDS, times)):
+    if spec.get("captions", True) is False:   # captions drawn later (e.g. Arabic, which Blender's font can't shape)
+        break
     text = re.sub(r"[^\w'’-]", "", w).upper()
     if not text:
         continue
@@ -264,9 +280,9 @@ for i, (w, t) in enumerate(zip(WORDS, times)):
 
 # ---- render ----------------------------------------------------------------------------------------------------------
 im = scene.render.image_settings
-summary = {"seconds": round(total, 2), "fps": FPS, "size": f"{W}x{H}", "words": len(WORDS),
+summary = {"arrivals": [{"name": n, "t": round(t, 3)} for n, t, _ in arrivals], "seconds": round(total, 2), "fps": FPS, "size": f"{W}x{H}", "words": len(WORDS),
            "voice": voice.name if voice else None, "parts": len(spec.get("parts", [])), "unmatched": unmatched,
-           "timing": "even spread over the voice" if voice else f"{WPS:g} words a second, no voice"}
+           "timing": "word_times from the voice alignment" if TIMES else ("even spread over the voice" if voice else f"{WPS:g} words a second, no voice")}
 if STILLS:
     if hasattr(im, "media_type"):
         im.media_type = "IMAGE"
