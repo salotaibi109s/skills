@@ -571,7 +571,7 @@ export const Y9CTA: React.FC = () => {
           </div>
           <div dir="rtl" style={{ position: "absolute", left: 0, right: 100, top: 830, display: "flex", justifyContent: "center", alignItems: "center", gap: 18, opacity: sub, translate: `0px ${(1 - sub) * 24}px` }}>
             <div style={{ width: 44, height: 2, background: P.clay }} />
-            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 50, color: P.clay }}>فيديوهات احترافية لقناتك</div>
+            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 50, color: P.clay }}>بناء قناتك على يوتيوب</div>
             <div style={{ width: 44, height: 2, background: P.clay }} />
           </div>
           {frame >= tLink && (

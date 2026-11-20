@@ -1022,97 +1022,103 @@
       "durationInFrames": 332,
       "transitionFrames": 0,
       "voFrom": 9,
-      "voDurationInFrames": 213,
+      "voDurationInFrames": 247,
       "words": [
         {
           "text": "وإذا",
           "raw": "وإذا",
           "start": 9,
-          "end": 16
+          "end": 19
         },
         {
           "text": "تبغى",
           "raw": "تبغى",
-          "start": 19,
-          "end": 25
-        },
-        {
-          "text": "فيديوهات",
-          "raw": "فيديوهات",
-          "start": 26,
-          "end": 38
+          "start": 22,
+          "end": 28
         },
         {
           "text": "قناتك",
           "raw": "قناتك",
-          "start": 40,
-          "end": 52
+          "start": 31,
+          "end": 43
         },
         {
-          "text": "تطلع",
-          "raw": "تطلع",
-          "start": 55,
-          "end": 64
+          "text": "تنبني",
+          "raw": "تنبني",
+          "start": 45,
+          "end": 59
         },
         {
-          "text": "باحتراف",
-          "raw": "باحتراف",
-          "start": 68,
-          "end": 81
+          "text": "وتكبر",
+          "raw": "وتكبر",
+          "start": 62,
+          "end": 76
         },
         {
-          "text": "مثل",
-          "raw": "مثل",
-          "start": 83,
-          "end": 91
+          "text": "من",
+          "raw": "من",
+          "start": 79,
+          "end": 83
         },
         {
-          "text": "هذا",
-          "raw": "هذا…",
-          "start": 93,
-          "end": 103
+          "text": "البداية",
+          "raw": "البداية",
+          "start": 85,
+          "end": 100
+        },
+        {
+          "text": "للنهاية",
+          "raw": "للنهاية…",
+          "start": 104,
+          "end": 122
         },
         {
           "text": "متجر",
           "raw": "متجر",
-          "start": 121,
-          "end": 129
+          "start": 136,
+          "end": 146
         },
         {
           "text": "دبرها",
           "raw": "دبرها",
-          "start": 131,
-          "end": 146
+          "start": 148,
+          "end": 165
         },
         {
-          "text": "يسويها",
-          "raw": "يسويها",
-          "start": 149,
-          "end": 163
+          "text": "يوفر",
+          "raw": "يوفر",
+          "start": 169,
+          "end": 177
         },
         {
           "text": "لك",
-          "raw": "لك.",
-          "start": 167,
-          "end": 172
+          "raw": "لك",
+          "start": 179,
+          "end": 184
+        },
+        {
+          "text": "هالخدمة",
+          "raw": "هالخدمة.",
+          "start": 185,
+          "end": 201
         },
         {
           "text": "والرابط",
           "raw": "والرابط",
-          "start": 182,
-          "end": 196
+          "start": 211,
+          "end": 227
         },
         {
           "text": "في",
           "raw": "في",
-          "start": 199,
-          "end": 200
+          "start": 232,
+          "end": 235
         },
         {
           "text": "البايو",
           "raw": "البايو.",
-          "start": 202,
-          "end": 213
+          "start": 236,
+          "end": 249
         }
       ]
     }
@@ -1156,7 +1162,7 @@
     ],
     [
       2777,
-      2981
+      3017
     ]
   ]
 }
