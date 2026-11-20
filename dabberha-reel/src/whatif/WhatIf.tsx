@@ -140,8 +140,10 @@ const Tag: React.FC<{ n: string; text: string }> = ({ n, text }) => {
   );
 };
 
-const Frame: React.FC<{ id: WId; sky: [string, string, string[]]; shot: string; glow?: number; tag?: [string, string]; children?: React.ReactNode; shotStyle?: React.CSSProperties; fog?: string }> = ({ id, sky, shot, glow, tag, children, shotStyle, fog }) => {
+const Frame: React.FC<{ id: WId; sky: [string, string, string[]]; shot: string; glow?: number; tag?: [string, string]; children?: React.ReactNode; shotStyle?: React.CSSProperties; fog?: string; subsUntil?: number }> = ({ id, sky, shot, glow, tag, children, shotStyle, fog, subsUntil }) => {
   const scene = getW(id);
+  const f = useCurrentFrame();
+  const subsOn = subsUntil === undefined ? 1 : interpolate(f, [subsUntil - 8, subsUntil], [1, 0], clamp);
   return (
     <AbsoluteFill>
       <Sky top={sky[0]} bottom={sky[1]} nebula={sky[2]} />
@@ -150,7 +152,10 @@ const Frame: React.FC<{ id: WId; sky: [string, string, string[]]; shot: string; 
       {children}
       {tag && <Tag n={tag[0]} text={tag[1]} />}
       <Grade />
-      <Subs scene={scene} />
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, transparent 62%, rgba(0,0,0,0.55) 74%, rgba(0,0,0,0.55) 86%, transparent 100%)", opacity: subsOn }} />
+      <AbsoluteFill style={{ opacity: subsOn }}>
+        <Subs scene={scene} />
+      </AbsoluteFill>
       <SceneVoice scene={scene} />
       <Sfx name="whoosh" at={0} gain={0.8} />
     </AbsoluteFill>
@@ -262,14 +267,15 @@ const W9: React.FC = () => {
   const card = (last?.end ?? 330) + 12;
   const c1 = spring({ frame: f - card, fps, config: { damping: 16, stiffness: 90, mass: 1 } });
   const c2 = spring({ frame: f - card - 22, fps, config: { damping: 18, stiffness: 110, mass: 0.9 } });
-  const dim = interpolate(f, [card - 10, card + 20], [0, 0.6], clamp);
+  const dim = interpolate(f, [card - 10, card + 20], [0, 0.25], clamp);
+  const lift = interpolate(f, [card - 14, card + 16], [0, 1], { ...clamp, easing: (x) => 1 - Math.pow(1 - x, 3) });
   return (
-    <Frame id="W9-End" sky={["#000000", "#0a0a14", ["rgba(255,210,122,0.12)", "rgba(120,140,255,0.12)"]]} shot="question" glow={0.5}>
+    <Frame id="W9-End" sky={["#000000", "#0a0a14", ["rgba(255,210,122,0.12)", "rgba(120,140,255,0.12)"]]} shot="question" glow={0.5} subsUntil={card} shotStyle={{ translate: `0px ${-330 * lift}px`, scale: String(1 - 0.3 * lift) }}>
       {/* light from above onto the question mark */}
       <div style={{ position: "absolute", left: 540 - 380, top: -100, width: 760, height: 1500, background: "linear-gradient(180deg, rgba(255,240,210,0.22), transparent 85%)", clipPath: "polygon(40% 0, 60% 0, 100% 100%, 0 100%)", filter: "blur(20px)" }} />
       <AbsoluteFill style={{ background: "#000", opacity: dim }} />
       {f >= card && (
-        <div dir="rtl" style={{ position: "absolute", left: 0, right: 0, top: 760, display: "flex", flexDirection: "column", alignItems: "center", gap: 30 }}>
+        <div dir="rtl" style={{ position: "absolute", left: 0, right: 0, top: 1180, display: "flex", flexDirection: "column", alignItems: "center", gap: 26 }}>
           <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 170, color: "#fff", opacity: c1, scale: String(0.9 + 0.1 * c1), filter: `blur(${(1 - Math.min(1, c1)) * 10}px)`, textShadow: "0 0 50px rgba(255,210,122,0.45)" }}>ماذا لو؟</div>
           <div style={{ fontFamily: SANS, fontWeight: 400, fontSize: 46, color: "rgba(255,255,255,0.85)", opacity: c2, translate: `0px ${(1 - c2) * 20}px` }}>سؤال واحد… وعالم من الاحتمالات.</div>
         </div>

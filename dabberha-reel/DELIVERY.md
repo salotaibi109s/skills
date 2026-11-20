@@ -502,3 +502,18 @@ npx remotion render DabberhaStory out/story-premaster.mp4 --codec=h264 --audio-c
 3. `/studio` — Turn this photo into a premium studio shot on a marble pedestal with soft dramatic lighting.
 4. `/360view` — Show this product from 8 angles on a clean white background, keeping every detail.
 5. `/lifestyle` — Place this product on a vanity by a window at golden hour. Photorealistic.
+
+---
+
+# الفيديو السابع عشر — «ماذا لو؟ | عندما يصبح المستحيل حقيقة»
+
+- الملف: `out/whatif.mp4` — 1080×1920، 30 إطار/ث، 2130 إطار (71 ثانية). الطول جاء من طول التعليق الصوتي للنص كامل (~67 ثانية) مع بطاقة الختام.
+- **التصميم الثلاثي الأبعاد في بلندر:** `blender/whatif_shots.py` يرسم ٩ لقطات بمحرك Workbench بخلفية شفافة (`public/whatif/*.webm`، ما تنحفظ في المستودع وتنعاد بالأمر في رأس الملف): الأرض، شبكة عصبية، عملات تختفي، رأس سلكي تنسحب منه الأسرار، شبكة إنترنت تنطفي، كوكب بحلقات وإشارة، حمض نووي، نفق الزمن مع اختراعات قديمة، علامة استفهام عربية.
+- **في Remotion:** `src/whatif/WhatIf.tsx` يضيف السماء والنجوم والسدم والضباب والتوهج والتلوين والحبيبات، وصوت ناصر، والكلمات العربية كلمة كلمة، والمؤثرات، والموسيقى، وبطاقة الختام «ماذا لو؟ / سؤال واحد… وعالم من الاحتمالات.»
+- الصوت: ناصر (`eleven_v4`) بأداء وثائقي هادئ، وموسيقى غامضة تتصاعد، ومؤثرات (نبض، ضربات، خلل رقمي، انطفاء كهرباء، إشارة فضائية، دقات ساعة، صاعد).
+- النص كما أرسله صاحب المتجر بدون تعديل.
+
+## خط «How It's Built» بالعربي
+- المهارة `how-its-built-starter` مثبتة في `.claude/skills/`، وأُضيف لها: مطابقة الكلمات العربية، وتوقيت خارجي من صوت ناصر، وإيقاف الكلمات داخل بلندر.
+- `node scripts/hib.mjs <name> voice|render|publish` ثم `npx remotion render HowBuilt --props='{"name":"<name>"}'`.
+- بلندر 4.2 LTS مثبت في `/opt` (يحتاج مكتبات EGL من apt).
