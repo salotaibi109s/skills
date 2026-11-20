@@ -14,3 +14,5 @@
 | headphones.jpg | https://www.pexels.com/photo/white-headphones-3394652/ |
 
 All chosen without visible trademarks. The café, perfume and store names in the ad are fictional demo names.
+
+`bottle-cut.png` is a cut-out of `bottle-frosted.jpg` (same Pexels photo), used as the product in the prompts video. «لُجين» is a fictional demo name.

@@ -188,7 +188,9 @@ async function generateVoiceover() {
   const voiceId = voice.account_voice_id ?? voice.voice_id;
   let modelId = await pickModel();
   mkdirSync(out("vo"), { recursive: true });
+  const only = process.env.ONLY ? process.env.ONLY.split(",") : null;
   for (const scene of script.scenes) {
+    if (only && !only.includes(scene.id)) continue;
     let res;
     try {
       res = await tts(scene.voiceId ?? voiceId, modelId, scene.tts);

@@ -56,6 +56,8 @@ import { DabberhaTutorial } from "./tutorial/DabberhaTutorial";
 import { tutTimeline } from "./tutorial/base";
 import { ClaudeFilm } from "./claude/ClaudeFilm";
 import { AgentsFilm } from "./agents/AgentsFilm";
+import { PromptsFilm } from "./prompts/PromptsFilm";
+import { pTimeline } from "./prompts/base";
 import { aTimeline } from "./agents/base";
 import { cTimeline } from "./claude/base";
 
@@ -295,6 +297,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="DabberhaTutorial" component={DabberhaTutorial} durationInFrames={tutTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Composition id="ClaudeFilm" component={ClaudeFilm} durationInFrames={cTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Composition id="AgentsFilm" component={AgentsFilm} durationInFrames={aTimeline.durationInFrames} fps={30} width={1080} height={1920} />
+      <Composition id="PromptsFilm" component={PromptsFilm} durationInFrames={pTimeline.durationInFrames} fps={30} width={1080} height={1920} />
     </>
   );
 };
