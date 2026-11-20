@@ -1,16 +1,16 @@
 import React from "react";
 import { Img, interpolate, random, staticFile, useCurrentFrame } from "remotion";
-import { ChatTurn, clamp, CommandChip, cue, ease, G, getP, GWords, SANS, Scene, SceneVoice, Sfx, usePop, type PSceneId } from "./base";
+import { ChatTurn, clamp, CommandChip, cue, ease, G, getP, GWords, MONO, PhonePhoto, SANS, Scene, SceneVoice, Sfx, usePop, type PSceneId } from "./base";
 import { ShotAngles, ShotBillboard, ShotLife, ShotSocial, ShotStudio } from "./shots";
 
-const PROMPTS = {
-  billboard: "ضع هذا المنتج على لوحة إعلانية ضخمة في شارع مدينة ليلاً، بتصوير سينمائي واقعي.",
-  social: "صمّم إعلان سوشال ميديا لهذا المنتج، مع عنوان جذاب وثلاث مميزات.",
-  studio: "حوّل صورة المنتج إلى لقطة استوديو احترافية على قاعدة رخام، بإضاءة فخمة.",
-  angles: "اعرض هذا المنتج من ٨ زوايا مختلفة على خلفية بيضاء، بنفس التفاصيل.",
-  life: "ضع المنتج على تسريحة بجانب نافذة وقت الغروب، بتصوير واقعي.",
+const CMDS = {
+  billboard: { c: "/billboard", p: "Place this product on a giant billboard in a city street at night. Cinematic, photorealistic." },
+  social: { c: "/social-ad", p: "Design a vertical social media ad for this product with a bold headline and 3 key benefits." },
+  studio: { c: "/studio", p: "Turn this photo into a premium studio shot on a marble pedestal with soft dramatic lighting." },
+  angles: { c: "/360view", p: "Show this product from 8 angles on a clean white background, keeping every detail." },
+  life: { c: "/lifestyle", p: "Place this product on a vanity by a window at golden hour. Photorealistic." },
 };
-const LABELS = ["لوحة إعلانية", "إعلان سوشال", "لقطة استوديو", "٣٦٠ درجة", "لقطة من الحياة"];
+const LABELS = ["/billboard", "/social-ad", "/studio", "/360view", "/lifestyle"];
 
 const Line: React.FC<{ d: string[]; size?: number; color?: string; w?: number }> = ({ d, size = 48, color = G.ink, w = 1.8 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={w} strokeLinecap="round" strokeLinejoin="round">
@@ -47,7 +47,7 @@ export const P1Hook: React.FC = () => {
       {/* the plain phone photo */}
       <div style={{ position: "absolute", left: 540 - 50 - 260 + fly * 40, top: 240 + fly * 620, width: 520, height: 650, scale: String((0.85 + 0.15 * photo) * (1 - fly * 0.78)), rotate: `${(1 - fly) * -4}deg`, transformOrigin: "50% 50%", opacity: Math.min(1, photo * 1.5) * (1 - ease(frame, tUp + 14, tUp + 20)) }}>
         <div style={{ position: "absolute", inset: 0, borderRadius: 36, overflow: "hidden", boxShadow: "0 30px 70px rgba(0,0,0,0.18)", border: "8px solid #fff" }}>
-          <Img src={staticFile("photos/bottle-frosted.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "30% 50%" }} />
+          <PhonePhoto w={504} h={634} s={0.5} cy={1120} />
         </div>
         <div dir="rtl" style={{ position: "absolute", left: 0, right: 0, bottom: -64, textAlign: "center", fontFamily: SANS, fontWeight: 500, fontSize: 30, color: G.gray, opacity: 1 - fly }}>صورة عادية من الجوال</div>
       </div>
@@ -74,7 +74,7 @@ export const P1Hook: React.FC = () => {
             <div style={{ width: 54, height: 54, borderRadius: 27, border: `1.5px solid ${G.border}`, display: "grid", placeItems: "center" }}>
               <Line d={IC.plus} size={30} color={G.ink} />
             </div>
-            <Img src={staticFile("photos/bottle-frosted.jpg")} style={{ width: 86, height: 86, objectFit: "cover", objectPosition: "28% 55%", borderRadius: 16, opacity: ease(frame, tUp + 14, tUp + 22), scale: String(0.6 + 0.4 * ease(frame, tUp + 14, tUp + 22)) }} />
+            <PhonePhoto w={86} h={86} s={0.08} cy={1000} style={{ borderRadius: 16, opacity: ease(frame, tUp + 14, tUp + 22), scale: String(0.6 + 0.4 * ease(frame, tUp + 14, tUp + 22)) }} />
             <div style={{ flex: 1, fontFamily: SANS, fontSize: 32, color: G.muted }}>اسأل أي شيء</div>
             <div style={{ width: 58, height: 58, borderRadius: 29, background: G.ink, display: "grid", placeItems: "center" }}>
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
@@ -93,9 +93,9 @@ export const P1Hook: React.FC = () => {
         const col = i % 2;
         const row = Math.floor(i / 2);
         return (
-          <div key={l} dir="rtl" style={{ position: "absolute", top: 380 + row * 150, left: i === 4 ? 300 : col ? 110 : 510, width: 400, display: "flex", justifyContent: "center", scale: String(p), translate: `0px ${(1 - p) * 120}px` }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 14, padding: "20px 30px 24px", borderRadius: 999, background: "#fff", border: `1.5px solid ${G.border}`, boxShadow: "0 12px 30px rgba(0,0,0,0.07)", fontFamily: SANS, fontWeight: 700, fontSize: 36, color: G.ink }}>
-              <div style={{ width: 40, height: 40, borderRadius: 20, background: G.green, color: "#fff", display: "grid", placeItems: "center", fontSize: 24 }}>{["١", "٢", "٣", "٤", "٥"][i]}</div>
+          <div key={l} dir="ltr" style={{ position: "absolute", top: 380 + row * 150, left: i === 4 ? 300 : col ? 110 : 510, width: 400, display: "flex", justifyContent: "center", scale: String(p), translate: `0px ${(1 - p) * 120}px` }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 14, padding: "20px 30px 24px", borderRadius: 999, background: "#fff", border: `1.5px solid ${G.border}`, boxShadow: "0 12px 30px rgba(0,0,0,0.07)", fontFamily: MONO, fontWeight: 600, fontSize: 36, color: G.ink }}>
+              <div style={{ width: 40, height: 40, borderRadius: 20, background: G.green, color: "#fff", display: "grid", placeItems: "center", fontFamily: SANS, fontSize: 24 }}>{["١", "٢", "٣", "٤", "٥"][i]}</div>
               {l}
             </div>
           </div>
@@ -115,13 +115,13 @@ export const P1Hook: React.FC = () => {
 };
 
 // ============================================================ 2–6 · THE FIVE COMMANDS
-const CommandScene: React.FC<{ id: PSceneId; n: string; title: string; prompt: string; revealWord: string; Shot: React.FC }> = ({ id, n, title, prompt, revealWord, Shot }) => {
+const CommandScene: React.FC<{ id: PSceneId; n: string; title: string; cmd: { c: string; p: string }; revealWord: string; Shot: React.FC }> = ({ id, n, title, cmd, revealWord, Shot }) => {
   const scene = getP(id);
   const revealAt = Math.max(46, cue(scene, revealWord) - 6);
   return (
     <Scene>
       <CommandChip n={n} title={title} />
-      <ChatTurn prompt={prompt} revealAt={revealAt}>
+      <ChatTurn command={cmd.c} prompt={cmd.p} revealAt={revealAt}>
         <Shot />
       </ChatTurn>
       <GWords scene={scene} top={1470} size={56} maxWords={5} />
@@ -130,11 +130,11 @@ const CommandScene: React.FC<{ id: PSceneId; n: string; title: string; prompt: s
   );
 };
 
-export const P2Billboard: React.FC = () => <CommandScene id="P2-Billboard" n="١" title="لوحة إعلانية" prompt={PROMPTS.billboard} revealWord="لوحة" Shot={ShotBillboard} />;
-export const P3Social: React.FC = () => <CommandScene id="P3-Social" n="٢" title="إعلان سوشال" prompt={PROMPTS.social} revealWord="جاهز" Shot={ShotSocial} />;
-export const P4Studio: React.FC = () => <CommandScene id="P4-Studio" n="٣" title="لقطة استوديو" prompt={PROMPTS.studio} revealWord="لتصوير" Shot={ShotStudio} />;
-export const P5Angles: React.FC = () => <CommandScene id="P5-Angles" n="٤" title="٣٦٠ درجة" prompt={PROMPTS.angles} revealWord="يعرض" Shot={ShotAngles} />;
-export const P6Life: React.FC = () => <CommandScene id="P6-Life" n="٥" title="لقطة من الحياة" prompt={PROMPTS.life} revealWord="لقطة" Shot={ShotLife} />;
+export const P2Billboard: React.FC = () => <CommandScene id="P2-Billboard" n="١" title="لوحة إعلانية" cmd={CMDS.billboard} revealWord="لوحة" Shot={ShotBillboard} />;
+export const P3Social: React.FC = () => <CommandScene id="P3-Social" n="٢" title="إعلان سوشال" cmd={CMDS.social} revealWord="جاهز" Shot={ShotSocial} />;
+export const P4Studio: React.FC = () => <CommandScene id="P4-Studio" n="٣" title="لقطة استوديو" cmd={CMDS.studio} revealWord="لتصوير" Shot={ShotStudio} />;
+export const P5Angles: React.FC = () => <CommandScene id="P5-Angles" n="٤" title="٣٦٠ درجة" cmd={CMDS.angles} revealWord="يعرض" Shot={ShotAngles} />;
+export const P6Life: React.FC = () => <CommandScene id="P6-Life" n="٥" title="لقطة من الحياة" cmd={CMDS.life} revealWord="لقطة" Shot={ShotLife} />;
 
 // ============================================================ 7 · TIP: SAVE THEM, AND CHECK THE TEXT
 export const P7Tip: React.FC = () => {
@@ -160,7 +160,7 @@ export const P7Tip: React.FC = () => {
             return (
               <div key={l} style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 0", borderTop: `1px solid ${G.border}`, opacity: on ? 1 : 0.25 }}>
                 <div style={{ width: 40, height: 40, borderRadius: 20, background: on ? G.green : G.soft2, display: "grid", placeItems: "center" }}>{on && <Line d={IC.check} size={24} color="#fff" w={2.6} />}</div>
-                <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 34, color: G.ink }}>{l}</div>
+                <div dir="ltr" style={{ fontFamily: MONO, fontWeight: 600, fontSize: 34, color: G.ink }}>{l}</div>
               </div>
             );
           })}
@@ -171,8 +171,8 @@ export const P7Tip: React.FC = () => {
         <div style={{ position: "absolute", left: 80, top: 300, width: 860, height: 960, borderRadius: 28, overflow: "hidden", opacity: swap, scale: String(0.94 + 0.06 * swap) }}>
           <ShotSocialWithTypo fixed={fixed} />
           {/* magnifier on the headline */}
-          <div style={{ position: "absolute", left: 430 - 230, top: 150, width: 460, height: 130, borderRadius: 30, border: `5px solid ${fixed ? G.green : "#E5484D"}`, scale: String(lens), boxShadow: "0 0 0 2000px rgba(0,0,0,0.25)" }} />
-          <div style={{ position: "absolute", left: 430 + 200, top: 110, width: 76, height: 76, borderRadius: 38, background: fixed ? G.green : "#E5484D", display: "grid", placeItems: "center", scale: String(fixed ? fixP : lens), fontFamily: SANS, fontWeight: 700, fontSize: 44, color: "#fff" }}>
+          <div style={{ position: "absolute", left: 430 - 300, top: 145, width: 600, height: 100, borderRadius: 26, border: `5px solid ${fixed ? G.green : "#E5484D"}`, scale: String(lens), boxShadow: "0 0 0 2000px rgba(0,0,0,0.25)" }} />
+          <div style={{ position: "absolute", left: 430 + 260, top: 110, width: 76, height: 76, borderRadius: 38, background: fixed ? G.green : "#E5484D", display: "grid", placeItems: "center", scale: String(fixed ? fixP : lens), fontFamily: SANS, fontWeight: 700, fontSize: 44, color: "#fff" }}>
             {fixed ? <Line d={IC.check} size={42} color="#fff" w={3} /> : "!"}
           </div>
         </div>
@@ -191,12 +191,7 @@ export const P7Tip: React.FC = () => {
 };
 
 /** The social ad again, but with the kind of spelling slip image tools often make in Arabic text. */
-const ShotSocialWithTypo: React.FC<{ fixed: boolean }> = ({ fixed }) => (
-  <div style={{ position: "absolute", inset: 0 }}>
-    <ShotSocial />
-    <div dir="rtl" style={{ position: "absolute", top: 172, left: 0, right: 0, height: 80, background: "#f6e7e0", display: "grid", placeItems: "center", fontFamily: SANS, fontWeight: 600, fontSize: 44, color: "#6b4a3c" }}>{fixed ? "فخامة تدوم معك" : "فخامه تدووم معاك"}</div>
-  </div>
-);
+const ShotSocialWithTypo: React.FC<{ fixed: boolean }> = ({ fixed }) => <ShotSocial headline={fixed ? "ترطيب يدوم طول اليوم" : "ترطيب يدووم طول اليووم"} />;
 
 // ============================================================ 8 · CTA: FOLLOW
 export const P8CTA: React.FC = () => {

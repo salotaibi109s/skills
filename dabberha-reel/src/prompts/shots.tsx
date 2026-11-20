@@ -1,8 +1,8 @@
 import React from "react";
 import { AbsoluteFill, Img, interpolate, random, staticFile, useCurrentFrame } from "remotion";
-import { Bottle, BOTTLE, clamp, SANS, SERIF } from "./base";
+import { BRAND_SERIF, clamp, Product, SANS, TUBE, TubeLabel } from "./base";
 
-/** Cinematic product shots built around the real bottle photo. Each fills an 860×960 frame. */
+/** Cinematic product shots built around the real product photo. Each fills an 860×960 frame. */
 const W = 860;
 const H = 960;
 
@@ -38,13 +38,14 @@ export const ShotBillboard: React.FC = () => {
           <div style={{ position: "absolute", left: 120, top: 370, width: 18, height: 360, background: "linear-gradient(90deg,#1b1d24,#3a3d47,#1b1d24)" }} />
           <div style={{ position: "absolute", left: 360, top: 370, width: 18, height: 360, background: "linear-gradient(90deg,#1b1d24,#3a3d47,#1b1d24)" }} />
           <div style={{ position: "absolute", inset: -14, borderRadius: 6, background: "#1a1c22", boxShadow: `0 0 ${120 * flicker}px rgba(255,236,214,${0.35 * flicker})` }} />
-          <div style={{ position: "absolute", inset: 0, borderRadius: 3, overflow: "hidden", background: "linear-gradient(135deg, #f4ede5 0%, #e7d6c6 100%)", filter: `brightness(${flicker})` }}>
-            <div style={{ position: "absolute", right: 20, top: 40, width: 300, textAlign: "center" }} dir="rtl">
-              <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 96, color: "#3b2a20", lineHeight: 1 }}>لُجين</div>
-              <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 26, color: "#6b5244", marginTop: 14 }}>عطر يبقى في الذاكرة</div>
-              <div style={{ width: 60, height: 2, background: "#b08a6e", margin: "22px auto 0" }} />
+          <div style={{ position: "absolute", inset: 0, borderRadius: 3, overflow: "hidden", background: "linear-gradient(135deg, #f3f5ef 0%, #d9e4d6 100%)", filter: `brightness(${flicker})` }}>
+            <div style={{ position: "absolute", right: 14, top: 80, width: 300, textAlign: "center" }}>
+              <div style={{ fontFamily: BRAND_SERIF, fontWeight: 600, fontSize: 68, letterSpacing: 5, color: "#26332b", lineHeight: 1 }}>NAQĀ</div>
+              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 18, letterSpacing: 6, color: "#6f8f72", marginTop: 10 }}>HYDRA GLOW</div>
+              <div dir="rtl" style={{ fontFamily: SANS, fontWeight: 600, fontSize: 30, color: "#3c4a41", marginTop: 26 }}>بشرتك تستاهل النقاء</div>
+              <div style={{ width: 60, height: 2, background: "#9fb3a2", margin: "20px auto 0" }} />
             </div>
-            <Bottle h={300} style={{ left: 40, top: 50 }} shadow={0.35} />
+            <Product h={330} style={{ left: 60, top: 26 }} shadow={0.25} />
           </div>
         </div>
         {/* glow spill on the road */}
@@ -67,32 +68,33 @@ export const ShotBillboard: React.FC = () => {
 };
 
 // ------------------------------------------------------------ social media ad
-export const ShotSocial: React.FC = () => {
+export const ShotSocial: React.FC<{ headline?: string }> = ({ headline = "ترطيب يدوم طول اليوم" }) => {
   const f = useCurrentFrame();
   const float = Math.sin(f / 22) * 8;
   return (
-    <AbsoluteFill style={{ background: "linear-gradient(160deg, #f8ece6 0%, #eed5c9 55%, #e3bfae 100%)", overflow: "hidden" }}>
-      {/* silk */}
+    <AbsoluteFill style={{ background: "linear-gradient(165deg, #f4f6f0 0%, #e2eadc 55%, #c9d8c4 100%)", overflow: "hidden" }}>
+      {/* soft fabric waves */}
       {[0, 1, 2].map((i) => (
-        <div key={i} style={{ position: "absolute", left: -300 + i * 120, top: 520 + i * 90 + Math.sin(f / 40 + i) * 14, width: 1500, height: 380, borderRadius: "50%", background: `linear-gradient(180deg, rgba(255,255,255,${0.55 - i * 0.12}), rgba(214,160,140,${0.18 + i * 0.08}))`, rotate: `${-12 + i * 6}deg`, filter: "blur(8px)" }} />
+        <div key={i} style={{ position: "absolute", left: -300 + i * 120, top: 560 + i * 90 + Math.sin(f / 40 + i) * 14, width: 1500, height: 380, borderRadius: "50%", background: `linear-gradient(180deg, rgba(255,255,255,${0.6 - i * 0.12}), rgba(130,165,130,${0.14 + i * 0.07}))`, rotate: `${-12 + i * 6}deg`, filter: "blur(8px)" }} />
       ))}
-      {/* petals */}
-      {Array.from({ length: 10 }).map((_, i) => {
+      {/* falling leaves */}
+      {Array.from({ length: 9 }).map((_, i) => {
         const y = ((random(`py${i}`) * H + f * (1.2 + random(`pv${i}`))) % (H + 80)) - 40;
-        return <div key={i} style={{ position: "absolute", left: 40 + random(`px${i}`) * 780 + Math.sin(f / 18 + i) * 20, top: y, width: 26, height: 16, borderRadius: "60% 40% 60% 40%", background: "#e9a99a", opacity: 0.75, rotate: `${f * 2 + i * 40}deg`, filter: i % 3 ? "blur(1px)" : "none" }} />;
+        return (
+          <svg key={i} width="40" height="40" viewBox="0 0 24 24" style={{ position: "absolute", left: 40 + random(`px${i}`) * 780 + Math.sin(f / 18 + i) * 20, top: y, rotate: `${f * 2 + i * 40}deg`, opacity: 0.8, filter: i % 3 ? "blur(1px)" : "none" }}>
+            <path d="M4 20C4 10 10 4 20 4c0 10-6 16-16 16z" fill="#7fa37f" />
+          </svg>
+        );
       })}
-      {/* headline */}
-      <div dir="rtl" style={{ position: "absolute", top: 60, left: 0, right: 0, textAlign: "center" }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 110, color: "#3b2a20", lineHeight: 1.05 }}>لُجين</div>
-        <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 44, color: "#6b4a3c", marginTop: 6 }}>فخامة تدوم معك</div>
+      <div style={{ position: "absolute", top: 50, left: 0, right: 0, textAlign: "center" }}>
+        <div style={{ fontFamily: BRAND_SERIF, fontWeight: 600, fontSize: 96, letterSpacing: 10, color: "#26332b", lineHeight: 1 }}>NAQĀ</div>
+        <div dir="rtl" style={{ fontFamily: SANS, fontWeight: 700, fontSize: 46, color: "#34463a", marginTop: 14 }}>{headline}</div>
       </div>
-      {/* podium + bottle */}
-      <div style={{ position: "absolute", left: W / 2 - 200, top: 760, width: 400, height: 70, borderRadius: "50%", background: "linear-gradient(180deg,#fff6f1,#e8cbbd)", boxShadow: "0 30px 60px rgba(120,70,50,0.25)" }} />
-      <Bottle h={440} style={{ left: W / 2 - (440 * BOTTLE.w) / BOTTLE.h / 2, top: 345 + float }} shadow={0.25} shadowColor="120,70,50" />
-      {/* features */}
-      <div dir="rtl" style={{ position: "absolute", left: 40, right: 40, bottom: 40, display: "flex", justifyContent: "space-between" }}>
-        {["ثبات طويل", "رائحة ناعمة", "٥٠ مل"].map((t) => (
-          <div key={t} style={{ padding: "12px 26px 16px", borderRadius: 999, background: "rgba(255,255,255,0.75)", fontFamily: SANS, fontWeight: 600, fontSize: 30, color: "#4a3328" }}>{t}</div>
+      <div style={{ position: "absolute", left: W / 2 - 170, top: 815, width: 340, height: 60, borderRadius: "50%", background: "linear-gradient(180deg,#ffffff,#cfdcca)", boxShadow: "0 30px 60px rgba(60,90,60,0.22)" }} />
+      <Product h={540} style={{ left: W / 2 - (540 * TUBE.w) / TUBE.h / 2, top: 290 + float }} shadow={0.22} shadowColor="50,80,50" />
+      <div dir="rtl" style={{ position: "absolute", left: 30, right: 30, bottom: 36, display: "flex", justifyContent: "space-between" }}>
+        {["ترطيب ٢٤ ساعة", "حماية SPF 30", "خفيف على البشرة"].map((t) => (
+          <div key={t} style={{ padding: "12px 22px 16px", borderRadius: 999, background: "rgba(255,255,255,0.8)", fontFamily: SANS, fontWeight: 600, fontSize: 27, color: "#34463a" }}>{t}</div>
         ))}
       </div>
     </AbsoluteFill>
@@ -103,8 +105,8 @@ export const ShotSocial: React.FC = () => {
 export const ShotStudio: React.FC = () => {
   const f = useCurrentFrame();
   const sweep = interpolate(f % 120, [0, 120], [-60, 160]);
-  const bh = 470;
-  const bw = (bh * BOTTLE.w) / BOTTLE.h;
+  const bh = 540;
+  const bw = (bh * TUBE.w) / TUBE.h;
   return (
     <AbsoluteFill style={{ background: "#050505", overflow: "hidden" }}>
       {/* spotlight cone */}
@@ -121,9 +123,9 @@ export const ShotStudio: React.FC = () => {
         </svg>
       </div>
       <div style={{ position: "absolute", left: W / 2 - 230, top: 650, width: 460, height: 84, borderRadius: "50%", background: "radial-gradient(60% 70% at 50% 40%, #4a4a4a, #161616)", border: "1px solid rgba(255,255,255,0.08)" }} />
-      <Bottle h={bh} style={{ left: W / 2 - bw / 2, top: 240 }} reflect={0.28} shadow={0.7} filter="drop-shadow(0 0 30px rgba(255,240,220,0.15)) contrast(1.05)" />
+      <Product h={bh} style={{ left: W / 2 - bw / 2, top: 150 }} reflect={0.22} shadow={0.7} filter="drop-shadow(0 0 30px rgba(255,240,220,0.15)) brightness(0.92) contrast(1.06)" />
       {/* light sweep across the glass */}
-      <div style={{ position: "absolute", left: W / 2 - bw / 2, top: 240 + bh * 0.24, width: bw, height: bh * 0.74, overflow: "hidden", mixBlendMode: "screen" }}>
+      <div style={{ position: "absolute", left: W / 2 - bw / 2 + bw * 0.08, top: 150 + bh * 0.05, width: bw * 0.84, height: bh * 0.8, overflow: "hidden", mixBlendMode: "screen", borderRadius: 20 }}>
         <div style={{ position: "absolute", top: 0, bottom: 0, left: `${sweep}%`, width: "26%", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent)", rotate: "12deg" }} />
       </div>
       <AbsoluteFill style={{ background: "radial-gradient(70% 60% at 50% 45%, transparent 50%, rgba(0,0,0,0.75) 100%)" }} />
@@ -134,29 +136,33 @@ export const ShotStudio: React.FC = () => {
 // ------------------------------------------------------------ 360° views
 const Turn: React.FC<{ deg: number; h: number }> = ({ deg, h }) => {
   const a = (deg * Math.PI) / 180;
-  const sc = h / BOTTLE.h;
-  const bodyW = (BOTTLE.bodyX1 - BOTTLE.bodyX0) * sc;
-  const bodyH = (BOTTLE.h - BOTTLE.capBottom) * sc;
-  const capW = (BOTTLE.capX1 - BOTTLE.capX0) * sc;
-  const capH = BOTTLE.capBottom * sc;
-  const face = Math.abs(Math.cos(a)) * bodyW;
-  const depth = Math.abs(Math.sin(a)) * bodyW * 0.32;
-  const total = face + depth;
-  const sideFirst = Math.sin(a) < 0;
-  const back = Math.cos(a) < 0;
+  const sc = h / TUBE.h;
+  const fullW = TUBE.w * sc;
+  const bodyH = TUBE.capTop * sc;
+  const capH = (TUBE.h - TUBE.capTop) * sc;
+  const capW = (TUBE.capX1 - TUBE.capX0) * sc;
+  const cos = Math.cos(a);
+  const face = Math.max(0.02, Math.abs(cos)) * fullW;
+  const depth = Math.abs(Math.sin(a)) * fullW * 0.26;
+  const back = cos < 0;
   const faceEl = (
-    <div key="f" style={{ width: face, height: bodyH, overflow: "hidden", position: "relative" }}>
-      <Img src={staticFile("photos/bottle-cut.png")} style={{ position: "absolute", top: -BOTTLE.capBottom * sc, left: (-BOTTLE.bodyX0 * sc) * (face / bodyW), height: h, width: BOTTLE.w * sc * (face / bodyW || 0.001), transform: back ? "scaleX(-1)" : undefined, filter: back ? "brightness(0.95)" : undefined }} />
+    <div key="f" style={{ width: face, height: bodyH, overflow: "hidden", position: "relative", transform: back ? "scaleX(-1)" : undefined }}>
+      <div style={{ position: "absolute", left: 0, top: 0, width: TUBE.w, height: TUBE.h, transform: `scale(${face / TUBE.w}, ${sc})`, transformOrigin: "0 0", isolation: "isolate" }}>
+        <Img src={staticFile("photos/tube-cut.png")} style={{ position: "absolute", inset: 0, width: TUBE.w, height: TUBE.h }} />
+        <div style={{ position: "absolute", inset: 0, transform: back ? "scaleX(-1)" : undefined }}>
+          <TubeLabel back={back} />
+        </div>
+      </div>
     </div>
   );
-  const sideEl = <div key="s" style={{ width: depth, height: bodyH * 0.985, borderRadius: 6, background: `linear-gradient(90deg, #d9d9d9, #f1f1f1 50%, #cfcfcf)`, opacity: 0.95 }} />;
+  const sideEl = <div key="s" style={{ width: depth, height: bodyH, borderRadius: `${depth / 2}px ${depth / 2}px 4px 4px`, background: "linear-gradient(90deg, #dcdcdc, #fbfbfb 45%, #d4d4d4)", clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }} />;
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <div style={{ width: capW, height: capH, overflow: "hidden", position: "relative" }}>
-        <Img src={staticFile("photos/bottle-cut.png")} style={{ position: "absolute", top: 0, left: -BOTTLE.capX0 * sc, height: h, width: BOTTLE.w * sc }} />
+      <div style={{ display: "flex", alignItems: "flex-start" }}>{Math.sin(a) < 0 ? [sideEl, faceEl] : [faceEl, sideEl]}</div>
+      <div style={{ width: capW, height: capH, overflow: "hidden", position: "relative", marginTop: -1 }}>
+        <Img src={staticFile("photos/tube-cut.png")} style={{ position: "absolute", top: -TUBE.capTop * sc, left: -TUBE.capX0 * sc, width: TUBE.w * sc, height: TUBE.h * sc }} />
       </div>
-      <div style={{ display: "flex", alignItems: "flex-end", width: total }}>{sideFirst ? [sideEl, faceEl] : [faceEl, sideEl]}</div>
-      <div style={{ width: total * 1.1, height: 14, marginTop: -6, borderRadius: "50%", background: "rgba(0,0,0,0.12)", filter: "blur(5px)" }} />
+      <div style={{ width: capW * 1.3, height: 14, marginTop: -6, borderRadius: "50%", background: "rgba(0,0,0,0.12)", filter: "blur(5px)" }} />
     </div>
   );
 };
@@ -191,8 +197,8 @@ export const ShotAngles: React.FC = () => {
 export const ShotLife: React.FC = () => {
   const f = useCurrentFrame();
   const drift = interpolate(f, [0, 220], [0, -30]);
-  const bh = 430;
-  const bw = (bh * BOTTLE.w) / BOTTLE.h;
+  const bh = 500;
+  const bw = (bh * TUBE.w) / TUBE.h;
   return (
     <AbsoluteFill style={{ background: "linear-gradient(180deg, #d9b48a 0%, #c99a6b 55%, #a87650 100%)", overflow: "hidden" }}>
       {/* window light on the wall */}
@@ -217,11 +223,11 @@ export const ShotLife: React.FC = () => {
       {/* table */}
       <div style={{ position: "absolute", left: -20, right: -20, top: 640, bottom: 0, background: "linear-gradient(180deg, #e9d9c6 0%, #cdb79f 30%, #a88a6c 100%)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 636, height: 8, background: "rgba(255,240,220,0.7)", filter: "blur(2px)" }} />
-      {/* long shadow of the bottle */}
-      <div style={{ position: "absolute", left: 470, top: 860, width: 340, height: 70, background: "rgba(80,50,25,0.35)", filter: "blur(12px)", transformOrigin: "left center", rotate: "-6deg", borderRadius: "40%" }} />
-      <Bottle h={bh} style={{ left: 470 - bw / 2 + 60, top: 470 }} shadow={0.45} shadowColor="80,50,25" filter="sepia(0.18) saturate(1.1) brightness(1.03)" />
+      {/* long shadow of the tube */}
+      <div style={{ position: "absolute", left: 540, top: 865, width: 340, height: 60, background: "rgba(80,50,25,0.35)", filter: "blur(12px)", transformOrigin: "left center", rotate: "-6deg", borderRadius: "40%" }} />
+      <Product h={bh} style={{ left: 530 - bw / 2, top: 410 }} shadow={0.45} shadowColor="80,50,25" filter="sepia(0.22) saturate(1.1) brightness(1.02)" />
       {/* warm rim light */}
-      <div style={{ position: "absolute", left: 470 - bw / 2 + 60, top: 560, width: bw, height: 330, background: "linear-gradient(100deg, rgba(255,200,130,0.0) 60%, rgba(255,200,130,0.35))", mixBlendMode: "screen", borderRadius: 10 }} />
+      <div style={{ position: "absolute", left: 530 - bw / 2, top: 420, width: bw, height: 460, background: "linear-gradient(100deg, rgba(255,200,130,0.0) 60%, rgba(255,200,130,0.35))", mixBlendMode: "screen", borderRadius: 10 }} />
       {/* dust in the light */}
       {Array.from({ length: 26 }).map((_, i) => {
         const x = random(`dx${i}`) * W;

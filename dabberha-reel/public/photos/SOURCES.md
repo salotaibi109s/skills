@@ -15,4 +15,8 @@
 
 All chosen without visible trademarks. The café, perfume and store names in the ad are fictional demo names.
 
-`bottle-cut.png` is a cut-out of `bottle-frosted.jpg` (same Pexels photo), used as the product in the prompts video. «لُجين» is a fictional demo name.
+`bottle-cut.png` is a cut-out of `bottle-frosted.jpg` (same Pexels photo).
+
+| tube-leaves.jpg | https://www.pexels.com/photo/4465124/ |
+
+`tube-cut.png` is a cut-out of `tube-leaves.jpg`. The NAQĀ («نقاء») label printed on it in the prompts video is a fictional demo brand.
