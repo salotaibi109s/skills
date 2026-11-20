@@ -4,7 +4,7 @@ import React from "react";
 import { Audio } from "@remotion/media";
 import { AbsoluteFill, interpolate, staticFile } from "remotion";
 import { db } from "../theme";
-import { Backdrop, getY, yTimeline, type YSceneId } from "./base";
+import { Backdrop, ChapterBar, getY, yTimeline, type YSceneId } from "./base";
 import { Y1bPlan, Y1Hook, Y2Niche, Y3Viral, Y4Algo, Y5Prod, Y6Money, Y7Data, Y8Truth, Y9CTA } from "./scenes";
 
 const SCENES: { id: YSceneId; C: React.FC }[] = [
@@ -36,6 +36,7 @@ export const YtFilm: React.FC = () => (
         return items;
       })}
     </TransitionSeries>
+    <ChapterBar />
     <Audio
       src={staticFile("audio/yt/music/calm.mp3")}
       loop

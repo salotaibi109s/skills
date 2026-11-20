@@ -115,6 +115,7 @@ export const Y1Hook: React.FC = () => {
               <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 40, color: P.ink }}>قناتك الجديدة</div>
               <div style={{ fontFamily: SANS, fontSize: 28, color: P.muted }}>٠ مشترك · ٠ فيديو</div>
             </div>
+            <div style={{ marginRight: "auto", padding: "10px 26px 14px", borderRadius: 999, background: P.ink, color: P.paper, fontFamily: SANS, fontWeight: 700, fontSize: 28 }}>اشتراك</div>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, padding: "0 28px 28px" }}>
             {[0, 1, 2, 3].map((i) => (
@@ -271,7 +272,7 @@ export const Y3Viral: React.FC = () => {
     <Step id="Y3-Viral" n="٣" label="محرك الفيديوهات المنتشرة" typeTo={cue(scene, "يكتب") - 4} resultAt={cue(scene, "يكتب")} prompt="تصرّف كخبير استراتيجيات محتوى يوتيوب. أنشئ أفكار الفيديوهات، والمقدمات الجذابة، والعناوين، وأفكار الصور المصغّرة، والسيناريوهات الكاملة، وحلّل سبب قدرة كل فكرة على جذب المشاهدين.">
       <div dir="rtl">
         {/* thumbnail idea */}
-        <div style={{ position: "relative", height: 250, borderRadius: 18, overflow: "hidden", background: `linear-gradient(120deg, ${P.ink}, #3a2a22)`, scale: String(frame >= tTh - 4 ? thumb : 0.001), opacity: frame >= tTh - 4 ? 1 : 0 }}>
+        <div style={{ position: "relative", height: 250, borderRadius: 18, overflow: "hidden", background: "linear-gradient(120deg, #2a070d, #5a0d1b)", scale: String(frame >= tTh - 4 ? thumb : 0.001), opacity: frame >= tTh - 4 ? 1 : 0 }}>
           <div style={{ position: "absolute", left: 40, top: 40, width: 170, height: 170, borderRadius: 85, background: `radial-gradient(circle at 40% 35%, #f0c7a8, ${P.clayDeep})` }} />
           <div style={{ position: "absolute", right: 30, top: 40, fontFamily: SANS, fontWeight: 700, fontSize: 58, color: "#fff", lineHeight: 1.15, textAlign: "right" }}>
             ٥٠٠ ريال
@@ -452,7 +453,7 @@ export const Y7Data: React.FC = () => {
           <line x1="0" y1="140" x2="740" y2="140" stroke={P.border} strokeWidth="2" />
         </svg>
         <Row at={tWin} style={{ marginTop: 10 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "12px 18px", borderRadius: 16, background: "#E4ECE3" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "12px 18px", borderRadius: 16, background: "rgba(43,166,64,0.16)" }}>
             <Line n="check" size={32} color={P.sage} w={2.6} />
             <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 28, color: P.ink }}>نجح: فيديوهات الشروحات القصيرة</div>
           </div>
@@ -539,7 +540,7 @@ export const Y9CTA: React.FC = () => {
       {!reveal && (
         <div style={{ position: "absolute", left: 140, right: 200, top: 360, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18, opacity: Math.min(1, lead * 1.4), scale: String(0.9 + 0.1 * lead) }}>
           {["حلقة ١", "حلقة ٢", "شورتس", "إعلان"].map((t, i) => (
-            <div key={t} style={{ height: 230, borderRadius: 22, overflow: "hidden", position: "relative", background: [`linear-gradient(135deg, ${P.ink}, #3a2a22)`, `linear-gradient(135deg, ${P.clay}, ${P.clayDeep})`, `linear-gradient(135deg, ${P.sage}, #4c6a50)`, `linear-gradient(135deg, #C9A979, #8a6a3d)`][i], boxShadow: "0 18px 40px rgba(60,45,30,0.18)", translate: `0px ${Math.sin(frame / 14 + i) * 6}px` }}>
+            <div key={t} style={{ height: 230, borderRadius: 22, overflow: "hidden", position: "relative", background: ["linear-gradient(135deg, #2a070d, #5a0d1b)", "linear-gradient(135deg, #3a3a3a, #161616)", "linear-gradient(135deg, #FF0033, #8a0019)", "linear-gradient(135deg, #2b2b2b, #4a0f1a)"][i], boxShadow: "0 18px 40px rgba(60,45,30,0.18)", translate: `0px ${Math.sin(frame / 14 + i) * 6}px` }}>
               <div style={{ position: "absolute", inset: 0, display: "grid", placeItems: "center" }}>
                 <div style={{ width: 80, height: 80, borderRadius: 40, background: "rgba(255,255,255,0.9)", display: "grid", placeItems: "center" }}>
                   <Line n="play" size={44} color={P.ink} w={2} />
@@ -557,7 +558,7 @@ export const Y9CTA: React.FC = () => {
             const a = random(`a${i}`) * Math.PI * 2;
             const v = 7 + random(`v${i}`) * 14;
             const d = v * t * Math.exp(-t / 40);
-            const c = [P.clay, "#E8B79F", P.sage, "#C9A979"][i % 4];
+            const c = [P.clay, "#ffffff", "#FF5470", "#AAAAAA"][i % 4];
             const sz = 6 + random(`s${i}`) * 8;
             return <div key={i} style={{ position: "absolute", left: 500 + Math.cos(a) * d, top: 560 + Math.sin(a) * d * 0.75 + t * 0.5, width: sz, height: sz, borderRadius: sz / 2, background: c, opacity: Math.max(0, 1 - t / 75) }} />;
           })}
@@ -576,9 +577,9 @@ export const Y9CTA: React.FC = () => {
           {frame >= tLink && (
             <div style={{ position: "absolute", left: 0, right: 100, top: 980, display: "flex", flexDirection: "column", alignItems: "center", gap: 16, opacity: btn, scale: String(0.85 + 0.15 * btn) }}>
               <svg width="54" height="60" viewBox="0 0 120 130" style={{ translate: `0px ${Math.abs(Math.sin((frame - tLink) / 6)) * -14}px` }}>
-                <path d="M60 6 L112 62 L80 62 L80 124 L40 124 L40 62 L8 62 Z" fill={P.clay} />
+                <path d="M60 6 L112 62 L80 62 L80 124 L40 124 L40 62 L8 62 Z" fill={P.ink} />
               </svg>
-              <div dir="rtl" style={{ padding: "18px 54px 22px", borderRadius: 999, background: P.ink, color: P.paper, fontFamily: SANS, fontWeight: 600, fontSize: 52 }}>الرابط في البايو</div>
+              <div dir="rtl" style={{ padding: "18px 54px 22px", borderRadius: 999, background: P.clay, color: "#fff", fontFamily: SANS, fontWeight: 700, fontSize: 52, boxShadow: "0 16px 40px rgba(255,0,51,0.35)" }}>الرابط في البايو</div>
               <div dir="ltr" style={{ fontFamily: MONO, fontWeight: 500, fontSize: 32, color: P.ink2 }}>haxztd.zid.store</div>
             </div>
           )}
