@@ -1,126 +1,126 @@
 {
  "fps": 30,
- "duration": 36.16,
+ "duration": 50.29,
  "scenes": [
   {
    "id": "ba_hook",
    "start": 0.0,
-   "end": 4.66,
+   "end": 6.27,
    "cues": [
     {
      "scene": "ba_hook",
      "i": 0,
      "start": 0.3,
-     "end": 1.6,
+     "end": 2.38,
      "text": "نفس الشغل… مرتين.",
      "prompt": false
     },
     {
      "scene": "ba_hook",
      "i": 1,
-     "start": 1.8,
-     "end": 4.16,
+     "start": 2.62,
+     "end": 5.82,
      "text": "مرة بالطريقة القديمة، ومرة مع Claude.",
      "prompt": false
     }
    ],
-   "vo_offset": null
+   "vo_offset": 0.3
   },
   {
    "id": "ba_excel",
-   "start": 4.66,
-   "end": 14.33,
+   "start": 6.27,
+   "end": 21.2,
    "cues": [
     {
      "scene": "ba_excel",
      "i": 0,
-     "start": 4.86,
-     "end": 8.62,
+     "start": 6.47,
+     "end": 13.11,
      "text": "قبل: ملف فيه خمسة آلاف عملية… فرز، وتصفية، وحسابات… ساعات.",
      "prompt": false
     },
     {
      "scene": "ba_excel",
      "i": 1,
-     "start": 8.82,
-     "end": 13.63,
+     "start": 13.67,
+     "end": 20.55,
      "text": "بعد: ترفع الملف وتكتب طلب واحد… وتقرير كامل مع رسوم وتوصيات، في دقيقة.",
      "prompt": false
     }
    ],
-   "vo_offset": null
+   "vo_offset": 0.2
   },
   {
    "id": "ba_app",
-   "start": 14.33,
-   "end": 20.84,
+   "start": 21.2,
+   "end": 30.45,
    "cues": [
     {
      "scene": "ba_app",
      "i": 0,
-     "start": 14.53,
-     "end": 17.59,
+     "start": 21.4,
+     "end": 26.28,
      "text": "قبل: تبغى تطبيق لإدارة المهام؟ تدوّر مبرمج وتنتظر.",
      "prompt": false
     },
     {
      "scene": "ba_app",
      "i": 1,
-     "start": 17.79,
-     "end": 20.14,
+     "start": 26.36,
+     "end": 29.8,
      "text": "بعد: تكتب وش تبغى… ويبنيه قدامك.",
      "prompt": false
     }
    ],
-   "vo_offset": null
+   "vo_offset": 0.2
   },
   {
    "id": "ba_policy",
-   "start": 20.84,
-   "end": 27.35,
+   "start": 30.45,
+   "end": 39.54,
    "cues": [
     {
      "scene": "ba_policy",
      "i": 0,
-     "start": 21.04,
-     "end": 23.4,
+     "start": 30.65,
+     "end": 34.49,
      "text": "قبل: تراجع سياسة كاملة، بند بند.",
      "prompt": false
     },
     {
      "scene": "ba_policy",
      "i": 1,
-     "start": 23.6,
-     "end": 26.65,
+     "start": 34.73,
+     "end": 38.89,
      "text": "بعد: مهارة وحدة، تراجعها بنفس المعايير كل مرة.",
      "prompt": false
     }
    ],
-   "vo_offset": null
+   "vo_offset": 0.2
   },
   {
    "id": "ba_end",
-   "start": 27.35,
-   "end": 36.16,
+   "start": 39.54,
+   "end": 50.29,
    "cues": [
     {
      "scene": "ba_end",
      "i": 0,
-     "start": 27.55,
-     "end": 30.26,
+     "start": 39.74,
+     "end": 43.98,
      "text": "الفرق مو بالسرعة بس… الفرق إنك تفوّض.",
      "prompt": false
     },
     {
      "scene": "ba_end",
      "i": 1,
-     "start": 30.46,
-     "end": 33.16,
+     "start": 44.1,
+     "end": 47.34,
      "text": "وش الشغل اللي ياخذ وقتك؟ اكتبه بالتعليقات.",
      "prompt": false
     }
    ],
-   "vo_offset": null
+   "vo_offset": 0.2
   }
  ]
 }
