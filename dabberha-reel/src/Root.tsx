@@ -59,6 +59,8 @@ import { AgentsFilm } from "./agents/AgentsFilm";
 import { PromptsFilm } from "./prompts/PromptsFilm";
 import { calculateHowBuilt, HowBuilt } from "./hib/HowBuilt";
 import { WhatIf, wTimeline } from "./whatif/WhatIf";
+import { YtFilm } from "./yt/YtFilm";
+import { yTimeline } from "./yt/base";
 import { pTimeline } from "./prompts/base";
 import { aTimeline } from "./agents/base";
 import { cTimeline } from "./claude/base";
@@ -302,6 +304,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="PromptsFilm" component={PromptsFilm} durationInFrames={pTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Composition id="HowBuilt" component={HowBuilt} calculateMetadata={calculateHowBuilt} defaultProps={{ name: "test-ar" }} durationInFrames={300} fps={30} width={1080} height={1920} />
       <Composition id="WhatIf" component={WhatIf} durationInFrames={wTimeline.durationInFrames} fps={30} width={1080} height={1920} />
+      <Composition id="YtFilm" component={YtFilm} durationInFrames={yTimeline.durationInFrames} fps={30} width={1080} height={1920} />
     </>
   );
 };
