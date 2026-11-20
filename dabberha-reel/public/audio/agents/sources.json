@@ -1,0 +1,27 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-20T08:58:56.355Z"
+  },
+  "music": [
+    {
+      "id": "calm",
+      "provider": "ElevenLabs Music",
+      "prompt": "Light, calm and positive background music for a modern Arabic tech tutorial, 96 BPM, soft muted plucks, gentle marimba and warm airy pads, very light shaker, smooth and pleasant, low energy, never harsh or loud, steady from the start, gentle ending at 76 seconds. No vocals.",
+      "length_ms": 77000,
+      "instrumental": true,
+      "generated_at": "2026-11-20T08:59:09.373Z"
+    }
+  ],
+  "sfx": []
+}
