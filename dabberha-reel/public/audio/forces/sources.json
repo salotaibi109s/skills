@@ -1,0 +1,88 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.55,
+      "similarity_boost": 0.8,
+      "style": 0.4,
+      "use_speaker_boost": true,
+      "speed": 0.97
+    },
+    "generated_at": "2026-11-21T09:15:50.083Z"
+  },
+  "sfx": [
+    {
+      "id": "wind",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Desert wind blowing softly over sand dunes, cinematic ambience, no music",
+      "seconds": 6
+    },
+    {
+      "id": "flag",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "A large fabric flag flapping steadily in strong wind, realistic, close",
+      "seconds": 4
+    },
+    {
+      "id": "boots",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Group of soldiers marching in boots on gravel, steady rhythm, realistic, medium distance",
+      "seconds": 4
+    },
+    {
+      "id": "engine",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Distant heavy armored vehicle engine rumble idling then moving, low and subtle",
+      "seconds": 5
+    },
+    {
+      "id": "jet",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Fighter jet flyby passing overhead from left to right, powerful roar fading, realistic",
+      "seconds": 5
+    },
+    {
+      "id": "waves",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Open sea waves against the hull of a large ship, wind over water, realistic ambience",
+      "seconds": 6
+    },
+    {
+      "id": "radar",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Military radar sweep with soft electronic beeps, clean and subtle",
+      "seconds": 3
+    },
+    {
+      "id": "hit",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cinematic orchestral impact hit with deep timpani and low brass, trailer style",
+      "seconds": 3
+    },
+    {
+      "id": "riser",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Orchestral string riser building tension, ends with a soft cymbal swell",
+      "seconds": 4
+    },
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Deep cinematic whoosh transition, smooth",
+      "seconds": 1.2
+    }
+  ],
+  "music": [
+    {
+      "id": "epic",
+      "provider": "ElevenLabs Music",
+      "prompt": "Original epic military orchestral score for a national documentary, 85 BPM, starts with solemn low strings and distant snare, builds with French horns and powerful taiko and timpani, proud heroic brass melody in the middle, rising to a triumphant full orchestra climax near 50 seconds, ends on a noble sustained major chord. No vocals, no choir words.",
+      "length_ms": 62000,
+      "instrumental": true,
+      "generated_at": "2026-11-21T09:16:21.875Z"
+    }
+  ]
+}

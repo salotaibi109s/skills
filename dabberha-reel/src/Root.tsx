@@ -61,6 +61,7 @@ import { calculateHowBuilt, HowBuilt } from "./hib/HowBuilt";
 import { WhatIf, wTimeline } from "./whatif/WhatIf";
 import { YtFilm } from "./yt/YtFilm";
 import { ProductRef } from "./prompts/ProductRef";
+import { Forces, fTimeline } from "./forces/Forces";
 import { yTimeline } from "./yt/base";
 import { pTimeline } from "./prompts/base";
 import { aTimeline } from "./agents/base";
@@ -307,6 +308,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="WhatIf" component={WhatIf} durationInFrames={wTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Composition id="YtFilm" component={YtFilm} durationInFrames={yTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Composition id="ProductRef" component={ProductRef} durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="Forces" component={Forces} durationInFrames={fTimeline.durationInFrames} fps={30} width={1080} height={1920} />
     </>
   );
 };

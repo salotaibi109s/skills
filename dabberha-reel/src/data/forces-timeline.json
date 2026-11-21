@@ -1,0 +1,544 @@
+{
+  "fps": 30,
+  "durationInFrames": 1800,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "F1-Open",
+      "from": 0,
+      "durationInFrames": 368,
+      "transitionFrames": 14,
+      "voFrom": 15,
+      "voDurationInFrames": 177,
+      "words": [
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "كل",
+          "raw": "كل",
+          "start": 27,
+          "end": 32
+        },
+        {
+          "text": "شبر",
+          "raw": "شبر",
+          "start": 34,
+          "end": 46
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 49,
+          "end": 53
+        },
+        {
+          "text": "هالأرض",
+          "raw": "هالأرض…",
+          "start": 55,
+          "end": 73
+        },
+        {
+          "text": "فيه",
+          "raw": "فيه",
+          "start": 91,
+          "end": 97
+        },
+        {
+          "text": "عين",
+          "raw": "عين",
+          "start": 99,
+          "end": 109
+        },
+        {
+          "text": "ساهرة",
+          "raw": "ساهرة،",
+          "start": 111,
+          "end": 128
+        },
+        {
+          "text": "وقلب",
+          "raw": "وقلب",
+          "start": 145,
+          "end": 159
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 166,
+          "end": 171
+        },
+        {
+          "text": "ينام",
+          "raw": "ينام.",
+          "start": 173,
+          "end": 183
+        }
+      ]
+    },
+    {
+      "id": "F2-Land",
+      "from": 354,
+      "durationInFrames": 301,
+      "transitionFrames": 14,
+      "voFrom": 15,
+      "voDurationInFrames": 263,
+      "words": [
+        {
+          "text": "رجال",
+          "raw": "رجال",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "البر",
+          "raw": "البر…",
+          "start": 27,
+          "end": 39
+        },
+        {
+          "text": "يشقّون",
+          "raw": "يشقّون",
+          "start": 56,
+          "end": 73
+        },
+        {
+          "text": "الصحراء",
+          "raw": "الصحراء",
+          "start": 75,
+          "end": 94
+        },
+        {
+          "text": "بعزيمة",
+          "raw": "بعزيمة",
+          "start": 99,
+          "end": 121
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 123,
+          "end": 128
+        },
+        {
+          "text": "تلين",
+          "raw": "تلين،",
+          "start": 130,
+          "end": 142
+        },
+        {
+          "text": "ويتدرّبون",
+          "raw": "ويتدرّبون",
+          "start": 157,
+          "end": 183
+        },
+        {
+          "text": "ليل",
+          "raw": "ليل",
+          "start": 185,
+          "end": 195
+        },
+        {
+          "text": "نهار",
+          "raw": "نهار",
+          "start": 202,
+          "end": 209
+        },
+        {
+          "text": "عشان",
+          "raw": "عشان",
+          "start": 219,
+          "end": 231
+        },
+        {
+          "text": "يبقى",
+          "raw": "يبقى",
+          "start": 233,
+          "end": 245
+        },
+        {
+          "text": "الوطن",
+          "raw": "الوطن",
+          "start": 246,
+          "end": 257
+        },
+        {
+          "text": "آمن",
+          "raw": "آمن.",
+          "start": 260,
+          "end": 272
+        }
+      ]
+    },
+    {
+      "id": "F3-Air",
+      "from": 641,
+      "durationInFrames": 215,
+      "transitionFrames": 14,
+      "voFrom": 15,
+      "voDurationInFrames": 177,
+      "words": [
+        {
+          "text": "وفي",
+          "raw": "وفي",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "السما",
+          "raw": "السما…",
+          "start": 25,
+          "end": 39
+        },
+        {
+          "text": "نسور",
+          "raw": "نسور",
+          "start": 53,
+          "end": 65
+        },
+        {
+          "text": "تحرس",
+          "raw": "تحرس",
+          "start": 73,
+          "end": 87
+        },
+        {
+          "text": "الأجواء",
+          "raw": "الأجواء،",
+          "start": 91,
+          "end": 106
+        },
+        {
+          "text": "وعيونها",
+          "raw": "وعيونها",
+          "start": 122,
+          "end": 142
+        },
+        {
+          "text": "على",
+          "raw": "على",
+          "start": 145,
+          "end": 152
+        },
+        {
+          "text": "كل",
+          "raw": "كل",
+          "start": 157,
+          "end": 166
+        },
+        {
+          "text": "الحدود",
+          "raw": "الحدود.",
+          "start": 169,
+          "end": 185
+        }
+      ]
+    },
+    {
+      "id": "F4-Sea",
+      "from": 842,
+      "durationInFrames": 260,
+      "transitionFrames": 14,
+      "voFrom": 15,
+      "voDurationInFrames": 222,
+      "words": [
+        {
+          "text": "وعلى",
+          "raw": "وعلى",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "امتداد",
+          "raw": "امتداد",
+          "start": 26,
+          "end": 39
+        },
+        {
+          "text": "البحر",
+          "raw": "البحر",
+          "start": 41,
+          "end": 51
+        },
+        {
+          "text": "الأحمر",
+          "raw": "الأحمر",
+          "start": 55,
+          "end": 68
+        },
+        {
+          "text": "والخليج",
+          "raw": "والخليج",
+          "start": 70,
+          "end": 87
+        },
+        {
+          "text": "العربي",
+          "raw": "العربي…",
+          "start": 89,
+          "end": 104
+        },
+        {
+          "text": "قوات",
+          "raw": "قوات",
+          "start": 122,
+          "end": 128
+        },
+        {
+          "text": "بحرية",
+          "raw": "بحرية",
+          "start": 130,
+          "end": 149
+        },
+        {
+          "text": "تحمي",
+          "raw": "تحمي",
+          "start": 154,
+          "end": 164
+        },
+        {
+          "text": "السواحل",
+          "raw": "السواحل،",
+          "start": 165,
+          "end": 183
+        },
+        {
+          "text": "وتأمّن",
+          "raw": "وتأمّن",
+          "start": 193,
+          "end": 207
+        },
+        {
+          "text": "الممرات",
+          "raw": "الممرات.",
+          "start": 209,
+          "end": 231
+        }
+      ]
+    },
+    {
+      "id": "F5-Defense",
+      "from": 1088,
+      "durationInFrames": 208,
+      "transitionFrames": 14,
+      "voFrom": 15,
+      "voDurationInFrames": 170,
+      "words": [
+        {
+          "text": "ودفاع",
+          "raw": "ودفاع",
+          "start": 15,
+          "end": 32
+        },
+        {
+          "text": "جوي",
+          "raw": "جوي",
+          "start": 37,
+          "end": 51
+        },
+        {
+          "text": "يقظ",
+          "raw": "يقظ…",
+          "start": 53,
+          "end": 68
+        },
+        {
+          "text": "يرصد",
+          "raw": "يرصد",
+          "start": 85,
+          "end": 99
+        },
+        {
+          "text": "ويتصدّى",
+          "raw": "ويتصدّى،",
+          "start": 101,
+          "end": 125
+        },
+        {
+          "text": "قبل",
+          "raw": "قبل",
+          "start": 142,
+          "end": 147
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 148,
+          "end": 149
+        },
+        {
+          "text": "يقرب",
+          "raw": "يقرب",
+          "start": 152,
+          "end": 161
+        },
+        {
+          "text": "الخطر",
+          "raw": "الخطر.",
+          "start": 164,
+          "end": 178
+        }
+      ]
+    },
+    {
+      "id": "F6-Unity",
+      "from": 1282,
+      "durationInFrames": 232,
+      "transitionFrames": 14,
+      "voFrom": 15,
+      "voDurationInFrames": 193,
+      "words": [
+        {
+          "text": "قوات",
+          "raw": "قوات",
+          "start": 15,
+          "end": 27
+        },
+        {
+          "text": "مسلحة",
+          "raw": "مسلحة",
+          "start": 32,
+          "end": 53
+        },
+        {
+          "text": "وحدة",
+          "raw": "وحدة…",
+          "start": 56,
+          "end": 68
+        },
+        {
+          "text": "شعارها",
+          "raw": "شعارها:",
+          "start": 82,
+          "end": 101
+        },
+        {
+          "text": "الله",
+          "raw": "الله،",
+          "start": 118,
+          "end": 135
+        },
+        {
+          "text": "ثم",
+          "raw": "ثم",
+          "start": 145,
+          "end": 149
+        },
+        {
+          "text": "المليك",
+          "raw": "المليك،",
+          "start": 152,
+          "end": 169
+        },
+        {
+          "text": "ثم",
+          "raw": "ثم",
+          "start": 178,
+          "end": 185
+        },
+        {
+          "text": "الوطن",
+          "raw": "الوطن.",
+          "start": 188,
+          "end": 202
+        }
+      ]
+    },
+    {
+      "id": "F7-Close",
+      "from": 1500,
+      "durationInFrames": 300,
+      "transitionFrames": 0,
+      "voFrom": 15,
+      "voDurationInFrames": 158,
+      "words": [
+        {
+          "text": "حماة",
+          "raw": "حماة",
+          "start": 15,
+          "end": 27
+        },
+        {
+          "text": "الوطن",
+          "raw": "الوطن…",
+          "start": 29,
+          "end": 44
+        },
+        {
+          "text": "فخرنا",
+          "raw": "فخرنا،",
+          "start": 58,
+          "end": 75
+        },
+        {
+          "text": "وأمننا",
+          "raw": "وأمننا،",
+          "start": 85,
+          "end": 101
+        },
+        {
+          "text": "وسرّ",
+          "raw": "وسرّ",
+          "start": 116,
+          "end": 127
+        },
+        {
+          "text": "هالأمان",
+          "raw": "هالأمان",
+          "start": 128,
+          "end": 142
+        },
+        {
+          "text": "اللي",
+          "raw": "اللي",
+          "start": 145,
+          "end": 149
+        },
+        {
+          "text": "نعيشه",
+          "raw": "نعيشه.",
+          "start": 151,
+          "end": 164
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      15,
+      183
+    ],
+    [
+      369,
+      626
+    ],
+    [
+      656,
+      826
+    ],
+    [
+      857,
+      1073
+    ],
+    [
+      1103,
+      1266
+    ],
+    [
+      1297,
+      1484
+    ],
+    [
+      1515,
+      1664
+    ]
+  ]
+}
