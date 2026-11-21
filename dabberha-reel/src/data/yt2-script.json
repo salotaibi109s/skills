@@ -1,0 +1,163 @@
+{
+  "audioDir": "yt2",
+  "totalFrames": 2950,
+  "tailSeconds": 0.35,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "Z1-Hook",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "فيديوك ممتاز… بس ما أحد يشوفه؟ غالباً المشكلة مو في المحتوى، المشكلة في التغليف. هذي سبع أوامر لكلود تخلي فيديوك ينشاف."
+    },
+    {
+      "id": "Z2-Title",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الأمر الأول: العنوان. خله يكتب لك عشر عناوين تثير الفضول… بدون ما تكذب على المشاهد، ويختار لك أقواها."
+    },
+    {
+      "id": "Z3-Thumb",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الثاني: الصورة المصغرة. يقترح لك ثلاث أفكار، بثلاث كلمات بس على الصورة… وتجربها بأداة الاختبار والمقارنة في يوتيوب ستوديو."
+    },
+    {
+      "id": "Z4-Open",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الثالث: أول ثلاثين ثانية. يكتب لك بداية تدخل في الموضوع على طول: سؤال، ووعد، ولمحة من النتيجة."
+    },
+    {
+      "id": "Z5-Keep",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الرابع: سيناريو يمسك المشاهد لآخره: أسئلة مفتوحة، وتغيير في الإيقاع كل شوي، ومفاجأة قبل النهاية."
+    },
+    {
+      "id": "Z6-Seo",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الخامس: الوصف والكلمات المفتاحية… والفصول بالتوقيت، عشان يطلع فيديوك في البحث ويسهل التنقل فيه."
+    },
+    {
+      "id": "Z7-Shorts",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "السادس: يقص لك من الفيديو الطويل خمس شورتس، كل واحد يودّي المشاهد للفيديو الكامل."
+    },
+    {
+      "id": "Z8-Comm",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "السابع: تعليقاتك كنز. يساعدك ترد عليها، ويكتب لك تعليق مثبّت واستبيان للمجتمع، ويطلّع منها أفكار فيديوهاتك الجاية."
+    },
+    {
+      "id": "Z9-Truth",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "وتذكّر: الأوامر تختصر عليك الشغل… بس المشاهد هو الحكم. جرّب، وقِس، وعدّل."
+    },
+    {
+      "id": "Z10-CTA",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "tts": "وإذا تبغى قناتك تنبني وتكبر من البداية للنهاية… متجر دبرها يوفر لك هالخدمة. والرابط في البايو.",
+      "minSeconds": 11
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.6,
+      "prompt": "Smooth modern whoosh transition, short and clean"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Bright playful UI pop, short"
+    },
+    {
+      "id": "boing",
+      "seconds": 0.7,
+      "prompt": "Bouncy elastic number pop, playful cartoon spring boing, short"
+    },
+    {
+      "id": "type",
+      "seconds": 2.0,
+      "prompt": "Fast mechanical keyboard typing burst, crisp keys"
+    },
+    {
+      "id": "enter",
+      "seconds": 0.5,
+      "prompt": "Single satisfying keyboard enter key press"
+    },
+    {
+      "id": "ding",
+      "seconds": 0.8,
+      "prompt": "Pleasant success chime, modern app"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1.5,
+      "prompt": "Magical sparkle shimmer with rising particles, bright"
+    },
+    {
+      "id": "impact",
+      "seconds": 1.5,
+      "prompt": "Punchy modern logo hit with bright shimmer tail"
+    },
+    {
+      "id": "tick",
+      "seconds": 0.5,
+      "prompt": "Crisp short UI tick click, snappy and clean"
+    },
+    {
+      "id": "swish",
+      "seconds": 0.5,
+      "prompt": "Very short fast swish for kinetic text, airy"
+    },
+    {
+      "id": "riser",
+      "seconds": 1.2,
+      "prompt": "Short rising whoosh riser building into a hit, energetic"
+    },
+    {
+      "id": "thud",
+      "seconds": 0.6,
+      "prompt": "Punchy deep thud hit for a big number appearing, tight"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm",
+      "prompt": "calm tutorial bed",
+      "lengthMs": 77000
+    }
+  ]
+}

@@ -62,6 +62,8 @@ import { WhatIf, wTimeline } from "./whatif/WhatIf";
 import { YtFilm } from "./yt/YtFilm";
 import { ProductRef } from "./prompts/ProductRef";
 import { Forces, fTimeline } from "./forces/Forces";
+import { Yt2Film } from "./yt2/Yt2Film";
+import { yTimeline as y2Timeline } from "./yt2/base";
 import { yTimeline } from "./yt/base";
 import { pTimeline } from "./prompts/base";
 import { aTimeline } from "./agents/base";
@@ -309,6 +311,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="YtFilm" component={YtFilm} durationInFrames={yTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Composition id="ProductRef" component={ProductRef} durationInFrames={1} fps={30} width={1080} height={1920} />
       <Composition id="Forces" component={Forces} durationInFrames={fTimeline.durationInFrames} fps={30} width={1080} height={1920} />
+      <Composition id="Yt2Film" component={Yt2Film} durationInFrames={y2Timeline.durationInFrames} fps={30} width={1080} height={1920} />
     </>
   );
 };
