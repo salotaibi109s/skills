@@ -39,8 +39,38 @@ const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const ease = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], { ...clamp, easing: (x) => 1 - Math.pow(1 - x, 3) });
 
 // ------------------------------------------------------------ picture helpers
+/** An SVG filter that ripples whatever uses it (flag cloth, water, heat haze); the noise drifts so the motion flows. */
+const Ripple: React.FC<{ id: string; scale: number; freq: [number, number]; speed: [number, number] }> = ({ id, scale, freq, speed }) => {
+  const f = useCurrentFrame();
+  return (
+    <svg width="0" height="0" style={{ position: "absolute" }}>
+      <filter id={id} x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency={`${freq[0]} ${freq[1]}`} numOctaves="2" seed="3" result="n" />
+        <feOffset in="n" dx={f * speed[0]} dy={f * speed[1]} result="m" />
+        <feTile in="m" result="t" />
+        <feDisplacementMap in="SourceGraphic" in2="t" scale={scale} xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </svg>
+  );
+};
+
+/** Dust or sand drifting through the light. */
+const Dust: React.FC<{ n?: number; color?: string }> = ({ n = 40, color = "rgba(255,230,190,0.55)" }) => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      {Array.from({ length: n }).map((_, i) => {
+        const sz = 2 + random(`d${i}`) * 5;
+        const x = (random(`dx${i}`) * 1200 + f * (0.8 + random(`dv${i}`) * 1.6)) % 1200 - 60;
+        const y = random(`dy${i}`) * 1920 + Math.sin(f / 25 + i) * 20;
+        return <div key={i} style={{ position: "absolute", left: x, top: y, width: sz, height: sz, borderRadius: sz, background: color, filter: `blur(${sz > 5 ? 2 : 0.5}px)`, opacity: 0.4 + 0.5 * Math.abs(Math.sin(f / 30 + i)) }} />;
+      })}
+    </AbsoluteFill>
+  );
+};
+
 /** A photo filling the vertical frame, panning across it (cx in image pixels) and pushing in. */
-const Pan: React.FC<{ src: string; W: number; H: number; cx: [number, number]; zoom?: [number, number]; cy?: number; style?: React.CSSProperties }> = ({ src, W, H, cx, zoom = [1.02, 1.1], cy, style }) => {
+const Pan: React.FC<{ src: string; W: number; H: number; cx: [number, number]; zoom?: [number, number]; cy?: number; style?: React.CSSProperties; ripple?: { id: string; mask: string } }> = ({ src, W, H, cx, zoom = [1.02, 1.1], cy, style, ripple }) => {
   const f = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const t = interpolate(f, [0, durationInFrames], [0, 1], { ...clamp, easing: (x) => x * x * (3 - 2 * x) });
@@ -51,12 +81,17 @@ const Pan: React.FC<{ src: string; W: number; H: number; cx: [number, number]; z
   return (
     <AbsoluteFill style={{ overflow: "hidden", ...style }}>
       <Img src={staticFile(src)} style={{ position: "absolute", width: W * s, height: H * s, left: 540 - x * s, top: 960 - y * s }} />
+      {ripple && (
+        <AbsoluteFill style={{ maskImage: ripple.mask, WebkitMaskImage: ripple.mask }}>
+          <Img src={staticFile(src)} style={{ position: "absolute", width: W * s, height: H * s, left: 540 - x * s, top: 960 - y * s, filter: `url(#${ripple.id})` }} />
+        </AbsoluteFill>
+      )}
     </AbsoluteFill>
   );
 };
 
 /** The whole photo across the width (so the flag is never cut), over a blurred, darkened copy of itself. */
-const Letterbox: React.FC<{ src: string; W: number; H: number; zoom?: [number, number]; top?: number }> = ({ src, W, H, zoom = [1, 1.06], top = 600 }) => {
+const Letterbox: React.FC<{ src: string; W: number; H: number; zoom?: [number, number]; top?: number; ripple?: { id: string; mask: string } }> = ({ src, W, H, zoom = [1, 1.06], top = 600, ripple }) => {
   const f = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const z = interpolate(f, [0, durationInFrames], zoom, clamp);
@@ -66,6 +101,11 @@ const Letterbox: React.FC<{ src: string; W: number; H: number; zoom?: [number, n
       <Img src={staticFile(src)} style={{ position: "absolute", width: (1920 / H) * W * 1.1, height: 1920 * 1.1, left: 540 - ((1920 / H) * W * 1.1) / 2, top: -96, filter: "blur(40px) brightness(0.35) saturate(1.2)" }} />
       <div style={{ position: "absolute", left: 0, top, width: 1080, height: h, overflow: "hidden", boxShadow: "0 0 80px rgba(0,0,0,0.8)" }}>
         <Img src={staticFile(src)} style={{ width: 1080, height: h, scale: String(z) }} />
+        {ripple && (
+          <div style={{ position: "absolute", inset: 0, maskImage: ripple.mask, WebkitMaskImage: ripple.mask }}>
+            <Img src={staticFile(src)} style={{ width: 1080, height: h, scale: String(z), filter: `url(#${ripple.id})` }} />
+          </div>
+        )}
       </div>
     </AbsoluteFill>
   );
@@ -187,7 +227,8 @@ const F1: React.FC = () => {
   const black = interpolate(f, [0, 24], [1, 0], clamp);
   return (
     <Frame id="F1-Open" subsTop={1500} subsUntil={titleAt}>
-      <Letterbox src="forces/salute-flag.jpg" W={1313} H={860} zoom={[1.0, 1.08]} top={420} />
+      <Ripple id="flagwave" scale={16} freq={[0.006, 0.018]} speed={[-2.2, 0.4]} />
+      <Letterbox src="forces/salute-flag.jpg" W={1313} H={860} zoom={[1.0, 1.08]} top={420} ripple={{ id: "flagwave", mask: "linear-gradient(180deg, #000 0%, #000 30%, transparent 42%)" }} />
       <Title at={titleAt} top={1180} />
       <AbsoluteFill style={{ background: "#000", opacity: black }} />
       {/* hide the subtitles once the title is up */}
@@ -207,13 +248,16 @@ const F2: React.FC = () => {
   return (
     <Frame id="F2-Land" kicker="البَرّ">
       <AbsoluteFill style={{ opacity: 1 - x }}>
-        <Pan src="forces/land-soldiers.jpg" W={1067} H={860} cx={[420, 600]} zoom={[1.05, 1.16]} style={{ filter: "contrast(1.12) saturate(0.92)" }} />
+        <Ripple id="haze1" scale={7} freq={[0.012, 0.05]} speed={[0, -1.5]} />
+        <Pan src="forces/land-soldiers.jpg" W={1067} H={860} cx={[420, 600]} zoom={[1.05, 1.16]} style={{ filter: "contrast(1.12) saturate(0.92)" }} ripple={{ id: "haze1", mask: "linear-gradient(180deg, transparent 20%, #000 34%, #000 48%, transparent 60%)" }} />
       </AbsoluteFill>
       {f >= cut - 8 && (
         <AbsoluteFill style={{ opacity: x }}>
-          <Pan src="forces/land-armor.jpg" W={1000} H={666} cx={[620, 760]} zoom={[1.02, 1.1]} cy={350} style={{ filter: "contrast(1.12) saturate(0.9)" }} />
+          <Ripple id="haze2" scale={6} freq={[0.012, 0.05]} speed={[0, -1.5]} />
+          <Pan src="forces/land-armor.jpg" W={1000} H={666} cx={[620, 760]} zoom={[1.02, 1.1]} cy={350} style={{ filter: "contrast(1.12) saturate(0.9)" }} ripple={{ id: "haze2", mask: "linear-gradient(180deg, transparent 30%, #000 42%, #000 52%, transparent 60%)" }} />
         </AbsoluteFill>
       )}
+      <Dust n={46} />
       <Sfx name="boots" at={6} />
       <Sfx name="engine" at={cut} />
     </Frame>
@@ -264,7 +308,9 @@ const F3: React.FC = () => {
 
 const F4: React.FC = () => (
   <Frame id="F4-Sea" kicker="البحر" leak="rgba(140,220,255,0.15)">
-    <Pan src="forces/navy.jpg" W={1531} H={860} cx={[620, 860]} zoom={[1.04, 1.14]} style={{ filter: "contrast(1.1) saturate(0.95)" }} />
+    <Ripple id="sea" scale={7} freq={[0.004, 0.03]} speed={[1.2, 0.6]} />
+    <Pan src="forces/navy.jpg" W={1531} H={860} cx={[620, 860]} zoom={[1.04, 1.14]} style={{ filter: "contrast(1.1) saturate(0.95)" }} ripple={{ id: "sea", mask: "linear-gradient(180deg, transparent 47%, #000 52%)" }} />
+    <Dust n={18} color="rgba(255,255,255,0.5)" />
     <Sfx name="waves" at={0} />
   </Frame>
 );
@@ -322,7 +368,9 @@ const F6: React.FC = () => {
   const s = getF("F6-Unity");
   return (
     <Frame id="F6-Unity" leak="rgba(255,200,110,0.25)">
-      <Pan src="forces/salute-flag.jpg" W={1313} H={860} cx={[470, 470]} zoom={[1.06, 1.14]} cy={520} />
+      <Ripple id="haze3" scale={6} freq={[0.01, 0.04]} speed={[0, -1.2]} />
+      <Pan src="forces/salute-flag.jpg" W={1313} H={860} cx={[470, 470]} zoom={[1.06, 1.14]} cy={520} ripple={{ id: "haze3", mask: "linear-gradient(180deg, transparent 60%, #000 75%)" }} />
+      <Dust n={30} />
       {/* the flag above is cut by this crop, so it is kept dark here and shown whole in the next scene */}
       <AbsoluteFill style={{ background: "linear-gradient(180deg, #000 0%, rgba(0,0,0,0.92) 26%, rgba(0,0,0,0) 44%)" }} />
       <Sfx name="riser" at={cue(s, "شعارها") - 30} />
@@ -340,7 +388,8 @@ const F7: React.FC = () => {
   const out = interpolate(f, [durationInFrames - 24, durationInFrames], [0, 1], clamp);
   return (
     <Frame id="F7-Close" subsTop={1500} subsUntil={titleAt} leak="rgba(255,210,130,0.22)">
-      <Letterbox src="forces/salute-flag.jpg" W={1313} H={860} zoom={[1.08, 1.0]} top={420} />
+      <Ripple id="flagwave2" scale={16} freq={[0.006, 0.018]} speed={[-2.2, 0.4]} />
+      <Letterbox src="forces/salute-flag.jpg" W={1313} H={860} zoom={[1.08, 1.0]} top={420} ripple={{ id: "flagwave2", mask: "linear-gradient(180deg, #000 0%, #000 30%, transparent 42%)" }} />
       <AbsoluteFill style={{ background: "linear-gradient(180deg, transparent 75%, #000 100%)", opacity: ease(f, titleAt - 4, titleAt + 6) }} />
       <Title at={titleAt} top={1180} />
       <AbsoluteFill style={{ background: "#000", opacity: out }} />
