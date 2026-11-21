@@ -205,7 +205,7 @@ const F2: React.FC = () => {
   const cut = cue(s, "ويتدرّبون") - 6;
   const x = ease(f, cut - 8, cut + 8);
   return (
-    <Frame id="F2-Land" kicker="البر">
+    <Frame id="F2-Land" kicker="البَرّ">
       <AbsoluteFill style={{ opacity: 1 - x }}>
         <Pan src="forces/land-soldiers.jpg" W={1067} H={860} cx={[420, 600]} zoom={[1.05, 1.16]} style={{ filter: "contrast(1.12) saturate(0.92)" }} />
       </AbsoluteFill>

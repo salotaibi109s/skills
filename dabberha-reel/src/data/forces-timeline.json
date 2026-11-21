@@ -11,7 +11,7 @@
     {
       "id": "F1-Open",
       "from": 0,
-      "durationInFrames": 368,
+      "durationInFrames": 361,
       "transitionFrames": 14,
       "voFrom": 15,
       "voDurationInFrames": 177,
@@ -86,95 +86,95 @@
     },
     {
       "id": "F2-Land",
-      "from": 354,
-      "durationInFrames": 301,
+      "from": 347,
+      "durationInFrames": 308,
       "transitionFrames": 14,
       "voFrom": 15,
-      "voDurationInFrames": 263,
+      "voDurationInFrames": 273,
       "words": [
         {
-          "text": "رجال",
-          "raw": "رجال",
+          "text": "رجالُ",
+          "raw": "رجالُ",
           "start": 15,
-          "end": 25
+          "end": 31
         },
         {
-          "text": "البر",
-          "raw": "البر…",
-          "start": 27,
-          "end": 39
+          "text": "البَرّ",
+          "raw": "البَرّ…",
+          "start": 32,
+          "end": 46
         },
         {
           "text": "يشقّون",
           "raw": "يشقّون",
-          "start": 56,
-          "end": 73
+          "start": 62,
+          "end": 77
         },
         {
           "text": "الصحراء",
           "raw": "الصحراء",
-          "start": 75,
-          "end": 94
+          "start": 80,
+          "end": 99
         },
         {
           "text": "بعزيمة",
           "raw": "بعزيمة",
-          "start": 99,
-          "end": 121
+          "start": 101,
+          "end": 125
         },
         {
           "text": "ما",
           "raw": "ما",
-          "start": 123,
-          "end": 128
+          "start": 128,
+          "end": 133
         },
         {
           "text": "تلين",
           "raw": "تلين،",
-          "start": 130,
-          "end": 142
+          "start": 135,
+          "end": 147
         },
         {
           "text": "ويتدرّبون",
           "raw": "ويتدرّبون",
-          "start": 157,
-          "end": 183
+          "start": 165,
+          "end": 190
         },
         {
           "text": "ليل",
           "raw": "ليل",
-          "start": 185,
-          "end": 195
+          "start": 193,
+          "end": 202
         },
         {
           "text": "نهار",
           "raw": "نهار",
-          "start": 202,
-          "end": 209
+          "start": 211,
+          "end": 219
         },
         {
           "text": "عشان",
           "raw": "عشان",
-          "start": 219,
-          "end": 231
+          "start": 226,
+          "end": 238
         },
         {
           "text": "يبقى",
           "raw": "يبقى",
-          "start": 233,
-          "end": 245
+          "start": 242,
+          "end": 250
         },
         {
           "text": "الوطن",
           "raw": "الوطن",
-          "start": 246,
-          "end": 257
+          "start": 251,
+          "end": 265
         },
         {
           "text": "آمن",
           "raw": "آمن.",
-          "start": 260,
-          "end": 272
+          "start": 267,
+          "end": 279
         }
       ]
     },
@@ -517,7 +517,7 @@
       183
     ],
     [
-      369,
+      362,
       626
     ],
     [
