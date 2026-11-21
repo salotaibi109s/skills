@@ -1,5 +1,5 @@
-import { loadFont as loadKufi } from "@remotion/google-fonts/ReemKufi";
-import { loadFont as loadPlex } from "@remotion/google-fonts/IBMPlexSansArabic";
+import { loadFont as loadChanga } from "@remotion/google-fonts/Changa";
+import { loadFont as loadAlmarai } from "@remotion/google-fonts/Almarai";
 import { fade } from "@remotion/transitions/fade";
 import { linearTiming, TransitionSeries } from "@remotion/transitions";
 import { Audio } from "@remotion/media";
@@ -15,8 +15,9 @@ import { db } from "../theme";
  * Photos: supplied by the store owner (official sources); they are cropped so no source logo or watermark shows,
  * and the flag is always shown whole and unmirrored. Air and air-defence scenes are motion graphics (no real equipment).
  */
-const KUFI = loadKufi("normal", { weights: ["500", "600", "700"], subsets: ["arabic"] }).fontFamily;
-const SANS = loadPlex("normal", { weights: ["400", "600", "700"], subsets: ["arabic"] }).fontFamily;
+// Titles: Changa (strong, condensed, military feel). Spoken text: Almarai (clean Saudi-designed sans).
+const KUFI = loadChanga("normal", { weights: ["500", "700", "800"], subsets: ["arabic"] }).fontFamily;
+const SANS = loadAlmarai("normal", { weights: ["400", "700", "800"], subsets: ["arabic"] }).fontFamily;
 const GOLD = "#E2C17B";
 
 type FId = "F1-Open" | "F2-Land" | "F3-Air" | "F4-Sea" | "F5-Defense" | "F6-Unity" | "F7-Close";
@@ -97,7 +98,7 @@ const Kicker: React.FC<{ text: string; at?: number }> = ({ text, at = 8 }) => {
   return (
     <div dir="rtl" style={{ position: "absolute", top: 260, right: 140, left: 80, display: "flex", alignItems: "center", gap: 18, opacity: p }}>
       <div style={{ width: 8, height: 64, background: GOLD, scale: `1 ${p}` }} />
-      <div style={{ fontFamily: KUFI, fontWeight: 700, fontSize: 64, color: "#fff", letterSpacing: 1, textShadow: "0 4px 24px rgba(0,0,0,0.7)", translate: `${(1 - p) * 40}px 0px` }}>{text}</div>
+      <div style={{ fontFamily: KUFI, fontWeight: 800, fontSize: 66, color: "#fff", letterSpacing: 1, textShadow: "0 4px 24px rgba(0,0,0,0.7)", translate: `${(1 - p) * 40}px 0px` }}>{text}</div>
     </div>
   );
 };
@@ -124,7 +125,7 @@ const Subs: React.FC<{ scene: SceneTiming; top?: number }> = ({ scene, top = 144
   const chunk = chunks[idx];
   const p = spring({ frame: frame - (chunk[0].start - 4), fps, config: { damping: 18, stiffness: 130, mass: 0.8 } });
   return (
-    <div dir="rtl" style={{ position: "absolute", left: 80, right: 140, top, display: "flex", flexWrap: "wrap", justifyContent: "center", columnGap: "0.32em", fontFamily: SANS, fontWeight: 700, fontSize: 60, lineHeight: 1.5, opacity: Math.min(1, p * 1.4), translate: `0px ${(1 - p) * 16}px` }}>
+    <div dir="rtl" style={{ position: "absolute", left: 80, right: 140, top, display: "flex", flexWrap: "wrap", justifyContent: "center", columnGap: "0.32em", fontFamily: SANS, fontWeight: 800, fontSize: 58, lineHeight: 1.6, opacity: Math.min(1, p * 1.4), translate: `0px ${(1 - p) * 16}px` }}>
       {chunk.map((w, i) => {
         const on = frame >= w.start - 3;
         const active = on && (i === chunk.length - 1 || frame < chunk[i + 1].start - 3);
@@ -138,15 +139,19 @@ const Subs: React.FC<{ scene: SceneTiming; top?: number }> = ({ scene, top = 144
   );
 };
 
-const Frame: React.FC<{ id: FId; children: React.ReactNode; kicker?: string; leak?: string; subsTop?: number }> = ({ id, children, kicker, leak, subsTop }) => {
+const Frame: React.FC<{ id: FId; children: React.ReactNode; kicker?: string; leak?: string; subsTop?: number; subsUntil?: number }> = ({ id, children, kicker, leak, subsTop, subsUntil }) => {
   const scene = getF(id);
+  const fr = useCurrentFrame();
+  const subsO = subsUntil === undefined ? 1 : interpolate(fr, [subsUntil - 6, subsUntil + 2], [1, 0], clamp);
   return (
     <AbsoluteFill style={{ background: "#000" }}>
       {children}
       <Grade leak={leak} />
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, transparent 22%, transparent 66%, rgba(0,0,0,0.75) 100%)" }} />
       {kicker && <Kicker text={kicker} />}
-      <Subs scene={scene} top={subsTop} />
+      <AbsoluteFill style={{ opacity: subsO }}>
+        <Subs scene={scene} top={subsTop} />
+      </AbsoluteFill>
       <SceneVoice scene={scene} />
       <Sfx name="whoosh" at={0} gain={0.7} />
     </AbsoluteFill>
@@ -164,7 +169,7 @@ const Title: React.FC<{ at: number; top?: number }> = ({ at, top = 1240 }) => {
   return (
     <div dir="rtl" style={{ position: "absolute", left: 0, right: 0, top, display: "flex", flexDirection: "column", alignItems: "center", gap: 14 }}>
       <div style={{ position: "relative", overflow: "hidden", padding: "0 20px" }}>
-        <div style={{ fontFamily: KUFI, fontWeight: 700, fontSize: 150, color: "#fff", lineHeight: 1.15, opacity: Math.min(1, p * 1.3), letterSpacing: 2, filter: `blur(${(1 - Math.min(1, p)) * 10}px)`, textShadow: "0 6px 40px rgba(0,0,0,0.8)" }}>حماة الوطن</div>
+        <div style={{ fontFamily: KUFI, fontWeight: 800, fontSize: 158, color: "#fff", lineHeight: 1.15, opacity: Math.min(1, p * 1.3), letterSpacing: 2, filter: `blur(${(1 - Math.min(1, p)) * 10}px)`, textShadow: "0 6px 40px rgba(0,0,0,0.8)" }}>حماة الوطن</div>
         <div style={{ position: "absolute", top: 0, bottom: 0, left: `${sweep}%`, width: "20%", background: "linear-gradient(90deg, transparent, rgba(255,235,190,0.55), transparent)", mixBlendMode: "overlay" }} />
       </div>
       <div style={{ width: 360 * q, height: 3, background: GOLD }} />
@@ -181,7 +186,7 @@ const F1: React.FC = () => {
   const titleAt = last.end + 8;
   const black = interpolate(f, [0, 24], [1, 0], clamp);
   return (
-    <Frame id="F1-Open" subsTop={1500}>
+    <Frame id="F1-Open" subsTop={1500} subsUntil={titleAt}>
       <Letterbox src="forces/salute-flag.jpg" W={1313} H={860} zoom={[1.0, 1.08]} top={420} />
       <Title at={titleAt} top={1180} />
       <AbsoluteFill style={{ background: "#000", opacity: black }} />
@@ -334,7 +339,7 @@ const F7: React.FC = () => {
   const titleAt = last.end + 6;
   const out = interpolate(f, [durationInFrames - 24, durationInFrames], [0, 1], clamp);
   return (
-    <Frame id="F7-Close" subsTop={1500} leak="rgba(255,210,130,0.22)">
+    <Frame id="F7-Close" subsTop={1500} subsUntil={titleAt} leak="rgba(255,210,130,0.22)">
       <Letterbox src="forces/salute-flag.jpg" W={1313} H={860} zoom={[1.08, 1.0]} top={420} />
       <AbsoluteFill style={{ background: "linear-gradient(180deg, transparent 75%, #000 100%)", opacity: ease(f, titleAt - 4, titleAt + 6) }} />
       <Title at={titleAt} top={1180} />
