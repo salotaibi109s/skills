@@ -38,7 +38,7 @@ const SHOTS: Shot[] = [
   { id: "S15", from: 894, to: 990 },
   { id: "S13", from: 990, to: 1050 },
   { id: "P1", from: 1050, to: 1158, fadeIn: 8 },
-  { id: "P2", from: 1158, to: 1248 },
+  { id: "P2", from: 1158, to: 1248, fadeIn: 8 },
   { id: "P3", from: 1248, to: 1350, fadeIn: 10 },
   { id: "S19", from: 1350, to: 1434, fadeIn: 14 },
   { id: "S20", from: 1434, to: 1560, fadeIn: 8 },
@@ -235,11 +235,11 @@ export const Shadwi: React.FC = () => {
       <Sfx name="beans" at={512} />
       <Sfx name="roaster" at={578} gain={0.9} />
       <Sfx name="grind" at={736} />
-      <Sfx name="espresso" at={800} />
+      <Sfx name="beans" at={800} gain={0.8} />
       <Sfx name="pour" at={896} />
       <Sfx name="pour" at={992} gain={0.7} />
-      <Sfx name="cup" at={1172} />
-      <Sfx name="steps" at={1262} gain={0.6} />
+      <Sfx name="pour" at={1160} gain={0.5} />
+      <Sfx name="wind" at={1250} gain={0.6} />
       <Sfx name="steps" at={1440} gain={0.8} />
       <Sfx name="impact" at={1494} gain={1.3} />
       <Sfx name="shimmer" at={1532} />
