@@ -1,0 +1,129 @@
+{
+  "audioDir": "shadwi",
+  "totalFrames": 1800,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.6,
+      "similarity_boost": 0.82,
+      "style": 0.3,
+      "use_speaker_boost": true,
+      "speed": 0.9
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "V1",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.1,
+      "tts": "في شدا… الفجر له طقوس."
+    },
+    {
+      "id": "V2",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.1,
+      "tts": "الضباب يصحى على الصخر… والفهد يمشي بهدوء، يعرف طريقه."
+    },
+    {
+      "id": "V3",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.1,
+      "tts": "وإحنا مثله… نعرف قهوتنا من أول حبّة."
+    },
+    {
+      "id": "V4",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.1,
+      "tts": "تحميص على مهل… وصبّة ما تستعجل."
+    },
+    {
+      "id": "V5",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.1,
+      "tts": "وبعدها… لحظتك."
+    },
+    {
+      "id": "V6",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.1,
+      "tts": "شَدَوي… سرعة الفهد، وهدوء الفنجان."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "wind",
+      "seconds": 10,
+      "prompt": "Cold mountain wind at dawn over rocky peaks, deep and airy, distant, no birds, cinematic ambience"
+    },
+    {
+      "id": "steps",
+      "seconds": 4,
+      "prompt": "Soft padded footsteps of a large cat walking slowly on gravel and dry rock, close and subtle"
+    },
+    {
+      "id": "beans",
+      "seconds": 3,
+      "prompt": "Roasted coffee beans falling and pouring into a metal tray, crisp and rich, close up"
+    },
+    {
+      "id": "roaster",
+      "seconds": 5,
+      "prompt": "Coffee roaster drum rotating with beans tumbling inside, warm low rumble, crackling first crack pops"
+    },
+    {
+      "id": "grind",
+      "seconds": 3,
+      "prompt": "Burr coffee grinder grinding beans, short burst, close and clean"
+    },
+    {
+      "id": "espresso",
+      "seconds": 4,
+      "prompt": "Espresso machine pump hum and thick espresso pouring into a ceramic cup, close up, realistic"
+    },
+    {
+      "id": "pour",
+      "seconds": 4,
+      "prompt": "Slow pour of hot coffee from a glass server into a ceramic cup, gentle liquid sound"
+    },
+    {
+      "id": "cup",
+      "seconds": 1.5,
+      "prompt": "Ceramic coffee cup placed gently on a saucer on a wooden table, single soft clink"
+    },
+    {
+      "id": "sip",
+      "seconds": 2,
+      "prompt": "A single quiet sip of hot coffee followed by a soft satisfied exhale, close and intimate"
+    },
+    {
+      "id": "whoosh",
+      "seconds": 1.2,
+      "prompt": "Soft deep cinematic whoosh, airy, elegant transition"
+    },
+    {
+      "id": "impact",
+      "seconds": 3,
+      "prompt": "Deep warm cinematic impact with soft timpani and long reverb tail, elegant, not aggressive"
+    },
+    {
+      "id": "shimmer",
+      "seconds": 2.5,
+      "prompt": "Subtle golden shimmer sparkle with soft bells, elegant luxury reveal"
+    }
+  ],
+  "music": [
+    {
+      "id": "score",
+      "prompt": "Original cinematic score for a luxury Saudi specialty coffee commercial, 76 BPM. 0-3s near silence with a soft low drone. 3-15s warm sustained strings with distant oud notes and gentle frame drum, misty mountain dawn mood. 15-35s rhythm builds with soft hand percussion and plucked oud, elegant and confident. 35-43s warmer and intimate. 43-47s drops almost to silence. 47-52s strong emotional swell with strings and a deep drum hit at 51 seconds. 52-60s noble resolution and soft ending exactly at 60 seconds. No vocals.",
+      "lengthMs": 60000
+    }
+  ]
+}

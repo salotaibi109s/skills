@@ -1,0 +1,100 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.6,
+      "similarity_boost": 0.82,
+      "style": 0.3,
+      "use_speaker_boost": true,
+      "speed": 0.9
+    },
+    "generated_at": "2026-11-21T13:03:22.715Z"
+  },
+  "sfx": [
+    {
+      "id": "wind",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cold mountain wind at dawn over rocky peaks, deep and airy, distant, no birds, cinematic ambience",
+      "seconds": 10
+    },
+    {
+      "id": "steps",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft padded footsteps of a large cat walking slowly on gravel and dry rock, close and subtle",
+      "seconds": 4
+    },
+    {
+      "id": "beans",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Roasted coffee beans falling and pouring into a metal tray, crisp and rich, close up",
+      "seconds": 3
+    },
+    {
+      "id": "roaster",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Coffee roaster drum rotating with beans tumbling inside, warm low rumble, crackling first crack pops",
+      "seconds": 5
+    },
+    {
+      "id": "grind",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Burr coffee grinder grinding beans, short burst, close and clean",
+      "seconds": 3
+    },
+    {
+      "id": "espresso",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Espresso machine pump hum and thick espresso pouring into a ceramic cup, close up, realistic",
+      "seconds": 4
+    },
+    {
+      "id": "pour",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Slow pour of hot coffee from a glass server into a ceramic cup, gentle liquid sound",
+      "seconds": 4
+    },
+    {
+      "id": "cup",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Ceramic coffee cup placed gently on a saucer on a wooden table, single soft clink",
+      "seconds": 1.5
+    },
+    {
+      "id": "sip",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "A single quiet sip of hot coffee followed by a soft satisfied exhale, close and intimate",
+      "seconds": 2
+    },
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft deep cinematic whoosh, airy, elegant transition",
+      "seconds": 1.2
+    },
+    {
+      "id": "impact",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Deep warm cinematic impact with soft timpani and long reverb tail, elegant, not aggressive",
+      "seconds": 3
+    },
+    {
+      "id": "shimmer",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Subtle golden shimmer sparkle with soft bells, elegant luxury reveal",
+      "seconds": 2.5
+    }
+  ],
+  "music": [
+    {
+      "id": "score",
+      "provider": "ElevenLabs Music",
+      "prompt": "Original cinematic score for a luxury Saudi specialty coffee commercial, 76 BPM. 0-3s near silence with a soft low drone. 3-15s warm sustained strings with distant oud notes and gentle frame drum, misty mountain dawn mood. 15-35s rhythm builds with soft hand percussion and plucked oud, elegant and confident. 35-43s warmer and intimate. 43-47s drops almost to silence. 47-52s strong emotional swell with strings and a deep drum hit at 51 seconds. 52-60s noble resolution and soft ending exactly at 60 seconds. No vocals.",
+      "length_ms": 60000,
+      "instrumental": true,
+      "generated_at": "2026-11-21T13:06:25.697Z"
+    }
+  ]
+}
