@@ -1,0 +1,157 @@
+{
+  "audioDir": "kids",
+  "totalFrames": 1800,
+  "tailSeconds": 0.2,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.55,
+      "similarity_boost": 0.8,
+      "style": 0.35,
+      "use_speaker_boost": true,
+      "speed": 1.07
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "K0-Hook",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.15,
+      "transitionFrames": 8,
+      "tts": "تبي تحمي نفسية عيالك؟ تسع خطوات بسيطة."
+    },
+    {
+      "id": "K1-Talk",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.15,
+      "transitionFrames": 8,
+      "tts": "عشرين دقيقة كل يوم، سولف معهم كأنهم أصحابك… بدون نصايح."
+    },
+    {
+      "id": "K2-Love",
+      "nominalSeconds": 4.2,
+      "leadSeconds": 0.15,
+      "transitionFrames": 8,
+      "tts": "قل لهم إنك تحبهم… من خمس لعشر مرات باليوم."
+    },
+    {
+      "id": "K3-Praise",
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.15,
+      "transitionFrames": 8,
+      "tts": "امدح تصرفاتهم الحلوة… خمس مرات باليوم."
+    },
+    {
+      "id": "K4-Looks",
+      "nominalSeconds": 3.8,
+      "leadSeconds": 0.15,
+      "transitionFrames": 8,
+      "tts": "وامدح شكلهم: ابتسامته، شعره، عيونه."
+    },
+    {
+      "id": "K5-Out",
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.15,
+      "transitionFrames": 8,
+      "tts": "مرتين بالأسبوع، اطلع معه ولو خمس دقايق."
+    },
+    {
+      "id": "K6-Night",
+      "nominalSeconds": 5.6,
+      "leadSeconds": 0.15,
+      "transitionFrames": 8,
+      "tts": "قبل النوم، ثلاث دقايق تثبّت فيها القيم: فرحت باللي سويته اليوم."
+    },
+    {
+      "id": "K7-Dinner",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.15,
+      "transitionFrames": 8,
+      "tts": "مرتين بالأسبوع، عشا عائلي فيه سوالف."
+    },
+    {
+      "id": "K8-Listen",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.15,
+      "transitionFrames": 8,
+      "tts": "كل يوم دقيقة لثلاث، اسمعه بس… لا تناقش، ولا تقاطع."
+    },
+    {
+      "id": "K9-Touch",
+      "nominalSeconds": 8.5,
+      "leadSeconds": 0.15,
+      "transitionFrames": 8,
+      "tts": "وخمس لمسات: راسه فخر، جبينه تهدئة، خدوده شوق، يده حب… وإذا زعل، امسح على صدره."
+    },
+    {
+      "id": "K10-Prophet",
+      "nominalSeconds": 5.6,
+      "leadSeconds": 0.15,
+      "transitionFrames": 8,
+      "tts": "وكان النبي صلى الله عليه وسلم يقبّل فاطمة، ويحضنها قدّام الصحابة."
+    },
+    {
+      "id": "K11-End",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.15,
+      "tts": "شاركها مع أحد يحتاجها.",
+      "minSeconds": 3.5
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.7,
+      "prompt": "Very soft airy whoosh transition, gentle and warm, short"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Soft gentle bubble pop, warm and quiet, short"
+    },
+    {
+      "id": "tick",
+      "seconds": 0.5,
+      "prompt": "Single soft wooden clock tick, clean"
+    },
+    {
+      "id": "chime",
+      "seconds": 1.5,
+      "prompt": "Warm soft glass chime, tender and calm, single note with gentle tail"
+    },
+    {
+      "id": "pencil",
+      "seconds": 0.6,
+      "prompt": "Quick pencil strike-through stroke on paper, crisp short scribble"
+    },
+    {
+      "id": "clap",
+      "seconds": 1.0,
+      "prompt": "A parent clapping gently three times, warm indoor, soft"
+    },
+    {
+      "id": "clink",
+      "seconds": 0.8,
+      "prompt": "Soft clink of a spoon on a ceramic plate, warm family dinner, short"
+    },
+    {
+      "id": "heart",
+      "seconds": 1.0,
+      "prompt": "Soft warm heartbeat thump twice, gentle and emotional"
+    }
+  ],
+  "music": [
+    {
+      "id": "piano",
+      "prompt": "Tender emotional solo piano with soft warm strings, 72 BPM, family love theme, calm and hopeful. Gentle from the start, slowly warmer, a soft emotional swell at 48 seconds and a quiet resolved ending exactly at 60 seconds. Minimal, intimate. No vocals, no drums.",
+      "lengthMs": 60000
+    }
+  ]
+}

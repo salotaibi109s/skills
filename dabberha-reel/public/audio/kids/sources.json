@@ -1,0 +1,76 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.55,
+      "similarity_boost": 0.8,
+      "style": 0.35,
+      "use_speaker_boost": true,
+      "speed": 1.07
+    },
+    "generated_at": "2026-11-21T15:54:15.754Z"
+  },
+  "sfx": [
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Very soft airy whoosh transition, gentle and warm, short",
+      "seconds": 0.7
+    },
+    {
+      "id": "pop",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft gentle bubble pop, warm and quiet, short",
+      "seconds": 0.5
+    },
+    {
+      "id": "tick",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Single soft wooden clock tick, clean",
+      "seconds": 0.5
+    },
+    {
+      "id": "chime",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Warm soft glass chime, tender and calm, single note with gentle tail",
+      "seconds": 1.5
+    },
+    {
+      "id": "pencil",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Quick pencil strike-through stroke on paper, crisp short scribble",
+      "seconds": 0.6
+    },
+    {
+      "id": "clap",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "A parent clapping gently three times, warm indoor, soft",
+      "seconds": 1
+    },
+    {
+      "id": "clink",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft clink of a spoon on a ceramic plate, warm family dinner, short",
+      "seconds": 0.8
+    },
+    {
+      "id": "heart",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft warm heartbeat thump twice, gentle and emotional",
+      "seconds": 1
+    }
+  ],
+  "music": [
+    {
+      "id": "piano",
+      "provider": "ElevenLabs Music",
+      "prompt": "Tender emotional solo piano with soft warm strings, 72 BPM, family love theme, calm and hopeful. Gentle from the start, slowly warmer, a soft emotional swell at 48 seconds and a quiet resolved ending exactly at 60 seconds. Minimal, intimate. No vocals, no drums.",
+      "length_ms": 60000,
+      "instrumental": true,
+      "generated_at": "2026-11-21T15:54:47.406Z"
+    }
+  ]
+}
