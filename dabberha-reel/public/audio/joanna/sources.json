@@ -1,0 +1,130 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-22T21:39:17.009Z"
+  },
+  "sfx": [
+    {
+      "id": "birds",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Morning birds chirping outside a school, distant children chatter, bright and cheerful ambience",
+      "seconds": 4
+    },
+    {
+      "id": "bell",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cheerful school bell ringing briefly, cartoon style",
+      "seconds": 2
+    },
+    {
+      "id": "steps",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Light bouncy cartoon footsteps, playful skipping",
+      "seconds": 2
+    },
+    {
+      "id": "scratch",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Comedic record scratch stop, cartoon",
+      "seconds": 1
+    },
+    {
+      "id": "boing",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cartoon boing spring sound for a shocked reaction",
+      "seconds": 0.8
+    },
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Quick playful cartoon whoosh transition",
+      "seconds": 0.6
+    },
+    {
+      "id": "pop",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cute cartoon pop, bubbly and short",
+      "seconds": 0.5
+    },
+    {
+      "id": "rummage",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Frantic rummaging through a school backpack, objects rattling, cartoon comedy",
+      "seconds": 3
+    },
+    {
+      "id": "squeak",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Squeaky rubber toy squeak, cartoon",
+      "seconds": 0.6
+    },
+    {
+      "id": "tiptoe",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Suspenseful cartoon pizzicato tiptoe sting, slow and comedic",
+      "seconds": 3
+    },
+    {
+      "id": "creak",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Slow creaky plastic lunchbox lid opening, comedic suspense",
+      "seconds": 1.5
+    },
+    {
+      "id": "tada",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cartoon ta-da fanfare reveal with sparkle, short and funny",
+      "seconds": 1.5
+    },
+    {
+      "id": "squish",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Gooey cheese squish, cartoon gross-out sound, short",
+      "seconds": 0.8
+    },
+    {
+      "id": "laugh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Classroom of people laughing warmly together, cheerful light laughter, cartoon sitcom",
+      "seconds": 3
+    },
+    {
+      "id": "sparkle",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Magical twinkle sparkle chime, bright cartoon",
+      "seconds": 1.2
+    },
+    {
+      "id": "swoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Bouncy cartoon title swoosh with a playful pop at the end",
+      "seconds": 1
+    },
+    {
+      "id": "giggle",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Mischievous cartoon character giggle, playful and cute, sitcom style",
+      "seconds": 2
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "provider": "ElevenLabs Music",
+      "prompt": "Playful family cartoon score for a kids animated series, 120 BPM, pizzicato strings, glockenspiel, ukulele, light woodwinds and soft hand claps. 0-10s bright happy school morning. 10-25s busy comedic panic with quick plucks. 25-33s tiptoe suspense, very sparse. 33-40s funny reveal with a bright playful burst. 40-52s warm and cheerful. 52-60s bouncy theme ending with a big cheerful button exactly at 60 seconds. No vocals.",
+      "length_ms": 60000,
+      "instrumental": true,
+      "generated_at": "2026-11-22T21:39:05.318Z"
+    }
+  ]
+}

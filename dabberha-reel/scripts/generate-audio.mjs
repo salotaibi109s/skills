@@ -173,12 +173,12 @@ function alignmentToWords(al) {
     .filter((w) => w.text.length > 0);
 }
 
-async function tts(voiceId, modelId, text) {
+async function tts(voiceId, modelId, text, settings) {
   const body = {
     text,
     model_id: modelId,
     language_code: "ar",
-    voice_settings: script.voice.settings,
+    voice_settings: settings ?? script.voice.settings,
   };
   return api("POST", `/v1/text-to-speech/${voiceId}/with-timestamps?output_format=mp3_44100_128`, body);
 }
@@ -193,13 +193,13 @@ async function generateVoiceover() {
     if (only && !only.includes(scene.id)) continue;
     let res;
     try {
-      res = await tts(scene.voiceId ?? voiceId, modelId, scene.tts);
+      res = await tts(scene.voiceId ?? voiceId, modelId, scene.tts, scene.settings);
     } catch (e) {
       const fallback = script.voice.preferredModels.find((m) => m !== modelId);
       if (!fallback) throw e;
       console.warn(`${modelId} failed (${e.message.slice(0, 120)}). Falling back to ${fallback}.`);
       modelId = fallback;
-      res = await tts(scene.voiceId ?? voiceId, modelId, scene.tts);
+      res = await tts(scene.voiceId ?? voiceId, modelId, scene.tts, scene.settings);
     }
     const mp3 = out("vo", `${scene.id}.mp3`);
     writeFileSync(mp3, Buffer.from(res.audio_base64, "base64"));
