@@ -1,0 +1,76 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-22T22:11:12.899Z"
+  },
+  "sfx": [
+    {
+      "id": "freeze",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Comedic freeze frame hit, cartoon dun sting, short",
+      "seconds": 1
+    },
+    {
+      "id": "eraser",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Small rubber eraser falling in slow motion and bouncing on a classroom floor, cartoon boink boink",
+      "seconds": 2
+    },
+    {
+      "id": "papers",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Test papers being handed out and placed on school desks, paper shuffling, swishes",
+      "seconds": 2.5
+    },
+    {
+      "id": "clock",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Ticking classroom wall clock, steady tick tock, slightly comedic tension",
+      "seconds": 3
+    },
+    {
+      "id": "idea",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cartoon lightbulb idea ding, bright and funny",
+      "seconds": 1
+    },
+    {
+      "id": "count",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Tiny cute cartoon blip for counting, short",
+      "seconds": 0.5
+    },
+    {
+      "id": "snort",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Someone trying hard not to laugh, a stifled giggle snort through closed lips, sitcom comedy",
+      "seconds": 1.5
+    },
+    {
+      "id": "stamp",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Paper slapped confidently on a teacher desk, short and punchy",
+      "seconds": 0.6
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "provider": "ElevenLabs Music",
+      "prompt": "Playful family cartoon score for a kids animated series, 120 BPM, pizzicato strings, glockenspiel, ukulele, light woodwinds and soft hand claps, same cheerful theme feel as a school comedy. 0-12s confident bouncy morning that stops suddenly at 7 seconds then resumes. 12-27s light nervous plucks for a test. 27-43s thinking music, sparse with a ticking feel, a bright ding at 35s. 43-55s cheerful and proud. 55-60s bouncy theme ending with a big cheerful button exactly at 60 seconds. No vocals.",
+      "length_ms": 60000,
+      "instrumental": true,
+      "generated_at": "2026-11-22T22:11:36.616Z"
+    }
+  ]
+}

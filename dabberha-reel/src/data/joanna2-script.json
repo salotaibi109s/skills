@@ -1,0 +1,303 @@
+{
+  "audioDir": "joanna2",
+  "totalFrames": 1800,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "M01-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 4.0,
+      "leadSeconds": 1.0,
+      "tts": "أنا اليوم مستعدّة لأي شي! حتى لو جابوا لنا أصعب اختبار بالعالم!"
+    },
+    {
+      "id": "M02-T",
+      "speaker": "T",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.6,
+      "tts": "صباح الخير يا بنات، اليوم عندنا اختبار رياضيات مفاجئ!"
+    },
+    {
+      "id": "M03-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 1.6,
+      "tts": "مفاجئ؟! حتى أنا ما فاجأت نفسي إني مستعدّة!"
+    },
+    {
+      "id": "M04-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.4,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 5.6,
+      "leadSeconds": 1.2,
+      "tts": "إذا معك خمس تفاحات، وأعطيت صديقتك تفاحتين… كم يتبقّى؟"
+    },
+    {
+      "id": "M05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 6.4,
+      "leadSeconds": 2.2,
+      "tts": "طيب… لو عطيتها وحدة بس، ينفع؟"
+    },
+    {
+      "id": "M06-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.4,
+      "tts": "جاوبي السؤال يا جوانا!"
+    },
+    {
+      "id": "M07-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 6.6,
+      "leadSeconds": 2.6,
+      "tts": "أبلة! عندي سؤال مهم!"
+    },
+    {
+      "id": "M08-T",
+      "speaker": "T",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 1.8,
+      "leadSeconds": 0.4,
+      "tts": "تفضّلي يا جوانا."
+    },
+    {
+      "id": "M09-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 7.4,
+      "leadSeconds": 0.3,
+      "tts": "التفاحات اللي أكلتها قبل الاختبار… نحسبها ولا لا؟"
+    },
+    {
+      "id": "M10-T",
+      "speaker": "T",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 1.4,
+      "tts": "خلّصتي بسرعة يا جوانا؟"
+    },
+    {
+      "id": "M11-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 0.4,
+      "tts": "أكيد يا أبلة! الرياضيات سهلة… بس المشكلة إنها تسأل كثير!"
+    },
+    {
+      "id": "M12-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "nominalSeconds": 10.0,
+      "leadSeconds": 1.0,
+      "tts": "المهم… إذا نجحت، أبي التفاحات كلها مكافأة!"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.6,
+      "prompt": "Quick playful cartoon whoosh transition"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Cute cartoon pop, bubbly and short"
+    },
+    {
+      "id": "boing",
+      "seconds": 0.8,
+      "prompt": "Cartoon boing spring sound for a shocked reaction"
+    },
+    {
+      "id": "scratch",
+      "seconds": 1,
+      "prompt": "Comedic record scratch stop, cartoon"
+    },
+    {
+      "id": "steps",
+      "seconds": 2,
+      "prompt": "Light bouncy cartoon footsteps, playful skipping"
+    },
+    {
+      "id": "tiptoe",
+      "seconds": 3,
+      "prompt": "Suspenseful cartoon pizzicato tiptoe sting, slow and comedic"
+    },
+    {
+      "id": "laugh",
+      "seconds": 3,
+      "prompt": "Classroom of people laughing warmly together, cheerful light laughter, cartoon sitcom"
+    },
+    {
+      "id": "giggle",
+      "seconds": 2,
+      "prompt": "Mischievous cartoon character giggle, playful and cute, sitcom style"
+    },
+    {
+      "id": "swoosh",
+      "seconds": 1,
+      "prompt": "Bouncy cartoon title swoosh with a playful pop at the end"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1.2,
+      "prompt": "Magical twinkle sparkle chime, bright cartoon"
+    },
+    {
+      "id": "freeze",
+      "seconds": 1.0,
+      "prompt": "Comedic freeze frame hit, cartoon dun sting, short"
+    },
+    {
+      "id": "eraser",
+      "seconds": 2.0,
+      "prompt": "Small rubber eraser falling in slow motion and bouncing on a classroom floor, cartoon boink boink"
+    },
+    {
+      "id": "papers",
+      "seconds": 2.5,
+      "prompt": "Test papers being handed out and placed on school desks, paper shuffling, swishes"
+    },
+    {
+      "id": "clock",
+      "seconds": 3.0,
+      "prompt": "Ticking classroom wall clock, steady tick tock, slightly comedic tension"
+    },
+    {
+      "id": "idea",
+      "seconds": 1.0,
+      "prompt": "Cartoon lightbulb idea ding, bright and funny"
+    },
+    {
+      "id": "count",
+      "seconds": 0.5,
+      "prompt": "Tiny cute cartoon blip for counting, short"
+    },
+    {
+      "id": "snort",
+      "seconds": 1.5,
+      "prompt": "Someone trying hard not to laugh, a stifled giggle snort through closed lips, sitcom comedy"
+    },
+    {
+      "id": "stamp",
+      "seconds": 0.6,
+      "prompt": "Paper slapped confidently on a teacher desk, short and punchy"
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "Playful family cartoon score for a kids animated series, 120 BPM, pizzicato strings, glockenspiel, ukulele, light woodwinds and soft hand claps, same cheerful theme feel as a school comedy. 0-12s confident bouncy morning that stops suddenly at 7 seconds then resumes. 12-27s light nervous plucks for a test. 27-43s thinking music, sparse with a ticking feel, a bright ding at 35s. 43-55s cheerful and proud. 55-60s bouncy theme ending with a big cheerful button exactly at 60 seconds. No vocals.",
+      "lengthMs": 60000
+    }
+  ]
+}

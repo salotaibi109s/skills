@@ -310,10 +310,10 @@ export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = 
   );
 };
 
-export type TeacherProps = { x: number; y: number; s: number; expr?: Expr; talk?: number; blink?: number; look?: Pt; tilt?: number; armL?: Arm; armR?: Arm; walk?: number; book?: boolean };
+export type TeacherProps = { x: number; y: number; s: number; expr?: Expr; talk?: number; blink?: number; look?: Pt; tilt?: number; armL?: Arm; armR?: Arm; walk?: number; book?: boolean; armsFront?: boolean; paper?: boolean };
 
 /** The teacher: modest long dress and hijab, warm smile. ~1350 units tall. */
-export const Teacher: React.FC<TeacherProps> = ({ x, y, s, expr = "smile", talk = 0, blink = 0, look, tilt = 0, armL = {}, armR = {}, walk, book }) => {
+export const Teacher: React.FC<TeacherProps> = ({ x, y, s, expr = "smile", talk = 0, blink = 0, look, tilt = 0, armL = {}, armR = {}, walk, book, armsFront, paper }) => {
   const bob = walk !== undefined ? -Math.abs(Math.sin(walk)) * 14 : 0;
   const hr = 150;
   const head: Pt = [0, -1150 + bob];
@@ -336,8 +336,9 @@ export const Teacher: React.FC<TeacherProps> = ({ x, y, s, expr = "smile", talk 
       <path d={`M${-150} ${-985 + bob} Q0 ${-1010 + bob} ${150} ${-985 + bob} L${230} ${-20} Q0 ${10} ${-230} ${-20}Z`} fill="url(#abaya)" />
       <path d={`M0 ${-960 + bob} L0 ${-40}`} stroke="#3A3E66" strokeWidth={5} opacity={0.6} />
       {book && <rect x={-10} y={-760 + bob} width={170} height={210} rx={14} fill="#F7B733" stroke="#D18F10" strokeWidth={6} transform={`rotate(-8 70 ${-650 + bob})`} />}
-      {armDraw(aL, "l")}
-      {armDraw(aR, "r")}
+      {paper && <rect x={-200} y={-760 + bob} width={190} height={240} rx={8} fill="#fff" stroke="#C9D2DC" strokeWidth={5} transform={`rotate(10 -100 ${-640 + bob})`} />}
+      {!armsFront && armDraw(aL, "l")}
+      {!armsFront && armDraw(aR, "r")}
       <g transform={`rotate(${tilt} ${head[0]} ${head[1] + hr})`}>
         {/* hijab back + drape */}
         <path d={`M${-hr * 1.32} ${head[1] + 10} Q${-hr * 1.35} ${head[1] - hr * 1.45} 0 ${head[1] - hr * 1.42} Q${hr * 1.35} ${head[1] - hr * 1.45} ${hr * 1.32} ${head[1] + 10} L${hr * 1.55} ${head[1] + hr * 1.75} Q0 ${head[1] + hr * 2.05} ${-hr * 1.55} ${head[1] + hr * 1.75}Z`} fill="url(#hijab)" />
@@ -350,6 +351,8 @@ export const Teacher: React.FC<TeacherProps> = ({ x, y, s, expr = "smile", talk 
         <path d={`M${-hr * 0.98} ${head[1] + hr * 0.85} Q0 ${head[1] + hr * 1.45} ${hr * 0.98} ${head[1] + hr * 0.85}`} stroke="#C8AE8C" strokeWidth={46} fill="none" />
         <path d={`M${-hr * 0.7} ${head[1] - hr * 1.15} Q0 ${head[1] - hr * 1.32} ${hr * 0.7} ${head[1] - hr * 1.15}`} stroke="#fff" strokeOpacity={0.35} strokeWidth={14} fill="none" strokeLinecap="round" />
       </g>
+      {armsFront && armDraw(aL, "l")}
+      {armsFront && armDraw(aR, "r")}
     </g>
   );
 };

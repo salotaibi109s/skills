@@ -9,7 +9,7 @@ import { findScene, type TimelineData } from "../lib/timing";
 import { db } from "../theme";
 import { Backpack, CharDefs, Crayons, Kid, Lunchbox, Notebook, Sandwich, Teacher, Teddy } from "./chars";
 
-const FONT = loadBaloo("normal", { weights: ["500", "700", "800"], subsets: ["arabic"] }).fontFamily;
+export const FONT = loadBaloo("normal", { weights: ["500", "700", "800"], subsets: ["arabic"] }).fontFamily;
 const T = data as TimelineData;
 const MOUTH = mouthData as Record<string, number[]>;
 const { Sfx } = createSound(T, "audio/joanna", {
@@ -50,20 +50,20 @@ const talkOf = (who: string, f: number) => {
   }
   return 0;
 };
-const blinkAt = (f: number, seed: number) => {
+export const blinkAt = (f: number, seed: number) => {
   const p = (f + seed * 37) % 104;
   return p < 3 ? [0.5, 1, 0.5][p] : 0;
 };
-const ease = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => t * t * (3 - 2 * t) });
+export const ease = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => t * t * (3 - 2 * t) });
 
 /** Camera: zoom around a focus point (world coords), with optional handheld drift. */
-const Cam: React.FC<{ fx: number; fy: number; z: number; children: React.ReactNode; blur?: number }> = ({ fx, fy, z, children }) => {
+export const Cam: React.FC<{ fx: number; fy: number; z: number; children: React.ReactNode; blur?: number }> = ({ fx, fy, z, children }) => {
   const tx = 540 - fx * z;
   const ty = 960 - fy * z;
   return <g transform={`translate(${tx} ${ty}) scale(${z})`}>{children}</g>;
 };
 
-const Svg: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+export const Svg: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <svg viewBox="0 0 1080 1920" width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
     <CharDefs />
     {children}
@@ -72,7 +72,7 @@ const Svg: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 
 /* ---------------------------------------------------------------- sets */
 
-const SchoolYard: React.FC<{ f: number }> = ({ f }) => (
+export const SchoolYard: React.FC<{ f: number }> = ({ f }) => (
   <g>
     <defs>
       <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
@@ -143,7 +143,7 @@ const SchoolYard: React.FC<{ f: number }> = ({ f }) => (
   </g>
 );
 
-const Classroom: React.FC<{ f: number; board?: boolean }> = ({ f }) => (
+export const Classroom: React.FC<{ f: number; board?: string }> = ({ f, board = "١ + ٢ = ٣" }) => (
   <g>
     <defs>
       <linearGradient id="cwall" x1="0" x2="0" y1="0" y2="1">
@@ -168,8 +168,8 @@ const Classroom: React.FC<{ f: number; board?: boolean }> = ({ f }) => (
     <rect x={-1000} y={1080} width={3080} height={30} fill="#C99A68" />
     {/* whiteboard */}
     <rect x={-80} y={80} width={1240} height={640} rx={20} fill="#FDFDFD" stroke="#9AA6B2" strokeWidth={18} />
-    <text x={540} y={340} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={150} fill="#2F6FD1" direction="rtl">
-      ١ + ٢ = ٣
+    <text x={540} y={340} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={board.length > 12 ? 110 : 150} fill="#2F6FD1" direction="rtl">
+      {board}
     </text>
     <g transform="translate(160 560)">
       <circle cx={0} cy={0} r={60} fill="#FF6B6B" />
@@ -193,7 +193,7 @@ const Classroom: React.FC<{ f: number; board?: boolean }> = ({ f }) => (
   </g>
 );
 
-const Desk: React.FC<{ x: number; y: number; s: number }> = ({ x, y, s }) => (
+export const Desk: React.FC<{ x: number; y: number; s: number }> = ({ x, y, s }) => (
   <g transform={`translate(${x} ${y}) scale(${s})`}>
     <rect x={-300} y={-40} width={600} height={60} rx={14} fill="url(#wood)" />
     <rect x={-300} y={-40} width={600} height={14} rx={7} fill="#F3C993" />
@@ -204,20 +204,20 @@ const Desk: React.FC<{ x: number; y: number; s: number }> = ({ x, y, s }) => (
 
 /* ---------------------------------------------------------------- helpers */
 
-const Shot: React.FC<{ from: number; to: number; children: (f: number, l: number) => React.ReactNode }> = ({ from, to, children }) => {
+export const Shot: React.FC<{ from: number; to: number; children: (f: number, l: number) => React.ReactNode }> = ({ from, to, children }) => {
   return (
     <Sequence from={from} durationInFrames={to - from} layout="none">
       <ShotInner from={from} render={children} />
     </Sequence>
   );
 };
-const ShotInner: React.FC<{ from: number; render: (f: number, l: number) => React.ReactNode }> = ({ from, render }) => {
+export const ShotInner: React.FC<{ from: number; render: (f: number, l: number) => React.ReactNode }> = ({ from, render }) => {
   const l = useCurrentFrame();
   return <AbsoluteFill>{render(from + l, l)}</AbsoluteFill>;
 };
 
 /** Background classmates seated behind desks. */
-const Classmates: React.FC<{ f: number; laugh?: number; y?: number }> = ({ f, laugh = 0, y = 1240 }) => {
+export const Classmates: React.FC<{ f: number; laugh?: number; y?: number }> = ({ f, laugh = 0, y = 1240 }) => {
   const kids = [
     { x: -260, hair: "#2A1A12", seed: 1 },
     { x: 140, hair: "#5A3A22", seed: 2 },
@@ -239,7 +239,7 @@ const Classmates: React.FC<{ f: number; laugh?: number; y?: number }> = ({ f, la
   );
 };
 
-const Flash: React.FC<{ l: number; len?: number }> = ({ l, len = 6 }) => <AbsoluteFill style={{ background: "#fff", opacity: interpolate(l, [0, len], [0.7, 0], { extrapolateRight: "clamp" }), pointerEvents: "none" }} />;
+export const Flash: React.FC<{ l: number; len?: number }> = ({ l, len = 6 }) => <AbsoluteFill style={{ background: "#fff", opacity: interpolate(l, [0, len], [0.7, 0], { extrapolateRight: "clamp" }), pointerEvents: "none" }} />;
 
 /* ---------------------------------------------------------------- scenes */
 

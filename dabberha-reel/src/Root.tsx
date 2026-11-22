@@ -67,6 +67,7 @@ import { GtaGuide, gTimeline } from "./gta/GtaGuide";
 import { Shadwi } from "./shadwi/Shadwi";
 import { Kids } from "./kids/Kids";
 import { Joanna } from "./joanna/Joanna";
+import { JoannaEp2 } from "./joanna/Ep2";
 import { yTimeline as y2Timeline } from "./yt2/base";
 import { yTimeline } from "./yt/base";
 import { pTimeline } from "./prompts/base";
@@ -320,6 +321,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Shadwi" component={Shadwi} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Kids" component={Kids} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Joanna" component={Joanna} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Composition id="JoannaEp2" component={JoannaEp2} durationInFrames={1800} fps={30} width={1080} height={1920} />
     </>
   );
 };
