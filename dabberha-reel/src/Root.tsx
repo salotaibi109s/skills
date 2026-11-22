@@ -68,6 +68,7 @@ import { Shadwi } from "./shadwi/Shadwi";
 import { Kids } from "./kids/Kids";
 import { Joanna } from "./joanna/Joanna";
 import { JoannaEp2 } from "./joanna/Ep2";
+import { JoannaEp3 } from "./joanna/Ep3";
 import { yTimeline as y2Timeline } from "./yt2/base";
 import { yTimeline } from "./yt/base";
 import { pTimeline } from "./prompts/base";
@@ -322,6 +323,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Kids" component={Kids} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Joanna" component={Joanna} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="JoannaEp2" component={JoannaEp2} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Composition id="JoannaEp3" component={JoannaEp3} durationInFrames={1800} fps={30} width={1080} height={1920} />
     </>
   );
 };

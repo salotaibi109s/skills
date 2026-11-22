@@ -1,0 +1,76 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-22T22:28:22.168Z"
+  },
+  "sfx": [
+    {
+      "id": "bell",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cheerful school bell ringing for break time, bright and clear",
+      "seconds": 2
+    },
+    {
+      "id": "jump",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cartoon jump spring boing with a happy whoop sound effect, short",
+      "seconds": 0.8
+    },
+    {
+      "id": "lid",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Plastic lunchbox lid clicking open, cartoon pop",
+      "seconds": 1
+    },
+    {
+      "id": "sad",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Comedic sad trombone wah wah, short",
+      "seconds": 1.5
+    },
+    {
+      "id": "sneak",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Sneaky cartoon pizzicato tiptoe music sting, mischievous",
+      "seconds": 3
+    },
+    {
+      "id": "crunch",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Crisp crunchy bite of fresh broccoli, close and clear",
+      "seconds": 1
+    },
+    {
+      "id": "yum",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Magical delicious reveal chime with sparkles, cartoon wow",
+      "seconds": 1.5
+    },
+    {
+      "id": "munch",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Happy munching on crunchy vegetables and fruit, cartoon eating",
+      "seconds": 2.5
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "provider": "ElevenLabs Music",
+      "prompt": "Playful family cartoon score for a kids animated series, 120 BPM, pizzicato strings, glockenspiel, ukulele, light woodwinds and soft hand claps, same cheerful school comedy theme. 0-12s excited break time, jumpy and happy. 12-27s a comedic surprise drop at 15 seconds then puzzled plucks. 27-43s sneaky tiptoe mischief. 43-52s curious, then a warm sweet discovery. 52-60s bouncy happy theme ending with a cheerful button exactly at 60 seconds. No vocals.",
+      "length_ms": 60000,
+      "instrumental": true,
+      "generated_at": "2026-11-22T22:28:45.543Z"
+    }
+  ]
+}
