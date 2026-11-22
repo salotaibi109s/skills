@@ -1,0 +1,303 @@
+{
+  "audioDir": "joanna4",
+  "totalFrames": 2160,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "P01-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 13.0,
+      "leadSeconds": 9.4,
+      "tts": "يا ساتر! مين يعرفني؟ وإيش سرّ الفصل؟"
+    },
+    {
+      "id": "P02-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.6,
+      "tts": "جوانا! وش فيك؟ شكلك شفتي شبح!"
+    },
+    {
+      "id": "P03-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.3,
+      "tts": "لقيت رسالة غريبة… أحد يبغاني أروح المكتبة وقت الفسحة!"
+    },
+    {
+      "id": "P04-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.3,
+      "tts": "يمكن مقلب! لا تروحين لحالك!"
+    },
+    {
+      "id": "P05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.0,
+      "leadSeconds": 0.5,
+      "tts": "أنا جوانا المحقّقة… وما فيه لغز ما أقدر أحلّه!"
+    },
+    {
+      "id": "P06-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 7.4,
+      "leadSeconds": 5.6,
+      "tts": "جوانا… سمعتي الصوت؟"
+    },
+    {
+      "id": "P07-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.3,
+      "tts": "إيه… بس لا تخافين، خلّينا نشوف!"
+    },
+    {
+      "id": "P08-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 7.0,
+      "leadSeconds": 4.6,
+      "tts": "يااااه! الموضوع أكبر مما توقّعت!"
+    },
+    {
+      "id": "P09-T",
+      "speaker": "T",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 10.0,
+      "leadSeconds": 6.2,
+      "tts": "كنت أبغى أشوف إذا عندك روح المغامرة والقيادة!"
+    },
+    {
+      "id": "P10-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.2,
+        "similarity_boost": 0.8,
+        "style": 0.85,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.8,
+      "leadSeconds": 0.4,
+      "tts": "أنا قائدة الفريق؟! يااااااي!"
+    },
+    {
+      "id": "P11-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 14.0,
+      "leadSeconds": 5.2,
+      "tts": "لحظة… يعني فيه مهمّة ثانية؟!"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.6,
+      "prompt": "Quick playful cartoon whoosh transition"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Cute cartoon pop, bubbly and short"
+    },
+    {
+      "id": "boing",
+      "seconds": 0.8,
+      "prompt": "Cartoon boing spring sound for a shocked reaction"
+    },
+    {
+      "id": "steps",
+      "seconds": 2,
+      "prompt": "Light bouncy cartoon footsteps, playful skipping"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1.2,
+      "prompt": "Magical twinkle sparkle chime, bright cartoon"
+    },
+    {
+      "id": "tada",
+      "seconds": 1.5,
+      "prompt": "Cartoon ta-da fanfare reveal with sparkle, short and funny"
+    },
+    {
+      "id": "birds",
+      "seconds": 4,
+      "prompt": "Morning birds chirping outside a school, distant children chatter, bright and cheerful ambience"
+    },
+    {
+      "id": "bell",
+      "seconds": 2,
+      "prompt": "Cheerful school bell ringing for break time, bright and clear"
+    },
+    {
+      "id": "swoosh",
+      "seconds": 1,
+      "prompt": "Bouncy cartoon title swoosh with a playful pop at the end"
+    },
+    {
+      "id": "drawer",
+      "seconds": 1.0,
+      "prompt": "Wooden school desk drawer sliding open, soft and clear"
+    },
+    {
+      "id": "paper",
+      "seconds": 1.5,
+      "prompt": "Folded paper note being slowly unfolded, crisp paper rustle"
+    },
+    {
+      "id": "mystery",
+      "seconds": 2.5,
+      "prompt": "Mysterious magical sting, soft celesta and low strings, kids cartoon mystery"
+    },
+    {
+      "id": "gasp",
+      "seconds": 1.0,
+      "prompt": "Cartoon dramatic dun dun reveal sting, short and comedic"
+    },
+    {
+      "id": "book",
+      "seconds": 1.2,
+      "prompt": "Heavy hardcover book falling and thudding onto a wooden library floor, echo"
+    },
+    {
+      "id": "creepy",
+      "seconds": 3.0,
+      "prompt": "Quiet spooky library ambience, soft wind and a creaking shelf, child friendly"
+    },
+    {
+      "id": "tick",
+      "seconds": 3.0,
+      "prompt": "Large wall clock ticking loudly in a quiet library"
+    },
+    {
+      "id": "envelope",
+      "seconds": 1.2,
+      "prompt": "Envelope being pulled out and torn open gently, paper sound"
+    },
+    {
+      "id": "win",
+      "seconds": 2.0,
+      "prompt": "Joyful victory fanfare with sparkles and cheer, kids cartoon celebration"
+    },
+    {
+      "id": "yay",
+      "seconds": 1.5,
+      "prompt": "Confetti burst party popper with sparkles, cartoon celebration"
+    },
+    {
+      "id": "hug",
+      "seconds": 1.0,
+      "prompt": "Warm soft cartoon hug squeeze sound with a gentle sparkle"
+    },
+    {
+      "id": "suspense",
+      "seconds": 2.5,
+      "prompt": "Suspenseful cliffhanger sting, dramatic cartoon dun dun dunnn"
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "Family cartoon mystery adventure score for a kids animated series, warm orchestral with celesta, pizzicato and light percussion. 0-4s bright school morning. 4-13s soft mysterious celesta and low strings. 13-27s sneaky curious investigation with pizzicato, building to a heroic adventure motif at 23s. 27-45s quiet suspenseful library mystery with ticking feel. 45-60s magical reveal then joyful triumphant celebration. 60-66s warm happy. 66-72s sudden suspenseful cliffhanger sting ending exactly at 72 seconds. No vocals.",
+      "lengthMs": 72000
+    }
+  ]
+}

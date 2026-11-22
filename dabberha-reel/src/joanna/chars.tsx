@@ -100,7 +100,7 @@ export const CharDefs: React.FC = () => (
 );
 
 /** Face: eyes, brows, mouth, blush. Coordinates relative to the head centre; r is the head radius. */
-const Face: React.FC<{ r: number; expr: Expr; talk: number; blink: number; look?: Pt; glasses?: boolean; adult?: boolean }> = ({ r, expr, talk, blink, look = [0, 0], glasses, adult }) => {
+const Face: React.FC<{ r: number; expr: Expr; talk: number; blink: number; look?: Pt; glasses?: false | "round" | "pink"; adult?: boolean }> = ({ r, expr, talk, blink, look = [0, 0], glasses, adult }) => {
   const ex = r * 0.37;
   const ey = -r * 0.02;
   const erx = r * (adult ? 0.16 : 0.21) * (expr === "shock" ? 1.12 : 1);
@@ -189,7 +189,16 @@ const Face: React.FC<{ r: number; expr: Expr; talk: number; blink: number; look?
       {brow(1)}
       <path d={`M${-r * 0.03} ${r * 0.18} q${r * 0.04} ${r * 0.05} ${r * 0.08} 0`} stroke="#B9785A" strokeWidth={r * 0.03} fill="none" strokeLinecap="round" />
       {mouth}
-      {glasses && (
+      {glasses === "pink" && (
+        <g>
+          <rect x={-ex - erx * 1.45} y={ey - ery * 1.2} width={erx * 2.9} height={ery * 2.4} rx={erx * 0.9} fill="#fff" fillOpacity={0.12} stroke="#E0558F" strokeWidth={r * 0.045} />
+          <rect x={ex - erx * 1.45} y={ey - ery * 1.2} width={erx * 2.9} height={ery * 2.4} rx={erx * 0.9} fill="#fff" fillOpacity={0.12} stroke="#E0558F" strokeWidth={r * 0.045} />
+          <path d={`M${-ex + erx * 1.45} ${ey - ery * 0.3} Q0 ${ey - ery * 0.6} ${ex - erx * 1.45} ${ey - ery * 0.3}`} stroke="#E0558F" strokeWidth={r * 0.04} fill="none" />
+          <path d={`M${-ex - erx * 1.45} ${ey - ery * 0.5} L${-r * 0.98} ${ey - ery * 0.8} M${ex + erx * 1.45} ${ey - ery * 0.5} L${r * 0.98} ${ey - ery * 0.8}`} stroke="#E0558F" strokeWidth={r * 0.035} />
+          <path d={`M${-ex - erx * 0.9} ${ey - ery * 0.7} l${erx * 0.5} ${-ery * 0.25} M${ex - erx * 0.9} ${ey - ery * 0.7} l${erx * 0.5} ${-ery * 0.25}`} stroke="#fff" strokeOpacity={0.7} strokeWidth={r * 0.03} strokeLinecap="round" />
+        </g>
+      )}
+      {glasses === "round" && (
         <g fill="none" stroke="#2D2D3A" strokeWidth={r * 0.035}>
           <circle cx={-ex} cy={ey} r={erx * 1.35} />
           <circle cx={ex} cy={ey} r={erx * 1.35} />
@@ -219,10 +228,11 @@ export type KidProps = {
   sweat?: number;
   flip?: boolean;
   armsFront?: boolean;
+  glasses?: false | "round" | "pink";
 };
 
 /** A school girl (Joanna, her friend, or a background classmate). */
-export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = "smile", talk = 0, blink = 0, look, tilt = 0, armL = {}, armR = {}, walk, seated, bag, sweat = 0, flip, armsFront }) => {
+export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = "smile", talk = 0, blink = 0, look, tilt = 0, armL = {}, armR = {}, walk, seated, bag, sweat = 0, flip, armsFront, glasses }) => {
   const skin = who === "friend" ? "url(#skinF)" : who === "joanna" ? "url(#skinJ)" : "url(#skinJ)";
   const hairFill = hair ?? (who === "friend" ? "url(#hairF)" : "url(#hairJ)");
   const bob = walk !== undefined ? -Math.abs(Math.sin(walk)) * 18 : 0;
@@ -294,7 +304,7 @@ export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = 
         <ellipse cx={-hr * 0.98} cy={head[1] + 20} rx={26} ry={40} fill={skin} />
         <ellipse cx={hr * 0.98} cy={head[1] + 20} rx={26} ry={40} fill={skin} />
         <g transform={`translate(${head[0]} ${head[1]})`}>
-          <Face r={hr} expr={expr} talk={talk} blink={blink} look={look} glasses={who === "friend"} />
+          <Face r={hr} expr={expr} talk={talk} blink={blink} look={look} glasses={glasses ?? (who === "friend" ? "round" : false)} />
         </g>
         {/* fringe */}
         <path d={`M${-hr * 1.02} ${head[1] + 10} Q${-hr * 1.05} ${head[1] - hr * 1.12} 0 ${head[1] - hr * 1.08} Q${hr * 1.05} ${head[1] - hr * 1.12} ${hr * 1.02} ${head[1] + 10} Q${hr * 0.85} ${head[1] - hr * 0.55} ${hr * 0.3} ${head[1] - hr * 0.62} Q${hr * 0.05} ${head[1] - hr * 0.35} ${-hr * 0.2} ${head[1] - hr * 0.6} Q${-hr * 0.7} ${head[1] - hr * 0.55} ${-hr * 1.02} ${head[1] + 10}Z`} fill={hairFill} />
