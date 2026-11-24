@@ -1,0 +1,29 @@
+{
+  "id": "2026-11-24-shorts-swipe-metric",
+  "dryRun": false,
+  "production": "reel/ composition ShortsMetric (52s, Nasser, YouTube-style variant, cover = first frame)",
+  "media_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-24-shorts-swipe-metric/video-vertical.mp4",
+  "thumbnail_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-24-shorts-swipe-metric/thumbnail.jpg",
+  "posts": [
+    {
+      "network": "tiktok",
+      "scheduled_at": "2026-11-24T15:48:00+03:00",
+      "postId": "440219373",
+      "uuid": "4711954731619272196",
+      "title": "رقم واحد يقرر مصير الشورت 📊"
+    },
+    {
+      "network": "youtube",
+      "scheduled_at": "2026-11-24T15:49:00+03:00",
+      "postId": "440219454",
+      "uuid": "-6437250758110328798",
+      "title": "الرقم اللي يقرر مصير الشورت حقك (أغلب الناس ما يعرفونه) 📊",
+      "category": "EDUCATION"
+    }
+  ],
+  "errors": [
+    "أول محاولة 15:32 رُفضت (الوقت صار ماضي بعد إعادة تشغيل الجلسة) — أعيدت الجدولة 15:48/15:49 بدون تكرار"
+  ],
+  "aiLabel": false,
+  "status": "scheduled"
+}
