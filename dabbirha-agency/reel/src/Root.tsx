@@ -66,6 +66,7 @@ import { Yt2Film } from "./yt2/Yt2Film";
 import { GtaGuide, gTimeline } from "./gta/GtaGuide";
 import { GtaNoArabic, nTimeline } from "./gta2/GtaNoArabic";
 import { GtaInstall, GtaInstallThumb, iTimeline } from "./gta2/GtaInstall";
+import { ShortsMetric, ShortsMetricThumb, sTimeline } from "./yt3/ShortsMetric";
 import { Shadwi } from "./shadwi/Shadwi";
 import { Kids } from "./kids/Kids";
 import { Joanna } from "./joanna/Joanna";
@@ -325,6 +326,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="GtaNoArabic" component={GtaNoArabic} durationInFrames={nTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Composition id="GtaInstall" component={GtaInstall} durationInFrames={iTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Still id="GtaInstallThumb" component={GtaInstallThumb} width={1080} height={1920} />
+      <Composition id="ShortsMetric" component={ShortsMetric} durationInFrames={sTimeline.durationInFrames} fps={30} width={1080} height={1920} />
+      <Still id="ShortsMetricThumb" component={ShortsMetricThumb} width={1080} height={1920} />
       <Composition id="Shadwi" component={Shadwi} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Kids" component={Kids} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Joanna" component={Joanna} durationInFrames={1800} fps={30} width={1080} height={1920} />
