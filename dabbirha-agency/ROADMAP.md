@@ -15,7 +15,7 @@
 - [ ] **اختبار رابط الفيديو مع Metricool**: `rclone link` يعطي رابط مشاركة من Drive (صفحة HTML) وليس رابط ملف مباشر.
   - جرّب تحويله: `https://drive.google.com/uc?export=download&id=<ID>`.
   - إذا Metricool رفضه → استخدم Cloudflare R2 أو S3 بمجلد عام (`rclone` يدعمهم بنفس الأوامر).
-- [ ] **ربط يوتيوب في Metricool** ثم حذف التنبيه من جدول الإعدادات.
+- [x] **ربط يوتيوب في Metricool** — تم، وحُدّث CLAUDE.md (تيك توك الصحيح: @dabbirha2).
 
 ## الأولوية 2 — تحسينات مهمة
 

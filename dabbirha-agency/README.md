@@ -20,7 +20,7 @@
    ```
    سجّل دخول بنفس حساب claude.ai. الموصلات المربوطة عندك (Metricool و vidIQ) تظهر تلقائياً في Claude Code. تأكد بالأمر `/mcp`.
 
-4. **اربط يوتيوب في Metricool**: https://app.metricool.com/brands/connections?blogId=8268890
+4. ✅ **تيك توك (@dabbirha2) ويوتيوب مربوطين في Metricool** — لإدارة الربط: https://app.metricool.com/brands/connections?blogId=8268890
 
 ## الاستخدام
 
