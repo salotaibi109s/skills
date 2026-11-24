@@ -12,9 +12,11 @@
     },
     {
       "network": "tiktok",
-      "scheduled_at": "2026-11-26T10:00:00+03:00",
-      "postId": "439929375",
-      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8268890&openWithPostUuid=6439599208214974414"
+      "scheduled_at": "2026-11-24T11:18:00+03:00",
+      "postId": "439932526",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8268890&openWithPostUuid=6439599208214974414",
+      "autoPublish": true,
+      "note": "بطلب المالك: نُشر فوراً بنشر تلقائي لهذا المنشور فقط"
     }
   ],
   "skipped": [],
