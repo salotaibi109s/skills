@@ -1,0 +1,134 @@
+{
+  "audioDir": "gta3",
+  "totalFrames": 2460,
+  "tailSeconds": 0.35,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "I1-Hook",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "GTA 6 ما فيها عربي… بس فيه أداة مجانية توّها نزّلت حزمة عربية للعبة، وتطلّع الترجمة على شاشتك. وهذي طريقة تثبيتها، مستوى مستوى."
+    },
+    {
+      "id": "I2-Gear",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.2,
+      "transitionFrames": 10,
+      "tts": "المستوى الأول: التجهيز. تحتاج بلايستيشن خمسة أو إكس بوكس، وكمبيوتر ويندوز أو جوال أندرويد، وشاشة للترجمة: تلفزيونك الذكي أو جوال ثاني… وكلها على نفس الواي فاي."
+    },
+    {
+      "id": "I3-Get",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.2,
+      "transitionFrames": 10,
+      "tts": "المستوى الثاني: التحميل. من موقعها الرسمي، حمّل نسخة الكمبيوتر أو الجوال… ومنها تركّب تطبيق التلفزيون بضغطة. ولا تحمّلها من أي مكان ثاني."
+    },
+    {
+      "id": "I4-Link",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.2,
+      "transitionFrames": 10,
+      "tts": "المستوى الثالث: الربط. في البلايستيشن، شغّل التشغيل عن بعد من الإعدادات، وأضف حساب ثاني مجاني… الأداة تتصل فيه، وأنت تكمل لعبك بيدك عادي."
+    },
+    {
+      "id": "I5-Arabic",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.2,
+      "transitionFrames": 8,
+      "tts": "المستوى الأخير: التعريب. من الإعدادات اختر العربية، وتنزل حزمة GTA 6 العربية لحالها… حدد منطقة الترجمة، واضغط ابدأ الترجمة."
+    },
+    {
+      "id": "I6-Win",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 10,
+      "tts": "وكذا… تمت المهمة!"
+    },
+    {
+      "id": "I7-Note",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.2,
+      "transitionFrames": 10,
+      "tts": "ملاحظة: الأداة مجانية ومفتوحة المصدر، والحزمة العربية جديدة، فممكن تلقى فيها نقص أو أخطاء… والفضل لمطوّرها Sefflex."
+    },
+    {
+      "id": "I8-CTA",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.2,
+      "minSeconds": 5,
+      "tts": "وإذا تبغى شروحات GTA 6 أول بأول… تابعنا."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.8,
+      "prompt": "Fast synthwave whoosh transition, punchy"
+    },
+    {
+      "id": "level",
+      "seconds": 1.5,
+      "prompt": "Retro arcade level start jingle, short synth arpeggio, upbeat"
+    },
+    {
+      "id": "pass",
+      "seconds": 2.5,
+      "prompt": "Triumphant short synth brass mission complete sting, retro 80s video game style"
+    },
+    {
+      "id": "click",
+      "seconds": 0.5,
+      "prompt": "Clean UI button click, crisp"
+    },
+    {
+      "id": "check",
+      "seconds": 0.6,
+      "prompt": "Positive UI checkmark confirm blip"
+    },
+    {
+      "id": "glitch",
+      "seconds": 0.8,
+      "prompt": "Short neon electric glitch buzz"
+    },
+    {
+      "id": "type",
+      "seconds": 1.2,
+      "prompt": "Fast keyboard typing burst, clean"
+    },
+    {
+      "id": "impact",
+      "seconds": 1.5,
+      "prompt": "Deep synth bass drop impact with reverb tail"
+    },
+    {
+      "id": "riser",
+      "seconds": 2.5,
+      "prompt": "Synthwave riser building energy, filtered"
+    }
+  ],
+  "music": [
+    {
+      "id": "neon",
+      "prompt": "Original upbeat synthwave track for a gaming tutorial, 105 BPM, warm retro 80s synths, punchy drum machine, pulsing bassline, neon city night vibe, energetic but not distracting under a voiceover, ends cleanly at 70 seconds. No vocals.",
+      "lengthMs": 72000
+    }
+  ]
+}
