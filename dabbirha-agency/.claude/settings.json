@@ -1,0 +1,53 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm ci)",
+      "Bash(npm run check *)",
+      "Bash(npm run render *)",
+      "Bash(npm run typecheck)",
+      "Bash(npm run studio)",
+      "Bash(rclone copy episodes/* gdrive:dabbirha/renders/*)",
+      "Bash(rclone link gdrive:dabbirha/renders/*)",
+      "Bash(rclone mkdir gdrive:dabbirha/*)",
+      "Bash(rclone lsf gdrive:dabbirha/*)",
+      "Edit(/episodes/**)",
+      "Edit(/ideas/**)",
+      "Edit(/reports/**)",
+      "Edit(/studio/src/episodes/**)",
+      "mcp__Metricool_Social_Media_Management__getBrandSettings",
+      "mcp__Metricool_Social_Media_Management__getBestTimeToPostByNetwork",
+      "mcp__Metricool_Social_Media_Management__getScheduledPosts",
+      "mcp__Metricool_Social_Media_Management__getAnalyticsAvailableMetrics",
+      "mcp__Metricool_Social_Media_Management__getAnalyticsDataByMetrics",
+      "mcp__Metricool_Social_Media_Management__createScheduledPost",
+      "mcp__claude_ai_Metricool_Social_Media_Management__getBrandSettings",
+      "mcp__claude_ai_Metricool_Social_Media_Management__getBestTimeToPostByNetwork",
+      "mcp__claude_ai_Metricool_Social_Media_Management__getScheduledPosts",
+      "mcp__claude_ai_Metricool_Social_Media_Management__getAnalyticsAvailableMetrics",
+      "mcp__claude_ai_Metricool_Social_Media_Management__getAnalyticsDataByMetrics",
+      "mcp__claude_ai_Metricool_Social_Media_Management__createScheduledPost",
+      "mcp__vidIQ__vidiq_balance",
+      "mcp__vidIQ__vidiq_keyword_research",
+      "mcp__vidIQ__vidiq_instagram_tiktok_outlier_search",
+      "mcp__vidIQ__vidiq_tiktok_trending_sound_search",
+      "mcp__vidIQ__vidiq_trending_videos",
+      "mcp__claude_ai_vidIQ__vidiq_balance",
+      "mcp__claude_ai_vidIQ__vidiq_keyword_research",
+      "mcp__claude_ai_vidIQ__vidiq_instagram_tiktok_outlier_search",
+      "mcp__claude_ai_vidIQ__vidiq_tiktok_trending_sound_search",
+      "mcp__claude_ai_vidIQ__vidiq_trending_videos"
+    ],
+    "deny": [
+      "Bash(rclone delete *)",
+      "Bash(rclone deletefile *)",
+      "Bash(rclone purge *)",
+      "Bash(rclone rmdir *)",
+      "Bash(rclone rmdirs *)",
+      "Bash(rclone sync *)",
+      "Bash(rclone move *)",
+      "Bash(rclone moveto *)",
+      "Bash(rclone cleanup *)"
+    ]
+  }
+}
