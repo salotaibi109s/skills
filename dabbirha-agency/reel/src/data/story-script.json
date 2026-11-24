@@ -1,0 +1,101 @@
+{
+  "audioDir": "story",
+  "tailSeconds": 0.4,
+  "voice": {
+    "searchName": "Nasser",
+    "searchNameAr": "ناصر",
+    "preferredModels": ["eleven_v4", "eleven_v3", "eleven_multilingual_v2"],
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "T1-Ticket",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.3,
+      "transitionFrames": 18,
+      "tts": "رقمك مية وسبعة وثمانين… والشاشة توّها على اثنين وأربعين."
+    },
+    {
+      "id": "T2-Road",
+      "nominalSeconds": 8.5,
+      "leadSeconds": 0.7,
+      "transitionFrames": 16,
+      "tts": "طلعت من الصبح بدري… زحمة، وإشارات، وربع ساعة تدوّر موقف."
+    },
+    {
+      "id": "T3-Office",
+      "nominalSeconds": 13,
+      "leadSeconds": 0.6,
+      "tts": "وتوصل المكتب… وتلقاه مليان. هذا يجدد إقامة عامله، وهذا يطلّع جواز لولده، وهذي تقدّم على وظيفة، وهذا يسجّل في خدمة دراسية."
+    },
+    {
+      "id": "T4-Closed",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.25,
+      "tts": "والساعة تمشي… وقبل يجي دورك: «انتهى الدوام… راجعنا بكرة»."
+    },
+    {
+      "id": "T5-Rewind",
+      "nominalSeconds": 3.5,
+      "leadSeconds": 0.45,
+      "transitionFrames": 10,
+      "tts": "طيب… لو نرجّع اليوم من أوله؟"
+    },
+    {
+      "id": "T6-Home",
+      "nominalSeconds": 10.5,
+      "leadSeconds": 0.5,
+      "transitionFrames": 14,
+      "tts": "نفس الطلبات… بس وأنت في بيتك. ترسل طلبك لدبّرها، وتكمّل يومك عادي، وحنا نخلّصها لك."
+    },
+    {
+      "id": "T7-NumberOne",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.55,
+      "transitionFrames": 18,
+      "tts": "مع دبّرها… رقمك دايم واحد. وأسعارنا تبدأ من تسعة عشر ريال."
+    },
+    {
+      "id": "T8-CTA",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.7,
+      "tts": "دبّرها… وخلّ يومك لك."
+    }
+  ],
+  "sfx": [
+    { "id": "whoosh", "seconds": 0.8, "prompt": "Clean fast cinematic whoosh transition, short swish of air, modern commercial, no reverb tail" },
+    { "id": "tick", "seconds": 0.5, "prompt": "Soft subtle UI tick, gentle minimal click for text appearing, clean, high-end commercial" },
+    { "id": "pop", "seconds": 0.5, "prompt": "Soft rounded bubble pop for an icon appearing, satisfying UI pop, clean, short" },
+    { "id": "clock", "seconds": 4, "prompt": "Close-up analog wall clock ticking steadily, one tick per second, dry, slightly tense, no music" },
+    { "id": "horn", "seconds": 2.5, "prompt": "City traffic jam, two short car horn honks over idling engines, morning rush hour, not aggressive" },
+    { "id": "crowd", "seconds": 6, "prompt": "Busy government service office waiting room ambience, indistinct murmuring crowd, chairs shuffling, distant ticket number chime, no clear words" },
+    { "id": "ding", "seconds": 1.2, "prompt": "Queue number display call chime, two-tone electronic ding-dong in a waiting hall" },
+    { "id": "shutter", "seconds": 1.6, "prompt": "Metal roller shutter pulled down and closing with a final thud, office counter closing" },
+    { "id": "rewind", "seconds": 1.6, "prompt": "Cassette tape fast rewind effect, rising pitched squeal with mechanical whirr, playful, ends with a click" },
+    { "id": "notify", "seconds": 0.7, "prompt": "Modern smartphone message sent swoosh with soft notification ping, clean, friendly" },
+    { "id": "success", "seconds": 1.3, "prompt": "Bright positive success chime, two rising notes, app task completed, warm and premium" },
+    { "id": "printer", "seconds": 1.5, "prompt": "Small thermal ticket printer printing a queue ticket, quick mechanical buzz then tear-off click" }
+  ],
+  "music": [
+    {
+      "id": "tense",
+      "prompt": "Minimal tense storytelling underscore, 100 BPM, muted pizzicato strings and soft ticking clock percussion, light pulsing synth bass, a feeling of waiting and frustration but not dark, building slowly, cinematic advertising, no vocals",
+      "lengthMs": 38000
+    },
+    {
+      "id": "uplift",
+      "prompt": "Warm uplifting modern commercial music, 104 BPM, bright plucked synths and soft piano, gentle claps, light Middle Eastern oud-like pluck accents, optimistic, relieved, confident resolution at the end, no vocals",
+      "lengthMs": 30000
+    }
+  ]
+}

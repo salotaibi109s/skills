@@ -1,0 +1,146 @@
+{
+  "audioDir": "whatif",
+  "totalFrames": 2130,
+  "tailSeconds": 0.4,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.55,
+      "similarity_boost": 0.8,
+      "style": 0.35,
+      "use_speaker_boost": true,
+      "speed": 1.02
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "W1-Open",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.35,
+      "transitionFrames": 10,
+      "tts": "تخيّل أن تستيقظ غداً… وتكتشف أن العالم الذي تعرفه لم يعد كما كان. أشياء كنا نظنها مستحيلة… أصبحت حقيقة!"
+    },
+    {
+      "id": "W2-AI",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.35,
+      "transitionFrames": 10,
+      "tts": "ماذا لو أصبحت الآلات أذكى من البشر؟"
+    },
+    {
+      "id": "W3-Money",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.35,
+      "transitionFrames": 10,
+      "tts": "وماذا لو اختفى المال من حياتنا؟"
+    },
+    {
+      "id": "W4-Mind",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.35,
+      "transitionFrames": 10,
+      "tts": "أو استطاع العلماء قراءة أفكارك… ومعرفة أسرارك التي لم تخبر بها أحداً؟"
+    },
+    {
+      "id": "W5-Net",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.35,
+      "transitionFrames": 10,
+      "tts": "ماذا لو انقطع الإنترنت عن العالم بأكمله؟"
+    },
+    {
+      "id": "W6-Alien",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.35,
+      "transitionFrames": 10,
+      "tts": "أو اكتشفنا أن هناك حياة أخرى خارج كوكب الأرض؟"
+    },
+    {
+      "id": "W7-Age",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.35,
+      "transitionFrames": 10,
+      "tts": "أو أصبح بإمكان الإنسان أن يعيش مئات السنين؟"
+    },
+    {
+      "id": "W8-History",
+      "nominalSeconds": 13,
+      "leadSeconds": 0.35,
+      "transitionFrames": 10,
+      "tts": "قد تبدو هذه الأفكار ضرباً من الخيال… لكن التاريخ يخبرنا أن أشياء كثيرة كانت مستحيلة في زمن مضى، وأصبحت اليوم جزءاً من حياتنا. فمن يضمن أن خيال اليوم… لن يكون واقع الغد؟"
+    },
+    {
+      "id": "W9-End",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.35,
+      "tts": "هنا، لن نسأل فقط: ماذا لو؟ بل سنكتشف… ماذا سيحدث لو أصبح المستحيل حقيقة؟ مرحباً بك في عالم… ماذا لو؟",
+      "minSeconds": 15
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boom",
+      "seconds": 3,
+      "prompt": "Deep cinematic boom impact with long sub-bass tail, trailer hit, dark"
+    },
+    {
+      "id": "whoosh",
+      "seconds": 1.2,
+      "prompt": "Deep slow cinematic whoosh transition, airy and dark"
+    },
+    {
+      "id": "riser",
+      "seconds": 4,
+      "prompt": "Tense cinematic riser building suspense, rising pitch, ends abruptly"
+    },
+    {
+      "id": "pulse",
+      "seconds": 2,
+      "prompt": "Low deep heartbeat pulse, two slow thumps, cinematic tension"
+    },
+    {
+      "id": "glitch",
+      "seconds": 1.2,
+      "prompt": "Short digital glitch and data corruption sound, crisp"
+    },
+    {
+      "id": "powerdown",
+      "seconds": 2.5,
+      "prompt": "Electric power down sound, hum fading out and switching off, lights going dark"
+    },
+    {
+      "id": "shimmer",
+      "seconds": 2.5,
+      "prompt": "Mysterious magical shimmer with soft high chimes and reverb, ethereal"
+    },
+    {
+      "id": "signal",
+      "seconds": 2.5,
+      "prompt": "Strange distant alien radio signal, warbling tones and static, mysterious"
+    },
+    {
+      "id": "coins",
+      "seconds": 1.5,
+      "prompt": "Gold coins falling and clinking then dissolving into a soft whoosh"
+    },
+    {
+      "id": "tick",
+      "seconds": 2,
+      "prompt": "Slow deep clock ticking, three ticks, reverberant hall"
+    }
+  ],
+  "music": [
+    {
+      "id": "mystery",
+      "prompt": "Dark mysterious cinematic documentary score, 70 BPM, deep sustained drones, distant piano notes, slow pulsing low strings that build gradually in intensity, subtle ticking texture, tension rising toward a climax near 50 seconds then resolving softly, no vocals.",
+      "lengthMs": 64000
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "audioDir": "gta2",
+  "totalFrames": 1830,
+  "tailSeconds": 0.35,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "N1-Hook",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "GTA 6 نزلت بثلاث عشرة لغة… والعربي مو منها. بس تقدر تلعبها وتفهم كل كلمة… وهذي الطريقة، مستوى مستوى."
+    },
+    {
+      "id": "N2-Subs",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.2,
+      "transitionFrames": 10,
+      "tts": "المستوى الأول: الترجمة. الترجمة الإنجليزية افتراضياً تطلع للمهمات بس… غيّرها لكل الحوارات، عشان ما يفوتك كلام الشخصيات في الشارع."
+    },
+    {
+      "id": "N3-Clear",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.2,
+      "transitionFrames": 10,
+      "tts": "المستوى الثاني: الوضوح. فعّل خلفية الترجمة، وكبّر الخط… وبتقراها حتى في أكثر المشاهد إضاءة."
+    },
+    {
+      "id": "N4-Tool",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.2,
+      "transitionFrames": 8,
+      "tts": "المستوى الأخير: التعريب. أداة مجانية اسمها GameTranslator… تقرأ الكلام الإنجليزي من الشاشة، وتطلّع ترجمته بالعربي فوق صورة اللعبة."
+    },
+    {
+      "id": "N5-Win",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 10,
+      "tts": "وكذا… تمت المهمة!"
+    },
+    {
+      "id": "N6-Note",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.2,
+      "transitionFrames": 10,
+      "tts": "تنبيه: الترجمة بالذكاء الاصطناعي، فممكن تطلع فيها أخطاء أحياناً… والفضل لمطوّرها اللي يطوّرها مجاناً."
+    },
+    {
+      "id": "N7-CTA",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.2,
+      "minSeconds": 5,
+      "tts": "وإذا تبغى شروحات GTA 6 أول بأول… تابعنا."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.8,
+      "prompt": "Fast synthwave whoosh transition, punchy"
+    },
+    {
+      "id": "level",
+      "seconds": 1.5,
+      "prompt": "Retro arcade level start jingle, short synth arpeggio, upbeat"
+    },
+    {
+      "id": "pass",
+      "seconds": 2.5,
+      "prompt": "Triumphant short synth brass mission complete sting, retro 80s video game style"
+    },
+    {
+      "id": "click",
+      "seconds": 0.5,
+      "prompt": "Clean UI button click, crisp"
+    },
+    {
+      "id": "check",
+      "seconds": 0.6,
+      "prompt": "Positive UI checkmark confirm blip"
+    },
+    {
+      "id": "glitch",
+      "seconds": 0.8,
+      "prompt": "Short neon electric glitch buzz"
+    },
+    {
+      "id": "type",
+      "seconds": 1.2,
+      "prompt": "Fast keyboard typing burst, clean"
+    },
+    {
+      "id": "impact",
+      "seconds": 1.5,
+      "prompt": "Deep synth bass drop impact with reverb tail"
+    },
+    {
+      "id": "riser",
+      "seconds": 2.5,
+      "prompt": "Synthwave riser building energy, filtered"
+    }
+  ],
+  "music": [
+    {
+      "id": "neon",
+      "prompt": "Original upbeat synthwave track for a gaming tutorial, 105 BPM, warm retro 80s synths, punchy drum machine, pulsing bassline, neon city night vibe, energetic but not distracting under a voiceover, ends cleanly at 70 seconds. No vocals.",
+      "lengthMs": 72000
+    }
+  ]
+}

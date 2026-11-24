@@ -1,0 +1,283 @@
+{
+  "audioDir": "joanna3",
+  "totalFrames": 1800,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "N01-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 1.3,
+      "tts": "أخيراً الفسحة! أهم حصة في اليوم!"
+    },
+    {
+      "id": "N02-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 1.0,
+      "tts": "اليوم ماما قالت عندي مفاجأة في صندوق الغدا!"
+    },
+    {
+      "id": "N03-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.6,
+      "leadSeconds": 2.4,
+      "tts": "لحظة… وين السندويتش؟ وين البطاطس؟!"
+    },
+    {
+      "id": "N04-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.0,
+      "leadSeconds": 0.3,
+      "tts": "شكله غدا صحي!"
+    },
+    {
+      "id": "N05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.4,
+      "leadSeconds": 0.6,
+      "tts": "واضح إن ماما داخلة تحدّي معي!"
+    },
+    {
+      "id": "N06-T",
+      "speaker": "T",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 6.4,
+      "leadSeconds": 3.0,
+      "tts": "جوانا، ليش ما تاكلين خضارك؟"
+    },
+    {
+      "id": "N07-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 6.0,
+      "leadSeconds": 0.4,
+      "tts": "أبلة، أنا أحب الخضار… بس الخضار اليوم كثير مشتاق لي!"
+    },
+    {
+      "id": "N08-T",
+      "speaker": "T",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.0,
+      "leadSeconds": 1.4,
+      "tts": "جرّبي قطعة وحدة بس… يمكن تعجبك!"
+    },
+    {
+      "id": "N09-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.0,
+      "leadSeconds": 2.2,
+      "tts": "مممم… طلع طعمه حلو!"
+    },
+    {
+      "id": "N10-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 14.0,
+      "leadSeconds": 0.6,
+      "tts": "بس لا تقولون لماما إني حبّيت البروكلي… بكرة بتحط لي صندوق كامل!"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.6,
+      "prompt": "Quick playful cartoon whoosh transition"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Cute cartoon pop, bubbly and short"
+    },
+    {
+      "id": "boing",
+      "seconds": 0.8,
+      "prompt": "Cartoon boing spring sound for a shocked reaction"
+    },
+    {
+      "id": "scratch",
+      "seconds": 1,
+      "prompt": "Comedic record scratch stop, cartoon"
+    },
+    {
+      "id": "steps",
+      "seconds": 2,
+      "prompt": "Light bouncy cartoon footsteps, playful skipping"
+    },
+    {
+      "id": "tiptoe",
+      "seconds": 3,
+      "prompt": "Suspenseful cartoon pizzicato tiptoe sting, slow and comedic"
+    },
+    {
+      "id": "laugh",
+      "seconds": 3,
+      "prompt": "Classroom of people laughing warmly together, cheerful light laughter, cartoon sitcom"
+    },
+    {
+      "id": "giggle",
+      "seconds": 2,
+      "prompt": "Mischievous cartoon character giggle, playful and cute, sitcom style"
+    },
+    {
+      "id": "swoosh",
+      "seconds": 1,
+      "prompt": "Bouncy cartoon title swoosh with a playful pop at the end"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1.2,
+      "prompt": "Magical twinkle sparkle chime, bright cartoon"
+    },
+    {
+      "id": "tada",
+      "seconds": 1.5,
+      "prompt": "Cartoon ta-da fanfare reveal with sparkle, short and funny"
+    },
+    {
+      "id": "birds",
+      "seconds": 4,
+      "prompt": "Morning birds chirping outside a school, distant children chatter, bright and cheerful ambience"
+    },
+    {
+      "id": "bell",
+      "seconds": 2,
+      "prompt": "Cheerful school bell ringing for break time, bright and clear"
+    },
+    {
+      "id": "jump",
+      "seconds": 0.8,
+      "prompt": "Cartoon jump spring boing with a happy whoop sound effect, short"
+    },
+    {
+      "id": "lid",
+      "seconds": 1.0,
+      "prompt": "Plastic lunchbox lid clicking open, cartoon pop"
+    },
+    {
+      "id": "sad",
+      "seconds": 1.5,
+      "prompt": "Comedic sad trombone wah wah, short"
+    },
+    {
+      "id": "sneak",
+      "seconds": 3.0,
+      "prompt": "Sneaky cartoon pizzicato tiptoe music sting, mischievous"
+    },
+    {
+      "id": "crunch",
+      "seconds": 1.0,
+      "prompt": "Crisp crunchy bite of fresh broccoli, close and clear"
+    },
+    {
+      "id": "yum",
+      "seconds": 1.5,
+      "prompt": "Magical delicious reveal chime with sparkles, cartoon wow"
+    },
+    {
+      "id": "munch",
+      "seconds": 2.5,
+      "prompt": "Happy munching on crunchy vegetables and fruit, cartoon eating"
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "Playful family cartoon score for a kids animated series, 120 BPM, pizzicato strings, glockenspiel, ukulele, light woodwinds and soft hand claps, same cheerful school comedy theme. 0-12s excited break time, jumpy and happy. 12-27s a comedic surprise drop at 15 seconds then puzzled plucks. 27-43s sneaky tiptoe mischief. 43-52s curious, then a warm sweet discovery. 52-60s bouncy happy theme ending with a cheerful button exactly at 60 seconds. No vocals.",
+      "lengthMs": 60000
+    }
+  ]
+}

@@ -1,0 +1,788 @@
+{
+  "fps": 30,
+  "durationInFrames": 1800,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "K0-Hook",
+      "from": 0,
+      "durationInFrames": 121,
+      "transitionFrames": 8,
+      "voFrom": 5,
+      "voDurationInFrames": 109,
+      "words": [
+        {
+          "text": "تبي",
+          "raw": "تبي",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "تحمي",
+          "raw": "تحمي",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "text": "نفسية",
+          "raw": "نفسية",
+          "start": 25,
+          "end": 36
+        },
+        {
+          "text": "عيالك",
+          "raw": "عيالك؟",
+          "start": 39,
+          "end": 53
+        },
+        {
+          "text": "تسع",
+          "raw": "تسع",
+          "start": 67,
+          "end": 75
+        },
+        {
+          "text": "خطوات",
+          "raw": "خطوات",
+          "start": 77,
+          "end": 91
+        },
+        {
+          "text": "بسيطة",
+          "raw": "بسيطة.",
+          "start": 96,
+          "end": 106
+        }
+      ]
+    },
+    {
+      "id": "K1-Talk",
+      "from": 113,
+      "durationInFrames": 173,
+      "transitionFrames": 8,
+      "voFrom": 5,
+      "voDurationInFrames": 163,
+      "words": [
+        {
+          "text": "عشرين",
+          "raw": "عشرين",
+          "start": 5,
+          "end": 17
+        },
+        {
+          "text": "دقيقة",
+          "raw": "دقيقة",
+          "start": 19,
+          "end": 31
+        },
+        {
+          "text": "كل",
+          "raw": "كل",
+          "start": 34,
+          "end": 41
+        },
+        {
+          "text": "يوم",
+          "raw": "يوم،",
+          "start": 45,
+          "end": 48
+        },
+        {
+          "text": "سولف",
+          "raw": "سولف",
+          "start": 63,
+          "end": 72
+        },
+        {
+          "text": "معهم",
+          "raw": "معهم",
+          "start": 75,
+          "end": 87
+        },
+        {
+          "text": "كأنهم",
+          "raw": "كأنهم",
+          "start": 89,
+          "end": 101
+        },
+        {
+          "text": "أصحابك",
+          "raw": "أصحابك…",
+          "start": 103,
+          "end": 123
+        },
+        {
+          "text": "بدون",
+          "raw": "بدون",
+          "start": 136,
+          "end": 142
+        },
+        {
+          "text": "نصايح",
+          "raw": "نصايح.",
+          "start": 145,
+          "end": 159
+        }
+      ]
+    },
+    {
+      "id": "K2-Love",
+      "from": 278,
+      "durationInFrames": 139,
+      "transitionFrames": 8,
+      "voFrom": 5,
+      "voDurationInFrames": 127,
+      "words": [
+        {
+          "text": "قل",
+          "raw": "قل",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "لهم",
+          "raw": "لهم",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "إنك",
+          "raw": "إنك",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "text": "تحبهم",
+          "raw": "تحبهم…",
+          "start": 35,
+          "end": 51
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 64,
+          "end": 67
+        },
+        {
+          "text": "خمس",
+          "raw": "خمس",
+          "start": 75,
+          "end": 82
+        },
+        {
+          "text": "لعشر",
+          "raw": "لعشر",
+          "start": 87,
+          "end": 96
+        },
+        {
+          "text": "مرات",
+          "raw": "مرات",
+          "start": 99,
+          "end": 111
+        },
+        {
+          "text": "باليوم",
+          "raw": "باليوم.",
+          "start": 112,
+          "end": 125
+        }
+      ]
+    },
+    {
+      "id": "K3-Praise",
+      "from": 409,
+      "durationInFrames": 122,
+      "transitionFrames": 8,
+      "voFrom": 5,
+      "voDurationInFrames": 112,
+      "words": [
+        {
+          "text": "امدح",
+          "raw": "امدح",
+          "start": 5,
+          "end": 17
+        },
+        {
+          "text": "تصرفاتهم",
+          "raw": "تصرفاتهم",
+          "start": 24,
+          "end": 43
+        },
+        {
+          "text": "الحلوة",
+          "raw": "الحلوة…",
+          "start": 46,
+          "end": 60
+        },
+        {
+          "text": "خمس",
+          "raw": "خمس",
+          "start": 75,
+          "end": 79
+        },
+        {
+          "text": "مرات",
+          "raw": "مرات",
+          "start": 82,
+          "end": 94
+        },
+        {
+          "text": "باليوم",
+          "raw": "باليوم.",
+          "start": 96,
+          "end": 108
+        }
+      ]
+    },
+    {
+      "id": "K4-Looks",
+      "from": 523,
+      "durationInFrames": 139,
+      "transitionFrames": 8,
+      "voFrom": 5,
+      "voDurationInFrames": 129,
+      "words": [
+        {
+          "text": "وامدح",
+          "raw": "وامدح",
+          "start": 5,
+          "end": 17
+        },
+        {
+          "text": "شكلهم",
+          "raw": "شكلهم:",
+          "start": 19,
+          "end": 36
+        },
+        {
+          "text": "ابتسامته",
+          "raw": "ابتسامته،",
+          "start": 51,
+          "end": 77
+        },
+        {
+          "text": "شعره",
+          "raw": "شعره،",
+          "start": 87,
+          "end": 101
+        },
+        {
+          "text": "عيونه",
+          "raw": "عيونه.",
+          "start": 111,
+          "end": 125
+        }
+      ]
+    },
+    {
+      "id": "K5-Out",
+      "from": 654,
+      "durationInFrames": 127,
+      "transitionFrames": 8,
+      "voFrom": 5,
+      "voDurationInFrames": 109,
+      "words": [
+        {
+          "text": "مرتين",
+          "raw": "مرتين",
+          "start": 5,
+          "end": 19
+        },
+        {
+          "text": "بالأسبوع",
+          "raw": "بالأسبوع،",
+          "start": 23,
+          "end": 39
+        },
+        {
+          "text": "اطلع",
+          "raw": "اطلع",
+          "start": 52,
+          "end": 58
+        },
+        {
+          "text": "معه",
+          "raw": "معه",
+          "start": 60,
+          "end": 72
+        },
+        {
+          "text": "ولو",
+          "raw": "ولو",
+          "start": 76,
+          "end": 82
+        },
+        {
+          "text": "خمس",
+          "raw": "خمس",
+          "start": 84,
+          "end": 91
+        },
+        {
+          "text": "دقايق",
+          "raw": "دقايق.",
+          "start": 94,
+          "end": 113
+        }
+      ]
+    },
+    {
+      "id": "K6-Night",
+      "from": 773,
+      "durationInFrames": 180,
+      "transitionFrames": 8,
+      "voFrom": 5,
+      "voDurationInFrames": 167,
+      "words": [
+        {
+          "text": "قبل",
+          "raw": "قبل",
+          "start": 5,
+          "end": 15
+        },
+        {
+          "text": "النوم",
+          "raw": "النوم،",
+          "start": 16,
+          "end": 27
+        },
+        {
+          "text": "ثلاث",
+          "raw": "ثلاث",
+          "start": 43,
+          "end": 48
+        },
+        {
+          "text": "دقايق",
+          "raw": "دقايق",
+          "start": 52,
+          "end": 67
+        },
+        {
+          "text": "تثبّت",
+          "raw": "تثبّت",
+          "start": 70,
+          "end": 84
+        },
+        {
+          "text": "فيها",
+          "raw": "فيها",
+          "start": 87,
+          "end": 91
+        },
+        {
+          "text": "القيم",
+          "raw": "القيم:",
+          "start": 94,
+          "end": 106
+        },
+        {
+          "text": "فرحت",
+          "raw": "فرحت",
+          "start": 124,
+          "end": 132
+        },
+        {
+          "text": "باللي",
+          "raw": "باللي",
+          "start": 135,
+          "end": 139
+        },
+        {
+          "text": "سويته",
+          "raw": "سويته",
+          "start": 142,
+          "end": 154
+        },
+        {
+          "text": "اليوم",
+          "raw": "اليوم.",
+          "start": 156,
+          "end": 166
+        }
+      ]
+    },
+    {
+      "id": "K7-Dinner",
+      "from": 945,
+      "durationInFrames": 118,
+      "transitionFrames": 8,
+      "voFrom": 5,
+      "voDurationInFrames": 105,
+      "words": [
+        {
+          "text": "مرتين",
+          "raw": "مرتين",
+          "start": 5,
+          "end": 19
+        },
+        {
+          "text": "بالأسبوع",
+          "raw": "بالأسبوع،",
+          "start": 23,
+          "end": 39
+        },
+        {
+          "text": "عشا",
+          "raw": "عشا",
+          "start": 51,
+          "end": 58
+        },
+        {
+          "text": "عائلي",
+          "raw": "عائلي",
+          "start": 60,
+          "end": 77
+        },
+        {
+          "text": "فيه",
+          "raw": "فيه",
+          "start": 82,
+          "end": 85
+        },
+        {
+          "text": "سوالف",
+          "raw": "سوالف.",
+          "start": 87,
+          "end": 103
+        }
+      ]
+    },
+    {
+      "id": "K8-Listen",
+      "from": 1055,
+      "durationInFrames": 165,
+      "transitionFrames": 8,
+      "voFrom": 5,
+      "voDurationInFrames": 155,
+      "words": [
+        {
+          "text": "كل",
+          "raw": "كل",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "يوم",
+          "raw": "يوم",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "text": "دقيقة",
+          "raw": "دقيقة",
+          "start": 22,
+          "end": 36
+        },
+        {
+          "text": "لثلاث",
+          "raw": "لثلاث،",
+          "start": 39,
+          "end": 53
+        },
+        {
+          "text": "اسمعه",
+          "raw": "اسمعه",
+          "start": 65,
+          "end": 77
+        },
+        {
+          "text": "بس",
+          "raw": "بس…",
+          "start": 83,
+          "end": 89
+        },
+        {
+          "text": "لا",
+          "raw": "لا",
+          "start": 99,
+          "end": 101
+        },
+        {
+          "text": "تناقش",
+          "raw": "تناقش،",
+          "start": 103,
+          "end": 120
+        },
+        {
+          "text": "ولا",
+          "raw": "ولا",
+          "start": 130,
+          "end": 137
+        },
+        {
+          "text": "تقاطع",
+          "raw": "تقاطع.",
+          "start": 139,
+          "end": 151
+        }
+      ]
+    },
+    {
+      "id": "K9-Touch",
+      "from": 1212,
+      "durationInFrames": 300,
+      "transitionFrames": 8,
+      "voFrom": 5,
+      "voDurationInFrames": 287,
+      "words": [
+        {
+          "text": "وخمس",
+          "raw": "وخمس",
+          "start": 5,
+          "end": 17
+        },
+        {
+          "text": "لمسات",
+          "raw": "لمسات:",
+          "start": 19,
+          "end": 36
+        },
+        {
+          "text": "راسه",
+          "raw": "راسه",
+          "start": 51,
+          "end": 63
+        },
+        {
+          "text": "فخر",
+          "raw": "فخر،",
+          "start": 65,
+          "end": 77
+        },
+        {
+          "text": "جبينه",
+          "raw": "جبينه",
+          "start": 93,
+          "end": 103
+        },
+        {
+          "text": "تهدئة",
+          "raw": "تهدئة،",
+          "start": 106,
+          "end": 123
+        },
+        {
+          "text": "خدوده",
+          "raw": "خدوده",
+          "start": 137,
+          "end": 154
+        },
+        {
+          "text": "شوق",
+          "raw": "شوق،",
+          "start": 156,
+          "end": 171
+        },
+        {
+          "text": "يده",
+          "raw": "يده",
+          "start": 183,
+          "end": 197
+        },
+        {
+          "text": "حب",
+          "raw": "حب…",
+          "start": 199,
+          "end": 211
+        },
+        {
+          "text": "وإذا",
+          "raw": "وإذا",
+          "start": 227,
+          "end": 233
+        },
+        {
+          "text": "زعل",
+          "raw": "زعل،",
+          "start": 235,
+          "end": 247
+        },
+        {
+          "text": "امسح",
+          "raw": "امسح",
+          "start": 259,
+          "end": 267
+        },
+        {
+          "text": "على",
+          "raw": "على",
+          "start": 270,
+          "end": 274
+        },
+        {
+          "text": "صدره",
+          "raw": "صدره.",
+          "start": 279,
+          "end": 286
+        }
+      ]
+    },
+    {
+      "id": "K10-Prophet",
+      "from": 1504,
+      "durationInFrames": 197,
+      "transitionFrames": 8,
+      "voFrom": 5,
+      "voDurationInFrames": 186,
+      "words": [
+        {
+          "text": "وكان",
+          "raw": "وكان",
+          "start": 5,
+          "end": 17
+        },
+        {
+          "text": "النبي",
+          "raw": "النبي",
+          "start": 18,
+          "end": 29
+        },
+        {
+          "text": "صلى",
+          "raw": "صلى",
+          "start": 31,
+          "end": 39
+        },
+        {
+          "text": "الله",
+          "raw": "الله",
+          "start": 40,
+          "end": 48
+        },
+        {
+          "text": "عليه",
+          "raw": "عليه",
+          "start": 51,
+          "end": 60
+        },
+        {
+          "text": "وسلم",
+          "raw": "وسلم",
+          "start": 63,
+          "end": 79
+        },
+        {
+          "text": "يقبّل",
+          "raw": "يقبّل",
+          "start": 84,
+          "end": 101
+        },
+        {
+          "text": "فاطمة",
+          "raw": "فاطمة،",
+          "start": 103,
+          "end": 118
+        },
+        {
+          "text": "ويحضنها",
+          "raw": "ويحضنها",
+          "start": 129,
+          "end": 149
+        },
+        {
+          "text": "قدّام",
+          "raw": "قدّام",
+          "start": 151,
+          "end": 163
+        },
+        {
+          "text": "الصحابة",
+          "raw": "الصحابة.",
+          "start": 166,
+          "end": 183
+        }
+      ]
+    },
+    {
+      "id": "K11-End",
+      "from": 1693,
+      "durationInFrames": 107,
+      "transitionFrames": 0,
+      "voFrom": 5,
+      "voDurationInFrames": 66,
+      "words": [
+        {
+          "text": "شاركها",
+          "raw": "شاركها",
+          "start": 5,
+          "end": 24
+        },
+        {
+          "text": "مع",
+          "raw": "مع",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "text": "أحد",
+          "raw": "أحد",
+          "start": 34,
+          "end": 43
+        },
+        {
+          "text": "يحتاجها",
+          "raw": "يحتاجها.",
+          "start": 46,
+          "end": 65
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      5,
+      106
+    ],
+    [
+      118,
+      272
+    ],
+    [
+      283,
+      403
+    ],
+    [
+      414,
+      517
+    ],
+    [
+      528,
+      648
+    ],
+    [
+      659,
+      767
+    ],
+    [
+      778,
+      939
+    ],
+    [
+      950,
+      1048
+    ],
+    [
+      1060,
+      1206
+    ],
+    [
+      1217,
+      1498
+    ],
+    [
+      1509,
+      1687
+    ],
+    [
+      1698,
+      1758
+    ]
+  ]
+}

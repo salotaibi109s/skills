@@ -1,0 +1,522 @@
+{
+  "fps": 30,
+  "durationInFrames": 1800,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "C1-Dawn",
+      "from": 0,
+      "durationInFrames": 180,
+      "transitionFrames": 0,
+      "voFrom": 27,
+      "voDurationInFrames": 124,
+      "words": [
+        {
+          "text": "يا",
+          "raw": "يا",
+          "start": 27,
+          "end": 32
+        },
+        {
+          "text": "ولدي",
+          "raw": "ولدي…",
+          "start": 35,
+          "end": 49
+        },
+        {
+          "text": "الحلم",
+          "raw": "الحلم",
+          "start": 63,
+          "end": 77
+        },
+        {
+          "text": "اللي",
+          "raw": "اللي",
+          "start": 79,
+          "end": 85
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 87,
+          "end": 89
+        },
+        {
+          "text": "تبدأه",
+          "raw": "تبدأه،",
+          "start": 92,
+          "end": 106
+        },
+        {
+          "text": "يكبر",
+          "raw": "يكبر",
+          "start": 118,
+          "end": 130
+        },
+        {
+          "text": "معك",
+          "raw": "معك.",
+          "start": 134,
+          "end": 145
+        }
+      ]
+    },
+    {
+      "id": "C2-Dream",
+      "from": 180,
+      "durationInFrames": 210,
+      "transitionFrames": 0,
+      "voFrom": 15,
+      "voDurationInFrames": 134,
+      "words": [
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "صغري",
+          "raw": "صغري",
+          "start": 25,
+          "end": 37
+        },
+        {
+          "text": "وأنا",
+          "raw": "وأنا",
+          "start": 44,
+          "end": 51
+        },
+        {
+          "text": "أحلم",
+          "raw": "أحلم",
+          "start": 53,
+          "end": 63
+        },
+        {
+          "text": "بمحمصة",
+          "raw": "بمحمصة",
+          "start": 65,
+          "end": 82
+        },
+        {
+          "text": "قهوة",
+          "raw": "قهوة…",
+          "start": 85,
+          "end": 97
+        },
+        {
+          "text": "تحمل",
+          "raw": "تحمل",
+          "start": 109,
+          "end": 121
+        },
+        {
+          "text": "اسم",
+          "raw": "اسم",
+          "start": 124,
+          "end": 128
+        },
+        {
+          "text": "أبوي",
+          "raw": "أبوي.",
+          "start": 130,
+          "end": 142
+        }
+      ]
+    },
+    {
+      "id": "C3-Papers",
+      "from": 390,
+      "durationInFrames": 285,
+      "transitionFrames": 0,
+      "voFrom": 15,
+      "voDurationInFrames": 211,
+      "words": [
+        {
+          "text": "بس",
+          "raw": "بس",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "كل",
+          "raw": "كل",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "text": "قرّبت",
+          "raw": "قرّبت،",
+          "start": 35,
+          "end": 51
+        },
+        {
+          "text": "وقفتني",
+          "raw": "وقفتني",
+          "start": 64,
+          "end": 75
+        },
+        {
+          "text": "الأوراق",
+          "raw": "الأوراق…",
+          "start": 77,
+          "end": 94
+        },
+        {
+          "text": "وثايق",
+          "raw": "وثايق،",
+          "start": 109,
+          "end": 128
+        },
+        {
+          "text": "وشعار",
+          "raw": "وشعار،",
+          "start": 133,
+          "end": 149
+        },
+        {
+          "text": "ومتجر",
+          "raw": "ومتجر…",
+          "start": 154,
+          "end": 169
+        },
+        {
+          "text": "وما",
+          "raw": "وما",
+          "start": 185,
+          "end": 189
+        },
+        {
+          "text": "أدري",
+          "raw": "أدري",
+          "start": 191,
+          "end": 195
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 197,
+          "end": 200
+        },
+        {
+          "text": "وين",
+          "raw": "وين",
+          "start": 201,
+          "end": 205
+        },
+        {
+          "text": "أبدأ",
+          "raw": "أبدأ.",
+          "start": 206,
+          "end": 217
+        }
+      ]
+    },
+    {
+      "id": "C4-Friend",
+      "from": 675,
+      "durationInFrames": 150,
+      "transitionFrames": 0,
+      "voFrom": 18,
+      "voDurationInFrames": 93,
+      "words": [
+        {
+          "text": "لين",
+          "raw": "لين",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "دلّني",
+          "raw": "دلّني",
+          "start": 28,
+          "end": 40
+        },
+        {
+          "text": "صاحبي",
+          "raw": "صاحبي…",
+          "start": 46,
+          "end": 61
+        },
+        {
+          "text": "على",
+          "raw": "على",
+          "start": 78,
+          "end": 83
+        },
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها.",
+          "start": 85,
+          "end": 102
+        }
+      ]
+    },
+    {
+      "id": "C5-Montage",
+      "from": 825,
+      "durationInFrames": 345,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 237,
+      "words": [
+        {
+          "text": "طلّعوا",
+          "raw": "طلّعوا",
+          "start": 12,
+          "end": 24
+        },
+        {
+          "text": "لي",
+          "raw": "لي",
+          "start": 26,
+          "end": 29
+        },
+        {
+          "text": "وثيقة",
+          "raw": "وثيقة",
+          "start": 31,
+          "end": 43
+        },
+        {
+          "text": "العمل",
+          "raw": "العمل",
+          "start": 44,
+          "end": 53
+        },
+        {
+          "text": "الحر",
+          "raw": "الحر…",
+          "start": 55,
+          "end": 67
+        },
+        {
+          "text": "صمّموا",
+          "raw": "صمّموا",
+          "start": 82,
+          "end": 96
+        },
+        {
+          "text": "شعار",
+          "raw": "شعار",
+          "start": 101,
+          "end": 106
+        },
+        {
+          "text": "المحمصة",
+          "raw": "المحمصة…",
+          "start": 109,
+          "end": 125
+        },
+        {
+          "text": "وبنوا",
+          "raw": "وبنوا",
+          "start": 138,
+          "end": 146
+        },
+        {
+          "text": "متجري",
+          "raw": "متجري",
+          "start": 149,
+          "end": 161
+        },
+        {
+          "text": "الإلكتروني",
+          "raw": "الإلكتروني…",
+          "start": 162,
+          "end": 180
+        },
+        {
+          "text": "وأنا",
+          "raw": "وأنا",
+          "start": 194,
+          "end": 204
+        },
+        {
+          "text": "متفرّغ",
+          "raw": "متفرّغ",
+          "start": 206,
+          "end": 221
+        },
+        {
+          "text": "لقهوتي",
+          "raw": "لقهوتي.",
+          "start": 224,
+          "end": 240
+        }
+      ]
+    },
+    {
+      "id": "C6-FirstOrder",
+      "from": 1170,
+      "durationInFrames": 150,
+      "transitionFrames": 0,
+      "voFrom": 18,
+      "voDurationInFrames": 95,
+      "words": [
+        {
+          "text": "واليوم",
+          "raw": "واليوم…",
+          "start": 18,
+          "end": 42
+        },
+        {
+          "text": "وصلني",
+          "raw": "وصلني",
+          "start": 61,
+          "end": 78
+        },
+        {
+          "text": "أول",
+          "raw": "أول",
+          "start": 83,
+          "end": 92
+        },
+        {
+          "text": "طلب",
+          "raw": "طلب.",
+          "start": 95,
+          "end": 107
+        }
+      ]
+    },
+    {
+      "id": "C7-Blessing",
+      "from": 1320,
+      "durationInFrames": 150,
+      "transitionFrames": 0,
+      "voFrom": 15,
+      "voDurationInFrames": 86,
+      "words": [
+        {
+          "text": "الله",
+          "raw": "الله",
+          "start": 15,
+          "end": 29
+        },
+        {
+          "text": "يبارك",
+          "raw": "يبارك",
+          "start": 32,
+          "end": 46
+        },
+        {
+          "text": "لك",
+          "raw": "لك…",
+          "start": 52,
+          "end": 58
+        },
+        {
+          "text": "يا",
+          "raw": "يا",
+          "start": 73,
+          "end": 77
+        },
+        {
+          "text": "ولدي",
+          "raw": "ولدي.",
+          "start": 81,
+          "end": 92
+        }
+      ]
+    },
+    {
+      "id": "C8-Brand",
+      "from": 1470,
+      "durationInFrames": 330,
+      "transitionFrames": 0,
+      "voFrom": 21,
+      "voDurationInFrames": 124,
+      "words": [
+        {
+          "text": "كل",
+          "raw": "كل",
+          "start": 21,
+          "end": 28
+        },
+        {
+          "text": "حلم",
+          "raw": "حلم",
+          "start": 31,
+          "end": 40
+        },
+        {
+          "text": "يبدأ",
+          "raw": "يبدأ",
+          "start": 43,
+          "end": 52
+        },
+        {
+          "text": "بخطوة",
+          "raw": "بخطوة…",
+          "start": 55,
+          "end": 69
+        },
+        {
+          "text": "ودبّرها",
+          "raw": "ودبّرها",
+          "start": 87,
+          "end": 105
+        },
+        {
+          "text": "تمشي",
+          "raw": "تمشي",
+          "start": 115,
+          "end": 124
+        },
+        {
+          "text": "معك",
+          "raw": "معك.",
+          "start": 127,
+          "end": 139
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      27,
+      145
+    ],
+    [
+      195,
+      322
+    ],
+    [
+      405,
+      607
+    ],
+    [
+      693,
+      777
+    ],
+    [
+      837,
+      1065
+    ],
+    [
+      1188,
+      1277
+    ],
+    [
+      1335,
+      1412
+    ],
+    [
+      1491,
+      1609
+    ]
+  ]
+}

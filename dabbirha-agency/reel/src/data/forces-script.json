@@ -1,0 +1,132 @@
+{
+  "audioDir": "forces",
+  "totalFrames": 1800,
+  "tailSeconds": 0.5,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.55,
+      "similarity_boost": 0.8,
+      "style": 0.4,
+      "use_speaker_boost": true,
+      "speed": 0.97
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "F1-Open",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.5,
+      "transitionFrames": 14,
+      "tts": "في كل شبر من هالأرض… فيه عين ساهرة، وقلب ما ينام."
+    },
+    {
+      "id": "F2-Land",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.5,
+      "transitionFrames": 14,
+      "tts": "رجالُ البَرّ… يشقّون الصحراء بعزيمة ما تلين، ويتدرّبون ليل نهار عشان يبقى الوطن آمن."
+    },
+    {
+      "id": "F3-Air",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.5,
+      "transitionFrames": 14,
+      "tts": "وفي السما… نسور تحرس الأجواء، وعيونها على كل الحدود."
+    },
+    {
+      "id": "F4-Sea",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.5,
+      "transitionFrames": 14,
+      "tts": "وعلى امتداد البحر الأحمر والخليج العربي… قوات بحرية تحمي السواحل، وتأمّن الممرات."
+    },
+    {
+      "id": "F5-Defense",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.5,
+      "transitionFrames": 14,
+      "tts": "ودفاع جوي يقظ… يرصد ويتصدّى، قبل ما يقرب الخطر."
+    },
+    {
+      "id": "F6-Unity",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.5,
+      "transitionFrames": 14,
+      "tts": "قوات مسلحة وحدة… شعارها: الله، ثم المليك، ثم الوطن."
+    },
+    {
+      "id": "F7-Close",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.5,
+      "tts": "حماة الوطن… فخرنا، وأمننا، وسرّ هالأمان اللي نعيشه.",
+      "minSeconds": 10
+    }
+  ],
+  "sfx": [
+    {
+      "id": "wind",
+      "seconds": 6,
+      "prompt": "Desert wind blowing softly over sand dunes, cinematic ambience, no music"
+    },
+    {
+      "id": "flag",
+      "seconds": 4,
+      "prompt": "A large fabric flag flapping steadily in strong wind, realistic, close"
+    },
+    {
+      "id": "boots",
+      "seconds": 4,
+      "prompt": "Group of soldiers marching in boots on gravel, steady rhythm, realistic, medium distance"
+    },
+    {
+      "id": "engine",
+      "seconds": 5,
+      "prompt": "Distant heavy armored vehicle engine rumble idling then moving, low and subtle"
+    },
+    {
+      "id": "jet",
+      "seconds": 5,
+      "prompt": "Fighter jet flyby passing overhead from left to right, powerful roar fading, realistic"
+    },
+    {
+      "id": "waves",
+      "seconds": 6,
+      "prompt": "Open sea waves against the hull of a large ship, wind over water, realistic ambience"
+    },
+    {
+      "id": "radar",
+      "seconds": 3,
+      "prompt": "Military radar sweep with soft electronic beeps, clean and subtle"
+    },
+    {
+      "id": "hit",
+      "seconds": 3,
+      "prompt": "Cinematic orchestral impact hit with deep timpani and low brass, trailer style"
+    },
+    {
+      "id": "riser",
+      "seconds": 4,
+      "prompt": "Orchestral string riser building tension, ends with a soft cymbal swell"
+    },
+    {
+      "id": "whoosh",
+      "seconds": 1.2,
+      "prompt": "Deep cinematic whoosh transition, smooth"
+    }
+  ],
+  "music": [
+    {
+      "id": "epic",
+      "prompt": "Original epic military orchestral score for a national documentary, 85 BPM, starts with solemn low strings and distant snare, builds with French horns and powerful taiko and timpani, proud heroic brass melody in the middle, rising to a triumphant full orchestra climax near 50 seconds, ends on a noble sustained major chord. No vocals, no choir words.",
+      "lengthMs": 62000
+    }
+  ]
+}

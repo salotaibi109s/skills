@@ -1,0 +1,398 @@
+{
+  "fps": 30,
+  "durationInFrames": 1000,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "V1-Hook",
+      "from": 0,
+      "durationInFrames": 96,
+      "transitionFrames": 0,
+      "voFrom": 3,
+      "voDurationInFrames": 93,
+      "words": [
+        {
+          "text": "لسّا",
+          "raw": "لسّا",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "text": "تاخذ",
+          "raw": "تاخذ",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "إجازة",
+          "raw": "إجازة…",
+          "start": 27,
+          "end": 44
+        },
+        {
+          "text": "عشان",
+          "raw": "عشان",
+          "start": 59,
+          "end": 68
+        },
+        {
+          "text": "معاملة",
+          "raw": "معاملة؟",
+          "start": 75,
+          "end": 87
+        }
+      ]
+    },
+    {
+      "id": "V2-Promise",
+      "from": 96,
+      "durationInFrames": 208,
+      "transitionFrames": 0,
+      "voFrom": 5,
+      "voDurationInFrames": 201,
+      "words": [
+        {
+          "text": "ثلاث",
+          "raw": "ثلاث",
+          "start": 5,
+          "end": 17
+        },
+        {
+          "text": "أشياء",
+          "raw": "أشياء",
+          "start": 19,
+          "end": 36
+        },
+        {
+          "text": "تخلّصها",
+          "raw": "تخلّصها",
+          "start": 39,
+          "end": 63
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 65,
+          "end": 67
+        },
+        {
+          "text": "جوالك",
+          "raw": "جوالك…",
+          "start": 70,
+          "end": 89
+        },
+        {
+          "text": "والثالثة",
+          "raw": "والثالثة",
+          "start": 105,
+          "end": 123
+        },
+        {
+          "text": "أغلب",
+          "raw": "أغلب",
+          "start": 135,
+          "end": 147
+        },
+        {
+          "text": "الناس",
+          "raw": "الناس",
+          "start": 149,
+          "end": 163
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 168,
+          "end": 173
+        },
+        {
+          "text": "يدرون",
+          "raw": "يدرون",
+          "start": 177,
+          "end": 187
+        },
+        {
+          "text": "عنها",
+          "raw": "عنها.",
+          "start": 191,
+          "end": 199
+        }
+      ]
+    },
+    {
+      "id": "V3-One",
+      "from": 304,
+      "durationInFrames": 206,
+      "transitionFrames": 0,
+      "voFrom": 5,
+      "voDurationInFrames": 201,
+      "words": [
+        {
+          "text": "واحد",
+          "raw": "واحد:",
+          "start": 5,
+          "end": 19
+        },
+        {
+          "text": "معاملاتك",
+          "raw": "معاملاتك",
+          "start": 34,
+          "end": 58
+        },
+        {
+          "text": "الإلكترونية",
+          "raw": "الإلكترونية…",
+          "start": 59,
+          "end": 87
+        },
+        {
+          "text": "تطلبها",
+          "raw": "تطلبها،",
+          "start": 99,
+          "end": 118
+        },
+        {
+          "text": "ودبّرها",
+          "raw": "ودبّرها",
+          "start": 132,
+          "end": 154
+        },
+        {
+          "text": "تتابعها",
+          "raw": "تتابعها",
+          "start": 161,
+          "end": 185
+        },
+        {
+          "text": "عنك",
+          "raw": "عنك.",
+          "start": 190,
+          "end": 197
+        }
+      ]
+    },
+    {
+      "id": "V4-Two",
+      "from": 510,
+      "durationInFrames": 182,
+      "transitionFrames": 0,
+      "voFrom": 5,
+      "voDurationInFrames": 174,
+      "words": [
+        {
+          "text": "اثنين",
+          "raw": "اثنين:",
+          "start": 5,
+          "end": 19
+        },
+        {
+          "text": "شعار",
+          "raw": "شعار",
+          "start": 36,
+          "end": 48
+        },
+        {
+          "text": "مشروعك",
+          "raw": "مشروعك…",
+          "start": 51,
+          "end": 72
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 88,
+          "end": 91
+        },
+        {
+          "text": "فكرة",
+          "raw": "فكرة",
+          "start": 93,
+          "end": 103
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 105,
+          "end": 106
+        },
+        {
+          "text": "راسك",
+          "raw": "راسك،",
+          "start": 112,
+          "end": 123
+        },
+        {
+          "text": "لتصميم",
+          "raw": "لتصميم",
+          "start": 135,
+          "end": 154
+        },
+        {
+          "text": "جاهز",
+          "raw": "جاهز.",
+          "start": 156,
+          "end": 173
+        }
+      ]
+    },
+    {
+      "id": "V5-Three",
+      "from": 692,
+      "durationInFrames": 182,
+      "transitionFrames": 0,
+      "voFrom": 5,
+      "voDurationInFrames": 174,
+      "words": [
+        {
+          "text": "بس",
+          "raw": "بس",
+          "start": 5,
+          "end": 12
+        },
+        {
+          "text": "الثالثة",
+          "raw": "الثالثة",
+          "start": 15,
+          "end": 31
+        },
+        {
+          "text": "هي",
+          "raw": "هي",
+          "start": 34,
+          "end": 36
+        },
+        {
+          "text": "الأهم",
+          "raw": "الأهم:",
+          "start": 40,
+          "end": 51
+        },
+        {
+          "text": "خدمتك",
+          "raw": "خدمتك",
+          "start": 67,
+          "end": 82
+        },
+        {
+          "text": "مو",
+          "raw": "مو",
+          "start": 83,
+          "end": 84
+        },
+        {
+          "text": "موجودة",
+          "raw": "موجودة؟",
+          "start": 85,
+          "end": 101
+        },
+        {
+          "text": "اطلبها",
+          "raw": "اطلبها",
+          "start": 118,
+          "end": 132
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 135,
+          "end": 139
+        },
+        {
+          "text": "خدمات",
+          "raw": "«خدمات",
+          "start": 142,
+          "end": 154
+        },
+        {
+          "text": "أخرى",
+          "raw": "أخرى».",
+          "start": 156,
+          "end": 166
+        }
+      ]
+    },
+    {
+      "id": "V6-Save",
+      "from": 874,
+      "durationInFrames": 126,
+      "transitionFrames": 0,
+      "voFrom": 5,
+      "voDurationInFrames": 116,
+      "words": [
+        {
+          "text": "احفظ",
+          "raw": "احفظ",
+          "start": 5,
+          "end": 15
+        },
+        {
+          "text": "المقطع",
+          "raw": "المقطع",
+          "start": 17,
+          "end": 31
+        },
+        {
+          "text": "للمعاملة",
+          "raw": "للمعاملة",
+          "start": 33,
+          "end": 50
+        },
+        {
+          "text": "الجاية",
+          "raw": "الجاية…",
+          "start": 51,
+          "end": 65
+        },
+        {
+          "text": "وخلّ",
+          "raw": "وخلّ",
+          "start": 79,
+          "end": 88
+        },
+        {
+          "text": "إجازتك",
+          "raw": "إجازتك",
+          "start": 89,
+          "end": 103
+        },
+        {
+          "text": "لك",
+          "raw": "لك.",
+          "start": 108,
+          "end": 113
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      3,
+      87
+    ],
+    [
+      101,
+      295
+    ],
+    [
+      309,
+      501
+    ],
+    [
+      515,
+      683
+    ],
+    [
+      697,
+      858
+    ],
+    [
+      879,
+      987
+    ]
+  ]
+}

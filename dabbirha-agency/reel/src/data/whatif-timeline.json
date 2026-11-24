@@ -1,0 +1,860 @@
+{
+  "fps": 30,
+  "durationInFrames": 2130,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "W1-Open",
+      "from": 0,
+      "durationInFrames": 343,
+      "transitionFrames": 10,
+      "voFrom": 11,
+      "voDurationInFrames": 316,
+      "words": [
+        {
+          "text": "تخيّل",
+          "raw": "تخيّل",
+          "start": 11,
+          "end": 25
+        },
+        {
+          "text": "أن",
+          "raw": "أن",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "text": "تستيقظ",
+          "raw": "تستيقظ",
+          "start": 35,
+          "end": 52
+        },
+        {
+          "text": "غداً",
+          "raw": "غداً…",
+          "start": 54,
+          "end": 66
+        },
+        {
+          "text": "وتكتشف",
+          "raw": "وتكتشف",
+          "start": 82,
+          "end": 100
+        },
+        {
+          "text": "أن",
+          "raw": "أن",
+          "start": 103,
+          "end": 107
+        },
+        {
+          "text": "العالم",
+          "raw": "العالم",
+          "start": 109,
+          "end": 121
+        },
+        {
+          "text": "الذي",
+          "raw": "الذي",
+          "start": 124,
+          "end": 131
+        },
+        {
+          "text": "تعرفه",
+          "raw": "تعرفه",
+          "start": 133,
+          "end": 150
+        },
+        {
+          "text": "لم",
+          "raw": "لم",
+          "start": 160,
+          "end": 165
+        },
+        {
+          "text": "يعد",
+          "raw": "يعد",
+          "start": 167,
+          "end": 177
+        },
+        {
+          "text": "كما",
+          "raw": "كما",
+          "start": 178,
+          "end": 184
+        },
+        {
+          "text": "كان",
+          "raw": "كان.",
+          "start": 186,
+          "end": 196
+        },
+        {
+          "text": "أشياء",
+          "raw": "أشياء",
+          "start": 210,
+          "end": 225
+        },
+        {
+          "text": "كنا",
+          "raw": "كنا",
+          "start": 227,
+          "end": 234
+        },
+        {
+          "text": "نظنها",
+          "raw": "نظنها",
+          "start": 238,
+          "end": 251
+        },
+        {
+          "text": "مستحيلة",
+          "raw": "مستحيلة…",
+          "start": 253,
+          "end": 275
+        },
+        {
+          "text": "أصبحت",
+          "raw": "أصبحت",
+          "start": 287,
+          "end": 301
+        },
+        {
+          "text": "حقيقة",
+          "raw": "حقيقة!",
+          "start": 304,
+          "end": 321
+        }
+      ]
+    },
+    {
+      "id": "W2-AI",
+      "from": 333,
+      "durationInFrames": 128,
+      "transitionFrames": 10,
+      "voFrom": 11,
+      "voDurationInFrames": 102,
+      "words": [
+        {
+          "text": "ماذا",
+          "raw": "ماذا",
+          "start": 11,
+          "end": 23
+        },
+        {
+          "text": "لو",
+          "raw": "لو",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "text": "أصبحت",
+          "raw": "أصبحت",
+          "start": 31,
+          "end": 45
+        },
+        {
+          "text": "الآلات",
+          "raw": "الآلات",
+          "start": 47,
+          "end": 66
+        },
+        {
+          "text": "أذكى",
+          "raw": "أذكى",
+          "start": 71,
+          "end": 83
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 85,
+          "end": 90
+        },
+        {
+          "text": "البشر",
+          "raw": "البشر؟",
+          "start": 93,
+          "end": 105
+        }
+      ]
+    },
+    {
+      "id": "W3-Money",
+      "from": 451,
+      "durationInFrames": 113,
+      "transitionFrames": 10,
+      "voFrom": 11,
+      "voDurationInFrames": 81,
+      "words": [
+        {
+          "text": "وماذا",
+          "raw": "وماذا",
+          "start": 11,
+          "end": 25
+        },
+        {
+          "text": "لو",
+          "raw": "لو",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "text": "اختفى",
+          "raw": "اختفى",
+          "start": 36,
+          "end": 45
+        },
+        {
+          "text": "المال",
+          "raw": "المال",
+          "start": 48,
+          "end": 57
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 59,
+          "end": 64
+        },
+        {
+          "text": "حياتنا",
+          "raw": "حياتنا؟",
+          "start": 66,
+          "end": 83
+        }
+      ]
+    },
+    {
+      "id": "W4-Mind",
+      "from": 554,
+      "durationInFrames": 227,
+      "transitionFrames": 10,
+      "voFrom": 11,
+      "voDurationInFrames": 206,
+      "words": [
+        {
+          "text": "أو",
+          "raw": "أو",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "استطاع",
+          "raw": "استطاع",
+          "start": 19,
+          "end": 30
+        },
+        {
+          "text": "العلماء",
+          "raw": "العلماء",
+          "start": 33,
+          "end": 49
+        },
+        {
+          "text": "قراءة",
+          "raw": "قراءة",
+          "start": 52,
+          "end": 69
+        },
+        {
+          "text": "أفكارك",
+          "raw": "أفكارك…",
+          "start": 76,
+          "end": 90
+        },
+        {
+          "text": "ومعرفة",
+          "raw": "ومعرفة",
+          "start": 103,
+          "end": 119
+        },
+        {
+          "text": "أسرارك",
+          "raw": "أسرارك",
+          "start": 124,
+          "end": 141
+        },
+        {
+          "text": "التي",
+          "raw": "التي",
+          "start": 143,
+          "end": 155
+        },
+        {
+          "text": "لم",
+          "raw": "لم",
+          "start": 157,
+          "end": 165
+        },
+        {
+          "text": "تخبر",
+          "raw": "تخبر",
+          "start": 167,
+          "end": 179
+        },
+        {
+          "text": "بها",
+          "raw": "بها",
+          "start": 181,
+          "end": 189
+        },
+        {
+          "text": "أحداً",
+          "raw": "أحداً؟",
+          "start": 191,
+          "end": 205
+        }
+      ]
+    },
+    {
+      "id": "W5-Net",
+      "from": 771,
+      "durationInFrames": 142,
+      "transitionFrames": 10,
+      "voFrom": 11,
+      "voDurationInFrames": 112,
+      "words": [
+        {
+          "text": "ماذا",
+          "raw": "ماذا",
+          "start": 11,
+          "end": 23
+        },
+        {
+          "text": "لو",
+          "raw": "لو",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "text": "انقطع",
+          "raw": "انقطع",
+          "start": 30,
+          "end": 42
+        },
+        {
+          "text": "الإنترنت",
+          "raw": "الإنترنت",
+          "start": 45,
+          "end": 66
+        },
+        {
+          "text": "عن",
+          "raw": "عن",
+          "start": 69,
+          "end": 71
+        },
+        {
+          "text": "العالم",
+          "raw": "العالم",
+          "start": 73,
+          "end": 90
+        },
+        {
+          "text": "بأكمله",
+          "raw": "بأكمله؟",
+          "start": 93,
+          "end": 112
+        }
+      ]
+    },
+    {
+      "id": "W6-Alien",
+      "from": 903,
+      "durationInFrames": 157,
+      "transitionFrames": 10,
+      "voFrom": 11,
+      "voDurationInFrames": 129,
+      "words": [
+        {
+          "text": "أو",
+          "raw": "أو",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "text": "اكتشفنا",
+          "raw": "اكتشفنا",
+          "start": 16,
+          "end": 35
+        },
+        {
+          "text": "أن",
+          "raw": "أن",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "text": "هناك",
+          "raw": "هناك",
+          "start": 45,
+          "end": 57
+        },
+        {
+          "text": "حياة",
+          "raw": "حياة",
+          "start": 64,
+          "end": 71
+        },
+        {
+          "text": "أخرى",
+          "raw": "أخرى",
+          "start": 73,
+          "end": 88
+        },
+        {
+          "text": "خارج",
+          "raw": "خارج",
+          "start": 95,
+          "end": 107
+        },
+        {
+          "text": "كوكب",
+          "raw": "كوكب",
+          "start": 112,
+          "end": 119
+        },
+        {
+          "text": "الأرض",
+          "raw": "الأرض؟",
+          "start": 123,
+          "end": 133
+        }
+      ]
+    },
+    {
+      "id": "W7-Age",
+      "from": 1050,
+      "durationInFrames": 147,
+      "transitionFrames": 10,
+      "voFrom": 11,
+      "voDurationInFrames": 116,
+      "words": [
+        {
+          "text": "أو",
+          "raw": "أو",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "أصبح",
+          "raw": "أصبح",
+          "start": 17,
+          "end": 28
+        },
+        {
+          "text": "بإمكان",
+          "raw": "بإمكان",
+          "start": 30,
+          "end": 45
+        },
+        {
+          "text": "الإنسان",
+          "raw": "الإنسان",
+          "start": 47,
+          "end": 66
+        },
+        {
+          "text": "أن",
+          "raw": "أن",
+          "start": 69,
+          "end": 73
+        },
+        {
+          "text": "يعيش",
+          "raw": "يعيش",
+          "start": 77,
+          "end": 85
+        },
+        {
+          "text": "مئات",
+          "raw": "مئات",
+          "start": 88,
+          "end": 102
+        },
+        {
+          "text": "السنين",
+          "raw": "السنين؟",
+          "start": 105,
+          "end": 119
+        }
+      ]
+    },
+    {
+      "id": "W8-History",
+      "from": 1187,
+      "durationInFrames": 503,
+      "transitionFrames": 10,
+      "voFrom": 11,
+      "voDurationInFrames": 479,
+      "words": [
+        {
+          "text": "قد",
+          "raw": "قد",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "تبدو",
+          "raw": "تبدو",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "هذه",
+          "raw": "هذه",
+          "start": 28,
+          "end": 35
+        },
+        {
+          "text": "الأفكار",
+          "raw": "الأفكار",
+          "start": 37,
+          "end": 54
+        },
+        {
+          "text": "ضرباً",
+          "raw": "ضرباً",
+          "start": 57,
+          "end": 69
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 71,
+          "end": 73
+        },
+        {
+          "text": "الخيال",
+          "raw": "الخيال…",
+          "start": 76,
+          "end": 93
+        },
+        {
+          "text": "لكن",
+          "raw": "لكن",
+          "start": 108,
+          "end": 114
+        },
+        {
+          "text": "التاريخ",
+          "raw": "التاريخ",
+          "start": 118,
+          "end": 131
+        },
+        {
+          "text": "يخبرنا",
+          "raw": "يخبرنا",
+          "start": 135,
+          "end": 153
+        },
+        {
+          "text": "أن",
+          "raw": "أن",
+          "start": 155,
+          "end": 162
+        },
+        {
+          "text": "أشياء",
+          "raw": "أشياء",
+          "start": 169,
+          "end": 177
+        },
+        {
+          "text": "كثيرة",
+          "raw": "كثيرة",
+          "start": 180,
+          "end": 198
+        },
+        {
+          "text": "كانت",
+          "raw": "كانت",
+          "start": 201,
+          "end": 210
+        },
+        {
+          "text": "مستحيلة",
+          "raw": "مستحيلة",
+          "start": 215,
+          "end": 234
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 237,
+          "end": 241
+        },
+        {
+          "text": "زمن",
+          "raw": "زمن",
+          "start": 243,
+          "end": 251
+        },
+        {
+          "text": "مضى",
+          "raw": "مضى،",
+          "start": 253,
+          "end": 263
+        },
+        {
+          "text": "وأصبحت",
+          "raw": "وأصبحت",
+          "start": 280,
+          "end": 297
+        },
+        {
+          "text": "اليوم",
+          "raw": "اليوم",
+          "start": 300,
+          "end": 311
+        },
+        {
+          "text": "جزءاً",
+          "raw": "جزءاً",
+          "start": 316,
+          "end": 328
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 330,
+          "end": 333
+        },
+        {
+          "text": "حياتنا",
+          "raw": "حياتنا.",
+          "start": 335,
+          "end": 349
+        },
+        {
+          "text": "فمن",
+          "raw": "فمن",
+          "start": 366,
+          "end": 373
+        },
+        {
+          "text": "يضمن",
+          "raw": "يضمن",
+          "start": 377,
+          "end": 388
+        },
+        {
+          "text": "أن",
+          "raw": "أن",
+          "start": 390,
+          "end": 397
+        },
+        {
+          "text": "خيال",
+          "raw": "خيال",
+          "start": 400,
+          "end": 407
+        },
+        {
+          "text": "اليوم",
+          "raw": "اليوم…",
+          "start": 409,
+          "end": 424
+        },
+        {
+          "text": "لن",
+          "raw": "لن",
+          "start": 436,
+          "end": 441
+        },
+        {
+          "text": "يكون",
+          "raw": "يكون",
+          "start": 443,
+          "end": 455
+        },
+        {
+          "text": "واقع",
+          "raw": "واقع",
+          "start": 457,
+          "end": 469
+        },
+        {
+          "text": "الغد",
+          "raw": "الغد؟",
+          "start": 471,
+          "end": 481
+        }
+      ]
+    },
+    {
+      "id": "W9-End",
+      "from": 1680,
+      "durationInFrames": 450,
+      "transitionFrames": 0,
+      "voFrom": 11,
+      "voDurationInFrames": 319,
+      "words": [
+        {
+          "text": "هنا",
+          "raw": "هنا،",
+          "start": 11,
+          "end": 23
+        },
+        {
+          "text": "لن",
+          "raw": "لن",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "text": "نسأل",
+          "raw": "نسأل",
+          "start": 43,
+          "end": 49
+        },
+        {
+          "text": "فقط",
+          "raw": "فقط:",
+          "start": 52,
+          "end": 64
+        },
+        {
+          "text": "ماذا",
+          "raw": "ماذا",
+          "start": 71,
+          "end": 81
+        },
+        {
+          "text": "لو",
+          "raw": "لو؟",
+          "start": 84,
+          "end": 88
+        },
+        {
+          "text": "بل",
+          "raw": "بل",
+          "start": 102,
+          "end": 105
+        },
+        {
+          "text": "سنكتشف",
+          "raw": "سنكتشف…",
+          "start": 107,
+          "end": 129
+        },
+        {
+          "text": "ماذا",
+          "raw": "ماذا",
+          "start": 143,
+          "end": 148
+        },
+        {
+          "text": "سيحدث",
+          "raw": "سيحدث",
+          "start": 150,
+          "end": 169
+        },
+        {
+          "text": "لو",
+          "raw": "لو",
+          "start": 172,
+          "end": 177
+        },
+        {
+          "text": "أصبح",
+          "raw": "أصبح",
+          "start": 179,
+          "end": 191
+        },
+        {
+          "text": "المستحيل",
+          "raw": "المستحيل",
+          "start": 195,
+          "end": 210
+        },
+        {
+          "text": "حقيقة",
+          "raw": "حقيقة؟",
+          "start": 213,
+          "end": 229
+        },
+        {
+          "text": "مرحباً",
+          "raw": "مرحباً",
+          "start": 241,
+          "end": 256
+        },
+        {
+          "text": "بك",
+          "raw": "بك",
+          "start": 261,
+          "end": 265
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 268,
+          "end": 270
+        },
+        {
+          "text": "عالم",
+          "raw": "عالم…",
+          "start": 273,
+          "end": 287
+        },
+        {
+          "text": "ماذا",
+          "raw": "ماذا",
+          "start": 303,
+          "end": 309
+        },
+        {
+          "text": "لو",
+          "raw": "لو؟",
+          "start": 311,
+          "end": 318
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      11,
+      321
+    ],
+    [
+      344,
+      438
+    ],
+    [
+      462,
+      534
+    ],
+    [
+      565,
+      759
+    ],
+    [
+      782,
+      883
+    ],
+    [
+      914,
+      1036
+    ],
+    [
+      1061,
+      1169
+    ],
+    [
+      1198,
+      1668
+    ],
+    [
+      1691,
+      1998
+    ]
+  ]
+}

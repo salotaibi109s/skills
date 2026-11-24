@@ -1,0 +1,400 @@
+{
+  "fps": 30,
+  "durationInFrames": 1350,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "W1-Hook",
+      "from": 0,
+      "durationInFrames": 143,
+      "transitionFrames": 0,
+      "voFrom": 11,
+      "voDurationInFrames": 127,
+      "words": [
+        {
+          "text": "أقوى",
+          "raw": "أقوى",
+          "start": 11,
+          "end": 23
+        },
+        {
+          "text": "تخفيض",
+          "raw": "تخفيض",
+          "start": 25,
+          "end": 42
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 45,
+          "end": 47
+        },
+        {
+          "text": "الجمعة",
+          "raw": "الجمعة",
+          "start": 48,
+          "end": 61
+        },
+        {
+          "text": "البيضاء",
+          "raw": "البيضاء…",
+          "start": 64,
+          "end": 83
+        },
+        {
+          "text": "مو",
+          "raw": "مو",
+          "start": 100,
+          "end": 105
+        },
+        {
+          "text": "على",
+          "raw": "على",
+          "start": 108,
+          "end": 112
+        },
+        {
+          "text": "الأسعار",
+          "raw": "الأسعار!",
+          "start": 113,
+          "end": 131
+        }
+      ]
+    },
+    {
+      "id": "W2-Time",
+      "from": 143,
+      "durationInFrames": 108,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 73,
+      "words": [
+        {
+          "text": "تخفيض",
+          "raw": "تخفيض…",
+          "start": 9,
+          "end": 33
+        },
+        {
+          "text": "على",
+          "raw": "على",
+          "start": 50,
+          "end": 57
+        },
+        {
+          "text": "وقتك",
+          "raw": "وقتك!",
+          "start": 59,
+          "end": 76
+        }
+      ]
+    },
+    {
+      "id": "W3-Gov",
+      "from": 251,
+      "durationInFrames": 179,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 120,
+      "words": [
+        {
+          "text": "معاملة",
+          "raw": "معاملة",
+          "start": 9,
+          "end": 28
+        },
+        {
+          "text": "تاخذ",
+          "raw": "تاخذ",
+          "start": 29,
+          "end": 40
+        },
+        {
+          "text": "منك",
+          "raw": "منك",
+          "start": 44,
+          "end": 52
+        },
+        {
+          "text": "يوم",
+          "raw": "يوم",
+          "start": 56,
+          "end": 59
+        },
+        {
+          "text": "كامل",
+          "raw": "كامل؟",
+          "start": 62,
+          "end": 74
+        },
+        {
+          "text": "صارت",
+          "raw": "صارت",
+          "start": 88,
+          "end": 98
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 100,
+          "end": 103
+        },
+        {
+          "text": "جوالك",
+          "raw": "جوالك.",
+          "start": 106,
+          "end": 122
+        }
+      ]
+    },
+    {
+      "id": "W4-Design",
+      "from": 430,
+      "durationInFrames": 173,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 98,
+      "words": [
+        {
+          "text": "شعار",
+          "raw": "شعار",
+          "start": 9,
+          "end": 23
+        },
+        {
+          "text": "محتار",
+          "raw": "محتار",
+          "start": 25,
+          "end": 35
+        },
+        {
+          "text": "فيه",
+          "raw": "فيه",
+          "start": 38,
+          "end": 43
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 45,
+          "end": 47
+        },
+        {
+          "text": "شهر",
+          "raw": "شهر؟",
+          "start": 50,
+          "end": 59
+        },
+        {
+          "text": "يجيك",
+          "raw": "يجيك",
+          "start": 71,
+          "end": 81
+        },
+        {
+          "text": "جاهز",
+          "raw": "جاهز.",
+          "start": 83,
+          "end": 100
+        }
+      ]
+    },
+    {
+      "id": "W5-Tech",
+      "from": 603,
+      "durationInFrames": 174,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 112,
+      "words": [
+        {
+          "text": "فكرة",
+          "raw": "فكرة",
+          "start": 9,
+          "end": 21
+        },
+        {
+          "text": "موقع",
+          "raw": "موقع",
+          "start": 23,
+          "end": 40
+        },
+        {
+          "text": "أو",
+          "raw": "أو",
+          "start": 45,
+          "end": 55
+        },
+        {
+          "text": "حل",
+          "raw": "حل",
+          "start": 57,
+          "end": 64
+        },
+        {
+          "text": "تقني",
+          "raw": "تقني؟",
+          "start": 69,
+          "end": 81
+        },
+        {
+          "text": "تتنفّذ",
+          "raw": "تتنفّذ.",
+          "start": 93,
+          "end": 119
+        }
+      ]
+    },
+    {
+      "id": "W6-Cart",
+      "from": 777,
+      "durationInFrames": 209,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 98,
+      "words": [
+        {
+          "text": "حط",
+          "raw": "حط",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "طلبك",
+          "raw": "طلبك",
+          "start": 23,
+          "end": 31
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 32,
+          "end": 33
+        },
+        {
+          "text": "السلة",
+          "raw": "السلة…",
+          "start": 34,
+          "end": 47
+        },
+        {
+          "text": "والباقي",
+          "raw": "والباقي",
+          "start": 62,
+          "end": 81
+        },
+        {
+          "text": "علينا",
+          "raw": "علينا.",
+          "start": 86,
+          "end": 100
+        }
+      ]
+    },
+    {
+      "id": "W7-CTA",
+      "from": 986,
+      "durationInFrames": 364,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 218,
+      "words": [
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها",
+          "start": 12,
+          "end": 29
+        },
+        {
+          "text": "للخدمات",
+          "raw": "للخدمات",
+          "start": 32,
+          "end": 48
+        },
+        {
+          "text": "الإلكترونية",
+          "raw": "الإلكترونية…",
+          "start": 50,
+          "end": 77
+        },
+        {
+          "text": "المصداقية",
+          "raw": "المصداقية،",
+          "start": 89,
+          "end": 113
+        },
+        {
+          "text": "وسرعة",
+          "raw": "وسرعة",
+          "start": 120,
+          "end": 137
+        },
+        {
+          "text": "الإنجاز",
+          "raw": "الإنجاز.",
+          "start": 138,
+          "end": 156
+        },
+        {
+          "text": "ورابط",
+          "raw": "ورابط",
+          "start": 173,
+          "end": 185
+        },
+        {
+          "text": "المتجر",
+          "raw": "المتجر",
+          "start": 187,
+          "end": 202
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 206,
+          "end": 209
+        },
+        {
+          "text": "البايو",
+          "raw": "البايو!",
+          "start": 210,
+          "end": 223
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      11,
+      131
+    ],
+    [
+      152,
+      219
+    ],
+    [
+      260,
+      373
+    ],
+    [
+      439,
+      530
+    ],
+    [
+      612,
+      722
+    ],
+    [
+      786,
+      877
+    ],
+    [
+      998,
+      1209
+    ]
+  ]
+}

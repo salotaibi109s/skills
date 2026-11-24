@@ -1,0 +1,142 @@
+{
+  "audioDir": "agents",
+  "totalFrames": 2460,
+  "tailSeconds": 0.35,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "A1-Need",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "عندك مشروع؟ أكيد تعرف الدوامة: ترد على العملاء، وتسوي محتوى، وتتابع الطلبات… واليوم ما يكفي."
+    },
+    {
+      "id": "A2-Idea",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "طيب وش رايك تبني لك فريق ذكاء اصطناعي يشيل عنك هالشغل؟ وكل اللي تحتاجه أمر واحد."
+    },
+    {
+      "id": "A3-Step1",
+      "nominalSeconds": 12,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الخطوة الأولى: افتح كلود، وانسخ هالأمر بالضبط. تقول له: أنت مهندس فريق الذكاء الاصطناعي حقي، ساعدني أبني أول فريق من ثلاثة إلى خمسة عملاء. واسألني قبل لا تبدأ عن أهدافي ومهاراتي ووقتي."
+    },
+    {
+      "id": "A4-Step2",
+      "nominalSeconds": 11,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الخطوة الثانية: جاوب على أسئلته بدقة. بيقترح عليك مجالات مثل: صناعة المحتوى، وجلب العملاء، وخدمة العملاء، والتنظيم. ونصيحتي: ابدأ بالمهمة اللي تاكل أغلب وقتك."
+    },
+    {
+      "id": "A5-Step3",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الخطوة الثالثة: يجهز لك النظام كامل: مهام كل عميل، ونقاط مراجعتك، والأوامر الجاهزة، والأدوات، وخطة تجربة قبل الإطلاق."
+    },
+    {
+      "id": "A6-Rule",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "بس انتبه للقاعدة الذهبية: لا تخلي أي عميل ينشر، أو يرسل، أو يحذف، أو يدفع… بدون موافقتك. ولا تشارك كلمات السر أبداً."
+    },
+    {
+      "id": "A7-CTA",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "tts": "وإذا تبغى فريقك يتجهز لك من البداية للنهاية… متجر دبرها يوفر لك هالخدمة. والرابط في البايو.",
+      "minSeconds": 11
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.6,
+      "prompt": "Smooth modern whoosh transition, short and clean"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Bright playful UI pop, short"
+    },
+    {
+      "id": "boing",
+      "seconds": 0.7,
+      "prompt": "Bouncy elastic number pop, playful cartoon spring boing, short"
+    },
+    {
+      "id": "type",
+      "seconds": 2.0,
+      "prompt": "Fast mechanical keyboard typing burst, crisp keys"
+    },
+    {
+      "id": "enter",
+      "seconds": 0.5,
+      "prompt": "Single satisfying keyboard enter key press"
+    },
+    {
+      "id": "ding",
+      "seconds": 0.8,
+      "prompt": "Pleasant success chime, modern app"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1.5,
+      "prompt": "Magical sparkle shimmer with rising particles, bright"
+    },
+    {
+      "id": "impact",
+      "seconds": 1.5,
+      "prompt": "Punchy modern logo hit with bright shimmer tail"
+    },
+    {
+      "id": "tick",
+      "seconds": 0.5,
+      "prompt": "Crisp short UI tick click, snappy and clean"
+    },
+    {
+      "id": "swish",
+      "seconds": 0.5,
+      "prompt": "Very short fast swish for kinetic text, airy"
+    },
+    {
+      "id": "riser",
+      "seconds": 1.2,
+      "prompt": "Short rising whoosh riser building into a hit, energetic"
+    },
+    {
+      "id": "thud",
+      "seconds": 0.6,
+      "prompt": "Punchy deep thud hit for a big number appearing, tight"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm",
+      "prompt": "Light, calm and positive background music for a modern Arabic tech tutorial, 96 BPM, soft muted plucks, gentle marimba and warm airy pads, very light shaker, smooth and pleasant, low energy, never harsh or loud, steady from the start, gentle ending at 76 seconds. No vocals.",
+      "lengthMs": 77000
+    }
+  ]
+}

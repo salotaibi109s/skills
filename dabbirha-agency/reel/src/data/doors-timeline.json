@@ -1,0 +1,464 @@
+{
+  "fps": 30,
+  "durationInFrames": 1500,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "D0-Welcome",
+      "from": 0,
+      "durationInFrames": 191,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 153,
+      "words": [
+        {
+          "text": "حيّاك",
+          "raw": "حيّاك",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها…",
+          "start": 35,
+          "end": 48
+        },
+        {
+          "text": "أربعة",
+          "raw": "أربعة",
+          "start": 61,
+          "end": 74
+        },
+        {
+          "text": "أبواب",
+          "raw": "أبواب،",
+          "start": 77,
+          "end": 91
+        },
+        {
+          "text": "وكل",
+          "raw": "وكل",
+          "start": 101,
+          "end": 110
+        },
+        {
+          "text": "باب",
+          "raw": "باب",
+          "start": 116,
+          "end": 122
+        },
+        {
+          "text": "وراه",
+          "raw": "وراه",
+          "start": 127,
+          "end": 134
+        },
+        {
+          "text": "خدماتك",
+          "raw": "خدماتك.",
+          "start": 137,
+          "end": 158
+        }
+      ]
+    },
+    {
+      "id": "D1-Government",
+      "from": 191,
+      "durationInFrames": 306,
+      "transitionFrames": 12,
+      "voFrom": 14,
+      "voDurationInFrames": 242,
+      "words": [
+        {
+          "text": "الباب",
+          "raw": "الباب",
+          "start": 14,
+          "end": 14
+        },
+        {
+          "text": "الأول",
+          "raw": "الأول:",
+          "start": 18,
+          "end": 26
+        },
+        {
+          "text": "الخدمات",
+          "raw": "الخدمات",
+          "start": 32,
+          "end": 55
+        },
+        {
+          "text": "الحكومية",
+          "raw": "الحكومية…",
+          "start": 57,
+          "end": 74
+        },
+        {
+          "text": "أبشر",
+          "raw": "أبشر،",
+          "start": 79,
+          "end": 92
+        },
+        {
+          "text": "وقوى",
+          "raw": "وقوى،",
+          "start": 110,
+          "end": 129
+        },
+        {
+          "text": "والتأمينات",
+          "raw": "والتأمينات،",
+          "start": 139,
+          "end": 184
+        },
+        {
+          "text": "والعدل",
+          "raw": "والعدل،",
+          "start": 195,
+          "end": 208
+        },
+        {
+          "text": "وعقود",
+          "raw": "وعقود",
+          "start": 219,
+          "end": 230
+        },
+        {
+          "text": "الإيجار",
+          "raw": "الإيجار.",
+          "start": 232,
+          "end": 247
+        }
+      ]
+    },
+    {
+      "id": "D2-Business",
+      "from": 485,
+      "durationInFrames": 338,
+      "transitionFrames": 12,
+      "voFrom": 15,
+      "voDurationInFrames": 283,
+      "words": [
+        {
+          "text": "الباب",
+          "raw": "الباب",
+          "start": 15,
+          "end": 27
+        },
+        {
+          "text": "الثاني",
+          "raw": "الثاني:",
+          "start": 29,
+          "end": 44
+        },
+        {
+          "text": "التجارة",
+          "raw": "التجارة",
+          "start": 58,
+          "end": 77
+        },
+        {
+          "text": "والعمل",
+          "raw": "والعمل",
+          "start": 80,
+          "end": 92
+        },
+        {
+          "text": "الحر",
+          "raw": "الحر…",
+          "start": 94,
+          "end": 106
+        },
+        {
+          "text": "وثيقة",
+          "raw": "وثيقة",
+          "start": 124,
+          "end": 137
+        },
+        {
+          "text": "العمل",
+          "raw": "العمل",
+          "start": 140,
+          "end": 149
+        },
+        {
+          "text": "الحر",
+          "raw": "الحر،",
+          "start": 152,
+          "end": 161
+        },
+        {
+          "text": "وخدمات",
+          "raw": "وخدمات",
+          "start": 169,
+          "end": 183
+        },
+        {
+          "text": "وزارة",
+          "raw": "وزارة",
+          "start": 185,
+          "end": 197
+        },
+        {
+          "text": "التجارة",
+          "raw": "التجارة،",
+          "start": 200,
+          "end": 217
+        },
+        {
+          "text": "ومتجرك",
+          "raw": "ومتجرك",
+          "start": 227,
+          "end": 243
+        },
+        {
+          "text": "الإلكتروني",
+          "raw": "الإلكتروني",
+          "start": 245,
+          "end": 265
+        },
+        {
+          "text": "المتكامل",
+          "raw": "المتكامل.",
+          "start": 267,
+          "end": 291
+        }
+      ]
+    },
+    {
+      "id": "D3-Creative",
+      "from": 811,
+      "durationInFrames": 248,
+      "transitionFrames": 12,
+      "voFrom": 15,
+      "voDurationInFrames": 199,
+      "words": [
+        {
+          "text": "الباب",
+          "raw": "الباب",
+          "start": 15,
+          "end": 27
+        },
+        {
+          "text": "الثالث",
+          "raw": "الثالث:",
+          "start": 29,
+          "end": 46
+        },
+        {
+          "text": "الخدمات",
+          "raw": "الخدمات",
+          "start": 61,
+          "end": 77
+        },
+        {
+          "text": "الإبداعية",
+          "raw": "الإبداعية",
+          "start": 80,
+          "end": 101
+        },
+        {
+          "text": "والتسويقية",
+          "raw": "والتسويقية…",
+          "start": 104,
+          "end": 130
+        },
+        {
+          "text": "عشان",
+          "raw": "عشان",
+          "start": 145,
+          "end": 152
+        },
+        {
+          "text": "مشروعك",
+          "raw": "مشروعك",
+          "start": 159,
+          "end": 169
+        },
+        {
+          "text": "يوصل",
+          "raw": "يوصل",
+          "start": 171,
+          "end": 185
+        },
+        {
+          "text": "ويبان",
+          "raw": "ويبان.",
+          "start": 190,
+          "end": 205
+        }
+      ]
+    },
+    {
+      "id": "D4-Support",
+      "from": 1047,
+      "durationInFrames": 265,
+      "transitionFrames": 12,
+      "voFrom": 15,
+      "voDurationInFrames": 222,
+      "words": [
+        {
+          "text": "والباب",
+          "raw": "والباب",
+          "start": 15,
+          "end": 27
+        },
+        {
+          "text": "الرابع",
+          "raw": "الرابع:",
+          "start": 29,
+          "end": 44
+        },
+        {
+          "text": "الدعم",
+          "raw": "الدعم",
+          "start": 59,
+          "end": 73
+        },
+        {
+          "text": "والتمويل",
+          "raw": "والتمويل…",
+          "start": 76,
+          "end": 94
+        },
+        {
+          "text": "الضمان",
+          "raw": "الضمان",
+          "start": 111,
+          "end": 121
+        },
+        {
+          "text": "الاجتماعي",
+          "raw": "الاجتماعي،",
+          "start": 123,
+          "end": 145
+        },
+        {
+          "text": "وحساب",
+          "raw": "وحساب",
+          "start": 153,
+          "end": 166
+        },
+        {
+          "text": "المواطن",
+          "raw": "المواطن،",
+          "start": 170,
+          "end": 185
+        },
+        {
+          "text": "وقرض",
+          "raw": "وقرض",
+          "start": 196,
+          "end": 205
+        },
+        {
+          "text": "العمل",
+          "raw": "العمل",
+          "start": 207,
+          "end": 217
+        },
+        {
+          "text": "الحر",
+          "raw": "الحر.",
+          "start": 219,
+          "end": 231
+        }
+      ]
+    },
+    {
+      "id": "D5-Outro",
+      "from": 1300,
+      "durationInFrames": 200,
+      "transitionFrames": 0,
+      "voFrom": 15,
+      "voDurationInFrames": 179,
+      "words": [
+        {
+          "text": "كل",
+          "raw": "كل",
+          "start": 15,
+          "end": 22
+        },
+        {
+          "text": "الأبواب",
+          "raw": "الأبواب",
+          "start": 25,
+          "end": 39
+        },
+        {
+          "text": "مفتوحة",
+          "raw": "مفتوحة",
+          "start": 41,
+          "end": 58
+        },
+        {
+          "text": "لك",
+          "raw": "لك…",
+          "start": 61,
+          "end": 73
+        },
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها،",
+          "start": 89,
+          "end": 106
+        },
+        {
+          "text": "المصداقية",
+          "raw": "المصداقية",
+          "start": 122,
+          "end": 147
+        },
+        {
+          "text": "وسرعة",
+          "raw": "وسرعة",
+          "start": 152,
+          "end": 166
+        },
+        {
+          "text": "الإنجاز",
+          "raw": "الإنجاز.",
+          "start": 169,
+          "end": 188
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      12,
+      158
+    ],
+    [
+      205,
+      438
+    ],
+    [
+      500,
+      776
+    ],
+    [
+      826,
+      1016
+    ],
+    [
+      1062,
+      1278
+    ],
+    [
+      1315,
+      1488
+    ]
+  ]
+}

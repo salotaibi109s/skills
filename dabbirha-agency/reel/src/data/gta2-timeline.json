@@ -1,0 +1,682 @@
+{
+  "fps": 30,
+  "durationInFrames": 1830,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "N1-Hook",
+      "from": 0,
+      "durationInFrames": 354,
+      "transitionFrames": 12,
+      "voFrom": 9,
+      "voDurationInFrames": 330,
+      "words": [
+        {
+          "text": "GTA",
+          "raw": "GTA",
+          "start": 9,
+          "end": 31
+        },
+        {
+          "text": "6",
+          "raw": "6",
+          "start": 33,
+          "end": 45
+        },
+        {
+          "text": "نزلت",
+          "raw": "نزلت",
+          "start": 52,
+          "end": 67
+        },
+        {
+          "text": "بثلاث",
+          "raw": "بثلاث",
+          "start": 69,
+          "end": 86
+        },
+        {
+          "text": "عشرة",
+          "raw": "عشرة",
+          "start": 91,
+          "end": 105
+        },
+        {
+          "text": "لغة",
+          "raw": "لغة…",
+          "start": 109,
+          "end": 115
+        },
+        {
+          "text": "والعربي",
+          "raw": "والعربي",
+          "start": 133,
+          "end": 146
+        },
+        {
+          "text": "مو",
+          "raw": "مو",
+          "start": 148,
+          "end": 151
+        },
+        {
+          "text": "منها",
+          "raw": "منها.",
+          "start": 154,
+          "end": 163
+        },
+        {
+          "text": "بس",
+          "raw": "بس",
+          "start": 177,
+          "end": 182
+        },
+        {
+          "text": "تقدر",
+          "raw": "تقدر",
+          "start": 183,
+          "end": 191
+        },
+        {
+          "text": "تلعبها",
+          "raw": "تلعبها",
+          "start": 194,
+          "end": 208
+        },
+        {
+          "text": "وتفهم",
+          "raw": "وتفهم",
+          "start": 211,
+          "end": 227
+        },
+        {
+          "text": "كل",
+          "raw": "كل",
+          "start": 230,
+          "end": 239
+        },
+        {
+          "text": "كلمة",
+          "raw": "كلمة…",
+          "start": 243,
+          "end": 251
+        },
+        {
+          "text": "وهذي",
+          "raw": "وهذي",
+          "start": 267,
+          "end": 273
+        },
+        {
+          "text": "الطريقة",
+          "raw": "الطريقة،",
+          "start": 275,
+          "end": 290
+        },
+        {
+          "text": "مستوى",
+          "raw": "مستوى",
+          "start": 305,
+          "end": 316
+        },
+        {
+          "text": "مستوى",
+          "raw": "مستوى.",
+          "start": 319,
+          "end": 331
+        }
+      ]
+    },
+    {
+      "id": "N2-Subs",
+      "from": 342,
+      "durationInFrames": 358,
+      "transitionFrames": 10,
+      "voFrom": 6,
+      "voDurationInFrames": 340,
+      "words": [
+        {
+          "text": "المستوى",
+          "raw": "المستوى",
+          "start": 6,
+          "end": 20
+        },
+        {
+          "text": "الأول",
+          "raw": "الأول:",
+          "start": 24,
+          "end": 35
+        },
+        {
+          "text": "الترجمة",
+          "raw": "الترجمة.",
+          "start": 49,
+          "end": 66
+        },
+        {
+          "text": "الترجمة",
+          "raw": "الترجمة",
+          "start": 80,
+          "end": 96
+        },
+        {
+          "text": "الإنجليزية",
+          "raw": "الإنجليزية",
+          "start": 98,
+          "end": 119
+        },
+        {
+          "text": "افتراضياً",
+          "raw": "افتراضياً",
+          "start": 124,
+          "end": 145
+        },
+        {
+          "text": "تطلع",
+          "raw": "تطلع",
+          "start": 148,
+          "end": 157
+        },
+        {
+          "text": "للمهمات",
+          "raw": "للمهمات",
+          "start": 158,
+          "end": 181
+        },
+        {
+          "text": "بس",
+          "raw": "بس…",
+          "start": 191,
+          "end": 208
+        },
+        {
+          "text": "غيّرها",
+          "raw": "غيّرها",
+          "start": 221,
+          "end": 232
+        },
+        {
+          "text": "لكل",
+          "raw": "لكل",
+          "start": 234,
+          "end": 244
+        },
+        {
+          "text": "الحوارات",
+          "raw": "الحوارات،",
+          "start": 245,
+          "end": 263
+        },
+        {
+          "text": "عشان",
+          "raw": "عشان",
+          "start": 272,
+          "end": 277
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 280,
+          "end": 282
+        },
+        {
+          "text": "يفوتك",
+          "raw": "يفوتك",
+          "start": 284,
+          "end": 294
+        },
+        {
+          "text": "كلام",
+          "raw": "كلام",
+          "start": 296,
+          "end": 301
+        },
+        {
+          "text": "الشخصيات",
+          "raw": "الشخصيات",
+          "start": 304,
+          "end": 320
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 322,
+          "end": 323
+        },
+        {
+          "text": "الشارع",
+          "raw": "الشارع.",
+          "start": 324,
+          "end": 337
+        }
+      ]
+    },
+    {
+      "id": "N3-Clear",
+      "from": 690,
+      "durationInFrames": 281,
+      "transitionFrames": 10,
+      "voFrom": 6,
+      "voDurationInFrames": 261,
+      "words": [
+        {
+          "text": "المستوى",
+          "raw": "المستوى",
+          "start": 6,
+          "end": 20
+        },
+        {
+          "text": "الثاني",
+          "raw": "الثاني:",
+          "start": 23,
+          "end": 37
+        },
+        {
+          "text": "الوضوح",
+          "raw": "الوضوح.",
+          "start": 49,
+          "end": 68
+        },
+        {
+          "text": "فعّل",
+          "raw": "فعّل",
+          "start": 85,
+          "end": 95
+        },
+        {
+          "text": "خلفية",
+          "raw": "خلفية",
+          "start": 98,
+          "end": 109
+        },
+        {
+          "text": "الترجمة",
+          "raw": "الترجمة،",
+          "start": 112,
+          "end": 128
+        },
+        {
+          "text": "وكبّر",
+          "raw": "وكبّر",
+          "start": 138,
+          "end": 149
+        },
+        {
+          "text": "الخط",
+          "raw": "الخط…",
+          "start": 150,
+          "end": 162
+        },
+        {
+          "text": "وبتقراها",
+          "raw": "وبتقراها",
+          "start": 176,
+          "end": 196
+        },
+        {
+          "text": "حتى",
+          "raw": "حتى",
+          "start": 198,
+          "end": 208
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 211,
+          "end": 215
+        },
+        {
+          "text": "أكثر",
+          "raw": "أكثر",
+          "start": 221,
+          "end": 227
+        },
+        {
+          "text": "المشاهد",
+          "raw": "المشاهد",
+          "start": 230,
+          "end": 246
+        },
+        {
+          "text": "إضاءة",
+          "raw": "إضاءة.",
+          "start": 247,
+          "end": 260
+        }
+      ]
+    },
+    {
+      "id": "N4-Tool",
+      "from": 961,
+      "durationInFrames": 351,
+      "transitionFrames": 8,
+      "voFrom": 6,
+      "voDurationInFrames": 335,
+      "words": [
+        {
+          "text": "المستوى",
+          "raw": "المستوى",
+          "start": 6,
+          "end": 20
+        },
+        {
+          "text": "الأخير",
+          "raw": "الأخير:",
+          "start": 23,
+          "end": 37
+        },
+        {
+          "text": "التعريب",
+          "raw": "التعريب.",
+          "start": 52,
+          "end": 71
+        },
+        {
+          "text": "أداة",
+          "raw": "أداة",
+          "start": 85,
+          "end": 95
+        },
+        {
+          "text": "مجانية",
+          "raw": "مجانية",
+          "start": 97,
+          "end": 116
+        },
+        {
+          "text": "اسمها",
+          "raw": "اسمها",
+          "start": 119,
+          "end": 133
+        },
+        {
+          "text": "GameTranslator",
+          "raw": "GameTranslator…",
+          "start": 138,
+          "end": 167
+        },
+        {
+          "text": "تقرأ",
+          "raw": "تقرأ",
+          "start": 181,
+          "end": 188
+        },
+        {
+          "text": "الكلام",
+          "raw": "الكلام",
+          "start": 191,
+          "end": 200
+        },
+        {
+          "text": "الإنجليزي",
+          "raw": "الإنجليزي",
+          "start": 203,
+          "end": 220
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 222,
+          "end": 224
+        },
+        {
+          "text": "الشاشة",
+          "raw": "الشاشة،",
+          "start": 227,
+          "end": 241
+        },
+        {
+          "text": "وتطلّع",
+          "raw": "وتطلّع",
+          "start": 252,
+          "end": 265
+        },
+        {
+          "text": "ترجمته",
+          "raw": "ترجمته",
+          "start": 271,
+          "end": 280
+        },
+        {
+          "text": "بالعربي",
+          "raw": "بالعربي",
+          "start": 282,
+          "end": 299
+        },
+        {
+          "text": "فوق",
+          "raw": "فوق",
+          "start": 301,
+          "end": 308
+        },
+        {
+          "text": "صورة",
+          "raw": "صورة",
+          "start": 310,
+          "end": 318
+        },
+        {
+          "text": "اللعبة",
+          "raw": "اللعبة.",
+          "start": 320,
+          "end": 332
+        }
+      ]
+    },
+    {
+      "id": "N5-Win",
+      "from": 1304,
+      "durationInFrames": 115,
+      "transitionFrames": 10,
+      "voFrom": 3,
+      "voDurationInFrames": 76,
+      "words": [
+        {
+          "text": "وكذا",
+          "raw": "وكذا…",
+          "start": 3,
+          "end": 22
+        },
+        {
+          "text": "تمت",
+          "raw": "تمت",
+          "start": 41,
+          "end": 53
+        },
+        {
+          "text": "المهمة",
+          "raw": "المهمة!",
+          "start": 57,
+          "end": 73
+        }
+      ]
+    },
+    {
+      "id": "N6-Note",
+      "from": 1409,
+      "durationInFrames": 281,
+      "transitionFrames": 10,
+      "voFrom": 6,
+      "voDurationInFrames": 261,
+      "words": [
+        {
+          "text": "تنبيه",
+          "raw": "تنبيه:",
+          "start": 6,
+          "end": 20
+        },
+        {
+          "text": "الترجمة",
+          "raw": "الترجمة",
+          "start": 35,
+          "end": 54
+        },
+        {
+          "text": "بالذكاء",
+          "raw": "بالذكاء",
+          "start": 56,
+          "end": 68
+        },
+        {
+          "text": "الاصطناعي",
+          "raw": "الاصطناعي،",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "text": "فممكن",
+          "raw": "فممكن",
+          "start": 101,
+          "end": 116
+        },
+        {
+          "text": "تطلع",
+          "raw": "تطلع",
+          "start": 119,
+          "end": 126
+        },
+        {
+          "text": "فيها",
+          "raw": "فيها",
+          "start": 128,
+          "end": 136
+        },
+        {
+          "text": "أخطاء",
+          "raw": "أخطاء",
+          "start": 137,
+          "end": 148
+        },
+        {
+          "text": "أحياناً",
+          "raw": "أحياناً…",
+          "start": 149,
+          "end": 162
+        },
+        {
+          "text": "والفضل",
+          "raw": "والفضل",
+          "start": 179,
+          "end": 196
+        },
+        {
+          "text": "لمطوّرها",
+          "raw": "لمطوّرها",
+          "start": 199,
+          "end": 220
+        },
+        {
+          "text": "اللي",
+          "raw": "اللي",
+          "start": 222,
+          "end": 227
+        },
+        {
+          "text": "يطوّرها",
+          "raw": "يطوّرها",
+          "start": 229,
+          "end": 241
+        },
+        {
+          "text": "مجاناً",
+          "raw": "مجاناً.",
+          "start": 244,
+          "end": 260
+        }
+      ]
+    },
+    {
+      "id": "N7-CTA",
+      "from": 1680,
+      "durationInFrames": 150,
+      "transitionFrames": 0,
+      "voFrom": 6,
+      "voDurationInFrames": 124,
+      "words": [
+        {
+          "text": "وإذا",
+          "raw": "وإذا",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "text": "تبغى",
+          "raw": "تبغى",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "text": "شروحات",
+          "raw": "شروحات",
+          "start": 28,
+          "end": 42
+        },
+        {
+          "text": "GTA",
+          "raw": "GTA",
+          "start": 44,
+          "end": 56
+        },
+        {
+          "text": "6",
+          "raw": "6",
+          "start": 59,
+          "end": 68
+        },
+        {
+          "text": "أول",
+          "raw": "أول",
+          "start": 71,
+          "end": 78
+        },
+        {
+          "text": "بأول",
+          "raw": "بأول…",
+          "start": 80,
+          "end": 92
+        },
+        {
+          "text": "تابعنا",
+          "raw": "تابعنا.",
+          "start": 110,
+          "end": 121
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      9,
+      331
+    ],
+    [
+      348,
+      679
+    ],
+    [
+      696,
+      950
+    ],
+    [
+      967,
+      1293
+    ],
+    [
+      1307,
+      1377
+    ],
+    [
+      1415,
+      1669
+    ],
+    [
+      1686,
+      1801
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "audioDir": "white",
+  "totalFrames": 1350,
+  "tailSeconds": 0.4,
+  "voice": {
+    "preferredModels": ["eleven_v4", "eleven_v3", "eleven_multilingual_v2"],
+    "settings": { "stability": 0.4, "similarity_boost": 0.8, "style": 0.6, "use_speaker_boost": true, "speed": 1.03 },
+    "chosen": { "voice_id": "H48IdiQwyf50CXpP0dy0", "name": "Faisal Ali - Sharp and Confident" }
+  },
+  "scenes": [
+    { "id": "W1-Hook", "nominalSeconds": 4.6, "leadSeconds": 0.35, "tts": "أقوى تخفيض في الجمعة البيضاء… مو على الأسعار!" },
+    { "id": "W2-Time", "nominalSeconds": 3.6, "leadSeconds": 0.3, "tts": "تخفيض… على وقتك!" },
+    { "id": "W3-Gov", "nominalSeconds": 6, "leadSeconds": 0.3, "tts": "معاملة تاخذ منك يوم كامل؟ صارت من جوالك." },
+    { "id": "W4-Design", "nominalSeconds": 5.8, "leadSeconds": 0.3, "tts": "شعار محتار فيه من شهر؟ يجيك جاهز." },
+    { "id": "W5-Tech", "nominalSeconds": 5.8, "leadSeconds": 0.3, "tts": "فكرة موقع أو حل تقني؟ تتنفّذ." },
+    { "id": "W6-Cart", "nominalSeconds": 7, "leadSeconds": 0.3, "tts": "حط طلبك في السلة… والباقي علينا." },
+    { "id": "W7-CTA", "nominalSeconds": 12.2, "leadSeconds": 0.4, "tts": "دبّرها للخدمات الإلكترونية… المصداقية، وسرعة الإنجاز. ورابط المتجر في البايو!" }
+  ],
+  "sfx": [
+    { "id": "pings", "seconds": 2.0, "prompt": "Rapid burst of many overlapping smartphone notification pings and buzzes, chaotic flood of sale alerts, bright and modern" },
+    { "id": "scratch", "seconds": 0.7, "prompt": "Vinyl record scratch stop, sudden halt, comedic and punchy" },
+    { "id": "marker", "seconds": 0.6, "prompt": "Thick felt marker pen fast strike-through on paper, one quick squeaky stroke" },
+    { "id": "sticker", "seconds": 0.5, "prompt": "Sticker slap onto cardboard, punchy pop with light paper snap" },
+    { "id": "scanner", "seconds": 0.5, "prompt": "Supermarket barcode scanner beep, single clean beep" },
+    { "id": "tag", "seconds": 0.8, "prompt": "Cardboard price tag swinging on a string, quick paper flick and swish" },
+    { "id": "whoosh", "seconds": 0.6, "prompt": "Fast punchy modern whoosh transition, short, no reverb tail" },
+    { "id": "pop", "seconds": 0.5, "prompt": "Bright bubbly UI pop, short playful click" },
+    { "id": "ching", "seconds": 1.0, "prompt": "Modern checkout success chime, bright sparkle confirmation sound, premium" },
+    { "id": "impact", "seconds": 1.5, "prompt": "Punchy modern logo hit, tight sub boom with bright clap and shimmer" }
+  ],
+  "music": [
+    { "id": "beat", "prompt": "Energetic modern Khaleeji pop trap beat for a fast retail sale advertisement, 120 BPM, punchy kicks, Arabic handclaps and tabl, catchy synth plucks with a short oud hook, confident and fun, builds steadily, tight ending hit at 45 seconds. No vocals.", "lengthMs": 47000 }
+  ]
+}

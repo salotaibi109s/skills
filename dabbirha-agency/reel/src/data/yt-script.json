@@ -1,0 +1,163 @@
+{
+  "audioDir": "yt",
+  "totalFrames": 3100,
+  "tailSeconds": 0.35,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "Y1-Hook",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "تبغى تبدأ قناة يوتيوب من الصفر… بس ما تدري من وين تبدأ؟ كلود يقدر يكون فريقك كامل، بسبع أوامر بس."
+    },
+    {
+      "id": "Y1b-Plan",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الأمر الأول: خله خبير استراتيجيات يوتيوب. يحلل مجالك وجمهورك ومنافسينك، ويطلع لك خطة كاملة: هوية القناة، ومحاور المحتوى، وجدول تنفيذ أسبوعي."
+    },
+    {
+      "id": "Y2-Niche",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الثاني: خله يتصرف كباحث سوق. يحلل لك الطلب والمنافسة وفرص الربح، ويختار لك المجال، ويعطيك أول مية فكرة فيديو."
+    },
+    {
+      "id": "Y3-Viral",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الثالث: خله خبير محتوى. يكتب لك الأفكار والعناوين وبدايات تشد، وأفكار الصور المصغرة، والسيناريو كامل."
+    },
+    {
+      "id": "Y4-Algo",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الرابع: يشرح لك الخوارزمية: نسبة النقر، ومدة المشاهدة، والاحتفاظ بالجمهور… ويحط لك خطة نمو ومعدل نشر."
+    },
+    {
+      "id": "Y5-Prod",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "الخامس: نظام إنتاج كامل بالذكاء الاصطناعي، من البحث والسيناريو والتعليق الصوتي، إلى المونتاج وإعادة النشر في الشورتس وتيك توك."
+    },
+    {
+      "id": "Y6-Money",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "السادس: خطة الدخل: برنامج شركاء يوتيوب، والتسويق بالعمولة، والرعايات، والمنتجات الرقمية… ومتى تبدأ كل وحدة."
+    },
+    {
+      "id": "Y7-Data",
+      "nominalSeconds": 8,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "السابع: محلل بيانات لقناتك. يقرا أرقامك كل أسبوع، ويقولك وش نجح، وكيف تحسّن الضعيف."
+    },
+    {
+      "id": "Y8-Truth",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.3,
+      "transitionFrames": 12,
+      "tts": "بس تذكّر: كلود يخطط معك ويختصر عليك الطريق… والنتيجة تعتمد على استمرارك وجودة محتواك."
+    },
+    {
+      "id": "Y9-CTA",
+      "nominalSeconds": 9,
+      "leadSeconds": 0.3,
+      "tts": "وإذا تبغى قناتك تنبني وتكبر من البداية للنهاية… متجر دبرها يوفر لك هالخدمة. والرابط في البايو.",
+      "minSeconds": 11
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.6,
+      "prompt": "Smooth modern whoosh transition, short and clean"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Bright playful UI pop, short"
+    },
+    {
+      "id": "boing",
+      "seconds": 0.7,
+      "prompt": "Bouncy elastic number pop, playful cartoon spring boing, short"
+    },
+    {
+      "id": "type",
+      "seconds": 2.0,
+      "prompt": "Fast mechanical keyboard typing burst, crisp keys"
+    },
+    {
+      "id": "enter",
+      "seconds": 0.5,
+      "prompt": "Single satisfying keyboard enter key press"
+    },
+    {
+      "id": "ding",
+      "seconds": 0.8,
+      "prompt": "Pleasant success chime, modern app"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1.5,
+      "prompt": "Magical sparkle shimmer with rising particles, bright"
+    },
+    {
+      "id": "impact",
+      "seconds": 1.5,
+      "prompt": "Punchy modern logo hit with bright shimmer tail"
+    },
+    {
+      "id": "tick",
+      "seconds": 0.5,
+      "prompt": "Crisp short UI tick click, snappy and clean"
+    },
+    {
+      "id": "swish",
+      "seconds": 0.5,
+      "prompt": "Very short fast swish for kinetic text, airy"
+    },
+    {
+      "id": "riser",
+      "seconds": 1.2,
+      "prompt": "Short rising whoosh riser building into a hit, energetic"
+    },
+    {
+      "id": "thud",
+      "seconds": 0.6,
+      "prompt": "Punchy deep thud hit for a big number appearing, tight"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm",
+      "prompt": "calm tutorial bed",
+      "lengthMs": 77000
+    }
+  ]
+}

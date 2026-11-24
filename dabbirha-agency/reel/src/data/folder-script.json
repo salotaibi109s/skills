@@ -1,0 +1,86 @@
+{
+  "audioDir": "folder",
+  "totalFrames": 1800,
+  "tailSeconds": 0.4,
+  "voice": {
+    "preferredModels": ["eleven_v4", "eleven_v3", "eleven_multilingual_v2"],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.5,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": { "voice_id": "cFUFIbKkO2iZFwS8cRnY", "name": "Nasser AlJubaily - Authentic Saudi Pro" }
+  },
+  "scenes": [
+    {
+      "id": "F1-Hook",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.35,
+      "tts": "هذا… الملف العلاقي الأخضر."
+    },
+    {
+      "id": "F2-Career",
+      "nominalSeconds": 12,
+      "leadSeconds": 0.3,
+      "tts": "عاش معنا سنين… من مكتب لمكتب، ومن طابور لطابور… وصورة الهوية؟ دايم ناقصة."
+    },
+    {
+      "id": "F3-Tired",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.4,
+      "tts": "تعب الملف… وتعبنا معه."
+    },
+    {
+      "id": "F4-Retire",
+      "nominalSeconds": 6.5,
+      "leadSeconds": 0.35,
+      "tts": "بس اليوم… الملف الأخضر يتقاعد."
+    },
+    {
+      "id": "F5-Phone",
+      "nominalSeconds": 15,
+      "leadSeconds": 0.5,
+      "tts": "لأن معاملتك صارت تخلص من جوالك مع دبّرها: خدمات حكومية، وأعمال وعمل حر، وعقود وعقار… وأسعار تبدأ من تسعة عشر ريال."
+    },
+    {
+      "id": "F6-Trust",
+      "nominalSeconds": 7.5,
+      "leadSeconds": 0.4,
+      "tts": "المصداقية… وسرعة الإنجاز."
+    },
+    {
+      "id": "F7-CTA",
+      "nominalSeconds": 7.5,
+      "leadSeconds": 0.4,
+      "tts": "دبّرها… وخلّ الملف الأخضر يرتاح."
+    }
+  ],
+  "sfx": [
+    { "id": "whoosh", "seconds": 0.8, "prompt": "Clean fast cinematic whoosh transition, short swish of air, modern commercial, no reverb tail" },
+    { "id": "tick", "seconds": 0.5, "prompt": "Soft subtle UI tick, gentle minimal click for text appearing, clean, high-end commercial" },
+    { "id": "pop", "seconds": 0.5, "prompt": "Soft rounded bubble pop for an icon appearing, satisfying UI pop, clean, short" },
+    { "id": "boom", "seconds": 2.5, "prompt": "Deep cinematic trailer boom with sub bass rumble and long dark tail, movie opening hit" },
+    { "id": "slam", "seconds": 1.2, "prompt": "Thick cardboard folder full of papers slammed down hard on a wooden desk, heavy thud with a short paper rustle" },
+    { "id": "stamp", "seconds": 0.6, "prompt": "Rubber office stamp pressed hard onto paper on a wooden desk, punchy thump, single hit" },
+    { "id": "lamp", "seconds": 0.8, "prompt": "Old desk lamp switch click followed by a soft electric hum as the bulb turns on" },
+    { "id": "papers", "seconds": 2.2, "prompt": "Loose sheets of paper sliding out of a folder and fluttering slowly to the floor, soft and sad" },
+    { "id": "confetti", "seconds": 1.6, "prompt": "Party popper bang with confetti falling and a small celebratory cheer, playful, short" },
+    { "id": "zoom", "seconds": 0.9, "prompt": "Fast cinematic crash zoom swoosh with a rising airy whoosh ending in a sharp hit" },
+    { "id": "flare", "seconds": 1.4, "prompt": "Anamorphic light flare sweep, shimmering airy swoosh of light passing across, premium title reveal" },
+    { "id": "riser", "seconds": 1.2, "prompt": "Short tension riser building up, airy synth swell with reversed shimmer, ends abruptly, commercial reveal" }
+  ],
+  "music": [
+    {
+      "id": "nostalgia",
+      "prompt": "Cinematic nostalgic documentary underscore with a wink of humor, 90 BPM, warm strings, felt piano, soft pizzicato, a gentle melancholic dip in the second half, no vocals",
+      "lengthMs": 32000
+    },
+    {
+      "id": "modern",
+      "prompt": "Bright celebratory modern commercial music, 110 BPM, punchy claps, warm synth plucks, uplifting chords, confident brand ending with a clean final hit, no vocals",
+      "lengthMs": 32000
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "voice": {
+    "searchName": "Nasser",
+    "searchNameAr": "ناصر",
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_v3",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8,
+      "style": 0.35,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro",
+      "reason": "User subscribed to a paid ElevenLabs plan; original voice choice."
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1-Hook",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.35,
+      "tts": "معاملة معلّقة… ووقتك ما يسمح؟"
+    },
+    {
+      "id": "S2-Problem",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.25,
+      "tts": "بين المنصات، والطلبات، والمواعيد… يضيع يومك."
+    },
+    {
+      "id": "S3-Reveal",
+      "nominalSeconds": 6,
+      "leadSeconds": 1.25,
+      "tts": "دبّرها. خدماتك الإلكترونية تخلص، وأنت مرتاح."
+    },
+    {
+      "id": "S4-Government",
+      "nominalSeconds": 12,
+      "leadSeconds": 0.3,
+      "tts": "أبشر، قوى، التأمينات، العدل، التجارة، حساب المواطن، والضمان… نخلّصها عنك، وتبدأ من تسعة وأربعين ريال."
+    },
+    {
+      "id": "S5-Business",
+      "nominalSeconds": 10,
+      "leadSeconds": 0.3,
+      "tts": "وعندك مشروع؟ وثيقة العمل الحر، قرض العمل الحر، ومتجرك الإلكتروني المتكامل جاهز."
+    },
+    {
+      "id": "S6-RealEstate",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.25,
+      "tts": "عقد تأجير، وتسجيل عيني لعقارك… كلها من جوالك."
+    },
+    {
+      "id": "S7-Trust",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.25,
+      "tts": "مصداقية… وسرعة إنجاز. وادفع بالطريقة اللي تناسبك."
+    },
+    {
+      "id": "S8-CTA",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.3,
+      "tts": "دبّرها… واطلب خدمتك الحين."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 0.8,
+      "prompt": "Clean fast cinematic whoosh transition, short swish of air, modern commercial, no reverb tail"
+    },
+    {
+      "id": "tick",
+      "seconds": 0.5,
+      "prompt": "Soft subtle UI tick, gentle minimal click for text appearing, clean, high-end commercial"
+    },
+    {
+      "id": "pop",
+      "seconds": 0.5,
+      "prompt": "Soft rounded bubble pop for an icon appearing, satisfying UI pop, clean, short"
+    },
+    {
+      "id": "riser",
+      "seconds": 1.2,
+      "prompt": "Short tension riser building up, airy synth swell with reversed shimmer, ends abruptly, commercial reveal"
+    },
+    {
+      "id": "impact",
+      "seconds": 2.0,
+      "prompt": "Deep cinematic logo impact hit, punchy sub boom with bright shimmer tail, premium brand reveal"
+    },
+    {
+      "id": "glitch",
+      "seconds": 0.6,
+      "prompt": "Short digital glitch stutter, subtle electronic data corruption blip, clean"
+    }
+  ],
+  "music": {
+    "prompt": "Light modern ambient corporate track at 104 BPM, warm soft synth pads, gentle plucked arpeggio, light clean percussion, optimistic and confident, minimal, premium tech commercial, no vocals",
+    "lengthMs": 62000
+  }
+}

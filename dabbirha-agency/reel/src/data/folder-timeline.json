@@ -1,0 +1,442 @@
+{
+  "fps": 30,
+  "durationInFrames": 1800,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "F1-Hook",
+      "from": 0,
+      "durationInFrames": 150,
+      "transitionFrames": 0,
+      "voFrom": 11,
+      "voDurationInFrames": 88,
+      "words": [
+        {
+          "text": "هذا",
+          "raw": "هذا…",
+          "start": 11,
+          "end": 30
+        },
+        {
+          "text": "الملف",
+          "raw": "الملف",
+          "start": 43,
+          "end": 57
+        },
+        {
+          "text": "العلاقي",
+          "raw": "العلاقي",
+          "start": 59,
+          "end": 73
+        },
+        {
+          "text": "الأخضر",
+          "raw": "الأخضر.",
+          "start": 76,
+          "end": 90
+        }
+      ]
+    },
+    {
+      "id": "F2-Career",
+      "from": 150,
+      "durationInFrames": 360,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 225,
+      "words": [
+        {
+          "text": "عاش",
+          "raw": "عاش",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "text": "معنا",
+          "raw": "معنا",
+          "start": 21,
+          "end": 28
+        },
+        {
+          "text": "سنين",
+          "raw": "سنين…",
+          "start": 31,
+          "end": 45
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 57,
+          "end": 59
+        },
+        {
+          "text": "مكتب",
+          "raw": "مكتب",
+          "start": 62,
+          "end": 76
+        },
+        {
+          "text": "لمكتب",
+          "raw": "لمكتب،",
+          "start": 80,
+          "end": 95
+        },
+        {
+          "text": "ومن",
+          "raw": "ومن",
+          "start": 101,
+          "end": 107
+        },
+        {
+          "text": "طابور",
+          "raw": "طابور",
+          "start": 110,
+          "end": 127
+        },
+        {
+          "text": "لطابور",
+          "raw": "لطابور…",
+          "start": 129,
+          "end": 148
+        },
+        {
+          "text": "وصورة",
+          "raw": "وصورة",
+          "start": 163,
+          "end": 172
+        },
+        {
+          "text": "الهوية",
+          "raw": "الهوية؟",
+          "start": 175,
+          "end": 189
+        },
+        {
+          "text": "دايم",
+          "raw": "دايم",
+          "start": 205,
+          "end": 213
+        },
+        {
+          "text": "ناقصة",
+          "raw": "ناقصة.",
+          "start": 217,
+          "end": 227
+        }
+      ]
+    },
+    {
+      "id": "F3-Tired",
+      "from": 510,
+      "durationInFrames": 195,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 78,
+      "words": [
+        {
+          "text": "تعب",
+          "raw": "تعب",
+          "start": 12,
+          "end": 22
+        },
+        {
+          "text": "الملف",
+          "raw": "الملف…",
+          "start": 24,
+          "end": 43
+        },
+        {
+          "text": "وتعبنا",
+          "raw": "وتعبنا",
+          "start": 58,
+          "end": 72
+        },
+        {
+          "text": "معه",
+          "raw": "معه.",
+          "start": 74,
+          "end": 84
+        }
+      ]
+    },
+    {
+      "id": "F4-Retire",
+      "from": 705,
+      "durationInFrames": 195,
+      "transitionFrames": 0,
+      "voFrom": 11,
+      "voDurationInFrames": 124,
+      "words": [
+        {
+          "text": "بس",
+          "raw": "بس",
+          "start": 11,
+          "end": 18
+        },
+        {
+          "text": "اليوم",
+          "raw": "اليوم…",
+          "start": 21,
+          "end": 37
+        },
+        {
+          "text": "الملف",
+          "raw": "الملف",
+          "start": 64,
+          "end": 78
+        },
+        {
+          "text": "الأخضر",
+          "raw": "الأخضر",
+          "start": 81,
+          "end": 97
+        },
+        {
+          "text": "يتقاعد",
+          "raw": "يتقاعد.",
+          "start": 105,
+          "end": 126
+        }
+      ]
+    },
+    {
+      "id": "F5-Phone",
+      "from": 900,
+      "durationInFrames": 450,
+      "transitionFrames": 0,
+      "voFrom": 15,
+      "voDurationInFrames": 319,
+      "words": [
+        {
+          "text": "لأن",
+          "raw": "لأن",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "معاملتك",
+          "raw": "معاملتك",
+          "start": 32,
+          "end": 46
+        },
+        {
+          "text": "صارت",
+          "raw": "صارت",
+          "start": 50,
+          "end": 56
+        },
+        {
+          "text": "تخلص",
+          "raw": "تخلص",
+          "start": 62,
+          "end": 68
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 70,
+          "end": 73
+        },
+        {
+          "text": "جوالك",
+          "raw": "جوالك",
+          "start": 76,
+          "end": 89
+        },
+        {
+          "text": "مع",
+          "raw": "مع",
+          "start": 92,
+          "end": 94
+        },
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها:",
+          "start": 98,
+          "end": 111
+        },
+        {
+          "text": "خدمات",
+          "raw": "خدمات",
+          "start": 125,
+          "end": 135
+        },
+        {
+          "text": "حكومية",
+          "raw": "حكومية،",
+          "start": 141,
+          "end": 157
+        },
+        {
+          "text": "وأعمال",
+          "raw": "وأعمال",
+          "start": 161,
+          "end": 181
+        },
+        {
+          "text": "وعمل",
+          "raw": "وعمل",
+          "start": 183,
+          "end": 193
+        },
+        {
+          "text": "حر",
+          "raw": "حر،",
+          "start": 197,
+          "end": 202
+        },
+        {
+          "text": "وعقود",
+          "raw": "وعقود",
+          "start": 213,
+          "end": 229
+        },
+        {
+          "text": "وعقار",
+          "raw": "وعقار…",
+          "start": 231,
+          "end": 248
+        },
+        {
+          "text": "وأسعار",
+          "raw": "وأسعار",
+          "start": 261,
+          "end": 274
+        },
+        {
+          "text": "تبدأ",
+          "raw": "تبدأ",
+          "start": 277,
+          "end": 286
+        },
+        {
+          "text": "من",
+          "raw": "من",
+          "start": 289,
+          "end": 291
+        },
+        {
+          "text": "تسعة",
+          "raw": "تسعة",
+          "start": 295,
+          "end": 305
+        },
+        {
+          "text": "عشر",
+          "raw": "عشر",
+          "start": 307,
+          "end": 313
+        },
+        {
+          "text": "ريال",
+          "raw": "ريال.",
+          "start": 317,
+          "end": 327
+        }
+      ]
+    },
+    {
+      "id": "F6-Trust",
+      "from": 1350,
+      "durationInFrames": 225,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 91,
+      "words": [
+        {
+          "text": "المصداقية",
+          "raw": "المصداقية…",
+          "start": 12,
+          "end": 41
+        },
+        {
+          "text": "وسرعة",
+          "raw": "وسرعة",
+          "start": 58,
+          "end": 74
+        },
+        {
+          "text": "الإنجاز",
+          "raw": "الإنجاز.",
+          "start": 76,
+          "end": 96
+        }
+      ]
+    },
+    {
+      "id": "F7-CTA",
+      "from": 1575,
+      "durationInFrames": 225,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 98,
+      "words": [
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها…",
+          "start": 12,
+          "end": 31
+        },
+        {
+          "text": "وخلّ",
+          "raw": "وخلّ",
+          "start": 46,
+          "end": 55
+        },
+        {
+          "text": "الملف",
+          "raw": "الملف",
+          "start": 56,
+          "end": 67
+        },
+        {
+          "text": "الأخضر",
+          "raw": "الأخضر",
+          "start": 70,
+          "end": 84
+        },
+        {
+          "text": "يرتاح",
+          "raw": "يرتاح.",
+          "start": 88,
+          "end": 103
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      11,
+      90
+    ],
+    [
+      159,
+      377
+    ],
+    [
+      522,
+      594
+    ],
+    [
+      716,
+      831
+    ],
+    [
+      915,
+      1227
+    ],
+    [
+      1362,
+      1446
+    ],
+    [
+      1587,
+      1678
+    ]
+  ]
+}

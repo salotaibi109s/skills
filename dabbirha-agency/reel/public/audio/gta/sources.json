@@ -1,0 +1,64 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-21T12:05:29.588Z"
+  },
+  "music": [
+    {
+      "id": "neon",
+      "provider": "ElevenLabs Music",
+      "prompt": "Original upbeat synthwave track for a gaming tutorial, 105 BPM, warm retro 80s synths, punchy drum machine, pulsing bassline, neon city night vibe, energetic but not distracting under a voiceover, ends cleanly at 70 seconds. No vocals.",
+      "length_ms": 72000,
+      "instrumental": true,
+      "generated_at": "2026-11-21T12:05:50.028Z"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "click",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Clean UI button click, crisp",
+      "seconds": 0.5
+    },
+    {
+      "id": "check",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Positive UI checkmark confirm blip",
+      "seconds": 0.6
+    },
+    {
+      "id": "glitch",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Short neon electric glitch buzz",
+      "seconds": 0.8
+    },
+    {
+      "id": "type",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Fast keyboard typing burst, clean",
+      "seconds": 1.2
+    },
+    {
+      "id": "impact",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Deep synth bass drop impact with reverb tail",
+      "seconds": 1.5
+    },
+    {
+      "id": "riser",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Synthwave riser building energy, filtered",
+      "seconds": 2.5
+    }
+  ]
+}

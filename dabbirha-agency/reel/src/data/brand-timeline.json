@@ -1,0 +1,484 @@
+{
+  "fps": 30,
+  "durationInFrames": 1800,
+  "estimated": false,
+  "audio": {
+    "vo": true,
+    "sfx": true,
+    "music": true
+  },
+  "scenes": [
+    {
+      "id": "B1-Problem",
+      "from": 0,
+      "durationInFrames": 240,
+      "transitionFrames": 0,
+      "voFrom": 11,
+      "voDurationInFrames": 196,
+      "words": [
+        {
+          "text": "عندك",
+          "raw": "عندك",
+          "start": 11,
+          "end": 21
+        },
+        {
+          "text": "فكرة",
+          "raw": "فكرة",
+          "start": 22,
+          "end": 30
+        },
+        {
+          "text": "تبغى",
+          "raw": "تبغى",
+          "start": 33,
+          "end": 39
+        },
+        {
+          "text": "تصممها",
+          "raw": "تصممها؟",
+          "start": 40,
+          "end": 57
+        },
+        {
+          "text": "أو",
+          "raw": "أو",
+          "start": 66,
+          "end": 71
+        },
+        {
+          "text": "خدمة",
+          "raw": "خدمة",
+          "start": 73,
+          "end": 83
+        },
+        {
+          "text": "تقنية",
+          "raw": "تقنية",
+          "start": 90,
+          "end": 97
+        },
+        {
+          "text": "تحتاجها",
+          "raw": "تحتاجها؟",
+          "start": 101,
+          "end": 117
+        },
+        {
+          "text": "أو",
+          "raw": "أو",
+          "start": 131,
+          "end": 133
+        },
+        {
+          "text": "معاملة",
+          "raw": "معاملة",
+          "start": 136,
+          "end": 150
+        },
+        {
+          "text": "إلكترونية",
+          "raw": "إلكترونية",
+          "start": 151,
+          "end": 174
+        },
+        {
+          "text": "تبغى",
+          "raw": "تبغى",
+          "start": 177,
+          "end": 184
+        },
+        {
+          "text": "تنجزها",
+          "raw": "تنجزها؟",
+          "start": 186,
+          "end": 198
+        }
+      ]
+    },
+    {
+      "id": "B2-Discover",
+      "from": 240,
+      "durationInFrames": 210,
+      "transitionFrames": 0,
+      "voFrom": 15,
+      "voDurationInFrames": 114,
+      "words": [
+        {
+          "text": "بدل",
+          "raw": "بدل",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "text": "ما",
+          "raw": "ما",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "text": "تتشتت",
+          "raw": "تتشتت",
+          "start": 32,
+          "end": 46
+        },
+        {
+          "text": "بين",
+          "raw": "بين",
+          "start": 49,
+          "end": 53
+        },
+        {
+          "text": "الخيارات",
+          "raw": "الخيارات…",
+          "start": 56,
+          "end": 75
+        },
+        {
+          "text": "عندك",
+          "raw": "عندك",
+          "start": 88,
+          "end": 101
+        },
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها!",
+          "start": 106,
+          "end": 123
+        }
+      ]
+    },
+    {
+      "id": "B3-Creative",
+      "from": 450,
+      "durationInFrames": 330,
+      "transitionFrames": 0,
+      "voFrom": 14,
+      "voDurationInFrames": 218,
+      "words": [
+        {
+          "text": "أفكارك",
+          "raw": "أفكارك",
+          "start": 14,
+          "end": 31
+        },
+        {
+          "text": "تستاهل",
+          "raw": "تستاهل",
+          "start": 33,
+          "end": 52
+        },
+        {
+          "text": "تظهر",
+          "raw": "تظهر",
+          "start": 55,
+          "end": 64
+        },
+        {
+          "text": "بأفضل",
+          "raw": "بأفضل",
+          "start": 68,
+          "end": 84
+        },
+        {
+          "text": "صورة",
+          "raw": "صورة…",
+          "start": 85,
+          "end": 96
+        },
+        {
+          "text": "شعارات",
+          "raw": "شعارات،",
+          "start": 111,
+          "end": 129
+        },
+        {
+          "text": "تصاميم",
+          "raw": "تصاميم،",
+          "start": 138,
+          "end": 156
+        },
+        {
+          "text": "ومحتوى",
+          "raw": "ومحتوى",
+          "start": 164,
+          "end": 177
+        },
+        {
+          "text": "إبداعي",
+          "raw": "إبداعي",
+          "start": 186,
+          "end": 196
+        },
+        {
+          "text": "يعبّر",
+          "raw": "يعبّر",
+          "start": 199,
+          "end": 211
+        },
+        {
+          "text": "عنك",
+          "raw": "عنك.",
+          "start": 213,
+          "end": 223
+        }
+      ]
+    },
+    {
+      "id": "B4-Tech",
+      "from": 780,
+      "durationInFrames": 330,
+      "transitionFrames": 0,
+      "voFrom": 14,
+      "voDurationInFrames": 170,
+      "words": [
+        {
+          "text": "واحتياجاتك",
+          "raw": "واحتياجاتك",
+          "start": 14,
+          "end": 38
+        },
+        {
+          "text": "التقنية",
+          "raw": "التقنية",
+          "start": 42,
+          "end": 60
+        },
+        {
+          "text": "والبرمجية",
+          "raw": "والبرمجية…",
+          "start": 63,
+          "end": 86
+        },
+        {
+          "text": "تلقى",
+          "raw": "تلقى",
+          "start": 97,
+          "end": 105
+        },
+        {
+          "text": "لها",
+          "raw": "لها",
+          "start": 108,
+          "end": 112
+        },
+        {
+          "text": "حلولاً",
+          "raw": "حلولاً",
+          "start": 115,
+          "end": 132
+        },
+        {
+          "text": "تناسب",
+          "raw": "تناسب",
+          "start": 134,
+          "end": 148
+        },
+        {
+          "text": "تطلعاتك",
+          "raw": "تطلعاتك.",
+          "start": 151,
+          "end": 182
+        }
+      ]
+    },
+    {
+      "id": "B5-EServices",
+      "from": 1110,
+      "durationInFrames": 330,
+      "transitionFrames": 0,
+      "voFrom": 14,
+      "voDurationInFrames": 208,
+      "words": [
+        {
+          "text": "ولخدمات",
+          "raw": "ولخدمات",
+          "start": 14,
+          "end": 33
+        },
+        {
+          "text": "المنصات",
+          "raw": "المنصات",
+          "start": 34,
+          "end": 50
+        },
+        {
+          "text": "الحكومية",
+          "raw": "الحكومية",
+          "start": 52,
+          "end": 76
+        },
+        {
+          "text": "والمعاملات",
+          "raw": "والمعاملات",
+          "start": 80,
+          "end": 98
+        },
+        {
+          "text": "الإلكترونية",
+          "raw": "الإلكترونية…",
+          "start": 100,
+          "end": 127
+        },
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها",
+          "start": 139,
+          "end": 156
+        },
+        {
+          "text": "تساعدك",
+          "raw": "تساعدك",
+          "start": 163,
+          "end": 180
+        },
+        {
+          "text": "توصل",
+          "raw": "توصل",
+          "start": 183,
+          "end": 192
+        },
+        {
+          "text": "لاحتياجك",
+          "raw": "لاحتياجك.",
+          "start": 194,
+          "end": 216
+        }
+      ]
+    },
+    {
+      "id": "B6-Unified",
+      "from": 1440,
+      "durationInFrames": 195,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 155,
+      "words": [
+        {
+          "text": "إبداع",
+          "raw": "إبداع،",
+          "start": 12,
+          "end": 31
+        },
+        {
+          "text": "تقنية",
+          "raw": "تقنية،",
+          "start": 48,
+          "end": 58
+        },
+        {
+          "text": "وخدمات",
+          "raw": "وخدمات",
+          "start": 61,
+          "end": 74
+        },
+        {
+          "text": "إلكترونية",
+          "raw": "إلكترونية…",
+          "start": 77,
+          "end": 98
+        },
+        {
+          "text": "كلها",
+          "raw": "كلها",
+          "start": 115,
+          "end": 125
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 130,
+          "end": 132
+        },
+        {
+          "text": "وجهة",
+          "raw": "وجهة",
+          "start": 134,
+          "end": 146
+        },
+        {
+          "text": "واحدة",
+          "raw": "واحدة.",
+          "start": 149,
+          "end": 158
+        }
+      ]
+    },
+    {
+      "id": "B7-Finale",
+      "from": 1635,
+      "durationInFrames": 165,
+      "transitionFrames": 0,
+      "voFrom": 11,
+      "voDurationInFrames": 102,
+      "words": [
+        {
+          "text": "لا",
+          "raw": "لا",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "text": "تعقّدها",
+          "raw": "تعقّدها…",
+          "start": 18,
+          "end": 37
+        },
+        {
+          "text": "لا",
+          "raw": "لا",
+          "start": 52,
+          "end": 54
+        },
+        {
+          "text": "تشيل",
+          "raw": "تشيل",
+          "start": 57,
+          "end": 64
+        },
+        {
+          "text": "همّ",
+          "raw": "همّ…",
+          "start": 66,
+          "end": 73
+        },
+        {
+          "text": "دبّرها",
+          "raw": "دبّرها!",
+          "start": 88,
+          "end": 105
+        }
+      ]
+    }
+  ],
+  "voiceWindows": [
+    [
+      11,
+      198
+    ],
+    [
+      255,
+      363
+    ],
+    [
+      464,
+      673
+    ],
+    [
+      794,
+      962
+    ],
+    [
+      1124,
+      1326
+    ],
+    [
+      1452,
+      1598
+    ],
+    [
+      1646,
+      1740
+    ]
+  ]
+}
