@@ -1,6 +1,6 @@
 import React from 'react';
 import {interpolate, useCurrentFrame, Easing} from 'remotion';
-import {COLORS} from '../theme';
+import {useTheme} from '../ThemeContext';
 
 // أيقونات خطية بسيطة على شبكة 24×24. كل عنصر يُرسم تدريجياً (pathLength=1).
 // لإضافة أيقونة: أضفها هنا وفي ICONS داخل episode-schema.mjs.
@@ -53,18 +53,19 @@ type Props = {
 export const Icon: React.FC<Props> = ({
   name,
   size = 200,
-  color = COLORS.gold,
+  color,
   strokeWidth = 1.4,
   delay = 0,
   drawFrames = 20,
 }) => {
   const frame = useCurrentFrame();
+  const theme = useTheme();
   const shapes = ICON_SHAPES[name];
   if (!shapes) return null;
 
   const common = {
     fill: 'none',
-    stroke: color,
+    stroke: color ?? theme.accent,
     strokeWidth,
     strokeLinecap: 'round' as const,
     strokeLinejoin: 'round' as const,

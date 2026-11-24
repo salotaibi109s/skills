@@ -1,11 +1,13 @@
 import React from 'react';
 import {useCurrentFrame, useVideoConfig} from 'remotion';
-import {COLORS, SAFE, VIDEO} from '../theme';
+import {SAFE, VIDEO} from '../theme';
+import {useTheme} from '../ThemeContext';
 
 // شريط تقدم رفيع يمتلئ من اليمين لليسار — يشجع على إكمال المشاهدة
 export const ProgressBar: React.FC = () => {
   const frame = useCurrentFrame();
   const {durationInFrames} = useVideoConfig();
+  const theme = useTheme();
   const width = VIDEO.width - SAFE.left - SAFE.right;
   const progress = Math.min(1, frame / (durationInFrames - 1));
   return (
@@ -28,7 +30,7 @@ export const ProgressBar: React.FC = () => {
           top: 0,
           bottom: 0,
           width: width * progress,
-          background: COLORS.gold,
+          background: theme.accent,
           borderRadius: 999,
         }}
       />

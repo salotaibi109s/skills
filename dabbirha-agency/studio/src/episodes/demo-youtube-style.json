@@ -1,0 +1,13 @@
+{
+  "id": "demo-youtube-style",
+  "title": "حلقة تجريبية — طابع يوتيوب",
+  "theme": "youtube",
+  "scenes": [
+    {"type": "hook", "durationSec": 3, "icon": "bulb", "chapter": "المقدمة", "lines": ["قناتك ما *تكبر*؟", "السبب مو المحتوى"]},
+    {"type": "step", "durationSec": 4, "icon": "check", "chapter": "العنوان", "lines": ["اكتب *العنوان* أول", "قبل لا تصوّر"]},
+    {"type": "step", "durationSec": 4, "icon": "clock", "chapter": "أول ٣ ثواني", "lines": ["أول *٣ ثواني*", "تحدد كل شي"]},
+    {"type": "tip", "durationSec": 4, "icon": "alert", "lines": ["لا تطوّل *المقدمة*", "ادخل بالموضوع"]},
+    {"type": "result", "durationSec": 3, "icon": "sparkle", "lines": ["مشاهدات *أكثر*", "بنفس المجهود"]},
+    {"type": "outro", "durationSec": 3, "lines": ["احفظ الفيديو", "وتابع *دبّرها*"]}
+  ]
+}

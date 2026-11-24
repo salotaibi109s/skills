@@ -3,6 +3,8 @@
 
 export const FPS = 30;
 
+export const THEMES = ['dabbirha', 'youtube'];
+
 export const SCENE_TYPES = ['hook', 'step', 'tip', 'result', 'outro'];
 
 export const ICONS = [
@@ -44,6 +46,9 @@ export function validateEpisode(ep, fileId) {
   if (typeof ep.title !== 'string' || !ep.title.trim()) {
     errors.push('title مطلوب (عنوان داخلي بالعربي)');
   }
+  if (ep.theme !== undefined && !THEMES.includes(ep.theme)) {
+    errors.push(`theme "${ep.theme}" غير معروف — المتاح: ${THEMES.join(', ')}`);
+  }
   if (!Array.isArray(ep.scenes) || ep.scenes.length < 3) {
     errors.push('scenes لازم تكون قائمة فيها 3 مشاهد على الأقل');
     return errors;
@@ -77,6 +82,9 @@ export function validateEpisode(ep, fileId) {
           errors.push(`${at} السطر ${j + 1}: علامات * غير مقفلة (التمييز يكون *هكذا*)`);
         }
       });
+    }
+    if (s.chapter !== undefined && (typeof s.chapter !== 'string' || !s.chapter.trim() || s.chapter.length > 20)) {
+      errors.push(`${at}: chapter لازم نص قصير (≤ 20 حرف)`);
     }
     if (s.audio !== undefined && (typeof s.audio !== 'string' || !/^voiceovers\/[a-z0-9-]+\/[\w-]+\.mp3$/.test(s.audio))) {
       errors.push(`${at}: audio لازم مسار مثل voiceovers/<id>/01.mp3 داخل public/`);

@@ -1,6 +1,7 @@
 import React from 'react';
 import {spring, useCurrentFrame, useVideoConfig, interpolate} from 'remotion';
-import {COLORS, CONTENT, FONT_FAMILY} from '../theme';
+import {CONTENT} from '../theme';
+import {useTheme} from '../ThemeContext';
 
 type Word = {text: string; highlight: boolean};
 
@@ -45,12 +46,14 @@ type Props = {
 export const AnimatedText: React.FC<Props> = ({
   lines,
   maxFontSize = 96,
-  weight = 800,
+  weight,
   delay = 0,
   stagger = 3,
-  color = COLORS.white,
+  color,
 }) => {
   const frame = useCurrentFrame();
+  const theme = useTheme();
+  const pill = theme.highlight === 'pill';
   const {fps} = useVideoConfig();
   const fontSize = fitFontSize(lines, maxFontSize);
   let index = 0;
@@ -59,11 +62,11 @@ export const AnimatedText: React.FC<Props> = ({
     <div
       style={{
         direction: 'rtl',
-        fontFamily: FONT_FAMILY,
-        fontWeight: weight,
+        fontFamily: theme.font,
+        fontWeight: weight ?? theme.weight,
         fontSize,
         lineHeight: 1.35,
-        color,
+        color: color ?? theme.ink,
         textAlign: 'center',
         width: '100%',
       }}
@@ -93,11 +96,11 @@ export const AnimatedText: React.FC<Props> = ({
                   position: 'relative',
                   opacity: s,
                   transform: `translateY(${(1 - s) * 40}px) scale(${0.85 + s * 0.15})`,
-                  color: w.highlight ? COLORS.gold : undefined,
+                  color: w.highlight ? (pill ? theme.onAccent : theme.accent) : undefined,
                 }}
               >
                 {w.text}
-                {w.highlight && (
+                {w.highlight && !pill && (
                   <span
                     style={{
                       position: 'absolute',
@@ -105,8 +108,24 @@ export const AnimatedText: React.FC<Props> = ({
                       bottom: fontSize * 0.08,
                       height: fontSize * 0.12,
                       width: `${underline * 100}%`,
-                      background: COLORS.goldSoft,
+                      background: theme.accentSoft,
                       borderRadius: 999,
+                      zIndex: -1,
+                    }}
+                  />
+                )}
+                {w.highlight && pill && (
+                  // طابع يوتيوب: الكلمة على خلفية حمراء
+                  <span
+                    style={{
+                      position: 'absolute',
+                      left: '-8%',
+                      right: '-8%',
+                      top: '8%',
+                      bottom: '2%',
+                      borderRadius: fontSize * 0.18,
+                      background: theme.accent,
+                      opacity: underline,
                       zIndex: -1,
                     }}
                   />

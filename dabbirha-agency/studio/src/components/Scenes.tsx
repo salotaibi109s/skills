@@ -1,6 +1,7 @@
 import React from 'react';
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {BRAND, COLORS, FONT_FAMILY} from '../theme';
+import {BRAND} from '../theme';
+import {useTheme} from '../ThemeContext';
 import {AnimatedText} from './AnimatedText';
 import {Badge, toArabicDigits} from './Badge';
 import {Icon} from './Icon';
@@ -13,6 +14,7 @@ export type SceneData = {
   lines: string[];
   icon?: string;
   audio?: string; // تعليق صوتي يبدأ مع المشهد — مسار داخل public/
+  chapter?: string; // اسم الفصل في شريط يوتيوب (اختياري)
 };
 
 type SceneProps = {scene: SceneData; durationInFrames: number; stepNumber?: number};
@@ -31,6 +33,7 @@ const FloatingIcon: React.FC<{name: string; size: number; delay?: number}> = ({n
 export const HookScene: React.FC<SceneProps> = ({scene, durationInFrames}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
+  const theme = useTheme();
   const pop = spring({frame, fps, config: {damping: 9, stiffness: 140}});
   const ring = interpolate(frame % 45, [0, 45], [0.8, 1.5]);
   const ringOpacity = interpolate(frame % 45, [0, 45], [0.5, 0]);
@@ -43,7 +46,7 @@ export const HookScene: React.FC<SceneProps> = ({scene, durationInFrames}) => {
               position: 'absolute',
               inset: -30,
               borderRadius: '50%',
-              border: `6px solid ${COLORS.gold}`,
+              border: `6px solid ${theme.accent}`,
               transform: `scale(${ring})`,
               opacity: ringOpacity,
             }}
@@ -64,16 +67,19 @@ export const StepScene: React.FC<SceneProps> = ({scene, durationInFrames, stepNu
   </SceneShell>
 );
 
-export const TipScene: React.FC<SceneProps> = ({scene, durationInFrames}) => (
+export const TipScene: React.FC<SceneProps> = ({scene, durationInFrames}) => {
+  const theme = useTheme();
+  return (
   <SceneShell durationInFrames={durationInFrames} gap={48}>
     <Badge label={scene.icon === 'alert' ? 'تنبيه' : 'نصيحة'} />
     <div
       style={{
         width: '100%',
-        border: `4px solid ${COLORS.gold}`,
-        borderRadius: 48,
+        border: `4px solid ${theme.border}`,
+        borderRadius: theme.name === 'youtube' ? 24 : 48,
         padding: '56px 36px',
-        background: 'rgba(232,176,75,0.06)',
+        background: theme.card,
+        boxShadow: theme.name === 'youtube' ? '0 24px 60px rgba(0,0,0,0.45)' : undefined,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -84,7 +90,8 @@ export const TipScene: React.FC<SceneProps> = ({scene, durationInFrames}) => (
       <AnimatedText lines={scene.lines} maxFontSize={84} delay={8} />
     </div>
   </SceneShell>
-);
+  );
+};
 
 export const ResultScene: React.FC<SceneProps> = ({scene, durationInFrames}) => {
   const frame = useCurrentFrame();
@@ -120,6 +127,7 @@ export const ResultScene: React.FC<SceneProps> = ({scene, durationInFrames}) => 
 export const OutroScene: React.FC<SceneProps> = ({scene, durationInFrames}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
+  const theme = useTheme();
   const pop = spring({frame, fps, config: {damping: 12}});
   const pulse = 1 + Math.sin(frame / 6) * 0.04;
   return (
@@ -132,10 +140,10 @@ export const OutroScene: React.FC<SceneProps> = ({scene, durationInFrames}) => {
         <Icon name={scene.icon ?? 'bookmark'} size={80} delay={14} strokeWidth={2} />
         <span
           style={{
-            fontFamily: FONT_FAMILY,
+            fontFamily: theme.font,
             fontWeight: 700,
             fontSize: 44,
-            color: COLORS.muted,
+            color: theme.muted,
             direction: 'ltr',
             opacity: interpolate(frame, [18, 30], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
           }}
