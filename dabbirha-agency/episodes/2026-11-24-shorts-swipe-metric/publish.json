@@ -10,7 +10,9 @@
       "scheduled_at": "2026-11-24T15:48:00+03:00",
       "postId": "440219373",
       "uuid": "4711954731619272196",
-      "title": "رقم واحد يقرر مصير الشورت 📊"
+      "title": "رقم واحد يقرر مصير الشورت 📊",
+      "published": true,
+      "publicUrl": "https://www.tiktok.com/@dabbirha2/video/7711718509729844498"
     },
     {
       "network": "youtube",
@@ -18,12 +20,14 @@
       "postId": "440219454",
       "uuid": "-6437250758110328798",
       "title": "الرقم اللي يقرر مصير الشورت حقك (أغلب الناس ما يعرفونه) 📊",
-      "category": "EDUCATION"
+      "category": "EDUCATION",
+      "published": true,
+      "publicUrl": "https://www.youtube.com/shorts/egsXE8_yOi8"
     }
   ],
   "errors": [
     "أول محاولة 15:32 رُفضت (الوقت صار ماضي بعد إعادة تشغيل الجلسة) — أعيدت الجدولة 15:48/15:49 بدون تكرار"
   ],
   "aiLabel": false,
-  "status": "scheduled"
+  "status": "ready"
 }

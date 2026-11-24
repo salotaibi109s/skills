@@ -34,4 +34,4 @@ pillar: youtube
 - Buffer — YouTube Shorts analytics: https://buffer.com/resources/the-creators-guide-to-youtube-shorts-analytics
 - 1of10 — لا يوجد معيار رسمي للرقم: https://1of10.com/blog/youtube-shorts-analytics/
 
-status: needs-review
+status: ready (published 2026-11-24)
