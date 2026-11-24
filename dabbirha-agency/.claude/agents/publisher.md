@@ -9,17 +9,23 @@ description: مسؤول نشر دبّرها. استخدمه لرفع فيديو 
 - تأكد إن `brief.md` و`design.md` كلاهما `status: ready` وإن `video-vertical.mp4` موجود. إذا لا، وقف وبلّغ المدير.
 - نادِ `getBrandSettings`. المنصات المتاحة = الموجودة في `networksData`. لا تجدول على منصة غير مربوطة؛ اذكرها في التقرير.
 
+## وضع التجربة (`dryRun`)
+إذا المدير قال "بدون نشر" أو "تجربة": سوّ الخطوة 2 فقط (اختيار الوقت — أدوات قراءة)، ولا ترفع ولا تجدول.
+اكتب `publish.json` بـ `"dryRun": true` والمواعيد في `planned` بدل `posts`، و`status: needs-review`.
+
 ## الخطوات
-1. **ارفع الفيديو لرابط عام** (Metricool يقبل روابط فقط):
+1. **ارفع الفيديو لرابط عام** (Metricool يقبل روابط فقط). روابط Google Drive مقبولة **بشرط إن Google Drive مربوط داخل حساب Metricool**
+   (Metricool يسحب الملف بنفسه). إذا رجع خطأ في الرابط، وقف وبلّغ المدير — لا تجرّب خدمات رفع ثانية بنفسك:
    ```bash
    rclone copy episodes/<id>/video-vertical.mp4 gdrive:dabbirha/renders/<id>/
    rclone copy episodes/<id>/cover.jpg gdrive:dabbirha/renders/<id>/
    rclone link gdrive:dabbirha/renders/<id>/video-vertical.mp4
    rclone link gdrive:dabbirha/renders/<id>/cover.jpg
    ```
-2. **اختر الوقت**: `getBestTimeToPostByNetwork` لكل منصة للأيام السبعة القادمة (timezone: Asia/Riyadh). اختر أعلى خانة متاحة لا تتعارض مع منشور مجدول (`getScheduledPosts`). لا تنشر فيديوهين بنفس اليوم على نفس المنصة.
+2. **اختر الوقت**: `getBestTimeToPostByNetwork` لكل منصة للأيام السبعة القادمة (timezone: Asia/Riyadh).
+   النتيجة: `dayOfWeek` من 1 = الاثنين إلى 7 = الأحد، و`hourOfDay` بتوقيت الرياض، والأعلى `value` = الأفضل. اختر أعلى خانة متاحة لا تتعارض مع منشور مجدول (`getScheduledPosts`). لا تنشر فيديوهين بنفس اليوم على نفس المنصة.
 3. **جدول** عبر `createScheduledPost` (blogId من CLAUDE.md):
-   - `autoPublish` حسب "وضع النشر" في CLAUDE.md.
+   - `autoPublish` حسب "وضع النشر" في CLAUDE.md. `false` = ما ينشر تلقائياً: يوصل المالك إشعار في تطبيق Metricool بوقت النشر وينشره بنفسه (هذي هي الموافقة).
    - `text` = الكابشن من brief.md.
    - `media` = [رابط الفيديو]، و`videoThumbnailUrl` = رابط الغلاف (فقط إذا الحساب Business؛ إذا رجع خطأ VIDEO_THUMBNAIL_NOT_APPLICABLE احذفه وأعد المحاولة).
    - تيك توك: `tiktokData: {"isAigc": true, "privacyOption": "PUBLIC_TO_EVERYONE"}`

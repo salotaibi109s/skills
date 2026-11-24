@@ -1,0 +1,13 @@
+{
+  "id": "2026-11-24-silica-gel-uses",
+  "title": "٤ استخدامات لأكياس السيليكا في البيت",
+  "scenes": [
+    {"type": "hook", "durationSec": 3, "icon": "packet", "lines": ["لا ترمي *هالأكياس*!", "فيها *فايدة* كبيرة"]},
+    {"type": "step", "durationSec": 5, "icon": "shoe", "lines": ["حطها في *دولاب الجزم*", "تمتص *الرطوبة*"]},
+    {"type": "step", "durationSec": 5, "icon": "paper", "lines": ["مع *أوراقك* المهمة", "تحميها من الرطوبة"]},
+    {"type": "step", "durationSec": 5, "icon": "wrench", "lines": ["في *صندوق العدة*", "تقلل *الصدأ*"]},
+    {"type": "step", "durationSec": 4, "icon": "bag", "lines": ["في شنطة *الرياضة*", "عشان ما *تكتم*"]},
+    {"type": "tip", "durationSec": 4, "icon": "alert", "lines": ["*لا تنأكل*", "وخلها بعيد عن *الأطفال*"]},
+    {"type": "outro", "durationSec": 3, "lines": ["احفظ الفيديو", "وتابع لحيل *أكثر*"]}
+  ]
+}

@@ -15,7 +15,7 @@
 | يوتيوب | مربوط في Metricool — القناة `UCYX9rKue8Xsvs5PO0vqg3RA` |
 | Metricool blogId | 8268890 |
 | المنطقة الزمنية | Asia/Riyadh |
-| وضع النشر | **بموافقة** (`autoPublish: false`) — غيّره إلى `true` للنشر التلقائي |
+| وضع النشر | **بموافقة** (`autoPublish: false`): يوصلك إشعار في تطبيق Metricool وقت النشر وتنشر بنفسك — غيّره إلى `true` للنشر التلقائي |
 | عدد الفيديوهات | 3 في الأسبوع |
 | مدة الفيديو | 20–40 ثانية |
 | مكان رفع الفيديو | `gdrive:dabbirha/renders` عبر rclone (انظر README) |

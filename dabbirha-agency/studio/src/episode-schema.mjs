@@ -8,7 +8,7 @@ export const SCENE_TYPES = ['hook', 'step', 'tip', 'result', 'outro'];
 export const ICONS = [
   'oven', 'lemon', 'drop', 'spray', 'sparkle', 'clock', 'check', 'bulb',
   'alert', 'bookmark', 'shirt', 'brush', 'fridge', 'coin', 'sponge', 'home',
-  'box', 'washer', 'trash', 'heart',
+  'box', 'washer', 'trash', 'heart', 'shoe', 'paper', 'wrench', 'bag', 'packet',
 ];
 
 export const LIMITS = {

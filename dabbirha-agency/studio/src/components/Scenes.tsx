@@ -65,7 +65,7 @@ export const StepScene: React.FC<SceneProps> = ({scene, durationInFrames, stepNu
 
 export const TipScene: React.FC<SceneProps> = ({scene, durationInFrames}) => (
   <SceneShell durationInFrames={durationInFrames} gap={48}>
-    <Badge label="نصيحة" />
+    <Badge label={scene.icon === 'alert' ? 'تنبيه' : 'نصيحة'} />
     <div
       style={{
         width: '100%',

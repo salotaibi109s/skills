@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-24-silica-gel-uses",
+  "dryRun": true,
+  "note": "تشغيل تجريبي: لم يُرفع الفيديو ولم يُجدول شي في Metricool. المواعيد أدناه مقترحة فقط.",
+  "media_url": null,
+  "planned": [
+    {
+      "network": "tiktok",
+      "scheduled_at": "2026-11-26T10:00:00+03:00",
+      "why": "أعلى خانة في الأسبوع (قيمة 1471 — الخميس 10 الصبح)",
+      "tiktokData": {"isAigc": true, "privacyOption": "PUBLIC_TO_EVERYONE"}
+    },
+    {
+      "network": "youtube",
+      "scheduled_at": "2026-11-25T16:00:00+03:00",
+      "why": "أعلى خانة في الأسبوع (قيمة 12033 — الأربعاء 4 العصر)",
+      "youtubeData": {
+        "title": "أكياس السيليكا: ٤ استخدامات في البيت لا ترميها",
+        "type": "short",
+        "privacy": "public",
+        "tags": ["أكياس السيليكا", "حيل منزلية", "ترتيب البيت", "الرطوبة", "دبرها", "silica gel uses", "home hacks"],
+        "madeForKids": false,
+        "isAiGeneratedContent": true,
+        "category": "HOWTO_STYLE"
+      }
+    }
+  ],
+  "posts": [],
+  "skipped": [],
+  "checks": {
+    "brief_status": "ready",
+    "design_status": "ready",
+    "video_exists": true,
+    "networks_connected": ["tiktok (dabbirha2)", "youtube (UCYX9rKue8Xsvs5PO0vqg3RA)"],
+    "existing_scheduled_posts_next_14_days": 0,
+    "caption_chars": 124
+  },
+  "status": "needs-review"
+}

@@ -4,23 +4,24 @@ import {COLORS, CONTENT, FONT_FAMILY} from '../theme';
 
 type Word = {text: string; highlight: boolean};
 
-// "فرنك *محروق جداً* ؟" → كلمات، والمحاط بـ * يتلوّن ذهبي (يقبل أكثر من كلمة)
+// "فرنك *محروق جداً*؟" → كلمات، والمحاط بـ * يتلوّن ذهبي (يقبل أكثر من كلمة،
+// والنجمة تقدر تجي قبل علامة ترقيم مثل *هالأكياس*!)
 export const parseLine = (line: string): Word[] => {
   const words: Word[] = [];
   let on = false;
   for (const raw of line.trim().split(/\s+/)) {
-    let t = raw;
-    let hl = on;
-    if (t.startsWith('*')) {
-      on = true;
-      hl = true;
-      t = t.slice(1);
+    let highlight: boolean | null = null;
+    let text = '';
+    for (const ch of raw) {
+      if (ch === '*') {
+        on = !on;
+        continue;
+      }
+      // لون الكلمة = حالة التمييز عند أول حرف فيها
+      if (highlight === null) highlight = on;
+      text += ch;
     }
-    if (t.endsWith('*')) {
-      on = false;
-      t = t.slice(0, -1);
-    }
-    if (t) words.push({text: t, highlight: hl});
+    if (text) words.push({text, highlight: Boolean(highlight)});
   }
   return words;
 };
