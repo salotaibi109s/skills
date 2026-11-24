@@ -6,9 +6,11 @@
   "posts": [
     {
       "network": "youtube",
-      "scheduled_at": "2026-11-25T16:00:00+03:00",
-      "postId": "439928242",
-      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8268890&openWithPostUuid=-7141760216884034930"
+      "scheduled_at": "2026-11-24T11:41:00+03:00",
+      "postId": "439951656",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8268890&openWithPostUuid=-7141760216884034930",
+      "autoPublish": true,
+      "note": "بطلب المالك: تجربة نشر يوتيوب فوراً"
     },
     {
       "network": "tiktok",
