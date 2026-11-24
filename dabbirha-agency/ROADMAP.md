@@ -5,12 +5,13 @@
 
 ## الأولوية 1 — اللي يوقف التشغيل
 
-- [ ] **بناء `studio/` (Remotion) مرة وحدة الحين** بدل ما يبنيه المصمم أول تشغيل.
+- [x] **بناء `studio/` (Remotion)** — تم. الحلقة التجريبية `demo-oven-steam` تترندر في ~50 ثانية.
+  الأوامر: `npm run check -- <id>` و`npm run render -- <id>` (فيديو + غلاف + لقطات فحص بهامش الأمان).
   - مكوّنات `Hook` و`Scene` و`Outro` و`Logo` + `Root.tsx` يسجّل كل حلقة تلقائياً من `src/episodes/*.json`.
   - الحلقة تكون **بيانات فقط** (JSON)، والمصمم ما يكتب كود React لكل فيديو.
   - رندر تجريبي واحد للتأكد إن النص العربي (Tajawal) متصل والاتجاه RTL صحيح.
   - ملاحظة: Remotion v4 يجيب ffmpeg معه، فما تحتاج `brew install ffmpeg`.
-- [ ] **توحيد اسم الحلقة (slug)**: CLAUDE.md يقول `episodes/YYYY-MM-DD-<slug>/` والمصمم والناشر يستخدمون `episodes/<slug>/`.
+- [x] **توحيد اسم الحلقة (slug)** — تم: `<id>` = اسم المجلد في كل الملفات.: CLAUDE.md يقول `episodes/YYYY-MM-DD-<slug>/` والمصمم والناشر يستخدمون `episodes/<slug>/`.
   القرار المقترح: **معرّف الحلقة = اسم المجلد كامل** (`2026-11-23-oven-steam`) ويُستخدم نفسه في JSON والـ Composition وGoogle Drive.
 - [ ] **اختبار رابط الفيديو مع Metricool**: `rclone link` يعطي رابط مشاركة من Drive (صفحة HTML) وليس رابط ملف مباشر.
   - جرّب تحويله: `https://drive.google.com/uc?export=download&id=<ID>`.

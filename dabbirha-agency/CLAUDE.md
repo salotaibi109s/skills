@@ -25,9 +25,9 @@
 | الوكيل | الملف | يستلم | يسلّم |
 |---|---|---|---|
 | المسوّق (بحث) | `marketer` | `ideas/backlog.md` + أرقام الأداء | أفكار مرتّبة في `ideas/backlog.md` |
-| كاتب المحتوى | `content-writer` | فكرة واحدة | `episodes/<slug>/brief.md` |
-| مصمم الموشن | `motion-designer` | `brief.md` | `episodes/<slug>/video-vertical.mp4` + `cover.jpg` |
-| مسؤول النشر | `publisher` | الفيديو + `brief.md` | `episodes/<slug>/publish.json` |
+| كاتب المحتوى | `content-writer` | فكرة واحدة | `episodes/<id>/brief.md` |
+| مصمم الموشن | `motion-designer` | `brief.md` | `episodes/<id>/video-vertical.mp4` + `cover.jpg` |
+| مسؤول النشر | `publisher` | الفيديو + `brief.md` | `episodes/<id>/publish.json` |
 | المسوّق (تحليل) | `marketer` | `publish.json` لكل الحلقات | `reports/week-<NN>.md` |
 
 ## سلسلة العمل
@@ -44,7 +44,8 @@ marketer (أفكار) → content-writer → motion-designer → publisher
 
 ## قواعد التسليم بين الموظفين
 
-1. كل فيديو له مجلد واحد: `episodes/YYYY-MM-DD-<slug>/` (slug إنجليزي قصير بحروف صغيرة وشرطات).
+1. كل فيديو له مجلد واحد: `episodes/<id>/` حيث `<id>` = `YYYY-MM-DD-<slug>` (slug إنجليزي قصير بحروف صغيرة وشرطات).
+   نفس `<id>` يُستخدم في كل مكان: ملف `studio/src/episodes/<id>.json`، ومجلد الرفع، و`publish.json`.
 2. لا ينتقل الشغل للموظف التالي إلا إذا ملف التسليم موجود وكامل. إذا ناقص، رجّعه لنفس الموظف مع سبب واضح.
 3. كل موظف يكتب في آخر ملفه سطر `status:` واحد من: `ready` / `needs-review` / `failed: <السبب>`.
 4. لا أحد يعدّل ملف موظف ثاني — يطلب التعديل من صاحبه.

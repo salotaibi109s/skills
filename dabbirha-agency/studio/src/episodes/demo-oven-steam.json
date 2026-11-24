@@ -1,0 +1,13 @@
+{
+  "id": "demo-oven-steam",
+  "title": "حلقة تجريبية — تنظيف الفرن بالبخار",
+  "scenes": [
+    {"type": "hook", "durationSec": 3, "icon": "oven", "lines": ["فرنك *متسخ* ومتعبك؟", "الحل *بالبخار*"]},
+    {"type": "step", "durationSec": 5, "icon": "lemon", "lines": ["صينية فيها *موية*", "وشرايح *ليمون*"]},
+    {"type": "step", "durationSec": 5, "icon": "clock", "lines": ["شغّل الفرن *نص ساعة*", "على حرارة متوسطة"]},
+    {"type": "tip", "durationSec": 4, "icon": "alert", "lines": ["خلّه يبرد *شوي*", "قبل لا تمسحه"]},
+    {"type": "step", "durationSec": 5, "icon": "sponge", "lines": ["امسح بإسفنجة", "والأوساخ *تطلع بسهولة*"]},
+    {"type": "result", "durationSec": 4, "icon": "sparkle", "lines": ["فرن *يلمع*", "بدون فرك قوي"]},
+    {"type": "outro", "durationSec": 3, "lines": ["احفظ الفيديو", "وتابع لحيل *أكثر*"]}
+  ]
+}

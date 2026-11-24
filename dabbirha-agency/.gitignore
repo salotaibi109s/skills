@@ -1,3 +1,4 @@
 studio/node_modules/
 studio/out/
 episodes/**/*.mp4
+episodes/**/checks/

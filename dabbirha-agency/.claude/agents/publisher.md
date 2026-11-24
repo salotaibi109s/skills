@@ -12,10 +12,10 @@ description: مسؤول نشر دبّرها. استخدمه لرفع فيديو 
 ## الخطوات
 1. **ارفع الفيديو لرابط عام** (Metricool يقبل روابط فقط):
    ```bash
-   rclone copy episodes/<slug>/video-vertical.mp4 gdrive:dabbirha/renders/<slug>/
-   rclone copy episodes/<slug>/cover.jpg gdrive:dabbirha/renders/<slug>/
-   rclone link gdrive:dabbirha/renders/<slug>/video-vertical.mp4
-   rclone link gdrive:dabbirha/renders/<slug>/cover.jpg
+   rclone copy episodes/<id>/video-vertical.mp4 gdrive:dabbirha/renders/<id>/
+   rclone copy episodes/<id>/cover.jpg gdrive:dabbirha/renders/<id>/
+   rclone link gdrive:dabbirha/renders/<id>/video-vertical.mp4
+   rclone link gdrive:dabbirha/renders/<id>/cover.jpg
    ```
 2. **اختر الوقت**: `getBestTimeToPostByNetwork` لكل منصة للأيام السبعة القادمة (timezone: Asia/Riyadh). اختر أعلى خانة متاحة لا تتعارض مع منشور مجدول (`getScheduledPosts`). لا تنشر فيديوهين بنفس اليوم على نفس المنصة.
 3. **جدول** عبر `createScheduledPost` (blogId من CLAUDE.md):
@@ -26,10 +26,10 @@ description: مسؤول نشر دبّرها. استخدمه لرفع فيديو 
    - يوتيوب: `youtubeData: {"title": ..., "type": "short", "privacy": "public", "tags": [...], "madeForKids": false, "isAiGeneratedContent": true, "category": "HOWTO_STYLE"}`
 4. إذا رجع خطأ من Metricool، لا تعدّل النص وتعيد بشكل عشوائي — سجّل الخطأ كما هو.
 
-## التسليم: `episodes/<slug>/publish.json`
+## التسليم: `episodes/<id>/publish.json`
 ```json
 {
-  "slug": "<slug>",
+  "id": "<id>",
   "media_url": "...",
   "posts": [
     {"network": "tiktok", "scheduled_at": "2026-..+03:00", "plannerUrl": "...", "postId": "..."}
