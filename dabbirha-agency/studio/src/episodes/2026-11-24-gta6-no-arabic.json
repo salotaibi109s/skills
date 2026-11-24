@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-24-gta6-no-arabic",
+  "title": "GTA 6 ما فيها عربي… وهذا الحل",
+  "theme": "dabbirha",
+  "music": "gta-neon",
+  "sfxDefaults": true,
+  "voice": {
+    "settings": {
+      "speed": 1.1
+    }
+  },
+  "scenes": [
+    {"type":"hook","durationSec":7.5,"chapter":"المقدمة","lines":["GTA6 *ما فيها عربي*","بس فيه حل"],"chips":[{"text":"الإنجليزية"},{"text":"الفرنسية"},{"text":"الألمانية"},{"text":"الإسبانية"},{"text":"الإيطالية"},{"text":"البرتغالية"},{"text":"الروسية"},{"text":"البولندية"},{"text":"اليابانية"},{"text":"الكورية"},{"text":"الصينية"},{"text":"العربية","struck":true}],"say":"GTA 6 نزلت بثلاث عشرة لغة… والعربي مو منها. بس فيه حل.","audio":"voiceovers/2026-11-24-gta6-no-arabic/01.mp3"},
+    {"type":"step","durationSec":10,"chapter":"الترجمة","icon":"subtitles","lines":["ترجمة *كل الحوارات*","مو بس المهمات"],"say":"المستوى الأول: الترجمة الإنجليزية افتراضياً تطلع للمهمات بس. خلها لكل الحوارات… وإلا بيفوتك نص القصة.","audio":"voiceovers/2026-11-24-gta6-no-arabic/02.mp3"},
+    {"type":"step","durationSec":8,"chapter":"الوضوح","icon":"textsize","lines":["*خلفية* للنص","وخط أكبر"],"say":"المستوى الثاني: فعّل خلفية الترجمة وكبّر الخط… عشان تقراها حتى في المشاهد المضيئة.","audio":"voiceovers/2026-11-24-gta6-no-arabic/03.mp3"},
+    {"type":"step","durationSec":10.5,"chapter":"الترجمة العربية","icon":"translate","lines":["*ترجمة عربية*","فوق الشاشة"],"say":"المستوى الأخير: أداة مجانية اسمها GameTranslator، تقرا الإنجليزي من الشاشة، وتعرض ترجمته بالعربي فوق صورة اللعبة.","audio":"voiceovers/2026-11-24-gta6-no-arabic/04.mp3"},
+    {"type":"tip","durationSec":8.5,"chapter":"تنبيه","icon":"alert","lines":["ترجمة *آلية*","ممكن تخطي"],"say":"تنبيه: الترجمة آلية، فممكن تخطي أحياناً… والفضل لمطوّرها اللي يقدمها مجاناً.","audio":"voiceovers/2026-11-24-gta6-no-arabic/05.mp3"},
+    {"type":"outro","durationSec":5.5,"chapter":"الختام","icon":"gamepad","lines":["تبي *شروحات أكثر*؟","تابع دبّرها"],"say":"وإذا تبغى شروحات GTA 6 أول بأول… تابع دبّرها.","audio":"voiceovers/2026-11-24-gta6-no-arabic/06.mp3"}
+  ]
+}

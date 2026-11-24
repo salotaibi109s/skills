@@ -5,19 +5,23 @@ export const FPS = 30;
 
 export const THEMES = ['dabbirha', 'youtube'];
 
+export const SFX = ['whoosh', 'level', 'check', 'impact', 'riser', 'glitch', 'pass', 'click', 'none'];
+export const MUSIC = ['gta-neon'];
+
 export const SCENE_TYPES = ['hook', 'step', 'tip', 'result', 'outro'];
 
 export const ICONS = [
   'oven', 'lemon', 'drop', 'spray', 'sparkle', 'clock', 'check', 'bulb',
   'alert', 'bookmark', 'shirt', 'brush', 'fridge', 'coin', 'sponge', 'home',
   'box', 'washer', 'trash', 'heart', 'shoe', 'paper', 'wrench', 'bag', 'packet',
+  'gamepad', 'subtitles', 'translate', 'textsize',
 ];
 
 export const LIMITS = {
   minTotalSec: 15,
   maxTotalSec: 60,
   minSceneSec: 2,
-  maxSceneSec: 8,
+  maxSceneSec: 12,
   maxLines: 2,
   maxWordsPerLine: 6,
   maxCharsPerLine: 28,
@@ -48,6 +52,12 @@ export function validateEpisode(ep, fileId) {
   }
   if (ep.theme !== undefined && !THEMES.includes(ep.theme)) {
     errors.push(`theme "${ep.theme}" غير معروف — المتاح: ${THEMES.join(', ')}`);
+  }
+  if (ep.sfxDefaults !== undefined && typeof ep.sfxDefaults !== 'boolean') {
+    errors.push('sfxDefaults لازم true أو false');
+  }
+  if (ep.music !== undefined && !MUSIC.includes(ep.music)) {
+    errors.push(`music "${ep.music}" غير موجود — المتاح: ${MUSIC.join(', ')}`);
   }
   if (!Array.isArray(ep.scenes) || ep.scenes.length < 3) {
     errors.push('scenes لازم تكون قائمة فيها 3 مشاهد على الأقل');
@@ -85,6 +95,19 @@ export function validateEpisode(ep, fileId) {
     }
     if (s.chapter !== undefined && (typeof s.chapter !== 'string' || !s.chapter.trim() || s.chapter.length > 20)) {
       errors.push(`${at}: chapter لازم نص قصير (≤ 20 حرف)`);
+    }
+    if (s.say !== undefined && (typeof s.say !== 'string' || !s.say.trim() || s.say.length > 400)) {
+      errors.push(`${at}: say لازم نص (≤ 400 حرف)`);
+    }
+    if (s.sfx !== undefined && !SFX.includes(s.sfx)) {
+      errors.push(`${at}: sfx "${s.sfx}" غير موجود — المتاح: ${SFX.join(', ')}`);
+    }
+    if (s.chips !== undefined) {
+      if (!Array.isArray(s.chips) || s.chips.length < 2 || s.chips.length > 14) {
+        errors.push(`${at}: chips لازم قائمة من 2 إلى 14 عنصر`);
+      } else if (s.chips.some((c) => !c || typeof c.text !== 'string' || !c.text.trim() || c.text.length > 14)) {
+        errors.push(`${at}: كل عنصر في chips لازم {text} قصير (≤ 14 حرف)`);
+      }
     }
     if (s.audio !== undefined && (typeof s.audio !== 'string' || !/^voiceovers\/[a-z0-9-]+\/[\w-]+\.mp3$/.test(s.audio))) {
       errors.push(`${at}: audio لازم مسار مثل voiceovers/<id>/01.mp3 داخل public/`);

@@ -64,6 +64,25 @@ for (const [i, scene] of ep.scenes.entries()) {
 }
 
 const comp = await pick({});
+
+// صور معاينة نظيفة (بدون الأحمر) للمالك — نفس لحظات لقطات الفحص
+const previewDir = path.join(outDir, 'preview');
+mkdirSync(previewDir, {recursive: true});
+for (const [i, scene] of ep.scenes.entries()) {
+  const frames = sceneFrames(scene);
+  const at = starts[i] + Math.min(frames - 10, Math.max(40, Math.round(frames * 0.6)));
+  await renderStill({
+    composition: comp,
+    serveUrl,
+    output: path.join(previewDir, `${String(i + 1).padStart(2, '0')}-${scene.type}.jpg`),
+    frame: at,
+    imageFormat: 'jpeg',
+    jpegQuality: 85,
+    scale: 0.5,
+    browserExecutable,
+  });
+}
+log(`صور المعاينة في ${path.relative(studio, previewDir)}`);
 const coverFrame = Math.max(0, sceneFrames(ep.scenes[0]) - 10);
 await renderStill({
   composition: comp,

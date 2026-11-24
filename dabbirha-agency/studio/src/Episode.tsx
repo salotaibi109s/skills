@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Sequence, Series, staticFile} from 'remotion';
+import {AbsoluteFill, Audio, interpolate, Sequence, Series, staticFile, useVideoConfig} from 'remotion';
 import {sceneFrames} from './episode-schema.mjs';
 import {Background} from './components/Background';
 import {ProgressBar} from './components/ProgressBar';
@@ -15,6 +15,8 @@ export type EpisodeData = {
   id: string;
   title: string;
   theme?: ThemeName;
+  music?: string; // موسيقى خلفية من public/music
+  sfxDefaults?: boolean; // مؤثر تلقائي لكل نوع مشهد
   scenes: SceneData[];
 };
 
@@ -40,13 +42,42 @@ const chaptersOf = (scenes: SceneData[]): Chapter[] => {
   });
 };
 
+// المؤثر الافتراضي لكل نوع مشهد (لما sfxDefaults = true)
+const SFX_BY_TYPE: Record<SceneData['type'], string> = {
+  hook: 'impact',
+  step: 'level',
+  tip: 'glitch',
+  result: 'check',
+  outro: 'pass',
+};
+
+const db = (d: number) => Math.pow(10, d / 20);
+
+// موسيقى خلفية هادية تحت صوت ناصر، تدخل وتطلع بنعومة
+const MusicBed: React.FC<{name: string}> = ({name}) => {
+  const {durationInFrames} = useVideoConfig();
+  return (
+    <Audio
+      src={staticFile(`music/${name}.mp3`)}
+      loop
+      volume={(f) =>
+        db(-21) *
+        interpolate(f, [0, 12, durationInFrames - 40, durationInFrames], [0, 1, 1, 0], {
+          extrapolateLeft: 'clamp',
+          extrapolateRight: 'clamp',
+        })
+      }
+    />
+  );
+};
+
 export const Episode: React.FC<EpisodeProps> = (props) => (
   <ThemeProvider name={props.theme}>
     <EpisodeBody {...props} />
   </ThemeProvider>
 );
 
-const EpisodeBody: React.FC<EpisodeProps> = ({scenes, showSafeZone}) => {
+const EpisodeBody: React.FC<EpisodeProps> = ({scenes, showSafeZone, music, sfxDefaults}) => {
   const theme = useTheme();
   let step = 0;
   const outroIndex = scenes.findIndex((s) => s.type === 'outro');
@@ -56,6 +87,7 @@ const EpisodeBody: React.FC<EpisodeProps> = ({scenes, showSafeZone}) => {
   return (
     <AbsoluteFill style={{backgroundColor: theme.bg}}>
       <Background />
+      {music && <MusicBed name={music} />}
       <Series>
         {scenes.map((scene, i) => {
           const frames = sceneFrames(scene);
@@ -65,6 +97,10 @@ const EpisodeBody: React.FC<EpisodeProps> = ({scenes, showSafeZone}) => {
             <Series.Sequence key={i} durationInFrames={frames} name={`${i + 1}. ${scene.type}`}>
               <Scene scene={scene} durationInFrames={frames} stepNumber={stepNumber} />
               {scene.audio && <Audio src={staticFile(scene.audio)} />}
+              {(() => {
+                const fx = scene.sfx ?? (sfxDefaults ? SFX_BY_TYPE[scene.type] : undefined);
+                return fx && fx !== 'none' ? <Audio src={staticFile(`sfx/${fx}.mp3`)} volume={db(-10)} /> : null;
+              })()}
             </Series.Sequence>
           );
         })}

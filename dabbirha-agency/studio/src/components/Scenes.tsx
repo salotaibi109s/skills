@@ -7,6 +7,7 @@ import {Badge, toArabicDigits} from './Badge';
 import {Icon} from './Icon';
 import {Logo} from './Logo';
 import {SceneShell} from './SceneShell';
+import {Chips} from './Chips';
 
 export type SceneData = {
   type: 'hook' | 'step' | 'tip' | 'result' | 'outro';
@@ -15,6 +16,9 @@ export type SceneData = {
   icon?: string;
   audio?: string; // تعليق صوتي يبدأ مع المشهد — مسار داخل public/
   chapter?: string; // اسم الفصل في شريط يوتيوب (اختياري)
+  say?: string; // جملة ناصر للمشهد (يولّدها npm run voice)
+  sfx?: string; // مؤثر صوتي عند بداية المشهد، أو none
+  chips?: {text: string; struck?: boolean}[]; // قائمة شرائح بدل الأيقونة (مثل قائمة اللغات)
 };
 
 type SceneProps = {scene: SceneData; durationInFrames: number; stepNumber?: number};
@@ -39,7 +43,8 @@ export const HookScene: React.FC<SceneProps> = ({scene, durationInFrames}) => {
   const ringOpacity = interpolate(frame % 45, [0, 45], [0.5, 0]);
   return (
     <SceneShell durationInFrames={durationInFrames} gap={90}>
-      {scene.icon && (
+      {scene.chips && <Chips chips={scene.chips} />}
+      {!scene.chips && scene.icon && (
         <div style={{position: 'relative', transform: `scale(${pop})`}}>
           <div
             style={{
@@ -54,7 +59,7 @@ export const HookScene: React.FC<SceneProps> = ({scene, durationInFrames}) => {
           <Icon name={scene.icon} size={240} />
         </div>
       )}
-      <AnimatedText lines={scene.lines} maxFontSize={118} delay={4} stagger={4} />
+      <AnimatedText lines={scene.lines} maxFontSize={118} delay={scene.chips ? 26 : 4} stagger={4} />
     </SceneShell>
   );
 };

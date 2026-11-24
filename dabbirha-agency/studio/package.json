@@ -7,7 +7,8 @@
     "studio": "remotion studio src/index.ts",
     "check": "node scripts/check-episode.mjs",
     "render": "node scripts/render-episode.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "voice": "node scripts/voice-episode.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.540",
