@@ -1,42 +1,22 @@
 {
   "id": "2026-11-24-silica-gel-uses",
-  "dryRun": true,
-  "note": "تشغيل تجريبي: لم يُرفع الفيديو ولم يُجدول شي في Metricool. المواعيد أدناه مقترحة فقط.",
-  "media_url": null,
-  "planned": [
-    {
-      "network": "tiktok",
-      "scheduled_at": "2026-11-26T10:00:00+03:00",
-      "why": "أعلى خانة في الأسبوع (قيمة 1471 — الخميس 10 الصبح)",
-      "tiktokData": {
-        "isAigc": true,
-        "privacyOption": "PUBLIC_TO_EVERYONE"
-      }
-    },
+  "dryRun": false,
+  "note": "أول منشور حقيقي (تجربة). وضع الموافقة: autoPublish=false — المالك ينشر من تطبيق Metricool وقت الإشعار. الفيديو مستضاف في GitHub (المستودع عام) بدل Drive.",
+  "media_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-24-silica-gel-uses/video-vertical.mp4",
+  "posts": [
     {
       "network": "youtube",
       "scheduled_at": "2026-11-25T16:00:00+03:00",
-      "why": "أعلى خانة في الأسبوع (قيمة 12033 — الأربعاء 4 العصر)",
-      "youtubeData": {
-        "title": "أكياس السيليكا: ٤ استخدامات في البيت لا ترميها",
-        "type": "short",
-        "privacy": "public",
-        "tags": [
-          "أكياس السيليكا",
-          "حيل منزلية",
-          "ترتيب البيت",
-          "الرطوبة",
-          "دبرها",
-          "silica gel uses",
-          "home hacks"
-        ],
-        "madeForKids": false,
-        "isAiGeneratedContent": true,
-        "category": "HOWTO_STYLE"
-      }
+      "postId": "439928242",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8268890&openWithPostUuid=-7141760216884034930"
+    },
+    {
+      "network": "tiktok",
+      "scheduled_at": "2026-11-26T10:00:00+03:00",
+      "postId": "439929375",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8268890&openWithPostUuid=6439599208214974414"
     }
   ],
-  "posts": [],
   "skipped": [],
   "checks": {
     "brief_status": "ready",
@@ -50,5 +30,8 @@
     "caption_chars": 124,
     "voiceover": "sara (vidIQ) — autoAddMusic غير مفعّل لأن الفيديو فيه كلام"
   },
-  "status": "needs-review"
+  "status": "ready",
+  "errors": [
+    "tiktok: 'TikTok title is required' — أُضيف tiktokData.title وأعيدت المحاولة ونجحت"
+  ]
 }

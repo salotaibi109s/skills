@@ -14,7 +14,10 @@ description: مسؤول نشر دبّرها. استخدمه لرفع فيديو 
 اكتب `publish.json` بـ `"dryRun": true` والمواعيد في `planned` بدل `posts`، و`status: needs-review`.
 
 ## الخطوات
-1. **ارفع الفيديو لرابط عام** (Metricool يقبل روابط فقط). روابط Google Drive مقبولة **بشرط إن Google Drive مربوط داخل حساب Metricool**
+1. **ارفع الفيديو لرابط عام** (Metricool يقبل روابط فقط، وينسخ الملف لتخزينه بنفسه).
+   **من الجوال/السحابة (بدون rclone):** المستودع عام، فاعمل `git add -f episodes/<id>/video-vertical.mp4` واعمل commit وpush، والرابط:
+   `https://raw.githubusercontent.com/salotaibi109s/skills/<branch>/dabbirha-agency/episodes/<id>/video-vertical.mp4` (تأكد إنه يرجع 200 قبل الجدولة).
+   **من جهاز فيه rclone:** روابط Google Drive مقبولة **بشرط إن Google Drive مربوط داخل حساب Metricool**
    (Metricool يسحب الملف بنفسه). إذا رجع خطأ في الرابط، وقف وبلّغ المدير — لا تجرّب خدمات رفع ثانية بنفسك:
    ```bash
    rclone copy episodes/<id>/video-vertical.mp4 gdrive:dabbirha/renders/<id>/
@@ -28,7 +31,7 @@ description: مسؤول نشر دبّرها. استخدمه لرفع فيديو 
    - `autoPublish` حسب "وضع النشر" في CLAUDE.md. `false` = ما ينشر تلقائياً: يوصل المالك إشعار في تطبيق Metricool بوقت النشر وينشره بنفسه (هذي هي الموافقة).
    - `text` = الكابشن من brief.md.
    - `media` = [رابط الفيديو]، و`videoThumbnailUrl` = رابط الغلاف (فقط إذا الحساب Business؛ إذا رجع خطأ VIDEO_THUMBNAIL_NOT_APPLICABLE احذفه وأعد المحاولة).
-   - تيك توك: `tiktokData: {"isAigc": true, "privacyOption": "PUBLIC_TO_EVERYONE"}` — وإذا الفيديو **صامت** (`design.md` فيه voiceover skipped أو الإعداد إيقاف) أضف `"autoAddMusic": true`.
+   - تيك توك: `tiktokData: {"title": <title_ar من brief>, "isAigc": true, "privacyOption": "PUBLIC_TO_EVERYONE"}` — **`title` إلزامي** وإلا Metricool يرفض — وإذا الفيديو **صامت** (`design.md` فيه voiceover skipped أو الإعداد إيقاف) أضف `"autoAddMusic": true`.
    - يوتيوب: `youtubeData: {"title": ..., "type": "short", "privacy": "public", "tags": [...], "madeForKids": false, "isAiGeneratedContent": true, "category": "HOWTO_STYLE"}`
 4. إذا رجع خطأ من Metricool، لا تعدّل النص وتعيد بشكل عشوائي — سجّل الخطأ كما هو.
 
