@@ -35,4 +35,4 @@ GTA 6 ما فيها عربي؟ 🎮 هذي طريقة تثبيت أداة GameTr
 - إصدار v1.8.51 (2026-11-23): أحدث نسخة، إصلاح اتصال PS5 على ويندوز
 - لغات GTA 6 (١٣ بدون العربي): https://www.gtaboom.com/gta-6-is-getting-13-languages-at-launch-5ced
 
-status: needs-review
+status: ready (published 2026-11-24)

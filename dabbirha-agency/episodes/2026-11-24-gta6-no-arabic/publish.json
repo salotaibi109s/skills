@@ -1,0 +1,30 @@
+{
+  "id": "2026-11-24-gta6-no-arabic",
+  "dryRun": false,
+  "production": "reel/ composition GtaInstall (82s, Nasser, neon style)",
+  "media_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-24-gta6-no-arabic/video-vertical.mp4",
+  "thumbnail_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-24-gta6-no-arabic/thumbnail.jpg",
+  "posts": [
+    {
+      "network": "tiktok",
+      "published_at": "2026-11-24T13:49:00+03:00",
+      "postId": "440081093",
+      "published": true,
+      "publicUrl": "https://www.tiktok.com/@dabbirha2/video/7711688353304808724",
+      "title": "تعريب GTA 6 مجاناً 🎮",
+      "caption": "قراند 6 صارت بالعربي 🔥 طريقة تعريب GTA 6 مجاناً، خطوة بخطوة 👇 … #قراند6 #GTA6 #تعريب_قراند #بلايستيشن5 #دبرها"
+    },
+    {
+      "network": "youtube",
+      "published_at": "2026-11-24T13:50:00+03:00",
+      "postId": "440081402",
+      "published": true,
+      "publicUrl": "https://www.youtube.com/shorts/zs7HXUjTs80",
+      "title": "GTA 6 بالعربي! طريقة تعريب قراند 6 مجاناً خطوة بخطوة 🎮",
+      "category": "GAMING"
+    }
+  ],
+  "aiLabel": false,
+  "notes": "Thumbnail sent on both; TikTok applies it only for Business accounts, YouTube only if Shorts thumbnails are enabled for the channel.",
+  "status": "ready"
+}
