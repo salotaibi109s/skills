@@ -1,0 +1,298 @@
+{
+  "audioDir": "joanna8",
+  "totalFrames": 2100,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "U01-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.25,
+        "use_speaker_boost": true,
+        "speed": 0.85
+      },
+      "nominalSeconds": 5.6,
+      "leadSeconds": 2.2,
+      "tts": "صوتي ما رجع… مين بيقدّم العرض؟"
+    },
+    {
+      "id": "U02-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.4,
+      "tts": "أنا أقدّم! وأنتي قودينا بالإشارات!"
+    },
+    {
+      "id": "U03-L",
+      "speaker": "L",
+      "voiceId": "FZeLZd39ejvLgzR2gY0t",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.3,
+      "tts": "وأنا أرسم لك اللوحات!"
+    },
+    {
+      "id": "U04-T",
+      "speaker": "T",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.2,
+      "leadSeconds": 1.0,
+      "tts": "والفريق اللي بعده… فريق جوانا!"
+    },
+    {
+      "id": "U05-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 6.4,
+      "leadSeconds": 1.4,
+      "tts": "كان فيه فريق صغير… كل واحد عنده موهبة… وما يعرفون كيف يجتمعون."
+    },
+    {
+      "id": "U06-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 9.0,
+      "leadSeconds": 3.6,
+      "tts": "لين جات قائدة… علّمتهم إن الموهبة الحلوة… تصير أحلى مع الفريق!"
+    },
+    {
+      "id": "U07-M",
+      "speaker": "M",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.4,
+      "leadSeconds": 1.0,
+      "tts": "يا جماعة! القطعة بتطيح!"
+    },
+    {
+      "id": "U08-T",
+      "speaker": "T",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 8.0,
+      "leadSeconds": 3.0,
+      "tts": "الجائزة الأولى… لفريق الصف الخامس. وجائزة روح الفريق… لفريق جوانا!"
+    },
+    {
+      "id": "U09-K",
+      "speaker": "K",
+      "voiceId": "aLv8a8fbjjLsORNUDQ1J",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.3,
+      "tts": "روح الفريق؟ هذي أحلى جائزة!"
+    },
+    {
+      "id": "U10-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.9
+      },
+      "nominalSeconds": 4.0,
+      "leadSeconds": 0.8,
+      "tts": "يعني الفوز الحقيقي… إننا صرنا فريق!"
+    },
+    {
+      "id": "U11-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.4,
+        "use_speaker_boost": true,
+        "speed": 0.9
+      },
+      "nominalSeconds": 7.0,
+      "leadSeconds": 1.0,
+      "tts": "بس الجائزة الأولى… الموسم الجاي!"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "pop",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "boing",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "steps",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "tada",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "swoosh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "gasp",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "laugh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "giggle",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "scratch",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "tiptoe",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "yay",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "hug",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "idea",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "crash",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "applause",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "crowd",
+      "seconds": 4,
+      "prompt": "School auditorium before a show, excited kids and parents chattering softly, warm ambience"
+    },
+    {
+      "id": "drumroll",
+      "seconds": 3,
+      "prompt": "Snare drum roll building suspense before an award announcement, ending with a cymbal hit"
+    },
+    {
+      "id": "cheer",
+      "seconds": 3,
+      "prompt": "Kids cheering and celebrating a win, happy shouts and clapping, cartoon"
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "reused series theme",
+      "lengthMs": 75000
+    }
+  ]
+}

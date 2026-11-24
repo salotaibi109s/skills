@@ -1,0 +1,303 @@
+{
+  "audioDir": "joanna6",
+  "totalFrames": 1950,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "R01-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 4.0,
+      "leadSeconds": 0.3,
+      "tts": "الميكروفون ما يختفي لحاله… فيه أحد أخذه!"
+    },
+    {
+      "id": "R02-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.6,
+      "tts": "مازن! أنت آخر واحد كان عند المسرح!"
+    },
+    {
+      "id": "R03-M",
+      "speaker": "M",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.6,
+      "leadSeconds": 0.3,
+      "tts": "والله ما أخذته! أنا أصلاً صوتي أعلى من الميكروفون… لااااا لااااا!"
+    },
+    {
+      "id": "R04-K",
+      "speaker": "K",
+      "voiceId": "aLv8a8fbjjLsORNUDQ1J",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 4.0,
+      "leadSeconds": 1.6,
+      "tts": "شوفوا! نجوم لامعة على الأرض!"
+    },
+    {
+      "id": "R05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 6.0,
+      "leadSeconds": 0.4,
+      "tts": "أثر! نمشي وراه… بهدوء."
+    },
+    {
+      "id": "R06-L",
+      "speaker": "L",
+      "voiceId": "FZeLZd39ejvLgzR2gY0t",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.4,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "nominalSeconds": 4.2,
+      "leadSeconds": 3.6,
+      "tts": "أنا… أنا اللي أخذته."
+    },
+    {
+      "id": "R07-L",
+      "speaker": "L",
+      "voiceId": "FZeLZd39ejvLgzR2gY0t",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 0.4,
+      "tts": "كنت أبي ألوّنه ذهبي… عشان يلمع مثل نجوم المسرح!"
+    },
+    {
+      "id": "R08-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.2,
+      "leadSeconds": 0.4,
+      "tts": "حلو مرّة يا ليان! بس… يشتغل؟"
+    },
+    {
+      "id": "R09-M",
+      "speaker": "M",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.0,
+      "leadSeconds": 0.8,
+      "tts": "واحد، اثنين… تجربة!"
+    },
+    {
+      "id": "R10-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 4.8,
+      "leadSeconds": 1.4,
+      "tts": "المرة الجاية… قبل ما نسوي أي شي، نقول للفريق!"
+    },
+    {
+      "id": "R11-T",
+      "speaker": "T",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 0.8,
+      "tts": "يا فريق! البروفة بكرة الصبح… وش فكرة عرضكم؟"
+    },
+    {
+      "id": "R12-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 9.0,
+      "leadSeconds": 0.6,
+      "tts": "فكرة العرض؟! نسينا أهم شي!"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "pop",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "boing",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "steps",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "tada",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "swoosh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "mystery",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "gasp",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "suspense",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "laugh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "giggle",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "scratch",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "tiptoe",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "yay",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "hug",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "tick",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "feedback",
+      "seconds": 1.5,
+      "prompt": "Short comedic microphone feedback squeal then a tap tap on a mic, cartoon, not too loud"
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "reused series theme",
+      "lengthMs": 70000
+    }
+  ]
+}

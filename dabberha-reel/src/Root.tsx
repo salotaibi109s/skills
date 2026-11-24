@@ -70,6 +70,10 @@ import { Joanna } from "./joanna/Joanna";
 import { JoannaEp2 } from "./joanna/Ep2";
 import { JoannaEp3 } from "./joanna/Ep3";
 import { JoannaEp4 } from "./joanna/Ep4";
+import { JoannaEp5 } from "./joanna/Ep5";
+import { JoannaEp6 } from "./joanna/Ep6";
+import { JoannaEp7 } from "./joanna/Ep7";
+import { JoannaEp8 } from "./joanna/Ep8";
 import { yTimeline as y2Timeline } from "./yt2/base";
 import { yTimeline } from "./yt/base";
 import { pTimeline } from "./prompts/base";
@@ -326,6 +330,10 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="JoannaEp2" component={JoannaEp2} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="JoannaEp3" component={JoannaEp3} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="JoannaEp4" component={JoannaEp4} durationInFrames={2160} fps={30} width={1080} height={1920} />
+      <Composition id="JoannaEp5" component={JoannaEp5} durationInFrames={2250} fps={30} width={1080} height={1920} />
+      <Composition id="JoannaEp6" component={JoannaEp6} durationInFrames={1950} fps={30} width={1080} height={1920} />
+      <Composition id="JoannaEp7" component={JoannaEp7} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Composition id="JoannaEp8" component={JoannaEp8} durationInFrames={2100} fps={30} width={1080} height={1920} />
     </>
   );
 };

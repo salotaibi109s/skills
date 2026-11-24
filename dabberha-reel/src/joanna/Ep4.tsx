@@ -10,7 +10,7 @@ import { db } from "../theme";
 import { Backpack, Kid, Teacher, type KidProps } from "./chars";
 import { blinkAt, Cam, Classmates, Classroom, Desk, ease, Flash, FONT, SchoolYard, Shot, Svg } from "./Joanna";
 
-const HAND = loadRuqaa("normal", { weights: ["400", "700"], subsets: ["arabic"] }).fontFamily;
+export const HAND = loadRuqaa("normal", { weights: ["400", "700"], subsets: ["arabic"] }).fontFamily;
 const T = data as TimelineData;
 const MOUTH = mouthData as Record<string, number[]>;
 const { Sfx } = createSound(T, "audio/joanna4", {
@@ -158,7 +158,7 @@ const OpenBook: React.FC<{ x: number; y: number; s: number; note?: number }> = (
   </g>
 );
 
-const Envelope: React.FC<{ x: number; y: number; s: number; open?: number }> = ({ x, y, s, open = 0 }) => (
+export const Envelope: React.FC<{ x: number; y: number; s: number; open?: number }> = ({ x, y, s, open = 0 }) => (
   <g transform={`translate(${x} ${y}) scale(${s})`}>
     <rect x={-120} y={-80} width={240} height={160} rx={12} fill="#FF86B8" stroke="#D9508A" strokeWidth={6} />
     <path d={`M-120 -80 L0 ${10 - open * 160} L120 -80`} fill="#FF6FA8" stroke="#D9508A" strokeWidth={6} strokeLinejoin="round" />
@@ -168,7 +168,7 @@ const Envelope: React.FC<{ x: number; y: number; s: number; open?: number }> = (
 );
 
 /** A note shown full screen (inserted in the edit), revealed line by line. */
-const NoteInsert: React.FC<{ l: number; lines: string[]; paper?: string; ink?: string; deco?: React.ReactNode; size?: number }> = ({ l, lines, paper = "#FFFBF0", ink = "#3A2414", deco, size = 76 }) => {
+export const NoteInsert: React.FC<{ l: number; lines: string[]; paper?: string; ink?: string; deco?: React.ReactNode; size?: number }> = ({ l, lines, paper = "#FFFBF0", ink = "#3A2414", deco, size = 76 }) => {
   const k = spring({ frame: l, fps: 30, config: { stiffness: 120, damping: 15 } });
   return (
     <AbsoluteFill style={{ background: "radial-gradient(80% 60% at 50% 50%, #3B2A22 0%, #120C0A 100%)" }}>

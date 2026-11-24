@@ -213,7 +213,7 @@ export type KidProps = {
   x: number;
   y: number;
   s: number;
-  who?: "joanna" | "friend" | "extra";
+  who?: "joanna" | "friend" | "extra" | "layan" | "boy";
   hair?: string;
   expr?: Expr;
   talk?: number;
@@ -229,11 +229,14 @@ export type KidProps = {
   flip?: boolean;
   armsFront?: boolean;
   glasses?: false | "round" | "pink";
+  phones?: boolean;
+  skinTone?: "J" | "F" | "T";
 };
 
 /** A school girl (Joanna, her friend, or a background classmate). */
-export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = "smile", talk = 0, blink = 0, look, tilt = 0, armL = {}, armR = {}, walk, seated, bag, sweat = 0, flip, armsFront, glasses }) => {
-  const skin = who === "friend" ? "url(#skinF)" : who === "joanna" ? "url(#skinJ)" : "url(#skinJ)";
+export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = "smile", talk = 0, blink = 0, look, tilt = 0, armL = {}, armR = {}, walk, seated, bag, sweat = 0, flip, armsFront, glasses, phones, skinTone }) => {
+  const skin = skinTone ? `url(#skin${skinTone})` : who === "friend" ? "url(#skinF)" : who === "layan" ? "url(#skinT)" : "url(#skinJ)";
+  const boy = who === "boy";
   const hairFill = hair ?? (who === "friend" ? "url(#hairF)" : "url(#hairJ)");
   const bob = walk !== undefined ? -Math.abs(Math.sin(walk)) * 18 : 0;
   const legL = walk !== undefined ? Math.max(0, Math.sin(walk)) * 40 : 0;
@@ -256,7 +259,13 @@ export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = 
   return (
     <g transform={`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`}>
       <ellipse cx={0} cy={0} rx={190} ry={30} fill="url(#aoShadow)" />
-      {!seated && (
+      {!seated && boy && (
+        <g>
+          <ellipse cx={-58} cy={-10 - legL} rx={56} ry={26} fill="#3A2A20" />
+          <ellipse cx={58} cy={-10 - legR} rx={56} ry={26} fill="#3A2A20" />
+        </g>
+      )}
+      {!seated && !boy && (
         <g>
           <rect x={-88} y={-262 - legL} width={64} height={250} rx={30} fill="#F4F4F6" />
           <rect x={24} y={-262 - legR} width={64} height={250} rx={30} fill="#E9E9EE" />
@@ -275,7 +284,9 @@ export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = 
             <circle cx={-180} cy={head[1] + 300} r={26} fill="#F5C542" />
             <circle cx={180} cy={head[1] + 300} r={26} fill="#F5C542" />
           </>
-        ) : (
+        ) : who === "layan" ? (
+          <path d={`M${-hr * 1.12} ${head[1] - 20} Q${-hr * 1.2} ${head[1] + hr * 0.95} ${-hr * 0.75} ${head[1] + hr * 0.92} L${hr * 0.75} ${head[1] + hr * 0.92} Q${hr * 1.2} ${head[1] + hr * 0.95} ${hr * 1.12} ${head[1] - 20}Z`} fill={hairFill} />
+        ) : boy ? null : (
           <ellipse cx={0} cy={head[1] + 40} rx={hr * 1.08} ry={hr * 1.05} fill={hairFill} />
         )}
       </g>
@@ -285,9 +296,20 @@ export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = 
           <rect x={-150} y={-600 + bob} width={300} height={330} rx={60} fill="url(#bagPink)" />
         </g>
       )}
-      <path d={`M${-112} ${-575 + bob} Q0 ${-600 + bob} ${112} ${-575 + bob} L${150} ${-232 + bob} Q0 ${-210 + bob} ${-150} ${-232 + bob}Z`} fill="url(#pinafore)" />
-      <path d={`M${-40} ${-588 + bob} L0 ${-530 + bob} L40 ${-588 + bob}`} fill="#fff" stroke="#DADDE4" strokeWidth={4} />
-      <rect x={-112} y={-420 + bob} width={224} height={26} fill="#3F6C9E" opacity={0.7} />
+      {boy ? (
+        <>
+          <path d={`M${-116} ${-575 + bob} Q0 ${-600 + bob} ${116} ${-575 + bob} L${150} ${seated ? -232 : -34} Q0 ${seated ? -210 : -20} ${-150} ${seated ? -232 : -34}Z`} fill="url(#shirt)" />
+          <path d={`M0 ${-560 + bob} L0 ${-430 + bob}`} stroke="#C9CED8" strokeWidth={6} />
+          {[0, 1, 2].map((i) => <circle key={i} cx={10} cy={-540 + i * 40 + bob} r={7} fill="#C9CED8" />)}
+          <path d={`M${-52} ${-592 + bob} Q0 ${-560 + bob} ${52} ${-592 + bob}`} stroke="#DADDE4" strokeWidth={10} fill="none" />
+        </>
+      ) : (
+        <>
+          <path d={`M${-112} ${-575 + bob} Q0 ${-600 + bob} ${112} ${-575 + bob} L${150} ${-232 + bob} Q0 ${-210 + bob} ${-150} ${-232 + bob}Z`} fill="url(#pinafore)" />
+          <path d={`M${-40} ${-588 + bob} L0 ${-530 + bob} L40 ${-588 + bob}`} fill="#fff" stroke="#DADDE4" strokeWidth={4} />
+          <rect x={-112} y={-420 + bob} width={224} height={26} fill="#3F6C9E" opacity={0.7} />
+        </>
+      )}
       {bag && (
         <>
           <path d={`M${-96} ${-570 + bob} L${-120} ${-330 + bob}`} stroke="#E0558F" strokeWidth={22} strokeLinecap="round" />
@@ -295,6 +317,9 @@ export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = 
         </>
       )}
       <rect x={-34} y={-612 + bob} width={68} height={50} rx={20} fill={skin} />
+      {phones && <path d={`M${-90} ${-600 + bob} Q0 ${-520 + bob} ${90} ${-600 + bob}`} stroke="#2F3A66" strokeWidth={22} fill="none" strokeLinecap="round" />}
+      {phones && <circle cx={-96} cy={-596 + bob} r={34} fill="#3F6FD1" stroke="#2F3A66" strokeWidth={8} />}
+      {phones && <circle cx={96} cy={-596 + bob} r={34} fill="#3F6FD1" stroke="#2F3A66" strokeWidth={8} />}
       {!armsFront && armDraw(aL, "l")}
       {!armsFront && armDraw(aR, "r")}
       {/* head */}
@@ -307,7 +332,12 @@ export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = 
           <Face r={hr} expr={expr} talk={talk} blink={blink} look={look} glasses={glasses ?? (who === "friend" ? "round" : false)} />
         </g>
         {/* fringe */}
-        <path d={`M${-hr * 1.02} ${head[1] + 10} Q${-hr * 1.05} ${head[1] - hr * 1.12} 0 ${head[1] - hr * 1.08} Q${hr * 1.05} ${head[1] - hr * 1.12} ${hr * 1.02} ${head[1] + 10} Q${hr * 0.85} ${head[1] - hr * 0.55} ${hr * 0.3} ${head[1] - hr * 0.62} Q${hr * 0.05} ${head[1] - hr * 0.35} ${-hr * 0.2} ${head[1] - hr * 0.6} Q${-hr * 0.7} ${head[1] - hr * 0.55} ${-hr * 1.02} ${head[1] + 10}Z`} fill={hairFill} />
+        {boy ? (
+          <path d={`M${-hr * 0.98} ${head[1] - hr * 0.2} Q${-hr * 1.02} ${head[1] - hr * 1.12} 0 ${head[1] - hr * 1.1} Q${hr * 1.02} ${head[1] - hr * 1.12} ${hr * 0.98} ${head[1] - hr * 0.2} Q${hr * 0.8} ${head[1] - hr * 0.62} ${hr * 0.35} ${head[1] - hr * 0.7} L${hr * 0.15} ${head[1] - hr * 0.55} L${-hr * 0.05} ${head[1] - hr * 0.72} L${-hr * 0.3} ${head[1] - hr * 0.58} Q${-hr * 0.8} ${head[1] - hr * 0.62} ${-hr * 0.98} ${head[1] - hr * 0.2}Z`} fill={hairFill} />
+        ) : (
+          <path d={`M${-hr * 1.02} ${head[1] + 10} Q${-hr * 1.05} ${head[1] - hr * 1.12} 0 ${head[1] - hr * 1.08} Q${hr * 1.05} ${head[1] - hr * 1.12} ${hr * 1.02} ${head[1] + 10} Q${hr * 0.85} ${head[1] - hr * 0.55} ${hr * 0.3} ${head[1] - hr * 0.62} Q${hr * 0.05} ${head[1] - hr * 0.35} ${-hr * 0.2} ${head[1] - hr * 0.6} Q${-hr * 0.7} ${head[1] - hr * 0.55} ${-hr * 1.02} ${head[1] + 10}Z`} fill={hairFill} />
+        )}
+        {who === "layan" && <path d={`M${-hr * 0.95} ${head[1] - hr * 0.35} Q0 ${head[1] - hr * 1.25} ${hr * 0.95} ${head[1] - hr * 0.35}`} stroke="#8E5BD6" strokeWidth={30} fill="none" strokeLinecap="round" />}
         <path d={`M${-hr * 0.55} ${head[1] - hr * 0.88} Q${-hr * 0.1} ${head[1] - hr * 1.02} ${hr * 0.35} ${head[1] - hr * 0.9}`} stroke="#fff" strokeOpacity={0.25} strokeWidth={14} fill="none" strokeLinecap="round" />
         {pony && <ellipse cx={hr * 0.72} cy={head[1] - hr * 0.62} rx={34} ry={26} fill="#FF6FA8" transform={`rotate(30 ${hr * 0.72} ${head[1] - hr * 0.62})`} />}
         {sweat > 0 && (

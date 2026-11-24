@@ -1,0 +1,398 @@
+{
+  "audioDir": "joanna5",
+  "totalFrames": 2250,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "Q01-T",
+      "speaker": "T",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 1.0,
+      "tts": "يا بنات، عندنا مسابقة مواهب مهمة… وجوانا بتكون قائدة الفريق!"
+    },
+    {
+      "id": "Q02-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.8,
+      "leadSeconds": 0.5,
+      "tts": "وعد يا أبلة، فريقنا بيكون الأفضل!"
+    },
+    {
+      "id": "Q03-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.2,
+      "leadSeconds": 0.3,
+      "tts": "طيب يا قائدة، وش أول مهمّة؟"
+    },
+    {
+      "id": "Q04-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.4,
+      "tts": "أول شي… اجتماع طارئ!"
+    },
+    {
+      "id": "Q05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.0,
+      "leadSeconds": 1.6,
+      "tts": "كل واحد فيكم عنده موهبة، ولازم نجمع مواهبنا في عرض واحد!"
+    },
+    {
+      "id": "Q06-L",
+      "speaker": "L",
+      "voiceId": "FZeLZd39ejvLgzR2gY0t",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 1.8,
+      "leadSeconds": 0.3,
+      "tts": "أنا أرسم الديكور."
+    },
+    {
+      "id": "Q07-M",
+      "speaker": "M",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.0,
+      "leadSeconds": 0.2,
+      "tts": "وأنا عليّ الموسيقى!"
+    },
+    {
+      "id": "Q08-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.8,
+      "tts": "لحظة… مين المفروض يجلس هنا؟"
+    },
+    {
+      "id": "Q09-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.3,
+      "tts": "هذا كرسي خالد… بس ما جا اليوم!"
+    },
+    {
+      "id": "Q10-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 7.2,
+      "leadSeconds": 5.0,
+      "tts": "جوانا… تتوقّعين صار له شي؟"
+    },
+    {
+      "id": "Q11-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.4,
+      "leadSeconds": 0.3,
+      "tts": "لازم نعرف الحقيقة قبل يوم المسابقة!"
+    },
+    {
+      "id": "Q12-K",
+      "speaker": "K",
+      "voiceId": "aLv8a8fbjjLsORNUDQ1J",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 6.4,
+      "leadSeconds": 4.6,
+      "tts": "أحد هنا؟"
+    },
+    {
+      "id": "Q13-M",
+      "speaker": "M",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.3,
+      "tts": "أنا آسف… أنا ما سمعت شي!"
+    },
+    {
+      "id": "Q14-K",
+      "speaker": "K",
+      "voiceId": "aLv8a8fbjjLsORNUDQ1J",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 4.4,
+      "leadSeconds": 1.8,
+      "tts": "كنت أجهّز لكم مفاجأة للعرض!"
+    },
+    {
+      "id": "Q15-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.3,
+      "tts": "يا خالد! خوّفتنا! حسبناك اختفيت!"
+    },
+    {
+      "id": "Q16-K",
+      "speaker": "K",
+      "voiceId": "aLv8a8fbjjLsORNUDQ1J",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.0,
+      "leadSeconds": 0.8,
+      "tts": "المشكلة مو هنا… الميكروفون الرئيسي اختفى!"
+    },
+    {
+      "id": "Q17-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 9.0,
+      "leadSeconds": 0.6,
+      "tts": "إيش؟! بدون ميكروفون… كيف بنقدّم العرض؟"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "pop",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "boing",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "steps",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "tada",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "bell",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "swoosh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "paper",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "mystery",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "gasp",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "creepy",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "envelope",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "suspense",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "laugh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "giggle",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "scratch",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "tiptoe",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "yay",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "hug",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "drawer",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "tick",
+      "seconds": 1,
+      "prompt": "reused"
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "reused series theme",
+      "lengthMs": 75000
+    }
+  ]
+}

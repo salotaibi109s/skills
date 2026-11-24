@@ -1,0 +1,293 @@
+{
+  "audioDir": "joanna7",
+  "totalFrames": 1800,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "S01-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 7.6,
+      "leadSeconds": 4.0,
+      "tts": "وقّفوا! وقّفوا! هذي مو بروفة… هذي كارثة!"
+    },
+    {
+      "id": "S02-M",
+      "speaker": "M",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.4,
+      "tts": "العرض لازم يكون موسيقى!"
+    },
+    {
+      "id": "S03-L",
+      "speaker": "L",
+      "voiceId": "FZeLZd39ejvLgzR2gY0t",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 1.8,
+      "leadSeconds": 0.2,
+      "tts": "لا… لازم رسم!"
+    },
+    {
+      "id": "S04-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 1.8,
+      "leadSeconds": 0.2,
+      "tts": "التمثيل أحلى!"
+    },
+    {
+      "id": "S05-K",
+      "speaker": "K",
+      "voiceId": "aLv8a8fbjjLsORNUDQ1J",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.8,
+      "leadSeconds": 0.2,
+      "tts": "والديكور؟ محد فكّر في الديكور!"
+    },
+    {
+      "id": "S06-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 0.8,
+      "tts": "كل واحد يبي شي… وأنا ما أدري وش أسوي."
+    },
+    {
+      "id": "S07-T",
+      "speaker": "T",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.35,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 5.6,
+      "leadSeconds": 1.2,
+      "tts": "القائدة الشاطرة ما تختار موهبة وحدة… تجمعهم كلهم."
+    },
+    {
+      "id": "S08-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.0,
+      "leadSeconds": 1.8,
+      "tts": "لقيتها! نسوي قصة… وكل واحد يحكيها بموهبته!"
+    },
+    {
+      "id": "S09-F",
+      "speaker": "F",
+      "voiceId": "9xjgPVEwVEUuUxRAxKc9",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.3,
+      "tts": "يعني أنا أمثّل، ومازن يعزف، وليان ترسم…"
+    },
+    {
+      "id": "S10-K",
+      "speaker": "K",
+      "voiceId": "aLv8a8fbjjLsORNUDQ1J",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 6.0,
+      "leadSeconds": 0.2,
+      "tts": "وأنا أبني المسرح!"
+    },
+    {
+      "id": "S11-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "use_speaker_boost": true,
+        "speed": 0.85
+      },
+      "nominalSeconds": 8.0,
+      "leadSeconds": 3.4,
+      "tts": "يا جماعة… صوتي… راح!"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "whoosh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "pop",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "boing",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "steps",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "sparkle",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "tada",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "swoosh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "gasp",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "suspense",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "laugh",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "giggle",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "scratch",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "tiptoe",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "yay",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "hug",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "feedback",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "idea",
+      "seconds": 1,
+      "prompt": "reused"
+    },
+    {
+      "id": "crash",
+      "seconds": 1.5,
+      "prompt": "Cartoon chaos: a loud drum bang, a wooden stage backdrop falling over with a clatter, comedic"
+    },
+    {
+      "id": "applause",
+      "seconds": 3,
+      "prompt": "Warm applause and cheering from a small school audience, kids clapping happily"
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "reused series theme",
+      "lengthMs": 70000
+    }
+  ]
+}
