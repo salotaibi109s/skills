@@ -733,3 +733,20 @@ export const GtaInstall: React.FC = () => (
     )}
   </AbsoluteFill>
 );
+
+/** Thumbnail / cover (1080×1920): readable at small size, key text in the centre safe area. */
+export const GtaInstallThumb: React.FC = () => (
+  <AbsoluteFill style={{ background: C.night }}>
+    <World dim={0.15} />
+    <Tv arabic={1} subBig={0.3} style={{ left: 100, top: 360 }} />
+    <div dir="rtl" style={{ position: "absolute", left: 40, right: 40, top: 960, textAlign: "center" }}>
+      <div dir="ltr" style={{ fontFamily: LAT, fontSize: 190, color: C.yellow, textShadow: neon(C.orange, 1.4), lineHeight: 1 }}>GTA 6</div>
+      <div style={{ fontFamily: DISPLAY, fontSize: 150, color: "#fff", textShadow: neon(C.pink, 1.5), lineHeight: 1.15, marginTop: 10 }}>صارت بالعربي!</div>
+      <div style={{ display: "inline-block", marginTop: 26, padding: "10px 40px 18px", borderRadius: 999, background: C.cyan, boxShadow: neon(C.cyan, 1), fontFamily: DISPLAY, fontSize: 64, color: "#12002a" }}>مجاناً · خطوة بخطوة</div>
+    </div>
+    <div style={{ position: "absolute", left: 60, top: 140, width: 150, height: 150, borderRadius: "50%", background: "#fff", display: "grid", placeItems: "center", boxShadow: neon(C.pink, 0.8) }}>
+      <Img src={staticFile("brand/logo-color.png")} style={{ width: 124 }} />
+    </div>
+    <Retro />
+  </AbsoluteFill>
+);

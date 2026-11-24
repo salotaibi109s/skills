@@ -1,4 +1,4 @@
-import { Composition, Folder } from "remotion";
+import { Composition, Folder, Still } from "remotion";
 import { DabberhaReel } from "./DabberhaReel";
 import { getScene } from "./lib/timeline";
 import { S1Hook } from "./scenes/S1Hook";
@@ -65,7 +65,7 @@ import { Forces, fTimeline } from "./forces/Forces";
 import { Yt2Film } from "./yt2/Yt2Film";
 import { GtaGuide, gTimeline } from "./gta/GtaGuide";
 import { GtaNoArabic, nTimeline } from "./gta2/GtaNoArabic";
-import { GtaInstall, iTimeline } from "./gta2/GtaInstall";
+import { GtaInstall, GtaInstallThumb, iTimeline } from "./gta2/GtaInstall";
 import { Shadwi } from "./shadwi/Shadwi";
 import { Kids } from "./kids/Kids";
 import { Joanna } from "./joanna/Joanna";
@@ -324,6 +324,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="GtaGuide" component={GtaGuide} durationInFrames={gTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Composition id="GtaNoArabic" component={GtaNoArabic} durationInFrames={nTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Composition id="GtaInstall" component={GtaInstall} durationInFrames={iTimeline.durationInFrames} fps={30} width={1080} height={1920} />
+      <Still id="GtaInstallThumb" component={GtaInstallThumb} width={1080} height={1920} />
       <Composition id="Shadwi" component={Shadwi} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Kids" component={Kids} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Joanna" component={Joanna} durationInFrames={1800} fps={30} width={1080} height={1920} />
