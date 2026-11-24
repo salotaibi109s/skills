@@ -36,7 +36,14 @@
       "mcp__claude_ai_vidIQ__vidiq_keyword_research",
       "mcp__claude_ai_vidIQ__vidiq_instagram_tiktok_outlier_search",
       "mcp__claude_ai_vidIQ__vidiq_tiktok_trending_sound_search",
-      "mcp__claude_ai_vidIQ__vidiq_trending_videos"
+      "mcp__claude_ai_vidIQ__vidiq_trending_videos",
+      "mcp__vidIQ__vidiq_voiceover_generate",
+      "mcp__vidIQ__vidiq_voiceover_list_voices",
+      "mcp__vidIQ__vidiq_job_poll",
+      "mcp__claude_ai_vidIQ__vidiq_voiceover_generate",
+      "mcp__claude_ai_vidIQ__vidiq_voiceover_list_voices",
+      "mcp__claude_ai_vidIQ__vidiq_job_poll",
+      "Bash(curl -sfS -o studio/public/voiceovers/* https://assets.vidiq.com/*)"
     ],
     "deny": [
       "Bash(rclone delete *)",

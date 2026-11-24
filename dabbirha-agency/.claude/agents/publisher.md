@@ -28,7 +28,7 @@ description: مسؤول نشر دبّرها. استخدمه لرفع فيديو 
    - `autoPublish` حسب "وضع النشر" في CLAUDE.md. `false` = ما ينشر تلقائياً: يوصل المالك إشعار في تطبيق Metricool بوقت النشر وينشره بنفسه (هذي هي الموافقة).
    - `text` = الكابشن من brief.md.
    - `media` = [رابط الفيديو]، و`videoThumbnailUrl` = رابط الغلاف (فقط إذا الحساب Business؛ إذا رجع خطأ VIDEO_THUMBNAIL_NOT_APPLICABLE احذفه وأعد المحاولة).
-   - تيك توك: `tiktokData: {"isAigc": true, "privacyOption": "PUBLIC_TO_EVERYONE"}`
+   - تيك توك: `tiktokData: {"isAigc": true, "privacyOption": "PUBLIC_TO_EVERYONE"}` — وإذا الفيديو **صامت** (`design.md` فيه voiceover skipped أو الإعداد إيقاف) أضف `"autoAddMusic": true`.
    - يوتيوب: `youtubeData: {"title": ..., "type": "short", "privacy": "public", "tags": [...], "madeForKids": false, "isAiGeneratedContent": true, "category": "HOWTO_STYLE"}`
 4. إذا رجع خطأ من Metricool، لا تعدّل النص وتعيد بشكل عشوائي — سجّل الخطأ كما هو.
 

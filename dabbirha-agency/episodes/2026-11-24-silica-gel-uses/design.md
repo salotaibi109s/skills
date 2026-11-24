@@ -1,6 +1,8 @@
 # تصميم — 2026-11-24-silica-gel-uses
 
-- المدة الفعلية: 29 ثانية (870 إطار، 30fps، 1080×1920)
+- المدة الفعلية: 29.5 ثانية (885 إطار، 30fps، 1080×1920)
+- التعليق الصوتي: سارة (vidIQ)، 7 جمل، 28 رصيد — `studio/public/voiceovers/2026-11-24-silica-gel-uses/`
+  الهوك صار 3.5 ث لأن جملته 3.24 ث.
 - ملف البيانات: `studio/src/episodes/2026-11-24-silica-gel-uses.json`
 - الأيقونات: packet, shoe, paper, wrench, bag, alert, bookmark
 - أيقونات جديدة أُضيفت للمكتبة: `shoe`, `paper`, `wrench`, `bag`, `packet`

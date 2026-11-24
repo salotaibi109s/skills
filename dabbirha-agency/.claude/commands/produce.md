@@ -9,7 +9,8 @@ argument-hint: [فكرة اختيارية]
 
 1. **الفكرة**: إذا ما فيه فكرة أعلاه، اقرأ `ideas/backlog.md` وخذ أعلى فكرة غير مستخدمة. إذا الملف فاضي أو ما فيه أفكار متاحة، شغّل الوكيل `marketer` بمهمة `mode: ideas` أولاً.
 2. **الكتابة**: شغّل `content-writer` بالفكرة. يسلّم `episodes/<id>/brief.md` (`<id>` = `YYYY-MM-DD-<slug>`).
-3. **التصميم**: شغّل `motion-designer` على مسار brief.md. يسلّم `video-vertical.mp4` و`cover.jpg` و`design.md`.
+3. **التصميم**: شغّل `motion-designer` على مسار brief.md. يسلّم `video-vertical.mp4` و`cover.jpg` و`design.md` (مع التعليق الصوتي إذا مفعّل).
+   إذا `design.md` فيه `voiceover: skipped`، بلّغ المالك في الملخص النهائي إن رصيد vidIQ خلص.
 4. **مراجعة سريعة (أنت)**: افتح `cover.jpg` وصور `checks/` وتأكد إن النص العربي سليم ومتطابق مع الهوك وما فيه نص داخل المناطق الحمراء. إذا فيه مشكلة، رجّعها للمصمم مرة واحدة.
 5. **النشر**: شغّل `publisher` على مجلد الحلقة. يسلّم `publish.json`.
 6. علّم الفكرة ✅ في `ideas/backlog.md`.

@@ -8,7 +8,10 @@
       "network": "tiktok",
       "scheduled_at": "2026-11-26T10:00:00+03:00",
       "why": "أعلى خانة في الأسبوع (قيمة 1471 — الخميس 10 الصبح)",
-      "tiktokData": {"isAigc": true, "privacyOption": "PUBLIC_TO_EVERYONE"}
+      "tiktokData": {
+        "isAigc": true,
+        "privacyOption": "PUBLIC_TO_EVERYONE"
+      }
     },
     {
       "network": "youtube",
@@ -18,7 +21,15 @@
         "title": "أكياس السيليكا: ٤ استخدامات في البيت لا ترميها",
         "type": "short",
         "privacy": "public",
-        "tags": ["أكياس السيليكا", "حيل منزلية", "ترتيب البيت", "الرطوبة", "دبرها", "silica gel uses", "home hacks"],
+        "tags": [
+          "أكياس السيليكا",
+          "حيل منزلية",
+          "ترتيب البيت",
+          "الرطوبة",
+          "دبرها",
+          "silica gel uses",
+          "home hacks"
+        ],
         "madeForKids": false,
         "isAiGeneratedContent": true,
         "category": "HOWTO_STYLE"
@@ -31,9 +42,13 @@
     "brief_status": "ready",
     "design_status": "ready",
     "video_exists": true,
-    "networks_connected": ["tiktok (dabbirha2)", "youtube (UCYX9rKue8Xsvs5PO0vqg3RA)"],
+    "networks_connected": [
+      "tiktok (dabbirha2)",
+      "youtube (UCYX9rKue8Xsvs5PO0vqg3RA)"
+    ],
     "existing_scheduled_posts_next_14_days": 0,
-    "caption_chars": 124
+    "caption_chars": 124,
+    "voiceover": "sara (vidIQ) — autoAddMusic غير مفعّل لأن الفيديو فيه كلام"
   },
   "status": "needs-review"
 }
