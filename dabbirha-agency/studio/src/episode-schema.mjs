@@ -78,6 +78,9 @@ export function validateEpisode(ep, fileId) {
         }
       });
     }
+    if (s.audio !== undefined && (typeof s.audio !== 'string' || !/^voiceovers\/[a-z0-9-]+\/[\w-]+\.mp3$/.test(s.audio))) {
+      errors.push(`${at}: audio لازم مسار مثل voiceovers/<id>/01.mp3 داخل public/`);
+    }
     if (s.icon !== undefined && !ICONS.includes(s.icon)) {
       errors.push(`${at}: icon "${s.icon}" غير موجود — المتاح: ${ICONS.join(', ')}`);
     }

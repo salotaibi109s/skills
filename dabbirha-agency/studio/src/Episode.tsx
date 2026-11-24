@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Sequence, Series} from 'remotion';
+import {AbsoluteFill, Audio, Sequence, Series, staticFile} from 'remotion';
 import {sceneFrames} from './episode-schema.mjs';
 import {Background} from './components/Background';
 import {ProgressBar} from './components/ProgressBar';
@@ -32,6 +32,7 @@ export const Episode: React.FC<EpisodeProps> = ({scenes, showSafeZone}) => {
           return (
             <Series.Sequence key={i} durationInFrames={frames} name={`${i + 1}. ${scene.type}`}>
               <Scene scene={scene} durationInFrames={frames} stepNumber={stepNumber} />
+              {scene.audio && <Audio src={staticFile(scene.audio)} />}
             </Series.Sequence>
           );
         })}

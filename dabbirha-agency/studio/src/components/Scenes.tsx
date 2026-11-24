@@ -12,6 +12,7 @@ export type SceneData = {
   durationSec: number;
   lines: string[];
   icon?: string;
+  audio?: string; // تعليق صوتي يبدأ مع المشهد — مسار داخل public/
 };
 
 type SceneProps = {scene: SceneData; durationInFrames: number; stepNumber?: number};
