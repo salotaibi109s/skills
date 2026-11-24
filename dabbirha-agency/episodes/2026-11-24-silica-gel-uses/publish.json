@@ -10,7 +10,9 @@
       "postId": "439951656",
       "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8268890&openWithPostUuid=-7141760216884034930",
       "autoPublish": true,
-      "note": "بطلب المالك: تجربة نشر يوتيوب فوراً"
+      "note": "بطلب المالك: تجربة نشر يوتيوب فوراً",
+      "published": true,
+      "publicUrl": "https://www.youtube.com/shorts/TZqfkYMn1m8"
     },
     {
       "network": "tiktok",
@@ -20,7 +22,8 @@
       "autoPublish": true,
       "note": "بطلب المالك: نُشر فوراً بنشر تلقائي لهذا المنشور فقط",
       "published": true,
-      "published_note": "نزل على @dabbirha2 الساعة 11:18 (أكّده المالك)"
+      "published_note": "نزل على @dabbirha2 الساعة 11:18 (أكّده المالك)",
+      "publicUrl": "https://www.tiktok.com/@dabbirha2/video/7711649409557138709"
     }
   ],
   "skipped": [],
