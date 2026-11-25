@@ -88,6 +88,31 @@ export const CharDefs: React.FC = () => (
       <stop offset="50%" stopColor="#FF9CC6" />
       <stop offset="100%" stopColor="#D9508A" />
     </linearGradient>
+    <linearGradient id="momDress" x1="0" x2="1">
+      <stop offset="0%" stopColor="#7A4E6E" />
+      <stop offset="45%" stopColor="#A06C92" />
+      <stop offset="100%" stopColor="#6A405E" />
+    </linearGradient>
+    <linearGradient id="momScarf" x1="0" x2="1">
+      <stop offset="0%" stopColor="#E7B7C8" />
+      <stop offset="45%" stopColor="#F6D3DF" />
+      <stop offset="100%" stopColor="#D9A2B6" />
+    </linearGradient>
+    <linearGradient id="oldDress" x1="0" x2="1">
+      <stop offset="0%" stopColor="#2A2A33" />
+      <stop offset="45%" stopColor="#40404C" />
+      <stop offset="100%" stopColor="#24242C" />
+    </linearGradient>
+    <linearGradient id="oldScarf" x1="0" x2="1">
+      <stop offset="0%" stopColor="#D8D8DE" />
+      <stop offset="45%" stopColor="#F4F4F7" />
+      <stop offset="100%" stopColor="#C6C6CE" />
+    </linearGradient>
+    <linearGradient id="thobe" x1="0" x2="1">
+      <stop offset="0%" stopColor="#E3E7EE" />
+      <stop offset="45%" stopColor="#FFFFFF" />
+      <stop offset="100%" stopColor="#D2D8E2" />
+    </linearGradient>
     <radialGradient id="iris" cx="40%" cy="35%" r="70%">
       <stop offset="0%" stopColor="#9A6436" />
       <stop offset="100%" stopColor="#3A220F" />
@@ -350,10 +375,10 @@ export const Kid: React.FC<KidProps> = ({ x, y, s, who = "joanna", hair, expr = 
   );
 };
 
-export type TeacherProps = { x: number; y: number; s: number; expr?: Expr; talk?: number; blink?: number; look?: Pt; tilt?: number; armL?: Arm; armR?: Arm; walk?: number; book?: boolean; armsFront?: boolean; paper?: boolean };
+export type TeacherProps = { x: number; y: number; s: number; expr?: Expr; talk?: number; blink?: number; look?: Pt; tilt?: number; armL?: Arm; armR?: Arm; walk?: number; book?: boolean; armsFront?: boolean; paper?: boolean; dress?: string; scarf?: string; scarfEdge?: string; skin?: string; glasses?: boolean };
 
 /** The teacher: modest long dress and hijab, warm smile. ~1350 units tall. */
-export const Teacher: React.FC<TeacherProps> = ({ x, y, s, expr = "smile", talk = 0, blink = 0, look, tilt = 0, armL = {}, armR = {}, walk, book, armsFront, paper }) => {
+export const Teacher: React.FC<TeacherProps> = ({ x, y, s, expr = "smile", talk = 0, blink = 0, look, tilt = 0, armL = {}, armR = {}, walk, book, armsFront, paper, dress = "url(#abaya)", scarf = "url(#hijab)", scarfEdge = "#C8AE8C", skin = "url(#skinT)", glasses }) => {
   const bob = walk !== undefined ? -Math.abs(Math.sin(walk)) * 14 : 0;
   const hr = 150;
   const head: Pt = [0, -1150 + bob];
@@ -363,8 +388,8 @@ export const Teacher: React.FC<TeacherProps> = ({ x, y, s, expr = "smile", talk 
   const aR = armPts(shR, 1, armR, 210, 190);
   const armDraw = (p: Pt[], key: string) => (
     <g key={key}>
-      <polyline points={poly(p)} stroke="url(#abaya)" strokeWidth={70} strokeLinecap="round" strokeLinejoin="round" fill="none" />
-      <circle cx={p[2][0]} cy={p[2][1]} r={34} fill="url(#skinT)" />
+      <polyline points={poly(p)} stroke={dress} strokeWidth={70} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      <circle cx={p[2][0]} cy={p[2][1]} r={34} fill={skin} />
     </g>
   );
   const step = walk !== undefined ? Math.sin(walk) * 20 : 0;
@@ -373,7 +398,7 @@ export const Teacher: React.FC<TeacherProps> = ({ x, y, s, expr = "smile", talk 
       <ellipse cx={0} cy={0} rx={240} ry={34} fill="url(#aoShadow)" />
       <ellipse cx={-60 + step} cy={-12} rx={60} ry={24} fill="#2A2630" />
       <ellipse cx={60 - step} cy={-12} rx={60} ry={24} fill="#2A2630" />
-      <path d={`M${-150} ${-985 + bob} Q0 ${-1010 + bob} ${150} ${-985 + bob} L${230} ${-20} Q0 ${10} ${-230} ${-20}Z`} fill="url(#abaya)" />
+      <path d={`M${-150} ${-985 + bob} Q0 ${-1010 + bob} ${150} ${-985 + bob} L${230} ${-20} Q0 ${10} ${-230} ${-20}Z`} fill={dress} />
       <path d={`M0 ${-960 + bob} L0 ${-40}`} stroke="#3A3E66" strokeWidth={5} opacity={0.6} />
       {book && <rect x={-10} y={-760 + bob} width={170} height={210} rx={14} fill="#F7B733" stroke="#D18F10" strokeWidth={6} transform={`rotate(-8 70 ${-650 + bob})`} />}
       {paper && <rect x={-200} y={-760 + bob} width={190} height={240} rx={8} fill="#fff" stroke="#C9D2DC" strokeWidth={5} transform={`rotate(10 -100 ${-640 + bob})`} />}
@@ -381,14 +406,14 @@ export const Teacher: React.FC<TeacherProps> = ({ x, y, s, expr = "smile", talk 
       {!armsFront && armDraw(aR, "r")}
       <g transform={`rotate(${tilt} ${head[0]} ${head[1] + hr})`}>
         {/* hijab back + drape */}
-        <path d={`M${-hr * 1.32} ${head[1] + 10} Q${-hr * 1.35} ${head[1] - hr * 1.45} 0 ${head[1] - hr * 1.42} Q${hr * 1.35} ${head[1] - hr * 1.45} ${hr * 1.32} ${head[1] + 10} L${hr * 1.55} ${head[1] + hr * 1.75} Q0 ${head[1] + hr * 2.05} ${-hr * 1.55} ${head[1] + hr * 1.75}Z`} fill="url(#hijab)" />
-        <circle cx={head[0]} cy={head[1]} r={hr} fill="url(#skinT)" />
+        <path d={`M${-hr * 1.32} ${head[1] + 10} Q${-hr * 1.35} ${head[1] - hr * 1.45} 0 ${head[1] - hr * 1.42} Q${hr * 1.35} ${head[1] - hr * 1.45} ${hr * 1.32} ${head[1] + 10} L${hr * 1.55} ${head[1] + hr * 1.75} Q0 ${head[1] + hr * 2.05} ${-hr * 1.55} ${head[1] + hr * 1.75}Z`} fill={scarf} />
+        <circle cx={head[0]} cy={head[1]} r={hr} fill={skin} />
         <g transform={`translate(${head[0]} ${head[1]})`}>
-          <Face r={hr} expr={expr} talk={talk} blink={blink} look={look} adult />
+          <Face r={hr} expr={expr} talk={talk} blink={blink} look={look} adult glasses={glasses ? "round" : false} />
         </g>
         {/* hijab front frame */}
-        <path d={`M${-hr * 1.22} ${head[1] + hr * 0.6} Q${-hr * 1.3} ${head[1] - hr * 1.32} 0 ${head[1] - hr * 1.3} Q${hr * 1.3} ${head[1] - hr * 1.32} ${hr * 1.22} ${head[1] + hr * 0.6} Q${hr * 1.05} ${head[1] - hr * 0.9} 0 ${head[1] - hr * 0.95} Q${-hr * 1.05} ${head[1] - hr * 0.9} ${-hr * 1.22} ${head[1] + hr * 0.6}Z`} fill="url(#hijab)" />
-        <path d={`M${-hr * 0.98} ${head[1] + hr * 0.85} Q0 ${head[1] + hr * 1.45} ${hr * 0.98} ${head[1] + hr * 0.85}`} stroke="#C8AE8C" strokeWidth={46} fill="none" />
+        <path d={`M${-hr * 1.22} ${head[1] + hr * 0.6} Q${-hr * 1.3} ${head[1] - hr * 1.32} 0 ${head[1] - hr * 1.3} Q${hr * 1.3} ${head[1] - hr * 1.32} ${hr * 1.22} ${head[1] + hr * 0.6} Q${hr * 1.05} ${head[1] - hr * 0.9} 0 ${head[1] - hr * 0.95} Q${-hr * 1.05} ${head[1] - hr * 0.9} ${-hr * 1.22} ${head[1] + hr * 0.6}Z`} fill={scarf} />
+        <path d={`M${-hr * 0.98} ${head[1] + hr * 0.85} Q0 ${head[1] + hr * 1.45} ${hr * 0.98} ${head[1] + hr * 0.85}`} stroke={scarfEdge} strokeWidth={46} fill="none" />
         <path d={`M${-hr * 0.7} ${head[1] - hr * 1.15} Q0 ${head[1] - hr * 1.32} ${hr * 0.7} ${head[1] - hr * 1.15}`} stroke="#fff" strokeOpacity={0.35} strokeWidth={14} fill="none" strokeLinecap="round" />
       </g>
       {armsFront && armDraw(aL, "l")}
@@ -475,3 +500,48 @@ export const Sandwich: React.FC<{ x: number; y: number; s: number; rot?: number 
     <path d="M-60 2 q10 24 24 0 M10 2 q12 30 28 0" fill="#FFE066" />
   </g>
 );
+
+
+/** Dad: adult man in a white thobe, short black hair and a trimmed beard. ~1400 units tall. */
+export const Dad: React.FC<{ x: number; y: number; s: number; expr?: Expr; talk?: number; blink?: number; look?: Pt; tilt?: number; armL?: Arm; armR?: Arm; walk?: number; lying?: number; armsFront?: boolean }> = ({ x, y, s, expr = "smile", talk = 0, blink = 0, look, tilt = 0, armL = {}, armR = {}, walk, armsFront }) => {
+  const bob = walk !== undefined ? -Math.abs(Math.sin(walk)) * 14 : 0;
+  const hr = 155;
+  const head: Pt = [0, -1190 + bob];
+  const shL: Pt = [-160, -990 + bob];
+  const shR: Pt = [160, -990 + bob];
+  const aL = armPts(shL, -1, armL, 220, 200);
+  const aR = armPts(shR, 1, armR, 220, 200);
+  const armDraw = (p: Pt[], key: string) => (
+    <g key={key}>
+      <polyline points={poly(p)} stroke="url(#thobe)" strokeWidth={76} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      <circle cx={p[2][0]} cy={p[2][1]} r={38} fill="url(#skinF)" />
+    </g>
+  );
+  const step = walk !== undefined ? Math.sin(walk) * 20 : 0;
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s})`}>
+      <ellipse cx={0} cy={0} rx={250} ry={34} fill="url(#aoShadow)" />
+      <ellipse cx={-62 + step} cy={-12} rx={62} ry={24} fill="#3A2A20" />
+      <ellipse cx={62 - step} cy={-12} rx={62} ry={24} fill="#3A2A20" />
+      <path d={`M${-170} ${-1030 + bob} Q0 ${-1060 + bob} ${170} ${-1030 + bob} L${210} ${-30} Q0 ${-10} ${-210} ${-30}Z`} fill="url(#thobe)" />
+      <path d={`M0 ${-1000 + bob} L0 ${-820 + bob}`} stroke="#C9CED8" strokeWidth={6} />
+      {[0, 1, 2].map((i) => <circle key={i} cx={12} cy={-980 + i * 50 + bob} r={8} fill="#C9CED8" />)}
+      {!armsFront && armDraw(aL, "l")}
+      {!armsFront && armDraw(aR, "r")}
+      <g transform={`rotate(${tilt} ${head[0]} ${head[1] + hr})`}>
+        <rect x={-50} y={head[1] + hr * 0.7} width={100} height={70} rx={24} fill="url(#skinF)" />
+        <circle cx={head[0]} cy={head[1]} r={hr} fill="url(#skinF)" />
+        <ellipse cx={-hr * 0.98} cy={head[1] + 16} rx={26} ry={40} fill="url(#skinF)" />
+        <ellipse cx={hr * 0.98} cy={head[1] + 16} rx={26} ry={40} fill="url(#skinF)" />
+        {/* beard */}
+        <path d={`M${-hr * 0.92} ${head[1] + 10} Q${-hr * 0.9} ${head[1] + hr * 1.05} 0 ${head[1] + hr * 1.08} Q${hr * 0.9} ${head[1] + hr * 1.05} ${hr * 0.92} ${head[1] + 10} Q${hr * 0.7} ${head[1] + hr * 0.55} ${hr * 0.35} ${head[1] + hr * 0.62} Q0 ${head[1] + hr * 0.5} ${-hr * 0.35} ${head[1] + hr * 0.62} Q${-hr * 0.7} ${head[1] + hr * 0.55} ${-hr * 0.92} ${head[1] + 10}Z`} fill="#1E1612" />
+        <g transform={`translate(${head[0]} ${head[1]})`}>
+          <Face r={hr} expr={expr} talk={talk} blink={blink} look={look} adult />
+        </g>
+        <path d={`M${-hr * 1.0} ${head[1] - hr * 0.1} Q${-hr * 1.02} ${head[1] - hr * 1.12} 0 ${head[1] - hr * 1.1} Q${hr * 1.02} ${head[1] - hr * 1.12} ${hr * 1.0} ${head[1] - hr * 0.1} Q${hr * 0.85} ${head[1] - hr * 0.7} 0 ${head[1] - hr * 0.72} Q${-hr * 0.85} ${head[1] - hr * 0.7} ${-hr * 1.0} ${head[1] - hr * 0.1}Z`} fill="#1E1612" />
+      </g>
+      {armsFront && armDraw(aL, "l")}
+      {armsFront && armDraw(aR, "r")}
+    </g>
+  );
+};

@@ -80,6 +80,9 @@ import { Room404C } from "./room404/EpC";
 import { Room404D } from "./room404/EpD";
 import { Room404E } from "./room404/EpE";
 import { Room404F } from "./room404/EpF";
+import { HomeA } from "./home/EpA";
+import { HomeB } from "./home/EpB";
+import { HomeC } from "./home/EpC";
 import { yTimeline as y2Timeline } from "./yt2/base";
 import { yTimeline } from "./yt/base";
 import { pTimeline } from "./prompts/base";
@@ -346,6 +349,9 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Room404D" component={Room404D} durationInFrames={2100} fps={30} width={1080} height={1920} />
       <Composition id="Room404E" component={Room404E} durationInFrames={2100} fps={30} width={1080} height={1920} />
       <Composition id="Room404F" component={Room404F} durationInFrames={2250} fps={30} width={1080} height={1920} />
+      <Composition id="HomeA" component={HomeA} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Composition id="HomeB" component={HomeB} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Composition id="HomeC" component={HomeC} durationInFrames={1800} fps={30} width={1080} height={1920} />
     </>
   );
 };

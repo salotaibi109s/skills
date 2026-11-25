@@ -1,0 +1,191 @@
+{
+  "audioDir": "homec",
+  "totalFrames": 1800,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "I01-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.85,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.8,
+      "leadSeconds": 0.2,
+      "tts": "جوانا! جوانا! لقيت مية ريال!"
+    },
+    {
+      "id": "I02-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.3,
+      "tts": "صرنا أغنياء! بشتري سيارة… لا، طيارة!"
+    },
+    {
+      "id": "I03-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.6,
+      "tts": "فيصل… هالفلوس مو لنا."
+    },
+    {
+      "id": "I04-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.3,
+      "tts": "بس لقيناها! يعني صارت حقنا؟"
+    },
+    {
+      "id": "I05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.3,
+      "tts": "لو أنت ضيّعت مية ريال… تبي أحد ياخذها؟"
+    },
+    {
+      "id": "I06-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 1.6,
+      "tts": "شوف! فاتورة صيدلية… مكتوب: شقة أربعة."
+    },
+    {
+      "id": "I07-N",
+      "speaker": "N",
+      "voiceId": "j2SmAsUegz7ncz4AXe6D",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 0.9
+      },
+      "nominalSeconds": 4.4,
+      "leadSeconds": 2.6,
+      "tts": "يا بعد عمري… هذي فلوس دواي! من الصبح أدوّرها."
+    },
+    {
+      "id": "I08-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 2.8,
+      "leadSeconds": 0.3,
+      "tts": "تفضّلي يا خالة… لقيناها على الدرج."
+    },
+    {
+      "id": "I09-N",
+      "speaker": "N",
+      "voiceId": "j2SmAsUegz7ncz4AXe6D",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 0.9
+      },
+      "nominalSeconds": 4.0,
+      "leadSeconds": 0.4,
+      "tts": "الله يحفظكم ويرزقكم… وجهكم وجه خير."
+    },
+    {
+      "id": "I10-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 1.4,
+      "tts": "تدرين يا جوانا؟ هالشعور… أحلى من الطيارة."
+    },
+    {
+      "id": "I11-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 6.0,
+      "leadSeconds": 0.3,
+      "tts": "فيصل… أنت ما عندك طيارة أصلاً!"
+    }
+  ],
+  "sfx": [],
+  "music": []
+}

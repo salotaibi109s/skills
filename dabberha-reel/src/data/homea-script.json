@@ -1,0 +1,191 @@
+{
+  "audioDir": "homea",
+  "totalFrames": 1800,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "G01-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.3,
+      "tts": "جوانا! شوفي بابا… فمه مفتوح مثل الكهف!"
+    },
+    {
+      "id": "G02-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 1.8,
+      "leadSeconds": 0.2,
+      "tts": "فيصل! لا تصوّره!"
+    },
+    {
+      "id": "G03-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.3,
+      "tts": "بس صورة وحدة… لقروب العائلة! بيضحكون كلهم!"
+    },
+    {
+      "id": "G04-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 3.6,
+      "tts": "وقّف!"
+    },
+    {
+      "id": "G05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 4.4,
+      "leadSeconds": 0.8,
+      "tts": "تبيني أرسل صورتك وأنت نايم، والريالة على المخدة؟"
+    },
+    {
+      "id": "G06-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 1.8,
+      "leadSeconds": 0.2,
+      "tts": "…لا! فضيحة!"
+    },
+    {
+      "id": "G07-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.3,
+      "tts": "أجل بابا بعد ما يبيها."
+    },
+    {
+      "id": "G08-D",
+      "speaker": "D",
+      "voiceId": "RjFuvnufLX42TYe37ekK",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 1.0,
+      "tts": "وش فيكم؟ ليش واقفين فوق راسي؟"
+    },
+    {
+      "id": "G09-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 5.0,
+      "leadSeconds": 0.4,
+      "tts": "بابا… كنت بصوّرك وأرسلها… بس جوانا وقّفتني. آسف."
+    },
+    {
+      "id": "G10-D",
+      "speaker": "D",
+      "voiceId": "RjFuvnufLX42TYe37ekK",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.4,
+      "tts": "أحسنت يوم اعترفت… وأحسنتِ يا جوانا."
+    },
+    {
+      "id": "G11-D",
+      "speaker": "D",
+      "voiceId": "RjFuvnufLX42TYe37ekK",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "nominalSeconds": 8.0,
+      "leadSeconds": 0.6,
+      "tts": "بس الحين… دوري أصوّرك وأنت تتأسف!"
+    }
+  ],
+  "sfx": [],
+  "music": []
+}

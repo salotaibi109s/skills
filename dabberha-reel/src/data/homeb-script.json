@@ -1,0 +1,191 @@
+{
+  "audioDir": "homeb",
+  "totalFrames": 1800,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "H01-C",
+      "speaker": "C",
+      "voiceId": "CWVr3UPCDYlT6oZmdrEG",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.2,
+      "tts": "شوفوا! جهاز الألعاب الجديد… ما عند أحد مثله!"
+    },
+    {
+      "id": "H02-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 1.8,
+      "leadSeconds": 0.2,
+      "tts": "عندنا أكبر منه!"
+    },
+    {
+      "id": "H03-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.3,
+      "tts": "فيصل! وين عندنا؟!"
+    },
+    {
+      "id": "H04-C",
+      "speaker": "C",
+      "voiceId": "CWVr3UPCDYlT6oZmdrEG",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.3,
+      "tts": "صدق؟ أجل بكرة بجي أشوفه!"
+    },
+    {
+      "id": "H05-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 0.9
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.4,
+      "tts": "…أهلاً وسهلاً."
+    },
+    {
+      "id": "H06-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 1.4,
+      "tts": "جوانا… كذبت. وش أسوي؟"
+    },
+    {
+      "id": "H07-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.0,
+      "leadSeconds": 0.3,
+      "tts": "الكذبة تكبر إذا خبّيناها… بس عندي فكرة."
+    },
+    {
+      "id": "H08-D",
+      "speaker": "D",
+      "voiceId": "RjFuvnufLX42TYe37ekK",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 5.6,
+      "leadSeconds": 2.6,
+      "tts": "اللعبة الحلوة… ما تنشرى. تنصنع."
+    },
+    {
+      "id": "H09-C",
+      "speaker": "C",
+      "voiceId": "CWVr3UPCDYlT6oZmdrEG",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 1.2,
+      "tts": "وين الجهاز الكبير؟"
+    },
+    {
+      "id": "H10-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.2,
+      "leadSeconds": 0.3,
+      "tts": "ما عندنا جهاز… كذبت عليك. بس سوّينا شي أكبر!"
+    },
+    {
+      "id": "H11-C",
+      "speaker": "C",
+      "voiceId": "CWVr3UPCDYlT6oZmdrEG",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 7.0,
+      "leadSeconds": 2.0,
+      "tts": "هذا أحلى من جهازي! بكرة نسوي واحد ببيتنا؟"
+    }
+  ],
+  "sfx": [],
+  "music": []
+}
