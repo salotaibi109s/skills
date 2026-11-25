@@ -1,0 +1,160 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-25T19:22:47.848Z"
+  },
+  "sfx": [
+    {
+      "id": "hum",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Mysterious empty school corridor at night, soft electrical hum and a flickering light buzz",
+      "seconds": 4
+    },
+    {
+      "id": "flicker",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Fluorescent light flickering with electrical buzz, short",
+      "seconds": 1
+    },
+    {
+      "id": "whoosh",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Quick sci-fi whoosh transition, clean and modern",
+      "seconds": 0.6
+    },
+    {
+      "id": "beep",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Futuristic keypad button beep, soft and clean",
+      "seconds": 0.5
+    },
+    {
+      "id": "wrong",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cartoon wrong answer buzzer, short and funny, not harsh",
+      "seconds": 0.8
+    },
+    {
+      "id": "correct",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Sci-fi puzzle solved chime with a magical shimmer",
+      "seconds": 1.2
+    },
+    {
+      "id": "door",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Heavy secret metal door unlocking with clicks and sliding open with a deep hiss and light rush",
+      "seconds": 2.5
+    },
+    {
+      "id": "lab",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Secret futuristic laboratory ambience, soft machines humming, gentle bubbling, distant beeps",
+      "seconds": 4
+    },
+    {
+      "id": "boot",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Cute small robot powering up, rising electronic tones and happy beeps",
+      "seconds": 2
+    },
+    {
+      "id": "robot",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Small robot chirp and servo motor movement, cute and playful",
+      "seconds": 0.8
+    },
+    {
+      "id": "holo",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Hologram projector turning on, digital shimmer and glitchy sparkle",
+      "seconds": 1.5
+    },
+    {
+      "id": "powerdown",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "City lights powering down, descending electric whine, sci-fi",
+      "seconds": 2
+    },
+    {
+      "id": "powerup",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Futuristic city power restored, rising energy surge and bright hum",
+      "seconds": 2
+    },
+    {
+      "id": "zap",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Small electric spark zap when plugging a wire, cartoon",
+      "seconds": 0.6
+    },
+    {
+      "id": "glitch",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Digital screen glitch with a warning tone, mysterious, child friendly",
+      "seconds": 1.2
+    },
+    {
+      "id": "alarm",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft sci-fi warning alert tone, two beeps, suspenseful but not scary",
+      "seconds": 1.5
+    },
+    {
+      "id": "tick",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Countdown clock ticking five seconds, game show thinking time, light and fun",
+      "seconds": 5
+    },
+    {
+      "id": "safe",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Futuristic safe dial clicks then a vault door opening with a magical glow",
+      "seconds": 2
+    },
+    {
+      "id": "reveal",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Magical sci-fi discovery reveal, shimmering chimes and a warm whoosh",
+      "seconds": 2
+    },
+    {
+      "id": "sting",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Mysterious cliffhanger sting, synth and orchestral, kids adventure",
+      "seconds": 2.5
+    },
+    {
+      "id": "cheer",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Two kids cheering yay with a sparkle, cartoon",
+      "seconds": 2
+    },
+    {
+      "id": "tagline",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Bright inspiring short logo jingle sparkle, kids science channel",
+      "seconds": 2
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "provider": "ElevenLabs Music",
+      "prompt": "Kids sci-fi mystery adventure score, 100 BPM, pulsing soft synths, curious plucked strings, light percussion and a hopeful heroic melody. 0-8s mysterious and curious. 8-25s a puzzle thinking groove with ticking. 25-40s wonder and discovery, bright and magical. 40-52s a playful adventure groove. 52-60s a suspenseful cliffhanger build ending on a dramatic note exactly at 60 seconds. No vocals.",
+      "length_ms": 60000,
+      "instrumental": true,
+      "generated_at": "2026-11-25T19:24:21.511Z"
+    }
+  ]
+}

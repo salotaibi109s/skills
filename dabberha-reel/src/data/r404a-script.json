@@ -1,0 +1,293 @@
+{
+  "audioDir": "r404a",
+  "totalFrames": 1800,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "A01-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.2,
+      "tts": "جوانا… هذا الباب ما كان موجود أمس!"
+    },
+    {
+      "id": "A02-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.3,
+      "tts": "غرفة أربعمية وأربعة؟ بس مدرستنا ما فيها إلا ثلاث أدوار!"
+    },
+    {
+      "id": "A03-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.6,
+      "tts": "وفيه قفل غريب… أشكال!"
+    },
+    {
+      "id": "A04-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.3,
+      "tts": "أكيد دائرة! … لا؟"
+    },
+    {
+      "id": "A05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 9.4,
+      "leadSeconds": 5.4,
+      "tts": "لحظة… المثلث ثلاث أضلاع، والمربع أربعة، والخماسي خمسة… يعني الجاي سداسي!"
+    },
+    {
+      "id": "A06-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.0,
+      "leadSeconds": 2.6,
+      "tts": "واو… مختبر سرّي تحت مدرستنا؟!"
+    },
+    {
+      "id": "A07-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "nominalSeconds": 5.0,
+      "leadSeconds": 2.2,
+      "tts": "تم التشغيل… أهلاً جوانا، أهلاً فيصل."
+    },
+    {
+      "id": "A08-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.25,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.0,
+      "leadSeconds": 0.3,
+      "tts": "يعرف أسماءنا؟!"
+    },
+    {
+      "id": "A09-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 5.6,
+      "leadSeconds": 0.5,
+      "tts": "أنا زيرو. وعندكم مهمّة… لإنقاذ المستقبل."
+    },
+    {
+      "id": "A10-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "nominalSeconds": 7.0,
+      "leadSeconds": 1.2,
+      "tts": "فكّر، اكتشف، وخلّ ذكاءك يقودك!"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "hum",
+      "seconds": 4,
+      "prompt": "Mysterious empty school corridor at night, soft electrical hum and a flickering light buzz"
+    },
+    {
+      "id": "flicker",
+      "seconds": 1,
+      "prompt": "Fluorescent light flickering with electrical buzz, short"
+    },
+    {
+      "id": "whoosh",
+      "seconds": 0.6,
+      "prompt": "Quick sci-fi whoosh transition, clean and modern"
+    },
+    {
+      "id": "beep",
+      "seconds": 0.5,
+      "prompt": "Futuristic keypad button beep, soft and clean"
+    },
+    {
+      "id": "wrong",
+      "seconds": 0.8,
+      "prompt": "Cartoon wrong answer buzzer, short and funny, not harsh"
+    },
+    {
+      "id": "correct",
+      "seconds": 1.2,
+      "prompt": "Sci-fi puzzle solved chime with a magical shimmer"
+    },
+    {
+      "id": "door",
+      "seconds": 2.5,
+      "prompt": "Heavy secret metal door unlocking with clicks and sliding open with a deep hiss and light rush"
+    },
+    {
+      "id": "lab",
+      "seconds": 4,
+      "prompt": "Secret futuristic laboratory ambience, soft machines humming, gentle bubbling, distant beeps"
+    },
+    {
+      "id": "boot",
+      "seconds": 2,
+      "prompt": "Cute small robot powering up, rising electronic tones and happy beeps"
+    },
+    {
+      "id": "robot",
+      "seconds": 0.8,
+      "prompt": "Small robot chirp and servo motor movement, cute and playful"
+    },
+    {
+      "id": "holo",
+      "seconds": 1.5,
+      "prompt": "Hologram projector turning on, digital shimmer and glitchy sparkle"
+    },
+    {
+      "id": "powerdown",
+      "seconds": 2,
+      "prompt": "City lights powering down, descending electric whine, sci-fi"
+    },
+    {
+      "id": "powerup",
+      "seconds": 2,
+      "prompt": "Futuristic city power restored, rising energy surge and bright hum"
+    },
+    {
+      "id": "zap",
+      "seconds": 0.6,
+      "prompt": "Small electric spark zap when plugging a wire, cartoon"
+    },
+    {
+      "id": "glitch",
+      "seconds": 1.2,
+      "prompt": "Digital screen glitch with a warning tone, mysterious, child friendly"
+    },
+    {
+      "id": "alarm",
+      "seconds": 1.5,
+      "prompt": "Soft sci-fi warning alert tone, two beeps, suspenseful but not scary"
+    },
+    {
+      "id": "tick",
+      "seconds": 5,
+      "prompt": "Countdown clock ticking five seconds, game show thinking time, light and fun"
+    },
+    {
+      "id": "safe",
+      "seconds": 2,
+      "prompt": "Futuristic safe dial clicks then a vault door opening with a magical glow"
+    },
+    {
+      "id": "reveal",
+      "seconds": 2,
+      "prompt": "Magical sci-fi discovery reveal, shimmering chimes and a warm whoosh"
+    },
+    {
+      "id": "sting",
+      "seconds": 2.5,
+      "prompt": "Mysterious cliffhanger sting, synth and orchestral, kids adventure"
+    },
+    {
+      "id": "cheer",
+      "seconds": 2,
+      "prompt": "Two kids cheering yay with a sparkle, cartoon"
+    },
+    {
+      "id": "tagline",
+      "seconds": 2,
+      "prompt": "Bright inspiring short logo jingle sparkle, kids science channel"
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "Kids sci-fi mystery adventure score, 100 BPM, pulsing soft synths, curious plucked strings, light percussion and a hopeful heroic melody. 0-8s mysterious and curious. 8-25s a puzzle thinking groove with ticking. 25-40s wonder and discovery, bright and magical. 40-52s a playful adventure groove. 52-60s a suspenseful cliffhanger build ending on a dramatic note exactly at 60 seconds. No vocals.",
+      "lengthMs": 60000
+    }
+  ]
+}

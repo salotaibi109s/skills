@@ -74,6 +74,9 @@ import { JoannaEp5 } from "./joanna/Ep5";
 import { JoannaEp6 } from "./joanna/Ep6";
 import { JoannaEp7 } from "./joanna/Ep7";
 import { JoannaEp8 } from "./joanna/Ep8";
+import { Room404A } from "./room404/EpA";
+import { Room404B } from "./room404/EpB";
+import { Room404C } from "./room404/EpC";
 import { yTimeline as y2Timeline } from "./yt2/base";
 import { yTimeline } from "./yt/base";
 import { pTimeline } from "./prompts/base";
@@ -334,6 +337,9 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="JoannaEp6" component={JoannaEp6} durationInFrames={1950} fps={30} width={1080} height={1920} />
       <Composition id="JoannaEp7" component={JoannaEp7} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="JoannaEp8" component={JoannaEp8} durationInFrames={2100} fps={30} width={1080} height={1920} />
+      <Composition id="Room404A" component={Room404A} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Composition id="Room404B" component={Room404B} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Composition id="Room404C" component={Room404C} durationInFrames={1800} fps={30} width={1080} height={1920} />
     </>
   );
 };

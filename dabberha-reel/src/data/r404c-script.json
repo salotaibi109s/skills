@@ -1,0 +1,293 @@
+{
+  "audioDir": "r404c",
+  "totalFrames": 1800,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "C01-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.3,
+      "tts": "إذا زيرو عدو… ليش ساعدنا؟"
+    },
+    {
+      "id": "C02-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.3,
+      "tts": "ما ندري… بس لازم نختبره."
+    },
+    {
+      "id": "C03-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.4,
+      "tts": "أسمعكم ترى… عندي سمّاعات بدقة عالية."
+    },
+    {
+      "id": "C04-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.3,
+      "tts": "إذا تبون الحقيقة… افتحوا الخزنة."
+    },
+    {
+      "id": "C05-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 7.6,
+      "leadSeconds": 5.4,
+      "tts": "الثانية أربعة… والأولى نصّها، يعني اثنين… والثالثة المجموع… ستة!"
+    },
+    {
+      "id": "C06-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.3,
+      "tts": "يعني الرقم: اثنين، أربعة، ستة!"
+    },
+    {
+      "id": "C07-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 2.4,
+      "tts": "الاختبار واحد… من مية؟!"
+    },
+    {
+      "id": "C08-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 6.0,
+      "leadSeconds": 0.4,
+      "tts": "مبروك… نجحتوا في أول اختبار. أنا ما كنت عدو… كنت أختبر ذكاءكم."
+    },
+    {
+      "id": "C09-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.8,
+      "leadSeconds": 0.4,
+      "tts": "طيب ومين كتب: لا تثقوا بزيرو؟"
+    },
+    {
+      "id": "C10-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.5,
+        "use_speaker_boost": true,
+        "speed": 0.9
+      },
+      "nominalSeconds": 9.0,
+      "leadSeconds": 0.6,
+      "tts": "هذا… اللغز الجاي."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "hum",
+      "seconds": 4,
+      "prompt": "shared"
+    },
+    {
+      "id": "flicker",
+      "seconds": 1,
+      "prompt": "shared"
+    },
+    {
+      "id": "whoosh",
+      "seconds": 0.6,
+      "prompt": "shared"
+    },
+    {
+      "id": "beep",
+      "seconds": 0.5,
+      "prompt": "shared"
+    },
+    {
+      "id": "wrong",
+      "seconds": 0.8,
+      "prompt": "shared"
+    },
+    {
+      "id": "correct",
+      "seconds": 1.2,
+      "prompt": "shared"
+    },
+    {
+      "id": "door",
+      "seconds": 2.5,
+      "prompt": "shared"
+    },
+    {
+      "id": "lab",
+      "seconds": 4,
+      "prompt": "shared"
+    },
+    {
+      "id": "boot",
+      "seconds": 2,
+      "prompt": "shared"
+    },
+    {
+      "id": "robot",
+      "seconds": 0.8,
+      "prompt": "shared"
+    },
+    {
+      "id": "holo",
+      "seconds": 1.5,
+      "prompt": "shared"
+    },
+    {
+      "id": "powerdown",
+      "seconds": 2,
+      "prompt": "shared"
+    },
+    {
+      "id": "powerup",
+      "seconds": 2,
+      "prompt": "shared"
+    },
+    {
+      "id": "zap",
+      "seconds": 0.6,
+      "prompt": "shared"
+    },
+    {
+      "id": "glitch",
+      "seconds": 1.2,
+      "prompt": "shared"
+    },
+    {
+      "id": "alarm",
+      "seconds": 1.5,
+      "prompt": "shared"
+    },
+    {
+      "id": "tick",
+      "seconds": 5,
+      "prompt": "shared"
+    },
+    {
+      "id": "safe",
+      "seconds": 2,
+      "prompt": "shared"
+    },
+    {
+      "id": "reveal",
+      "seconds": 2,
+      "prompt": "shared"
+    },
+    {
+      "id": "sting",
+      "seconds": 2.5,
+      "prompt": "shared"
+    },
+    {
+      "id": "cheer",
+      "seconds": 2,
+      "prompt": "shared"
+    },
+    {
+      "id": "tagline",
+      "seconds": 2,
+      "prompt": "shared"
+    }
+  ],
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "shared",
+      "lengthMs": 60000
+    }
+  ]
+}
