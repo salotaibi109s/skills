@@ -154,11 +154,11 @@ export const HomeB: React.FC = () => {
             <Svg>
               <Cam fx={awake ? 400 : 520} fy={1240} z={awake ? 1.3 : 1.45}>
                 <LivingRoom f={f} />
-                <SofaBack x={540} y={1460} s={0.9} />
+                <SofaBack x={540} y={1690} s={0.9} />
                 <Baba f={f} x={540} y={1660} expr={awake ? "sly" : "shock"} blink={awake ? undefined : 1} talk={awake ? undefined : 0} tilt={awake ? 0 : -8} look={awake ? [-1, 0] : [0, 0]} />
                 <ellipse cx={awake ? 540 : 525} cy={975} rx={48} ry={20} fill="#FFF8EE" />
-                <Sofa x={540} y={1460} s={0.9} />
-                <Cake x={620} y={1250} s={0.55} eaten={1} />
+                <Sofa x={540} y={1690} s={0.9} />
+                <Cake x={640} y={1470} s={0.55} eaten={1} />
                 {!awake && [0, 1, 2].map((i) => <text key={i} x={700 + i * 40} y={560 - ((f * 2 + i * 40) % 140)} fontFamily={FONT} fontWeight={800} fontSize={50 - i * 8} fill="#2E7D7A">z</text>)}
                 <Jo f={f} x={130} y={1760} expr={awake ? "laugh" : "shock"} look={[1, -0.4]} />
                 <Faisal f={f} x={-40} y={1760} expr={awake ? "proud" : "shock"} look={[1, -0.4]} />
