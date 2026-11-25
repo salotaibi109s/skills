@@ -90,7 +90,7 @@ export const HomeA: React.FC = () => {
                 <Blanket x={260} />
                 <Bread x={250} y={1450} s={0.8} />
                 {f >= s4 && PAWS.map((p, i) => <Paw key={i} x={p.x + 260} y={p.y} r={80} o={ease(f, s4 + i * 4, s4 + i * 4 + 8)} />)}
-                <Faisal f={f} x={640} y={1640} s={0.38} expr={f >= s5 ? "shock" : "worry"} look={[-1, -0.2]} sweat={1} armL={{ target: [-260, -560] }} />
+                <Faisal f={f} x={300} y={1640} s={0.38} expr={f >= s5 ? "shock" : "worry"} look={[1, -0.2]} sweat={1} armR={{ target: [260, -560] }} />
                 <Jo f={f} x={470} y={1600} s={0.45} expr={f >= s3 && f < s4 ? "sly" : "smile"} look={[(spot.x - 470) / 400, 0.6]} armR={{ target: hand }} />
                 <Dark id="dA2" spots={[{ x: spot.x, y: spot.y, r: 170 }, { x: 540, y: 1460, r: 230 }]} o={0.8} />
                 <polygon points={`${hx},${hy} ${spot.x - 150},${spot.y} ${spot.x + 150},${spot.y}`} fill="#FFF3C4" opacity={0.12} />
