@@ -32,6 +32,19 @@ export const HOME_GAINS: Record<string, number> = {
   scratch: db(-10),
   aww: db(-12),
   jingle: db(-11),
+  meow: db(-10),
+  purr: db(-14),
+  heartbeat: db(-11),
+  switch: db(-10),
+  slurp: db(-13),
+  doorbell: db(-9),
+  sob: db(-12),
+  magnify: db(-12),
+  click: db(-8),
+  creak: db(-11),
+  dust: db(-14),
+  write: db(-13),
+  sting: db(-10),
 };
 
 /** Per-episode helpers: timing, lip sync and the cast bound to this episode's voices. */
@@ -52,14 +65,15 @@ export const makeHome = (T: TimelineData, MOUTH: Record<string, number[]>, dir: 
   type P = Omit<KidProps, "who" | "s"> & { s?: number; f: number };
   const Jo: React.FC<P> = ({ f, s = 0.55, ...p }) => <Kid s={s} who="joanna" glasses="pink" talk={talkOf("J", f)} blink={p.blink ?? blinkAt(f, 1)} {...p} />;
   const Faisal: React.FC<P> = ({ f, s = 0.42, ...p }) => <Kid s={s} who="boy" hair="#151010" skinTone="J" talk={talkOf("F", f)} blink={p.blink ?? blinkAt(f, 7)} {...p} />;
-  /** Saad, the cousin: a bit taller than Faisal, brown hair. */
-  const Saad: React.FC<P> = ({ f, s = 0.5, ...p }) => <Kid s={s} who="boy" hair="#6B3E22" skinTone="T" talk={talkOf("C", f)} blink={p.blink ?? blinkAt(f, 9)} {...p} />;
   const Baba: React.FC<Omit<React.ComponentProps<typeof Dad>, "s"> & { s?: number; f: number }> = ({ f, s = 0.62, ...p }) => <Dad s={s} talk={talkOf("D", f)} blink={p.blink ?? blinkAt(f, 11)} {...p} />;
-  /** Umm Saeed, the elderly neighbour: dark dress, white scarf, round glasses. */
-  const Neighbor: React.FC<Omit<React.ComponentProps<typeof Teacher>, "s"> & { s?: number; f: number }> = ({ f, s = 0.64, ...p }) => (
-    <Teacher s={s} dress="url(#oldDress)" scarf="url(#oldScarf)" scarfEdge="#B8B8C2" glasses talk={talkOf("N", f)} blink={p.blink ?? blinkAt(f, 12)} {...p} />
+  type AdultP = Omit<React.ComponentProps<typeof Teacher>, "s"> & { s?: number; f: number };
+  /** Mama: plum dress, pink scarf. */
+  const Mama: React.FC<AdultP> = ({ f, s = 0.6, ...p }) => <Teacher s={s} dress="url(#momDress)" scarf="url(#momScarf)" scarfEdge="#C98AA2" talk={talkOf("M", f)} blink={p.blink ?? blinkAt(f, 5)} {...p} />;
+  /** Grandma: dark dress, white scarf, round glasses. */
+  const Granny: React.FC<AdultP> = ({ f, s = 0.6, ...p }) => (
+    <Teacher s={s} dress="url(#oldDress)" scarf="url(#oldScarf)" scarfEdge="#B8B8C2" glasses talk={talkOf("G", f)} blink={p.blink ?? blinkAt(f, 12)} {...p} />
   );
-  return { line, at, endOf, talkOf, Sfx, Jo, Faisal, Saad, Baba, Neighbor };
+  return { line, at, endOf, talkOf, Sfx, Jo, Faisal, Baba, Mama, Granny };
 };
 
 /* ---------------------------------------------------------------- sets */
@@ -115,10 +129,10 @@ export const SofaBack: React.FC<{ x: number; y: number; s: number }> = ({ x, y, 
   </g>
 );
 
-export const Bedroom: React.FC<{ f: number }> = ({ f }) => (
+export const Bedroom: React.FC<{ f: number; lit?: boolean }> = ({ f, lit }) => (
   <g>
-    <rect x={-1400} y={-800} width={3900} height={2300} fill="#2A3358" />
-    <rect x={-1400} y={1260} width={3900} height={1400} fill="#3B3F66" />
+    <rect x={-1400} y={-800} width={3900} height={2300} fill={lit ? "#8FA3D8" : "#2A3358"} />
+    <rect x={-1400} y={1260} width={3900} height={1400} fill={lit ? "#A9A3C9" : "#3B3F66"} />
     <rect x={160} y={260} width={320} height={420} rx={12} fill="#141B36" stroke="#6B6FA0" strokeWidth={12} />
     <path d="M360 340 a40 40 0 1 0 26 66 a32 32 0 1 1 -26 -66Z" fill="#FFF3C4" />
     {Array.from({ length: 6 }).map((_, i) => (
@@ -160,6 +174,193 @@ export const Stairwell: React.FC<{ f: number }> = () => (
         <circle cx={d.x + 100} cy={930} r={14} fill="#F3C969" />
       </g>
     ))}
+  </g>
+);
+
+/** Little orange kitten. eyesOnly = just two glowing eyes in the dark. */
+export const Kitten: React.FC<{ x: number; y: number; s: number; f: number; wet?: number; sleep?: boolean; eyesOnly?: boolean; look?: number }> = ({ x, y, s, f, wet = 0, sleep, eyesOnly, look = 0 }) => {
+  const shiver = wet ? Math.sin(f * 2.3) * 4 * wet : 0;
+  const bl = Math.abs(Math.sin(f / 23)) > 0.97;
+  const eye = (cx: number) =>
+    sleep || bl ? (
+      <path d={`M${cx - 16} -150 q16 12 32 0`} stroke="#3A2414" strokeWidth={6} fill="none" strokeLinecap="round" />
+    ) : (
+      <g>
+        <ellipse cx={cx} cy={-150} rx={18} ry={22} fill={eyesOnly ? "#D8FF6A" : "#9BD84A"} />
+        <ellipse cx={cx + look * 5} cy={-150} rx={6} ry={16} fill="#111" />
+        <circle cx={cx - 6} cy={-158} r={5} fill="#fff" />
+      </g>
+    );
+  if (eyesOnly)
+    return (
+      <g transform={`translate(${x} ${y}) scale(${s})`}>
+        <circle cx={-34} cy={-150} r={46} fill="#D8FF6A" opacity={0.18} />
+        <circle cx={34} cy={-150} r={46} fill="#D8FF6A" opacity={0.18} />
+        {eye(-34)}
+        {eye(34)}
+      </g>
+    );
+  const tail = Math.sin(f / 9) * 14;
+  return (
+    <g transform={`translate(${x + shiver} ${y}) scale(${s})`}>
+      <ellipse cx={0} cy={0} rx={110} ry={16} fill="rgba(0,0,0,0.2)" />
+      <path d={`M70 -40 Q170 ${-60 + tail} 150 ${-150 + tail}`} stroke="#E8913A" strokeWidth={22} fill="none" strokeLinecap="round" />
+      <ellipse cx={0} cy={-55} rx={95} ry={60} fill="#F2A24A" />
+      <path d="M-40 -100 q20 30 0 70 M10 -110 q20 30 0 75" stroke="#D9822C" strokeWidth={10} fill="none" />
+      <circle cx={0} cy={-150} r={72} fill="#F2A24A" />
+      <path d="M-62 -190 L-58 -250 L-20 -212Z M62 -190 L58 -250 L20 -212Z" fill="#F2A24A" />
+      <path d="M-55 -200 L-54 -235 L-32 -212Z M55 -200 L54 -235 L32 -212Z" fill="#FFB7C5" />
+      {eye(-28)}
+      {eye(28)}
+      <path d="M-8 -128 h16 l-8 9Z" fill="#E8687E" />
+      <path d="M0 -119 q-10 12 -20 4 M0 -119 q10 12 20 4" stroke="#6B3A1E" strokeWidth={4} fill="none" />
+      {[-1, 1].map((d) => (
+        <g key={d} stroke="#fff" strokeWidth={3}>
+          <line x1={d * 30} y1={-125} x2={d * 90} y2={-135} />
+          <line x1={d * 30} y1={-118} x2={d * 90} y2={-112} />
+        </g>
+      ))}
+      {wet > 0 && [0, 1, 2].map((i) => <path key={i} d="M0 -12 q-9 14 0 20 q9 -6 0 -20Z" fill="#7FD3FF" opacity={wet} transform={`translate(${-60 + i * 55} ${-80 + ((f * 3 + i * 25) % 70)})`} />)}
+      {sleep && [0, 1].map((i) => <text key={i} x={70 + i * 30} y={-230 - ((f * 1.5 + i * 30) % 60)} fontFamily={FONT} fontWeight={800} fontSize={44 - i * 10} fill="#2E7D7A">z</text>)}
+    </g>
+  );
+};
+
+/** Darkness with a flashlight hole (world coords, inside Cam). */
+export const Dark: React.FC<{ id: string; spots: { x: number; y: number; r: number }[]; o?: number }> = ({ id, spots, o = 0.86 }) => (
+  <g>
+    <defs>
+      <mask id={id}>
+        <rect x={-1400} y={-800} width={3900} height={3300} fill="#fff" />
+        {spots.map((p, i) => (
+          <circle key={i} cx={p.x} cy={p.y} r={p.r} fill="#000" />
+        ))}
+      </mask>
+      <radialGradient id={`${id}g`}>
+        <stop offset="0%" stopColor="#FFF3C4" stopOpacity={0.35} />
+        <stop offset="100%" stopColor="#FFF3C4" stopOpacity={0} />
+      </radialGradient>
+    </defs>
+    <rect x={-1400} y={-800} width={3900} height={3300} fill="#050816" opacity={o} mask={`url(#${id})`} />
+    {spots.map((p, i) => (
+      <circle key={i} cx={p.x} cy={p.y} r={p.r * 1.1} fill={`url(#${id}g)`} />
+    ))}
+  </g>
+);
+
+export const Kitchen: React.FC<{ f: number }> = () => (
+  <g>
+    <rect x={-1400} y={-800} width={3900} height={2300} fill="#F4EBDD" />
+    {Array.from({ length: 14 }).map((_, i) => (
+      <rect key={i} x={-200 + i * 110} y={760} width={104} height={104} fill={i % 2 ? "#DCEFEA" : "#F2FAF8"} stroke="#C5DDD7" strokeWidth={3} />
+    ))}
+    <rect x={-1400} y={1260} width={3900} height={1400} fill="#D7C2A3" />
+    {/* upper cabinets */}
+    {[-100, 160, 420].map((x) => (
+      <rect key={x} x={x} y={260} width={240} height={360} rx={10} fill="#5FA8A0" stroke="#3F7F78" strokeWidth={8} />
+    ))}
+    {/* counter */}
+    <rect x={-300} y={870} width={1060} height={390} fill="#4E8E87" />
+    <rect x={-320} y={840} width={1100} height={40} rx={10} fill="#EDE6DA" />
+    {[-180, 120, 420].map((x) => (
+      <circle key={x} cx={x + 120} cy={1000} r={10} fill="#E0D2B8" />
+    ))}
+    {/* fridge */}
+    <rect x={840} y={360} width={300} height={900} rx={24} fill="#E8EEF3" stroke="#B9C6D1" strokeWidth={8} />
+    <line x1={840} x2={1140} y1={700} y2={700} stroke="#B9C6D1" strokeWidth={6} />
+    <rect x={870} y={560} width={16} height={100} rx={6} fill="#9AA6B2" />
+    <rect x={870} y={740} width={16} height={140} rx={6} fill="#9AA6B2" />
+    {/* wall clock */}
+    <circle cx={700} cy={380} r={90} fill="#fff" stroke="#C0574B" strokeWidth={12} />
+  </g>
+);
+
+/** Wall clock hands (draw over Kitchen). */
+export const ClockHands: React.FC<{ f: number }> = ({ f }) => (
+  <g transform="translate(700 380)">
+    <line x1={0} y1={0} x2={0} y2={-50} stroke="#333" strokeWidth={8} strokeLinecap="round" transform={`rotate(${120 + f * 0.2})`} />
+    <line x1={0} y1={0} x2={0} y2={-70} stroke="#C0574B" strokeWidth={4} strokeLinecap="round" transform={`rotate(${f * 6})`} />
+    <circle r={8} fill="#333" />
+  </g>
+);
+
+/** Cake on a stand; eaten = 0 (whole) .. 1 (crumbs only). */
+export const Cake: React.FC<{ x: number; y: number; s: number; eaten?: number }> = ({ x, y, s, eaten = 0 }) => (
+  <g transform={`translate(${x} ${y}) scale(${s})`}>
+    <ellipse cx={0} cy={0} rx={170} ry={28} fill="#E8EEF3" stroke="#B9C6D1" strokeWidth={5} />
+    <rect x={-14} y={0} width={28} height={70} fill="#B9C6D1" />
+    {eaten < 1 ? (
+      <g>
+        <rect x={-130} y={-150} width={260} height={150} rx={20} fill="#6B3A1E" />
+        <path d="M-130 -150 h260 v40 q-30 30 -60 0 q-30 30 -70 0 q-30 30 -70 0 q-30 30 -60 0Z" fill="#FFF3E6" />
+        {[-70, 0, 70].map((cx) => (
+          <circle key={cx} cx={cx} cy={-160} r={18} fill="#E8414B" />
+        ))}
+      </g>
+    ) : (
+      [-90, -40, 10, 60, 100, -20, 40].map((cx, i) => <circle key={i} cx={cx} cy={-12 - (i % 3) * 6} r={8 + (i % 2) * 4} fill="#6B3A1E" />)
+    )}
+  </g>
+);
+
+/** Grandma's storeroom: shelves, old boxes, a dusty light beam. */
+export const Storeroom: React.FC<{ f: number }> = ({ f }) => (
+  <g>
+    <rect x={-1400} y={-800} width={3900} height={2300} fill="#5B4636" />
+    <rect x={-1400} y={1260} width={3900} height={1400} fill="#3F2F24" />
+    <rect x={720} y={180} width={200} height={240} fill="#F6D58E" opacity={0.9} />
+    <path d="M720 420 L920 420 L620 1300 L120 1300Z" fill="#FFE7A8" opacity={0.16} />
+    {Array.from({ length: 14 }).map((_, i) => (
+      <circle key={i} cx={300 + ((i * 97 + f * (0.6 + (i % 3) * 0.3)) % 500)} cy={500 + ((i * 131 + f * 0.8) % 700)} r={3 + (i % 3)} fill="#FFF3C4" opacity={0.5} />
+    ))}
+    {[380, 640].map((y) => (
+      <g key={y}>
+        <rect x={-200} y={y} width={620} height={18} fill="#8B6A3E" />
+        <rect x={-160} y={y - 120} width={140} height={120} fill="#A07A4A" />
+        <rect x={20} y={y - 90} width={110} height={90} fill="#C9A26B" />
+        <rect x={180} y={y - 150} width={70} height={150} fill="#6E8B5A" />
+        <rect x={290} y={y - 100} width={100} height={100} fill="#B5443C" opacity={0.7} />
+      </g>
+    ))}
+    <rect x={-200} y={1060} width={300} height={200} fill="#8B6A3E" />
+    <rect x={120} y={1120} width={200} height={140} fill="#A07A4A" />
+  </g>
+);
+
+/** The old locked box; open = lid angle factor 0..1. */
+export const OldBox: React.FC<{ x: number; y: number; s: number; open?: number; sign?: boolean; digits?: string }> = ({ x, y, s, open = 0, sign = true, digits = "٠٠٠" }) => (
+  <g transform={`translate(${x} ${y}) scale(${s})`}>
+    <rect x={-260} y={-260} width={520} height={260} rx={18} fill="#7A4E2A" stroke="#4E2F16" strokeWidth={10} />
+    {[-160, 160].map((bx) => (
+      <rect key={bx} x={bx - 18} y={-260} width={36} height={260} fill="#C9A24A" />
+    ))}
+    {open > 0 && (
+      <g>
+        <rect x={-240} y={-250} width={480} height={30} fill="#2A1A0C" />
+        <circle cx={0} cy={-300} r={180 * open} fill="#FFE7A8" opacity={0.25 * open} />
+      </g>
+    )}
+    <g transform={`translate(0 -260) scale(1 ${1 - open * 1.8})`}>
+      <path d="M-270 0 v-80 q270 -90 540 0 v80Z" fill="#8B5A32" stroke="#4E2F16" strokeWidth={10} />
+    </g>
+    {open === 0 && (
+      <g transform="translate(0 -250)">
+        <path d="M-40 -20 v-30 a40 40 0 0 1 80 0 v30" stroke="#9AA6B2" strokeWidth={14} fill="none" />
+        <rect x={-75} y={-20} width={150} height={110} rx={14} fill="#C9A24A" stroke="#8B6A1E" strokeWidth={6} />
+        <rect x={-60} y={15} width={120} height={50} rx={8} fill="#2A1A0C" />
+        <text x={0} y={54} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={38} fill="#FFE27A" letterSpacing={6}>
+          {digits}
+        </text>
+      </g>
+    )}
+    {sign && open === 0 && (
+      <g transform="translate(-130 -130) rotate(-6)">
+        <rect x={-110} y={-45} width={220} height={90} fill="#FFF8E6" stroke="#C9B48A" strokeWidth={4} />
+        <text x={0} y={14} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={40} fill="#C0392B">
+          لا تفتحوه!
+        </text>
+      </g>
+    )}
   </g>
 );
 

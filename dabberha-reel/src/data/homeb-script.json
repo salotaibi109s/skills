@@ -1,6 +1,6 @@
 {
   "audioDir": "homeb",
-  "totalFrames": 1800,
+  "totalFrames": 1950,
   "tailSeconds": 0.3,
   "voice": {
     "preferredModels": [
@@ -21,169 +21,199 @@
   },
   "scenes": [
     {
-      "id": "H01-C",
-      "speaker": "C",
-      "voiceId": "CWVr3UPCDYlT6oZmdrEG",
+      "id": "H01-M",
+      "speaker": "M",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
       "settings": {
-        "stability": 0.3,
         "similarity_boost": 0.8,
-        "style": 0.75,
         "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 3.4,
-      "leadSeconds": 0.2,
-      "tts": "شوفوا! جهاز الألعاب الجديد… ما عند أحد مثله!"
+      "nominalSeconds": 4.6,
+      "leadSeconds": 0.5,
+      "tts": "الكعكة!! الضيوف بعد عشر دقايق… مين أكل الكعكة؟!"
     },
     {
       "id": "H02-F",
       "speaker": "F",
       "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.3,
         "similarity_boost": 0.8,
-        "style": 0.8,
         "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 1.8,
-      "leadSeconds": 0.2,
-      "tts": "عندنا أكبر منه!"
+      "nominalSeconds": 2.2,
+      "leadSeconds": 0.6,
+      "tts": "مو أنا! والله مو أنا!"
     },
     {
-      "id": "H03-J",
+      "id": "H03-M",
+      "speaker": "M",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 2.8,
+      "leadSeconds": 0.3,
+      "tts": "أجل وش هالشوكولاتة اللي على وجهك؟"
+    },
+    {
+      "id": "H04-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.3,
+      "tts": "هذي… حلاوة المدرسة!"
+    },
+    {
+      "id": "H05-J",
       "speaker": "J",
       "voiceId": "VcSFj5ljnKA0aQcxeHpl",
       "settings": {
-        "stability": 0.4,
         "similarity_boost": 0.8,
-        "style": 0.55,
         "use_speaker_boost": true,
-        "speed": 0.95
-      },
-      "nominalSeconds": 2.4,
-      "leadSeconds": 0.3,
-      "tts": "فيصل! وين عندنا؟!"
-    },
-    {
-      "id": "H04-C",
-      "speaker": "C",
-      "voiceId": "CWVr3UPCDYlT6oZmdrEG",
-      "settings": {
-        "stability": 0.3,
-        "similarity_boost": 0.8,
-        "style": 0.75,
-        "use_speaker_boost": true,
-        "speed": 1.05
-      },
-      "nominalSeconds": 2.6,
-      "leadSeconds": 0.3,
-      "tts": "صدق؟ أجل بكرة بجي أشوفه!"
-    },
-    {
-      "id": "H05-F",
-      "speaker": "F",
-      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
-      "settings": {
-        "stability": 0.4,
-        "similarity_boost": 0.8,
+        "stability": 0.38,
         "style": 0.6,
-        "use_speaker_boost": true,
-        "speed": 0.9
+        "speed": 1.0
       },
-      "nominalSeconds": 2.4,
-      "leadSeconds": 0.4,
-      "tts": "…أهلاً وسهلاً."
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.6,
+      "tts": "ماما… لا نحكم على أحد قبل ما نشوف الدليل."
     },
     {
-      "id": "H06-F",
-      "speaker": "F",
-      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "id": "H06-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
       "settings": {
-        "stability": 0.5,
         "similarity_boost": 0.8,
-        "style": 0.45,
         "use_speaker_boost": true,
-        "speed": 0.92
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
       },
-      "nominalSeconds": 3.4,
-      "leadSeconds": 1.4,
-      "tts": "جوانا… كذبت. وش أسوي؟"
+      "nominalSeconds": 2.8,
+      "leadSeconds": 0.9,
+      "tts": "الفتات يمشي من المطبخ… للصالة."
     },
     {
       "id": "H07-J",
       "speaker": "J",
       "voiceId": "VcSFj5ljnKA0aQcxeHpl",
       "settings": {
-        "stability": 0.4,
         "similarity_boost": 0.8,
-        "style": 0.55,
         "use_speaker_boost": true,
-        "speed": 0.95
-      },
-      "nominalSeconds": 4.0,
-      "leadSeconds": 0.3,
-      "tts": "الكذبة تكبر إذا خبّيناها… بس عندي فكرة."
-    },
-    {
-      "id": "H08-D",
-      "speaker": "D",
-      "voiceId": "RjFuvnufLX42TYe37ekK",
-      "settings": {
-        "stability": 0.45,
-        "similarity_boost": 0.8,
-        "style": 0.55,
-        "use_speaker_boost": true,
-        "speed": 0.95
-      },
-      "nominalSeconds": 5.6,
-      "leadSeconds": 2.6,
-      "tts": "اللعبة الحلوة… ما تنشرى. تنصنع."
-    },
-    {
-      "id": "H09-C",
-      "speaker": "C",
-      "voiceId": "CWVr3UPCDYlT6oZmdrEG",
-      "settings": {
-        "stability": 0.35,
-        "similarity_boost": 0.8,
-        "style": 0.65,
-        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 2.4,
-      "leadSeconds": 1.2,
-      "tts": "وين الجهاز الكبير؟"
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.9,
+      "tts": "وهذي رجل كبيرة… مو رجل فيصل!"
     },
     {
-      "id": "H10-F",
+      "id": "H08-F",
       "speaker": "F",
       "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.4,
         "similarity_boost": 0.8,
-        "style": 0.6,
         "use_speaker_boost": true,
-        "speed": 0.95
+        "stability": 0.45,
+        "style": 0.5,
+        "speed": 0.9
       },
-      "nominalSeconds": 4.2,
-      "leadSeconds": 0.3,
-      "tts": "ما عندنا جهاز… كذبت عليك. بس سوّينا شي أكبر!"
+      "nominalSeconds": 1.8,
+      "leadSeconds": 1.6,
+      "tts": "…وش هالصوت؟"
     },
     {
-      "id": "H11-C",
-      "speaker": "C",
-      "voiceId": "CWVr3UPCDYlT6oZmdrEG",
+      "id": "H09-D",
+      "speaker": "D",
+      "voiceId": "RjFuvnufLX42TYe37ekK",
       "settings": {
-        "stability": 0.3,
         "similarity_boost": 0.8,
-        "style": 0.8,
         "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 1.8,
+      "tts": "…كنت بس أتأكد إنها مستوية!"
+    },
+    {
+      "id": "H10-D",
+      "speaker": "D",
+      "voiceId": "RjFuvnufLX42TYe37ekK",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.6,
+      "tts": "سامحني يا بطل… ظلمناك."
+    },
+    {
+      "id": "H11-M",
+      "speaker": "M",
+      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 1.8,
+      "leadSeconds": 0.3,
+      "tts": "آسفة يا قلبي."
+    },
+    {
+      "id": "H12-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 7.0,
-      "leadSeconds": 2.0,
-      "tts": "هذا أحلى من جهازي! بكرة نسوي واحد ببيتنا؟"
+      "nominalSeconds": 2.4,
+      "leadSeconds": 1.4,
+      "tts": "طيب… وش نقدّم لهم الحين؟!"
+    },
+    {
+      "id": "H13-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 0.6,
+      "tts": "…عندي حلاوة!"
     }
   ],
   "sfx": [],

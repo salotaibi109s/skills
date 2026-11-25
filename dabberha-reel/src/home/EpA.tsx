@@ -5,196 +5,181 @@ import data from "../data/homea-timeline.json";
 import mouthData from "../data/homea-mouth.json";
 import type { TimelineData } from "../lib/timing";
 import { musicLevel } from "../room404/kit";
-import { Cam, ease, Flash, FONT, HomeEnd, LivingRoom, makeHome, Shot, Sofa, SofaBack, Svg, Tag } from "./kit";
+import { Bedroom, Cam, Dark, ease, Flash, FONT, HomeEnd, Kitten, makeHome, Shot, Svg, Tag } from "./kit";
 
 const T = data as TimelineData;
 const { line, at, endOf, Sfx, Jo, Faisal, Baba } = makeHome(T, mouthData as Record<string, number[]>, "homea");
+const S = (id: string) => line(id).from;
 
-/** Generic family-chat phone screen (no real app branding). */
-const Phone: React.FC<{ sending: number; cancelled: boolean; l: number }> = ({ sending, cancelled, l }) => {
-  const k = Math.min(1, l / 10);
-  return (
-    <div dir="rtl" style={{ position: "absolute", left: 230, right: 270, top: 330, height: 980, borderRadius: 60, background: "#111", padding: 18, boxShadow: "0 30px 80px rgba(0,0,0,0.5)", scale: String(0.8 + 0.2 * k), opacity: k }}>
-      <div style={{ height: "100%", borderRadius: 44, background: "#F2EDE4", overflow: "hidden", fontFamily: FONT, display: "flex", flexDirection: "column" }}>
-        <div style={{ background: "#2E7D7A", color: "#fff", padding: "26px 24px", fontWeight: 800, fontSize: 36 }}>
-          قروب العائلة 👨‍👩‍👧‍👦
-          <div style={{ fontSize: 24, fontWeight: 500, opacity: 0.85 }}>٢٤ عضو</div>
-        </div>
-        <div style={{ flex: 1, padding: 24, display: "flex", flexDirection: "column", gap: 14 }}>
-          <div style={{ alignSelf: "flex-start", background: "#fff", borderRadius: 18, padding: "10px 16px", fontSize: 26 }}>عمّو: صباح الخير ☀️</div>
-          <div style={{ alignSelf: "flex-start", background: "#fff", borderRadius: 18, padding: "10px 16px", fontSize: 26 }}>تيتة: الله يصبحكم بالخير 🌹</div>
-          <div style={{ marginTop: "auto", alignSelf: "flex-end", width: 300, borderRadius: 20, background: "#DDF3E6", padding: 10, opacity: cancelled ? 0.35 : 1 }}>
-            <div style={{ height: 220, borderRadius: 14, background: "#2E7D7A", display: "grid", placeItems: "center", fontSize: 90 }}>😴</div>
-            <div style={{ fontSize: 24, padding: "8px 4px" }}>{cancelled ? "تم إلغاء الإرسال ✓" : sending > 0 ? "جاري الإرسال…" : "📷 صورة"}</div>
-            {sending > 0 && !cancelled && (
-              <div style={{ height: 10, borderRadius: 5, background: "#C9D8CF", overflow: "hidden" }}>
-                <div style={{ width: `${sending * 100}%`, height: "100%", background: "#E8414B" }} />
-              </div>
-            )}
-          </div>
-        </div>
-        <div style={{ padding: 18, display: "flex", justifyContent: "flex-start" }}>
-          <div style={{ width: 86, height: 86, borderRadius: 43, background: cancelled ? "#9AA6B2" : "#2E7D7A", display: "grid", placeItems: "center", color: "#fff", fontSize: 44 }}>➤</div>
-        </div>
-      </div>
-    </div>
-  );
-};
+/** Dark gap under Faisal's bed where the "monster" hides. */
+const BedGap: React.FC = () => <rect x={620} y={1196} width={400} height={64} rx={8} fill="#070A18" />;
+const Blanket: React.FC<{ x: number }> = ({ x }) => <rect x={x - 220} y={1010} width={440} height={170} rx={24} fill="#7A8FD0" stroke="#5A6FB0" strokeWidth={6} />;
+
+const Bread: React.FC<{ x: number; y: number; s: number }> = ({ x, y, s }) => (
+  <g transform={`translate(${x} ${y}) scale(${s})`}>
+    <path d="M-70 0 q-10 -60 40 -70 q30 -20 60 0 q50 10 40 70Z" fill="#E3B26B" stroke="#B57E3A" strokeWidth={6} />
+    <path d="M10 -70 q12 18 0 30 q14 10 0 24 q12 10 4 16" fill="#2A3358" />
+  </g>
+);
+
+const Paw: React.FC<{ x: number; y: number; r?: number; o?: number }> = ({ x, y, r = 0, o = 1 }) => (
+  <g transform={`translate(${x} ${y}) rotate(${r})`} opacity={o} fill="#B07A48">
+    <ellipse cx={0} cy={6} rx={22} ry={16} />
+    {[-14, -5, 5, 14].map((d) => (
+      <circle key={d} cx={d} cy={-10 - (Math.abs(d) < 10 ? 4 : 0)} r={5} />
+    ))}
+  </g>
+);
+const PAWS = Array.from({ length: 9 }).map((_, i) => ({ x: -60 + i * 85, y: 1330 + (i % 2) * 30 - i * 4 }));
 
 export const HomeA: React.FC = () => {
-  const s2 = line("G02-J").from;
-  const s3 = line("G03-F").from;
-  const e3 = endOf("G03-F");
-  const j4 = at("G04-J");
-  const s5 = line("G05-J").from;
-  const s6 = line("G06-F").from;
-  const s8 = line("G08-D").from;
-  const s9 = line("G09-F").from;
-  const s10 = line("G10-D").from;
-  const s11 = line("G11-D").from;
-  const d11 = at("G11-D");
-  const e11 = endOf("G11-D");
-  const endFrom = e11 + 30;
-  const selfie = d11 + 50;
-  const sleepDad = (f: number, extra: Partial<React.ComponentProps<typeof Baba>> = {}) => <Baba f={f} x={540} y={1460} expr="shock" blink={1} tilt={-14} talk={0} {...extra} />;
+  const s2 = S("G02-J");
+  const s3 = S("G03-J");
+  const s4 = S("G04-F");
+  const s5 = S("G05-F");
+  const s6 = S("G06-J");
+  const s7 = S("G07-F");
+  const s8 = S("G08-D");
+  const s9 = S("G09-F");
+  const s10 = S("G10-D");
+  const s11 = S("G11-F");
+  const s12 = S("G12-J");
+  const meow = at("G05-F") - 40;
+  const lightsOn = at("G08-D") - 26;
+  const endFrom = endOf("G12-J") + 30;
   return (
-    <AbsoluteFill style={{ background: "#F6E6D0" }}>
-      {/* HOOK: Dad asleep, mouth open; Faisal sneaks up with the phone */}
-      <Shot from={0} to={s3}>
-        {(f, l) => (
-          <Svg>
-            <Cam fx={f >= s2 ? 380 : 520} fy={1180} z={f >= s2 ? 1.6 : 1.3}>
-              <LivingRoom f={f} />
-              <SofaBack x={540} y={1460} s={0.9} />
-              {sleepDad(f)}
-              <Sofa x={540} y={1460} s={0.9} />
-              {[0, 1, 2].map((i) => (
-                <text key={i} x={660 + i * 40 + Math.sin(f / 10 + i) * 10} y={560 - ((f * 2 + i * 40) % 140)} fontFamily={FONT} fontWeight={800} fontSize={50 - i * 8} fill="#2E7D7A" opacity={0.8}>
-                  z
-                </text>
-              ))}
-              <Faisal f={f} x={260} y={1720} expr="laugh" look={[1, -0.6]} armR={{ target: [200, -700] }} tilt={Math.sin(l / 4) * 4} />
-              <rect x={260 + 0.42 * 200 - 30} y={1720 - 0.42 * 700 - 50} width={60} height={100} rx={10} fill="#222" />
-              <Jo f={f} x={120} y={1720} expr={f >= s2 ? "worry" : "smile"} look={[1, -0.3]} armR={f >= s2 ? { target: [260, -560] } : {}} />
-            </Cam>
-          </Svg>
-        )}
-      </Shot>
-      {/* the phone: family group, sending… cancelled */}
-      <Shot from={s3} to={s5}>
+    <AbsoluteFill style={{ background: "#050816" }}>
+      {/* HOOK: glowing eyes under Faisal's bed */}
+      <Shot from={0} to={s2}>
         {(f, l) => {
-          const sending = f >= e3 ? ease(f, e3, j4 + 4) * 0.92 : 0;
-          const cancelled = f >= j4 + 2;
-          const run = f >= e3 + 10 && !cancelled;
+          const eyeK = ease(l, 6, 22);
           return (
-            <AbsoluteFill style={{ background: "#2A1E14" }}>
-              <Svg>
-                <Cam fx={540} fy={1200} z={1.1}>
-                  <LivingRoom f={f} />
-                </Cam>
-                <rect x={0} y={0} width={1080} height={1920} fill="#000" opacity={0.45} />
-              </Svg>
-              <Phone sending={sending} cancelled={cancelled} l={l} />
-              {run && (
-                <div dir="rtl" style={{ position: "absolute", top: 1360, left: 0, right: 0, textAlign: "center", fontFamily: FONT, fontWeight: 800, fontSize: 60, color: "#FFD23F" }}>
-                  {Math.max(1, 3 - Math.floor(((f - e3 - 10) / (j4 - e3 - 10)) * 3))}…
-                </div>
-              )}
-              {cancelled && f < j4 + 10 && <Flash l={f - j4 - 2} color="#8EF7A0" />}
-            </AbsoluteFill>
+            <Svg>
+              <Cam fx={760 + ease(l, 30, 90) * 60} fy={1080 + ease(l, 30, 90) * 80} z={2.3 - ease(l, 0, 30) * 0.5}>
+                <Bedroom f={f} />
+                <BedGap />
+                <Faisal f={f} x={820} y={1150} seated expr="shock" look={[-0.6, 1]} sweat={ease(l, 40, 60)} armsFront armL={{ target: [-40, -600] }} armR={{ target: [40, -600] }} />
+                <Blanket x={820} />
+                <Jo f={f} x={260} y={1150} s={0.5} seated expr="worry" blink={l < 70 ? 1 : undefined} look={[1, 0.3]} />
+                <Blanket x={260} />
+                <Dark id="dA1" spots={[{ x: 540, y: 900, r: 220 }]} o={0.72} />
+                <g opacity={eyeK}>
+                  <Kitten x={860} y={1300} s={0.42} f={f} eyesOnly look={-1} />
+                </g>
+              </Cam>
+            </Svg>
           );
         }}
       </Shot>
-      {/* perspective: what if it were you? */}
-      <Shot from={s5} to={s8}>
+      {/* the investigation by flashlight */}
+      <Shot from={s2} to={s6}>
         {(f) => {
-          const bubble = f < s6;
+          const spot = f < s3 ? { x: 470, y: 1250 } : f < s4 ? { x: 250, y: 1440 } : f < meow ? { x: 380, y: 1350 } : { x: 820, y: 1230 };
+          const tx = spot.x - (470 + 108 * 0.45);
+          const ty = spot.y - (1600 - 548 * 0.45);
+          const d = Math.hypot(tx, ty);
+          const hand: [number, number] = [108 + (tx / d) * 260, -548 + (ty / d) * 260];
+          const hx = 470 + hand[0] * 0.45;
+          const hy = 1600 + hand[1] * 0.45;
           return (
             <Svg>
-              <Cam fx={300} fy={1180} z={1.8}>
-                <LivingRoom f={f} />
-                <Jo f={f} x={160} y={1720} expr="sly" look={[1, 0]} armR={{ target: [200, -620] }} />
-                <Faisal f={f} x={430} y={1720} expr={bubble ? "worry" : "shock"} look={[-1, 0]} armL={bubble ? {} : { target: [-80, -560] }} armR={bubble ? {} : { target: [80, -560] }} armsFront={!bubble} sweat={bubble ? 0 : 1} />
-                {bubble && (
-                  <g transform="translate(330 860)">
-                    <ellipse rx={170} ry={120} fill="#fff" stroke="#6B4523" strokeWidth={6} />
-                    <circle cx={-160} cy={150} r={20} fill="#fff" stroke="#6B4523" strokeWidth={5} />
-                    <circle cx={0} cy={0} r={70} fill="#F2C29A" />
-                    <path d="M-30 -10 q10 8 20 0 M10 -10 q10 8 20 0" stroke="#2A1A10" strokeWidth={6} fill="none" />
-                    <ellipse cx={0} cy={30} rx={18} ry={14} fill="#7A2230" />
-                    <path d="M14 36 q6 30 -2 50" stroke="#7FD3FF" strokeWidth={8} fill="none" strokeLinecap="round" />
-                    <text x={90} y={-40} fontSize={40} fill="#2E7D7A" fontWeight={800}>z</text>
-                  </g>
+              <Cam fx={(spot.x + 480) / 2} fy={(spot.y + 1300) / 2} z={1.75}>
+                <Bedroom f={f} />
+                <BedGap />
+                <Blanket x={820} />
+                <Blanket x={260} />
+                <Bread x={250} y={1450} s={0.8} />
+                {f >= s4 && PAWS.map((p, i) => <Paw key={i} x={p.x + 260} y={p.y} r={80} o={ease(f, s4 + i * 4, s4 + i * 4 + 8)} />)}
+                <Faisal f={f} x={640} y={1640} s={0.38} expr={f >= s5 ? "shock" : "worry"} look={[-1, -0.2]} sweat={1} armL={{ target: [-260, -560] }} />
+                <Jo f={f} x={470} y={1600} s={0.45} expr={f >= s3 && f < s4 ? "sly" : "smile"} look={[(spot.x - 470) / 400, 0.6]} armR={{ target: hand }} />
+                <Dark id="dA2" spots={[{ x: spot.x, y: spot.y, r: 170 }, { x: 540, y: 1460, r: 230 }]} o={0.8} />
+                <polygon points={`${hx},${hy} ${spot.x - 150},${spot.y} ${spot.x + 150},${spot.y}`} fill="#FFF3C4" opacity={0.12} />
+                <rect x={hx - 18} y={hy - 18} width={36} height={36} rx={6} fill="#E8414B" />
+                {f >= meow && f < meow + 50 && (
+                  <text x={900} y={1120 - (f - meow)} fontFamily={FONT} fontWeight={800} fontSize={60} fill="#FFE27A" textAnchor="middle" opacity={1 - (f - meow) / 50}>
+                    مياااو…
+                  </text>
                 )}
               </Cam>
             </Svg>
           );
         }}
       </Shot>
-      {/* Dad wakes up; Faisal confesses */}
-      <Shot from={s8} to={s11}>
-        {(f, l) => {
-          const awake = ease(l, 0, 20);
-          const pat = f >= s10;
-          return (
+      {/* reveal: a soaked, shivering kitten */}
+      <Shot from={s6} to={lightsOn}>
+        {(f, l) => (
+          <AbsoluteFill>
             <Svg>
-              <Cam fx={pat ? 480 : 520} fy={1150} z={pat ? 1.55 : 1.35}>
-                <LivingRoom f={f} />
-                <SofaBack x={540} y={1460} s={0.9} />
-                <Baba f={f} x={540} y={1460} expr={pat ? "happy" : f >= s9 ? "smile" : "worry"} tilt={-14 + awake * 14} look={[-0.6, 0.3]} armL={pat ? { target: [-300, -560] } : { a: 120 * (1 - awake) + 20, b: 150 * (1 - awake) + 40 }} armR={{ a: 20, b: 40 }} />
-                <Sofa x={540} y={1460} s={0.9} />
-                <Faisal f={f} x={330} y={1720} expr={f >= s9 && !pat ? "worry" : pat ? "happy" : "shock"} look={[1, -0.6]} tilt={f >= s9 && !pat ? 8 : 0} />
-                <Jo f={f} x={150} y={1720} expr={pat ? "happy" : "smile"} look={[1, -0.4]} />
+              <Cam fx={600} fy={1250} z={2.2 - ease(l, 0, 40) * 0.3}>
+                <Bedroom f={f} />
+                <rect x={-200} y={1196} width={1600} height={260} fill="#070A18" />
+                <Kitten x={640} y={1400} s={0.55} f={f} wet={f < s8 ? 1 : 0.6} look={-1} />
+                <Faisal f={f} x={330} y={1820} s={0.42} tilt={14} expr={f >= s7 ? "worry" : "shock"} look={[1, 0.2]} />
+                <Dark id="dA3" spots={[{ x: 640, y: 1330, r: 200 }, { x: 330, y: 1480, r: 140 }]} o={0.75} />
               </Cam>
             </Svg>
-          );
-        }}
+            {l < 6 && <Flash l={l} color="#FFF3C4" />}
+          </AbsoluteFill>
+        )}
       </Shot>
-      {/* Dad's revenge selfie */}
-      <Shot from={s11} to={endFrom}>
-        {(f) => {
-          const shot = f >= selfie;
+      {/* lights on: Dad, milk, the decision */}
+      <Shot from={lightsOn} to={s12}>
+        {(f, l) => {
+          const cheer = f >= s11;
           return (
             <AbsoluteFill>
               <Svg>
-                <Cam fx={460} fy={1100} z={1.6}>
-                  <LivingRoom f={f} />
-                  <SofaBack x={540} y={1460} s={0.9} />
-                  <Baba f={f} x={540} y={1460} expr={shot ? "laugh" : "sly"} look={[-0.3, -0.2]} armR={{ target: [240, -1300] }} armL={{ target: [-300, -560] }} tilt={-6} />
-                  <Sofa x={540} y={1460} s={0.9} />
-                  <rect x={540 + 0.62 * 240 - 40} y={1460 - 0.62 * 1300 - 60} width={80} height={130} rx={12} fill="#222" />
-                  <Faisal f={f} x={360} y={1720} expr={shot ? "laugh" : "shock"} look={[0.4, -0.6]} armL={{ target: [-80, -620] }} armsFront />
-                  <Jo f={f} x={160} y={1720} expr="laugh" look={[1, -0.4]} tilt={Math.sin(f / 4) * 4} />
+                <Cam fx={f >= s10 && f < s11 ? 320 : 520} fy={1240} z={f >= s10 && f < s11 ? 1.55 : 1.25}>
+                  <Bedroom f={f} lit />
+                  <Blanket x={820} />
+                  <Blanket x={260} />
+                  <Baba f={f} x={170} y={1820} expr={f >= s10 ? "smile" : "worry"} look={[1, 0.2]} armR={f >= s10 ? { target: [250, -620] } : {}} />
+                  <ellipse cx={600} cy={1700} rx={90} ry={22} fill="#fff" stroke="#C9D3E0" strokeWidth={6} />
+                  <ellipse cx={600} cy={1696} rx={64} ry={12} fill="#F6F1E6" />
+                  <Kitten x={600} y={1690} s={0.42} f={f} wet={0} look={0} />
+                  <Faisal f={f} x={820} y={1800} s={0.42} expr={cheer ? "laugh" : f >= s9 ? "happy" : "smile"} look={[-1, -0.3]} armL={cheer ? { a: 150, b: 175 } : { target: [-230, -440] }} armR={cheer ? { a: 150, b: 175 } : {}} />
+                  <Jo f={f} x={420} y={1800} s={0.5} expr="happy" look={f >= s8 && f < s9 ? [-1, -0.3] : [1, 0]} />
                 </Cam>
               </Svg>
-              {shot && f < selfie + 8 && <Flash l={f - selfie} />}
-              {shot && (
-                <div style={{ position: "absolute", top: 300, left: 300, right: 340, height: 380, borderRadius: 24, border: "10px solid #fff", background: "#2E7D7A", boxShadow: "0 20px 50px rgba(0,0,0,0.35)", rotate: "-6deg", display: "grid", placeItems: "center", fontSize: 120, opacity: ease(f, selfie + 4, selfie + 14) }}>
-                  🤳😂
-                </div>
-              )}
+              {l < 6 && <Flash l={l} />}
             </AbsoluteFill>
           );
         }}
       </Shot>
-      <Shot from={endFrom} to={1800}>
-        {(_f, l) => <HomeEnd l={l} value="خصوصية غيرك… أمانة 🤍" next="عندنا أكبر!" />}
+      {/* the joke: the "monster" sleeps on Faisal's head */}
+      <Shot from={s12} to={endFrom}>
+        {(f, l) => (
+          <Svg>
+            <Cam fx={600} fy={1000} z={1.7 - ease(l, 0, 60) * 0.25}>
+              <Bedroom f={f} />
+              <Faisal f={f} x={820} y={1150} seated expr="shock" blink={0} look={[0, -1]} />
+              <Kitten x={820} y={765} s={0.34} f={f} sleep />
+              <Blanket x={820} />
+              <Jo f={f} x={260} y={1150} s={0.5} seated expr="laugh" look={[1, 0]} />
+              <Blanket x={260} />
+              <Dark id="dA5" spots={[{ x: 540, y: 900, r: 700 }]} o={0.35} />
+            </Cam>
+          </Svg>
+        )}
+      </Shot>
+      <Shot from={endFrom} to={1950}>
+        {(_f, l) => <HomeEnd l={l} value="الرحمة… تبدأ لما نهدأ ونفكّر 🤍" next="مين أكل كعكة الضيوف؟" />}
       </Shot>
       <Tag text="حكايات بيتنا · الحلقة ١" />
 
-      <Sfx name="snore" at={0} />
-      <Sfx name="giggle" at={20} gain={0.6} />
-      <Sfx name="camera" at={s2 - 10} />
-      <Sfx name="pop" at={s3 + 2} />
-      <Sfx name="send" at={e3} />
-      <Sfx name="tick" at={e3 + 10} />
-      <Sfx name="whoosh" at={j4 - 10} />
-      <Sfx name="scratch" at={j4} gain={0.7} />
-      <Sfx name="gasp" at={s6} gain={0.6} />
-      <Sfx name="boing" at={s8 + 4} gain={0.6} />
-      <Sfx name="aww" at={s10 + 10} gain={0.6} />
-      <Sfx name="camera" at={selfie} />
-      <Sfx name="laugh" at={selfie + 8} />
+      <Sfx name="scratch" at={2} />
+      <Sfx name="heartbeat" at={20} />
+      <Sfx name="click" at={s2 + 10} />
+      <Sfx name="magnify" at={s3} />
+      <Sfx name="steps" at={s4} />
+      <Sfx name="meow" at={meow} />
+      <Sfx name="sting" at={s6} />
+      <Sfx name="aww" at={s7} gain={0.6} />
+      <Sfx name="switch" at={lightsOn} />
+      <Sfx name="slurp" at={s9 + 10} />
+      <Sfx name="cheer" at={s11 + 20} gain={0.6} />
+      <Sfx name="purr" at={s12} />
+      <Sfx name="laugh" at={endOf("G12-J")} gain={0.6} />
       <Sfx name="jingle" at={endFrom} />
       {T.audio.vo && T.scenes.map((s) => <Audio key={s.id} name={`VO ${s.id}`} src={staticFile(`audio/homea/vo/${s.id}.mp3`)} from={s.from + s.voFrom} />)}
       {T.audio.music && <Audio src={staticFile("audio/homea/music/theme.mp3")} loop volume={(f) => musicLevel(T, f)} />}

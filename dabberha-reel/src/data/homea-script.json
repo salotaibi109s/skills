@@ -1,6 +1,6 @@
 {
   "audioDir": "homea",
-  "totalFrames": 1800,
+  "totalFrames": 1950,
   "tailSeconds": 0.3,
   "voice": {
     "preferredModels": [
@@ -25,165 +25,180 @@
       "speaker": "F",
       "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.3,
         "similarity_boost": 0.8,
-        "style": 0.8,
         "use_speaker_boost": true,
-        "speed": 1.05
+        "stability": 0.45,
+        "style": 0.5,
+        "speed": 0.9
       },
-      "nominalSeconds": 3.4,
-      "leadSeconds": 0.3,
-      "tts": "جوانا! شوفي بابا… فمه مفتوح مثل الكهف!"
+      "nominalSeconds": 3.8,
+      "leadSeconds": 0.6,
+      "tts": "جوانا… في شي تحت سريري… وعيونه تلمع!"
     },
     {
       "id": "G02-J",
       "speaker": "J",
       "voiceId": "VcSFj5ljnKA0aQcxeHpl",
       "settings": {
-        "stability": 0.35,
         "similarity_boost": 0.8,
-        "style": 0.65,
         "use_speaker_boost": true,
-        "speed": 1.05
+        "stability": 0.45,
+        "style": 0.5,
+        "speed": 0.9
       },
-      "nominalSeconds": 1.8,
-      "leadSeconds": 0.2,
-      "tts": "فيصل! لا تصوّره!"
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.5,
+      "tts": "لا تصرخ… خلنا نفكّر أول."
     },
     {
-      "id": "G03-F",
+      "id": "G03-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 4.0,
+      "leadSeconds": 1.0,
+      "tts": "شوف… أحد أكل الخبز. من متى الوحوش تاكل خبز؟"
+    },
+    {
+      "id": "G04-F",
       "speaker": "F",
       "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.3,
         "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
         "style": 0.8,
-        "use_speaker_boost": true,
         "speed": 1.05
       },
-      "nominalSeconds": 3.6,
-      "leadSeconds": 0.3,
-      "tts": "بس صورة وحدة… لقروب العائلة! بيضحكون كلهم!"
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.9,
+      "tts": "آثار صغيرة! يعني… وحش صغير؟!"
     },
     {
-      "id": "G04-J",
-      "speaker": "J",
-      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
-      "settings": {
-        "stability": 0.25,
-        "similarity_boost": 0.8,
-        "style": 0.8,
-        "use_speaker_boost": true,
-        "speed": 1.05
-      },
-      "nominalSeconds": 2.6,
-      "leadSeconds": 3.6,
-      "tts": "وقّف!"
-    },
-    {
-      "id": "G05-J",
-      "speaker": "J",
-      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
-      "settings": {
-        "stability": 0.35,
-        "similarity_boost": 0.8,
-        "style": 0.65,
-        "use_speaker_boost": true,
-        "speed": 1.05
-      },
-      "nominalSeconds": 4.4,
-      "leadSeconds": 0.8,
-      "tts": "تبيني أرسل صورتك وأنت نايم، والريالة على المخدة؟"
-    },
-    {
-      "id": "G06-F",
+      "id": "G05-F",
       "speaker": "F",
       "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.3,
         "similarity_boost": 0.8,
-        "style": 0.8,
         "use_speaker_boost": true,
-        "speed": 1.05
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
       },
-      "nominalSeconds": 1.8,
-      "leadSeconds": 0.2,
-      "tts": "…لا! فضيحة!"
+      "nominalSeconds": 2.2,
+      "leadSeconds": 1.6,
+      "tts": "…الوحش يقول مياو؟"
     },
     {
-      "id": "G07-J",
+      "id": "G06-J",
       "speaker": "J",
       "voiceId": "VcSFj5ljnKA0aQcxeHpl",
       "settings": {
-        "stability": 0.35,
         "similarity_boost": 0.8,
-        "style": 0.65,
         "use_speaker_boost": true,
-        "speed": 1.05
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
       },
-      "nominalSeconds": 2.6,
-      "leadSeconds": 0.3,
-      "tts": "أجل بابا بعد ما يبيها."
+      "nominalSeconds": 4.0,
+      "leadSeconds": 1.4,
+      "tts": "هذي قطوة… وخايفة منك أكثر ما أنت خايف منها!"
+    },
+    {
+      "id": "G07-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.4,
+      "tts": "يعني… أنا اللي خوّفتها؟"
     },
     {
       "id": "G08-D",
       "speaker": "D",
       "voiceId": "RjFuvnufLX42TYe37ekK",
       "settings": {
-        "stability": 0.45,
         "similarity_boost": 0.8,
-        "style": 0.55,
         "use_speaker_boost": true,
-        "speed": 0.95
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
       },
-      "nominalSeconds": 3.0,
-      "leadSeconds": 1.0,
-      "tts": "وش فيكم؟ ليش واقفين فوق راسي؟"
+      "nominalSeconds": 2.6,
+      "leadSeconds": 1.2,
+      "tts": "وش هالأصوات بنص الليل؟"
     },
     {
       "id": "G09-F",
       "speaker": "F",
       "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.45,
         "similarity_boost": 0.8,
-        "style": 0.55,
         "use_speaker_boost": true,
-        "speed": 0.95
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
       },
-      "nominalSeconds": 5.0,
-      "leadSeconds": 0.4,
-      "tts": "بابا… كنت بصوّرك وأرسلها… بس جوانا وقّفتني. آسف."
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.3,
+      "tts": "بابا… جانا ضيف! نقدر نخليه؟"
     },
     {
       "id": "G10-D",
       "speaker": "D",
       "voiceId": "RjFuvnufLX42TYe37ekK",
       "settings": {
-        "stability": 0.45,
         "similarity_boost": 0.8,
-        "style": 0.55,
         "use_speaker_boost": true,
-        "speed": 0.95
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
       },
-      "nominalSeconds": 3.6,
+      "nominalSeconds": 4.4,
       "leadSeconds": 0.4,
-      "tts": "أحسنت يوم اعترفت… وأحسنتِ يا جوانا."
+      "tts": "الرحمة بالحيوان أجر… بس الاهتمام فيها مسؤوليتك."
     },
     {
-      "id": "G11-D",
-      "speaker": "D",
-      "voiceId": "RjFuvnufLX42TYe37ekK",
+      "id": "G11-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.4,
         "similarity_boost": 0.8,
-        "style": 0.65,
         "use_speaker_boost": true,
-        "speed": 1.0
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
       },
-      "nominalSeconds": 8.0,
-      "leadSeconds": 0.6,
-      "tts": "بس الحين… دوري أصوّرك وأنت تتأسف!"
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.3,
+      "tts": "موافق! بسمّيها… وحش!"
+    },
+    {
+      "id": "G12-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.0,
+      "leadSeconds": 1.4,
+      "tts": "الوحش نام… وأنت اللي ما راح تنام!"
     }
   ],
   "sfx": [],

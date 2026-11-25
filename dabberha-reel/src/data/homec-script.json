@@ -1,6 +1,6 @@
 {
   "audioDir": "homec",
-  "totalFrames": 1800,
+  "totalFrames": 1950,
   "tailSeconds": 0.3,
   "voice": {
     "preferredModels": [
@@ -25,165 +25,210 @@
       "speaker": "F",
       "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.25,
         "similarity_boost": 0.8,
-        "style": 0.85,
         "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 2.8,
-      "leadSeconds": 0.2,
-      "tts": "جوانا! جوانا! لقيت مية ريال!"
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.4,
+      "tts": "جوانا! صندوق مكتوب عليه: لا تفتحوه!"
     },
     {
       "id": "I02-F",
       "speaker": "F",
       "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.3,
         "similarity_boost": 0.8,
-        "style": 0.8,
         "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 3.4,
+      "nominalSeconds": 2.2,
       "leadSeconds": 0.3,
-      "tts": "صرنا أغنياء! بشتري سيارة… لا، طيارة!"
+      "tts": "أكيد فيه كنز… ذهب!"
     },
     {
       "id": "I03-J",
       "speaker": "J",
       "voiceId": "VcSFj5ljnKA0aQcxeHpl",
       "settings": {
-        "stability": 0.4,
         "similarity_boost": 0.8,
-        "style": 0.55,
         "use_speaker_boost": true,
-        "speed": 0.95
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
       },
-      "nominalSeconds": 2.4,
-      "leadSeconds": 0.6,
-      "tts": "فيصل… هالفلوس مو لنا."
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.4,
+      "tts": "القفل له ثلاث أرقام… وأول شي نستأذن جدتي."
     },
     {
-      "id": "I04-F",
+      "id": "I04-G",
+      "speaker": "G",
+      "voiceId": "j2SmAsUegz7ncz4AXe6D",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 0.8,
+      "tts": "إذا عرفتوا الرمز افتحوه… والرمز في صورة أبوكم وهو صغير."
+    },
+    {
+      "id": "I05-F",
       "speaker": "F",
       "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.35,
         "similarity_boost": 0.8,
-        "style": 0.7,
         "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 2.6,
-      "leadSeconds": 0.3,
-      "tts": "بس لقيناها! يعني صارت حقنا؟"
-    },
-    {
-      "id": "I05-J",
-      "speaker": "J",
-      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
-      "settings": {
-        "stability": 0.4,
-        "similarity_boost": 0.8,
-        "style": 0.55,
-        "use_speaker_boost": true,
-        "speed": 0.95
-      },
-      "nominalSeconds": 3.4,
-      "leadSeconds": 0.3,
-      "tts": "لو أنت ضيّعت مية ريال… تبي أحد ياخذها؟"
+      "nominalSeconds": 2.4,
+      "leadSeconds": 1.0,
+      "tts": "ستة شموع! نفس عمري!"
     },
     {
       "id": "I06-J",
       "speaker": "J",
       "voiceId": "VcSFj5ljnKA0aQcxeHpl",
       "settings": {
-        "stability": 0.35,
         "similarity_boost": 0.8,
-        "style": 0.65,
         "use_speaker_boost": true,
-        "speed": 1.05
-      },
-      "nominalSeconds": 3.6,
-      "leadSeconds": 1.6,
-      "tts": "شوف! فاتورة صيدلية… مكتوب: شقة أربعة."
-    },
-    {
-      "id": "I07-N",
-      "speaker": "N",
-      "voiceId": "j2SmAsUegz7ncz4AXe6D",
-      "settings": {
-        "stability": 0.5,
-        "similarity_boost": 0.8,
-        "style": 0.5,
-        "use_speaker_boost": true,
-        "speed": 0.9
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
       },
       "nominalSeconds": 4.4,
-      "leadSeconds": 2.6,
-      "tts": "يا بعد عمري… هذي فلوس دواي! من الصبح أدوّرها."
+      "leadSeconds": 0.3,
+      "tts": "وثلاث سمكات… وسن واحد طايح. الرمز: ستة، ثلاثة، واحد!"
+    },
+    {
+      "id": "I07-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 3.8,
+      "leadSeconds": 1.8,
+      "tts": "يمّه… لما أكبر بشتري لك بيت فيه حديقة."
     },
     {
       "id": "I08-F",
       "speaker": "F",
       "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.4,
         "similarity_boost": 0.8,
-        "style": 0.6,
         "use_speaker_boost": true,
-        "speed": 0.95
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
       },
-      "nominalSeconds": 2.8,
-      "leadSeconds": 0.3,
-      "tts": "تفضّلي يا خالة… لقيناها على الدرج."
+      "nominalSeconds": 1.8,
+      "leadSeconds": 0.4,
+      "tts": "…ما فيه ذهب؟"
     },
     {
-      "id": "I09-N",
-      "speaker": "N",
+      "id": "I09-G",
+      "speaker": "G",
       "voiceId": "j2SmAsUegz7ncz4AXe6D",
       "settings": {
-        "stability": 0.5,
         "similarity_boost": 0.8,
-        "style": 0.5,
         "use_speaker_boost": true,
-        "speed": 0.9
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
       },
-      "nominalSeconds": 4.0,
-      "leadSeconds": 0.4,
-      "tts": "الله يحفظكم ويرزقكم… وجهكم وجه خير."
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.3,
+      "tts": "هذا عندي أغلى من الذهب."
     },
     {
-      "id": "I10-F",
+      "id": "I10-D",
+      "speaker": "D",
+      "voiceId": "RjFuvnufLX42TYe37ekK",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 1.0,
+      "tts": "يمّه… للحين محتفظة فيها؟"
+    },
+    {
+      "id": "I11-G",
+      "speaker": "G",
+      "voiceId": "j2SmAsUegz7ncz4AXe6D",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 4.8,
+      "leadSeconds": 0.4,
+      "tts": "أبوكم وفى بوعده… هذا البيت اللي أنتم فيه، هو اشتراه لي."
+    },
+    {
+      "id": "I12-F",
       "speaker": "F",
       "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
       "settings": {
-        "stability": 0.4,
         "similarity_boost": 0.8,
-        "style": 0.6,
         "use_speaker_boost": true,
-        "speed": 0.95
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
       },
-      "nominalSeconds": 3.6,
-      "leadSeconds": 1.4,
-      "tts": "تدرين يا جوانا؟ هالشعور… أحلى من الطيارة."
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.8,
+      "tts": "جدتي! أنا بعد بشتري لك شي لما أكبر…"
     },
     {
-      "id": "I11-J",
+      "id": "I13-J",
       "speaker": "J",
       "voiceId": "VcSFj5ljnKA0aQcxeHpl",
       "settings": {
-        "stability": 0.3,
         "similarity_boost": 0.8,
-        "style": 0.75,
         "use_speaker_boost": true,
-        "speed": 1.05
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
       },
-      "nominalSeconds": 6.0,
+      "nominalSeconds": 1.0,
+      "leadSeconds": 0.2,
+      "tts": "بيت؟"
+    },
+    {
+      "id": "I14-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 4.6,
       "leadSeconds": 0.3,
-      "tts": "فيصل… أنت ما عندك طيارة أصلاً!"
+      "tts": "…لا، آيسكريم. البيت غالي!"
     }
   ],
   "sfx": [],

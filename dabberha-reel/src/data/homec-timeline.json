@@ -1,6 +1,6 @@
 {
   "fps": 30,
-  "durationInFrames": 1800,
+  "durationInFrames": 1950,
   "estimated": true,
   "audio": {
     "vo": false,
@@ -11,566 +11,710 @@
     {
       "id": "I01-F",
       "from": 0,
-      "durationInFrames": 99,
+      "durationInFrames": 112,
       "transitionFrames": 0,
-      "voFrom": 6,
-      "voDurationInFrames": 95,
+      "voFrom": 12,
+      "voDurationInFrames": 102,
       "words": [
         {
           "text": "جوانا",
           "raw": "جوانا!",
-          "start": 6,
-          "end": 19
+          "start": 12,
+          "end": 25
         },
         {
-          "text": "جوانا",
-          "raw": "جوانا!",
-          "start": 30,
-          "end": 43
-        },
-        {
-          "text": "لقيت",
-          "raw": "لقيت",
-          "start": 55,
-          "end": 66
-        },
-        {
-          "text": "مية",
-          "raw": "مية",
-          "start": 67,
-          "end": 77
-        },
-        {
-          "text": "ريال",
-          "raw": "ريال!",
-          "start": 78,
-          "end": 89
-        }
-      ]
-    },
-    {
-      "id": "I02-F",
-      "from": 99,
-      "durationInFrames": 126,
-      "transitionFrames": 0,
-      "voFrom": 9,
-      "voDurationInFrames": 120,
-      "words": [
-        {
-          "text": "صرنا",
-          "raw": "صرنا",
-          "start": 9,
-          "end": 20
-        },
-        {
-          "text": "أغنياء",
-          "raw": "أغنياء!",
-          "start": 22,
-          "end": 37
-        },
-        {
-          "text": "بشتري",
-          "raw": "بشتري",
-          "start": 48,
-          "end": 61
-        },
-        {
-          "text": "سيارة",
-          "raw": "سيارة…",
-          "start": 63,
-          "end": 76
-        },
-        {
-          "text": "لا",
-          "raw": "لا،",
-          "start": 90,
-          "end": 97
-        },
-        {
-          "text": "طيارة",
-          "raw": "طيارة!",
-          "start": 104,
-          "end": 117
-        }
-      ]
-    },
-    {
-      "id": "I03-J",
-      "from": 225,
-      "durationInFrames": 90,
-      "transitionFrames": 0,
-      "voFrom": 18,
-      "voDurationInFrames": 74,
-      "words": [
-        {
-          "text": "فيصل",
-          "raw": "فيصل…",
-          "start": 18,
-          "end": 29
-        },
-        {
-          "text": "هالفلوس",
-          "raw": "هالفلوس",
-          "start": 43,
-          "end": 60
-        },
-        {
-          "text": "مو",
-          "raw": "مو",
-          "start": 62,
-          "end": 69
-        },
-        {
-          "text": "لنا",
-          "raw": "لنا.",
-          "start": 71,
-          "end": 80
-        }
-      ]
-    },
-    {
-      "id": "I04-F",
-      "from": 315,
-      "durationInFrames": 92,
-      "transitionFrames": 0,
-      "voFrom": 9,
-      "voDurationInFrames": 86,
-      "words": [
-        {
-          "text": "بس",
-          "raw": "بس",
-          "start": 9,
-          "end": 16
-        },
-        {
-          "text": "لقيناها",
-          "raw": "لقيناها!",
-          "start": 18,
-          "end": 35
-        },
-        {
-          "text": "يعني",
-          "raw": "يعني",
-          "start": 46,
-          "end": 57
-        },
-        {
-          "text": "صارت",
-          "raw": "صارت",
-          "start": 59,
-          "end": 70
-        },
-        {
-          "text": "حقنا",
-          "raw": "حقنا؟",
-          "start": 72,
-          "end": 83
-        }
-      ]
-    },
-    {
-      "id": "I05-J",
-      "from": 407,
-      "durationInFrames": 126,
-      "transitionFrames": 0,
-      "voFrom": 9,
-      "voDurationInFrames": 120,
-      "words": [
-        {
-          "text": "لو",
-          "raw": "لو",
-          "start": 9,
-          "end": 16
-        },
-        {
-          "text": "أنت",
-          "raw": "أنت",
-          "start": 18,
-          "end": 27
-        },
-        {
-          "text": "ضيّعت",
-          "raw": "ضيّعت",
-          "start": 29,
-          "end": 42
-        },
-        {
-          "text": "مية",
-          "raw": "مية",
-          "start": 44,
-          "end": 53
-        },
-        {
-          "text": "ريال",
-          "raw": "ريال…",
-          "start": 55,
-          "end": 66
-        },
-        {
-          "text": "تبي",
-          "raw": "تبي",
-          "start": 80,
-          "end": 89
-        },
-        {
-          "text": "أحد",
-          "raw": "أحد",
-          "start": 91,
-          "end": 100
-        },
-        {
-          "text": "ياخذها",
-          "raw": "ياخذها؟",
-          "start": 102,
-          "end": 117
-        }
-      ]
-    },
-    {
-      "id": "I06-J",
-      "from": 533,
-      "durationInFrames": 162,
-      "transitionFrames": 0,
-      "voFrom": 48,
-      "voDurationInFrames": 117,
-      "words": [
-        {
-          "text": "شوف",
-          "raw": "شوف!",
-          "start": 48,
-          "end": 57
-        },
-        {
-          "text": "فاتورة",
-          "raw": "فاتورة",
-          "start": 69,
-          "end": 83
-        },
-        {
-          "text": "صيدلية",
-          "raw": "صيدلية…",
-          "start": 85,
-          "end": 100
+          "text": "صندوق",
+          "raw": "صندوق",
+          "start": 36,
+          "end": 49
         },
         {
           "text": "مكتوب",
-          "raw": "مكتوب:",
-          "start": 114,
-          "end": 127
+          "raw": "مكتوب",
+          "start": 51,
+          "end": 64
         },
         {
-          "text": "شقة",
-          "raw": "شقة",
-          "start": 129,
-          "end": 138
-        },
-        {
-          "text": "أربعة",
-          "raw": "أربعة.",
-          "start": 140,
-          "end": 153
-        }
-      ]
-    },
-    {
-      "id": "I07-N",
-      "from": 695,
-      "durationInFrames": 220,
-      "transitionFrames": 0,
-      "voFrom": 78,
-      "voDurationInFrames": 144,
-      "words": [
-        {
-          "text": "يا",
-          "raw": "يا",
-          "start": 78,
-          "end": 85
-        },
-        {
-          "text": "بعد",
-          "raw": "بعد",
-          "start": 87,
-          "end": 96
-        },
-        {
-          "text": "عمري",
-          "raw": "عمري…",
-          "start": 98,
-          "end": 109
-        },
-        {
-          "text": "هذي",
-          "raw": "هذي",
-          "start": 124,
-          "end": 133
-        },
-        {
-          "text": "فلوس",
-          "raw": "فلوس",
-          "start": 135,
-          "end": 146
-        },
-        {
-          "text": "دواي",
-          "raw": "دواي!",
-          "start": 147,
-          "end": 158
-        },
-        {
-          "text": "من",
-          "raw": "من",
-          "start": 170,
-          "end": 177
-        },
-        {
-          "text": "الصبح",
-          "raw": "الصبح",
-          "start": 179,
-          "end": 192
-        },
-        {
-          "text": "أدوّرها",
-          "raw": "أدوّرها.",
-          "start": 194,
-          "end": 210
-        }
-      ]
-    },
-    {
-      "id": "I08-F",
-      "from": 915,
-      "durationInFrames": 112,
-      "transitionFrames": 0,
-      "voFrom": 9,
-      "voDurationInFrames": 105,
-      "words": [
-        {
-          "text": "تفضّلي",
-          "raw": "تفضّلي",
-          "start": 9,
-          "end": 24
-        },
-        {
-          "text": "يا",
-          "raw": "يا",
-          "start": 26,
-          "end": 33
-        },
-        {
-          "text": "خالة",
-          "raw": "خالة…",
-          "start": 35,
-          "end": 46
-        },
-        {
-          "text": "لقيناها",
-          "raw": "لقيناها",
-          "start": 60,
+          "text": "عليه",
+          "raw": "عليه:",
+          "start": 66,
           "end": 77
         },
         {
-          "text": "على",
-          "raw": "على",
+          "text": "لا",
+          "raw": "لا",
           "start": 79,
-          "end": 88
+          "end": 86
         },
         {
-          "text": "الدرج",
-          "raw": "الدرج.",
-          "start": 90,
+          "text": "تفتحوه",
+          "raw": "تفتحوه!",
+          "start": 88,
           "end": 102
         }
       ]
     },
     {
-      "id": "I09-N",
-      "from": 1027,
-      "durationInFrames": 132,
-      "transitionFrames": 0,
-      "voFrom": 12,
-      "voDurationInFrames": 107,
-      "words": [
-        {
-          "text": "الله",
-          "raw": "الله",
-          "start": 12,
-          "end": 23
-        },
-        {
-          "text": "يحفظكم",
-          "raw": "يحفظكم",
-          "start": 25,
-          "end": 40
-        },
-        {
-          "text": "ويرزقكم",
-          "raw": "ويرزقكم…",
-          "start": 41,
-          "end": 58
-        },
-        {
-          "text": "وجهكم",
-          "raw": "وجهكم",
-          "start": 72,
-          "end": 85
-        },
-        {
-          "text": "وجه",
-          "raw": "وجه",
-          "start": 87,
-          "end": 96
-        },
-        {
-          "text": "خير",
-          "raw": "خير.",
-          "start": 98,
-          "end": 107
-        }
-      ]
-    },
-    {
-      "id": "I10-F",
-      "from": 1159,
-      "durationInFrames": 169,
-      "transitionFrames": 0,
-      "voFrom": 42,
-      "voDurationInFrames": 130,
-      "words": [
-        {
-          "text": "تدرين",
-          "raw": "تدرين",
-          "start": 42,
-          "end": 55
-        },
-        {
-          "text": "يا",
-          "raw": "يا",
-          "start": 57,
-          "end": 64
-        },
-        {
-          "text": "جوانا",
-          "raw": "جوانا؟",
-          "start": 66,
-          "end": 79
-        },
-        {
-          "text": "هالشعور",
-          "raw": "هالشعور…",
-          "start": 90,
-          "end": 107
-        },
-        {
-          "text": "أحلى",
-          "raw": "أحلى",
-          "start": 121,
-          "end": 132
-        },
-        {
-          "text": "من",
-          "raw": "من",
-          "start": 134,
-          "end": 141
-        },
-        {
-          "text": "الطيارة",
-          "raw": "الطيارة.",
-          "start": 143,
-          "end": 160
-        }
-      ]
-    },
-    {
-      "id": "I11-J",
-      "from": 1328,
-      "durationInFrames": 472,
+      "id": "I02-F",
+      "from": 112,
+      "durationInFrames": 75,
       "transitionFrames": 0,
       "voFrom": 9,
-      "voDurationInFrames": 98,
+      "voDurationInFrames": 68,
       "words": [
         {
-          "text": "فيصل",
-          "raw": "فيصل…",
+          "text": "أكيد",
+          "raw": "أكيد",
           "start": 9,
           "end": 20
         },
         {
-          "text": "أنت",
-          "raw": "أنت",
+          "text": "فيه",
+          "raw": "فيه",
+          "start": 22,
+          "end": 31
+        },
+        {
+          "text": "كنز",
+          "raw": "كنز…",
+          "start": 33,
+          "end": 42
+        },
+        {
+          "text": "ذهب",
+          "raw": "ذهب!",
+          "start": 56,
+          "end": 66
+        }
+      ]
+    },
+    {
+      "id": "I03-J",
+      "from": 187,
+      "durationInFrames": 135,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 125,
+      "words": [
+        {
+          "text": "القفل",
+          "raw": "القفل",
+          "start": 12,
+          "end": 25
+        },
+        {
+          "text": "له",
+          "raw": "له",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "text": "ثلاث",
+          "raw": "ثلاث",
+          "start": 36,
+          "end": 47
+        },
+        {
+          "text": "أرقام",
+          "raw": "أرقام…",
+          "start": 49,
+          "end": 62
+        },
+        {
+          "text": "وأول",
+          "raw": "وأول",
+          "start": 76,
+          "end": 87
+        },
+        {
+          "text": "شي",
+          "raw": "شي",
+          "start": 89,
+          "end": 96
+        },
+        {
+          "text": "نستأذن",
+          "raw": "نستأذن",
+          "start": 98,
+          "end": 113
+        },
+        {
+          "text": "جدتي",
+          "raw": "جدتي.",
+          "start": 114,
+          "end": 126
+        }
+      ]
+    },
+    {
+      "id": "I04-G",
+      "from": 322,
+      "durationInFrames": 180,
+      "transitionFrames": 0,
+      "voFrom": 24,
+      "voDurationInFrames": 159,
+      "words": [
+        {
+          "text": "إذا",
+          "raw": "إذا",
+          "start": 24,
+          "end": 33
+        },
+        {
+          "text": "عرفتوا",
+          "raw": "عرفتوا",
+          "start": 35,
+          "end": 50
+        },
+        {
+          "text": "الرمز",
+          "raw": "الرمز",
+          "start": 52,
+          "end": 64
+        },
+        {
+          "text": "افتحوه",
+          "raw": "افتحوه…",
+          "start": 66,
+          "end": 81
+        },
+        {
+          "text": "والرمز",
+          "raw": "والرمز",
+          "start": 95,
+          "end": 110
+        },
+        {
+          "text": "في",
+          "raw": "في",
+          "start": 112,
+          "end": 119
+        },
+        {
+          "text": "صورة",
+          "raw": "صورة",
+          "start": 121,
+          "end": 132
+        },
+        {
+          "text": "أبوكم",
+          "raw": "أبوكم",
+          "start": 134,
+          "end": 147
+        },
+        {
+          "text": "وهو",
+          "raw": "وهو",
+          "start": 149,
+          "end": 158
+        },
+        {
+          "text": "صغير",
+          "raw": "صغير.",
+          "start": 160,
+          "end": 171
+        }
+      ]
+    },
+    {
+      "id": "I05-F",
+      "from": 502,
+      "durationInFrames": 95,
+      "transitionFrames": 0,
+      "voFrom": 30,
+      "voDurationInFrames": 67,
+      "words": [
+        {
+          "text": "ستة",
+          "raw": "ستة",
+          "start": 30,
+          "end": 39
+        },
+        {
+          "text": "شموع",
+          "raw": "شموع!",
+          "start": 41,
+          "end": 52
+        },
+        {
+          "text": "نفس",
+          "raw": "نفس",
+          "start": 63,
+          "end": 73
+        },
+        {
+          "text": "عمري",
+          "raw": "عمري!",
+          "start": 74,
+          "end": 85
+        }
+      ]
+    },
+    {
+      "id": "I06-J",
+      "from": 597,
+      "durationInFrames": 168,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 161,
+      "words": [
+        {
+          "text": "وثلاث",
+          "raw": "وثلاث",
+          "start": 9,
+          "end": 22
+        },
+        {
+          "text": "سمكات",
+          "raw": "سمكات…",
+          "start": 24,
+          "end": 37
+        },
+        {
+          "text": "وسن",
+          "raw": "وسن",
+          "start": 51,
+          "end": 60
+        },
+        {
+          "text": "واحد",
+          "raw": "واحد",
+          "start": 62,
+          "end": 73
+        },
+        {
+          "text": "طايح",
+          "raw": "طايح.",
+          "start": 75,
+          "end": 86
+        },
+        {
+          "text": "الرمز",
+          "raw": "الرمز:",
+          "start": 97,
+          "end": 110
+        },
+        {
+          "text": "ستة",
+          "raw": "ستة،",
+          "start": 112,
+          "end": 121
+        },
+        {
+          "text": "ثلاثة",
+          "raw": "ثلاثة،",
+          "start": 128,
+          "end": 141
+        },
+        {
+          "text": "واحد",
+          "raw": "واحد!",
+          "start": 147,
+          "end": 158
+        }
+      ]
+    },
+    {
+      "id": "I07-J",
+      "from": 765,
+      "durationInFrames": 171,
+      "transitionFrames": 0,
+      "voFrom": 54,
+      "voDurationInFrames": 120,
+      "words": [
+        {
+          "text": "يمّه",
+          "raw": "يمّه…",
+          "start": 54,
+          "end": 65
+        },
+        {
+          "text": "لما",
+          "raw": "لما",
+          "start": 79,
+          "end": 89
+        },
+        {
+          "text": "أكبر",
+          "raw": "أكبر",
+          "start": 90,
+          "end": 101
+        },
+        {
+          "text": "بشتري",
+          "raw": "بشتري",
+          "start": 103,
+          "end": 116
+        },
+        {
+          "text": "لك",
+          "raw": "لك",
+          "start": 118,
+          "end": 125
+        },
+        {
+          "text": "بيت",
+          "raw": "بيت",
+          "start": 127,
+          "end": 136
+        },
+        {
+          "text": "فيه",
+          "raw": "فيه",
+          "start": 138,
+          "end": 147
+        },
+        {
+          "text": "حديقة",
+          "raw": "حديقة.",
+          "start": 149,
+          "end": 162
+        }
+      ]
+    },
+    {
+      "id": "I08-F",
+      "from": 936,
+      "durationInFrames": 63,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 54,
+      "words": [
+        {
+          "text": "ما",
+          "raw": "…ما",
+          "start": 12,
+          "end": 19
+        },
+        {
+          "text": "فيه",
+          "raw": "فيه",
           "start": 34,
+          "end": 43
+        },
+        {
+          "text": "ذهب",
+          "raw": "ذهب؟",
+          "start": 45,
+          "end": 54
+        }
+      ]
+    },
+    {
+      "id": "I09-G",
+      "from": 999,
+      "durationInFrames": 77,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 71,
+      "words": [
+        {
+          "text": "هذا",
+          "raw": "هذا",
+          "start": 9,
+          "end": 18
+        },
+        {
+          "text": "عندي",
+          "raw": "عندي",
+          "start": 20,
+          "end": 31
+        },
+        {
+          "text": "أغلى",
+          "raw": "أغلى",
+          "start": 33,
           "end": 44
         },
         {
-          "text": "ما",
-          "raw": "ما",
-          "start": 45,
+          "text": "من",
+          "raw": "من",
+          "start": 46,
           "end": 53
         },
         {
-          "text": "عندك",
-          "raw": "عندك",
+          "text": "الذهب",
+          "raw": "الذهب.",
           "start": 55,
-          "end": 66
+          "end": 68
+        }
+      ]
+    },
+    {
+      "id": "I10-D",
+      "from": 1076,
+      "durationInFrames": 107,
+      "transitionFrames": 0,
+      "voFrom": 30,
+      "voDurationInFrames": 80,
+      "words": [
+        {
+          "text": "يمّه",
+          "raw": "يمّه…",
+          "start": 30,
+          "end": 41
         },
         {
-          "text": "طيارة",
-          "raw": "طيارة",
-          "start": 67,
-          "end": 80
+          "text": "للحين",
+          "raw": "للحين",
+          "start": 55,
+          "end": 68
         },
         {
-          "text": "أصلاً",
-          "raw": "أصلاً!",
-          "start": 82,
-          "end": 95
+          "text": "محتفظة",
+          "raw": "محتفظة",
+          "start": 70,
+          "end": 85
+        },
+        {
+          "text": "فيها",
+          "raw": "فيها؟",
+          "start": 87,
+          "end": 98
+        }
+      ]
+    },
+    {
+      "id": "I11-G",
+      "from": 1183,
+      "durationInFrames": 175,
+      "transitionFrames": 0,
+      "voFrom": 12,
+      "voDurationInFrames": 165,
+      "words": [
+        {
+          "text": "أبوكم",
+          "raw": "أبوكم",
+          "start": 12,
+          "end": 25
+        },
+        {
+          "text": "وفى",
+          "raw": "وفى",
+          "start": 27,
+          "end": 36
+        },
+        {
+          "text": "بوعده",
+          "raw": "بوعده…",
+          "start": 38,
+          "end": 51
+        },
+        {
+          "text": "هذا",
+          "raw": "هذا",
+          "start": 65,
+          "end": 74
+        },
+        {
+          "text": "البيت",
+          "raw": "البيت",
+          "start": 76,
+          "end": 89
+        },
+        {
+          "text": "اللي",
+          "raw": "اللي",
+          "start": 91,
+          "end": 102
+        },
+        {
+          "text": "أنتم",
+          "raw": "أنتم",
+          "start": 104,
+          "end": 115
+        },
+        {
+          "text": "فيه",
+          "raw": "فيه،",
+          "start": 116,
+          "end": 126
+        },
+        {
+          "text": "هو",
+          "raw": "هو",
+          "start": 132,
+          "end": 139
+        },
+        {
+          "text": "اشتراه",
+          "raw": "اشتراه",
+          "start": 141,
+          "end": 156
+        },
+        {
+          "text": "لي",
+          "raw": "لي.",
+          "start": 158,
+          "end": 165
+        }
+      ]
+    },
+    {
+      "id": "I12-F",
+      "from": 1358,
+      "durationInFrames": 133,
+      "transitionFrames": 0,
+      "voFrom": 24,
+      "voDurationInFrames": 114,
+      "words": [
+        {
+          "text": "جدتي",
+          "raw": "جدتي!",
+          "start": 24,
+          "end": 35
+        },
+        {
+          "text": "أنا",
+          "raw": "أنا",
+          "start": 46,
+          "end": 56
+        },
+        {
+          "text": "بعد",
+          "raw": "بعد",
+          "start": 57,
+          "end": 67
+        },
+        {
+          "text": "بشتري",
+          "raw": "بشتري",
+          "start": 68,
+          "end": 81
+        },
+        {
+          "text": "لك",
+          "raw": "لك",
+          "start": 83,
+          "end": 90
+        },
+        {
+          "text": "شي",
+          "raw": "شي",
+          "start": 92,
+          "end": 100
+        },
+        {
+          "text": "لما",
+          "raw": "لما",
+          "start": 101,
+          "end": 111
+        },
+        {
+          "text": "أكبر",
+          "raw": "أكبر…",
+          "start": 112,
+          "end": 123
+        }
+      ]
+    },
+    {
+      "id": "I13-J",
+      "from": 1491,
+      "durationInFrames": 60,
+      "transitionFrames": 0,
+      "voFrom": 6,
+      "voDurationInFrames": 21,
+      "words": [
+        {
+          "text": "بيت",
+          "raw": "بيت؟",
+          "start": 6,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "I14-F",
+      "from": 1551,
+      "durationInFrames": 399,
+      "transitionFrames": 0,
+      "voFrom": 9,
+      "voDurationInFrames": 87,
+      "words": [
+        {
+          "text": "لا",
+          "raw": "…لا،",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "text": "آيسكريم",
+          "raw": "آيسكريم.",
+          "start": 31,
+          "end": 47
+        },
+        {
+          "text": "البيت",
+          "raw": "البيت",
+          "start": 59,
+          "end": 72
+        },
+        {
+          "text": "غالي",
+          "raw": "غالي!",
+          "start": 73,
+          "end": 84
         }
       ]
     }
   ],
   "voiceWindows": [
     [
-      6,
-      89
+      12,
+      102
     ],
     [
-      108,
-      216
+      121,
+      178
     ],
     [
-      243,
-      305
+      199,
+      313
     ],
     [
-      324,
-      398
+      346,
+      493
     ],
     [
-      416,
-      524
+      532,
+      587
     ],
     [
-      581,
-      686
+      606,
+      755
     ],
     [
-      773,
-      905
+      819,
+      927
     ],
     [
-      924,
-      1017
+      948,
+      990
     ],
     [
-      1039,
-      1134
+      1008,
+      1067
     ],
     [
-      1201,
-      1319
+      1106,
+      1174
     ],
     [
-      1337,
-      1423
+      1195,
+      1348
+    ],
+    [
+      1382,
+      1481
+    ],
+    [
+      1497,
+      1506
+    ],
+    [
+      1560,
+      1635
     ]
   ]
 }
