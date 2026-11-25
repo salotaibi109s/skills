@@ -1,0 +1,88 @@
+{
+  "sfx": [
+    {
+      "id": "heartbeat",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Slow tense cartoon heartbeat thumps, child-safe suspense",
+      "seconds": 2.5
+    },
+    {
+      "id": "meow",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Tiny weak scared kitten meow",
+      "seconds": 1.2
+    },
+    {
+      "id": "aww",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft heartwarming twinkle chime, cute emotional moment",
+      "seconds": 1.6
+    },
+    {
+      "id": "slurp",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Small kitten lapping milk, gentle cute slurps",
+      "seconds": 1.5
+    },
+    {
+      "id": "purr",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Soft cozy kitten purring",
+      "seconds": 3
+    },
+    {
+      "id": "jingle",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Short warm happy cartoon end jingle with xylophone and bells",
+      "seconds": 2.5
+    },
+    {
+      "id": "snore",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Funny cartoon dad snoring loudly, comedic",
+      "seconds": 3
+    },
+    {
+      "id": "doorbell",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Home doorbell ding dong",
+      "seconds": 1.5
+    },
+    {
+      "id": "switch",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Light switch click on",
+      "seconds": 0.6
+    },
+    {
+      "id": "magnify",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Playful detective magnifying glass zoom swoosh with sparkle",
+      "seconds": 0.8
+    },
+    {
+      "id": "sob",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Small child sniffle and short cry, comedic not sad",
+      "seconds": 1.8
+    },
+    {
+      "id": "dust",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Magical dusty attic shimmer, soft wind and sparkles",
+      "seconds": 2
+    },
+    {
+      "id": "click",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Old padlock unlocking click",
+      "seconds": 0.7
+    },
+    {
+      "id": "door",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Wooden apartment door opening",
+      "seconds": 1.5
+    }
+  ]
+}

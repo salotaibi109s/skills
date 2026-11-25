@@ -1,0 +1,26 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-25T22:28:30.087Z"
+  },
+  "music": [
+    {
+      "id": "theme",
+      "provider": "ElevenLabs Music",
+      "prompt": "Kids animated family series underscore, warm orchestral with celesta, harp, piano and strings. 0-12s mysterious dusty attic adventure, magical and curious. 12-29s playful puzzle-solving counting theme with pizzicato and chimes. 29-30s magical unlock shimmer. 30-46s emotional tender piano and strings, nostalgic and loving. 46-57s heartfelt warm swell, family love. 57-63s light happy comedic ending resolving cleanly at 63 seconds. No vocals.",
+      "length_ms": 63000,
+      "instrumental": true,
+      "generated_at": "2026-11-25T22:30:17.858Z"
+    }
+  ]
+}

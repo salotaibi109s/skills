@@ -1,0 +1,26 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-25T22:27:53.597Z"
+  },
+  "music": [
+    {
+      "id": "theme",
+      "provider": "ElevenLabs Music",
+      "prompt": "Kids animated family series underscore, warm orchestral with celesta, pizzicato, soft piano. 0-9s dark night suspense, low soft pulse like a heartbeat, gentle spooky but child-safe. 9-22s sneaky curious investigation with tiptoe pizzicato and rising tension. 22-23s small dramatic sting. 23-31s tender soft music box, cute and emotional. 31-47s warm happy playful family theme. 47-51s light comedic bounce. 51-56s warm cheerful ending resolving cleanly at 56 seconds. No vocals.",
+      "length_ms": 56000,
+      "instrumental": true,
+      "generated_at": "2026-11-25T22:29:51.186Z"
+    }
+  ]
+}
