@@ -345,7 +345,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Room404C" component={Room404C} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Room404D" component={Room404D} durationInFrames={2100} fps={30} width={1080} height={1920} />
       <Composition id="Room404E" component={Room404E} durationInFrames={2100} fps={30} width={1080} height={1920} />
-      <Composition id="Room404F" component={Room404F} durationInFrames={2100} fps={30} width={1080} height={1920} />
+      <Composition id="Room404F" component={Room404F} durationInFrames={2250} fps={30} width={1080} height={1920} />
     </>
   );
 };

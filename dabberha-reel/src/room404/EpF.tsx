@@ -218,7 +218,7 @@ export const Room404F: React.FC = () => {
           </AbsoluteFill>
         )}
       </Shot>
-      <Shot from={endFrom} to={2100}>
+      <Shot from={endFrom} to={2250}>
         {(_f, l) => <EndCard l={l} next="نهاية الجزء الأول · الغرفة 405 قريباً!" />}
       </Shot>
       <Tag text="سرّ الغرفة 404 · الحلقة ٦" />
