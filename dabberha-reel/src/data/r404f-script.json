@@ -1,0 +1,191 @@
+{
+  "audioDir": "r404f",
+  "totalFrames": 2100,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "F01-V",
+      "speaker": "V",
+      "voiceId": "taIPgcOka6lQyJOPdNGp",
+      "settings": {
+        "stability": 0.6,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "use_speaker_boost": true,
+        "speed": 0.85
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.8,
+      "tts": "أهلاً جوانا… كنت أنتظرك."
+    },
+    {
+      "id": "F02-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.3,
+      "tts": "جوانا… هذا مو عطل. هذا أحد يكلّمنا."
+    },
+    {
+      "id": "F03-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 0.3,
+      "tts": "فراغ يبي يوصل لقلب الشبكة. إذا وصل… يمسح كل شي. حتى أنا."
+    },
+    {
+      "id": "F04-V",
+      "speaker": "V",
+      "voiceId": "taIPgcOka6lQyJOPdNGp",
+      "settings": {
+        "stability": 0.6,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "use_speaker_boost": true,
+        "speed": 0.88
+      },
+      "nominalSeconds": 5.6,
+      "leadSeconds": 0.6,
+      "tts": "تبون توقفوني؟ قدّامكم بابين. حارس يصدق دايم… وحارس يكذب دايم. ولكم سؤال واحد بس."
+    },
+    {
+      "id": "F05-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 5.4,
+      "tts": "نسأله: أنت الصادق؟ … لا، الاثنين بيقولون إيه!"
+    },
+    {
+      "id": "F06-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.4,
+      "leadSeconds": 0.3,
+      "tts": "نسأل أي واحد: لو سألت صاحبك وين الباب الصح، وش بيقول؟ … ونروح للباب الثاني."
+    },
+    {
+      "id": "F07-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.6,
+      "tts": "منطق سليم… جوانا، أنتِ أخطر من أي فيروس."
+    },
+    {
+      "id": "F08-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.9
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 1.4,
+      "tts": "إذا رفعت ذاكرتي للشبكة… ممكن أختفي."
+    },
+    {
+      "id": "F09-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 0.4,
+      "tts": "لا… أنا أضغط الزر. دايم أضغط الأزرار الغلط… خلني هالمرة أضغط الصح."
+    },
+    {
+      "id": "F10-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.6,
+        "use_speaker_boost": true,
+        "speed": 1.0
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 2.8,
+      "tts": "…مين قال إني بختفي؟ أنا زيرو. أرجع دايم."
+    },
+    {
+      "id": "F11-X",
+      "speaker": "X",
+      "voiceId": "YCN2uLvOoKxKJtRmeub3",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "nominalSeconds": 7.0,
+      "leadSeconds": 1.4,
+      "tts": "أحسنتوا… بس الغرفة 404 كانت البداية بس."
+    }
+  ],
+  "sfx": [],
+  "music": []
+}

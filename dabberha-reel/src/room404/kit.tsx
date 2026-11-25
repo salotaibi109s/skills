@@ -299,3 +299,58 @@ export const Tag: React.FC<{ text: string }> = ({ text }) => {
     </div>
   );
 };
+
+/* ---------------------------------------------------------------- part 2 additions */
+
+/** «فراغ» — the virus: a black glitching blob with a single white eye (eerie but child-friendly). */
+export const Virus: React.FC<{ x: number; y: number; s: number; f: number; k?: number }> = ({ x, y, s, f, k = 1 }) => {
+  const pts = Array.from({ length: 18 }).map((_, i) => {
+    const a = (i / 18) * Math.PI * 2;
+    const r = 200 + Math.sin(f / 5 + i * 1.7) * 24 + (Math.floor(f / 4 + i) % 5 === 0 ? 30 : 0);
+    return `${Math.cos(a) * r},${Math.sin(a) * r}`;
+  });
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s * k})`} opacity={k}>
+      <polygon points={pts.join(" ")} fill="#05070C" stroke="#3A1B2E" strokeWidth={8} />
+      {Array.from({ length: 10 }).map((_, i) => (
+        <rect key={i} x={-220 + ((i * 53 + f * 7) % 440)} y={-200 + ((i * 97) % 400)} width={30 + (i % 3) * 20} height={8} fill="#FF4D6D" opacity={Math.floor(f / 3 + i) % 4 === 0 ? 0.6 : 0} />
+      ))}
+      <ellipse cx={0} cy={0} rx={70} ry={42 * (Math.floor(f / 50) % 6 === 0 && f % 50 < 4 ? 0.1 : 1)} fill="#FFFFFF" />
+      <circle cx={Math.sin(f / 20) * 18} cy={0} r={20} fill="#05070C" />
+    </g>
+  );
+};
+
+/** A screen (TV/monitor) that can show the virus eye. */
+export const EyeScreen: React.FC<{ x: number; y: number; w: number; h: number; f: number; on?: boolean }> = ({ x, y, w, h, f, on = true }) => (
+  <g>
+    <rect x={x - w / 2} y={y - h / 2} width={w} height={h} rx={12} fill="#05070C" stroke="#3A4660" strokeWidth={8} />
+    {on && (
+      <>
+        <ellipse cx={x} cy={y} rx={w * 0.18} ry={h * 0.16} fill="#fff" />
+        <circle cx={x + Math.sin(f / 18) * w * 0.05} cy={y} r={h * 0.08} fill="#05070C" />
+        {Array.from({ length: 4 }).map((_, i) => (
+          <rect key={i} x={x - w / 2} y={y - h / 2 + ((f * 5 + i * 40) % h)} width={w} height={3} fill="#fff" opacity={0.08} />
+        ))}
+      </>
+    )}
+  </g>
+);
+
+/** Audio waveform for the recorded message from the future. */
+export const Wave: React.FC<{ x: number; y: number; w: number; f: number; amp: number; color?: string }> = ({ x, y, w, f, amp, color = "#FFD23F" }) => (
+  <g>
+    {Array.from({ length: 28 }).map((_, i) => {
+      const h = 8 + amp * (40 + 60 * Math.abs(Math.sin(f / 3 + i * 0.7)) * Math.abs(Math.sin(i * 0.4)));
+      return <rect key={i} x={x - w / 2 + i * (w / 28)} y={y - h / 2} width={w / 28 - 6} height={h} rx={4} fill={color} />;
+    })}
+  </g>
+);
+
+/** Music level that leaves clear room for dialogue (fix from part 1: deeper ducking). */
+export const musicLevel = (T: { voiceWindows: number[][]; durationInFrames: number }, f: number) => {
+  let duck = 0;
+  for (const [a, b] of T.voiceWindows) duck = Math.max(duck, interpolate(f, [a - 8, a, b, b + 14], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  const fd = interpolate(f, [0, 6, T.durationInFrames - 30, T.durationInFrames], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return (db(-17) + (db(-30) - db(-17)) * duck) * fd;
+};

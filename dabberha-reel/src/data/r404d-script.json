@@ -1,0 +1,191 @@
+{
+  "audioDir": "r404d",
+  "totalFrames": 2100,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "D01-X",
+      "speaker": "X",
+      "voiceId": "YCN2uLvOoKxKJtRmeub3",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.6,
+      "tts": "إذا وصلتكم هالرسالة… فأنا تأخرت."
+    },
+    {
+      "id": "D02-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.4,
+      "tts": "زيرو؟ زيرو! … طفى."
+    },
+    {
+      "id": "D03-X",
+      "speaker": "X",
+      "voiceId": "YCN2uLvOoKxKJtRmeub3",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 5.2,
+      "leadSeconds": 0.4,
+      "tts": "اسمعوني زين. زيرو مو عدوكم… بس فيه شي داخل الشبكة يبيه. ويبيكم."
+    },
+    {
+      "id": "D04-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.3,
+      "tts": "هذا… صوتي؟ بس أكبر!"
+    },
+    {
+      "id": "D05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.3,
+      "tts": "فيصل، الباب انقفل… والكهرباء مقطوعة."
+    },
+    {
+      "id": "D06-X",
+      "speaker": "X",
+      "voiceId": "YCN2uLvOoKxKJtRmeub3",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 5.4,
+      "leadSeconds": 0.6,
+      "tts": "عندكم ثلاث مفاتيح هنا، ولمبة وحدة في الغرفة الثانية. وتقدرون تدخلون لها مرة وحدة بس."
+    },
+    {
+      "id": "D07-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 5.4,
+      "tts": "سهلة! نشغّلهم كلهم ونشوف!"
+    },
+    {
+      "id": "D08-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 5.6,
+      "leadSeconds": 0.3,
+      "tts": "وبعدين نعرف أي واحد؟ لا. نشغّل الأول دقيقتين ونطفيه… ونشغّل الثاني وندخل."
+    },
+    {
+      "id": "D09-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 0.3,
+      "tts": "إذا اللمبة شغالة: الثاني. طافية بس حارة: الأول. باردة: الثالث."
+    },
+    {
+      "id": "D10-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 1.6,
+      "tts": "حارة! يعني الأول!"
+    },
+    {
+      "id": "D11-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.9
+      },
+      "nominalSeconds": 8.0,
+      "leadSeconds": 2.0,
+      "tts": "…مين أنتم؟"
+    }
+  ],
+  "sfx": [],
+  "music": []
+}

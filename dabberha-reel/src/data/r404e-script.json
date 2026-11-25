@@ -1,0 +1,191 @@
+{
+  "audioDir": "r404e",
+  "totalFrames": 2100,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "E01-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.9
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.3,
+      "tts": "مين أنتم؟ … بروتوكول الحماية: تفعيل."
+    },
+    {
+      "id": "E02-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.75,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.3,
+      "tts": "زيرو! هذا أنا، فيصل! اللي دايم يضغط الأزرار الغلط!"
+    },
+    {
+      "id": "E03-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 4.6,
+      "leadSeconds": 0.3,
+      "tts": "ذاكرته انمسحت… بس شوف: فيه ملفات مقفلة. كل ملف يرجّع جزء منه."
+    },
+    {
+      "id": "E04-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 2.8,
+      "leadSeconds": 0.3,
+      "tts": "كلمة المرور: الرقم الجاي في السلسلة."
+    },
+    {
+      "id": "E05-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.7,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 5.4,
+      "tts": "الفرق يكبر! أربعة، ستة، ثمانية، عشرة…"
+    },
+    {
+      "id": "E06-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.35,
+        "similarity_boost": 0.8,
+        "style": 0.65,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 0.3,
+      "tts": "يعني الجاي اثنعش… والجواب: اثنين وأربعين!"
+    },
+    {
+      "id": "E07-X",
+      "speaker": "X",
+      "voiceId": "YCN2uLvOoKxKJtRmeub3",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "nominalSeconds": 4.4,
+      "leadSeconds": 1.6,
+      "tts": "زيرو… إذا نسيت كل شي، تذكّر بس هذا: هم عيلتك."
+    },
+    {
+      "id": "E08-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.9
+      },
+      "nominalSeconds": 4.0,
+      "leadSeconds": 0.6,
+      "tts": "جوانا… فيصل… أنا… تذكّرت."
+    },
+    {
+      "id": "E09-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.8,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.0,
+      "leadSeconds": 0.3,
+      "tts": "رجع! زيرو رجع!"
+    },
+    {
+      "id": "E10-Z",
+      "speaker": "Z",
+      "voiceId": "owhXz0MzSe5DSEzgWad4",
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.8,
+        "style": 0.45,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 6.4,
+      "leadSeconds": 0.6,
+      "tts": "بس تذكّرت شي ثاني… فراغ. فيروس دخل الشبكة… وهو اللي كتب: لا تثقوا بزيرو."
+    },
+    {
+      "id": "E11-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.55,
+        "use_speaker_boost": true,
+        "speed": 0.95
+      },
+      "nominalSeconds": 8.0,
+      "leadSeconds": 1.4,
+      "tts": "يعني الرسالة كانت فخ… عشان نخاف من الوحيد اللي يحمينا."
+    }
+  ],
+  "sfx": [],
+  "music": []
+}
