@@ -1,6 +1,6 @@
 {
   "audioDir": "homec",
-  "totalFrames": 1950,
+  "totalFrames": 1890,
   "tailSeconds": 0.3,
   "voice": {
     "preferredModels": [
@@ -232,5 +232,11 @@
     }
   ],
   "sfx": [],
-  "music": []
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "Kids animated family series underscore, warm orchestral with celesta, harp, piano and strings. 0-12s mysterious dusty attic adventure, magical and curious. 12-29s playful puzzle-solving counting theme with pizzicato and chimes. 29-30s magical unlock shimmer. 30-46s emotional tender piano and strings, nostalgic and loving. 46-57s heartfelt warm swell, family love. 57-63s light happy comedic ending resolving cleanly at 63 seconds. No vocals.",
+      "lengthMs": 63000
+    }
+  ]
 }

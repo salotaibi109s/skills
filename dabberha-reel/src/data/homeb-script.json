@@ -1,6 +1,6 @@
 {
   "audioDir": "homeb",
-  "totalFrames": 1950,
+  "totalFrames": 1560,
   "tailSeconds": 0.3,
   "voice": {
     "preferredModels": [
@@ -23,7 +23,7 @@
     {
       "id": "H01-M",
       "speaker": "M",
-      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "voiceId": "aMmeBf0lzDYlouyfqNjh",
       "settings": {
         "similarity_boost": 0.8,
         "use_speaker_boost": true,
@@ -53,7 +53,7 @@
     {
       "id": "H03-M",
       "speaker": "M",
-      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "voiceId": "aMmeBf0lzDYlouyfqNjh",
       "settings": {
         "similarity_boost": 0.8,
         "use_speaker_boost": true,
@@ -173,7 +173,7 @@
     {
       "id": "H11-M",
       "speaker": "M",
-      "voiceId": "VjxKp6w1MCufETfW5zFM",
+      "voiceId": "aMmeBf0lzDYlouyfqNjh",
       "settings": {
         "similarity_boost": 0.8,
         "use_speaker_boost": true,
@@ -217,5 +217,11 @@
     }
   ],
   "sfx": [],
-  "music": []
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "Kids animated family comedy-mystery underscore, playful orchestral with pizzicato, bassoon, xylophone and light percussion. 0-15s urgent comedic panic with fast ticking clock feel. 15-29s sneaky detective investigation, tiptoe pizzicato and curious woodwinds. 29-32s suspense build to a funny reveal hit at 32s. 33-41s warm tender heartfelt moment. 41-46s comedic surprise. 46-52s happy cheerful ending resolving cleanly at 52 seconds. No vocals.",
+      "lengthMs": 52000
+    }
+  ]
 }

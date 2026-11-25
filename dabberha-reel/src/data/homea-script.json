@@ -1,6 +1,6 @@
 {
   "audioDir": "homea",
-  "totalFrames": 1950,
+  "totalFrames": 1680,
   "tailSeconds": 0.3,
   "voice": {
     "preferredModels": [
@@ -202,5 +202,11 @@
     }
   ],
   "sfx": [],
-  "music": []
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "Kids animated family series underscore, warm orchestral with celesta, pizzicato, soft piano. 0-9s dark night suspense, low soft pulse like a heartbeat, gentle spooky but child-safe. 9-22s sneaky curious investigation with tiptoe pizzicato and rising tension. 22-23s small dramatic sting. 23-31s tender soft music box, cute and emotional. 31-47s warm happy playful family theme. 47-51s light comedic bounce. 51-56s warm cheerful ending resolving cleanly at 56 seconds. No vocals.",
+      "lengthMs": 56000
+    }
+  ]
 }

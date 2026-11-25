@@ -216,7 +216,7 @@ export const HomeB: React.FC = () => {
           );
         }}
       </Shot>
-      <Shot from={endFrom} to={1950}>
+      <Shot from={endFrom} to={T.durationInFrames}>
         {(_f, l) => <HomeEnd l={l} value="لا تظلم أحد… قبل الدليل 🤍" next="صندوق جدتي المقفول" />}
       </Shot>
       <Shot from={0} to={s5}>

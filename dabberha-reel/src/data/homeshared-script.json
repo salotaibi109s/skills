@@ -1,0 +1,83 @@
+{
+  "audioDir": "homeshared",
+  "voice": {
+    "preferredModels": [
+      "eleven_multilingual_v2"
+    ],
+    "settings": {}
+  },
+  "scenes": [],
+  "sfx": [
+    {
+      "id": "heartbeat",
+      "seconds": 2.5,
+      "prompt": "Slow tense cartoon heartbeat thumps, child-safe suspense"
+    },
+    {
+      "id": "meow",
+      "seconds": 1.2,
+      "prompt": "Tiny weak scared kitten meow"
+    },
+    {
+      "id": "aww",
+      "seconds": 1.6,
+      "prompt": "Soft heartwarming twinkle chime, cute emotional moment"
+    },
+    {
+      "id": "slurp",
+      "seconds": 1.5,
+      "prompt": "Small kitten lapping milk, gentle cute slurps"
+    },
+    {
+      "id": "purr",
+      "seconds": 3.0,
+      "prompt": "Soft cozy kitten purring"
+    },
+    {
+      "id": "jingle",
+      "seconds": 2.5,
+      "prompt": "Short warm happy cartoon end jingle with xylophone and bells"
+    },
+    {
+      "id": "snore",
+      "seconds": 3.0,
+      "prompt": "Funny cartoon dad snoring loudly, comedic"
+    },
+    {
+      "id": "doorbell",
+      "seconds": 1.5,
+      "prompt": "Home doorbell ding dong"
+    },
+    {
+      "id": "switch",
+      "seconds": 0.6,
+      "prompt": "Light switch click on"
+    },
+    {
+      "id": "magnify",
+      "seconds": 0.8,
+      "prompt": "Playful detective magnifying glass zoom swoosh with sparkle"
+    },
+    {
+      "id": "sob",
+      "seconds": 1.8,
+      "prompt": "Small child sniffle and short cry, comedic not sad"
+    },
+    {
+      "id": "dust",
+      "seconds": 2.0,
+      "prompt": "Magical dusty attic shimmer, soft wind and sparkles"
+    },
+    {
+      "id": "click",
+      "seconds": 0.7,
+      "prompt": "Old padlock unlocking click"
+    },
+    {
+      "id": "door",
+      "seconds": 1.5,
+      "prompt": "Wooden apartment door opening"
+    }
+  ],
+  "music": []
+}

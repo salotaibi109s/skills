@@ -162,7 +162,7 @@ export const HomeA: React.FC = () => {
           </Svg>
         )}
       </Shot>
-      <Shot from={endFrom} to={1950}>
+      <Shot from={endFrom} to={T.durationInFrames}>
         {(_f, l) => <HomeEnd l={l} value="الرحمة… تبدأ لما نهدأ ونفكّر 🤍" next="مين أكل كعكة الضيوف؟" />}
       </Shot>
       <Tag text="حكايات بيتنا · الحلقة ١" />

@@ -237,7 +237,7 @@ export const HomeC: React.FC = () => {
           );
         }}
       </Shot>
-      <Shot from={endFrom} to={1950}>
+      <Shot from={endFrom} to={T.durationInFrames}>
         {(_f, l) => <HomeEnd l={l} value="برّ الوالدين… وعد يكبر معك 🤍" next="قريباً!" />}
       </Shot>
       <Tag text="حكايات بيتنا · الحلقة ٣" />
