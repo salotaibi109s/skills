@@ -1,0 +1,221 @@
+{
+  "audioDir": "homed",
+  "totalFrames": 1800,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "K01-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.4,
+      "tts": "ماما؟… بابا؟… جوانا!!"
+    },
+    {
+      "id": "K02-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.8,
+      "tts": "كنت بس أشوف السيارة الحمرا… وين راحوا؟!"
+    },
+    {
+      "id": "K03-M",
+      "speaker": "M",
+      "voiceId": "aMmeBf0lzDYlouyfqNjh",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.4,
+      "leadSeconds": 0.8,
+      "tts": "فيصل؟! فيصل وينك؟!"
+    },
+    {
+      "id": "K04-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.3,
+      "tts": "ماما… لا تخافين. علّمته القاعدة!"
+    },
+    {
+      "id": "K05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 3.6,
+      "leadSeconds": 1.0,
+      "tts": "إذا ضعت… لا تمشي، ولا تروح مع أحد غريب."
+    },
+    {
+      "id": "K06-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.6,
+      "tts": "أوقف مكاني… وأدوّر موظفة بلبس الشغل."
+    },
+    {
+      "id": "K07-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 2.2,
+      "leadSeconds": 1.0,
+      "tts": "لو سمحتي… أنا ضايع."
+    },
+    {
+      "id": "K08-E",
+      "speaker": "E",
+      "voiceId": "kdUY91gH5xyDHapxlthT",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 0.3,
+      "tts": "لا تخاف يا بطل. وش اسمك؟"
+    },
+    {
+      "id": "K09-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
+      },
+      "nominalSeconds": 3.0,
+      "leadSeconds": 0.3,
+      "tts": "فيصل! ورقم بابا… أحفظه بالأغنية!"
+    },
+    {
+      "id": "K10-A",
+      "speaker": "A",
+      "voiceId": "qby5WU0hOX8igIszsSvl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 4.0,
+      "leadSeconds": 0.8,
+      "tts": "نرجو من أهل الطفل فيصل التوجه لمكتب الاستقبال."
+    },
+    {
+      "id": "K11-D",
+      "speaker": "D",
+      "voiceId": "RjFuvnufLX42TYe37ekK",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
+      },
+      "nominalSeconds": 2.6,
+      "leadSeconds": 1.4,
+      "tts": "يا بطل! كيف عرفت تتصرف؟"
+    },
+    {
+      "id": "K12-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 3.4,
+      "leadSeconds": 0.3,
+      "tts": "أوقف… أدوّر موظف… وأعطيه رقمك!"
+    },
+    {
+      "id": "K13-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 4.4,
+      "leadSeconds": 1.0,
+      "tts": "بس ترى… أنا ما ضعت. أنتم اللي ضعتوا!"
+    }
+  ],
+  "sfx": [],
+  "music": []
+}

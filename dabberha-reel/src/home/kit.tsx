@@ -45,6 +45,9 @@ export const HOME_GAINS: Record<string, number> = {
   dust: db(-14),
   write: db(-13),
   sting: db(-10),
+  crowd: db(-16),
+  chime: db(-9),
+  whoosh2: db(-12),
 };
 
 /** Per-episode helpers: timing, lip sync and the cast bound to this episode's voices. */
@@ -73,7 +76,11 @@ export const makeHome = (T: TimelineData, MOUTH: Record<string, number[]>, dir: 
   const Granny: React.FC<AdultP> = ({ f, s = 0.6, ...p }) => (
     <Teacher s={s} dress="url(#oldDress)" scarf="url(#oldScarf)" scarfEdge="#B8B8C2" glasses talk={talkOf("G", f)} blink={p.blink ?? blinkAt(f, 12)} {...p} />
   );
-  return { line, at, endOf, talkOf, Sfx, Jo, Faisal, Baba, Mama, Granny };
+  /** Mall information-desk employee: navy uniform, dark scarf, gold trim. */
+  const Clerk: React.FC<AdultP> = ({ f, s = 0.6, ...p }) => (
+    <Teacher s={s} dress="#2B3A67" scarf="#1E2A44" scarfEdge="#C9A24A" talk={talkOf("E", f)} blink={p.blink ?? blinkAt(f, 8)} {...p} />
+  );
+  return { line, at, endOf, talkOf, Sfx, Jo, Faisal, Baba, Mama, Granny, Clerk };
 };
 
 /* ---------------------------------------------------------------- sets */
@@ -363,6 +370,102 @@ export const OldBox: React.FC<{ x: number; y: number; s: number; open?: number; 
     )}
   </g>
 );
+
+/** Shopping mall: glossy floor, shop fronts (toy shop with a red car), info desk on the right. */
+export const Mall: React.FC<{ f: number; desk?: boolean }> = ({ f, desk = true }) => (
+  <g>
+    <rect x={-1400} y={-800} width={3900} height={2300} fill="#EAF1F7" />
+    {/* upper level rail and skylight */}
+    <rect x={-1400} y={-800} width={3900} height={420} fill="#CFE3F2" />
+    {Array.from({ length: 12 }).map((_, i) => (
+      <rect key={i} x={-1300 + i * 320} y={-380} width={10} height={420} fill="#B8C9D6" />
+    ))}
+    <rect x={-1400} y={20} width={3900} height={30} fill="#9FB3C2" />
+    {/* shop fronts */}
+    {[
+      { x: -700, c: "#7FB3D5", t: "أزياء" },
+      { x: -250, c: "#F5B041", t: "ألعاب" },
+      { x: 680, c: "#82C99B", t: "مكتبة" },
+    ].map((sh) => (
+      <g key={sh.x}>
+        <rect x={sh.x} y={200} width={420} height={1060} fill="#F7FBFF" stroke="#B8C9D6" strokeWidth={10} />
+        <rect x={sh.x} y={120} width={420} height={110} fill={sh.c} />
+        <text x={sh.x + 210} y={198} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={64} fill="#fff">
+          {sh.t}
+        </text>
+        <rect x={sh.x + 30} y={300} width={360} height={560} fill="#DDEFF9" opacity={0.85} />
+      </g>
+    ))}
+    {/* toy shop window: red car + teddy */}
+    <g transform="translate(-40 760)">
+      <rect x={-110} y={-60} width={220} height={70} rx={24} fill="#E8414B" />
+      <path d="M-60 -60 q20 -50 70 -50 q40 0 60 50Z" fill="#E8414B" />
+      <rect x={-30} y={-100} width={60} height={34} rx={8} fill="#BFE6FF" />
+      <circle cx={-60} cy={14} r={24} fill="#222" />
+      <circle cx={60} cy={14} r={24} fill="#222" />
+    </g>
+    <g transform="translate(-160 560)">
+      <circle r={50} fill="#B57E3A" />
+      <circle cx={-38} cy={-40} r={20} fill="#B57E3A" />
+      <circle cx={38} cy={-40} r={20} fill="#B57E3A" />
+      <circle cx={-16} cy={-6} r={6} fill="#222" />
+      <circle cx={16} cy={-6} r={6} fill="#222" />
+    </g>
+    {/* plants */}
+    {[300, 1250].map((x) => (
+      <g key={x}>
+        <rect x={x - 50} y={1120} width={100} height={140} rx={14} fill="#C98A4A" />
+        <ellipse cx={x} cy={1060} rx={90} ry={110} fill="#4CAF7A" />
+      </g>
+    ))}
+    {/* floor */}
+    <rect x={-1400} y={1260} width={3900} height={1400} fill="#D9DEE5" />
+    {Array.from({ length: 22 }).map((_, i) => (
+      <line key={i} x1={-1400 + i * 180} y1={1260} x2={-1400 + i * 180 - 300} y2={2600} stroke="#C5CCD6" strokeWidth={4} />
+    ))}
+    <rect x={-1400} y={1260} width={3900} height={60} fill="#fff" opacity={0.35} />
+    {desk && (
+      <g>
+        <rect x={1180} y={860} width={520} height={400} rx={20} fill="#2B3A67" />
+        <rect x={1160} y={840} width={560} height={40} rx={12} fill="#C9A24A" />
+        <circle cx={1440} cy={1060} r={70} fill="#5CC8FF" />
+        <text x={1440} y={1090} textAnchor="middle" fontFamily="Georgia, serif" fontWeight={800} fontSize={90} fill="#fff">
+          i
+        </text>
+        <rect x={1220} y={640} width={440} height={110} rx={20} fill="#fff" stroke="#2B3A67" strokeWidth={8} />
+        <text x={1440} y={718} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={64} fill="#2B3A67">
+          الاستقبال
+        </text>
+      </g>
+    )}
+    <circle cx={540 + Math.sin(f / 60) * 4} cy={-200} r={6} fill="#fff" opacity={0} />
+  </g>
+);
+
+/** Passing adult legs (crowd) — draw in front of a small kid to make him feel lost. */
+export const Legs: React.FC<{ x: number; y: number; s: number; f: number; kind?: number }> = ({ x, y, s, f, kind = 0 }) => {
+  const step = Math.sin(f / 4 + kind) * 26;
+  const robe = kind % 3 === 0;
+  const col = ["#F3F0E8", "#2A2A35", "#3E5C8A", "#1E1E24"][kind % 4];
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s})`}>
+      {robe ? (
+        <>
+          <path d="M-110 -700 L110 -700 L140 -30 L-140 -30Z" fill={col} />
+          <ellipse cx={-50 + step} cy={-10} rx={56} ry={22} fill="#3A2A20" />
+          <ellipse cx={50 - step} cy={-10} rx={56} ry={22} fill="#3A2A20" />
+        </>
+      ) : (
+        <>
+          <rect x={-90 + step} y={-700} width={80} height={690} rx={20} fill={col} />
+          <rect x={10 - step} y={-700} width={80} height={690} rx={20} fill={col} />
+          <ellipse cx={-50 + step} cy={-10} rx={56} ry={22} fill="#222" />
+          <ellipse cx={50 - step} cy={-10} rx={56} ry={22} fill="#222" />
+        </>
+      )}
+    </g>
+  );
+};
 
 /* ---------------------------------------------------------------- overlays */
 
