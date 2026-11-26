@@ -3,3 +3,4 @@ studio/out/
 episodes/**/*.mp4
 episodes/**/checks/
 episodes/**/preview/
+exports/
