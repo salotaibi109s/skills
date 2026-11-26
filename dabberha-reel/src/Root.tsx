@@ -85,6 +85,7 @@ import { HomeB } from "./home/EpB";
 import { HomeC } from "./home/EpC";
 import { JOANNA_S1_FRAMES, JoannaS1 } from "./compilation/JoannaS1";
 import { ROOM404_ALL_FRAMES, Room404All } from "./compilation/Room404All";
+import { JoannaThumbA, JoannaThumbB } from "./compilation/JoannaThumb";
 import { yTimeline as y2Timeline } from "./yt2/base";
 import { yTimeline } from "./yt/base";
 import { pTimeline } from "./prompts/base";
@@ -356,6 +357,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="HomeC" component={HomeC} durationInFrames={1890} fps={30} width={1080} height={1920} />
       <Composition id="JoannaS1" component={JoannaS1} durationInFrames={JOANNA_S1_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="Room404All" component={Room404All} durationInFrames={ROOM404_ALL_FRAMES} fps={30} width={1920} height={1080} />
+      <Composition id="JoannaThumbA" component={JoannaThumbA} durationInFrames={1} fps={30} width={1280} height={720} />
+      <Composition id="JoannaThumbB" component={JoannaThumbB} durationInFrames={1} fps={30} width={1280} height={720} />
     </>
   );
 };
