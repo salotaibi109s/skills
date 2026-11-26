@@ -1,6 +1,6 @@
 {
   "fps": 30,
-  "durationInFrames": 1960,
+  "durationInFrames": 1720,
   "estimated": false,
   "audio": {
     "vo": true,
@@ -11,7 +11,7 @@
     {
       "id": "K01-F",
       "from": 0,
-      "durationInFrames": 132,
+      "durationInFrames": 98,
       "transitionFrames": 0,
       "voFrom": 12,
       "voDurationInFrames": 86,
@@ -38,8 +38,8 @@
     },
     {
       "id": "K02-F",
-      "from": 132,
-      "durationInFrames": 156,
+      "from": 98,
+      "durationInFrames": 122,
       "transitionFrames": 0,
       "voFrom": 24,
       "voDurationInFrames": 100,
@@ -90,8 +90,8 @@
     },
     {
       "id": "K03-M",
-      "from": 288,
-      "durationInFrames": 132,
+      "from": 220,
+      "durationInFrames": 98,
       "transitionFrames": 0,
       "voFrom": 24,
       "voDurationInFrames": 73,
@@ -118,8 +118,8 @@
     },
     {
       "id": "K04-J",
-      "from": 420,
-      "durationInFrames": 144,
+      "from": 318,
+      "durationInFrames": 110,
       "transitionFrames": 0,
       "voFrom": 9,
       "voDurationInFrames": 98,
@@ -158,8 +158,8 @@
     },
     {
       "id": "K05-J",
-      "from": 564,
-      "durationInFrames": 185,
+      "from": 428,
+      "durationInFrames": 152,
       "transitionFrames": 0,
       "voFrom": 30,
       "voDurationInFrames": 120,
@@ -222,8 +222,8 @@
     },
     {
       "id": "K06-F",
-      "from": 749,
-      "durationInFrames": 168,
+      "from": 580,
+      "durationInFrames": 135,
       "transitionFrames": 0,
       "voFrom": 18,
       "voDurationInFrames": 114,
@@ -268,8 +268,8 @@
     },
     {
       "id": "K07-F",
-      "from": 917,
-      "durationInFrames": 135,
+      "from": 715,
+      "durationInFrames": 102,
       "transitionFrames": 0,
       "voFrom": 30,
       "voDurationInFrames": 69,
@@ -302,8 +302,8 @@
     },
     {
       "id": "K08-E",
-      "from": 1052,
-      "durationInFrames": 119,
+      "from": 817,
+      "durationInFrames": 86,
       "transitionFrames": 0,
       "voFrom": 9,
       "voDurationInFrames": 76,
@@ -348,8 +348,8 @@
     },
     {
       "id": "K09-F",
-      "from": 1171,
-      "durationInFrames": 143,
+      "from": 903,
+      "durationInFrames": 110,
       "transitionFrames": 0,
       "voFrom": 9,
       "voDurationInFrames": 98,
@@ -388,8 +388,8 @@
     },
     {
       "id": "K10-A",
-      "from": 1314,
-      "durationInFrames": 174,
+      "from": 1013,
+      "durationInFrames": 141,
       "transitionFrames": 0,
       "voFrom": 24,
       "voDurationInFrames": 114,
@@ -446,8 +446,8 @@
     },
     {
       "id": "K11-D",
-      "from": 1488,
-      "durationInFrames": 161,
+      "from": 1154,
+      "durationInFrames": 128,
       "transitionFrames": 0,
       "voFrom": 42,
       "voDurationInFrames": 88,
@@ -486,8 +486,8 @@
     },
     {
       "id": "K12-F",
-      "from": 1649,
-      "durationInFrames": 140,
+      "from": 1282,
+      "durationInFrames": 107,
       "transitionFrames": 0,
       "voFrom": 9,
       "voDurationInFrames": 95,
@@ -526,8 +526,8 @@
     },
     {
       "id": "K13-F",
-      "from": 1789,
-      "durationInFrames": 171,
+      "from": 1389,
+      "durationInFrames": 331,
       "transitionFrames": 0,
       "voFrom": 30,
       "voDurationInFrames": 107,
@@ -589,52 +589,52 @@
       89
     ],
     [
-      156,
-      245
+      122,
+      211
     ],
     [
-      312,
-      377
+      244,
+      309
     ],
     [
-      429,
-      520
+      327,
+      418
     ],
     [
-      594,
-      707
+      458,
+      571
     ],
     [
-      767,
-      875
+      598,
+      706
     ],
     [
-      947,
-      1009
+      745,
+      807
     ],
     [
-      1061,
-      1128
+      826,
+      893
     ],
     [
-      1180,
-      1271
+      912,
+      1003
     ],
     [
-      1338,
-      1446
+      1037,
+      1145
     ],
     [
-      1530,
-      1607
+      1196,
+      1273
     ],
     [
-      1658,
-      1747
+      1291,
+      1380
     ],
     [
-      1819,
-      1917
+      1419,
+      1517
     ]
   ]
 }

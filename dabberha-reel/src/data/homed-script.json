@@ -1,6 +1,6 @@
 {
   "audioDir": "homed",
-  "totalFrames": 1960,
+  "totalFrames": 1720,
   "tailSeconds": 0.3,
   "voice": {
     "preferredModels": [
@@ -31,7 +31,7 @@
         "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 3.0,
+      "nominalSeconds": 0,
       "leadSeconds": 0.4,
       "tts": "ماما؟… بابا؟… جوانا!!"
     },
@@ -46,7 +46,7 @@
         "style": 0.6,
         "speed": 1.0
       },
-      "nominalSeconds": 3.4,
+      "nominalSeconds": 0,
       "leadSeconds": 0.8,
       "tts": "كنت بس أشوف السيارة الحمرا… وين راحوا؟!"
     },
@@ -61,7 +61,7 @@
         "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 2.4,
+      "nominalSeconds": 0,
       "leadSeconds": 0.8,
       "tts": "فيصل؟! فيصل وينك؟!"
     },
@@ -76,7 +76,7 @@
         "style": 0.6,
         "speed": 1.0
       },
-      "nominalSeconds": 3.0,
+      "nominalSeconds": 0,
       "leadSeconds": 0.3,
       "tts": "ماما… لا تخافين. علّمته القاعدة!"
     },
@@ -91,7 +91,7 @@
         "style": 0.45,
         "speed": 0.92
       },
-      "nominalSeconds": 3.6,
+      "nominalSeconds": 0,
       "leadSeconds": 1.0,
       "tts": "إذا ضعت… لا تمشي، ولا تروح مع أحد غريب."
     },
@@ -106,7 +106,7 @@
         "style": 0.6,
         "speed": 1.0
       },
-      "nominalSeconds": 3.4,
+      "nominalSeconds": 0,
       "leadSeconds": 0.6,
       "tts": "أوقف مكاني… وأدوّر موظفة بلبس الشغل."
     },
@@ -121,7 +121,7 @@
         "style": 0.45,
         "speed": 0.92
       },
-      "nominalSeconds": 2.2,
+      "nominalSeconds": 0,
       "leadSeconds": 1.0,
       "tts": "لو سمحتي… أنا ضايع."
     },
@@ -136,7 +136,7 @@
         "style": 0.45,
         "speed": 0.92
       },
-      "nominalSeconds": 2.6,
+      "nominalSeconds": 0,
       "leadSeconds": 0.3,
       "tts": "لا تخاف يا بطل. وش اسمك؟"
     },
@@ -151,7 +151,7 @@
         "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 3.0,
+      "nominalSeconds": 0,
       "leadSeconds": 0.3,
       "tts": "فيصل! ورقم بابا… أحفظه بالأغنية!"
     },
@@ -166,7 +166,7 @@
         "style": 0.45,
         "speed": 0.92
       },
-      "nominalSeconds": 4.0,
+      "nominalSeconds": 0,
       "leadSeconds": 0.8,
       "tts": "نرجو من أهل الطفل فيصل التوجه لمكتب الاستقبال."
     },
@@ -181,7 +181,7 @@
         "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 2.6,
+      "nominalSeconds": 0,
       "leadSeconds": 1.4,
       "tts": "يا بطل! كيف عرفت تتصرف؟"
     },
@@ -196,7 +196,7 @@
         "style": 0.6,
         "speed": 1.0
       },
-      "nominalSeconds": 3.4,
+      "nominalSeconds": 0,
       "leadSeconds": 0.3,
       "tts": "أوقف… أدوّر موظف… وأعطيه رقمك!"
     },
@@ -211,7 +211,7 @@
         "style": 0.6,
         "speed": 1.0
       },
-      "nominalSeconds": 4.4,
+      "nominalSeconds": 10.5,
       "leadSeconds": 1.0,
       "tts": "بس ترى… أنا ما ضعت. أنتم اللي ضعتوا!"
     }
