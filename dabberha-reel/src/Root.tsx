@@ -356,7 +356,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="HomeA" component={HomeA} durationInFrames={1680} fps={30} width={1080} height={1920} />
       <Composition id="HomeB" component={HomeB} durationInFrames={1560} fps={30} width={1080} height={1920} />
       <Composition id="HomeC" component={HomeC} durationInFrames={1890} fps={30} width={1080} height={1920} />
-      <Composition id="HomeD" component={HomeD} durationInFrames={1800} fps={30} width={1080} height={1920} />
+      <Composition id="HomeD" component={HomeD} durationInFrames={1960} fps={30} width={1080} height={1920} />
       <Composition id="JoannaS1" component={JoannaS1} durationInFrames={JOANNA_S1_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="Room404All" component={Room404All} durationInFrames={ROOM404_ALL_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="JoannaThumbA" component={JoannaThumbA} durationInFrames={1} fps={30} width={1280} height={720} />

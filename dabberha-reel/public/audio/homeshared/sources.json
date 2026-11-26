@@ -83,6 +83,18 @@
       "provider": "ElevenLabs Sound Effects",
       "prompt": "Wooden apartment door opening",
       "seconds": 1.5
+    },
+    {
+      "id": "crowd",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Busy shopping mall crowd ambience, footsteps and indistinct chatter, no music",
+      "seconds": 4
+    },
+    {
+      "id": "chime",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Shopping mall public address announcement ding-dong chime",
+      "seconds": 2
     }
   ]
 }

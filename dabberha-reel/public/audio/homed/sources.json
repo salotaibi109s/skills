@@ -1,0 +1,26 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-26T11:18:09.869Z"
+  },
+  "music": [
+    {
+      "id": "theme",
+      "provider": "ElevenLabs Music",
+      "prompt": "Kids animated family series underscore, warm orchestral with pizzicato, celesta and soft strings. 0-12s anxious lost-in-a-crowd tension, busy mall ambience feel, gentle but worried. 12-16s soft nostalgic flashback. 16-24s worried searching motif. 24-34s brave determined theme building courage, child finds his way. 34-44s warm hopeful moment. 44-50s announcement pause, light suspense. 50-56s emotional joyful reunion. 56-62s playful comedic ending resolving cleanly at 62 seconds. No vocals.",
+      "length_ms": 62000,
+      "instrumental": true,
+      "generated_at": "2026-11-26T11:18:41.874Z"
+    }
+  ]
+}

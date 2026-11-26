@@ -1,6 +1,6 @@
 {
   "audioDir": "homed",
-  "totalFrames": 1800,
+  "totalFrames": 1960,
   "tailSeconds": 0.3,
   "voice": {
     "preferredModels": [
@@ -217,5 +217,11 @@
     }
   ],
   "sfx": [],
-  "music": []
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "Kids animated family series underscore, warm orchestral with pizzicato, celesta and soft strings. 0-12s anxious lost-in-a-crowd tension, busy mall ambience feel, gentle but worried. 12-16s soft nostalgic flashback. 16-24s worried searching motif. 24-34s brave determined theme building courage, child finds his way. 34-44s warm hopeful moment. 44-50s announcement pause, light suspense. 50-56s emotional joyful reunion. 56-62s playful comedic ending resolving cleanly at 62 seconds. No vocals.",
+      "lengthMs": 62000
+    }
+  ]
 }
