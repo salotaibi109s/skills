@@ -1,0 +1,32 @@
+{
+  "id": "2026-11-27-sea-to-tap",
+  "dryRun": false,
+  "production": "reel/ composition SeaStory (80s, Fahad), cover = first frame",
+  "media_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-27-sea-to-tap/video-vertical.mp4",
+  "thumbnail_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-27-sea-to-tap/thumbnail.jpg",
+  "posts": [
+    {
+      "network": "tiktok",
+      "scheduled_at": "2026-11-27T11:36:00+03:00",
+      "postId": "444062361",
+      "uuid": "-6889652025763804667",
+      "title": "شربت من البحر وانت بنص الصحرا 🌊➡️🚰",
+      "autoPublish": true,
+      "published": null
+    },
+    {
+      "network": "youtube",
+      "scheduled_at": "2026-11-27T11:37:00+03:00",
+      "postId": "444062454",
+      "uuid": "5800936662278423400",
+      "title": "كيف تصير موية البحر موية تشربها؟ 🌊 من الصفر #shorts",
+      "autoPublish": true,
+      "published": null
+    }
+  ],
+  "errors": [
+    "أول محاولة 08:40 رُفضت (الوقت صار ماضي بعد إعادة تشغيل الجلسة) — أعيدت الجدولة بدون تكرار"
+  ],
+  "aiLabel": false,
+  "status": "ready"
+}

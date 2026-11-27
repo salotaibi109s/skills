@@ -1,0 +1,32 @@
+{
+  "id": "2026-11-27-hejaz-railway",
+  "dryRun": false,
+  "production": "reel/ composition HejazStory (62s, Fahad), cover = first frame",
+  "media_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-27-hejaz-railway/video-vertical.mp4",
+  "thumbnail_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-27-hejaz-railway/thumbnail.jpg",
+  "posts": [
+    {
+      "network": "tiktok",
+      "scheduled_at": "2026-11-27T11:40:00+03:00",
+      "postId": "444062527",
+      "uuid": "-4057621373584060710",
+      "title": "قطار من ١٩٠٨… للحين واقف بالصحرا 🚂",
+      "autoPublish": true,
+      "published": null
+    },
+    {
+      "network": "youtube",
+      "scheduled_at": "2026-11-27T11:41:00+03:00",
+      "postId": "444062563",
+      "uuid": "7368655615449448661",
+      "title": "قطار من ١٩٠٨ للحين واقف في الصحرا 🚂 سكة حديد الحجاز #shorts",
+      "autoPublish": true,
+      "published": null
+    }
+  ],
+  "errors": [
+    "أول محاولة 08:40 رُفضت (الوقت صار ماضي بعد إعادة تشغيل الجلسة) — أعيدت الجدولة بدون تكرار"
+  ],
+  "aiLabel": false,
+  "status": "ready"
+}
