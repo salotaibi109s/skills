@@ -1,0 +1,174 @@
+{
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "audioDir": "food",
+  "totalFrames": 2250,
+  "scenes": [
+    {
+      "id": "F01",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "لو صِدت سمكة اليوم… صار عندك عشا."
+    },
+    {
+      "id": "F02",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "بس بكرة؟ ريحتها توصل للجيران."
+    },
+    {
+      "id": "F03",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "فغطّيتها ملح، والملح يسحب الماء منها… والجراثيم ما تعيش بدون ماء. هذا تمليح."
+    },
+    {
+      "id": "F04",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "بس مو كل أكل ينفع له ملح."
+    },
+    {
+      "id": "F05",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "فنشرت اللحم تحت الشمس لين نشف… هذا قديد."
+    },
+    {
+      "id": "F06",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "بس الجيش يبي أكل يمشي معه شهور."
+    },
+    {
+      "id": "F07",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "وفي سنة ألف وسبعمية وخمسة وتسعين، فرنسا أعلنت جايزة: اثنعش ألف فرنك، لأي أحد يحفظ أكل الجيش."
+    },
+    {
+      "id": "F08",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "فجا صانع حلويات اسمه نيكولا آبير… حط الأكل في قزاز، وسكّره، وغلاه في الماء. والأكل عاش شهور."
+    },
+    {
+      "id": "F09",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "بس القزاز ينكسر في الطريق."
+    },
+    {
+      "id": "F10",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "فجا واحد ثاني وحطّه في علبة حديد مطلية بالقصدير… هذي المعلّبات."
+    },
+    {
+      "id": "F11",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "والمضحك؟ العلبة سبقت الفتّاحة بحوالي خمسين سنة! كانوا يفتحونها بالسكين… وبعضهم بالمطرقة."
+    },
+    {
+      "id": "F12",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "وبعدها جت الثلاجة… برد بدل ملح، والأكل يبقى طازج."
+    },
+    {
+      "id": "F13",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "ودبّرتها… أكلك ما يخرب. وإذا عجبك المحتوى… تابع دبّرها."
+    },
+    {
+      "id": "F14",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "ولا تنسى… لو صِدت سمكة اليوم…"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boing"
+    },
+    {
+      "id": "check"
+    },
+    {
+      "id": "ding"
+    },
+    {
+      "id": "enter"
+    },
+    {
+      "id": "glitch"
+    },
+    {
+      "id": "impact"
+    },
+    {
+      "id": "level"
+    },
+    {
+      "id": "pop"
+    },
+    {
+      "id": "riser"
+    },
+    {
+      "id": "sparkle"
+    },
+    {
+      "id": "swish"
+    },
+    {
+      "id": "thud"
+    },
+    {
+      "id": "tick"
+    },
+    {
+      "id": "type"
+    },
+    {
+      "id": "whoosh"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm"
+    }
+  ]
+}

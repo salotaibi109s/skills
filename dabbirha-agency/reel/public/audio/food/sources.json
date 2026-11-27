@@ -1,0 +1,16 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-27T00:56:02.026Z"
+  }
+}

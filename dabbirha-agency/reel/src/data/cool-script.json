@@ -1,0 +1,181 @@
+{
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "audioDir": "cool",
+  "totalFrames": 2730,
+  "scenes": [
+    {
+      "id": "H01",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "لو بنيت بيت من طين وسط الصحراء… صار عندك بيت. صحيح إنه فرن… بس بيت."
+    },
+    {
+      "id": "H02",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "المشكلة: الظهر يجي، والحر يدخل، وأنت داخل تطبخ نفسك."
+    },
+    {
+      "id": "H03",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "فخلّيت الجدران عريضة، والطين يشرب الحر بالنهار، ويطلّعه بالليل."
+    },
+    {
+      "id": "H04",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "بس الهوا واقف… والغرفة خانقة."
+    },
+    {
+      "id": "H05",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "فبنيت برج على السطح مفتوح من فوق… أي نسمة تمر، ينزّلها لتحت. هذا ملقف هوا."
+    },
+    {
+      "id": "H06",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "بس الهوا اللي ينزل… حار!"
+    },
+    {
+      "id": "H07",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "فعلّقت قماش مبلول قدّام الفتحة، والماء وهو يتبخّر يسحب الحرارة معه. هذا تبريد بالتبخير."
+    },
+    {
+      "id": "H08",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "وفجأة… الجيران صاروا يشوفونك من الشباك."
+    },
+    {
+      "id": "H09",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "فركّبت شباك خشب مخرّم… يدخل الهوا والضوء، وما يدخل الشوف. هذا روشان."
+    },
+    {
+      "id": "H10",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "والمصيبة… الصيف طوّل."
+    },
+    {
+      "id": "H11",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "وهنا جت الفكرة اللي غيّرت كل شي: مهندس اسمه ويليس كارير، سنة ألف وتسعمية واثنين، كان يبغى بس يخفّف الرطوبة في مطبعة… فصمّم جهاز يتحكّم بالهوا. هذا أول مكيّف حديث."
+    },
+    {
+      "id": "H12",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "وصار المكيّف في كل بيت… بس الفاتورة نار."
+    },
+    {
+      "id": "H13",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "فرجعنا للفكرة القديمة: جدار معزول، وظل على الشباك، وتهوية من فوق."
+    },
+    {
+      "id": "H14",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "ودبّرتها… بيت بارد بأقل كهرباء. وإذا عجبك المحتوى… تابع دبّرها."
+    },
+    {
+      "id": "H15",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "ولا تنسى… لو بنيت بيت من طين…"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boing"
+    },
+    {
+      "id": "check"
+    },
+    {
+      "id": "ding"
+    },
+    {
+      "id": "enter"
+    },
+    {
+      "id": "glitch"
+    },
+    {
+      "id": "impact"
+    },
+    {
+      "id": "level"
+    },
+    {
+      "id": "pop"
+    },
+    {
+      "id": "riser"
+    },
+    {
+      "id": "sparkle"
+    },
+    {
+      "id": "swish"
+    },
+    {
+      "id": "thud"
+    },
+    {
+      "id": "tick"
+    },
+    {
+      "id": "type"
+    },
+    {
+      "id": "whoosh"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm"
+    }
+  ]
+}
