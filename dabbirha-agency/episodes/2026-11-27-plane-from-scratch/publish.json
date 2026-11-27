@@ -11,7 +11,8 @@
       "postId": "444273970",
       "uuid": "7609685650026742135",
       "autoPublish": true,
-      "published": null
+      "published": true,
+      "publicUrl": "https://www.tiktok.com/@dabbirha2/video/7712821934873906439"
     },
     {
       "network": "youtube",
@@ -19,9 +20,13 @@
       "postId": "444274129",
       "uuid": "8561037386851369954",
       "autoPublish": true,
-      "published": null
+      "published": true,
+      "publicUrl": "https://www.youtube.com/shorts/LtMoKZ5J_Q4"
     }
   ],
   "aiLabel": false,
-  "status": "ready"
+  "status": "ready",
+  "errors": [
+    "أُعيدت جدولة الكورة والصورة لـ«الحين» بطلب المالك 15:22"
+  ]
 }

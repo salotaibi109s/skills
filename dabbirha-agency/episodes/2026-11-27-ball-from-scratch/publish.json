@@ -7,21 +7,24 @@
   "posts": [
     {
       "network": "tiktok",
-      "scheduled_at": "2026-11-27T18:06:00+03:00",
-      "postId": "444274519",
+      "scheduled_at": "2026-11-27T15:16:00+03:00",
+      "postId": "444302377",
       "uuid": "-4399046803587840710",
       "autoPublish": true,
       "published": null
     },
     {
       "network": "youtube",
-      "scheduled_at": "2026-11-27T18:07:00+03:00",
-      "postId": "444274808",
+      "scheduled_at": "2026-11-27T15:27:00+03:00",
+      "postId": "444302842",
       "uuid": "-9168765645151057513",
       "autoPublish": true,
       "published": null
     }
   ],
   "aiLabel": false,
-  "status": "ready"
+  "status": "ready",
+  "errors": [
+    "أُعيدت جدولة الكورة والصورة لـ«الحين» بطلب المالك 15:22"
+  ]
 }
