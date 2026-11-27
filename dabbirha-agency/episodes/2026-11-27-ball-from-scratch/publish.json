@@ -11,7 +11,8 @@
       "postId": "444302377",
       "uuid": "-4399046803587840710",
       "autoPublish": true,
-      "published": null
+      "published": true,
+      "publicUrl": "https://www.tiktok.com/@dabbirha2/video/7712825706421505301"
     },
     {
       "network": "youtube",
@@ -19,7 +20,8 @@
       "postId": "444302842",
       "uuid": "-9168765645151057513",
       "autoPublish": true,
-      "published": null
+      "published": true,
+      "publicUrl": "https://www.youtube.com/shorts/zFPf6ciHvUI"
     }
   ],
   "aiLabel": false,
