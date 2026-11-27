@@ -234,7 +234,7 @@ const shots: ShotDef[] = [
             <Camel x={560} y={1560} s={1.3} f={f} rider />
             {f >= tW &&
               [0, 1, 2].map((i) => (
-                <Calendar key={i} x={260 + i * 40} y={520 + i * 10} s={0.8} n={1 + Math.floor((f - tW) / 3) + i * 7} label="يوم" />
+                <Calendar key={i} x={260 + i * 40} y={760 + i * 10} s={0.8} n={1 + Math.floor((f - tW) / 3) + i * 7} label="يوم" />
               ))}
           </World>
         </Cam>
