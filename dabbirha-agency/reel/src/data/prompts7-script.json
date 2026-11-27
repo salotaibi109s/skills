@@ -1,0 +1,153 @@
+{
+  "audioDir": "prompts7",
+  "totalFrames": 2629,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "cFUFIbKkO2iZFwS8cRnY",
+      "name": "Nasser AlJubaily - Authentic Saudi Pro"
+    }
+  },
+  "scenes": [
+    {
+      "id": "N01",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "عطيت الذكاء الاصطناعي سيرتك الذاتية… وطلبت منه يدوّر لك دخل إضافي؟ هذي سبعة أوامر جاهزة… احفظها."
+    },
+    {
+      "id": "N02",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "قبل تبدأ: انسخ سيرتك الذاتية، وشيل منها رقم جوالك وهويتك… وبعدها الصق الأوامر وحدة وحدة."
+    },
+    {
+      "id": "N03",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "الأمر الأول: اكتشف المهارات اللي ما تعرف قيمتها. خله يطلّع لك أهم عشر مهارات عندك، ومين يدفع عليها."
+    },
+    {
+      "id": "N04",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "الثاني: حوّل خبرتك لدخل. اطلب منه عشر طرق واقعية… تجيب لك دخل إضافي بالمبلغ اللي تحدده."
+    },
+    {
+      "id": "N05",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "الثالث: خله يتقمّص دور مستشار أعمال… ويحدد لك الخدمات والمنتجات الرقمية اللي تقدر تبيعها."
+    },
+    {
+      "id": "N06",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "الرابع: اسأله… لو بتساعدني أزيد دخلي بمهاراتي الحالية، من وين أبدأ؟ وليش هالطريقة بالذات؟"
+    },
+    {
+      "id": "N07",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "الخامس: اكتشف وظائف برواتب أعلى… تناسب خبرتك، وبالمتطلبات اللي عندك أصلاً."
+    },
+    {
+      "id": "N08",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "السادس: خمس خدمات تقدّمها بالذكاء الاصطناعي… بشرط ما تاخذ منك أكثر من خمس ساعات بالأسبوع."
+    },
+    {
+      "id": "N09",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "والسابع: خطة تسعين يوم… خطوة بخطوة، على قد خبرتك ووقتك."
+    },
+    {
+      "id": "N10",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "بس انتبه: الأوامر تعطيك الأفكار… والتنفيذ عليك."
+    },
+    {
+      "id": "N11",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "احفظ الفيديو، وابدأ بالأمر الأول الليلة… ولو تبغى أحد يدبّرها معك، تابع دبّرها."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boing"
+    },
+    {
+      "id": "check"
+    },
+    {
+      "id": "ding"
+    },
+    {
+      "id": "enter"
+    },
+    {
+      "id": "glitch"
+    },
+    {
+      "id": "impact"
+    },
+    {
+      "id": "level"
+    },
+    {
+      "id": "pop"
+    },
+    {
+      "id": "riser"
+    },
+    {
+      "id": "sparkle"
+    },
+    {
+      "id": "swish"
+    },
+    {
+      "id": "thud"
+    },
+    {
+      "id": "tick"
+    },
+    {
+      "id": "type"
+    },
+    {
+      "id": "whoosh"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm"
+    }
+  ]
+}
