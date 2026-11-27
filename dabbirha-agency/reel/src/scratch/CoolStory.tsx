@@ -400,11 +400,11 @@ const shots: ShotDef[] = [
     },
   },
   {
-    at: at("H07", "والماء"),
+    at: at("H07", "والموية"),
     name: "evaporate",
     C: ({ l }) => {
-      const f = at("H07", "والماء") + l;
-      const cool = ease(f, at("H07", "يتبخّر"), at("H07", "الحرارة"));
+      const f = at("H07", "والموية") + l;
+      const cool = ease(f, at("H07", "تبخّرت"), at("H07", "معها"));
       return (
         <AbsoluteFill style={{ background: "#E9D6B3" }}>
           <World>
@@ -442,7 +442,7 @@ const shots: ShotDef[] = [
     name: "neighbour",
     C: ({ l, d }) => {
       const f = at("H08", "وفجأة") + l;
-      const eyes = ease(f, at("H08", "يشوفونك") - 6, at("H08", "يشوفونك") + 4);
+      const eyes = ease(f, at("H08", "يطالعونك") - 6, at("H08", "يطالعونك") + 4);
       return (
         <Cam l={l} d={d} a={[700, 1250, 0.85]} b={[1180, 1280, 1.7]} w={1400} h={2000}>
           <Exterior f={f} l={l} tower={1} />
@@ -528,7 +528,7 @@ const shots: ShotDef[] = [
           <World w={1400} h={2000}>
             <MudHouse x={1250} y={1500} w={300} h={300} tone={1} win={false} />
             <rect x={1170} y={1320} width={110} height={110} rx={10} fill="#3B2412" />
-            <text x={1225} y={1300} textAnchor="middle" {...txt} fontSize={110} fill="#2A1C10" opacity={ease(f, at("H09", "الشوف") - 2, at("H09", "الشوف") + 8)}>
+            <text x={1225} y={1300} textAnchor="middle" {...txt} fontSize={110} fill="#2A1C10" opacity={ease(f, at("H09", "يبان") - 2, at("H09", "يبان") + 8)}>
               ؟
             </text>
           </World>
@@ -622,10 +622,10 @@ const shots: ShotDef[] = [
     },
   },
   {
-    at: at("H11", "فصمّم"),
+    at: at("H11", "فسوّى"),
     name: "machine",
     C: ({ l, d }) => {
-      const f = at("H11", "فصمّم") + l;
+      const f = at("H11", "فسوّى") + l;
       return (
         <Cam l={l} d={d} a={[540, 1100, 1.5]} b={[540, 1000, 1.05]} rot={[2, 0]}>
           <World>
@@ -736,7 +736,7 @@ const shots: ShotDef[] = [
     C: ({ l, d }) => {
       const f = at("H13", "فرجعنا") + l;
       const ins = ease(f, at("H13", "جدار") - 4, at("H13", "معزول") + 8);
-      const vent = ease(f, at("H13", "وتهوية") - 4, at("H13", "وتهوية") + 10);
+      const vent = ease(f, at("H13", "تهوية") - 4, at("H13", "تهوية") + 10);
       return (
         <Cam l={l} d={d} a={[540, 1100, 0.95]} b={[700, 800, 1.35]}>
           <Cutaway f={f} wall={1} tower insul={ins} vent={vent} air={vent > 0.5 ? "blue" : "none"} cloth={1} cool={0.6} pose="wave" />
@@ -758,10 +758,10 @@ const shots: ShotDef[] = [
     },
   },
   {
-    at: at("H13", "وتهوية"),
+    at: at("H13", "تهوية"),
     name: "vent",
     C: ({ l, d }) => {
-      const f = at("H13", "وتهوية") + l;
+      const f = at("H13", "تهوية") + l;
       return (
         <Cam l={l} d={d} a={[785, 560, 1.5]} b={[560, 1050, 0.95]}>
           <Cutaway f={f} wall={1} tower insul={1} vent={1} air="blue" cloth={1} cool={0.8} pose="wave" />
@@ -834,7 +834,7 @@ const Thermo: React.FC = () => {
     [at("H07", "تبريد"), 0.52],
     [at("H10", "طوّل"), 0.95],
     [at("H11", "مكيّف"), 0.28],
-    [at("H13", "وتهوية"), 0.38],
+    [at("H13", "تهوية"), 0.38],
   ];
   let v = ks[0][1];
   for (let i = 1; i < ks.length; i++) v += (ks[i][1] - ks[i - 1][1]) * ease(f, ks[i][0] - 2, ks[i][0] + 16);
@@ -903,7 +903,7 @@ export const CoolStory: React.FC = () => {
       <Sfx name="ding" at={at("H11", "الفكرة")} />
       <Sfx name="impact" at={at("H11", "مكيّف")} />
       <Sfx name="thud" at={at("H12", "الفاتورة")} />
-      <Sfx name="sparkle" at={at("H13", "وتهوية")} />
+      <Sfx name="sparkle" at={at("H13", "تهوية")} />
       <Sfx name="riser" at={at("H14", "ودبّرتها") - 6} />
       <Sfx name="pop" at={at("H14", "تابع")} />
     </AbsoluteFill>
