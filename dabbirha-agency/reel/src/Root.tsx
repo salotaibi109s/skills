@@ -69,6 +69,7 @@ import { GtaInstall, GtaInstallThumb, iTimeline } from "./gta2/GtaInstall";
 import { ShortsMetric, ShortsMetricThumb, sTimeline } from "./yt3/ShortsMetric";
 import { FoodStory, FoodStoryThumb, fTimeline as foodTimeline } from "./scratch/FoodStory";
 import { CoolStory, CoolStoryThumb, cTimeline as coolTimeline } from "./scratch/CoolStory";
+import { SeaStory, SeaStoryThumb, seaTimeline } from "./scratch/SeaStory";
 import { Shadwi } from "./shadwi/Shadwi";
 import { Kids } from "./kids/Kids";
 import { Joanna } from "./joanna/Joanna";
@@ -334,6 +335,8 @@ export const RemotionRoot: React.FC = () => {
       <Still id="FoodStoryThumb" component={FoodStoryThumb} width={1080} height={1920} />
       <Composition id="CoolStory" component={CoolStory} durationInFrames={coolTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Still id="CoolStoryThumb" component={CoolStoryThumb} width={1080} height={1920} />
+      <Composition id="SeaStory" component={SeaStory} durationInFrames={seaTimeline.durationInFrames} fps={30} width={1080} height={1920} />
+      <Still id="SeaStoryThumb" component={SeaStoryThumb} width={1080} height={1920} />
       <Composition id="Shadwi" component={Shadwi} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Kids" component={Kids} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Joanna" component={Joanna} durationInFrames={1800} fps={30} width={1080} height={1920} />

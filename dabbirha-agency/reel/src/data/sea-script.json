@@ -1,0 +1,167 @@
+{
+  "audioDir": "sea",
+  "totalFrames": 2400,
+  "tailSeconds": 0.25,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "rpGHcNQJvO8dFNNFNj1v",
+      "name": "Fahad - Saudi, Warm & Confident"
+    }
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لو وقفت على البحر وانت عطشان… الموية قدامك، بس ما تنشرب. فيها ملح."
+    },
+    {
+      "id": "S02",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فغليتها، وغطّيت القدر بصحن… والبخار لا برد، رجع موية حلوة. هذا تقطير."
+    },
+    {
+      "id": "S03",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس قدر كامل يطلّع لك كاسة… والحطب خلص."
+    },
+    {
+      "id": "S04",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فخلّيت الشمس تشتغل عنك: حوض موية، وفوقه غطا شفاف مايل… الشمس تبخّر، والقطرات تنزل في مجرى على الطرف. هذا مقطّر شمسي."
+    },
+    {
+      "id": "S05",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس يكفيك انت… ما يكفي قرية."
+    },
+    {
+      "id": "S06",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فبنيت مصنع جنب محطة كهربا… وحرارتها اللي كانت تروح بلاش، صارت تغلي موية البحر."
+    },
+    {
+      "id": "S07",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس الغلي ياكل طاقة كثير."
+    },
+    {
+      "id": "S08",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فجت فكرة ثانية: بدل ما تغليها… تدفّها بضغط قوي على غشا فتحاته أصغر من الملح. الموية تعدّي، والملح يرجع للبحر. هذا التناضح العكسي."
+    },
+    {
+      "id": "S09",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس المصنع على البحر… والمدينة بنص الصحرا."
+    },
+    {
+      "id": "S10",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فمدّيت أنابيب أكثر من أربعمية كيلو… ومضخات تدفّها طول الطريق."
+    },
+    {
+      "id": "S11",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "ومبروك… شربت من البحر وانت بنص الصحرا."
+    },
+    {
+      "id": "S12",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "والمفاجأة؟ السعودية من أكبر منتجي الموية المحلّاة في العالم… ويمكن الموية اللي شربتها اليوم، كانت بحر."
+    },
+    {
+      "id": "S13",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لمتابعة مثل هالنوع من الفيديوهات… تابعنا."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boing"
+    },
+    {
+      "id": "check"
+    },
+    {
+      "id": "ding"
+    },
+    {
+      "id": "enter"
+    },
+    {
+      "id": "glitch"
+    },
+    {
+      "id": "impact"
+    },
+    {
+      "id": "level"
+    },
+    {
+      "id": "pop"
+    },
+    {
+      "id": "riser"
+    },
+    {
+      "id": "sparkle"
+    },
+    {
+      "id": "swish"
+    },
+    {
+      "id": "thud"
+    },
+    {
+      "id": "tick"
+    },
+    {
+      "id": "type"
+    },
+    {
+      "id": "whoosh"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm"
+    }
+  ]
+}
