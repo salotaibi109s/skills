@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-28-gulf-pearls",
+  "dryRun": false,
+  "production": "reel/ composition PearlStory (76s, Fahad, part 1), cover = first frame, no logo end card (owner request)",
+  "media_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-28-gulf-pearls/video-vertical.mp4",
+  "thumbnail_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-28-gulf-pearls/thumbnail.jpg",
+  "posts": [
+    {
+      "network": "tiktok",
+      "scheduled_at": "2026-11-27T22:07:00+03:00",
+      "postId": "444754230",
+      "uuid": "1275326160495591870",
+      "autoPublish": true,
+      "published": null
+    },
+    {
+      "network": "youtube",
+      "scheduled_at": "2026-11-27T22:08:00+03:00",
+      "postId": "444754323",
+      "uuid": "-5938622529738750165",
+      "autoPublish": true,
+      "published": null
+    }
+  ],
+  "aiLabel": false,
+  "status": "ready"
+}

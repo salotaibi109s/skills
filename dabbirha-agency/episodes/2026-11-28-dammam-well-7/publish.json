@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-28-dammam-well-7",
+  "dryRun": false,
+  "production": "reel/ composition OilStory (66s, Fahad, part 2), cover = first frame, no logo end card (owner request)",
+  "media_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-28-dammam-well-7/video-vertical.mp4",
+  "thumbnail_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-28-dammam-well-7/thumbnail.jpg",
+  "posts": [
+    {
+      "network": "tiktok",
+      "scheduled_at": "2026-11-27T22:15:00+03:00",
+      "postId": "444754497",
+      "uuid": "5871660651446357729",
+      "autoPublish": true,
+      "published": null
+    },
+    {
+      "network": "youtube",
+      "scheduled_at": "2026-11-27T22:16:00+03:00",
+      "postId": "444754749",
+      "uuid": "-9157348183959386273",
+      "autoPublish": true,
+      "published": null
+    }
+  ],
+  "aiLabel": false,
+  "status": "ready"
+}
