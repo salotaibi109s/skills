@@ -1,0 +1,167 @@
+{
+  "audioDir": "plane",
+  "totalFrames": 1857,
+  "tailSeconds": 0.25,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "rpGHcNQJvO8dFNNFNj1v",
+      "name": "Fahad - Saudi, Warm & Confident"
+    }
+  },
+  "scenes": [
+    {
+      "id": "P01",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لو تبغى تطير… فلبست ريش، وطلعت فوق، ونطّيت."
+    },
+    {
+      "id": "P02",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "قبل أكثر من ألف سنة… سواها عباس بن فرناس في قرطبة."
+    },
+    {
+      "id": "P03",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "طار شوي… وطاح على ظهره. ويقولون السبب: نسى يسوي ذيل."
+    },
+    {
+      "id": "P04",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "طيب… الريش ما يكفي."
+    },
+    {
+      "id": "P05",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فسوّوا بالون ضخم، وعبّوه هوا حار… والهوا الحار يطلع لفوق، وشالهم معه."
+    },
+    {
+      "id": "P06",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس البالون يمشي مع الريح… ما تقدر تختار وين تروح."
+    },
+    {
+      "id": "P07",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فسوّوا أجنحة ثابتة… وطاروا من فوق التلال مثل الطيور."
+    },
+    {
+      "id": "P08",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس ينزلون… وما يقدرون يطلعون."
+    },
+    {
+      "id": "P09",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فركّب أخوين محرّك على الجناح… ومروحة تدفّه لقدّام."
+    },
+    {
+      "id": "P10",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "وسنة ألف وتسعمية وثلاثة… الطيارة طارت بمحرّك لأول مرة."
+    },
+    {
+      "id": "P11",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "مبروك… طرت."
+    },
+    {
+      "id": "P12",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "والمفاجأة؟ أول طيران بمحرّك في التاريخ… كان اثنعش ثانية بس. يعني أقصر من هالفيديو اللي تشوفه الحين."
+    },
+    {
+      "id": "P13",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لمتابعة مثل هالنوع من الفيديوهات… تابعنا."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boing"
+    },
+    {
+      "id": "check"
+    },
+    {
+      "id": "ding"
+    },
+    {
+      "id": "enter"
+    },
+    {
+      "id": "glitch"
+    },
+    {
+      "id": "impact"
+    },
+    {
+      "id": "level"
+    },
+    {
+      "id": "pop"
+    },
+    {
+      "id": "riser"
+    },
+    {
+      "id": "sparkle"
+    },
+    {
+      "id": "swish"
+    },
+    {
+      "id": "thud"
+    },
+    {
+      "id": "tick"
+    },
+    {
+      "id": "type"
+    },
+    {
+      "id": "whoosh"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm"
+    }
+  ]
+}

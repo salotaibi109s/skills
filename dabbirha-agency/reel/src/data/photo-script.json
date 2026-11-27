@@ -1,0 +1,167 @@
+{
+  "audioDir": "photo",
+  "totalFrames": 1972,
+  "tailSeconds": 0.25,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "rpGHcNQJvO8dFNNFNj1v",
+      "name": "Fahad - Saudi, Warm & Confident"
+    }
+  },
+  "scenes": [
+    {
+      "id": "C01",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لو تبغى تحفظ اللحظة… رسمتها. بس الرسم ياخذ أيام."
+    },
+    {
+      "id": "C02",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فدخلت غرفة مظلمة… وسوّيت فيها خرم صغير."
+    },
+    {
+      "id": "C03",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "والنور اللي يدخل من الخرم… رسم المنظر اللي برّا على الجدار. بس بالمقلوب!"
+    },
+    {
+      "id": "C04",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "وقبل ألف سنة… ابن الهيثم شرح ليش يصير كذا."
+    },
+    {
+      "id": "C05",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس الصورة على الجدار… أول ما يطفى النور، تختفي."
+    },
+    {
+      "id": "C06",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فدهنوا لوح بمادة تتغير مع الضوء… وحطّوه مكان الجدار."
+    },
+    {
+      "id": "C07",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "وطلعت أول صورة تبقى… بس احتاجت ساعات وهي مفتوحة على الضوء."
+    },
+    {
+      "id": "C08",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "والمصيبة؟ أي أحد يتحرك… يطلع شبح."
+    },
+    {
+      "id": "C09",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فصار الناس يجلسون وراهم مساند تثبّت راسهم… ولا أحد يتحرك."
+    },
+    {
+      "id": "C10",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "وبعدها صارت الصورة ثواني… وبعدين فلم تحطه بالكاميرا… وبعدين حساس رقمي."
+    },
+    {
+      "id": "C11",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "ومبروك… الكاميرا صارت في جيبك."
+    },
+    {
+      "id": "C12",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "والمفاجأة؟ الصورة اللي كانت تاخذ ساعات… جوالك الحين يصوّر منها عشرات في الثانية."
+    },
+    {
+      "id": "C13",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لمتابعة مثل هالنوع من الفيديوهات… تابعنا."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boing"
+    },
+    {
+      "id": "check"
+    },
+    {
+      "id": "ding"
+    },
+    {
+      "id": "enter"
+    },
+    {
+      "id": "glitch"
+    },
+    {
+      "id": "impact"
+    },
+    {
+      "id": "level"
+    },
+    {
+      "id": "pop"
+    },
+    {
+      "id": "riser"
+    },
+    {
+      "id": "sparkle"
+    },
+    {
+      "id": "swish"
+    },
+    {
+      "id": "thud"
+    },
+    {
+      "id": "tick"
+    },
+    {
+      "id": "type"
+    },
+    {
+      "id": "whoosh"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm"
+    }
+  ]
+}

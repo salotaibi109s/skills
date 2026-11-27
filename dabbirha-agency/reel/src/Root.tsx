@@ -71,6 +71,9 @@ import { FoodStory, FoodStoryThumb, fTimeline as foodTimeline } from "./scratch/
 import { CoolStory, CoolStoryThumb, cTimeline as coolTimeline } from "./scratch/CoolStory";
 import { SeaStory, SeaStoryThumb, seaTimeline } from "./scratch/SeaStory";
 import { HejazStory, HejazStoryThumb, hejazTimeline } from "./scratch/HejazStory";
+import { BallStory, BallStoryThumb, ballTimeline } from "./scratch/BallStory";
+import { PlaneStory, PlaneStoryThumb, planeTimeline } from "./scratch/PlaneStory";
+import { PhotoStory, PhotoStoryThumb, photoTimeline } from "./scratch/PhotoStory";
 import { Shadwi } from "./shadwi/Shadwi";
 import { Kids } from "./kids/Kids";
 import { Joanna } from "./joanna/Joanna";
@@ -340,6 +343,12 @@ export const RemotionRoot: React.FC = () => {
       <Still id="SeaStoryThumb" component={SeaStoryThumb} width={1080} height={1920} />
       <Composition id="HejazStory" component={HejazStory} durationInFrames={hejazTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Still id="HejazStoryThumb" component={HejazStoryThumb} width={1080} height={1920} />
+      <Composition id="BallStory" component={BallStory} durationInFrames={ballTimeline.durationInFrames} fps={30} width={1080} height={1920} />
+      <Still id="BallStoryThumb" component={BallStoryThumb} width={1080} height={1920} />
+      <Composition id="PlaneStory" component={PlaneStory} durationInFrames={planeTimeline.durationInFrames} fps={30} width={1080} height={1920} />
+      <Still id="PlaneStoryThumb" component={PlaneStoryThumb} width={1080} height={1920} />
+      <Composition id="PhotoStory" component={PhotoStory} durationInFrames={photoTimeline.durationInFrames} fps={30} width={1080} height={1920} />
+      <Still id="PhotoStoryThumb" component={PhotoStoryThumb} width={1080} height={1920} />
       <Composition id="Shadwi" component={Shadwi} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Kids" component={Kids} durationInFrames={1800} fps={30} width={1080} height={1920} />
       <Composition id="Joanna" component={Joanna} durationInFrames={1800} fps={30} width={1080} height={1920} />

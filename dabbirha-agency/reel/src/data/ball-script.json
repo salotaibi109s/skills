@@ -1,0 +1,174 @@
+{
+  "audioDir": "ball",
+  "totalFrames": 1961,
+  "tailSeconds": 0.25,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "rpGHcNQJvO8dFNNFNj1v",
+      "name": "Fahad - Saudi, Warm & Confident"
+    }
+  },
+  "scenes": [
+    {
+      "id": "B01",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لو تبغى تلعب كورة… وما عندك كورة."
+    },
+    {
+      "id": "B02",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فلفّيت قماش على بعضه… وصارت تتدحرج. صحيح شكلها مخدة… بس كورة."
+    },
+    {
+      "id": "B03",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس أول شوتة… تفرّطت."
+    },
+    {
+      "id": "B04",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فجابوا مثانة حيوان، ونفخوها، ولفّوها بجلد… وصارت تنط."
+    },
+    {
+      "id": "B05",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس المثانة تنفّس… وكل مباراة تنفخها من جديد."
+    },
+    {
+      "id": "B06",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فجا المطاط… ونفخة وحدة تكفي."
+    },
+    {
+      "id": "B07",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس الجلد يشرب موية… وفي المطر، الكورة تصير ثقيلة مثل الحجر… وتوجع الراس."
+    },
+    {
+      "id": "B08",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فغلّفوها بطبقة ما تشرب."
+    },
+    {
+      "id": "B09",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "وجا التلفزيون… والناس تشوف المباراة أبيض وأسود، والكورة ما تبان."
+    },
+    {
+      "id": "B10",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فخلّوها قطع بيضا وسودا… وصارت تبان من بعيد."
+    },
+    {
+      "id": "B11",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "وبعدها صاروا يدوّرونها أكثر وأكثر… لين صارت مرات تطير بطريقة غريبة، والحارس يتلخبط."
+    },
+    {
+      "id": "B12",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "ومبروك… عندك كورة كأس العالم."
+    },
+    {
+      "id": "B13",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "والمفاجأة؟ كأس العالم ألفين وأربعة وثلاثين… بيكون في السعودية."
+    },
+    {
+      "id": "B14",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لمتابعة مثل هالنوع من الفيديوهات… تابعنا."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boing"
+    },
+    {
+      "id": "check"
+    },
+    {
+      "id": "ding"
+    },
+    {
+      "id": "enter"
+    },
+    {
+      "id": "glitch"
+    },
+    {
+      "id": "impact"
+    },
+    {
+      "id": "level"
+    },
+    {
+      "id": "pop"
+    },
+    {
+      "id": "riser"
+    },
+    {
+      "id": "sparkle"
+    },
+    {
+      "id": "swish"
+    },
+    {
+      "id": "thud"
+    },
+    {
+      "id": "tick"
+    },
+    {
+      "id": "type"
+    },
+    {
+      "id": "whoosh"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm"
+    }
+  ]
+}
