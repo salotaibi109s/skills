@@ -4,11 +4,11 @@ import data from "../data/oil-timeline.json";
 import type { TimelineData } from "../lib/timing";
 import { Calendar, Cam, Dunes, Man, ShotPlayer, type ShotDef, SkyRect, Sun, World } from "./art";
 import { ar, Captions, clamp, ease, makeStory, MusicBed, pop, SANS, Voices } from "./kit";
-import { FollowCard } from "./SeaStory";
+import { FollowButton } from "./kit";
 
 /** «بير الخير» — Dammam No. 7, 1930s amber/sepia desert palette, voice: Fahad. Part 2 of 2. */
 export const oilTimeline = data as TimelineData;
-const { Sfx, SceneVoice, at, start } = makeStory(oilTimeline, "audio/oil");
+const { Sfx, SceneVoice, at } = makeStory(oilTimeline, "audio/oil");
 const T = oilTimeline.durationInFrames;
 const txt = { fontFamily: SANS, fontWeight: 700 } as const;
 const O = { sky1: "#E9A25A", sky2: "#FBE3B8", oil: "#141010", red: "#E0313F", green: "#2BB673", gold: "#F2C14E", steel: "#4A4038" };
@@ -329,7 +329,6 @@ const shots: ShotDef[] = [
       );
     },
   },
-  { at: start("O11"), C: ({ l }) => <FollowCard l={l} tFollow={at("O11", "مثل") - start("O11")} /> },
 ];
 
 // ------------------------------------------------------------ cover
@@ -357,14 +356,14 @@ export const OilStory: React.FC = () => {
   if (f === 0) return <Cover />;
   const probs = [at("O02", "يكفي"), at("O04", "وقّف")];
   const shake = probs.reduce((k, p) => Math.max(k, interpolate(f, [p - 1, p + 2, p + 14], [0, 1, 0], clamp)), 0);
-  const end = start("O11");
   return (
     <AbsoluteFill style={{ background: "#000" }}>
       <AbsoluteFill style={{ translate: `${Math.sin(f * 2.7) * 12 * shake}px ${Math.cos(f * 3.1) * 9 * shake}px` }}>
         <ShotPlayer f={f} shots={shots} total={T} />
       </AbsoluteFill>
       {shake > 0.02 && <AbsoluteFill style={{ background: `radial-gradient(90% 70% at 50% 50%, transparent 50%, rgba(220,20,40,${0.45 * shake}) 100%)` }} />}
-      {f < end && <Captions timeline={oilTimeline} top={230} />}
+      <FollowButton at={at("O11", "تابعنا") - 4} />
+      <Captions timeline={oilTimeline} top={230} />
 
       <Voices timeline={oilTimeline} SceneVoice={SceneVoice} />
       <MusicBed timeline={oilTimeline} src="audio/oil/music/calm.mp3" />

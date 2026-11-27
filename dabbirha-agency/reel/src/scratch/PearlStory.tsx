@@ -4,7 +4,7 @@ import data from "../data/pearl-timeline.json";
 import type { TimelineData } from "../lib/timing";
 import { Calendar, Cam, Man, Sea, ShotPlayer, type ShotDef, SkyRect, Sun, World } from "./art";
 import { Captions, clamp, ease, makeStory, MusicBed, NameChip, pop, SANS, Voices } from "./kit";
-import { FollowCard } from "./SeaStory";
+import { FollowButton } from "./kit";
 
 /** «لؤلؤ الخليج» — deep-teal underwater palette, voice: Fahad. Part 1 of 2 (ends with oil). */
 export const pearlTimeline = data as TimelineData;
@@ -432,7 +432,6 @@ const shots: ShotDef[] = [
       );
     },
   },
-  { at: start("L15"), C: ({ l }) => <FollowCard l={l} tFollow={at("L15", "مثل") - start("L15")} /> },
 ];
 
 // ------------------------------------------------------------ cover
@@ -457,7 +456,6 @@ export const PearlStory: React.FC = () => {
   if (f === 0) return <Cover />;
   const probs = [at("L02", "بس"), at("L04", "بس"), at("L06", "بس"), at("L08", "بس"), at("L12", "بس")];
   const shake = probs.reduce((k, p) => Math.max(k, interpolate(f, [p - 1, p + 2, p + 14], [0, 1, 0], clamp)), 0);
-  const end = start("L15");
   return (
     <AbsoluteFill style={{ background: "#000" }}>
       <AbsoluteFill style={{ translate: `${Math.sin(f * 2.7) * 12 * shake}px ${Math.cos(f * 3.1) * 9 * shake}px` }}>
@@ -467,7 +465,8 @@ export const PearlStory: React.FC = () => {
       <NameChip text="الفطام" at={at("L05", "الفطام")} until={start("L06")} top={1620} color="#2A1C10" />
       <NameChip text="هذا السيب" at={at("L07", "السيب")} until={start("L08")} top={1620} color="#8B5A2B" />
       <NameChip text="الخبط" at={at("L08", "الخبط")} until={start("L09")} top={1620} color="#8B5A2B" />
-      {f < end && <Captions timeline={pearlTimeline} top={230} />}
+      <FollowButton at={at("L15", "تابعنا") - 4} />
+      <Captions timeline={pearlTimeline} top={230} />
 
       <Voices timeline={pearlTimeline} SceneVoice={SceneVoice} />
       <MusicBed timeline={pearlTimeline} src="audio/pearl/music/calm.mp3" />

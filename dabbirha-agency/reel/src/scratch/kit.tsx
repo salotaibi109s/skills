@@ -220,3 +220,17 @@ export const EndCard: React.FC<{ from: number; tFollow: number; until: number; l
     </AbsoluteFill>
   );
 };
+
+/** A follow button only (no logo) that pops in at the end. */
+export const FollowButton: React.FC<{ at: number }> = ({ at }) => {
+  const f = useCurrentFrame();
+  if (f < at - 2) return null;
+  const p = pop(f, at, 30, 240, 11);
+  return (
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1560, display: "flex", justifyContent: "center" }}>
+      <div dir="rtl" style={{ padding: "14px 70px 26px", borderRadius: 60, background: "#FE2C55", color: "#fff", fontFamily: SANS, fontWeight: 700, fontSize: 70, scale: String(p * (1 + 0.04 * Math.sin(f / 5))), opacity: Math.min(1, p * 1.4), boxShadow: "0 18px 50px rgba(254,44,85,0.5)" }}>
+        + تابعنا
+      </div>
+    </div>
+  );
+};
