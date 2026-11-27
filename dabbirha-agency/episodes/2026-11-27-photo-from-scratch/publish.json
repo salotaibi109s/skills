@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-27-photo-from-scratch",
+  "dryRun": false,
+  "production": "reel/ composition PhotoStory (66s, Fahad), cover = first frame",
+  "media_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-27-photo-from-scratch/video-vertical.mp4",
+  "thumbnail_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-27-photo-from-scratch/thumbnail.jpg",
+  "posts": [
+    {
+      "network": "tiktok",
+      "scheduled_at": "2026-11-27T21:06:00+03:00",
+      "postId": "444274927",
+      "uuid": "2847373040381021238",
+      "autoPublish": true,
+      "published": null
+    },
+    {
+      "network": "youtube",
+      "scheduled_at": "2026-11-27T21:07:00+03:00",
+      "postId": "444275001",
+      "uuid": "8786502820362144231",
+      "autoPublish": true,
+      "published": null
+    }
+  ],
+  "aiLabel": false,
+  "status": "ready"
+}

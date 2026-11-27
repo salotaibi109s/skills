@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-27-plane-from-scratch",
+  "dryRun": false,
+  "production": "reel/ composition PlaneStory (62s, Fahad), cover = first frame",
+  "media_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-27-plane-from-scratch/video-vertical.mp4",
+  "thumbnail_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-27-plane-from-scratch/thumbnail.jpg",
+  "posts": [
+    {
+      "network": "tiktok",
+      "scheduled_at": "2026-11-27T15:08:00+03:00",
+      "postId": "444273970",
+      "uuid": "7609685650026742135",
+      "autoPublish": true,
+      "published": null
+    },
+    {
+      "network": "youtube",
+      "scheduled_at": "2026-11-27T15:09:00+03:00",
+      "postId": "444274129",
+      "uuid": "8561037386851369954",
+      "autoPublish": true,
+      "published": null
+    }
+  ],
+  "aiLabel": false,
+  "status": "ready"
+}

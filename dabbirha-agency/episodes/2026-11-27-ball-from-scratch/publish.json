@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-27-ball-from-scratch",
+  "dryRun": false,
+  "production": "reel/ composition BallStory (65s, Fahad), cover = first frame",
+  "media_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-27-ball-from-scratch/video-vertical.mp4",
+  "thumbnail_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-27-ball-from-scratch/thumbnail.jpg",
+  "posts": [
+    {
+      "network": "tiktok",
+      "scheduled_at": "2026-11-27T18:06:00+03:00",
+      "postId": "444274519",
+      "uuid": "-4399046803587840710",
+      "autoPublish": true,
+      "published": null
+    },
+    {
+      "network": "youtube",
+      "scheduled_at": "2026-11-27T18:07:00+03:00",
+      "postId": "444274808",
+      "uuid": "-9168765645151057513",
+      "autoPublish": true,
+      "published": null
+    }
+  ],
+  "aiLabel": false,
+  "status": "ready"
+}
