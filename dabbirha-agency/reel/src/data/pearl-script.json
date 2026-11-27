@@ -1,0 +1,181 @@
+{
+  "audioDir": "pearl",
+  "totalFrames": 2180,
+  "tailSeconds": 0.25,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "rpGHcNQJvO8dFNNFNj1v",
+      "name": "Fahad - Saudi, Warm & Confident"
+    }
+  },
+  "scenes": [
+    {
+      "id": "L01",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لو تبغى تجيب لؤلؤة… لازم تنزل لقاع البحر."
+    },
+    {
+      "id": "L02",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس انت تطفو… كل ما نزلت، الموية ترجعك فوق."
+    },
+    {
+      "id": "L03",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فربطت في رجلك حجر… وصرت تنزل مثل الصاروخ."
+    },
+    {
+      "id": "L04",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس تحت… الموية تدخل خشمك."
+    },
+    {
+      "id": "L05",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فسكّرته بمشبك صغير… اسمه الفطام."
+    },
+    {
+      "id": "L06",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "طيب… لقيت المحار. بس نفسك خلص."
+    },
+    {
+      "id": "L07",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فربطت حبل في وسطك… وفوق القارب واحد ماسكه، أول ما تهزّه، يسحبك بكل قوته. هذا السيب."
+    },
+    {
+      "id": "L08",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس المحار يجرح أصابعك… فلبست عليها جلد، اسمه الخبط."
+    },
+    {
+      "id": "L09",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "وتغوص وتطلع… عشرات المرات باليوم، وشهور في البحر."
+    },
+    {
+      "id": "L10",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "ومن بين محارات كثيرة… تلقى وحدة فيها لؤلؤة."
+    },
+    {
+      "id": "L11",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "مبروك… لؤلؤ الخليج صار من أشهر اللؤلؤ في العالم."
+    },
+    {
+      "id": "L12",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس هنا القصة تقلب… في اليابان، عرفوا يخلّون المحار يسوي اللؤلؤ بنفسه."
+    },
+    {
+      "id": "L13",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لؤلؤ أرخص… وبالكوم. وسوق اللؤلؤ الطبيعي طاح… والغوّاصين قعدوا على البر."
+    },
+    {
+      "id": "L14",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لين تحت نفس الأرض… طلع النفط. وهذي قصة ثانية."
+    },
+    {
+      "id": "L15",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لمتابعة مثل هالنوع من الفيديوهات… تابعنا."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boing"
+    },
+    {
+      "id": "check"
+    },
+    {
+      "id": "ding"
+    },
+    {
+      "id": "enter"
+    },
+    {
+      "id": "glitch"
+    },
+    {
+      "id": "impact"
+    },
+    {
+      "id": "level"
+    },
+    {
+      "id": "pop"
+    },
+    {
+      "id": "riser"
+    },
+    {
+      "id": "sparkle"
+    },
+    {
+      "id": "swish"
+    },
+    {
+      "id": "thud"
+    },
+    {
+      "id": "tick"
+    },
+    {
+      "id": "type"
+    },
+    {
+      "id": "whoosh"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm"
+    }
+  ]
+}

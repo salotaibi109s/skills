@@ -1,0 +1,153 @@
+{
+  "audioDir": "oil",
+  "totalFrames": 1910,
+  "tailSeconds": 0.25,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "rpGHcNQJvO8dFNNFNj1v",
+      "name": "Fahad - Saudi, Warm & Confident"
+    }
+  },
+  "scenes": [
+    {
+      "id": "O01",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لو تبغى تدوّر نفط… في صحرا ما فيها إلا رمل."
+    },
+    {
+      "id": "O02",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فجبت حفّارة، وحفرت أول بير… طلع غاز، وشوية نفط… ما يكفي."
+    },
+    {
+      "id": "O03",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فحفرت الثاني… والثالث… والرابع… والخامس… والسادس."
+    },
+    {
+      "id": "O04",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "سنين وانت تحفر… والفلوس تخلص، والكل يقولك: وقّف… هالأرض ما فيها شي."
+    },
+    {
+      "id": "O05",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس فيه جيولوجي اسمه ماكس ستاينكي قال: لا… نحفر أعمق. ومعه دليل بدوي اسمه خميس بن رمثان."
+    },
+    {
+      "id": "O06",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فرجعوا لبير رقم سبعة… ونزلوا أعمق من كل اللي قبله… أكثر من كيلو وأربعمية متر."
+    },
+    {
+      "id": "O07",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "وفي سنة ألف وتسعمية وثمانية وثلاثين… طلع النفط."
+    },
+    {
+      "id": "O08",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "مبروك… بير الدمام رقم سبعة."
+    },
+    {
+      "id": "O09",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "والمفاجأة؟ ما كان بير يعيش سنة ولا سنتين… ظل يطلّع نفط أربعة وأربعين سنة، أكثر من اثنين وثلاثين مليون برميل."
+    },
+    {
+      "id": "O10",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "واليوم اسمه… بير الخير."
+    },
+    {
+      "id": "O11",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لمتابعة مثل هالنوع من الفيديوهات… تابعنا."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boing"
+    },
+    {
+      "id": "check"
+    },
+    {
+      "id": "ding"
+    },
+    {
+      "id": "enter"
+    },
+    {
+      "id": "glitch"
+    },
+    {
+      "id": "impact"
+    },
+    {
+      "id": "level"
+    },
+    {
+      "id": "pop"
+    },
+    {
+      "id": "riser"
+    },
+    {
+      "id": "sparkle"
+    },
+    {
+      "id": "swish"
+    },
+    {
+      "id": "thud"
+    },
+    {
+      "id": "tick"
+    },
+    {
+      "id": "type"
+    },
+    {
+      "id": "whoosh"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm"
+    }
+  ]
+}
