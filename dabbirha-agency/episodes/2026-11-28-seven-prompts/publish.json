@@ -4,8 +4,24 @@
   "production": "reel/ composition SevenPrompts (88s, Nasser), cover = first frame, Dabbirha logo end card",
   "media_url": "https://raw.githubusercontent.com/salotaibi109s/skills/claude/clever-mccarthy-o388zc/dabbirha-agency/episodes/2026-11-28-seven-prompts/video-vertical.mp4",
   "posts": [
-    { "network": "tiktok", "scheduled_at": "2026-11-27T23:34:00+03:00", "postId": "444831313", "uuid": "-3536483180642220097", "autoPublish": true, "published": false },
-    { "network": "youtube", "scheduled_at": "2026-11-27T23:35:00+03:00", "postId": "444831430", "uuid": "2377942282351823428", "autoPublish": true, "published": false }
+    {
+      "network": "tiktok",
+      "scheduled_at": "2026-11-27T23:34:00+03:00",
+      "postId": "444831313",
+      "uuid": "-3536483180642220097",
+      "autoPublish": true,
+      "published": true,
+      "publicUrl": "https://www.tiktok.com/@dabbirha2/video/7712952299525524754"
+    },
+    {
+      "network": "youtube",
+      "scheduled_at": "2026-11-27T23:35:00+03:00",
+      "postId": "444831430",
+      "uuid": "2377942282351823428",
+      "autoPublish": true,
+      "published": true,
+      "publicUrl": "https://www.youtube.com/shorts/lUf2OzR8-FQ"
+    }
   ],
   "aiLabel": false,
   "status": "ready"
