@@ -421,7 +421,7 @@ const shots: ShotDef[] = [
                 const t = ((f + i * 4) % 32) / 32;
                 return <circle key={i} cx={540 + Math.sin(i * 1.7) * 140 * t} cy={650 - 300 * gush * (1 - t) + t * 200} r={14 + 10 * (1 - t)} fill="#1A1410" opacity={gush} />;
               })}
-            <g transform={`translate(540 1650) scale(${tease})`}>
+            <g transform={`translate(540 1300) scale(${tease})`}>
               <rect x={-230} y={-60} width={460} height={120} rx={60} fill={W.red} />
               <text y={22} textAnchor="middle" {...txt} fontSize={60} fill="#fff">
                 الجزء الثاني ⬅
