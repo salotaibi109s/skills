@@ -1,0 +1,153 @@
+{
+  "audioDir": "hejaz",
+  "totalFrames": 1881,
+  "tailSeconds": 0.25,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "rpGHcNQJvO8dFNNFNj1v",
+      "name": "Fahad - Saudi, Warm & Confident"
+    }
+  },
+  "scenes": [
+    {
+      "id": "R01",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لو تبغى تروح من الشام للمدينة المنورة… على جمل، أسابيع في الصحرا."
+    },
+    {
+      "id": "R02",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فقرروا يمدّون سكة حديد… أكثر من ألف كيلو في نص الرمل."
+    },
+    {
+      "id": "R03",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس القطار يمشي بالبخار… والبخار يبغى موية… والصحرا ما فيها موية."
+    },
+    {
+      "id": "R04",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "فحفروا آبار، وبنوا خزانات على طول الطريق… كل محطة قلعة صغيرة."
+    },
+    {
+      "id": "R05",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "وسنة ألف وتسعمية وثمانية، وصل أول قطار المدينة… والرحلة اللي كانت أسابيع، صارت أيام. مبروك."
+    },
+    {
+      "id": "R06",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "بس هنا القصة تقلب… جات الحرب."
+    },
+    {
+      "id": "R07",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "والسكة صارت هدف… الجسور تنفجر، والقضبان تنقلع."
+    },
+    {
+      "id": "R08",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "والقطار وقف… وما رجع يمشي للمدينة."
+    },
+    {
+      "id": "R09",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "سكة أخذت سنين وهي تنبني… عاشت تقريباً عشر سنين بس."
+    },
+    {
+      "id": "R10",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "والمضحك المبكي؟ لين اليوم فيه قطارات واقفة بالصحرا مكان ما تركوها… ومحطة المدينة صارت متحف."
+    },
+    {
+      "id": "R11",
+      "nominalSeconds": 3,
+      "leadSeconds": 0.1,
+      "transitionFrames": 0,
+      "tts": "لمتابعة مثل هالنوع من الفيديوهات… تابعنا."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boing"
+    },
+    {
+      "id": "check"
+    },
+    {
+      "id": "ding"
+    },
+    {
+      "id": "enter"
+    },
+    {
+      "id": "glitch"
+    },
+    {
+      "id": "impact"
+    },
+    {
+      "id": "level"
+    },
+    {
+      "id": "pop"
+    },
+    {
+      "id": "riser"
+    },
+    {
+      "id": "sparkle"
+    },
+    {
+      "id": "swish"
+    },
+    {
+      "id": "thud"
+    },
+    {
+      "id": "tick"
+    },
+    {
+      "id": "type"
+    },
+    {
+      "id": "whoosh"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm"
+    }
+  ]
+}

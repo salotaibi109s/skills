@@ -702,7 +702,7 @@ const shots: ShotDef[] = [
   },
 ];
 
-const FollowCard: React.FC<{ l: number; tFollow: number }> = ({ l, tFollow }) => {
+export const FollowCard: React.FC<{ l: number; tFollow: number }> = ({ l, tFollow }) => {
   const logo = pop(l, 2, 30, 160, 12);
   const btn = pop(l, tFollow - 2, 30, 240, 11);
   return (
