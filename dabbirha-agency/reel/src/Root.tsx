@@ -76,6 +76,7 @@ import { PlaneStory, PlaneStoryThumb, planeTimeline } from "./scratch/PlaneStory
 import { PhotoStory, PhotoStoryThumb, photoTimeline } from "./scratch/PhotoStory";
 import { PearlStory, PearlStoryThumb, pearlTimeline } from "./scratch/PearlStory";
 import { SevenPrompts, SevenPromptsThumb, p7Timeline } from "./scratch/SevenPrompts";
+import { MistakeStory, MistakeStoryThumb, mistakeTimeline } from "./scratch/MistakeStory";
 import { OilStory, OilStoryThumb, oilTimeline } from "./scratch/OilStory";
 import { Shadwi } from "./shadwi/Shadwi";
 import { Kids } from "./kids/Kids";
@@ -356,6 +357,8 @@ export const RemotionRoot: React.FC = () => {
       <Still id="PearlStoryThumb" component={PearlStoryThumb} width={1080} height={1920} />
       <Composition id="SevenPrompts" component={SevenPrompts} durationInFrames={p7Timeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Still id="SevenPromptsThumb" component={SevenPromptsThumb} width={1080} height={1920} />
+      <Composition id="MistakeStory" component={MistakeStory} durationInFrames={mistakeTimeline.durationInFrames} fps={30} width={1080} height={1920} />
+      <Still id="MistakeStoryThumb" component={MistakeStoryThumb} width={1080} height={1920} />
       <Composition id="OilStory" component={OilStory} durationInFrames={oilTimeline.durationInFrames} fps={30} width={1080} height={1920} />
       <Still id="OilStoryThumb" component={OilStoryThumb} width={1080} height={1920} />
       <Composition id="Shadwi" component={Shadwi} durationInFrames={1800} fps={30} width={1080} height={1920} />

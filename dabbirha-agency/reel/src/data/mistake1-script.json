@@ -1,0 +1,181 @@
+{
+  "audioDir": "mistake1",
+  "totalFrames": 2900,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.38,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "yXEnnEln9armDCyhkXcA",
+      "name": "Jeddawi - Calm, Confident, and Deep"
+    }
+  },
+  "scenes": [
+    {
+      "id": "G01",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "أعظم دوا في التاريخ… لقوه في صحن وسخ، ما أحد غسله. وأول مريض أخده؟ قصته أغرب بكتير."
+    },
+    {
+      "id": "G02",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "قبل مية سنة… جرح صغير كان ممكن يموّتك. لأنه مافي علاج للالتهاب."
+    },
+    {
+      "id": "G03",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "لندن، سنة ألف وتسعمية وتمانية وعشرين. الدكتور فليمنغ يربّي بكتيريا في صحون صغيرة."
+    },
+    {
+      "id": "G04",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "وراح إجازة… وساب الصحون على الطاولة، بدون ما يغسلها."
+    },
+    {
+      "id": "G05",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "رجع… ولقى عفن أخضر طالع في واحد منها."
+    },
+    {
+      "id": "G06",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "أي واحد مكانه كان رماه. بس هو دقّق… البكتيريا اللي حوالين العفن، كلها ميتة."
+    },
+    {
+      "id": "G07",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "العفن يقتل الجراثيم! نشر الاكتشاف… ولا أحد اهتم. عشر سنين والفكرة نايمة."
+    },
+    {
+      "id": "G08",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "لين جا فريق في أكسفورد، وقالوا: نبغى نحوّل هادا العفن لدوا."
+    },
+    {
+      "id": "G09",
+      "nominalSeconds": 6,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "سنة واحد وأربعين، جرّبوه على أول إنسان: شرطي، جرحه التهب لين وصل وجهه."
+    },
+    {
+      "id": "G10",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "عطوه الدوا… وبعد كم يوم، بدأ يتحسّن."
+    },
+    {
+      "id": "G11",
+      "nominalSeconds": 7,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "بس الدوا خلص. طيب إيش سوّوا؟ صاروا يجمعوا بوله… ويطلّعوا منه الدوا، ويرجّعوه له."
+    },
+    {
+      "id": "G12",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "وللأسف ما كفّى… ومات. بس العالم عرف إن الدوا يشتغل."
+    },
+    {
+      "id": "G13",
+      "nominalSeconds": 4,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "وفي الحرب، صاروا يصنعوه بالأطنان… وأنقذ أرواح ما تنعد."
+    },
+    {
+      "id": "G14",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "وفي خمسة وأربعين، أخدوا جايزة نوبل… والقصة كلها بدأت من صحن، ما انغسل."
+    },
+    {
+      "id": "G15",
+      "nominalSeconds": 5,
+      "leadSeconds": 0.12,
+      "transitionFrames": 0,
+      "tts": "إيش أغرب غلطة طلع منها شي حلو في حياتك؟ اكتبها تحت… وتابعنا للغلطة الجاية."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "boing"
+    },
+    {
+      "id": "check"
+    },
+    {
+      "id": "ding"
+    },
+    {
+      "id": "enter"
+    },
+    {
+      "id": "glitch"
+    },
+    {
+      "id": "impact"
+    },
+    {
+      "id": "level"
+    },
+    {
+      "id": "pop"
+    },
+    {
+      "id": "riser"
+    },
+    {
+      "id": "sparkle"
+    },
+    {
+      "id": "swish"
+    },
+    {
+      "id": "thud"
+    },
+    {
+      "id": "tick"
+    },
+    {
+      "id": "type"
+    },
+    {
+      "id": "whoosh"
+    }
+  ],
+  "music": [
+    {
+      "id": "calm"
+    }
+  ]
+}
