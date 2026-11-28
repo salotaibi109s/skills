@@ -1,0 +1,26 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-28T08:39:04.462Z"
+  },
+  "music": [
+    {
+      "id": "theme",
+      "provider": "ElevenLabs Music",
+      "prompt": "Kids animated family series underscore, orchestral with pizzicato, clarinet and soft piano. 0-5s sudden comedic crash hit then tense silence. 5-16s sneaky mischievous tiptoe theme. 16-24s gentle conscience moment, soft piano. 24-32s curious puzzle-solving theme with chimes. 32-44s emotional tender confession and hug, warm strings. 44-52s magical golden repair shimmer, hopeful. 52-60s playful comedic ending resolving cleanly at 60 seconds. No vocals.",
+      "length_ms": 60000,
+      "instrumental": true,
+      "generated_at": "2026-11-28T08:39:47.445Z"
+    }
+  ]
+}

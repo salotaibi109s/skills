@@ -1,6 +1,6 @@
 {
   "audioDir": "homef",
-  "totalFrames": 1800,
+  "totalFrames": 1860,
   "tailSeconds": 0.3,
   "voice": {
     "preferredModels": [
@@ -196,11 +196,17 @@
         "style": 0.6,
         "speed": 1.0
       },
-      "nominalSeconds": 9,
+      "nominalSeconds": 14,
       "leadSeconds": 1.6,
       "tts": "هالمرة… والله مو أنا!"
     }
   ],
   "sfx": [],
-  "music": []
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "Kids animated family series underscore, orchestral with pizzicato, clarinet and soft piano. 0-5s sudden comedic crash hit then tense silence. 5-16s sneaky mischievous tiptoe theme. 16-24s gentle conscience moment, soft piano. 24-32s curious puzzle-solving theme with chimes. 32-44s emotional tender confession and hug, warm strings. 44-52s magical golden repair shimmer, hopeful. 52-60s playful comedic ending resolving cleanly at 60 seconds. No vocals.",
+      "lengthMs": 60000
+    }
+  ]
 }

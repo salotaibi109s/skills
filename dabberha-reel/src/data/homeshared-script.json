@@ -9,14 +9,9 @@
   "scenes": [],
   "sfx": [
     {
-      "id": "crowd",
-      "seconds": 4,
-      "prompt": "Busy shopping mall crowd ambience, footsteps and indistinct chatter, no music"
-    },
-    {
-      "id": "chime",
-      "seconds": 2,
-      "prompt": "Shopping mall public address announcement ding-dong chime"
+      "id": "shatter",
+      "seconds": 1.5,
+      "prompt": "Ceramic vase falling and shattering on a floor, cartoon style"
     }
   ],
   "music": []

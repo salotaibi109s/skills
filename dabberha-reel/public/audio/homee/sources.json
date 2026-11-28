@@ -1,0 +1,26 @@
+{
+  "voiceover": {
+    "provider": "ElevenLabs Text to Speech (with-timestamps)",
+    "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+    "voice_source": "explicit",
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1
+    },
+    "generated_at": "2026-11-28T08:38:48.535Z"
+  },
+  "music": [
+    {
+      "id": "theme",
+      "provider": "ElevenLabs Music",
+      "prompt": "Kids animated family series underscore, orchestral with celesta, pizzicato and soft strings. 0-10s sudden blackout, spooky but child-safe suspense with low strings. 10-14s comedic reveal bounce. 14-26s curious detective thinking theme with ticking pizzicato. 26-30s alert warning sting. 30-38s reassuring warm theme. 38-50s cozy intimate family moment by flashlight, gentle music box and acoustic guitar. 50-57s joyful comedic ending resolving cleanly at 57 seconds. No vocals.",
+      "length_ms": 57000,
+      "instrumental": true,
+      "generated_at": "2026-11-28T08:39:36.709Z"
+    }
+  ]
+}

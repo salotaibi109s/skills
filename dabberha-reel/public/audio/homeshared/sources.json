@@ -95,6 +95,12 @@
       "provider": "ElevenLabs Sound Effects",
       "prompt": "Shopping mall public address announcement ding-dong chime",
       "seconds": 2
+    },
+    {
+      "id": "shatter",
+      "provider": "ElevenLabs Sound Effects",
+      "prompt": "Ceramic vase falling and shattering on a floor, cartoon style",
+      "seconds": 1.5
     }
   ]
 }

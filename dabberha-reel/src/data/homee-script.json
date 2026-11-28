@@ -1,6 +1,6 @@
 {
   "audioDir": "homee",
-  "totalFrames": 1720,
+  "totalFrames": 1680,
   "tailSeconds": 0.3,
   "voice": {
     "preferredModels": [
@@ -181,11 +181,17 @@
         "style": 0.8,
         "speed": 1.05
       },
-      "nominalSeconds": 9,
+      "nominalSeconds": 14,
       "leadSeconds": 1.6,
       "tts": "طفّوووها!!"
     }
   ],
   "sfx": [],
-  "music": []
+  "music": [
+    {
+      "id": "theme",
+      "prompt": "Kids animated family series underscore, orchestral with celesta, pizzicato and soft strings. 0-10s sudden blackout, spooky but child-safe suspense with low strings. 10-14s comedic reveal bounce. 14-26s curious detective thinking theme with ticking pizzicato. 26-30s alert warning sting. 30-38s reassuring warm theme. 38-50s cozy intimate family moment by flashlight, gentle music box and acoustic guitar. 50-57s joyful comedic ending resolving cleanly at 57 seconds. No vocals.",
+      "lengthMs": 57000
+    }
+  ]
 }
