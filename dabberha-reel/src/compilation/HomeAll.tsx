@@ -9,7 +9,7 @@ export const HOME_ALL: SeriesConfig = {
   blurb: "٦ حكايات · قصص عائلية تشد وتعلّم 🏠",
   episodes: [
     { file: "hekayat-beitna-ep01.mp4", frames: 1680, title: "في شي تحت سريري!", emoji: "🐱" },
-    { file: "hekayat-beitna-ep02.mp4", frames: 1560, title: "مين أكل كعكة الضيوف؟", emoji: "🎂" },
+    { file: "hekayat-beitna-ep02.mp4", frames: 1560, title: "مين أكل كعكة الضيوف؟", emoji: "🍰" },
     { file: "hekayat-beitna-ep03.mp4", frames: 1890, title: "صندوق جدتي المقفول", emoji: "📦" },
     { file: "hekayat-beitna-ep04.mp4", frames: 1720, title: "فيصل ضاع في السوق!", emoji: "🛍️" },
     { file: "hekayat-beitna-ep05.mp4", frames: 1680, title: "الكهرباء طفت!", emoji: "🔦" },
