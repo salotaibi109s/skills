@@ -48,6 +48,10 @@ export const HOME_GAINS: Record<string, number> = {
   crowd: db(-16),
   chime: db(-9),
   whoosh2: db(-12),
+  powerdown: db(-10),
+  powerup: db(-12),
+  zap: db(-12),
+  shatter: db(-8),
 };
 
 /** Per-episode helpers: timing, lip sync and the cast bound to this episode's voices. */
@@ -85,7 +89,7 @@ export const makeHome = (T: TimelineData, MOUTH: Record<string, number[]>, dir: 
 
 /* ---------------------------------------------------------------- sets */
 
-export const LivingRoom: React.FC<{ f: number; night?: number }> = ({ f, night = 0 }) => (
+export const LivingRoom: React.FC<{ f: number; night?: number; nightSky?: boolean }> = ({ f, night = 0, nightSky }) => (
   <g>
     <defs>
       <linearGradient id="lrWall" x1="0" x2="0" y1="0" y2="1">
@@ -97,8 +101,8 @@ export const LivingRoom: React.FC<{ f: number; night?: number }> = ({ f, night =
     <rect x={-1400} y={1260} width={3900} height={1400} fill="#C99A6B" />
     <rect x={-1400} y={1250} width={3900} height={20} fill="#A9784A" />
     {/* window with curtains */}
-    <rect x={640} y={220} width={420} height={520} rx={12} fill={night ? "#1C2A4A" : "#BFE6FF"} stroke="#A9784A" strokeWidth={16} />
-    {night ? <path d="M930 330 a40 40 0 1 0 26 66 a32 32 0 1 1 -26 -66Z" fill="#FFF3C4" /> : <circle cx={950} cy={340} r={50} fill="#FFE27A" />}
+    <rect x={640} y={220} width={420} height={520} rx={12} fill={night || nightSky ? "#1C2A4A" : "#BFE6FF"} stroke="#A9784A" strokeWidth={16} />
+    {night || nightSky ? <path d="M930 330 a40 40 0 1 0 26 66 a32 32 0 1 1 -26 -66Z" fill="#FFF3C4" /> : <circle cx={950} cy={340} r={50} fill="#FFE27A" />}
     <path d="M610 200 q60 300 0 580 h110 q-30 -300 0 -580Z" fill="#C0574B" />
     <path d="M1090 200 q-60 300 0 580 h-110 q30 -300 0 -580Z" fill="#C0574B" />
     {/* family photo frames */}

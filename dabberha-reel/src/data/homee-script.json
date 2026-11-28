@@ -1,0 +1,191 @@
+{
+  "audioDir": "homee",
+  "totalFrames": 1720,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "P01-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 0.5,
+      "tts": "جواانا!! في وحش بالصالة!!"
+    },
+    {
+      "id": "P02-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.45,
+        "style": 0.5,
+        "speed": 0.9
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 0.6,
+      "tts": "اهدأ… خلنا نشوف من وين جاي الظل."
+    },
+    {
+      "id": "P03-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 1.2,
+      "tts": "فيصل… الوحش هو أنت!"
+    },
+    {
+      "id": "P04-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 1.0,
+      "tts": "غريبة! بيوت الجيران منورة… بس بيتنا طافي."
+    },
+    {
+      "id": "P05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 0.6,
+      "tts": "فيصل… وش كنت مشغّل قبل شوي؟"
+    },
+    {
+      "id": "P06-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 0.3,
+      "tts": "الدفاية… والغلاية… وشاحن اللعبة… والسيشوار!"
+    },
+    {
+      "id": "P07-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 1.0,
+      "tts": "لا! لا تلمسها! الكهرباء خطيرة… نادِ بابا."
+    },
+    {
+      "id": "P08-D",
+      "speaker": "D",
+      "voiceId": "RjFuvnufLX42TYe37ekK",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 1.4,
+      "tts": "أحسنتِ يا جوانا. الكهرباء ما نلعب فيها أبد."
+    },
+    {
+      "id": "P09-D",
+      "speaker": "D",
+      "voiceId": "RjFuvnufLX42TYe37ekK",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 1.2,
+      "tts": "بس قبل ما نشغّل كل شي… عندي فكرة."
+    },
+    {
+      "id": "P10-M",
+      "speaker": "M",
+      "voiceId": "aMmeBf0lzDYlouyfqNjh",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 2.4,
+      "tts": "من زمان ما جلسنا كذا… بدون جوالات."
+    },
+    {
+      "id": "P11-X",
+      "speaker": "X",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
+      },
+      "nominalSeconds": 9,
+      "leadSeconds": 1.6,
+      "tts": "طفّوووها!!"
+    }
+  ],
+  "sfx": [],
+  "music": []
+}

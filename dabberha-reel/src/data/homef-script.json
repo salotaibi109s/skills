@@ -1,0 +1,206 @@
+{
+  "audioDir": "homef",
+  "totalFrames": 1800,
+  "tailSeconds": 0.3,
+  "voice": {
+    "preferredModels": [
+      "eleven_v4",
+      "eleven_multilingual_v2"
+    ],
+    "settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "chosen": {
+      "voice_id": "VcSFj5ljnKA0aQcxeHpl",
+      "name": "Abir (Joanna)"
+    }
+  },
+  "scenes": [
+    {
+      "id": "Q01-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 0.8,
+      "tts": "لا لا لا… مزهرية ماما! هدية جدتي!"
+    },
+    {
+      "id": "Q02-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.45,
+        "style": 0.5,
+        "speed": 0.9
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 0.8,
+      "tts": "وحش… أنت اللي طيّحتها. صح؟"
+    },
+    {
+      "id": "Q03-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 1.2,
+      "tts": "فيصل! تبي تلبّس القطوة الغلط؟!"
+    },
+    {
+      "id": "Q04-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 0.6,
+      "tts": "بخبيها… وماما ما راح تدري!"
+    },
+    {
+      "id": "Q05-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 0.6,
+      "tts": "الكذبة تكسر أكثر من المزهرية… تكسر الثقة."
+    },
+    {
+      "id": "Q06-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 0.8,
+      "tts": "طيب… بس كيف أقولها؟"
+    },
+    {
+      "id": "Q07-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 1.2,
+      "tts": "سبع قطع… بس المزهرية تبي ثمان! وين الثامنة؟"
+    },
+    {
+      "id": "Q08-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.28,
+        "style": 0.8,
+        "speed": 1.05
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 1.2,
+      "tts": "لقيتها!"
+    },
+    {
+      "id": "Q09-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 1.6,
+      "tts": "ماما… أنا كسرتها. آسف… كنت ألعب كورة داخل البيت."
+    },
+    {
+      "id": "Q10-M",
+      "speaker": "M",
+      "voiceId": "aMmeBf0lzDYlouyfqNjh",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.5,
+        "style": 0.45,
+        "speed": 0.92
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 0.6,
+      "tts": "المزهرية تتصلّح… بس صدقك أغلى عندي من أي مزهرية."
+    },
+    {
+      "id": "Q11-J",
+      "speaker": "J",
+      "voiceId": "VcSFj5ljnKA0aQcxeHpl",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 0,
+      "leadSeconds": 1.6,
+      "tts": "الشي المكسور… إذا صلّحناه بحب، يصير أحلى!"
+    },
+    {
+      "id": "Q12-F",
+      "speaker": "F",
+      "voiceId": "0pDT8WvJXiBq0hxYB2Cp",
+      "settings": {
+        "similarity_boost": 0.8,
+        "use_speaker_boost": true,
+        "stability": 0.38,
+        "style": 0.6,
+        "speed": 1.0
+      },
+      "nominalSeconds": 9,
+      "leadSeconds": 1.6,
+      "tts": "هالمرة… والله مو أنا!"
+    }
+  ],
+  "sfx": [],
+  "music": []
+}
